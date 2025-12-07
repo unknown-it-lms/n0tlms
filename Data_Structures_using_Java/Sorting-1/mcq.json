@@ -1,0 +1,426 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is best-case time complexity of Bubble sort to sort an array of 'n' elements?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "O(n^2)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "O(n log n)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "O(1)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "O(n)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4278,
+      "QuestionTypeId": 0,
+      "QuestionId": 88812,
+      "Explanation": "<span id=\"explanation88812\">The best-case time complexity of Bubble Sort occurs when the array is already sorted. In this scenario, Bubble Sort will only need to make one pass through the array to verify that it is sorted. During this single pass, no swaps are made, and the algorithm will recognize that the array is sorted and terminate early. </span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following algorithm can be used to efficiently sort a linked list?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Merge Sort"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Quick Sort"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Heap sort"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Selection Sort"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4278,
+      "QuestionTypeId": 0,
+      "QuestionId": 88813,
+      "Explanation": "It works efficiently by recursively dividing the list into halves and then merging them back together in sorted order. It doesn&apos;t require random access, making it ideal for linked lists.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void insertionSort(int arr[], int array_size)<br>{<br>&nbsp; int i, j, value;<br>&nbsp; for (i = 1; i &lt; array_size; i++)<br>&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; value = arr[i];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; j = i;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; while (________ )<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; arr[j] = arr[j \u2212 1];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; j = j \u2212 1;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; arr[j] = value;<br>&nbsp; }<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "(j &gt; 0) || (arr[j \u2212 1] &gt; value)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "(j &gt; 0) &amp;&amp; (arr[j \u2212 1] &gt; value)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "(j &gt; 0) &amp;&amp; (arr[j + 1] &gt; value)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "(j &gt; 0) &amp;&amp; (arr[j + 1] &lt; value)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4278,
+      "QuestionTypeId": 0,
+      "QuestionId": 86557,
+      "Explanation": "<span id=\"explanation86557\">In insertion sort, the element is A[j] is inserted into the correct position in the sorted sequence A[1\u2026 j \u2013 1]. So, condition given in (j &gt; 0) &amp;&amp; (arr[j \u2212 1] &gt; value) will implement while loop correctly.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following sorting algorithm is of divide-and-conquer type?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Bubble sort"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Insertion sort"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Quick sort"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4278,
+      "QuestionTypeId": 0,
+      "QuestionId": 78130,
+      "Explanation": "<span id=\"explanation78130\">Quick sort will having logic of dividing array in sub arrays &amp; recombining it againg in sorted form.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The number of swapping needed to sort numbers 8,22,7,9,31,19,5,13 in ascending order using bubble sort is ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "11"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "12"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "13"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "14"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4278,
+      "QuestionTypeId": 0,
+      "QuestionId": 77984,
+      "Explanation": "<span id=\"explanation77984\">counter=0;<br>for(i=0;i&lt;(8-1);i++)<br>{<br>&nbsp; for(j=0;j&lt;(8-1-i);j++)<br>&nbsp; {<br>&nbsp;&nbsp;&nbsp;if(a[j]&gt;a[j+1]){<br>&nbsp;&nbsp;&nbsp;&nbsp;swap; counter++; }<br>&nbsp; }<br>}<br>==&gt;counter =14</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following sorting methods would be most suitable for sorting a list which is almost sorted",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Bubble Sort"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Insertion Sort"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Selection Sort"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Quick Sort"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4278,
+      "QuestionTypeId": 0,
+      "QuestionId": 77900,
+      "Explanation": "<span id=\"explanation77900\">The time complexity of an\u200b insertion sort is O(n)<br>O(n)<br>&nbsp;for almost sorted data.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The number of passes required to sort 5, 1, 6, 2,4 in ascending order using Bubble Sort is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "7"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4278,
+      "QuestionTypeId": 0,
+      "QuestionId": 77870,
+      "Explanation": "<span id=\"explanation77870\">No of passes require to sort array is size-1 , size of this array is 5 ,so number of passes require is 4</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>You have to sort a list L consisting of a sorted list followed by a few \u201crandom\u201d elements. Which of the following sorting methods would be especially suitable for such a task?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Bubble sort"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Selection sort"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Quick sort"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Insertion sort"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4278,
+      "QuestionTypeId": 0,
+      "QuestionId": 77864,
+      "Explanation": "<span id=\"explanation77864\">The Insertion Sort elements are compared with each other sequentially and then arranged simultaneously in some particular order.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider that n elements are to be sorted. What is the worst case time complexity of Bubble sort ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "O<sub>(1)</sub>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "O<sub>(log2n)</sub>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "O<sub>(n)</sub>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "O(n<sup>2</sup>)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4278,
+      "QuestionTypeId": 0,
+      "QuestionId": 77925,
+      "Explanation": "<span id=\"explanation77925\">Bubble sort algorithm is said to run in logarithmic time if its time execution is proportional to the square of the input size</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which is not a sorting technique:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Radix sort"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Merge sort"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Poll sort"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Quick sort"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4278,
+      "QuestionTypeId": 0,
+      "QuestionId": 77943,
+      "Explanation": "<span id=\"explanation77943\">All except poll are sorting techniques.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The way a card game player arranges his cards as he picks them&nbsp; up one by one, is an example of ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "bubble sort"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "selection sort"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "insertion sort"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "merge sort"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4278,
+      "QuestionTypeId": 0,
+      "QuestionId": 77952,
+      "Explanation": "<span id=\"explanation77952\">insertion sort will be evaluated using the same logic as playing cards.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following sorting algorithm is unstable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "insertion sort."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "bubble sort."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "merge sort."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "heap sort."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4278,
+      "QuestionTypeId": 0,
+      "QuestionId": 83895,
+      "Explanation": "<span id=\"explanation83895\">A sorting algorithm is said to be stable if two objects with equal keys appear in the same order in the sorted output as they appear in the unsorted input.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Whereas a sorting algorithm is said to be unstable if there are two or more objects with equal keys which don\u2019t appear in same order before and after sorting.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The complexity of Bubble sort algorithm is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "O(n)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "O(log n)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "O(n<sup>2</sup>)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "O(n log n)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4278,
+      "QuestionTypeId": 0,
+      "QuestionId": 83902,
+      "Explanation": "<span id=\"explanation83902\"><span id=\"explanation83902\"><span id=\"explanation83902\">Bubble sort takes&nbsp; max n(iterations)*n(comparisions) so complexity o(n<sup>2</sup>);.</span></span></span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>You have to sort a list L consisting of a sorted list followed by a few \u201crandom\u201d elements. Which of the following sorting methods would be especially suitable for such a task?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Bubble sort"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Selection sort"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Quick sort"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Insertion sort"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4278,
+      "QuestionTypeId": 0,
+      "QuestionId": 83834,
+      "Explanation": "<span id=\"explanation83834\">The Insertion Sort elements are compared with each other sequentially and then arranged simultaneously in some particular order.</span>",
+      "Answer": "D",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

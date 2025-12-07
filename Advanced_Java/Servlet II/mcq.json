@@ -1,0 +1,2200 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Choose the invalid statement about accessing parameters in servlets:<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Request parameters are accessed using HttpServletRequest"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Init parameters are accessed using ServletConfig<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Context parameters are accessed using ServletContext"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Request parameters can be modified by the server and persist across sessions"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 102514,
+      "Explanation": "Request parameters are read-only, sent by the client, and do not persist beyond the request.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a Java servlet, which method is used to retrieve the value of a request parameter called &#39;username&#39; from an HttpServletRequest object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "request.getParameter(&#39;username&#39;);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "request.getAttribute(&#39;username&#39;);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "request.getParameterValue(&#39;username&#39;);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "request.getParameterValues(&#39;username&#39;);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 101598,
+      "Explanation": "The getParameter(String name) method of the HttpServletRequest object is used to retrieve the value of a request parameter as a String.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements correctly describes the behavior of the getParameterMap() method in a servlet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It returns a String of parameter names."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It returns a Map of parameter names and an array of String objects representing the parameter values."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It returns a List of all parameter values."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It returns a single String value for a given parameter name."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 101599,
+      "Explanation": "The getParameterMap() method returns a Map containing the request parameters where keys are parameter names and values are arrays of String objects containing the parameter values.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When multiple values are associated with a single request parameter, which method should be used to retrieve all values in a servlet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "getParameter(String name)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "getParameterNames()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "getParameterValues(String name)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "getParameterMap()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 101600,
+      "Explanation": "The getParameterValues(String name) method should be used to retrieve multiple values associated with a request parameter as an array of Strings.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you determine if a request parameter exists in an HttpServletRequest object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use request.containsParameter(String name)."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Check if request.getParameter(String name) returns null."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use request.isParameterPresent(String name)."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Check whether request.getParameterMap().containsKey(String name)."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 101601,
+      "Explanation": "In a servlet, if request.getParameter(String name) returns null, it indicates that the parameter does not exist in the request.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the data type returned by the getParameterValues(String name) method of the HttpServletRequest interface?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ArrayList&lt;String&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "HashMap&lt;String, String[]&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "String[]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Collection&lt;String&gt;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 101602,
+      "Explanation": "The getParameterValues(String name) method returns an array of Strings (String[]) that contains all values of the requested parameter.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary difference between ServletConfig and ServletContext?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ServletConfig is used to define initial parameters for a servlet, while ServletContext is used for an entire web application."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ServletConfig is used for session tracking, whereas ServletContext is used for request dispatching."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ServletConfig is for creating servlet filters, and ServletContext is for setting response headers."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ServletConfig handles thread pooling, and ServletContext manages security constraints."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 101603,
+      "Explanation": "ServletConfig is specific to a particular servlet, providing initialization parameters for it, while ServletContext is common across the entire web application, allowing servlets to share information.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How are initialization parameters specified for a servlet in a web application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "In the deployment descriptor (web.xml) using &lt;init-param&gt; tags within a &lt;servlet&gt; section."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "In a .properties file located in the WEB-INF directory."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By calling setInitParam() method in the servlet&#39;s init() method."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Through an annotation in the servlet class named @InitParam."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 101604,
+      "Explanation": "Initialization parameters for a specific servlet are specified in the deployment descriptor (web.xml) using &lt;init-param&gt; tags within the appropriate &lt;servlet&gt; section.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method can you use to retrieve a servlet initialization parameter using ServletConfig?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "getParameter()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "getServletInitParam()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "getInitParameter()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "getConfigParam()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 101605,
+      "Explanation": "The getInitParameter() method of ServletConfig is used to retrieve initialization parameters that are specific to a servlet.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can multiple servlets within the same web application have the same context parameter name in their &lt;context-param&gt; tag in web.xml?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, but they will override each other&#39;s values."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes, because context parameters are common to the entire application."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No, each servlet must have unique context parameter names."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No, only one servlet can define a given context parameter name."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 101606,
+      "Explanation": "Context parameters are common to the entire application and are accessible by all servlets. Therefore, servlets can have parameters with the same name under &lt;context-param&gt; in web.xml.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to forward a request from one servlet to another in the same application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "doForward()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "sendRedirect()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "forward()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "include()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 101607,
+      "Explanation": "The &#39;forward()&#39; method of the RequestDispatcher is used to forward a request from one servlet to another servlet or JSP in the same application.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary difference between forward() and sendRedirect() in servlets?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "forward() allows cross-domain requests while sendRedirect() does not."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "forward() happens on the server side, while sendRedirect() triggers a new client request."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "sendRedirect() can include another resource, but forward() cannot."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "sendRedirect() passes request attributes, but forward() does not."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 101608,
+      "Explanation": "forward() is performed entirely on the server side, preserving the original request and response objects, while sendRedirect() involves sending a new request from the client to a different URL.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method of the RequestDispatcher interface is suitable for including content from another resource in the response?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "add()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "include()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "merge()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "incorporate()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 101609,
+      "Explanation": "The &#39;include()&#39; method of the RequestDispatcher interface is used to include the content of another resource in the response.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using the forward method, what happens to the original request URL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is changed to the URL of the forwarded resource."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It remains unchanged."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is hidden from the client."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is appended with parameters."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 101610,
+      "Explanation": "The original request URL remains unchanged when using the forward() method, as the forward is performed internally by the server.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a resource is unavailable when using forward(), what kind of exception is thrown?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IOException"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ServletException"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "NullPointerException"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "UnavailableResourceException"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 101611,
+      "Explanation": "A ServletException is thrown if the resource is not available when the forward() method is invoked.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used in servlets to forward a request to another resource such as another servlet or JSP page?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "sendRedirect()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "forward()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "include()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "dispatch()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 101612,
+      "Explanation": "The forward() method of the RequestDispatcher interface is used to forward a request from a servlet to another resource on the server.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens when you use the sendRedirect() method in a servlet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The request scope attributes are shared"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Both resources run in the same thread"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The client is informed to send a new request"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Resources are executed in the context of the calling servlet"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 101613,
+      "Explanation": "sendRedirect() sends a response to the client with a new URL, which the client then requests, effectively starting a new request-response cycle.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What URL does the client see in the browser address bar after a redirect using sendRedirect()?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The original URL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An internal server error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The redirected URL"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A session expired page"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 101614,
+      "Explanation": "After a sendRedirect() call, the client receives a response with a status code indicating a redirection and changes its URL to the new location provided by the redirect.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which one of the following is true about request redirection using RequestDispatcher?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Allows including response state"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Operates externally via browser"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Maintains original request and response objects"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Changes HTTP method"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 101615,
+      "Explanation": "Request redirection using RequestDispatcher.forward() maintains the same request and response objects, allowing the target resource to use the original data.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following correctly describes the control flow in response to a RequestDispatcher.forward() call?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The servlet execution terminates after the forward"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The execution of the calling servlet resumes immediately"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The entire application is rerun"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The forward only runs in a new server thread"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 101616,
+      "Explanation": "After calling RequestDispatcher.forward(), the execution of the calling servlet stops and control is handed over to the target resource.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct method to obtain a parameter sent by a client in a GET request using a servlet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "request.getParameter()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "request.getAttribute()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "session.getParameter()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "response.getParameter()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 91188,
+      "Explanation": "The `getParameter()` method of the `HttpServletRequest` object is used to retrieve parameters sent in a client request, typically under a GET request.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main purpose of the RequestDispatcher interface in Java Servlets?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To allow a servlet to handle requests for resources in a distributed system."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To forward a request from a servlet to another resource on the server."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To encrypt data sent between client and server."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To create a new session for the client request."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 91190,
+      "Explanation": "RequestDispatcher is used to forward a request from a servlet to another resource, such as another servlet, HTML file, or JSP, on the server.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can request parameters be accessed within a servlet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using the getParameter() method of the ServletResponse object."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using the getAttribute() method of the ServletContext object."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using the getParameter() method of the HttpServletRequest object."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using the getSession() method of the HttpServletRequest object."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 91191,
+      "Explanation": "Request parameters are accessed using the getParameter() method of the HttpServletRequest object, allowing retrieval of data sent by the client.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method of the RequestDispatcher interface is used to include content from another resource within the servlet response?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "include()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "forward()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "sendRedirect()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "merge()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 91192,
+      "Explanation": "The include() method of the RequestDispatcher interface is used to include content from another resource in the response.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if you call the forward() method after the response has been committed?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The request is forwarded immediately."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An IllegalStateException will be thrown."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The request is ignored."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The application server restarts."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 91193,
+      "Explanation": "Calling forward() after the response is committed will throw an IllegalStateException, as the response&apos;s output stream is already closed.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following correctly describes 'request.getAttribute(name)' when using request dispatchers?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It retrieves request initialization parameters."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It retrieves an attribute set by another servlet or filter within the same request."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It retrieves session cookies."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It retrieves init parameters defined in web.xml."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 91194,
+      "Explanation": "The getAttribute() method retrieves an attribute that may have been set by another servlet or filter in the same request scope.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which out of the following is not correct with respect to the difference between SendRedirect and RequestDispatcher?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "sendRedirect() method is declared in HttpServletResponse Interface and getRequestDispatcher() method is declared in HttpServletRequest Interface."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using Send Redirect Client or user knows where the request is coming because the request is displayed in URL but using request dispatcher Client or User doesn't know which page is processed internally"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "In sendRedirect() the request process is taken care by the web container and transfers the request using a browser, each request is processed as a new request. In request dispatcher the request process is taken care by web container, each request is processed without the client being informed."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using sendRedirect() can include any resources but requestDispatcher() can not include the resources."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 83636,
+      "Explanation": "<span id=\"explanation83636\">Option D is correct becaue request dispatcher can include response from other resources.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which interface has functions for reading data from form submission in a Servlet-based web application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "HttpServletRequest"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "HttpServletResponse"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ServletRequest"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ServletResponse"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 88005,
+      "Explanation": "<span id=\"explanation88005\">The HttpServletRequest interface in the Java Servlet API provides methods for reading data submitted from an HTML form. These methods include getParameter(), getParameterValues(), getParameterMap(), and getInputStream(), among others. These methods allow a servlet to access the form data submitted by a client in an HTTP request.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "\u201crequest\u201d is instance of which one of the following classes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Request"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "WebServletRequest"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "HttpRequest"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "HttpServletRequest"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 82820,
+      "Explanation": "<span id=\"explanation82820\">request is object of HttpServletRequest.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How are java web applications packaged?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "jar"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "war"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "zip"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "both jar and war"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 82260,
+      "Explanation": "<span id=\"explanation82260\">&nbsp;war are deployed on apache servers or tomcat servers. With Spring boot and few other technologies tomcat is brought on the machine by deploying jar.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<p>Consider the following code:<br>public void doGet(HttpServletRequest req,HttpServletResponse res)throws IOException{<br>if(req.getParameter(\"switch\") == null){<br>&nbsp;&nbsp; &nbsp;//line no 1<br>}<br>else {<br>//line no 2<br>}<br>Which of the following lines can be inserted at line no 2 so that the request is redirected to collectinfo.html page? (Select one)</p>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "request.sendRedirect(\"collectinfo.html\");"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "request.redirect(\"collectinfo.html\");"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "response.direct(\"collectinfo.html\");"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "response.sendRedirect(\"collectinfo.html\");"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 82241,
+      "Explanation": "<span id=\"explanation82241\">The method for redirection is sendRedirect(\"URL\") on the response object.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following code encodes the specified URL for use in the sendRedirect method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "response.encodeRedirectURL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "request.encodeRedirectURL"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Header.encodeRedirectURL"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 82272,
+      "Explanation": "<span id=\"explanation82272\">response.encodeRedirectURL(redirect url)</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When doPost() method of servlet gets called?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A POST request results from an HTML form that specifically lists POST as the METHOD"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The service() method checks the HTTP request type as POST and calls doPost() method"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both A and B"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 82273,
+      "Explanation": "<span id=\"explanation82273\">a. The service() method checks the HTTP request type as POST and calls doPost() method .<br>b. A POST request results from an HTML form that specifically lists POST as the METHOD.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Application is instance of which class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "javax.servlet.Application"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "javax.servlet.HttpContext"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "javax.servlet.Context"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "javax.servlet.ServletContext"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 82269,
+      "Explanation": "<span id=\"explanation82269\">Application object is wrapper around the ServletContext object and it is an instance of a javax.servlet.ServletContext object.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following code can be used to redirect user to different url?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "request.sendRedirect(location)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "response.sendRedirect(location)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "header.sendRedirect(location)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "dispatcher.forward(location)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 82280,
+      "Explanation": "<span id=\"explanation82280\">response.sendRedirect(location)&nbsp; used redirect user to different URL.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The Java __________ specification defines an application programming interface for communication between the Web server and client.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Servlet"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Server"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Program"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Randomize"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 82205,
+      "Explanation": "<span id=\"explanation82205\">The Java Servlet specification defines an application programming interface for communication between the Web server and client. </span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "RequestDispatcher object is used",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To include other resources"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To include an image"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To include xml object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To include e-mailing response"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 82165,
+      "Explanation": "<div data-bm=\"59\" id=\"b_content\"><main aria-label=\"Search Results\"><div class=\"b_caption b_algo\"><span id=\"explanation82165\">The <strong>RequestDispatcher</strong> interface provides the facility of dispatching the request to another resource it may be html, servlet or jsp. This interface can also be used to include the content of another resource also. It is one of the way of servlet collaboration.</span></div></main></div>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method of the request object is used to read extract values of the input fields in a form when it is submitted ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "getParameter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "getParameterNames"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "getValues"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "putValues"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 82171,
+      "Explanation": "<span id=\"explanation82171\" style=\"color:blue\"><span id=\"explanation82171\">getParameter() method allows to read value of the request parameter.</span></span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is used to redirect the response from a servlet to a JSP page ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "response.sendRedirect()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "request.sendRedirect()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "request.forward()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "response.forward()"
+        },
+        {
+          "OptionId": "E",
+          "OptionText": "request.dispatch()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 82173,
+      "Explanation": "Following is the signature of this method \u2212<br> <span class=\"kwd\">public</span><span class=\"pln\"> </span><span class=\"kwd\">void</span><span class=\"pln\"> </span><span class=\"typ\">HttpServletResponse</span><span class=\"pun\">.</span><span class=\"pln\">sendRedirect</span><span class=\"pun\">(</span><span class=\"typ\">String</span><span class=\"pln\"> location</span><span class=\"pun\">)</span><span class=\"pln\"> </span><span class=\"kwd\">throws</span><span class=\"pln\"> </span><span class=\"typ\">IOException<br></span><span class=\"pln\"> </span> private String LOGIN_PAGE = \"login.jsp\"; // other code here ... <br>response.sendRedirect(LOGIN_PAGE);<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "____ method returns the method type i.e get/post for a particular request.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "request.method()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "request.setMethod()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "request.showMethod"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "request.getMethod()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 82118,
+      "Explanation": "<span id=\"explanation82118\">java.lang.String getMethod(): Returns the name of the HTTP method with which this request was made.&nbsp;</span><span>String httpMethod = request.getMethod(); The httpMethod variable will then contain the string representing the HTTP method used (e.g., \"GET\", \"POST\", etc.).<br></span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The include() method of RequestDispatcher",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Sends a request to another server."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Includes resource of file like servlet, jsp or html"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Appends the request and response objects to the current servlet"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Receive request"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 82129,
+      "Explanation": "<span id=\"explanation82129\">Sysntax:&nbsp; <strong>public void include(ServletReques request,</strong> <strong>ServletResponse </strong> <strong>,response) throws ServletException,java.io.IOException:</strong><br>Includes the content of a resource (servlet, JSP page, or HTML file) in the response.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which object is created by the web container at time of deploying the application?&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ServletConfig"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ServletContext"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both A &amp; B"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 82154,
+      "Explanation": "<span style=\"color:#2980b9;\">Both&nbsp;<strong>ServletConfig</strong>&nbsp;and&nbsp;<strong>ServletContext</strong>&nbsp;objects are created by the web container at the time of deploying the application.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to send the same request and response objects to another servlet in RequestDispacher?&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "forward( )"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "sendRedirect( )"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "include( )"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "a and c"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 82157,
+      "Explanation": "<span id=\"explanation82157\">forward and include needs same request, response objects to be send to displatched servlet.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The method forward(request,response) will",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Return back to the same method from where the forward was invoked"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Not return back to the same method from where the forward was invoked and the web pages navigation continues"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both A and B are correct"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 82160,
+      "Explanation": "<span id=\"explanation82160\">Syntax: &nbsp;&nbsp;&nbsp;&nbsp;<strong>public void forward(ServletRequest request,ServletResponse response)throws </strong> <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ServletException,java.io.IOException:</strong><br>Forward a request from a servlet to another resource (servlet, JSP file, or HTML file) on the server</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Forward is slow as compare to redirect",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "depends on server"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "depends on browser"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81085,
+      "Explanation": "<span id=\"explanation81085\">No. Forward is fast as compared to redirect because it needs to have one round trip.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Redirect can go outside container ________ .",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "depends on server"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "depends on browser"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81078,
+      "Explanation": "<span id=\"explanation81078\">Yes. Redirect can go outside container or application.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the difference between doing an include or a forward with a RequestDispatcher?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The forward method transfers control to the designated resource, while the include method invokes&nbsp;the designated resource, substitutes its output dynamically in the display, and returns control to the&nbsp;calling page."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The two methods provide the same functionality, but with different levels of persistence"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The forward method is deprecated as of JSP 1.1 and the include method should be used in order to&nbsp;substitute portions of a dynamic display at runtime."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The include method transfers control to a dynamic resource, while the forward method allows for&nbsp;dynamic substitution of another JPS pages output, returning control to the calling resource."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81097,
+      "Explanation": "<span id=\"explanation81097\">The forward method transfers control to the designated resource, and the control does not return back to calling page. Include method includes the response from the designated resource and control returns back to the calling page.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "sendRedirect() method is invoked on ________ .",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "HttpServletResponse"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ServletContext"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ServletConfig"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "HttpServletRequest"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81081,
+      "Explanation": "<span id=\"explanation81081\">sendRedirect() method is invoked on HttpServletResponse . </span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Forward cannot go outside context ________.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "depends on browser"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "depends on server"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81082,
+      "Explanation": "<span id=\"explanation81082\"><span>Forwarding in Java servlets is limited to within the context path of the web application for security, separation of concerns, and maintainability reasons. If you want to interact with resources outside the context path, redirection can be used.</span></span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Request Dispatcher reference can be used for forward as well as include",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "depends on request method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "depends on server"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81074,
+      "Explanation": "<span id=\"explanation81074\">Yes. Request Dispatcher reference can be used for forward as well as include.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "One of the following is invoked for every request",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Constructor"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Service"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Destroy"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Init"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81075,
+      "Explanation": "<span id=\"explanation81075\">Service() method is invoked for every request.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Redirect cannot go beyond current context.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "depends on request method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "depends on browser"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81062,
+      "Explanation": "<span id=\"explanation81062\"><span id=\"explanation81062\">Redirect can go beyond the context also.</span></span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Lifecycle methods of filters are&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "init, service, destroy"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "init, doFilter, service, destroy"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "init, doFilter, destroy"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "service, doFilter"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81063,
+      "Explanation": "<span id=\"explanation81063\"><span id=\"explanation81063\">init, doFilter and destroy are lifecycle methods of filters.</span></span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "You want to use URL Rewriting to support client browsers which do not use cookies. Which method<br>will you use to attach the session id to a url that is to be used for the \u201csendRedirect()\u201d method of the<br>HttpServletResponse?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "encodeURL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "encodeRedirectURL"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "encodeSessionURL"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "encodeSessionRedirectURL"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81055,
+      "Explanation": "<span id=\"explanation81055\">encodeRedirectURL method is used to append session id while redirecting the URL.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A user types the URL http://www.cdac.in which Http request gets generated?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "GET method"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "POST method"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "HEAD method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "PUT method"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81057,
+      "Explanation": "<span id=\"explanation81057\">GET method will be used as a deafult method for making request.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which object is used to forward the request processing from one servlet to another?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ServletContext"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ServletConfig"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "RequestDispatcher"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ResponseDispatcher"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81058,
+      "Explanation": "<span id=\"explanation81058\">RequestDispatcher is used to forward the request processing from one servlet to another.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The method getWriter() returns an object of type PrintWriter. This class has println() method to<br>generate output. Which of the following define the getWriter method? Select the one correct answer.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "HttpServletRequest"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "HttpServletResponse"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ServletContext"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ServletConfig"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81059,
+      "Explanation": "<span id=\"explanation81059\">HttpServletResponse defines getWriter() method.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following interface is used to either forward or include other web resource?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Servlet"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "RequestDispatcher"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ServletConfig"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "HttpResponse"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81046,
+      "Explanation": "<span id=\"explanation81046\">RequestDispatcher interface is used to either forward or include other web resource.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Select correct statement",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "forward is faster than redirect"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "redirect has always a same request."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "if client does not accept cookies , session mechanism is not possible at all."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "cookies can store java objects."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81049,
+      "Explanation": "<span id=\"explanation81049\">forward is faster than redirect becuase it doen not need round trip back to client.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Your web application named bank uses \u201cWelcomeServlet\u201d. Where will u store",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "bank/WEB-INF/classes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "bank/WEB-INF/lib/classes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "root/WEB-INF/lib"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "bank/WebContent/lib/classes"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81050,
+      "Explanation": "<span id=\"explanation81050\">Servlets are stored into classes folder inside web-inf.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What method can be used to retrieve single value of the request parameter being sent as a part of the&nbsp;request by client?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use the method HttpServletRequest.getParameter(string name) which will return String form."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use the method HttpServletRequest.getParameterValues() which will return array of String<br>values."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use the method HttpServletResponse.getValues() which will return array of string values."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "There is no direct support in servlet api."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81051,
+      "Explanation": "<span id=\"explanation81051\">Use the method HttpServletRequest.getParameter(string name) which will return String form.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is true about deployment descriptor?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The elements of web.xml may not follow a specific order as defined in its DTD"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The servlet-mapping element if present must be defined within \u201cservlet\u201d element."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The elements of deployment descriptor are case sensitive."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Deployment descriptor can reside outside WEB-INF directory"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81052,
+      "Explanation": "<span id=\"explanation81052\"><span id=\"explanation81052\">The elements of deployment descriptor are case sensitive because it is XML file format(XML tags are case sensitive unlike HTML).</span></span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If the HTTP error 500 is generated by your servlet, you do not want to show the \u201cInternal Server Error\u201d page to the client. Instead, you want a custom error page to be displayed. What is the best way to accomplish this? <br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Forward the user to the error page using HttpServletResponse.sendRedirect() method."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Forward the user to the error page using RequestDispatcher.forward() method."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Specify the mapping of the error-code 500 and the error-page in the deployment descriptor."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is not possible to accomplish this."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81053,
+      "Explanation": "<span id=\"explanation81053\">Specify the mapping of the error-code 500 and the error-page in the deployment descriptor like following:</span><pre class=\"lang-xml s-code-block\" style=\"margin-top: 0px; margin-right: 0px; margin-bottom: calc(var(--s-prose-spacing) + 0.4em); margin-left: 0px; padding: 12px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 400; font-stretch: inherit; line-height: 1.30769; font-family: var(--ff-mono); font-size: 13px; vertical-align: baseline; box-sizing: inherit; width: auto; max-height: 600px; overflow: auto; background-color: var(--highlight-bg); border-radius: 5px; color: var(--highlight-color); overflow-wrap: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\"><span id=\"explanation81053\"><code class=\"hljs language-xml\" style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-size: 13px; vertical-align: baseline; box-sizing: inherit; background-color: transparent; white-space: inherit;\"><span class=\"hljs-tag\" style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-size: 13px; vertical-align: baseline; box-sizing: inherit;\">&lt;<span class=\"hljs-name\" style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-size: 13px; vertical-align: baseline; box-sizing: inherit; color: var(--highlight-namespace);\">error-page</span>&gt;</span>\n    <span class=\"hljs-comment\" style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-size: 13px; vertical-align: baseline; box-sizing: inherit; color: var(--highlight-comment);\">&lt;!-- Uncaught exception --&gt;</span>\n    <span class=\"hljs-tag\" style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-size: 13px; vertical-align: baseline; box-sizing: inherit;\">&lt;<span class=\"hljs-name\" style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-size: 13px; vertical-align: baseline; box-sizing: inherit; color: var(--highlight-namespace);\">error-code</span>&gt;</span>500<span class=\"hljs-tag\" style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-size: 13px; vertical-align: baseline; box-sizing: inherit;\">&lt;/<span class=\"hljs-name\" style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-size: 13px; vertical-align: baseline; box-sizing: inherit; color: var(--highlight-namespace);\">error-code</span>&gt;</span>\n    <span class=\"hljs-tag\" style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-size: 13px; vertical-align: baseline; box-sizing: inherit;\">&lt;<span class=\"hljs-name\" style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-size: 13px; vertical-align: baseline; box-sizing: inherit; color: var(--highlight-namespace);\">location</span>&gt;</span>/general-error.html<span class=\"hljs-tag\" style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-size: 13px; vertical-align: baseline; box-sizing: inherit;\">&lt;/<span class=\"hljs-name\" style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-size: 13px; vertical-align: baseline; box-sizing: inherit; color: var(--highlight-namespace);\">location</span>&gt;</span>\n<span class=\"hljs-tag\" style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-size: 13px; vertical-align: baseline; box-sizing: inherit;\">&lt;/<span class=\"hljs-name\" style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-size: 13px; vertical-align: baseline; box-sizing: inherit; color: var(--highlight-namespace);\">error-page</span>&gt;</span></code></span></pre> <span id=\"explanation81053\"> </span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If the request is get",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "service() calls \u201cdoPost()\u201d method"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "service() calls \u201cdoGet()\u201d"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "container directly calls \u201cdoGet()\u201d"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "doGet() calls \u201cservice()\u201d"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81042,
+      "Explanation": "<span id=\"explanation81042\">If the request is get service() calls \u201cdoGet()\u201d </span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "_______ is the object used for reading \u201cinit\u201d or \u201cconfig\u201d parameters.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ServletContext"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ServletConfig"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "RequestDispatcher"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81036,
+      "Explanation": "<span id=\"explanation81036\">ServletConfig is the object used for reading \u201cinit\u201d or \u201cconfig\u201d parameters. </span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Request parameters are set",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "in DD"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "using setParameter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "implicitly"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81037,
+      "Explanation": "<span id=\"explanation81037\">Request parameters are set implicitly&nbsp; (automatically)</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In case of redirect request is same.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "depends on browser"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "depends on server"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81038,
+      "Explanation": "<span id=\"explanation81038\">In case of redirect new request gets created.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Depending upon the events on servlet we can specify the following levels_____________.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Request level events"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ServletContext level events"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only A"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both A and B"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81032,
+      "Explanation": "<span id=\"explanation81032\">Events are either request or servlet context or session levels.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;An __________ object always represents a client's HTTP request",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ClientRequest"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "HttpServlet"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "HttpServletRequest"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "javax.servlet.http.HttpSession"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81033,
+      "Explanation": "<span id=\"explanation81033\">An HttpServlet object always represents a client&apos;s HTTP request.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Select wrong statement",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "forward is faster than redirect"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "redirect is only within the same context"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "if client does not accept cookies, URLRewriting is the best option you have."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "cookies are internally used inside session mechanism."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 81024,
+      "Explanation": "<span id=\"explanation81024\">Redirect works across the web applications also.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "RequestDispatcher object is used",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To use other resources(servlet, JSP) for processing the request"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To include an image"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To include xml object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To include e-mailing response"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 67788,
+      "Explanation": "<span id=\"explanation67788\">Request dispatching is internal management where many resources can be used for processing the request</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To get the web application configuration information in a servlet ___________",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ServletConfig object is used"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ServletException object is used"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ServletContext object is used"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ServletContainer object is used"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 67790,
+      "Explanation": "<span id=\"explanation67790\">ServletContext defines a set of methods that a servlet uses to communicate with its servlet container</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<code data-start=\"732\" data-end=\"756\">request.getParameter()</code> can read parameters from:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "GET request"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "POST request"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both A and B"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2147,
+      "QuestionTypeId": 0,
+      "QuestionId": 68060,
+      "Explanation": "<span style=\"color:#2980b9;\"><code data-start=\"51\" data-end=\"75\">request.getParameter()</code> can read data sent from both the URL (GET request) and from form fields (POST request). It does not depend on the request method.</span>",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

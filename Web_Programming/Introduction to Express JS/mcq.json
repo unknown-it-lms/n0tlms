@@ -1,0 +1,1596 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What does res.send() do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Sends a file"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Sends a JSON object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Sends a response to the client"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Ends the server"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 102403,
+      "Explanation": "<span id=\"explanation102403\" style=\"color:blue\">res.send() sends a response back to the client, which can be text, HTML, or JSON.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you create an Express app?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "new express.App()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "express.createApp()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "const app = express()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "app = new App()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 102404,
+      "Explanation": "You initialize the app by calling the express() function.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a primary feature of Express.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Built-in ORM for database management"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Middleware support for handling HTTP requests"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Integrated front-end templating engine"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Built-in user authentication system"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97298,
+      "Explanation": "Express.js is known for its robust middleware capabilities, allowing developers to handle HTTP requests efficiently.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you define a simple GET route in an Express.js application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "app.get(&#39;/&#39;, function(req, res) { res.send(&#39;Hello World&#39;); });"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "app.route(&#39;/&#39;, &#39;GET&#39;, function(req, res) { res.send(&#39;Hello World&#39;); });"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "app.get(&#39;/&#39;, &#39;Hello World&#39;);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "router.get(&#39;/&#39;, (req, res) =&gt; { req.send(&#39;Hello World&#39;); });"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97299,
+      "Explanation": "In Express.js, a GET route is defined using app.get() method, where you specify the route and a callback function that handles the request and response.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command is used to install Express.js using npm?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "npm create express"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "npm download express"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "npm install express"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "npm express install"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97300,
+      "Explanation": "To install Express.js via npm, you use the command `npm install express`.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used in Express.js to define a route that responds to HTTP GET requests?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "app.get()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "app.post()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "app.put()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "app.route()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97305,
+      "Explanation": "In Express.js, app.get() is used to define a route that responds to HTTP GET requests, allowing the server to send data back to the client.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If you want to handle all types of HTTP requests for a specific route, which method would you use in Express.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "app.any()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "app.all()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "app.every()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "app.match()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97306,
+      "Explanation": "The app.all() method can be used in Express.js to handle all HTTP methods for a particular route path.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of a view engine in an Express.js application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To manage routing"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To handle JSON responses"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To render HTML pages"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To log server requests"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97307,
+      "Explanation": "In Express.js, a view engine is used to render HTML pages dynamically by embedding data into templates.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of the Express Response object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To handle middleware execution"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To configure application settings"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To send HTTP responses back to the client"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To parse incoming request bodies"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97308,
+      "Explanation": "The Express Response object is used to send HTTP responses back to the client with methods to manage headers, content, and status codes.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method would you use on the Response object to send a JSON response?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "res.sendFile()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "res.send()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "res.json()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "res.render()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97309,
+      "Explanation": "The res.json() method is specifically designed to send a JSON response back to the client.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Express.js, how can you retrieve query parameters from a request?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "req.params"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "req.body"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "req.query"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "req.headers"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97310,
+      "Explanation": "The req.query object contains a key-value pair of query parameters parsed from the URL&#39;s query string.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which middleware function is used to parse incoming JSON payloads in Express?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "bodyParser.json()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "cookieParser()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "urlencoded()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "express.json()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97311,
+      "Explanation": "As of Express 4.16.0, express.json() is a built-in middleware function to parse incoming JSON requests.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you set a custom response header in Express?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "res.setHeader()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "res.header()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "res.customHeader()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "res.set()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97312,
+      "Explanation": "The res.set() method is used to set response headers in Express.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To serve static files in an Express.js application, which middleware should be used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "express.static()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "express.json()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "express.staticFiles()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "express.serve()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97313,
+      "Explanation": "express.static() is a built-in middleware function used to serve static files in Express.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When utilizing route parameters in Express, where can these parameters be accessed within a request object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "req.query"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "req.params"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "req.body"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "req.path"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97314,
+      "Explanation": "Route parameters are accessed using req.params, which will be populated with the parameter value when a particular route is matched.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method on the Response object is used to redirect the client to another URL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "res.forward()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "res.redirect()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "res.relocate()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "res.sendRedirect()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97315,
+      "Explanation": "The res.redirect() method is used in Express to send a 302 Found status code and redirects the client to a different URL.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Express.js, how can you access form data sent via POST request with the correct Content-Type set to application/x-www-form-urlencoded?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "req.query"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "req.params"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "req.body"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "req.form"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97316,
+      "Explanation": "When using middleware such as express.urlencoded(), form data sent via POST requests can be accessed via req.body.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default status code sent by the res.send() method if not explicitly specified?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "200"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "201"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "304"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "404"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97317,
+      "Explanation": "If no status code is provided, the res.send() method automatically sends a 200 OK status code.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Express.js, what is the primary purpose of using routes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To create a server"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To define endpoints and handle HTTP requests"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To compile JavaScript code"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To manage database connections"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97318,
+      "Explanation": "Routes in Express.js are used to define the various endpoints of the application and handle incoming HTTP requests to these endpoints.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods is used to define a route that accepts a GET request in Express.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "app.use()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "app.get()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "app.post()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "app.route()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97319,
+      "Explanation": "The app.get() method is used to define a route for handling GET requests in Express.js.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Express.js, which middleware function is commonly used to parse incoming request bodies?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "express.static()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "express.json()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "express.Router()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "express.cookieParser()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97320,
+      "Explanation": "express.json() is a built-in middleware function in Express.js used to parse incoming JSON request bodies.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using express.Router(), what does it return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A new instance of an Express application"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A configured route handler"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A middleware function"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A route instance which acts as a mini-application"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97321,
+      "Explanation": "express.Router() returns a new route instance which can be treated as a mini-application capable of handling its own routes and middleware.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can parameters be captured in a route definition in Express.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using URL string concatenation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using the &#39;*&#39; wildcard"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using &#39;:&#39; before the parameter name in the route path"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using &#39;req.params.get()&#39;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97322,
+      "Explanation": "Parameters in Express.js routes are defined using &#39;:&#39; before the parameter name, which captures the value and makes it accessible via &#39;req.params&#39;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of using a template engine in Express.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To speed up server-side computations"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To facilitate database connections"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To render dynamic HTML pages"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To secure API endpoints"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97323,
+      "Explanation": "Template engines in Express.js are primarily used to render dynamic content by filling in templates with data, usually to generate HTML pages.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following template engines is commonly used with Express.js for server-side rendering?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Handlebars"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "V8"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ReactJS"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Angular"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97324,
+      "Explanation": "Handlebars is a popular template engine commonly used with Express.js for server-side rendering of HTML pages.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In EJS, how do you include a partial template in the main template file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;% include partials/header %&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{{include &#39;partials/header&#39;}}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "{% include &#39;partials/header&#39; %}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;%= partials/header %&gt;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97325,
+      "Explanation": "In EJS, the syntax &#39;&lt;% include partials/header %&gt;&#39; is used to include a partial template into the main template.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used in Express.js to set the template engine for rendering views?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "app.engine()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "app.set()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "app.configure()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "app.view()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97326,
+      "Explanation": "The &#39;app.set()&#39; method is used to set various application settings, including the template engine in Express.js.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following options sets the view folder in an Express.js application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "app.use(&#39;views&#39;, &#39;./views&#39;)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "app.set(&#39;views&#39;, &#39;./views&#39;)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "app.engine(&#39;views&#39;, &#39;./views&#39;)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "app.view(&#39;views&#39;, &#39;./views&#39;)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97327,
+      "Explanation": "The function &#39;app.set(&#39;views&#39;, &#39;./views&#39;)&#39; specifies the directory where the application&#39;s view files are located.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which syntax is used in EJS to output and escape data?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;%= data %&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;%- data %&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "{% data %}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "{{ data }}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97328,
+      "Explanation": "In EJS, &#39;&lt;%= data %&gt;&#39; is used to output the data and escape it to prevent injection vulnerabilities.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a feature provided by most template engines?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Database connectivity"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Control flow with conditionals"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Partial views"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Loops and iterations"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97329,
+      "Explanation": "Template engines do not provide database connectivity; instead, they focus on rendering views with dynamic data.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Express.js, which configuration function is used to specify the &#39;view engine&#39;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "app.use()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "app.set()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "app.engine()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "app.view()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97330,
+      "Explanation": "The &#39;app.set()&#39; function is used to specify the &#39;view engine&#39; when configuring an Express.js application.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which template engine uses a syntax similar to Mustache for defining templates?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Jade"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Pug"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Handlebars"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "EJS"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97331,
+      "Explanation": "Handlebars uses a template syntax similar to Mustache, with curly braces to denote placeholders.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the method &#39;app.render()&#39; do in an Express.js application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compiles a template file and sends the rendered HTML string as a response"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Sets up a new route and controller"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Establishes a connection with the database"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Logs requests to the console for debugging"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97332,
+      "Explanation": "The &#39;app.render()&#39; method compiles a template file and sends the rendered HTML string to the client as a response.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Express.js, which method is commonly used to render a view and send the rendered HTML string to the client?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "app.use()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "res.render()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "app.set()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "res.json()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97333,
+      "Explanation": "In Express.js, the res.render() method is used to render a view template and send the resulting HTML to the client. It combines a view template with a provided data object and renders that as HTML.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which module is typically used to configure the view engine in an Express.js application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "body-parser"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "cookie-parser"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "morgan"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "app.set"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97334,
+      "Explanation": "In Express.js, you set up a view engine using the app.set() method to configure the &#39;view engine&#39; property with the template engine you want to use, such as &#39;pug&#39; or &#39;ejs&#39;.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To correctly render a view using Express.js, where should view template files be placed by default in a project structure?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "/public"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "/views"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "/lib"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "/models"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97335,
+      "Explanation": "By default, Express.js looks for view template files in the &#39;/views&#39; directory. This location can be changed by configuring the &#39;views&#39; setting using app.set().",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is correct about setting a view in Express.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "You can only use Pug as a template engine."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The view engine must be set before any routes that use it."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "res.render() directly sends JSON to the client."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "View engines are not supported in Express.js."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97336,
+      "Explanation": "The view engine should be set before defining any routes that use res.render() to render views, so the application knows which template engine to use for rendering.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What purpose does the &#39;locals&#39; object serve in Express.js when rendering views?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It stores the status code to be sent to the client."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It contains configuration settings for routes."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It holds local variables that are available to the view templates."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It caches middlewares for performance enhancement."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97337,
+      "Explanation": "In Express.js, the &#39;locals&#39; object is used to store local variables that can be passed to view templates during rendering. These variables provide dynamic data to the templates.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to parse incoming requests with JSON payloads in Express.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "express.static()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "express.json()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "express.urlencoded()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "express.bodyParser()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97302,
+      "Explanation": "The &#39;express.json()&#39; middleware is used in Express.js to parse incoming requests with JSON payloads.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in Express.js is used to handle HTTP POST requests?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": ".get()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": ".post()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": ".put()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": ".delete()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 97364,
+      "Explanation": "The .post() method in Express.js is specifically used to handle HTTP POST requests. The other methods are used for different types of HTTP requests.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How to read data in Express.js received in query string of request?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "req.params.&lt;parameter_name&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "req.query.&lt;parameter_name&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "req.url.&lt;parameter_name&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 64599,
+      "Explanation": "<span id=\"explanation64599\">req.query.&lt;parameter_name&gt;&nbsp; used to get variables in Express.js</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which out of the following are core features of Express JS framework?<div>i) Set up middlewares in order to respond to HTTP/RESTful Requests.</div><div>ii) It is possible to define a routing table in order to perform different HTTP operations.</div><div>iii) Dynamically renders HTML Pages based on passing arguments to templates.<br>iv) Supports client side logic for dynamicity of a web page</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "i, ii only"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "iii,iv only"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "i,ii,iii only"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all i,ii,iii,iv"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 64649,
+      "Explanation": "<span id=\"explanation64649\">Features of Express JS framework :<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1) Set up middlewares in order to respond to HTTP/RESTful Requests.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2) It is possible to defines a routing table in order to perform different HTTP operations.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3) Dynamically renders HTML Pages based on passing arguments to templates.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What are core features of Express framework?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Allows to set up middlewares to respond to HTTP Requests"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Defines a routing table which can works as per HTTP Method and URL"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Dynamically render HTML Pages"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 77673,
+      "Explanation": "<span id=\"explanation77673\">Features&nbsp; Of Express framework&nbsp; :<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.&nbsp; Allows to set up middlewares to respond to HTTP Requests<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.&nbsp; Defines a routing table which can works as per HTTP Method and URL<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.&nbsp; Dynamically render HTML Pages </span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Route paths, in combination with a request method, define the endpoints at which requests can be made. Which of following are valid form of route path?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "strings"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "string patterns"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "regular expressions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 77674,
+      "Explanation": "<span id=\"explanation77674\">Form of route path :<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string patterns<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; strings<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; regular expressions</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Where is captured values are populated regarding route parameters?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "req.params object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "app.locals object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "req.data object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 77675,
+      "Explanation": "<span id=\"explanation77675\">From route parameters , captured values are populated into req.params object.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What function arguments are available to Express.js Route handlers?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "req - the request object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "res - the response object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "next"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 77676,
+      "Explanation": "<span id=\"explanation77676\">Arguments of Express.js Route Handlers are :<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.&nbsp; next &nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.&nbsp; res - the response object<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.&nbsp; req - the request object </span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can we create chainable route handlers for a route path in ExpressJS app?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using app.route()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using app.router()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using app.routing()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of these"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 77677,
+      "Explanation": "To create chainable route handlers use app.route() in ExpressJS app.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In ExpressJS, the method app.all(path, callback [, callback ...]) can accept all HTTP methods",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Insufficient data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 77678,
+      "Explanation": "<span id=\"explanation77678\">Yes.&nbsp;&nbsp; app.all(path, callback [, callback ...]) can accept all HTTP methods in ExpressJS.</span><br><br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true about Express.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Express.js is a front-end framework for building user interfaces."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Express.js is a JavaScript runtime built on Chrome's V8 JavaScript engine."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Express.js is a back-end web application framework for Node.js."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Express.js is primarily used for data visualization and charting."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 87966,
+      "Explanation": "<span id=\"explanation87966\">Express JS is a third party node module which is used for easier web development</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the following code in Express.js?<br>app.get('/', function(req, res) {<br>&nbsp;&nbsp;&nbsp; res.send('Hello, world!');<br>});",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It includes a third-party middleware module in the Express.js application."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It defines a middleware function for handling HTTP requests."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It defines a route for handling GET requests to the root URL and sends the response 'Hello, world!'."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It configures the application's settings and properties."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 87968,
+      "Explanation": "<span id=\"explanation87968\">get method allows to declare route handler for &apos;/&apos; request and callback function which gets executed after receiving the request for &apos;/&apos; generates \"Hello, world!\" response.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "app.get('/users/:id', function(req, res) {<br>&nbsp;&nbsp;&nbsp; res.send('User ID: ' + _______);<br>});<br>In the above code, what should be replaced for ________ to access id received from client's request?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "req.query.id"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "req.url.id"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "req.body.id"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "req.params.id"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 87969,
+      "Explanation": "<span id=\"explanation87969\">req.params object is used for accessing data received on route</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is true about default route in express JS?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "There will be only one default route in your web app."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The default route will be defined after all other routes for the app are defined i.e. at the end."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Default route can be set for any request methods."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 84131,
+      "Explanation": "<span id=\"explanation84131\">It might be possible that when the user hit a route which is not included in our express app, in that case, the user will get an error.&nbsp; For handling these kinds of issues, we set a default route to our express app that informs the user that, he has hit a wrong route or redirect the user to a specific route.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What are the benefits of the Express framework in Node.js development?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Increased performance due to native bindings."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Simplified routing and middleware handling."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Built-in support for relational databases."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Limited scalability compared to other frameworks."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 721,
+      "QuestionTypeId": 0,
+      "QuestionId": 88073,
+      "Explanation": "<span id=\"explanation88073\">Express provides a simple and minimalistic approach to handling web server logic, making it easy to define routes and middleware for request handling. .</span>",
+      "Answer": "B",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

@@ -1,0 +1,1056 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "How can you create an object of a nested class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By directly using the nested class name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By creating an object of the outer class first and then using the outer class object to access the nested class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using the new keyword with the nested class name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both B and C"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 88876,
+      "Explanation": "<span id=\"explanation88876\"><span id=\"explanation88876\"></span></span><span><span>To create a static nested class: You need new (C) and the fully qualified name (part of A).<br>To create a non-static inner class: You need an outer object (B) AND new with that outer object (C).</span></span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a valid way to create an object of a static nested class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "OuterClassName.NestedClassName nestedObject = new OuterClassName.NestedClassName();"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "OuterClassName outerObject = new OuterClassName(); OuterClassName.NestedClassName nestedObject = outerObject.new NestedClassName();"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "OuterClassName.NestedClassName nestedObject = new NestedClassName();"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both A and C"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 88877,
+      "Explanation": "<span id=\"explanation88877\"><span id=\"explanation88877\">Static nested classes are not associated with specific instances of the outer class. Therefore, you can create objects of static nested classes directly using the nested class name.</span></span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can a nested class access private members of the outer class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, if the nested class is static"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes, if the nested class is non-static"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No, nested classes cannot access private members of the outer class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only if the nested class is declared as public"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 88878,
+      "Explanation": "<span id=\"explanation88878\">Non-static nested classes have a reference to the outer class object. This allows them to access the outer class&apos;s members, including private ones. Static nested classes, on the other hand, do not have a reference to the outer class object and cannot access its private members.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a valid way to create an object of a member inner class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "OuterClassName.NestedClassName nestedObject = new OuterClassName.NestedClassName();"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "OuterClassName outerObject = new OuterClassName(); OuterClassName.NestedClassName nestedObject = outerObject.new NestedClassName();"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "NestedClassName nestedObject = new OuterClassName().new NestedClassName();"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both B and C"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 88879,
+      "Explanation": "<span id=\"explanation88879\">Member inner classes are associated with specific instances of the outer class. Therefore, you need to create an object of the outer class first and then use the outer class object to access the nested class.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Static nested class methods can access outer class members directly",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "--"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "--"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 82290,
+      "Explanation": "A static nested class is associated with its outer class. And like static class methods, a static nested class cannot refer directly to instance variables or methods defined in its enclosing class. It can use them only through an object reference",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a key purpose of using nested classes in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To provide better encapsulation by hiding one class within another."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To enable multiple inheritance through class hierarchy."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To allow garbage collection to occur more frequently."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To implement strict interfaces without exposing the implementation."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 91817,
+      "Explanation": "Nested classes allow one class to be defined within another, which helps in grouping classes that will be logically accessed together, providing better encapsulation.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a type of nested class that is associated with an instance of the enclosing class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Static nested class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Top-level class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Member inner class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Anonymous class"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 91818,
+      "Explanation": "A member inner class is defined at the instance level of the enclosing class, meaning it&apos;s associated with an instance of that class.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does a static nested class differ from a non-static nested class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It can access instance variables of the enclosing class directly."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It does not require an instance of the outer class to be instantiated."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is automatically serialized with the enclosing class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It supports non-static methods only."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 91819,
+      "Explanation": "A static nested class is not associated with an instance of the outer (enclosing) class and can be instantiated without an instance of the outer class.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is an anonymous class in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A nested class with a name that is randomly generated at runtime."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A nested class without a name that is defined in a single line of code."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A nested class that implements an interface on-the-fly without requiring a separate declaration."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A nested class named 'Anonymous' that is pre-defined in the Java API."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 91820,
+      "Explanation": "Anonymous classes enable you to make your code more concise by defining and instantiating a class in a single expression. These are classes without names that typically extend a class or implement an interface.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is true about the scope of a local inner class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is accessible anywhere in its containing package."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It can access final local variables and parameters of the block in which it is defined."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It can only access public members of the enclosing class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It cannot access any members of the enclosing method."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 91821,
+      "Explanation": "Local inner classes can access local variables and parameters of the method that contains the class, but only if they are marked as &apos;final&apos; or are effectively final.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When do you typically use a static nested class in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When you need to increase visibility to protected members of the outer class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When the nested class does not require access to instance members of the outer class."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When you want the nested class to inherit constructors from the outer class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When you want to create multiple instances of the nested class with different states."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 91822,
+      "Explanation": "Use a static nested class when it does not need to access instance members of the outer class, as it can be instantiated independently of the outer class instance.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which scenario is it more beneficial to use an inner class instead of a top-level class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When the class needs to support serializable interface."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When the class will be used by multiple unrelated classes."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When the class serves primarily for a limited number of operations within the enclosing class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When the class needs to be accessed globally across the application."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 91823,
+      "Explanation": "Inner classes are beneficial when they are closely tied to the operations of the enclosing class, making the code more logical and easier to read.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about an inner class's constructor in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It must be private."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It can be protected."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It doesn't need to call the constructor of the outer class explicitly."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It must be defined within the outer class's constructor."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 91824,
+      "Explanation": "An inner class&apos;s constructor does not need to call the enclosing class&apos;s constructor explicitly, as it&apos;s inherently associated with an instance of the outer class.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What major restriction applies to methods of a local inner class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Cannot declare static methods."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Cannot use any local variables."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Cannot access private members of the enclosing class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Cannot be synchronized."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 91825,
+      "Explanation": "Local inner classes cannot declare static methods because they have no direct relationship to a class level scope.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a limitation of using an anonymous inner class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It cannot implement interfaces."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It cannot be abstract."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It cannot define constructors."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It cannot access the enclosing class's members."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 91826,
+      "Explanation": "Anonymous classes do not have a name, and thus cannot define constructors. They are instantiated immediately at the point of declaration.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not true about member inner classes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They can access all members of the outer class, including private members."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They must be public."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They can be abstract or final."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They have instances that are tied to enclosing class instances."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 91827,
+      "Explanation": "Member inner classes can have any access modifiers (public, private, protected, default) as per requirement.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you instantiate a member inner class from within the outer class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "new MemberInner();"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "outerObj.new MemberInner();"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "MemberInner new = outerObj();"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "new.outerObj.MemberInner();"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 91828,
+      "Explanation": "To instantiate a member inner class, you generally need to have an instance of the outer class and use `outerObj.new MemberInner();` syntax to create the inner class instance.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword must you use to directly access a member of the enclosing class in a nested class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "super"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "this"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "outer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "OuterClass.this"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 91829,
+      "Explanation": "To explicitly specify the enclosing class instance, &apos;OuterClass.this&apos; can be used inside a nested class for accessing members of the outer class.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What role do local inner classes play within a method in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They define default arguments for the method."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They offer a way to encapsulate logic within the method scope."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They convert the method into an abstract method."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They provide a mechanism for method callback handlers."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 91830,
+      "Explanation": "Local inner classes are defined within a method and are used to encapsulate implementation logic that is relevant only within the scope of that method.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To create an instance of a static nested class, which of the following syntax is correct?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "OuterClassName.StaticNestedClassName obj = new StaticNestedClassName();"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "StaticNestedClassName obj = new Object();"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "OuterClassName.StaticNestedClassName obj = new OuterClassName().StaticNestedClassName();"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "OuterClassName.StaticNestedClassName obj = new OuterClassName.StaticNestedClassName();"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 91831,
+      "Explanation": "Static nested classes do not need an instance of the outer class to be instantiated. Hence, the correct format is &apos;OuterClassName.StaticNestedClassName obj = new OuterClassName.StaticNestedClassName();&apos;.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which option correctly describes a difference between a static nested class and an inner class in terms of memory management?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Inner classes use less memory than static nested classes."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Static nested classes are eligible for garbage collection sooner."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Static nested classes do not retain references to their outer class's instances."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Inner classes allocate memory once per class loader."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 91832,
+      "Explanation": "Static nested classes do not maintain a reference to the outer class&apos;s instance, making them more memory efficient and allowing for easier garbage collection compared to inner classes that hold onto the instance of the outer class.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does an outer class reference inner class members in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By instantiating an object of the inner class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By extending the inner class."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Directly without any qualification."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Through an inner class proxy."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 91833,
+      "Explanation": "To access members of an inner class, the outer class typically needs an instance of the inner class, since inner class members belong to the instance of the inner class.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if there is a name conflict between the members of inner and outer classes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The JIT compiler resolves it automatically."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Inner class members take precedence over outer class members."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It causes a compile-time error unless explicitly discriminated."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Outer class members override inner class members."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 91834,
+      "Explanation": "When there is a name conflict between inner and outer class members, the inner class members take precedence. To resolve to the outer class&apos;s member, you may use `OuterClass.this`.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How are anonymous inner classes used with interfaces?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They implement all methods of the interface in a single statement."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They provide a concrete implementation of a runtime-created interface instance."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They are prevented from implementing more than one interface."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They need to be named explicitly within the scope."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 91835,
+      "Explanation": "Anonymous inner classes are used to provide concrete implementations of interfaces at runtime, which allow for concise specification and usage without needing separately named classes.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about nested interfaces is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They can only be declared within an inner class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They must be implemented by their enclosing class."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They are accessible outside the enclosing class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They can only be public."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 91836,
+      "Explanation": "Nested interfaces, similar to nested classes, can be declared inside an enclosing class, and they do not have to be implemented by the enclosing class. By default, they are public and can be accessed outside the enclosing class.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a nested class in Java?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A class that inherits another class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A class defined inside a method<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A class defined inside another class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A class that implements an interface"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 102309,
+      "Explanation": "A nested class is a class defined within another class, used to logically group classes that are only used in one place.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a type of nested class?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Static nested class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Anonymous class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Local class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 102310,
+      "Explanation": "Java supports four types of nested classes: static nested, non-static inner, local, and anonymous classes.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main advantage of using nested classes?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Faster compilation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Better memory management"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Logical grouping and encapsulation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Easier inheritance"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 102311,
+      "Explanation": "Nested classes help logically group related classes, improving encapsulation and readability.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of this code?<br>class Outer {<br>&nbsp; &nbsp; class Inner {<br>&nbsp; &nbsp; &nbsp; &nbsp; void show() {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.out.println(\"Inner class\");<br>&nbsp; &nbsp; &nbsp; &nbsp; }<br>&nbsp; &nbsp; }<br>}<br>public class Test {<br>&nbsp; &nbsp; public static void main(String[] args) {<br>&nbsp; &nbsp; &nbsp; &nbsp; Outer o = new Outer();<br>&nbsp; &nbsp; &nbsp; &nbsp; Outer.Inner i = o.new Inner();<br>&nbsp; &nbsp; &nbsp; &nbsp; i.show();<br>&nbsp; &nbsp; }<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Inner class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Outer class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Runtime error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 102312,
+      "Explanation": "This is a non-static inner class, and it must be instantiated using an object of the outer class.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about static nested classes?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They can access non-static members of the outer class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They require an instance of the outer class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They can be instantiated without an outer class object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They are always abstract"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 102313,
+      "Explanation": "Static nested classes do not require an instance of the outer class and can only access static members.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a disadvantage of nested classes?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Increased encapsulation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Reduced readability if overused"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Better modularity"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Logical grouping"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 102314,
+      "Explanation": "Overuse of nested classes can lead to reduced readability and complexity, especially in large codebases.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about anonymous inner classes?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They must extend a class or implement an interface"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They can have constructors"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They can be reused"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They are declared with a name"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 102315,
+      "Explanation": "Anonymous inner classes are unnamed and must extend a class or implement an interface.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of this code?<br>interface Greeting {<br>&nbsp; &nbsp; void sayHello();<br>}<br>public class Test {<br>&nbsp; &nbsp; public static void main(String[] args) {<br>&nbsp; &nbsp; &nbsp; &nbsp; Greeting g = new Greeting() {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; public void sayHello() {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.out.println(\"Hello from anonymous class\");<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>&nbsp; &nbsp; &nbsp; &nbsp; };<br>&nbsp; &nbsp; &nbsp; &nbsp; g.sayHello();<br>&nbsp; &nbsp; }<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compilation error: sayHello() should not be public&nbsp;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compilation error: can not call sayHello() on g instance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Program runs fine and gives output \"Hello from anonymous class\""
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Runtime error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 102316,
+      "Explanation": "This is an anonymous inner class implementing an interface. Output: \"Hello from anonymous class\".",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can an outer class access a method of its inner class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Directly"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Through an instance of the inner class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using this keyword"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It cannot"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 102317,
+      "Explanation": "<span id=\"explanation102317\" style=\"color:blue\">The outer class must create an instance of the inner class to access its methods.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output?<br>class Outer {<br>&nbsp; &nbsp; int x = 5;<br>&nbsp; &nbsp; static class Inner {<br>&nbsp; &nbsp; &nbsp; &nbsp; void show() {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.out.println(x);<br>&nbsp; &nbsp; &nbsp; &nbsp; }<br>&nbsp; &nbsp; }<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Runtime error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Output: 5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Output: 0"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6826,
+      "QuestionTypeId": 0,
+      "QuestionId": 102318,
+      "Explanation": "Static nested classes cannot access non-static members directly. This causes a compilation error.",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

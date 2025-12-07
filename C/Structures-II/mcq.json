@@ -1,0 +1,906 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "struct list<br>{<div style=\"margin-left: 40px;\">int x;<br>struct list *next;<br></div>} &nbsp;lst,*head=&amp;lst;<br><br>head.x = 100;<br>Whether the above code is correct or wrong?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use (*head).x = 100"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use ( head*).x = 100"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use head -&gt;x = 100"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 73308,
+      "Explanation": "x can be accessed using head-&gt;x &nbsp;or (*head).x &nbsp;as it is a pointer",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What will be the output of the program ?<br><br>#include&lt;stdio.h&gt;<br>int main ()<div style=\"margin-left: 40px;\">{<br>&nbsp; enum days &nbsp; { MON = -1, TUE, WED = 6, THU, FRI, SAT };<br><br>&nbsp; printf (\"%d, %d, %d, %d, %d, %d \", MON, TUE, WED, THU, FRI, SAT);<br>&nbsp; return 0;</div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "-1, 0, 1, 2, 3, 4"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "-1, 2, 6, 3, 4, 5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "-1, 0, 6, 2, 3, 4"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "-1, 0, 6, 7, 8, 9"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 73622,
+      "Explanation": "The values inside the enum days are considerd as integers by the compiler. Hence, by default the 1st value is interpreted as 0, 2nd as 1 and so on. But we can assign integer values explicitly to the these enum constants.<br><br>In the above program, the value -1 is assigned to MON. Thus, in the next constant TUE, the value 0 is assigned automatically.<br><br>Further, the value 6 is assigned to WED. So, automatically,the values assigned in THU, FRI and SAT will be 7, 8 and 9.<br><br>Hence, printf() prints these values i.e -1, 0, 6, 7, 8, 9.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A -&gt; B is syntactically correct if?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "a and b are structure"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "a is a structure and b is a pointer to structure"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "a is a pointer to structure and b is a structure"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "a is a pointer to structure in which b is a field"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 73608,
+      "Explanation": "Structure pointer member can also be accessed using -&gt; operator.<br><br>(*ptr).a is same as ptr-&gt;a<br>(*ptr).b is same as ptr-&gt;b<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main()<br>{<br>&nbsp;&nbsp; &nbsp;enum { WHITE = 0, PURPLE = 4, BLACK, PINK};<br>&nbsp;&nbsp; &nbsp;printf(\"PINK = %d \", PINK);<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "PINK = 6"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "PINK = Garbage value<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "PINK = 0<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "6<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 70835,
+      "Explanation": "PURPLE=4, BLACK =5 so PINK =6. If we do not explicitly assign values to enum names, the compiler by default assigns values starting from 0 and then increases by 1 to next element. <br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When struct is used instead of the keyword class means, what will happen in the program?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Access is public by default.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Access is private by default.<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Access is protected by default.<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned.<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 64052,
+      "Explanation": "The data members in structure are by default public and data members in class are by default private. hence correct answer is A.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the following program?<br>#include &lt;stdio.h&gt;<br>#include &lt;stdlib.h&gt;<br>typedef struct NType<br>{<div style=\"margin-left: 40px;\">&nbsp; int I;<br>&nbsp; char c;<br>&nbsp; long x;<br></div>} NewType;<br><br>void main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; NewType *c;<br>&nbsp; c = (NewType *) malloc (sizeof (NewType));<br>&nbsp; c-&gt;I = 100;<br>&nbsp; c-&gt;c = 'C';<br>&nbsp; (*c).x = 100L;<br>&nbsp; printf (\"%d %c %4Ld\", c-&gt;I, c-&gt;c, c-&gt;x);<br></div>}<br><br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "100 100 100L"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "100 C 100"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "100 100 C"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 64085,
+      "Explanation": "Structure pointer member can also be accessed using -&gt; operator. (*ptr).a is same as ptr-&gt;a (*ptr).b is same as ptr-&gt;b",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Code:-<br>union rainbow<br>{<div style=\"margin-left: 40px;\">int a [5];<br>float x [5];<br></div>};<br>union rainbow color [20];<br>void *ptr = color;<br><br>Which of the following is the correct way to increment the variable \u201dptr\u201d to point to the next member of the array from the sample above?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ptr = ptr + sizeof( rainbow.a);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ptr = ( void*)((union rainbow*) ptr + 1);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ptr = ptr + sizeof( *ptr);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "++(int*)ptr;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 63803,
+      "Explanation": "As ptr is void pointer first we need to cast ptr to union rainbow then increment the value by 1 and again convert it to void pointer.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "For the following declaration<br>union x {<div style=\"margin-left: 40px;\">char ch;<br>int I;<br>double j;<br></div>} u_var;<br><br>What is the value of sizeof( u_var)?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Same as sizeof( int )"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Same as sizeof( double)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Same as sizeof( char )"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 63804,
+      "Explanation": "An instance of the above&nbsp;<strong>union</strong>&nbsp;will always take at least a float for storage<br>It also depends on the alignment that the compiler puts into the allocated space. So, unless you use some special option, the compiler will put padding into your union space.<br>So to avoid padding into your union use special option and after that the size of the union will always take as much space as the largest men.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>#include &lt;stdio.h&gt;<br>void main ()<br>{</div><div style=\"margin-left: 40px;\">&nbsp; struct s1<br>&nbsp; {<br>&nbsp;&nbsp;&nbsp; char *z;<br>&nbsp;&nbsp;&nbsp; int I;<br>&nbsp;&nbsp;&nbsp; struct s1 *p;<br>&nbsp; };<br>&nbsp; <br>static struct s1 a[] = { {\"Kerala\", 6, a + 2}, {\"Punjab\", 5, a + 1},&nbsp; {\"Delhi\", 4, a}&nbsp; };<br>&nbsp; <br>struct s1 *ptr = a + 1;<br>&nbsp; <br>printf (\" %s %s %s\", a[0].z, ptr-&gt;z, a[2].p-&gt;z);<br></div><div>}<br><br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Kerala Kerala Kerala."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Kerala Punjab Delhi."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Kerala Punjab Punjab."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Kerala Punjab Kerala."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 63828,
+      "Explanation": "a[0].z = value of z on 0 index = Kerala<br>ptr is pointing to a[1] &amp; z of a[1] = Punjab<br>p of a[2] is pointing to a[0], and&nbsp; z of a[0] = Kerala.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Union differs from structure in the following way",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "All members are used at a time"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only one member can be used at a time"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Union cannot have more members"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Union initialized all members as structure"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 63809,
+      "Explanation": "With a union, you&apos;re only supposed to use one of the elements, because they&apos;re all stored at the same spot. This makes it useful when you want to store something that could be one of several types. A struct, on the other hand, has a separate memory location for each of its elements and they all can be used at once.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;stdio.h&gt;<br>void main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; struct num1<br>&nbsp; {<br>&nbsp;&nbsp;&nbsp; char ch[7];<br>&nbsp;&nbsp;&nbsp; char *s;<br>&nbsp; };<br>&nbsp; struct num2<br>&nbsp; {<br>&nbsp;&nbsp;&nbsp; char *c;<br>&nbsp;&nbsp;&nbsp; struct num1 s1;<br>&nbsp; };<br>&nbsp; static struct num2 s2 = { \"apple\", \"orange\", \"lemon\" };<br>&nbsp; printf (\"%s %s\", s2.c, s2.s1.s);<br>&nbsp; printf (\"%s %s\", s2.c++, ++s2.s1.s);<br></div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "apple lemon orange"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "apple lemon apple orange"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "apple lemon pple emon"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "apple lemonapple emon"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 63812,
+      "Explanation": "s2.c = \"apple\".<br>s2.s1 = {\"orange\", \"lemon\"} so s2.s1.s&nbsp; is lemon .<br>s2.c++ it will print as it is as post incrementation is used hence it will print apple.<br>++s2.s1.s &nbsp;= first increase to next location &amp; then print hence it will print emon .",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the correct statement which correctly free the memory pointed to by 's' and 'p' in the following program?<br>int main()<br>{<br>&nbsp;struct ex<br>&nbsp;&nbsp;&nbsp;&nbsp; int i;<br>&nbsp;&nbsp;&nbsp;&nbsp; float j;<br>&nbsp;&nbsp;&nbsp;&nbsp; char *s<br>&nbsp;&nbsp; };<br>&nbsp;&nbsp; struct ex *p;<br>&nbsp;&nbsp; p = (struct ex *)malloc(sizeof(struct ex));<br>&nbsp;&nbsp; p-&gt;s = (char*)malloc(20);<br>&nbsp;&nbsp; return 0;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "free(p); ,free(p-&gt;s);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "free(p-&gt;s); ,free(p)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "free(p-&gt;s);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "free(p);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 64009,
+      "Explanation": "First memory should be deallocated for structure member and then for structure pointer using free() function.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following comment about Union is false?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Union is a structure whose members share same memory area.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The compiler will keep track of what type of information is currently stored.<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only one of the members of union can be assigned a value at particular time.<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Size allocated for Union is the size of its member needing the maximum storage.<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 64027,
+      "Explanation": "Compiler does not keep track of what type of information is loaded.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of structure is created by the following definition?<div>struct first { . . . ; struct first *s};</div><div>struct second { . . . ; struct second *f};</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Nested structure.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Self-referential structure.<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Invalid structure.<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Structured structure.<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 64028,
+      "Explanation": "Structure is declaring one of its members as pointer to itself .<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "struct customer *ptr = malloc( sizeof( struct customer));<br><br>Given the sample allocation for the pointer \u201dptr\u201d found, which statement would be used to reallocate ptr to be an array of 10 element?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ptr = realloc( ptr, 10 * sizeof(struct customer));"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ptr = realloc( ptr, 9 * sizeof( struct customer) );"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "realloc(ptr, 9 * sizeof(struct customer));"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "realloc( ptr, 10 * sizeof( struct customer));"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 64029,
+      "Explanation": "realloc() function needs 2 parameters - original pointer and new size in bytes.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these are valid declaration?<br>i)&nbsp;&nbsp;&nbsp;union { int I; int j;};<br>ii)&nbsp;&nbsp;&nbsp;union u_tag { int I; int j;} u;<br>iii)&nbsp;&nbsp;&nbsp;union { int I; int j; FILE *K};<br>iv)&nbsp;&nbsp;&nbsp;union { int I; int j;} u;<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "All are correct."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Option (i), (ii),and(iv)."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Option (ii) and (iv)."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Option (ii)only."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 64030,
+      "Explanation": "Union declaration should have atleast name or variable name or both.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the size of ptr1 and ptr2? (16 bit machine)<br>struct x<br>{<div style=\"margin-left: 40px;\">int j;<br>char k[ 100];<br>unsigned I;<br></div>};<br>int *ptr1;<br>struct x *ptr2;<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "pter1 and ptr2 will have same size.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2, 104."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2, undefined for memory is not allocated."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "2, 4."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 64031,
+      "Explanation": "Size of pointer is always equal irrespective of pointer type.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "the changes made in the members of a structure are available in the calling function if",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "pointer to structure is passed as argument"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "structure variable is passed"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "the member other then pointer type are passed as argument"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "both option a and c"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 63776,
+      "Explanation": "Changes in the structure will be reflected only when structure pointer is passed because modified value is accessible.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "struct car<br>&nbsp; {<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp; int speed;<br>&nbsp;&nbsp;&nbsp; struct car *type;<br></div>&nbsp; } vehicle;<br>&nbsp;<br>&nbsp; struct car *ptr;<br>&nbsp; ptr = &amp;vehicle;<br><br>Referring to the code above, which of the following will make the speed equal to 200?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "( *ptr).speed = 200."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "( *ptr) -&gt;speed = 200."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "*ptr.speed = 200."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&amp;ptr.speed = 200.<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 63778,
+      "Explanation": "When you are using pointer to a structure, speed member will be accessible as ptr-&gt;speed or (*ptr).speed.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "struct date<br>{<div style=\"margin-left: 40px;\">int day;<br>int month;<br>int year;<br></div>};<br><br>main()<br>{<div style=\"margin-left: 40px;\">struct date *d;<br>. . . .<br>++d -&gt; day; /*statmentN */<br>. . . .&nbsp;&nbsp;<br></div>}<br><br>Then the statement statmentN<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Increments the pointer to point month."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Increment the value of day."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Increment d by sizeof( struct date)."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 63779,
+      "Explanation": "d-&gt;day is a int member of structure. So ++ operator increments value present in day .<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the following program?<br>struct xx<br>{<div style=\"margin-left: 40px;\">int a;<br>long b;<br></div>} s;<br>union yy<br>{<div style=\"margin-left: 40px;\">int a;<br>long b;<br></div>} u;<br>print sizeof( s ) and sizeof( u ) if sizeof( int ) = 4 and sizeof( long ) = 8.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "sizeof( s ) = 12, sizeof( u ) = 8."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "sizeof( s ) = 8, sizeof( u ) =8."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "sizeof( s ) = 8, sizeof( u ) =12."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "sizeof( s ) = 12, sizeof( u ) =12."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 63789,
+      "Explanation": "For structure variable size is addtion of all the members and for union variable size is size of largest data member.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "struct<br>{<div style=\"margin-left: 40px;\">int x;<br>int y;</div>}abc;<br>You cannot access x by the following.<br>1.&nbsp;&nbsp;&nbsp;abc -&gt; x<br>2.&nbsp;&nbsp;&nbsp;abc[0] -&gt;x<br>3.&nbsp;&nbsp;&nbsp;abc.x<br>4.&nbsp;&nbsp;&nbsp;(abc) -&gt;x<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Option 1,2 and 4"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Option 2 and 3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Option 1 and 3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Option 1,3 and 4"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 63783,
+      "Explanation": "x can be accessed by structure variable using . operator.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The size of the following union, where an int occupies 4 bytes of memory is<br>union arc<br>{<div style=\"margin-left: 40px;\">char x;<br>int y;<br>char ax[8];</div>}aha;<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "16 byte."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "13 byte."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "8 byte."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "4 byte."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 63781,
+      "Explanation": "For union variable memory will be allocated for largest member. x=1 byte, y=4 bytes, ax= 8 bytes. so memory will be allocated to ax i.e 8 bytes which is largest.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the program?<br>#include &lt;stdio.h&gt;<br>void main()<br>{<div style=\"margin-left: 40px;\">struct s1 { int i ;};<br>struct s2 { int i ;};<br>struct s1 st1;<br>struct s2 st2;<br>st1.i = 5;<br>st2 = st1;<br>printf(\"%d\", st2.i);<br></div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1004"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Syntax error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 63794,
+      "Explanation": "Compilation error. Variable of struct s1 can not be assigned to variable of struct s2. variables of same structure type can be assigned.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider following declaration<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; struct DAC<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int&nbsp; j;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; union<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br></div><div style=\"margin-left: 80px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; double ACTS;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int p;<br></div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } pune;<br></div>&nbsp;&nbsp;&nbsp;&nbsp; }d,*SUN=&amp;d;<br><br>&nbsp;&nbsp; How to access ACTS through SUN?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SUN-&gt;pune-&gt;ACTS"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SUN-&gt;pune.ACTS<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SUN.pune-&gt;ACTS"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error in code"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 63559,
+      "Explanation": "as sun is pointer you can access the pune using -&gt; operator and Acts is part of pune hence you can access that using . operator.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "enum records&nbsp; {one, two=4, three, four=4};<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp; void main( )<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(\"%d,%d,%d,%d\", one, two, three, four);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0,4,5,4"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1,4,3,4"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1,4,5,4"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 63560,
+      "Explanation": "As enum is integral constant the by default value of 1st element of enum is 0 and then it will increase by 1 if not mentioned hence here one is 0 the two is 4 and three is 4+1 i.e 5 and again four is 4. hence output is 0,4,5,4.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not user defined data type?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "struct.<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "union.<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None Of Above.<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 63598,
+      "Explanation": "int is standard , predefined, basic datatype.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which one of the following correct statement ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Union is a structure whose members share the same storage area."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Size allocated for union is the size of its member needing the maximum storage."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only one of the members of union can be assigned a value at a particular time."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of these."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 63605,
+      "Explanation": "A union is a special data type available in C that allows to store different data types in the same memory location. You can define a union with many members, but only one member can contain a value at any given time. Unions provide an efficient way of using the same memory location for multiple-purpose.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator is used to access structure member through pointer ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "*"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "-&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "=&gt;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 63521,
+      "Explanation": "to access a structure member through pointer we have to use &apos;-&gt;&apos;. <br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { <div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; enum days {mon,tue,wed,sat,sun};<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; enum days d1,d2,d3;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d1=mon+sun;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d2=wed-sat;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d3=sun*tue;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(\"%d %d %d\",d1,d2,d3);<br></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "4 -1 4"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1 5 5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0 4 4"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 91,
+      "QuestionTypeId": 0,
+      "QuestionId": 63326,
+      "Explanation": "The values inside the enum days are considerd as integers by the compiler. Hence, by default the 1st value is interpreted as 0, 2nd as 1 and so on. <br>Hence value of mon will be 0 ,tue =1 , wed =2 , sat = 3, sun =4.<br>d1= 0+4 i.e 4<br>d2=2-3 i.e. -1<br>d3 = 4*1 i.e. 4.<br>",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

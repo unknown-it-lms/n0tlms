@@ -1,0 +1,1986 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is a major drawback of using scripting elements in JSP?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They are not supported in modern browsers"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They increase server load"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They mix business logic with presentation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They require external libraries"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 102509,
+      "Explanation": "Scriptlets make JSPs harder to maintain by embedding Java code directly into HTML, violating separation of concerns.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a key benefit of using scriptless JSP (JSP with JSTL and EL)?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Faster compilation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Better separation of concerns"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "More powerful Java logic "
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Direct access to JDBC"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 102510,
+      "Explanation": "Scriptless JSP promotes clean separation between business logic (in Java classes) and presentation (in JSP), improving maintainability.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen when the following JSP code executes?<br>&lt;%! int count = 1; %&gt;<br>&lt;%= count %&gt;<br>&lt;%<br>&nbsp; &nbsp; count = count + 1;<br>%&gt;<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<code data-start=\"265\" data-end=\"272\">count</code> will be printed and then incremented"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<code data-start=\"315\" data-end=\"322\">count</code> is not accessible inside the scriptlet"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<code data-start=\"367\" data-end=\"374\">count</code> will be reinitialized on every request"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 102511,
+      "Explanation": "A variable declared using <code data-start=\"496\" data-end=\"504\">&lt;%! %&gt;</code> is a <em data-start=\"510\" data-end=\"523\">class-level</em> variable, so it is printed and then incremented successfully.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is wrong in this code?<br>&lt;%= \"Hello, \" + name %&gt;<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Nothing, this works fine and prints null for name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Variable name must be declared before use"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "+ is not allowed in expressions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "name must be a method, not a variable"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 102512,
+      "Explanation": "<span id=\"explanation102512\" style=\"color:blue\"></span><span style=\"color:blue\">The expression uses a variable name. If it&apos;s not defined in a scriptlet, declared via EL, or bound to request/session/application, it will result in a compilation error</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary function of JSP scriptlets?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To add comments to the HTML page"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To define static content for the webpage"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To embed Java code that gets executed during the request processing"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To declare variables for use in the entire JSP page"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 101668,
+      "Explanation": "JSP scriptlets are used to embed Java code that is executed each time the page is requested. They allow dynamic content generation.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following can be defined using a JSP declaration?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Local variables"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Attributes to be stored in session"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Class-level methods and variables"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Client-side JavaScript functions"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 101669,
+      "Explanation": "JSP declarations are used to declare methods and fields that are class-level and can be used in the scripting elements of a JSP.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which syntax is used to print expressions to the output stream in JSP?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;% ... %&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;%= ... %&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;%@ ... %&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;%! ... %&gt;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 101670,
+      "Explanation": "The expression tag &lt;%= ... %&gt; is used in JSP to directly outprint the result of the expression to the client.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In JSP, how is a variable initialized in the scope of a single request cycle using declarations?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;% int counter = 0; %&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;%! int counter = 0; %&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;%@ int counter = 0; %&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;%= int counter = 0; %&gt;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 101671,
+      "Explanation": "JSP declarations are used to declare variables that persist for the entire lifetime of the JSP page. Use &lt;%! ... %&gt; to declare class-level variables.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the key difference between scriptlets and expressions in JSP?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Scriptlets cannot access the request object, whereas expressions can."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Scriptlets execute Java code but do not produce output, while expressions always produce output."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Scriptlets are for initializing variables, whereas expressions are for condition checking."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Scriptlets allow HTML code embedding, whereas expressions only handle JavaScript."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 101672,
+      "Explanation": "Scriptlets contain any valid Java code and execute without necessarily producing output. Expressions are specifically used to produce output that gets inserted into the output page.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How are multiple line Java code snippets included within scriptlets in JSP?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;% Java<br/>Code %&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;%!<br/>Java<br/>Code<br/>%&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;% Java<br/>Code<br/>%&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;%@ Java;Code;@%&gt;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 101673,
+      "Explanation": "Scriptlets use the &lt;% ... %&gt; tags to include Java code. Multi-line Java code can be inserted by separating lines with newline characters inside the scriptlet tags.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following JSP components is used to handle initialization of variables shared across multiple client requests?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Scriptlets"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Expressions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Directives"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Declarations"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 101674,
+      "Explanation": "JSP declarations (&lt;%! ... %&gt;) can be used to declare variables and methods that persist beyond a single request and can be shared across different client requests.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following JSP directives is used to define page-dependent attributes in JSP?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Page Directive"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Include Directive"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Taglib Directive"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Attributes Directive"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 101675,
+      "Explanation": "The Page Directive is used to define various attributes that are dependent on the page, such as language, error handling, session, and more.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you specify that the current JSP page should not participate in HTTP sessions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;%@ page session=&quot;false&quot; %&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;%@ include session=&quot;false&quot; %&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;%@ taglib session=&quot;false&quot; %&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;%@ page session=&quot;true&quot; %&gt;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 101676,
+      "Explanation": "The page directive with the attribute session set to false ensures that the JSP page does not participate in HTTP sessions.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which JSP directive would you use to include a file for processing during translation time?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Page Directive"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Include Directive"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Taglib Directive"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "File Directive"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 101677,
+      "Explanation": "The Include Directive is used to include a file during translation time, which results in faster response times because the file is processed once.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the &#39;isErrorPage&#39; attribute in JSP Page Directive?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To declare that a page is a Not Found error page"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To specify a message to display when an error occurs"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To declare that a page can handle exceptions thrown by other pages"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To prevent a page from being cached by the browser"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 101678,
+      "Explanation": "The &#39;isErrorPage&#39; attribute of the Page Directive is used to indicate that the page can act as a JSP error page, capable of handling exceptions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which attribute of the Page Directive is used to specify the scripting language used in a JSP page?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "language"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "contentType"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "import"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "isThreadSafe"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 101679,
+      "Explanation": "The &#39;language&#39; attribute specifies the scripting language used in a JSP page, with Java being the default language.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "first.jsp<br>&lt;%@ page contentType=\"text/html;charset=UTF-8\" language=\"java\" %&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&nbsp;&nbsp;&nbsp; &lt;title&gt;First JSP&lt;/title&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&nbsp;&nbsp;&nbsp; &lt;%<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; session.setAttribute(\"sessionAttr\", \"Session Attribute\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; application.setAttribute(\"appAttr\", \"Application Attribute\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; request.setAttribute(\"reqAttr\", \"Request Attribute\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Send a direct request to second.jsp<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; response.sendRedirect(\"second.jsp\");<br>&nbsp;&nbsp;&nbsp; %&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;<br><br>second.jsp<br>&lt;%@ page contentType=\"text/html;charset=UTF-8\" language=\"java\" %&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&nbsp;&nbsp;&nbsp; &lt;title&gt;Second JSP&lt;/title&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&nbsp;&nbsp;&nbsp; &lt;%<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String sessionAttr = (String) session.getAttribute(\"sessionAttr\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String appAttr = (String) application.getAttribute(\"appAttr\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String reqAttr = (String) request.getAttribute(\"reqAttr\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; out.println(\"Session Attribute: \" + sessionAttr + \"&lt;br/&gt;\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; out.println(\"Application Attribute: \" + appAttr + \"&lt;br/&gt;\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; out.println(\"Request Attribute: \" + reqAttr + \"&lt;br/&gt;\");<br>&nbsp;&nbsp;&nbsp; %&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;<br>What will be the output of the code when you access second.jsp?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Session Attribute: Session Attribute&lt;br/&gt;Application Attribute: Application Attribute&lt;br/&gt;Request Attribute: null&lt;br/&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Session Attribute: null&lt;br/&gt;Application Attribute: Application Attribute&lt;br/&gt;Request Attribute: null&lt;br/&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Session Attribute: Session Attribute&lt;br/&gt;Application Attribute: Application Attribute&lt;br/&gt;Request Attribute: Request Attribute&lt;br/&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Session Attribute: null&lt;br/&gt;Application Attribute: null&lt;br/&gt;Request Attribute: null&lt;br/&gt;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 88885,
+      "Explanation": "<span id=\"explanation88885\">The request attribute is specific to the current request and is not propagated to subsequent requests, even when using sendRedirect. Therefore, the reqAttr will be null in second.jsp.<br>The session and application attributes are shared across multiple requests within the same session or application, respectively. So, they will be available in second.jsp.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a JSP page, which of the following is the correct syntax for a scriptlet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<% %>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<%= %>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<%! %>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<%@ %>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 91225,
+      "Explanation": "A scriptlet in JSP is enclosed within <% and %>. It contains Java code that is executed each time the page is requested.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following JSP tags is used to insert the result of an expression evaluation in the output?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<% %>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<%= %>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<%! %>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<%@ %>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 91226,
+      "Explanation": "The <%= %> tag is used to evaluate an expression and insert the result into the output.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of a JSP Declaration?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To declare variables and methods."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To insert comments in the JSP."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To print data on the client-side."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To define conditional logic."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 91227,
+      "Explanation": "<%! %> is used for JSP Declarations and it allows the declaration of variables and methods that are used later in the JSP page.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT an example of a JSP Directive?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<%@ page language='java' %>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<%@ include file='header.jsp' %>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<%@ taglib uri='uri' prefix='prefix' %>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<%= 'Hello' %>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 91228,
+      "Explanation": "The <%= %> syntax is an expression that outputs a value, not a directive.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which directive is used to include static resources in a JSP page?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<%@ include %>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<%@ page %>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<%@ taglib %>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<%@ content %>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 91229,
+      "Explanation": "The include directive (e.g., <%@ include file=&apos;filename&apos; %>) is used to include static resources such as HTML or JSP fragments.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In JSP, which expression is used to access the value of a JavaBean component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "${bean.property}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<%= bean.property %>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<%! bean.property %>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "${bean.method()}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 91230,
+      "Explanation": "The ${bean.property} syntax is used to access a property in a JavaBean component using JSP Expression Language (EL).",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following declarations will make variables and methods accessible throughout an entire JSP page?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<%! int counter = 0; %>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<% String name; %>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<@ int age = 10; %>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<%= 'Hello' %>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 91231,
+      "Explanation": "<%! %> is the JSP Declaration tag, which allows you to declare variables and methods accessible throughout the JSP page.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which JSP directive is used to control the cache of a JSP page?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<%@ cache %>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<%@ include %>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<%@ page %>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<%@ taglib %>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 91232,
+      "Explanation": "The <%@ page %> directive can be used to define various page-related attributes, including cache control settings.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main attribute of the page directive that specifies the scripting language used in the JSP page?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "language"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "contentType"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "extends"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "import"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 91233,
+      "Explanation": "The language attribute of the <%@ page %> directive is used to declare the scripting language used in the JSP page, typically Java.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How is a custom tag library referenced in a JSP page?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<%@ include %>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<%@ page %>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<%@ taglib %>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<% tagRef %>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 91234,
+      "Explanation": "The <%@ taglib %> directive is used to reference a custom tag library within a JSP page.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement correctly describes the errorPage and isErrorPage attributes in JSP?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "errorPage is used to specify the error page to display when an exception occurs, while isErrorPage is used to indicate whether the current page is an error page or not."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "errorPage is used to indicate whether the current page is an error page or not, while isErrorPage is used to specify the error page to display when an exception occurs."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "errorPage is used to specify the error page to display when an exception occurs, and isErrorPage is used to define conditions under which the error page should be displayed."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "errorPage is used to define conditions under which the error page should be displayed, while isErrorPage is used to specify the error page to display when an exception occurs."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 88012,
+      "Explanation": "<span id=\"explanation88012\">In JSP, the errorPage attribute of the page directive is used to specify the error page to display when an uncaught exception occurs during the processing of the current page. On the other hand, the isErrorPage attribute is used to indicate whether the current page is intended to be used as an error page or not. If isErrorPage is set to true, the current page is considered an error page, and it can access the exception object using the exception implicit object.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "//first.jsp<br>&lt;%@ page errorPage=\"second.jsp\" isErrorPage=\"____\" %&gt;<br>&lt;% out.print(45/0)&nbsp; %&gt;<br><br>//second.jsp<br>&lt;%@ page isErrorPage=\"____\" %&gt;<br>&lt;%&nbsp; out.print(exception.getMessage())&nbsp; %&gt;<br><br>What should be replaced in the above code for ____ in first.jsp and second.jsp?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "false, false"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "true, true"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "false, true"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "true, false"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 88013,
+      "Explanation": "<span id=\"explanation88013\">From JSP it is possible to send the request to some common error page by using errorPage attribute. isErrorPage attribute will decide whether caught exception is accessible to JSP or not. The page which acts as error page should mention isErrorPage as true</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The pageContext object can be used to set or get or remove attributes from which of the following scopes",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "request"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "session"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "application"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 83643,
+      "Explanation": "<span id=\"explanation83643\">pageContext object is used for accessing all implicit objetcs in JSP </span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which attribute of page directive specifies a JSP page that should process any exceptions thrown but not caught in the current page?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The errorPage Attribute"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The IsErrorPage Attribute"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both A &amp; B"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 83638,
+      "Explanation": "<span id=\"explanation83638\">errorPage attribute specifies path of another JSP which is going to handle uncaught exceptions</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which implicit object stores references to the request and response objects?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "pageContext"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "HttpSession"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "sessionContext"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "sessionAttribute"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 82814,
+      "Explanation": "<span id=\"explanation82814\">pageContext is JSP implicit object which helps in getting request and response objects. pageContext is used as single point of contact for all implicit objects</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Application is instance of which class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "javax.servlet.Context"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "javax.servlet.Application"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "javax.servlet.HttpContext"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "javax.servlet.ServletContext"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 82810,
+      "Explanation": "<span id=\"explanation82810\">Application object is wrapper around the ServletContext object and it is an instance of a javax.servlet.ServletContext object.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which page directive should be used in JSP to generate a PDF page?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "typePDF"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "contentPDF"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "generatePdf"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "contentType"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 82805,
+      "Explanation": "<span id=\"explanation82805\">&nbsp;&lt;%page contentType=\u201dapplication/pdf\u201d&gt; tag is used in JSP to generate PDF.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which one of the following is correct for directive in JSP?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;%@directive%&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;%directive%&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;%=directive%&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;%!directive%&gt;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 82806,
+      "Explanation": "<span id=\"explanation82806\">Directive is declared as &lt;%@directive%&gt;.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How many jsp implicit objects are there and these objects are created by the web container that are available to all the jsp pages?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "8"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "9"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "7"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 82824,
+      "Explanation": "<span id=\"explanation82824\">there are 9 jsp implicit objects.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not a directive in JSP?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "taglib directive"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "page directive"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "include directive"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "command directive"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 82822,
+      "Explanation": "<span id=\"explanation82822\">command directive is not a directive in JSP.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What are the context initialization parameters in web-xml file",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt; context-param &gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt; init-param &gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt; jsp-param &gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt; servlet-param &gt;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 82258,
+      "Explanation": "<span id=\"explanation82258\">&lt; context-param &gt; is the context initialization parameter used in web-xml file.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Which page directive attribute allows you to take care of possible thread conflicts?<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "session"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "extends"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "buffer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "isThreadSafe"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 82267,
+      "Explanation": "<span id=\"explanation82267\">&lt;% @page IsThreadSafe =\"false\"&nbsp; %&gt;&nbsp; allows us to take care of possible thread conflicts.&nbsp;</span><span>It specifies whether the JSP page can be safely executed by multiple threads simultaneously.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>.Which of the following can be inserted into this JSP page to output the current value to the response?&nbsp;</div><div>&lt;% application.setAttribute(\u201chitcount\u201d,new&nbsp;Integer(10)); %&gt;&nbsp;</div><div>//insert here&nbsp;</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;%=hitcount %&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;%=application.getParameter(\u201chitcount\u201d); %&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;%=application.hitcount%&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<div>&lt;%=pageContext.getServletContext().getAttribute(\u201chitcount\u201d) %&gt;</div>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 82255,
+      "Explanation": "<span id=\"explanation82255\" style=\"color:blue\"><span id=\"explanation82255\"><span id=\"explanation82255\">&lt;%=pageContext.getServletContext().getAttribute(\u201chitcount\u201d) %&gt;&nbsp; </span></span></span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of compiling and executing following JSP code? &nbsp;<br>&lt;%=new Date ();%&gt;<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The current date and time is written to the response."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A runtime exception occurs."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The response is empty"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A compilation error occurs"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 82246,
+      "Explanation": "<span id=\"explanation82246\">Expression tag :&nbsp; &lt;%=&nbsp;&nbsp; %&gt;&nbsp;&nbsp;&nbsp;&nbsp; i.e &lt;%= new Date() %&gt;</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is legal JSP syntax to print the value of i.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt; %int i = 1;% &gt; &lt; %= i; % &gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt; %int i = 1; i; % &gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt; %int i = 1;% &gt; &lt; %= i % &gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt; %int i = 1% &gt; &lt; %= i; % &gt;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 82253,
+      "Explanation": "<span id=\"explanation82253\">Here, &apos;;&apos; is present in every expression value tag except C. So correct option is C.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which JSP tag is used to transfer processing to another JSP page ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;jsp:include&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;jsp:forward&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;jsp:redirect&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;jsp:useBean&gt;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 82170,
+      "Explanation": "E",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following are not an implicit object in JSP ?<br>I. Request.<br>II. Session.<br>III. Context.<br>IV. In.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "I and II"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "I and III"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "II and III"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "III and IV"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 82174,
+      "Explanation": "<span id=\"explanation82174\">Implicit object in JSP are out, request, response, config, application, session, pageContext, page, exception</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not a implicit object available to JSP?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "request"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "session"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "pageContext"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "cookie"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 82191,
+      "Explanation": "<span id=\"explanation82191\">cookie is not implicit object in JSP</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not jsp implicit object which&nbsp; are created by the web container that are available to all the jsp pages ?&nbsp;&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "pageContext"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "this"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "session"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "context"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 82151,
+      "Explanation": "pageContext, this and session are implicit objects. context is not implicit object",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not a directive?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "include"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "page"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "export"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "taglib"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 82145,
+      "Explanation": "<span id=\"explanation82145\">Basic syntax is &lt;%@ directive attribute = \"value\" %&gt; There are three types of directive tag \u2212 page, include and taglib </span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following method can be used to read a form parameter in JSP?&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "request.getParameter()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "response.getParameter()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "request.getValue()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "response.getValue()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 82146,
+      "Explanation": "<div class=\"container\"><div class=\"row\"><div id=\"contentdiv\"><p><span id=\"explanation82146\" style=\"color:blue\"><span id=\"explanation82146\">The request.getParameter method are takes a string type parameter in which the name of the attributes of the HTML which value has to be recalled through the request object.<br><strong>Syntax of request.getParameter.</strong></span><br><span id=\"explanation82146\">String variable Name = requset.getParameter(\"id\");<br>String variable password = request.getParameter(\"psw\");</span></span></p></div></div></div>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Two of the following are the attributes of &lt;%taglib%&gt; directive.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Name and prefix"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "prefix and uri"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "value and prefix"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "uri and url"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 80936,
+      "Explanation": "<span id=\"explanation80936\">&lt;% @taglib &nbsp; uri=\"uri of tag library\"&nbsp; prefix=\"prefix of tag\"&nbsp; %&gt;</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The attribute which informs container about a particular error jsp page is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "isExceptionPage"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "exceptionPage"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "isErrorPage"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "errorPage"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 80937,
+      "Explanation": "errorPage attribute informs container which acts as error page.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true for JavaBean?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It can not be a GUI component."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It never implement Serializable interface"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It has Zero argument constructor"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is a distributed component"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 80938,
+      "Explanation": "<span id=\"explanation80938\">JavaBean has zero argument constructor.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Select the correct statement about following code (Select one)<br>&lt;%@page language=\"java\"%&gt;<br>&lt;html&gt;&lt;body&gt;<br>&lt;%<br>response.getOutputStream().print(\"hello\");<br>out.print(\"World\");<br>%&gt;<br>&lt;/body&gt;&lt;/html&gt;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will print \u201chello World\u201d in the output"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It will generate compile time errors"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will throw runtime exceptions (java.lang.IllegalStateException: getOutputStream() has<br>already been called for this response)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It will only print \u201chello\u201d"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 80939,
+      "Explanation": "<span id=\"explanation80939\">It will throw runtime exceptions (java.lang.IllegalStateException: getOutputStream() has&nbsp;already been called for this response) </span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which is not a valid scope for javabean in JSP?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Page"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "session"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "request"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "global"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 80940,
+      "Explanation": "<span id=\"explanation80940\">page,session,request and application are the scopes for javabean in JSP.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which among the following will compile?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;% int x=10 %&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;%= \u201chello how are you\u201d %&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;%= \u201chello\u201d ; %&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;%! int x=10 %&gt;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 80941,
+      "Explanation": "<span id=\"explanation80941\">&nbsp;Option A semicolon missing<br>Option C semicolon given<br>Option D no semicolon<br>Option B correct</span><br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true regarding the scope of \u201crequest\u201d in JSP?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It exists only for the duration of a single HTTP request-response cycle.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It's accessible from the JSP page or servlet that created it, and any resources (servlets or JSP pages) forwarded to within the same request flow."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It's commonly used to pass temporary data between a JSP page and a backing bean (Java class handling business logic) or between servlets involved in handling a single request."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 80942,
+      "Explanation": "Request scope is valid only for one request-response cycle and aceesible to dispatched servlet or JSP. Mainly used for temporary data in request.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The implicit JSP objects like request, response, and out are only visible in the _jspService() method.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "--"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "--"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 80914,
+      "Explanation": "<span id=\"explanation80914\">Yes. Implicit Objects like request,response and out are only visible in the _jspService() method.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why use RequestDispatcher to forward a request to another resource, instead of using a sendRedirect?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Redirects are no longer supported in the current servlet API."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Redirects are not a cross-platform portable mechanism"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The RequestDispatcher does not use the reflection API."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The RequestDispatcher does not require a round trip to the client, and thus is more efficient and<br>allows the server to maintain request state. <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 80916,
+      "Explanation": "<span id=\"explanation80916\">The RequestDispatcher does not require a round trip to the client, and thus is more efficient and allows the server to maintain request state.<br>e.g.&nbsp; rd.forward(request,response).</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The attribute which defines your jsp page as a exception handling page is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "isExceptionPage"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "exceptionPage"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "isErrorPage"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "errorPage"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 80928,
+      "Explanation": "<span id=\"explanation80928\">&lt;% @page&nbsp; isErrorPage = \"true\"&nbsp; %&gt;&nbsp;&nbsp; defines your jsp&nbsp; page as a exception handling page.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To use the ServletContext in Jsp the implicit object is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Application"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Config"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "context"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "page"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 80929,
+      "Explanation": "<span id=\"explanation80929\">application is an implicit object used in jsp for ServletContext.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the role of J2EE container in web application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It provide the life-cycle."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It compiles the JSP."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Loads the classes of the JSP and servlet."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 80930,
+      "Explanation": "<span id=\"explanation80930\">The role of J2EE container in Web application :<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.&nbsp; It compiles the JSP.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. &nbsp; Loads the classes of the JSP and servlet.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. &nbsp; It provide the life-cycle. </span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can we enable session tracking for JSP PAGES?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Enable cookies in the browser"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "set session attribute value is true in page directive"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No need to enable it"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Enable session tracking in the browser"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 80931,
+      "Explanation": "<span id=\"explanation80931\"><span id=\"explanation80931\">&lt;%@page session=\"true\"%&gt;&nbsp;&nbsp; used to enable session tracking for jsp pages.</span></span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which JSP expression tag will print the context initialization parameter named \u201cuname\u201d?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;%= application.getAttribute(\u201cuname\u201d)%&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;%= application.getInitParameter(\u201cuname\u201d)%&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;%= request.getParameter(\u201cuname\u201d)%&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;%=contextParam.get(\u201cuname\u201d)%&gt;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 80912,
+      "Explanation": "<span id=\"explanation80912\">To read context initialised parameter use :&nbsp;&nbsp;&nbsp;&nbsp; application.getInitParameter(\"parametername\");</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which object would you use to share user specific information between JSPs?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Request"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Response"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Session"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Application"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 80951,
+      "Explanation": "<span id=\"explanation80951\">Session object is used to share user speciffic information between JSPs.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following cannot be used as the scope when using a JavaBean with JSP?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Application"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Session"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Request"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Response"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 80955,
+      "Explanation": "<span id=\"explanation80955\">response can not be used as the scope of javabean with JSP.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not JSP element?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Directives"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Definition"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Scriplets"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Expressions"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 78567,
+      "Explanation": "<span id=\"explanation78567\">JSP Tags :<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Directives&nbsp; --&nbsp; &lt;%@ %&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Scriplets &nbsp;&nbsp; -- &nbsp; &lt;% &nbsp; %&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Expressions&nbsp; -- &nbsp; &lt;%=&nbsp; %&gt;</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following arhive formats can contain html, javascript and other files, necessary for development of web applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": ".ini"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": ".ear"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": ".war"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": ".tar"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2151,
+      "QuestionTypeId": 0,
+      "QuestionId": 78568,
+      "Explanation": "<span id=\"explanation78568\">.war archive formats can contain html, javascript and other files, necessary for development of web applications .</span>",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

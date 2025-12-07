@@ -1,0 +1,1664 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is a subquery in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A query that runs only in a separate database"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A query embedded within the DELETE statement"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A query nested inside a SELECT, INSERT, UPDATE, or DELETE statement"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A query that performs database administration tasks"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92362,
+      "Explanation": "A subquery, also known as an inner query or nested query, is a query within another MySQL query and embedded within the WHERE, SELECT, FROM, or any other clauses.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to refer to a subquery that returns multiple columns and rows?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "EXISTS"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ANY"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "IN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ALL"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92363,
+      "Explanation": "The IN keyword is used with subqueries that return multiple columns and rows. It checks if a value exists within the multi-row result set.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which clause can a subquery not be used in?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "FROM"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "WHERE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ORDER BY"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92364,
+      "Explanation": "Subqueries cannot be used in the ORDER BY clause because it only sorts the result set.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of subquery returns only a single row and a single column?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Correlated"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Scalar"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Nested"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Unrelated"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92365,
+      "Explanation": "A scalar subquery returns exactly one row with one column and is often used in expressions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a characteristic of a correlated subquery?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Executes only once during the query"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Refers to columns outside the subquery"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Cannot be used in UPDATE statements"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Always returns multiple rows"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92366,
+      "Explanation": "A correlated subquery references columns from the outer query and is executed once for each row processed by the outer query.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these operators can be used in the WHERE clause to work with subqueries?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "BETWEEN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LIKE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "EXISTS"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DESCRIBE"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92367,
+      "Explanation": "The EXISTS operator is used in the WHERE clause to check for the existence of rows returned by a subquery.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about subqueries in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A subquery must always return more than one column."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A subquery can replace a JOIN operation."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Subqueries must always use aggregate functions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A subquery can only be used in the SELECT statement."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92368,
+      "Explanation": "In some cases, subqueries can be used to perform the same task as a JOIN, particularly when filtering results in specific ways.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which MySQL statement can contain subqueries?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "TRUNCATE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "INSERT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CREATE TABLE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ALTER TABLE"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92369,
+      "Explanation": "Subqueries can be used with INSERT statements, typically in the VALUES or SELECT sections to insert data into a table.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can a subquery typically be identified in an SQL statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By its use with the ALTER keyword"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By its surrounding parentheses"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By the AS keyword following it"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By its placement after the GROUP BY clause"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92370,
+      "Explanation": "Subqueries in SQL are typically enclosed within parentheses and can appear in various clauses such as WHERE, HAVING, and SELECT.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a subquery returns more columns than expected, what will be the result?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The subquery results will be automatically truncated"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An error will occur"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only the first column of the subquery will be used"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The database will ignore the subquery entirely"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92371,
+      "Explanation": "An error will occur because the outer query is only designed to handle a specific number of column outputs from the subquery.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a nested query in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A query that combines two different databases"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A query containing another query within it"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A query that is used to update multiple tables"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A query that is executed on an external server"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92372,
+      "Explanation": "A nested query, also known as a subquery, is a query that is embedded within another SQL query. It is used to perform an operation or return a value that is needed by the main query.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which part of a MySQL query can a subquery be used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only in the SELECT clause"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only in the WHERE clause"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "In several clauses such as SELECT, WHERE, and FROM"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only in the FROM clause"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92373,
+      "Explanation": null,
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements will execute the nested query first?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT name FROM employees WHERE salary = (SELECT MAX(salary) FROM employees)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT * FROM employees WHERE age > 40"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "UPDATE employees SET age = age + 1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DELETE FROM employees WHERE id IN (SELECT id FROM employees WHERE age > 50)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92374,
+      "Explanation": "In statement A, the nested query &apos;SELECT MAX(salary) FROM employees&apos; executes first to determine the maximum salary, which is then used in the main query.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can a subquery return a single value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using the GROUP BY clause"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By ensuring it only has one   column and one row result"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using JOIN to simplify the result"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By using the HAVING clause"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92375,
+      "Explanation": "A subquery can return a single value by ensuring that only one column and a single row result is produced, often through the use of aggregate functions or filtering conditions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider the following query: SELECT department FROM employees WHERE salary > (SELECT AVG(salary) FROM employees). What is the function of the nested query?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To find departments where the average salary is higher than their own"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To find the average salary of all employees"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To list all departments"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To update salaries of employees"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92376,
+      "Explanation": "The nested query (SELECT AVG(salary) FROM employees) calculates the average salary of all employe  es, which is then used in the main query to compare individual salaries.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is one common use of correlated subqueries?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To structure complex UPDATE or DELETE commands"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To identify matching records from two tables"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To perform calculations that require row-by-row processing"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To establish foreign keys"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92377,
+      "Explanation": "Correlated subqueries are often used for operations that require row-by-row processing because they execute once for each row processed by the outer query.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In what context would you use a subquery in the SELECT clause?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When you need to return all columns in a table"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To calculate a derived column in the result set"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To filter based on a specific range of dates"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To join two unrelated tables"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92378,
+      "Explanation": "A subquery in the SELECT clause is used to calculate a derived column in the result set by performing calculations or fetching additional data.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if a subquery returns multiple rows when only a single row is expected?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The outer query will execute without the subquery result"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The query will fail with an error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The database will select the first row and ignore the rest"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The database will automatically aggregate the results"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92379,
+      "Explanation": "If a subquery returns multiple rows where only a single row is expected (for example, in a scalar or single-value context), it results in an error (e.g., &apos;Subquery returns more than 1 row&apos;).",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which SQL keyword is used with a   subquery to test for the existence of rows?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "EXISTS"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "NOT IN"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "BETWEEN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "LIKE"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92380,
+      "Explanation": "The EXISTS keyword is used with a subquery to test whether any row matches the criteria specified in the subquery.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of subquery is directly dependent on the outer query?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Inline subquery"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Dependent subquery"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Correlated subquery"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Independent subquery"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92381,
+      "Explanation": "A correlated subquery is directly dependent on the outer query as it references elements from the outer query, and it is executed repeatedly, once for each row processed by the outer query.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main purpose of a correlated subquery in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To execute subqueries independently of the outer query"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To reuse the results of a subquery in multiple queries"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To perform row-wise comparison between the outer query and subquery"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To execute queries with union operations"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92382,
+      "Explanation": "A correlated subquery is used for row-wise comparisons, with each row of the outer query process triggering the subquery execution.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which clause typically contains a correlated subquery in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FROM"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "WHERE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "GROUP BY"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92383,
+      "Explanation": "Correlated subqueries are often used within the WHERE clause to filter or compare rows based on conditions determined by the subquery.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a key feature that differentiates a correlated query from a non-correlated subquery?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A correlated query uses JOIN operations"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A non-correlated subquery references columns from a related outer query"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A correlated query references columns from the outer query"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A non-correlated subquery requires DISTINCT results"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92384,
+      "Explanation": "A correlated query references columns from the outer query, making each subquery execution dependent on the current row of the outer query.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about correlated subqueries is TRUE?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They execute before the outer query runs"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They must always return a single row"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They execute once per row returned by the outer query"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They can only use aggregate functions"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92385,
+      "Explanation": "Correlated subqueries execute once for each row processed by the outer query, allowing for dynamic filtering and comparison.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which scenario would a correlated subquery be more efficient than a non-correlated subquery?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When needing to filter rows with aggregated results"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When each row of the outer query requires evaluation against the subquery"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When processing large sets of joined tables"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When generating distinct results"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92386,
+      "Explanation": "Correlated subqueries are beneficial for evaluating conditions that depend on data specific to each row of the outer query.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the typical impact on performance when using correlated subqueries in larger datasets?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Significantly improved performance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No impact on performance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Potential degradation in performance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Guaranteed optimal execution time"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92387,
+      "Explanation": "Correlated subqueries can lead to performance degradation due to the repeated execution of the subquery for each row of the outer query.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which SQL action cannot be directly performed by a correlated subquery?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compare row-by-row values"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Perform aggregate calculations"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Modify data in tables"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Return multiple columns for each row"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92388,
+      "Explanation": "Correlated subqueries are typically used for data retrieval and comparison, not for directly modifying data in database tables.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the relationship between the outer query and the subquery in a correlated subquery?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The outer query depends on the subquery for execution"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The subquery depends on column values from the outer query"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both queries execute independently of one another"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Neither query is dependent on the other"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92389,
+      "Explanation": "In a correlated subquery, the subquery uses column values from the outer query to execute, creating a dependency for each row processed.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is an example of using a correlated subquery to find specific data?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Find all customers with orders above the average order value"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "List the products sorted by name in the catalog"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Display the total number of orders per customer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Retrieve customer details with email format validation"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92390,
+      "Explanation": "Finding all customers with orders above a certain threshold often involves a row-wise comparison, suitable for correlated subqueries.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does a correlated subquery process execution differ from a JOIN?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Correlated subqueries execute before JOIN operations"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They perform data merging across tables automatically"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They evaluate conditions for each row of the outer query independently"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They are used mainly for creating complex joins"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92391,
+      "Explanation": "Correlated subqueries evaluate conditions for each outer query row separately, unlike JOIN operations that combine data from multiple tables.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A subquery in an SQL SELECT statement is enclosed in:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "parenthesis -- (...)."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "brackets -- [...]."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CAPITAL LETTERS."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "braces -- {...}."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 76713,
+      "Explanation": "Answer to be reviewed<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operators are used when a subquery returns multiple rows to be evaluated in comparison to the outer query?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IN and NOT IN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "EXISTS and NOT EXISTS"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "OUTER JOIN and INNER JOIN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "LEFT JOIN and RIGHT JOIN"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 76939,
+      "Explanation": "When there is a need to evaluate multiple rows in comparison to the outer query, the \u201eIN? and \u201eNOT IN? operators are used. They are used for testing whether a comparison value is present in a set of values.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which of these operators perform similar operations like ALL and ANY?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SOME"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "MANY"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "GROUP"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 76955,
+      "Explanation": "<span id=\"explanation76955\">&nbsp;The operators&nbsp; SOME ALL&nbsp; and ANY&nbsp; perform operations on columns. They can filter column results. They are used in conjunction with a comparison operator in order to test the result of a column subquery.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The facility that allows nesting one select statement into another is called __________",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "nesting"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "binding"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "subquerying"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "encapsulating"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 76933,
+      "Explanation": "<span id=\"explanation76933\">The&nbsp; subquerying&nbsp; support provided by MySQL is a capability that allows writing one&nbsp; SELECT&nbsp; statement within parentheses and nesting within another. This allows logically selecting content from tables.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which subquery returns a single value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "scalar"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "column"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "row"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "table"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 76934,
+      "Explanation": "The subqueries in MySQL can return different types of information. A scalar query returns a single value. Column subquery return a single column and row subquery returns a single row.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Find the names of the countries whose condition is sunny. Country name is stored in table Locatin.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT country FROM location WHERE condition = 'sunny';"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT country FROM location WHERE city IN (SELECT city FROM weather WHERE condition = 'sunny');<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT country FROM location WHERE city NOT IN (SELECT city FROM weather WHERE condition = 'sunny');"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT country FROM location WHERE city UNION (SELECT city FROM weather WHERE condition = 'sunny'); <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 76651,
+      "Explanation": "Answer to be reviewe",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following single-row operators can be used for writing a sub-query?&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&gt;="
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "="
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 65259,
+      "Explanation": "All above operators are used for writting a subquery.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider this statement:<br>select &nbsp;emp_name, (select count(*) from departments) From employees<br>Where salary= (select salary from employees);<br>What is wrong with it?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "We cannot include select in select statement."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The statement will fail if the second query returns more than one row"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both A &amp; B"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The statement will run but is extremely inefficient because of the need to run the second sub query once for every row in EMPLOYEES"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 65261,
+      "Explanation": "Subquery execute first and it returns multiple values which are compare with in or not in<br>operator instead of &apos;=&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Evaluate this SQL statement:<br>SELECT e.employee_id, e.department_id, d.department_name, e.salary<br>FROM employees e, departments d<br>WHERE e.department_id = d.department_id;<br><br>Which SQL statement is equivalent to the above SQL statement?<br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT employee_id, department_id, department_name, salary<br>FROM employees<br>WHERE department_id = (SELECT department_id<br>FROM departments);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT employee_id, department_id, department_name, salary<br>FROM employees<br>JOIN departments;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT e.employee_id, d.department_id, d.department_name, e.salary<br>FROM employees e<br>JOIN departments d<br>ON e.department_id = d.department_id;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT employee_id, department_id, department_name, salary<br>FROM employees<br>JOIN departments<br>USING (e.department_id, d.department_id);"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 65225,
+      "Explanation": "<span id=\"explanation65225\">This is a join query. On the basis of join condition matched data found according to the contions select takes place.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Which three statements about subqueries are true?&nbsp; &nbsp;</div><div>I. A single row subquery can retrieve only one column and one row.</div><div>II.A single row subquery can retrieve only one row but many columns.</div><div>III.A multiple row subquery can retrieve multiple rows.</div><div>IV.A multiple row subquery can be compared by using the \u201c&gt;\u201d operator.</div><div>V. A single row subquery can use the IN operator.</div><div>VI.A multiple row subquery can use the \u201c=\u201d operator.</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "i,ii,v"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ii,iii,iv"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "i,iii,v"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "iii,v,vi"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 65149,
+      "Explanation": "<span id=\"explanation65149\"><span style=\"color:#c0392b;\">Types of sub Query:</span><br>&nbsp;&nbsp; &nbsp;a) Single Row Sub Query.<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;- If subquery generating single output value then it is called SRS.<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;- In case of SRS you can write equal to (=) operator in between inner and outer query.<br>&nbsp;&nbsp; &nbsp;b) Multi Row Sub Query.<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;- If subquery generating multiple output value then it is called MRS.<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;- In case of MRS you can write in operator in between inner and outer query.<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;- It will decrease your query level performance and database performance.<br><span style=\"color:#c0392b;\">Syntax</span>:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Outer Query<br>&nbsp;&nbsp; &nbsp;select * from tab1<br>&nbsp;&nbsp; &nbsp;where &lt;cond&gt;&nbsp; =/in (select col from tab2 where )<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Inner Query</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Evaluate the SQL statement:</div><div><br></div><div>1 SELECT a.emp_name, a.sal, a.dept_id, b.maxsal&nbsp;</div><div>2 FROM employees a,&nbsp;</div><div>3 (SELECT dept_id, MAX(sal) maxsal&nbsp;</div><div>4. FROM employees&nbsp;</div><div>5 GROUP BY dept_id) b&nbsp;</div><div>6 WHERE a.dept_id = b.dept_id&nbsp;</div><div>7 AND a.sal &lt; b.maxsal;&nbsp;<br><br></div><div>What is the result of the statement?&nbsp;<br></div><div><div>i) The statement produces an error at line 1.&nbsp;<br></div><div>ii) The statement produces an error at line 3.&nbsp;<br></div><div>iii) The statement produces an error at line 6.&nbsp;<br></div><div>iv) The statement returns the employee name, salary, department ID, and maximum salary earned in the department of the&nbsp;&nbsp; employee for all departments that pay less salary then the maximum salary paid in the department.&nbsp;<br></div><div>v) The statement returns the employee name, salary, department ID, and maximum salary earned in the department of the employee for all employees who earn less than the maximum salary in their department.<br></div></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "i,ii"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ii,iii"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "iii,iv"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "iv,v"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 65171,
+      "Explanation": "This query contains subquery concepts, aliase name&nbsp; concepts, use of join etc.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider the following SELECT statement::<br>SELECT ename, emp_number, salary<br>FROM employee<br>WHERE dept_number = (SELECT dept_number<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FROM department<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WHERE location IN ('CHICAGO', 'NEW YORK'));<br>Why does this statement return an error?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A multiple-row subquery returns one row."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A single-row subquery returns more than one row."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A multiple-column subquery returns one column."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A multiple-row query uses a single-row subquery."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 65077,
+      "Explanation": "If two query joins with equal to operator is used, then it is single row subquery. In given example inner query returns multiple values, so error occures.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which operator can be used with a multiple-row subquery?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "="
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LIKE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "BETWEEN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "NOT IN"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 64983,
+      "Explanation": "IN operator is used to prevent the error when subquery returns multiple values.<br>In Sub query there are two types<br>a. Single row subquery:&nbsp;&nbsp; &apos;=&apos; equal to opearor is used.<br>b. Multi row subquery:&nbsp;&nbsp; &apos;IN&apos; or &apos;NOT IN&apos; operator is used.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Suppose it is desired that UNION operation should return not more than 3 rows. Which keyword is used for this?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "LIMIT"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "RESTRICT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "COUNT"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SORT"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 76966,
+      "Explanation": "When there is a need to put a limit to the number of rows returned by the &apos;UNION&apos; operation, the statement &apos;LIMIT&apos; is appended to the &apos;SELECT&apos; queries which are joined by the &apos;UNION&apos; operations.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given a table named \"students\" with columns: \"student_id\", \"name\", and \"age\", and a table named \"courses\"<br>with columns: \"course_id\", \"student_id\", and \"course_name\", which query will retrieve the names of students who are enrolled&nbsp; for at least one available courses?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT name FROM students WHERE student_id IN (SELECT student_id FROM courses);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT name FROM students ;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT name,count(*) FROM students group by course_id ;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT name FROM students WHERE student_id= (SELECT student_id FROM courses);<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 86611,
+      "Explanation": "Inner query will fetch all the courses from<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider a table named \"employees\" with columns: \"employee_id\", \"first_name\", \"last_name\", \"salary\",<br>and \"hire_date\". Which query will retrieve the names of employees who have the same salary as \"John Doe\"<br>and were hired on the same date as \"John Doe\"?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT first_name, last_name FROM employees WHERE salary = (SELECT salary <br>FROM employees<br>WHERE first_name = 'John' AND last_name = 'Doe') AND hire_date = (SELECT hire_date FROM employees<br>WHERE first_name = 'John' AND last_name = 'Doe');"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT first_name, last_name FROM employees WHERE hire_date = (SELECT salary, hire_date FROM<br>employees WHERE first_name = 'John' );"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "select first_name, last_name from employee where sal = (select sal from employee where first_name='John' and<br>last_name='Doe');<br><br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "select first_name, last_name from employee where sal = (select sal from employee where first_name='John' and<br>last_name='Doe') and hire_date like (SELECT hire_date FROM employees WHERE first_name = 'John'<br>AND last_name = 'Doe');"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 86618,
+      "Explanation": "<span id=\"explanation86618\">(SELECT salary FROM employees<br>WHERE first_name = &apos;John&apos; AND last_name = &apos;Doe&apos;);&nbsp; &nbsp; will fetch salary of John Doe.<br>(SELECT hire_date FROM employees<br>WHERE first_name = &apos;John&apos; AND last_name = &apos;Doe&apos;);&nbsp; &nbsp; &nbsp;will fetch hire_date of John Doe.<br>outer query will fetch rows matching salary and hire_date same as that of John Doe.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What operator is used to prevent the error: \u2018single row sub query returns more than one row\u2019 ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use the IN operator"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use the &gt;= operator"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use the CAN EXIST operator"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use the = operator"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 84094,
+      "Explanation": "<span id=\"explanation84094\">IN operator is used to prevent the error that subquery returns multiple value.<br>In Sub query there are two types<br>a. Single row subquery:&nbsp;&nbsp; &apos;=&apos; equal to opearor is used.<br>b. Multi row subquery:&nbsp;&nbsp; &apos;IN&apos; or &apos;NOT IN&apos; operator is used.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider the following SELECT statement&nbsp;<br>SELECT ename, emp_number, salary<br>FROM employee<br>WHERE dept_number = (SELECT dept_number<br>FROM department<br>WHERE location IN ('CHICAGO', 'NEW YORK'))<br>Why does this statement return an error?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A multiple-row subquery returns one row."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A single-row subquery returns more than one row."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A multiple-column subquery returns one column."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A multiple-row query uses a single-row subquery."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 84102,
+      "Explanation": "<span id=\"explanation84102\">If two query joins with equal to operator is used, then it is single row subquery. In given example inner query returns multiple values, so error occures.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Find all the tuples having temperature greater than 'Paris'.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT * FROM weather WHERE temperature &gt; (SELECT temperature FROM weather WHERE city = 'Paris');"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT * FROM weather WHERE temperature &gt; (SELECT * FROM weather WHERE city = 'Paris');"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT * FROM weather WHERE temperature &gt; (SELECT city FROM weather WHERE city = 'Paris');"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT * FROM weather WHERE temperature &gt; 'Paris';"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 84110,
+      "Explanation": "Answer to be reviewed",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Find the names of the countries whose condition is sunny. Country name is stored in table Locatin.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT country FROM location WHERE condition = 'sunny';"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT country FROM location WHERE city IN (SELECT city FROM weather WHERE condition = 'sunny');"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT country FROM location WHERE city NOT IN (SELECT city FROM weather WHERE condition = 'sunny');"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT country FROM location WHERE city UNION (SELECT city FROM weather WHERE condition = 'sunny');"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 84111,
+      "Explanation": "Answer to be reviewe",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator is used to verify if a subquery returns any records?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "EXISTS"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LIKE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "BETWEEN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "IN"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92105,
+      "Explanation": "The EXISTS operator is used to test for the existence of any record in a subquery.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is true about the ALL operator in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It selects records if any satisfies the condition"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It requires all subquery values to meet the condition"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It checks for the first matching record"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It works only with strings"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92106,
+      "Explanation": "The ALL operator returns TRUE if all of the subquery values satisfy the condition.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which query is evaluated once per row processed by the parent statement?&nbsp;<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CORRELATED&nbsp;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SUBQUERY&nbsp;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": " OUTER JOIN&nbsp;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "INNER JOIN&nbsp;"
+        },
+        {
+          "OptionId": "E",
+          "OptionText": "Option E"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 90788,
+      "Explanation": "A correlated subquery is evaluated once per row processed by the parent statement. This means that the subquery&apos;s results can depend on the values of the current row being processed in the outer query. This can lead to performance overhead, especially for large datasets.<br><br>The other options (subquery, outer join, and inner join) are evaluated differently:<br><br>Subquery: Can be evaluated once or multiple times depending on the query context.<br>Outer join: Evaluates both sides of the join and combines the results based on the join condition.<br>Inner join: Evaluates both sides of the join and returns only the rows that match the join condition.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which of the following is true concerning triggers?&nbsp;<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "You do not create them with SQl"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": " They execute against only some applications that access a database.&nbsp;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They have an event, condition, and action.&nbsp;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They cannot cascade (cause another trigger to fire).&nbsp;"
+        },
+        {
+          "OptionId": "E",
+          "OptionText": "Option E"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 90789,
+      "Explanation": "The correct answer is: c) They have an event, condition, and action.<br><br>Triggers are database objects that execute automatically in response to specific events that occur on a database table. They consist of three main components: &nbsp;&nbsp;<br><br>Event: The action that triggers the execution of the trigger (e.g., INSERT, UPDATE, DELETE). &nbsp;&nbsp;<br>Condition: The condition that must be met for the trigger to execute. &nbsp;&nbsp;<br>Action: The SQL statements that are executed when the trigger is fired. &nbsp;&nbsp;<br>Here are some additional points about triggers:<br><br>Creation: Triggers are created using SQL statements.<br>Execution: They execute against all applications that access the database.<br>Cascading: Triggers can cascade and cause other triggers to fire.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator is used to compare a value to every value in another set?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ANY"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SOME"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ALL"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "NOT"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6539,
+      "QuestionTypeId": 0,
+      "QuestionId": 92108,
+      "Explanation": "The ANY operator compares a value to each value returned by a subquery, requiring only one match.",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

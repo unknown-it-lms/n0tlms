@@ -1,0 +1,666 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "void main( )<br>&nbsp;&nbsp;&nbsp; {<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int i=0;<br>&nbsp;&nbsp;&nbsp;&nbsp; for(;i&lt;=3; printf(\"%d \" ++i ) );<br></div>&nbsp;&nbsp;&nbsp; }<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1 2 3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1 2 3 4<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1 2 5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1 2 3 5<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 14,
+      "QuestionTypeId": 0,
+      "QuestionId": 73153,
+      "Explanation": "Iteration 1:i=0 0&lt;=3 true, print ++i i.e 1<br>Iteration 2:i=1 1&lt;=3 true,&nbsp;print ++i i.e 2<br>Iteration 3:i=2 2&lt;=3 true,&nbsp;print ++i i.e 3<br>Iteration 4:i=3 3&lt;=3 true,&nbsp;print ++i i.e 4<br>Iteration 5:i=4 4&lt;=3 false so terminate the loop<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be output if you will compile and execute the following c code?<br>void main()<br>{<div style=\"margin-left: 40px;\">&nbsp; int x;<br>&nbsp; for(x=1;x&lt;=5;x++);<br>&nbsp;&nbsp; printf(\"%d\",x);<br></div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compiler error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 14,
+      "QuestionTypeId": 0,
+      "QuestionId": 73156,
+      "Explanation": "for loop is terminated with semicolon means no body<br>step 1:x=1 x&lt;=5 true and x will be incremented to 2<br>step 2:x=2 x&lt;=5 true and x will be incremented to 3<br>step 3:x=3 x&lt;=5 true and x will be incremented to 4<br>step 4:x=4 x&lt;=5 true and x will be incremented to 5<br>step 5:x=5 x&lt;=5 true and x will be incremented to 6<br>at last print statement will execute and i=6 will be printed<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt; stdio.h &gt;<br>int main()<br>{<br>&nbsp;&nbsp; &nbsp;int tally=0;<br>&nbsp;&nbsp; &nbsp;for(;;)<br>&nbsp;&nbsp; &nbsp;{<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;if(tally==10)<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;break;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;printf(\"%d \",++tally);<br>&nbsp;&nbsp; &nbsp;}<br>&nbsp;&nbsp; &nbsp;return 0;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0 1 2 3 4 5 6 7 8 9 10<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0 1 2 3 ... infinite times"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1 2 3 4 5 6 7 8 9 10"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1 2 3 4 5 6 7 8 9"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 14,
+      "QuestionTypeId": 0,
+      "QuestionId": 74879,
+      "Explanation": "for(; ;) it is possible in c, there is no need to place condition with in the for(), you can place condition with in the body of the loop.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;stdio.h&gt;<br>int main()<br>{<br>&nbsp;&nbsp;&nbsp; int i=1;<br>&nbsp;&nbsp;&nbsp; while(i&lt;=10 &amp;&amp; 1++)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(\"Hello\");<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Error: lvalue required as increment operand"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "HelloHello ... 10 times"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "HelloHello ... 11 times"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Hello"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 14,
+      "QuestionTypeId": 0,
+      "QuestionId": 74880,
+      "Explanation": "you can not increment or decrement constant values directly.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of C Program.?<br>int main()<br>{<br>&nbsp;&nbsp;&nbsp; int a=32;<br>&nbsp;&nbsp; &nbsp;<br>&nbsp;&nbsp;&nbsp; do<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(\"%d \", a);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a++;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(a &gt; 35)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break;<br>&nbsp;&nbsp;&nbsp; }while(1);<br><br>&nbsp;&nbsp;&nbsp; return 0;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "No Output<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "32 33 34"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "32 33 34 35"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compiler error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 14,
+      "QuestionTypeId": 0,
+      "QuestionId": 74881,
+      "Explanation": "while(1) is infinite loop. So we kept if(condition) to break the loop. a++ is equivalent to a=a+1;<br><br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of C Program.?<br>int main()<br>{<br>&nbsp;&nbsp;&nbsp; int k, j;<br>&nbsp;&nbsp; &nbsp;for(k=1, j=10; k &lt;= 5; k++)<br>&nbsp; &nbsp; &nbsp; &nbsp; printf(\"%d \", (k+j));<br>&nbsp; &nbsp; return 0;<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "compiler error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10 10 10 10 10"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "11 12 13 14 15"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 14,
+      "QuestionTypeId": 0,
+      "QuestionId": 74882,
+      "Explanation": "<span id=\"explanation74882\" style=\"color:blue\">You can initialize any number of variables inside for loop.<br>Initially k =1 and j= 10 hence k+j&nbsp; is 11<br>loop execute till k becomes &lt;= 5 hence output will be&nbsp; 11 12 13 14 15 </span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is output of below program?<br>#include &lt;stdio.h&gt;<br>int main()<br>{<br>&nbsp; &nbsp; int i, j;<br>&nbsp; &nbsp; for (i = 0, j = 0; i &lt; 5; i++)<br>&nbsp; &nbsp; {<br>&nbsp; &nbsp; &nbsp; &nbsp; printf(\"%d%d--\", i, j);<br>&nbsp; &nbsp; }<br>&nbsp; &nbsp; return 0;<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0--01--12--23--34--"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "00--10--20--30--40--"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compilation Error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "00--01--02--03--04--"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 14,
+      "QuestionTypeId": 0,
+      "QuestionId": 74883,
+      "Explanation": "<span id=\"explanation74883\" style=\"color:blue\">In this code only i is incrementing starting from 0 to 4 but j is 0 only.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which loop will not output nos. 1 to 10",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "for(a=0; a&lt;10; a++) printf(\"%d\",a+1);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "for(a=0; a&lt;10; ) printf(\"%d\", ++a);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "for(a=0; a++&lt;10; ) printf(\"%d\", a);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "for(a=0; a&lt;10; a+1) printf(\"%d\", a);<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 14,
+      "QuestionTypeId": 0,
+      "QuestionId": 63834,
+      "Explanation": "for(a=0; a&lt;10; a+1) - here in updation value of a is not getting updated as a+1 will not update a it is just adding 1 but the value of a remain same as we have not wriiten a=a+1 ,<br>so it will go in infinite loop &amp; always print only 0;<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "int main()<br>{<br>&nbsp;&nbsp; &nbsp;int s = 0;<br>&nbsp;&nbsp; &nbsp;while (s++&lt;10)<br>&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (s&lt;4 &amp;&amp; s&lt;9)<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; continue;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; printf(\"%d \", s);<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp; &nbsp;return 0;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<span style=\"color:#5b585d\">1 </span><span style=\"color:#4c494c\">2 3 </span><span style=\"color:#5b585d\">4 </span><span style=\"color:#4c494c\">5 6 7 8 9 </span>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1 2 3 10"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "4 5 6 7 8 9 10"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "4 5 6 7 8 9"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 14,
+      "QuestionTypeId": 0,
+      "QuestionId": 70792,
+      "Explanation": "Initially s is 0 and it is post incremented in while loop.&nbsp; Inside while loop we have if condition which will continue the while loop till s&lt;4. Hence once s become 4 , if condition return false and next printf statement get executed till s is 10. Hence output will be 4 5 6 7 8 9 10.&nbsp;",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main ()<br>{<br>&nbsp; static int i;<div style=\"margin-left: 40px;\">&nbsp; int j;<br>&nbsp; for (j = 0; j &lt;= 5; j += 2)<br>&nbsp;&nbsp;&nbsp; switch (j)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</div><div style=\"margin-left: 80px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case 1:</div><div style=\"margin-left: 120px;\">&nbsp;&nbsp; &nbsp;i++;<br>&nbsp;&nbsp; &nbsp;break;</div><div style=\"margin-left: 80px;\"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case 2:</div><div style=\"margin-left: 120px;\">&nbsp;&nbsp; &nbsp;i += 2;</div><div style=\"margin-left: 80px;\"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case 4:</div><div style=\"margin-left: 120px;\">&nbsp;&nbsp; &nbsp;i %= 2;<br>&nbsp;&nbsp; &nbsp;j = -1;<br>&nbsp;&nbsp; &nbsp;continue;</div><div style=\"margin-left: 80px;\"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; default:</div><div style=\"margin-left: 120px;\">&nbsp;&nbsp; &nbsp;--i;<br>&nbsp;&nbsp; &nbsp;continue;</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp; printf (\"%d\", i);</div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 14,
+      "QuestionTypeId": 0,
+      "QuestionId": 64058,
+      "Explanation": "Compilation error due to continue in switch case.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "int main()<br>{<div style=\"margin-left: 40px;\">int n, i;<br><br>printf(\"Enter the no. of loops to run:\");<br>scanf(\"%d\", &amp;n);<br><br>for (i = 0; i &lt; n; i++)<br>{<br>&nbsp;&nbsp; &nbsp;printf(\"%d \", i);<br>}<br></div>&nbsp;}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "prints 1 to n<br><br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "prints 1 to n-1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "prints 0 to n-1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "compilation error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 14,
+      "QuestionTypeId": 0,
+      "QuestionId": 63666,
+      "Explanation": "loop starts from 0 it will execute till i&lt;n.<br>so it will print values from 0 to n-1",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main()<br>{<div style=\"margin-left: 40px;\">int j;<br>for(j=0; j&lt;5; j++);<br>&nbsp;&nbsp;&nbsp;&nbsp; printf(\"CDAC\");<br>printf(\"ACTS\");<br></div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ACTS"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "CDACACTS"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CDAC for 5 times<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 14,
+      "QuestionTypeId": 0,
+      "QuestionId": 63689,
+      "Explanation": "The semi-colon at the end of for loop hence for loop completes its execution first and then print CDACACTS.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp; void main()<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int i=0;<div style=\"margin-left: 40px;\">for(;i&lt;6;)<br>{<br></div><div style=\"margin-left: 80px;\">printf(\"%d\",i);<br>i+=2;<br></div><div style=\"margin-left: 40px;\">}<br></div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "024"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "24"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0246"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "246"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 14,
+      "QuestionTypeId": 0,
+      "QuestionId": 63691,
+      "Explanation": "step1:i=0;i&lt;6 so it will print 0 and then i=i+2 i.e 2<br>step2:i=2;2&lt;6 so it will print 2 and then i=i+2 i.e 4<br>step3:i=4;4&lt;6 so it will print 4 and then i=i+2 i.e 6<br>step4:i=6;6&lt;6 false hence now loop will be terminated",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main()<br>{<div style=\"margin-left: 40px;\">int i=0;<br><br>while(i);</div><div style=\"margin-left: 80px;\">printf(\"%d\",i++);</div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Infinite"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "nothing"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 14,
+      "QuestionTypeId": 0,
+      "QuestionId": 63702,
+      "Explanation": "while loop is terminated by semicolon as well as initial value of i is 0 so it will execute once and get terminated. Also in print statement post-increment is used it means use the variable first and then increment so output is 0.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main()<br>{<div style=\"margin-left: 40px;\">int i=0;<br>while(printf(\"%d\",i++))</div><div style=\"margin-left: 80px;\">printf(\"Hello\");<br></div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Syntax error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0Hello"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1Hello"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Infinite"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 14,
+      "QuestionTypeId": 0,
+      "QuestionId": 63706,
+      "Explanation": "Their is no terminating condition for while loop.So it will go in infinite loop",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; int i = 0;<br>&nbsp; while (i &lt; 6);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf (\"%d\", ++i);<br></div>}<br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "012345"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Infinite"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 14,
+      "QuestionTypeId": 0,
+      "QuestionId": 63694,
+      "Explanation": "there is semicolon given after while loop and their is no any terminating condition in while loop hence it will run infinitely. <br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What is the output of C Program.?<br><br><br>int main()<br>{<br>&nbsp;&nbsp;&nbsp; while(true)&nbsp;&nbsp; &nbsp;<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(\"RABBIT\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break;<br>&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp; &nbsp;<br>&nbsp;&nbsp;&nbsp; return 0;<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RABBIT <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No output<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compilation Error<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Infinite loop<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 14,
+      "QuestionTypeId": 0,
+      "QuestionId": 63759,
+      "Explanation": "while(TRUE) or while(true) does not work. true is not a keyword.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "int main()<br>{<br>&nbsp;&nbsp; &nbsp;static int i;<br>&nbsp;&nbsp; &nbsp;for (++i; ++i; ++i)<br>&nbsp;&nbsp; &nbsp;{<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;printf(\"%d \", i);<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;if (i == 4) <div style=\"margin-left: 80px;\">break;<br></div>&nbsp;&nbsp; &nbsp;}<br><br>&nbsp;&nbsp; &nbsp;return 0;<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "24"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "20"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "22"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Infinite"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 14,
+      "QuestionTypeId": 0,
+      "QuestionId": 63724,
+      "Explanation": "for loop executes only&nbsp; twice. As the value of i is incremented in condition statement also. When i become 4 it will end the loop.<br>i=2, output 2.<br>i=4, output 4 and brak the loop.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>void main( )</div><div>&nbsp;&nbsp;&nbsp; {</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int &nbsp;i=0;</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while(++i &lt; 5)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(\"%d\", ++i);</div><div>&nbsp;&nbsp;&nbsp; }</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "24"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "244"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "247"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ERROR"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 14,
+      "QuestionTypeId": 0,
+      "QuestionId": 63360,
+      "Explanation": "every time we are pre incrementing i hence it will print 2 4. Initially i was 0 then we are pre incrementing i in while as well as in printf hence i becomes 2 and it&nbsp; will print 2 then again&nbsp; we are pre incrementing i in while as well as in printf hence i become 4 and it will print 4 then in while loop i become 5 which is not &lt; 5 hence it will come out of while loop.<br><br> step 1:++i&lt;5 i.e 1&lt;5 is true so print ++i i.e 2<br>step 2:again ++i&lt;5 i.e 3&lt;5 is true so print ++i i.e 4<br>step 3:again ++i&lt;5 i.e 5&lt;5 is false so loop will be terminated&nbsp; <br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>int i = 40;<br>extern int i;<br>int main()<br>{<br>&nbsp;&nbsp; &nbsp;do {<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;printf(\"%d\", i++);<br>&nbsp;&nbsp; &nbsp;}&nbsp;&nbsp; while (5, 4, 3, 2, 1, 0);<br>&nbsp;&nbsp; &nbsp;return 0;<br>}<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "compilation error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "45"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Infinite"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "40"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 14,
+      "QuestionTypeId": 0,
+      "QuestionId": 63342,
+      "Explanation": "In while when you will have , seperated values it will consider the right most value which is 0. 0 means false. hence do while loop execute only once.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "int main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; int i = 0;<br>&nbsp; for (++i; ++i; ++i)<br>&nbsp;&nbsp;&nbsp; {</div><div style=\"margin-left: 80px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf (\"%d\", i);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (i == 4)</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; break;<br>&nbsp;&nbsp;&nbsp; }<br>&nbsp; return 0;</div>}<br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2 4."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2 0."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2 2."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Infinite."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 14,
+      "QuestionTypeId": 0,
+      "QuestionId": 63623,
+      "Explanation": "step 1: ++i =1 ++i=2 which is true so 2 will be printed&nbsp;<br>i==4 false<br>so again for loop will be executed<br>step 1: ++i =3 ++i=4 which is true so 4 will be printed&nbsp;<br>i==4 true hence loop will break now.<br><br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which loop does not require to write \u2018;\u2019 after loop condition?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "while"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "for"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "do-while"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 14,
+      "QuestionTypeId": 0,
+      "QuestionId": 63576,
+      "Explanation": "while loop does not require to write loop condition. In Do while we have to give ; after while and in for loop also we are giving ; after condition and then write incrementation or decrementetion of variable.<br>",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

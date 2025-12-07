@@ -1,0 +1,1866 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is a key advantage of using axios over fetch()?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It\u2019s built into the browser"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": " It automatically transforms JSON responses"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It doesn\u2019t support POST requests"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It doesn\u2019t return promises"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 102448,
+      "Explanation": "axios automatically parses JSON responses and handles many things like request cancellation, timeouts, and interceptors.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "fetch('https://api.example.com/data', {<br>&nbsp; method: 'POST',<br>&nbsp; headers: {<br>&nbsp; &nbsp; 'Content-Type': 'application/json'<br>&nbsp; },<br>&nbsp; body: JSON.stringify({ name: 'John' })<br>});<br>What does Content-Type: 'application/json' do?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Converts the response to JSON<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Tells the server to return JSON<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Specifies the format of the request body"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Automatically parses the response"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 102449,
+      "Explanation": "This header tells the server that the request body is formatted as JSON.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the .then() method do in a promise chain?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It catches errors"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It transforms the promise into a callback"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It registers a callback to run when the promise resolves"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It stops the execution of the chain"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 102450,
+      "Explanation": ".then() attaches a callback that runs when the promise is successfully resolved.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be logged in the console?<br>Promise.resolve(5)<br>&nbsp; .then(value =&gt; value * 2)<br>&nbsp; .then(result =&gt; console.log(result));<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "undefined"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 102451,
+      "Explanation": "The first .then() returns 10, which is passed to the next .then() and logged.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if an error occurs in a .then() chain and there is no .catch()?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The error is silently ignored"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The browser crashes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The promise is rejected and uncaught"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The .then() still runs"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 102452,
+      "Explanation": "Without a .catch(), the rejected promise results in an uncaught error, which may show in the console.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of using the Fetch API in React?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To add interactivity to a website."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To dynamically style React components."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To make network requests to servers for data."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To directly manipulate the DOM."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97810,
+      "Explanation": "The Fetch API is used to make network requests to servers and fetch data, which can then be used in React components.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method of the Fetch API is commonly used to initiate a GET request?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "post"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "get"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "fetch"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "request"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97811,
+      "Explanation": "The fetch() method is used to make requests using the Fetch API. It defaults to a GET request when no method is specified.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default behavior of fetch(&#39;url&#39;) if you do not specify any options?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It performs a POST request."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It performs a GET request."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It performs a DELETE request."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It throws an error."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97812,
+      "Explanation": "By default, the fetch function performs a GET request, which retrieves data from the specified URL.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you handle errors when making a GET request with Fetch in React?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using a try-catch block around the fetch call."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using the .catch method on the returned promise."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By setting a global error handler."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Errors are automatically resolved by the fetch API."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97813,
+      "Explanation": "The .catch() method is used to handle errors that occur during the fetch request. It is chained to the fetch promise.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a common way to parse the response data from a Fetch GET request?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "response.text()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "response.parse()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "response.json()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "response.xml()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97814,
+      "Explanation": "response.json() is commonly used to parse the response data into a JavaScript object, making it easier to work with JSON data.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which lifecycle method is most appropriate to initiate a fetch request in a class component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "componentDidUpdate"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "componentDidMount"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "shouldComponentUpdate"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "componentWillUnmount"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97815,
+      "Explanation": "componentDidMount is the best place to initiate network requests because it is invoked immediately after the component is mounted.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which hook is commonly used to perform Fetch API requests in a functional component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "useState"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "useEffect"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "useCallback"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "useMemo"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97816,
+      "Explanation": "The useEffect hook is used to handle side effects such as data fetching in functional components, replacing component lifecycle methods.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will fetch(url).then(response =&gt; response.json()) do if the server returns a non-JSON response?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will automatically convert the response to JSON."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It will throw a syntax error."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will return an empty object."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It will return the response as plain text."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97817,
+      "Explanation": "If the server response cannot be parsed as JSON, attempting to call response.json() will throw a SyntaxError.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of using the fetch API in a POST request?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To completely disconnect from a server"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To retrieve resources asynchronously"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To send data to a server to create/update a resource"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To pause the current JavaScript execution"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97818,
+      "Explanation": "The fetch API is used for making HTTP requests, including POST requests, where data is sent to the server typically to create or update a resource.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method can be used in React to trigger a POST request using the fetch API?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "componentDidMount"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "componentWillUnmount"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "useEffect"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "useRef"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97819,
+      "Explanation": "The useEffect hook is commonly used to perform side effects, including making API calls like a POST request using the fetch API.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When making a POST request with fetch, which property should be used to specify the HTTP method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "mode"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "method"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "headers"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "body"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97820,
+      "Explanation": "The &#39;method&#39; property in the options object of a fetch request specifies the HTTP method to be used, such as &#39;POST&#39;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Where should you specify the body of a POST request in the fetch API?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "url"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "body"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "mode"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "cache"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97821,
+      "Explanation": "The &#39;body&#39; property is used to provide the data to be sent in a POST request using fetch, typically as a JSON string.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default HTTP method when using the fetch API without specifying the &#39;method&#39;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "POST"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "GET"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "PUT"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DELETE"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97822,
+      "Explanation": "The fetch API defaults to the GET method if the &#39;method&#39; property is not specified.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you handle the response from a POST request made with fetch?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Convert response to JSON and use then()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use alert() directly on the response"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "View response in browser console as XML"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No need to handle the response"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97823,
+      "Explanation": "Handling a response typically involves parsing it, often by converting it to JSON, and chaining with .then() to process the data.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which content type is often needed in the headers for a POST request with JSON data?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "text/plain"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "application/xml"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "application/json"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "multipart/form-data"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97824,
+      "Explanation": "When sending JSON data in a POST request, &#39;Content-Type&#39; is usually set to &#39;application/json&#39; in the headers.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you handle errors when using fetch for a POST request?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using only the response object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using async/await instead of fetch"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By adding a catch() block after the then()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Errors cannot be handled with fetch"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97825,
+      "Explanation": "Errors can be handled using a .catch() block, which captures any errors from the fetch operation or within the promise chain.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of using the Axios library in a React application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To perform DOM manipulations"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To manage component states"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To create HTTP requests"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To manage context API"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97826,
+      "Explanation": "Axios is mainly used to create HTTP requests to interact with external APIs or services, enabling data fetching or sending data to a server.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the correct way to install Axios in a React project?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "npm install react-axios"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "npm install @react/axios"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "npm install axios"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "npm install -l axios"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97827,
+      "Explanation": "<span id=\"explanation97827\" style=\"color:blue\">The correct command to install Axios in a React project is &apos;npm install axios&apos;.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you make a GET request to &#39;https://api.example.com/data&#39; using Axios?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "axios.post(&#39;https://api.example.com/data&#39;)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "axios.fetch(&#39;https://api.example.com/data&#39;)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "axios.get(&#39;https://api.example.com/data&#39;)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "axios.request(&#39;https://api.example.com/data&#39;)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97828,
+      "Explanation": "To make a GET request with Axios, use the &#39;axios.get()&#39; method along with the URL.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which lifecycle method would you typically initiate an Axios request in a class component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "componentWillUnmount"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "componentDidMount"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "render"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "shouldComponentUpdate"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97829,
+      "Explanation": "The &#39;componentDidMount&#39; lifecycle method is the appropriate place to initiate network requests like Axios calls.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you handle errors from an Axios request?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Pass a second parameter to the request"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use a try-catch block"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Chain the request with .finally()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Chain the request with .catch()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97830,
+      "Explanation": "To handle errors from an Axios request, use the &#39;.catch()&#39; method to catch any errors that occur during the request.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method would you use with Axios to send data in the request body?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "axios.head()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "axios.patch()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "axios.get()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "axios.post()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97831,
+      "Explanation": "The &#39;axios.post()&#39; method is used to send data in the request body, commonly used for creating resources.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of value does an Axios request return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A Promise"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A string"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An observable"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A JSON object"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97832,
+      "Explanation": "Axios requests return a Promise, which can be resolved with the response data.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you set default headers for all Axios requests?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "axios.headers.common = {}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "axios.defaults.headers.common = {}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "axios.setHeaders = {}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "axios.requestHeaders = {}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97833,
+      "Explanation": "Use &#39;axios.defaults.headers.common&#39; to set default headers that will be included in every request.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How would you cancel an Axios request in progress?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "axios.cancelRequest()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Abort an HTTP request directly"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use the CancelToken API"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "axios.stop()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97834,
+      "Explanation": "You can use the CancelToken API provided by Axios to cancel requests in progress.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If you need to follow a series of dependent Axios requests, which Axios method would best facilitate this?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": ".all()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": ".spread()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": ".chain()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": ".then() and .catch()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97835,
+      "Explanation": "Chaining &#39;.then()&#39; and &#39;.catch()&#39; methods is suitable for executing dependent requests where each request depends on the outcome of the previous one.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a common use of the fetch() method in web programming?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To compile HTML code"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To read files from the local filesystem"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To make network requests"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To style web pages"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97493,
+      "Explanation": "fetch() is primarily used for making network requests to retrieve resources from a server.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following represents a POST request using the Fetch API?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "fetch(&#39;/submit&#39;, { method: &#39;GET&#39; })"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "fetch(&#39;/submit&#39;, { method: &#39;POST&#39; })"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "fetch(&#39;/submit&#39;, { method: &#39;PUT&#39; })"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "fetch(&#39;/submit&#39;, { method: &#39;DELETE&#39; })"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97494,
+      "Explanation": "Setting the &#39;method&#39; property to &#39;POST&#39; in the options object of fetch() creates a POST request.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you include credentials like cookies in a Fetch API request?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Set credentials: &#39;always&#39;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Set credentials: &#39;include&#39;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Set credentials: &#39;omit&#39;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Set credentials: &#39;same-origin&#39;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97495,
+      "Explanation": "To include credentials such as cookies in a fetch request, you set the &#39;credentials&#39; option to &#39;include&#39;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the fetch() method return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A JSON object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A promise"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An XML document"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "HTML content"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97496,
+      "Explanation": "fetch() returns a promise that resolves to the Response object representing the resource.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you handle errors in a fetch() call?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using the catch() method"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using the reject() method"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using the error() method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using the exception() method"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97497,
+      "Explanation": "Errors in fetch() can be handled by chaining a catch() method to the promise.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which status code indicates a successful HTTP request fetched with the Fetch API?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "404"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "500"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "200"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "301"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97498,
+      "Explanation": "A status code of 200 indicates that a request was successfully completed.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the Response object&#39;s clone() method in the Fetch API?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To duplicate the request URL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To create a copy of the response object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To clear the response data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To send another request to the same endpoint"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97499,
+      "Explanation": "The clone() method creates a copy of the response, allowing its body to be used multiple times.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default base URL you can set when configuring Axios?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It can be set to any valid URL as required by the API."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It must be &#39;https://api.example.com&#39;."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is permanently set to &#39;localhost&#39;."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It cannot be changed and defaults to &#39;undefined&#39;."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97473,
+      "Explanation": "The base URL for Axios requests can be set to any desired endpoint that suits the API being accessed.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you set default headers for all Axios requests?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "axios.defaults.headers.common"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "axios.setHeaders({ headerName: &#39;value&#39; })"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "axios(newHeaders)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "axios.headers.set(&#39;headerName&#39;, &#39;value&#39;)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97474,
+      "Explanation": "Default headers for Axios instances are set using &#39;axios.defaults.headers.common&#39;, allowing for defaults to be reused in all requests.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a valid Axios configuration key?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "timeout"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "auth"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "retry"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "proxy"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97475,
+      "Explanation": "&#39;retry&#39; is not a recognized configuration key for Axios, while &#39;timeout&#39;, &#39;auth&#39;, and &#39;proxy&#39; are standard configuration options.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you create an Axios instance with custom configurations?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "const instance = axios.create(config)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "const instance = new axios(config)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "const instance = axios.configure(config)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "const instance = axios.setup(config)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97476,
+      "Explanation": "To create an Axios instance with specific configurations, use &#39;axios.create(config)&#39;, where &#39;config&#39; is a configuration object.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of using Axios in web development?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To enhance database interactions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To handle HTTP requests and responses"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To improve frontend animations"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To compile JavaScript code"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97477,
+      "Explanation": "Axios is a JavaScript library used to make HTTP requests, handle responses, and manage errors in web applications.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is commonly used in Axios to send a GET request?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "axios.post()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "axios.get()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "axios.delete()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "axios.put()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97478,
+      "Explanation": "The axios.get() method is used to send a GET request to the specified URL.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you set a custom header for an Axios request?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using the url parameter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By accessing the DOM directly"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By passing headers in request config"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By modifying the query string"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97479,
+      "Explanation": "Custom headers can be set in Axios by providing a headers object in the request configuration.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What Axios feature helps to automatically transform request and response data?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Response Authentication"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Data Encryption"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Transform Request and Response"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error Handling"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97480,
+      "Explanation": "Axios has the ability to automatically transform request and response data, which allows customization of data before sending and after receiving.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about handling errors with Axios?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Axios ignores HTTP errors by default"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Axios uses the catch method for error handling"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Axios requires a third-party library for error handling"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Axios automatically logs all errors to the console"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97481,
+      "Explanation": "Axios uses promises, and errors can be caught and handled using the catch method.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Axios, which of the following properties can be used to check the status code of a response?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "response.data"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "response.statusText"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "response.status"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "response.config"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97482,
+      "Explanation": "The response.status property gives the HTTP status code of the response, allowing you to check if requests were successful.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in Axios allows you to send JSON data using POST request?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "axios.postJSON()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "axios.send()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "axios.json()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "axios.post()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97483,
+      "Explanation": "The axios.post() method is used to send JSON data as part of the request body in a POST request.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you intercept requests and responses before they are handled by then or catch?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using axios.interceptors"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using axios.before"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using axios.middleware"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using axios.interceptorBefore"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97484,
+      "Explanation": "Axios provides an interceptors object that allows you to intercept requests and responses for additional processing.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default timeout of an Axios request?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1 second"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10 seconds"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0 (no timeout)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "30 seconds"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97485,
+      "Explanation": "By default, Axios requests use a timeout of 0, which means no timeout is applied.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main purpose of using the &#39;catch&#39; method in Axios requests?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To transform request data before sending it."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To handle errors that occur during the request."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To configure request timeout settings."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To process the successful response."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 97487,
+      "Explanation": "The &#39;catch&#39; method is used to handle errors that occur during the request or response processing in Axios.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is used to access a function fetch() from h1 element in JSX?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;h1&gt;${fetch()}&lt;/h1&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;h1&gt;{fetch}&lt;/h1&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;h1&gt;${fetch}&lt;/h1&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;h1&gt;{fetch()}&lt;/h1&gt;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 85542,
+      "Explanation": "--",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A special function called a ________&nbsp;&nbsp; is written to decide how every action transforms the entire application's state in react redux.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "navigate"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "reducer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "dispatch"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 85543,
+      "Explanation": "--",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which scenario using redux is recommended for react applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "You have reasonable amounts of data changing over time"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "You need a single source of truth for your state"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "You find that keeping all your state in a top-level component is no longer sufficient"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 85545,
+      "Explanation": "--",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which library is commonly used to handle communication with web services from a React application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "react-router-dom"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "axios"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "react-redux"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "react-bootstrap"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 88838,
+      "Explanation": "<span id=\"explanation88838\">axios is a widely used promise-based HTTP client library that simplifies making requests to web services (APIs) from JavaScript applications like React. It offers a clean and consistent API for making GET, POST, PUT, DELETE, and other HTTP requests.<br>react-router-dom (Used for routing within React applications)<br>react-redux (State management library for React)<br>react-bootstrap (Component library for Bootstrap integration) </span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function is used to handle errors that occur within a promise chain in JavaScript?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "try...catch"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "resolve"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "catch"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "finally"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 88842,
+      "Explanation": "<span id=\"explanation88842\">Promises in JavaScript provide a mechanism for handling asynchronous operations. The catch method is an integral part of promise chains that allows you to gracefully handle errors that might arise during the execution of promises.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which JavaScript function allows you to specify both the request URL and the HTTP method (like GET, POST, PUT, etc.) for making requests to web services?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "window.location.href"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "fetch"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "XMLHttpRequest"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "document.URL"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 88840,
+      "Explanation": "<span id=\"explanation88840\">The fetch function is a modern and versatile API introduced in modern browsers for making asynchronous HTTP requests. It offers a cleaner and more concise syntax compared to the older XMLHttpRequest approach.<br>(a) window.location.href (Used to access the current URL)<br>(b) fetch (Modern and versatile function for making requests)<br>(c) XMLHttpRequest (Older approach for making requests)<br>(d) document.URL (Similar to window.location.href) </span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What are the three states of a Promise?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Pending, Fulfilled, Rejected"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Loading, Success, Error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Started, Completed, Failed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Initialized, Running, Finished"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 90753,
+      "Explanation": "<span id=\"explanation90753\"></span><span>A Promise starts in the pending state. From the pending state, it can transition to either Fulfilled or Rejected</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to handle a rejected Promise?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": ".then()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": ".catch()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": ".finally()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": ".resolve()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 90754,
+      "Explanation": "<span id=\"explanation90754\"><span>The catch() method in JavaScript Promises is used to handle rejections. It&apos;s a way to specify a callback function that will be executed if the Promise transitions to the rejected state.</span></span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the .finally() method in Promises?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To handle successful resolutions only."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To handle rejections only."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To execute code regardless of the Promise's outcome (resolve or reject)."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To transform the resolved value."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 90755,
+      "Explanation": "<span id=\"explanation90755\"><span>The finally() method in JavaScript Promises is used to specify a callback function that will be executed regardless of whether the Promise is fulfilled (resolved) or rejected. It&apos;s used for cleanup operations or actions that need to happen regardless of the outcome of the asynchronous operation.</span></span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a Promise is already resolved, and you attach a .then() handler to it, when will the handler execute?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Immediately, synchronously."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "As soon as the call stack is empty."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only after a certain delay."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Never."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3138,
+      "QuestionTypeId": 0,
+      "QuestionId": 90756,
+      "Explanation": "<span id=\"explanation90756\">Even though the Promise is already resolved, the .then() callback won&apos;t execute immediately in the current line of code. Instead, it will be placed in a special queue and will be executed shortly after the current synchronous block of code completes.</span>",
+      "Answer": "B",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

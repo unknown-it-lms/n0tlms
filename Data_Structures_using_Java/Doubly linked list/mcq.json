@@ -1,0 +1,1326 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Which of the following operations are performed more efficiently by doubly linked list as compared to singly linked list ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Deleting a node whose location in given"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Searching in an unsorted list for a given item"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Inverting a node after the node with given location"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Traversing a list to process each node"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 77922,
+      "Explanation": "<span id=\"explanation77922\">A&nbsp;Doubly&nbsp;Linked&nbsp;List (DLL) contains an extra pointer, typically called&nbsp;previous pointer, together with next pointer and data which are there in singly linked list.So When we&nbsp; want to delete node from Doubly Linklist we need to manage two pointers. Where as in singly linklist only one pointer&nbsp; we have to manage.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a doubly linked list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A list where each node has only one pointer to the next node."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A list where each node has two pointers, one to the next node and one to the previous node."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A list where each node is connected to all other nodes."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A list where each node has no pointers."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 88693,
+      "Explanation": "In a doubly linked list, each node contains two pointers, one pointing to the next node and the other pointing to the previous node.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you traverse a doubly linked list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Forward only"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Backward only"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both forward and backward"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 88694,
+      "Explanation": "A doubly linked list can be traversed in both forward and backward directions because each node has pointers to both the next and previous nodes.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the time complexity for inserting a node at the beginning of a doubly linked list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "O(1)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "O(n)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "O(log n)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "O(n^2)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 88695,
+      "Explanation": "Inserting a node at the beginning of a doubly linked list is a constant time operation O(1), since it only involves updating a few pointers.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the time complexity for deleting a node in the middle of a doubly linked list, given a pointer to the node?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "O(1)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "O(n)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "O(log n)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "O(n^2)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 88696,
+      "Explanation": "Given a pointer to the node to be deleted, the deletion operation in a doubly linked list is O(1) because it only involves updating the pointers of adjacent nodes.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the key advantage of a doubly linked list over a singly linked list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Requires less memory"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Simplifies backward traversal"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Easier to implement"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Faster insertion at the end"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 88697,
+      "Explanation": "The primary advantage of a doubly linked list over a singly linked list is that it simplifies backward traversal due to the presence of a previous pointer in each node.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you initialize a node with data in a doubly linked list in Java?<br>class Node {<br>&nbsp; &nbsp; int data;<br>&nbsp; &nbsp; Node next;<br>&nbsp; &nbsp; Node prev;<br>}<br>Which constructor should you use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Node(int d) { data = d; next = prev = null; }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Node(int d) { data = d; next = null; }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Node(int d) { data = d; }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Node() { }"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 88698,
+      "Explanation": "<span>The constructor initializes the node with the given data and sets both next and prev pointers to null.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you try to delete a node in a doubly linked list that does not exist?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The list is corrupted"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The program crashes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Nothing happens"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The next node is deleted"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 88699,
+      "Explanation": "<span>If you try to delete a node that does not exist, typically, the function should handle the case gracefully, and nothing should happen to the list.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of inserting a node at the end of a doubly linked list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The new node points to the head"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The new node's next pointer is null"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The new node's previous pointer is null"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The list becomes circular"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 88700,
+      "Explanation": "<span>When a new node is inserted at the end of a doubly linked list, its next pointer is set to null because it is the last node.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the time complexity of searching for an element in a doubly linked list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "O(1)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "O(n)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "O(log n)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "O(n^2)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 88701,
+      "Explanation": "Searching for an element in a doubly linked list requires traversing the list, which takes O(n) time in the worst case.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;How do you reverse a doubly linked list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Swap the next and prev pointers of each node"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Change the head to point to the last node"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use a stack to reverse the list"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use a temporary array to store the list"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 88702,
+      "Explanation": "Reversing a doubly linked list involves swapping the next and prev pointers of each node and updating the head to the last node.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the space complexity of a doubly linked list with n nodes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "O(n)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "O(2n)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "O(n log n)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "O(n^2)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 88703,
+      "Explanation": "The space complexity of a doubly linked list with n nodes is&nbsp;O(n), where each node requires a fixed amount of space.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which of the following operations is more efficient in a doubly linked list compared to a singly linked list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Searching for an element"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Inserting an element at the end"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Deleting a given node"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Traversing the list forward"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 88704,
+      "Explanation": "Deleting a given node is more efficient in a doubly linked list because we have direct access to the previous node through the prev pointer, avoiding the need to traverse the list.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you insert a new node after a given node in a doubly linked list?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&nbsp;Update the next pointer of the given node<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Update the prev pointer of the new node<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Update both the next and prev pointers of the given node and the new node<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Update the head pointer<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 88705,
+      "Explanation": "<span id=\"explanation88705\"></span><span>Inserting a new node after a given node requires updating the next and prev pointers of both the given node and the new node.</span>",
+      "Answer": "O(n), where each node requires a fixed amount of space.",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the difference between a doubly linked list and a circular doubly linked list?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A doubly linked list has nodes with two pointers, while a circular doubly linked list has nodes with three pointers."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A doubly linked list has a tail node pointing to null, while a circular doubly linked list's tail node points to the head node."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A doubly linked list can only be traversed in one direction, while a circular doubly linked list can be traversed in both directions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A doubly linked list is more memory efficient than a circular doubly linked list.<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 88706,
+      "Explanation": "<span id=\"explanation88706\">-</span>In a circular doubly linked list, the tail node&apos;s next pointer points to the head node, and the head node&apos;s prev pointer points to the tail node, making the list circular.",
+      "Answer": "Deleting a given node is more efficient in a doubly linked list because we have direct access to the previous node through the prev pointer, avoiding the need to traverse the list.",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about the head node in a doubly linked list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The head node's next pointer is always null."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The head node's prev pointer is always null."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The head node's prev pointer points to the last node."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The head node has no pointers."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 88707,
+      "Explanation": "<span>&nbsp;In a doubly linked list, the head node&apos;s prev pointer is null because there is no node before the head.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A. A doubly linked list has nodes with two pointers, while a circular doubly linked list has nodes with three pointers.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A doubly linked list has a tail node pointing to null, while a circular doubly linked list's tail node points to the head node."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A doubly linked list can only be traversed in one direction, while a circular doubly linked list can be traversed in both directions."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A doubly linked list is more memory efficient than a circular doubly linked list."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Answer: B"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 88708,
+      "Explanation": "-----------",
+      "Answer": "In a circular doubly linked list, the tail node's next pointer points to the head node, and the head node's prev pointer points to the tail node, making the list circular.",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A. The head node's next pointer is always null.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The head node's prev pointer is always null."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The head node's prev pointer points to the last node."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The head node has no pointers."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Answer: B"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 88709,
+      "Explanation": "----------",
+      "Answer": "In a doubly linked list, the head node's prev pointer is null because there is no node before the head.",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A. The list becomes empty.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The last node's next pointer is set to null."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The last node's prev pointer is set to null."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An exception is thrown."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Answer: A"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 88710,
+      "Explanation": "----------",
+      "Answer": "If a doubly linked list with only one node has its last node removed, the list becomes empty.",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A. To store additional data",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To simplify insertion and deletion operations at the boundaries"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To reduce memory usage"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To implement a circular doubly linked list"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Answer: B"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 88711,
+      "Explanation": "----------",
+      "Answer": "Dummy head or tail nodes are used in some doubly linked list implementations to simplify boundary conditions for insertion and deletion operations.",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A. Inserting a node at the beginning",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Deleting a given node"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Traversing the list to search for an element"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Inserting a node at the end (given a pointer to the tail)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Answer: C"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 88712,
+      "Explanation": "O(n) time, whereas the other operations mentioned are constant time, O(1).",
+      "Answer": "Traversing the list to search for an element typically takes",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you handle the case of deleting the head node in a doubly linked list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Set the head to null"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Update the prev pointer of the new head to null"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Update the next pointer of the tail to null"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Set the head to point to the tail"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 88713,
+      "Explanation": "When deleting the head node, the head pointer is updated to the next node, and the prev pointer of the new head is set to null.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the time required in Doubly circular linked list while jumping from head to tail and from tail to head?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "O(n)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "O(1)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "O(logn)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 86517,
+      "Explanation": "<span id=\"explanation86517\">InDoubly linked list each node has three parts left data and right. and in circlular doubly linked list last node hold address of first node so jumping from head to tail and from tail to head required O(1) time complexity.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Minimum number of fields in each node of a doubly linked list is _____________",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None Of Above."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 85522,
+      "Explanation": "<span id=\"explanation85522\">Minimum 3 Fields are required (prev,data,next) pointer which holds address of Previous node ,data, and pointer which holds address of next node. </span>",
+      "Answer": "3",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why would a text editor use a doubly linked list for managing the lines of text?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To implement syntax highlighting"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To manage frequent updates and easy access to previous and next lines"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To efficiently count the number of lines"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To support dynamic resizing of the window"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 101001,
+      "Explanation": "A doubly linked list is suitable for a text editor as it allows easy navigation to previous and next lines, and efficient insertion or deletion of lines.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can a doubly linked list be utilized in implementing an undo-redo functionality in applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By allowing direct access to any action using indexes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By storing actions as key-value pairs for lookup"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By maintaining a sequence of actions with references to the previous and next actions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By grouping actions into batches for bulk undo-redo operations"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 101002,
+      "Explanation": "In undo-redo functionality, doubly linked lists allow each action to hold references to both previous and next actions, thereby facilitating easy navigation and management.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a navigation system, a doubly linked list could be particularly beneficial for which purpose?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Calculating the shortest path between two locations"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Backtracking to previous locations during path navigation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Predicting traffic patterns"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Displaying maps in different formats"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 101003,
+      "Explanation": "A doubly linked list is useful for backtracking to previous locations because it allows traversal in both directions, which is critical in navigation systems.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is an advantage of using a doubly linked list to implement browser history?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Quick access to the oldest page visited"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Optimized search of previously visited websites"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Efficient navigation forward and backward between web pages"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Improved security through data encryption"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 101004,
+      "Explanation": "For browser history, doubly linked lists offer efficient navigation between web pages, as they can easily traverse forwards and backward through the history.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of performing a reverse traversal on a doubly linked list starting from the tail?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "All nodes are visited starting from the head to the tail."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No nodes are visited."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "All nodes are visited starting from the tail to the head."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only the first node is visited."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 101005,
+      "Explanation": "In a reverse traversal of a doubly linked list, nodes are visited starting from the tail towards the head using the previous pointers.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following operations is the most efficient to perform on a doubly linked list compared to a singly linked list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Inserting a new node at the end"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Searching for a node with a specific value"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Reversing the order of nodes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Inserting a new node at the beginning"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 101006,
+      "Explanation": "Reversing a doubly linked list is easier and more efficient because each node has pointers to both its next and previous nodes, eliminating the need to traverse from the start to keep track of the previous node.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If you delete the middle node in a doubly linked list, what operation must you perform?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Update the next pointer of the previous node to point to the next node."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Update the next pointer of the previous node and the previous pointer of the next node."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only update the previous pointer of the next node."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No pointers need updating."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 101007,
+      "Explanation": "To remove a node in a doubly linked list, you have to update the next pointer of its previous node and the previous pointer of its next node to bypass the node being deleted.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What could be a disadvantage of using a doubly linked list over a singly linked list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It requires more memory per node."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Traversal is more difficult."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "There is no advantage; singly linked lists are always better."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Cannot add elements dynamically."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 101008,
+      "Explanation": "Each node in a doubly linked list must store an additional pointer (the previous pointer), increasing the memory usage per node compared to a singly linked list.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When inserting a new node before a given node in a doubly linked list, what changes are necessary?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only the next pointer of the new node must be updated."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only the previous pointer of the given node must be updated."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both the next and previous pointers of adjacent nodes must be updated."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No pointers need updating; insertion is not possible."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 101009,
+      "Explanation": "To insert a node before a given node, the new node&#39;s pointers as well as the pointers of the given node and its previous node need updating.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operation could be more efficient in a doubly linked list compared to an array when needing to remove a node?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Removing from the middle"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Removing from the end"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Removing the first element"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Searching for an element by value"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 101010,
+      "Explanation": "The doubly linked list allows easy removal of a node since the pointers of surrounding nodes can be directly updated without needing to shift elements as required in an array.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the advantage of having a tail reference in a doubly linked list for append operations?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It helps to efficiently search for elements."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It enables faster removal of the first element."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It speeds up insertion at the end of the list."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It provides a way to maintain sorted order."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 101011,
+      "Explanation": "Having a tail reference allows direct access to the end of the list, enabling constant-time O(1) append operations, unlike starting from the head.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What must be updated when inserting a new node at the end of a doubly linked list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only the next pointer of the last node."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The previous pointer of the new node and the next pointer of the last node."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only the previous pointer of the new node."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both pointers of the new node and the head pointer."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 101012,
+      "Explanation": "To insert at the end, the previous pointer of the new node is set to the current last node, and the next pointer of the last node is set to the new node.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given a doubly linked list, which method would correctly invert the list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Traverse through the list and swap each element with its previous."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Iterate over the list and exchange &#39;next&#39; and &#39;prev&#39; pointers for all nodes."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Reverse the data in each node."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Iterate from beginning to end and set &#39;prev&#39; of head to tail and vice-versa."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 101013,
+      "Explanation": "Inverting a doubly linked list involves swapping &#39;next&#39; and &#39;prev&#39; pointers for each node.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the outcome of executing the following function on a doubly linked list?<br/>void delete(Node del) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;if (head == null || del == null) return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if (head == del) head = del.next;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if (del.next != null) del.next.prev = del.prev;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if (del.prev != null) del.prev.next = del.next;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Deletes the first element of the doubly linked list."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Deletes the last element of the doubly linked list."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Deletes a given node from the doubly linked list."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Inserts a node after the given node."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 101014,
+      "Explanation": "The function deletes a specified node from the doubly linked list, updating adjacent node pointers.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the best-case time complexity for searching an element in a doubly linked list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "O(1)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "O(n)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "O(log n)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "O(n log n)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 101015,
+      "Explanation": "In the best case, the element is at the beginning of the list, resulting in O(1) time complexity.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a doubly linked list, which of the following cases requires the least pointer adjustments?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Inserting at the end"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Inserting at the beginning"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Deleting the last node"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Deleting a middle node"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 101016,
+      "Explanation": "Inserting at the end of the doubly linked list requires updating only the last node pointers.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which methods should be used to traverse a doubly linked list from the last node to the first node?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Following &#39;next&#39; pointers starting from the tail"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Following &#39;prev&#39; pointers starting from the tail"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Following &#39;next&#39; pointers starting from the head"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Following &#39;prev&#39; pointers starting from the head"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 101017,
+      "Explanation": "To traverse from the last node to the first, you must follow &#39;prev&#39; pointers starting from the tail.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement concerning circular doubly linked lists is correct?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "There is no next node to the head."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The last node&#39;s next points to the head, and the head&#39;s prev points to the last node."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Node pointers are reduced by half."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It&#39;s impossible to traverse circularly."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 101018,
+      "Explanation": "In a circular doubly linked list, the last node&#39;s &#39;next&#39; points to the head, and the head&#39;s &#39;prev&#39; points to the last node.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the time complexity of inserting a node at the beginning of a doubly linked list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "O(1)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "O(n)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "O(log n)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "O(n log n)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 101019,
+      "Explanation": "Inserting at the beginning only requires updating the head and its adjacent nodes, which takes constant time O(1).",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not a use case for doubly linked lists?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Implementing a LRU cache"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Undo functionality in software"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Implementing a binary tree"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Navigating browser history"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4268,
+      "QuestionTypeId": 0,
+      "QuestionId": 101020,
+      "Explanation": "Doubly linked lists are not preferred for implementing binary trees as trees require child-parent relationships.",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

@@ -1,0 +1,2526 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "#include &lt;iostream&gt;<br>using namespace std;<br>void square (int *x) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *x = (*x + 1) * (*x);<br>}<br>int main ( ) {<div style=\"margin-left: 40px;\">int num = 10;</div><div style=\"margin-left: 40px;\">square(&amp;num);</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; num;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "100"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "compile time error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "144"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "110"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 64161,
+      "Explanation": "In above code num variable is passed by address. So when&nbsp; *x is changing value of num it will reflect in main.We call function by passing address of num variable so *x is nothig but value 10.<br>so value became (10+1)*10 that is 110.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen when we use void in argument passing?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will not return value to its caller"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It will return value to its caller"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Maybe or maynot return any value to its caller"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 64162,
+      "Explanation": "<span id=\"explanation64162\">A. Option a is incorrect because because void is in argument passing&nbsp; so no link with return&nbsp;&nbsp; value.<br>B. Option B is incorrect because here return type is not mention .void is in argument list.<br>C. We can&apos;t say anything about return because nothis is mention about return type.</span><br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;iostream&gt;<br>using namespace std;<br>void Sum (int a, int b, int &amp; c) {<br>&nbsp;&nbsp;&nbsp; a = b + c;<br>&nbsp;&nbsp;&nbsp; b = a + c;<br>&nbsp;&nbsp;&nbsp; c = a + b;<br>}<br>int main()<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp; int x = 2, y =3;<br>&nbsp;&nbsp;&nbsp;&nbsp; Sum(x, y, y);<br>&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; x &lt;&lt; ' ' &lt;&lt; y;<br>&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br>&nbsp;}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2 3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "6 9"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2 15"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "compile time error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 64163,
+      "Explanation": "<span id=\"explanation64163\">void Sum(int a, int b, int &amp; c)<br>{<br>//&nbsp; here a is value of x ,b is value of y, and c is reference of y<br>&nbsp;&nbsp;&nbsp; a = b + c;&nbsp;&nbsp;&nbsp;&nbsp; a is 6&nbsp; because&nbsp; 3+3<br>&nbsp;&nbsp;&nbsp; b = a + c;&nbsp;&nbsp;&nbsp;&nbsp; b is 9 &nbsp; because 6+3<br>&nbsp;&nbsp;&nbsp; c = a + b;&nbsp;&nbsp;&nbsp;&nbsp; c is 15 because 6+9<br>//&nbsp; so a became 6&nbsp; and c became 15<br>but c is reference of y so when we change, so value get reflected to main<br><br>}</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Data type which holds its own data members and member functions, which can be accessed and used by creating an instance of that class is known as",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "user defined data type"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "by default data type"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "integer data type"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "string data type"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 64170,
+      "Explanation": "<span id=\"explanation64170\">Class is user defined type, which is collection of data members and member functions.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following <br>void x( char *msg) const<br>{<br>&nbsp;&nbsp;&nbsp; msg = \u201cWelcome\u201d;<br>&nbsp;&nbsp;&nbsp; cout &lt;&lt; msg;<br>}<br>void main()<br>{<br>&nbsp;&nbsp;&nbsp; x(\u201cHello\u201d);<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Hello"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Welcome"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compile time error \u2013 Only member functions may be const or volatile"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compile time error \u2013 Can\u2019t modify a constant object"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 64177,
+      "Explanation": "If function is part of class then it can be constant because ,if fucntion is constant this fucntion can not change value of class data meber in its implementation.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the following code if user enters \u201c This is a test\u201d ?<br>#include&lt;iostream&gt;<br>#include&lt;string.h&gt;<br>using namespace std;<br>void main()<br>{<div style=\"margin-left: 40px;\">char str[8];</div><div style=\"margin-left: 40px;\">cin&gt;&gt;str;</div><div style=\"margin-left: 40px;\">cout&lt;&lt;str;</div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "This is a test"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "This is a"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "This"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 63820,
+      "Explanation": "cin skips all whitespace (spaces, tabs, new lines, etc.) by default. You can either change its behavior, or use a slightly different mechanism.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the following code?<br>#include&lt;iostream&gt;<br>using namespace std;<br>int main() {<br>&nbsp;&nbsp;&nbsp; int arr[2][3][2]={{{2,4},{7,8},{32,4},}, {{2,42},{2,34},{9,4}, }};<br>&nbsp;&nbsp;&nbsp; cout&lt;&lt;*((*((*(arr+1))+2))+0)&lt;&lt;\" \"&lt;&lt;arr[0][1][1];<br>&nbsp;&nbsp;&nbsp; return 0;<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "9 8"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "8 9"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "7 2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "2 7"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 63821,
+      "Explanation": "It is 3D Array which has 2 depths,3,rows and 2 columns.<br>*((*((*(arr+1))+2))+0)&nbsp; means we want to access element from depth with index 1, row with index 2 and column with index 0, which is 9.<br>arr[0][1][1] means we want to access element from depth 0, row 1 and column 1 which is 8",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of this program?<br>#include &lt;iostream&gt;<br> using namespace std;<br>void copy (int a, int&amp; b, int&amp; c)<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a *= 2;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b *= 2;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c *= 2;<br>}<br>int main ()<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int x = 1, y = 3, z = 7;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; copy (x, y, z);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; \"x =\" &lt;&lt; x &lt;&lt; \" y =\"&lt;&lt; y &lt;&lt; \" z =\" &lt;&lt; z;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br>&nbsp;}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2 6 14"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2 4 5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1 6 14"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 63826,
+      "Explanation": "Reference is just new name or nick name to original variable so whatever changes we are doing with reference it will automatically reflect in original,as the copy function is called by reference the value of y and z get modified in copy function hence output is 1, 6 and 14.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of this program?<br>#include &lt;iostream&gt;<br>using namespace std;<br>class sample&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp; private:<br>&nbsp;&nbsp;&nbsp;&nbsp; int var;<br>&nbsp;&nbsp;&nbsp;&nbsp; public:<br>&nbsp;&nbsp;&nbsp;&nbsp; void input() {<br>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; var;<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp; void output()&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; \"Variable entered is \";<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; var &lt;&lt; \" \";<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>};<br>int main()<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp; sample object;<br>&nbsp;&nbsp;&nbsp;&nbsp; object.input();<br>&nbsp;&nbsp;&nbsp;&nbsp; object.output();<br>&nbsp;&nbsp;&nbsp;&nbsp; object.var;<br>&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Enter an integer 5 Variable entered is 5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "runtime error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compile time error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 64064,
+      "Explanation": "<span id=\"explanation64064\">Compile time error because we can not access private variable outside of class.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Constructors are used to",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "initalize the objects"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "construct the data members"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "both a &amp; b"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "static function<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 64051,
+      "Explanation": "Constructor are used to construct the objects i.e. nothing but the initialisation of objects.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is correct about class and structure?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Class cannot have member functions while structure cannot."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Class data members are public by default while that of structure are private."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Pointer to structure or classes cannot be declared."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Class data members are private by default while that of structure are public by default."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 64229,
+      "Explanation": "struct is also used in CPP which is same like as class . But in class all data members are by default private and in structure all member are public.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is correct to declare constant pointer",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "const * int ptr"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "const int *ptr"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int *const ptr<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int *ptr const<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 64214,
+      "Explanation": "&nbsp;here it will be&nbsp;ptr is constant and pointer to integer.&nbsp; So by the name it is clear that ptr is constant so we cannot change the value of ptr.  <br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the following?<br>#include &lt;iostream&gt;<br>using namespace std;<br>template&lt;typename type&gt;<br>class Test&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Test()&nbsp;&nbsp; {&nbsp;&nbsp; &nbsp;};<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ~Test()&nbsp;&nbsp; &nbsp;{&nbsp;&nbsp;&nbsp; &nbsp;};<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; type Funct1(type Var1)&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return Var1;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; type Funct2(type Var2)&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return Var2;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>};<br>int main() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Test&lt;int&gt; Var1;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Test&lt;float&gt; Var2;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; Var1.Funct1(200) &lt;&lt; endl;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; Var2.Funct2(3.123) &lt;&lt; endl;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "200<br>3.123"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "200"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3.123"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "3.123<br>200"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 64215,
+      "Explanation": "<span id=\"explanation64215\">In Above code Funct1 is called which will return 200 value , and we are printing it&apos;s value 200&nbsp; and next time&nbsp; Funct2 is called which will return 3.12 values, and we are printing it&apos;s value that is 3.13</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What will be the output of the program ?</div><div>#include&lt;iostream&gt;<br>using namespace std;<br></div><div>int main()</div><div>{</div><div style=\"margin-left: 40px;\">float arr[] = {12.4, 2.3, 4.5, 6.7};</div><div style=\"margin-left: 40px;\">cout&lt;&lt; \"\"&lt;&lt;sizeof(arr)/sizeof(arr [0]);</div><div style=\"margin-left: 40px;\">return 0;</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "7"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 64190,
+      "Explanation": "In above code sizeof(arr) is 16 bytes becaue arr is array of 4 float variable. and sizeof(arr[0]) is size of one float varibale that is 4 bytes. so answer is 16/4 = 4<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>#include&lt;iostream&gt;</div><div>using namespace std;<br>void main()<br></div><div>{</div><div style=\"margin-left: 40px;\">int x=10;</div><div style=\"margin-left: 40px;\">(x&lt;0)?(int a =100):(int a =1000);</div><div style=\"margin-left: 40px;\">cout&lt;&lt;a;</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1000"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "100"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 64197,
+      "Explanation": "While using ternary operators there must&nbsp; be executable statement . Declarative statements not allowed int a=100 is not allowed.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>&nbsp;What is the output of the following code</div><div>#include&lt;iostream&gt;</div><div>using namespace std;<br></div><div>void main()</div><div>{</div><div style=\"margin-left: 40px;\">int arr[] = {10,20,30,40,50};</div><div style=\"margin-left: 40px;\">int *ptr = arr;</div><div style=\"margin-left: 40px;\">cout&lt;&lt; ++*ptr&lt;&lt;\"&nbsp;&nbsp; \"&lt;&lt;*ptr;</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "11 11"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "20 20"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "10 10"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of these"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 64201,
+      "Explanation": "*ptr=arr is pointer to an array . So *ptr is element at first location(10)&nbsp; and ++*ptr is&nbsp; 11 ,So answer is 11 and 11.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>&nbsp;What is the output of the following code</div><div>#include&lt;iostream&gt;</div><div>using namespace std;</div><div>void main() {</div><div style=\"margin-left: 40px;\">int arr[] = {10,20,30,40,50};</div><div style=\"margin-left: 40px;\">int *ptr = arr;</div><div style=\"margin-left: 40px;\">cout&lt;&lt; ++*ptr&lt;&lt;\"&nbsp;&nbsp; \"&lt;&lt;*ptr;</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "11 11"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "20 20"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "10 10"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of these"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 64202,
+      "Explanation": "<span id=\"explanation64202\">*ptr=arr is pointer to an array . So *ptr is element at first location(10)&nbsp; and ++*ptr is&nbsp; 11 ,So answer is 11 and 11.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C++, A function call can stand onto the left hand side of assignment operator if-",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A function is returning variable by reference"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A function is returning variable by address"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A function is returning variable by value"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "If return type of function is void"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 64253,
+      "Explanation": "If function is returning&nbsp; reference variable , then function call can stand onto the left hand side of assignment operator.<br>#include&lt;iostream&gt;<br>using namespace std;<br>int a=0;<br>int&amp; Check(int x,int y){<div style=\"margin-left: 40px;\">return a;<br></div><div>}<br>int main() {<br></div><div style=\"margin-left: 40px;\">int x=0,y=0;<br>Check(x,y)=100;<br>cout&lt;&lt;\" \"&lt;&lt;x&lt;&lt;\" \"&lt;&lt;y;<br>return 0;<br></div><div>}<br></div>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following line has all reserved words?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "inheritance, goto, return, extern, private, public, protected"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "char, int, float, derieved, short, long, unsigned, signed"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "if, else, for, while do, switch, continue, break"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "sizeof, const, typedef, static, voided, enum, struct, union<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 64261,
+      "Explanation": "Keyword&nbsp;is a predefined or reserved word in&nbsp;C++&nbsp;library with a fixed meaning and used to perform an internal operation.&nbsp;<br>1. In First set inheritance is not keywords.<br>2. in second set derived is not keyword.<br>3. all of these are keywords.<br>4. in fourth set voided is not keyword.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What is the output of the program?&nbsp;</div><div>#include &lt;iostream&gt;<br>using namespace std ;<br></div><div>float cal (float value)&nbsp; {<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp; return (3 * value);<br>}<br>void main() {<br></div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp; int a = 10;<br></div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp; float b = cal ('123');<br></div><div>}<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "369"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "123"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 64263,
+      "Explanation": "Function \"cal\"&nbsp; required float value and while calling function arguments are mismatched. so compilation error.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<span style=\"color:#50484f\">':</span><span style=\"color:#625b62\">:</span><span style=\"color:#50484f\">'</span><span style=\"color:#50484f\"> &nbsp;can be used as an unary operator in C++</span>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Can't Say"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<span style=\"color:#50484f\">Can be used in C but not in C++</span>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 70826,
+      "Explanation": "The scope resolution operator can be used as both unary and binary. You can use the unary scope resolution operator if a namespace scope or global scope name is hidden by a particular declaration of an equivalent name during a block or class.<br>Example:<br>if you have a global variable of name my_var and a local variable of name my_var, to access global my_var, you&apos;ll need to use the scope resolution operator i.e.&nbsp;&nbsp;&nbsp; ::my_var",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<p style=\"margin-left:0in; margin-right:0in\"><span style=\"color:#504850\">How can we overload postfix version of operator++?</span></p>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<span style=\"color:#504850\">void operator++() { }</span>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<span style=\"color:#504850\">void operator++(int) { }</span>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<span style=\"color:#504850\">void </span><span style=\"color:#504850\">o</span><span style=\"color:#504850\">pe</span><span style=\"color:#504850\">r</span><span style=\"color:#504850\">a</span><span style=\"color:#504850\">t</span><span style=\"color:#504850\">o</span><span style=\"color:#504850\">r</span><span style=\"color:#504850\">+</span><span style=\"color:#504850\">+</span><span style=\"color:#504850\">(</span><span style=\"color:#504850\">i</span><span style=\"color:#504850\">n</span><span style=\"color:#504850\">t</span><span style=\"color:#504850\">,</span><span style=\"color:#504850\"> int) { }</span>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<span style=\"color:#504850\">void operator++(float)</span>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 70828,
+      "Explanation": "Overoading postfix operator require special input parameter int ,to distinguish between prefix and postfix operator.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<p>class ABC<br>{};<br>void&nbsp; main() {<br>&nbsp;&nbsp; &nbsp;ABC *ob = 0;<br>&nbsp;&nbsp; &nbsp;delete ob;<br>}</p>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compile time error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Runtime error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Run successfully"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Memory related error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 70829,
+      "Explanation": "ABC *ob = 0; declares a pointer ob of type ABC* and initializes it to nullptr (or 0 in older C++ syntax, which is equivalent to nullptr).<br>delete ob; attempts to delete the pointer ob.<br>In C++, it is safe to call delete on a nullptr. The delete operator checks if the pointer is nullptr before attempting to free memory. If the pointer is nullptr, delete does nothing and returns safely.<br>Therefore, the code will compile and run without any errors or issues.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "cout is an _________",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "operator"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "macro"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 70852,
+      "Explanation": "cout is an object of class ostream",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statement is correct ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A reference is stored on heap."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A reference is stored on stack."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A reference is stored in a queue."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A reference is stored in a binary tree.<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 64329,
+      "Explanation": "References are the third basic type of variable that C++ supports. A&nbsp;reference&nbsp;is a type of C++ variable that acts as an alias to another object or value.And varibles stores on stack. <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When struct is used instead of the keyword class means, what will happen in the program?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "access is public by default"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "access is private by default"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "access is protected by default"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 64361,
+      "Explanation": "Structure is also used in CPP. But all membes are public by default.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The members of a class, by default, are",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "protected"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "private"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Mandatory to specify"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 73790,
+      "Explanation": "In cpp all members of class are default private.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The implicit argument passed to a member function of a C++ class is called as",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "\u201cthis\u201d pointer"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "\u201csender\u201d object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "\u201cimplicit\u201d pointer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "\u201cme\u201d object"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 73791,
+      "Explanation": "this is pointer in CPP which represents current object.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Where can the default parameter be placed by the user?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "leftmost"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "rightmost"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "both a &amp; b"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 73794,
+      "Explanation": "we can provide default values to function from right to left. <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Format flags may be combined using",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "the bitwise OR operator (|)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "the logical OR operator (||)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "the bitwise AND operator (&amp;)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "the logical AND operator (&amp;&amp;)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 73867,
+      "Explanation": "my explaination 2",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output if the input provided is 5?<br>#include &lt; iostream&gt;<br>using namespace std;<br>int a = 1000;<br>class Test<br>{<br>&nbsp;&nbsp; int a;<br>&nbsp;&nbsp; public:<br>&nbsp; Test()<br>&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp; a = 0;<br>&nbsp; }<br>&nbsp; void get_a()<br>&nbsp;{<br>&nbsp;&nbsp;&nbsp; int a;<br>&nbsp;&nbsp;&nbsp; cout &lt;&lt; \u201cEnter Value of A :\u201d;<br>&nbsp;&nbsp;&nbsp; cin &gt;&gt; a;<br>&nbsp; }<br>&nbsp; void put_a()<br>&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; endl &lt;&lt; a &lt;&lt; \u201c \u201d &lt;&lt; ::a;<br>&nbsp; }<br>};<br>void main()<br>{<br>&nbsp;&nbsp; Test t1;<br>&nbsp;&nbsp; t1.get_a();<br>&nbsp;&nbsp; t1.put_a();<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0 0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0 1000"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "5 1000"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compile time error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 73871,
+      "Explanation": "get_a function has local member a&nbsp; value is not assign to class member a. So put_a() function will print a which is class members values which is assign be default constructor that is 0. and ::a will print value which is globle value 1000<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What will be the output of the program?</div><div>#include&lt;iostream&gt;<br>using namespace std;<br>int i;<br>void fun();<br>int main()&nbsp; {<br>&nbsp;&nbsp;&nbsp; while (i)&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fun();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; main();<br>&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp; cout&lt;&lt;\"Hello \";<br>&nbsp;&nbsp;&nbsp; return 0;<br>}<br>void fun()<br>{<br>&nbsp;&nbsp;&nbsp; cout&lt;&lt;\"Hi\";<br>}<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Hello"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hi Hello"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No output"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Infinite loop"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 73718,
+      "Explanation": "Here i is global variable having initial value 0<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statement is correct about the references?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A reference must always be initialized within functions."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A reference must always be initialized outside all functions."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A reference must always be initialized."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both A and C."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 71196,
+      "Explanation": "Reference is nick name , reference doesn&apos;t required seperate memory . It shares the same memory which is available for original variable.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the following code if user enters \u201c This is a test\u201d ?<br>#include&lt;iostream&gt;<br>using namespace std;<br>void main()&nbsp; {<br>char str[8];<br>cin&gt;&gt;str;<br>cout&lt;&lt;str;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "This is a test"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "This is a"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "This"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 73335,
+      "Explanation": "<span id=\"explanation73335\">cin skips all whitespace (spaces, tabs, new lines, etc.) by default. You can either change its behavior, or use a slightly different mechanism. To change its behavior, use the manipulator noskipws, as follows:<br>&nbsp;cin &gt;&gt; noskipws &gt;&gt; a[i];</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following keywords do you think can be used when declaring static members in a class?<br>(i) Public<br>(ii) Private<br>(iii) Protected",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "i, ii and iii."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "i and ii."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only i"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "i and iii."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 73337,
+      "Explanation": "Access specifiers will not give you error while defining the static member. Access specifiers control the access of the member variables.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In case of a copy constructor, which of the following is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Used to instantiate an object from another existing object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To copy one object to another existing object."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Can be a substitute for a \u2018=\u2019 operator."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 73338,
+      "Explanation": "<p>The copy constructor is a constructor which creates an object by initializing it with an object of the same class, which has been created previously. The copy constructor is used to:<br>Initialize one object from another of the same type.<br>Copy an object to pass it as an argument to a function.<br>Copy an object to return it from a function. <br></p>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<strong>#include&lt;iostream&gt;<br>using namespace std;</strong><br>void execute(int x, int y = 200) {<div style=\"margin-left: 40px;\">&nbsp; int temp = x + y;<br>&nbsp; x += temp;<br>&nbsp; if (y != 200)<br>&nbsp;&nbsp;&nbsp; cout &lt;&lt; temp &lt;&lt; \"&nbsp; \" &lt;&lt; x &lt;&lt; \"&nbsp; \" &lt;&lt; y &lt;&lt; \"&nbsp; \" &lt;&lt; endl;<br></div>}<br>int main() {<div style=\"margin-left: 40px;\">&nbsp; int a = 50, b = 20;<br>&nbsp; execute(b);<br>&nbsp; cout &lt;&lt; a &lt;&lt; \"&nbsp; \" &lt;&lt; b &lt;&lt; \"&nbsp; \" &lt;&lt; endl;<br>&nbsp; execute(a, b);</div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2202050<br>50 20"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "50 20<br>70 120 20"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "20 200"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 71161,
+      "Explanation": "&nbsp;1. in first fucntion call b variable is pass so second variable is from default parameter so call is execute(20,200) where we are not returnring anything and condition in fucntion is also false so no change in values.<br>2. In second call two values are passed so call is as execute(a,b) so condition is satisfy and it will print value of temp,x and y.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which header file is needed to use 'cin' and 'cout' in a C++ program?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "#include <string>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "#include <iostream>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "#include <iomanip>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "#include <cstdio>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93542,
+      "Explanation": "&apos;cin&apos; and &apos;cout&apos; are part of the iostream library, so you need to include <iostream>.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of the 'cin' object in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To output text to the console"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To perform file operations"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To handle error messages"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To read input from the standard input device"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93543,
+      "Explanation": "&apos;cin&apos; is used to read data input by the user from the standard input device (usually the keyboard).",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What operator is used with 'cin' to stream data into variables?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": ">>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<<"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": ":>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<:"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93544,
+      "Explanation": "The &apos;>>&apos; operator is used with &apos;cin&apos; to extract data from the input stream and store it in variables.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following correctly uses 'cout' to display 'Hello, World!'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "cout << 'Hello, World!' << endl;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "cout >> 'Hello, World!' >> endl;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "cout << \"Hello, World!\" << endl;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "cout >> \"Hello, World!\" >> endl;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93545,
+      "Explanation": "String literals in C++ should be enclosed in double quotes, and &apos;<<&apos; is the correct operator to insert data into the output stream using &apos;cout&apos;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If 'int a;' is declared and you perform 'cin >> a;' but input is 'abc', what happens?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "a is assigned the ASCII value of 'a'"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "a is assigned 0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Input operation fails, and a retains its previous value"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Program crashes"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93546,
+      "Explanation": "When non-numeric data is input for an integer variable, the input operation fails, and the variable retains its prior value. Additionally, the &apos;cin&apos; object might be in an error state.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of the following code? 'cout << 5 + 10 << endl;'",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "15"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93547,
+      "Explanation": "The expression &apos;5 + 10&apos; evaluates to &apos;15&apos;, which is then sent to the output stream using &apos;cout&apos;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which flag can be used with 'cout' to format output as fixed-point notation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "std::boolalpha"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "std::scientific"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "std::fixed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "std::hex"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93548,
+      "Explanation": "The &apos;std::fixed&apos; flag is used to format numerical output as fixed-point notation.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What kind of operator is '<<' in the context of using 'cout'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Assignment operator"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Stream insertion operator"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Stream extraction operator"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Bitwise operator"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93549,
+      "Explanation": "The &apos;<<&apos; operator is known as the stream insertion operator, used to insert data into the output stream with &apos;cout&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you chain multiple outputs in a single 'cout' statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using commas between them"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using semicolons between them"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using the '<<' operator between them"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Not possible with a single 'cout' statement"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93550,
+      "Explanation": "You can chain multiple outputs in a single &apos;cout&apos; statement by using &apos;<<&apos; between each item you want to output.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which object can be used along with 'cout' to insert a newline after the output?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "std::endl"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "std::macro"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "std::exit"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "std::flush"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93551,
+      "Explanation": "The &apos;std::endl&apos; manipulator is used with &apos;cout&apos; to insert a newline and flush the stream.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a default parameter in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A parameter that must be provided by the user each time a function is called."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A parameter that has a predefined value and can be omitted when calling a function."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A parameter that changes its value every time the function is called."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A parameter that is used only in constructors."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93552,
+      "Explanation": "A default parameter in C++ is a function parameter that is given a default value and does not need to be explicitly passed by the caller.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Where should default parameters be specified in a function definition?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "At the beginning of the parameter list."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "In the middle of the parameter list."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "At the end of the parameter list."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Default parameters can be specified anywhere in the parameter list."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93553,
+      "Explanation": "Default parameters must be specified at the end of the parameter list because once a default value is defined for a parameter, all subsequent parameters must also have default values.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given the function signature 'void foo(int x, int y = 10);', which call is valid?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "foo(5, 3);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "foo();"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "foo(5, , 3);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "foo(5);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93554,
+      "Explanation": "The call &apos;foo(5);&apos; is valid because it uses the default value for &apos;y&apos;. &apos;foo(5, 3);&apos; is also valid, but it&apos;s not presented as an option.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using default parameters in a header file, where should the default value be specified?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "In the function declaration inside the header file."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "In the function definition inside the source file."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both A and B are correct."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Default parameters cannot be used in header files."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93555,
+      "Explanation": "The default value must be specified in the function declaration in the header file, not in the definition in the source file.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following best describes a scenario where default parameters are useful?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When a function always requires multiple parameters without exceptions."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When a function may be used with one or more standard values but allows customization if needed."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When overloading is used extensively in a program."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When a function does not take any parameters."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93556,
+      "Explanation": "Default parameters are useful when a function can be called with typical values but can be customized by providing specific values.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about default parameters in C++ is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Default parameters can only be used with non-member functions."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Default parameters allow function overloading."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Default parameters must be provided at the function definition in the source file."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Default parameters reduce the need for overloading similar functions."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93557,
+      "Explanation": "Default parameters reduce the need for multiple overloaded functions by allowing certain parameters to have common default values.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider the following code: 'void print(int a, int b = 5); int main() { print(10); }'. What will this code output?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10 0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "10 5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error: No matching function for call to 'print()'"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93558,
+      "Explanation": "The function &apos;print&apos; is called with a single argument &apos;10&apos;, and the default value &apos;5&apos; is used for &apos;b&apos;, so it outputs &apos;10 5&apos;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can default parameters be used in templates?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, default parameters can be used with any type of functions including templates."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, default parameters cannot be used with templates."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, but they are only allowed at the template level, not function level."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Yes, but only with function templates and not class templates."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93559,
+      "Explanation": "Default parameters can be used with templates, allowing parameters to have default values even within template functions and classes.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you provide a call to a function with more arguments than specified, assuming some parameters have default values?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The compiler ignores the extra arguments."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The additional arguments override the default values."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A compile-time error is generated."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The extra arguments are considered as unused and discarded."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93560,
+      "Explanation": "Providing extra arguments overrides the default values for those parameters in the function call.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a function with default parameters, how can you ensure a non-default parameter is always required by the caller?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Place it at the end of the parameter list."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Place it at the beginning of the parameter list before any default parameters."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Assign it a default value of 0."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Declare it as a const parameter."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93561,
+      "Explanation": "Non-default parameters must be placed before default parameters so they are required to be explicitly provided by the caller.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a reference variable in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A variable that refers to an integer value"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An alias for another variable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A constant pointer to a variable"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An operator that manages memory"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93562,
+      "Explanation": "In C++, a reference is an alias for an already existing variable, allowing indirect access to that variable under a different name.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How is a reference variable initialized in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using the '&' operator"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using the '*' operator"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using the '=' operator"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By using the '->' operator"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93563,
+      "Explanation": "A reference variable in C++ is initialized with the &apos;&&apos; operator, which is used to create an alias for another variable.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement about C++ references is false?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "References must be initialized when declared"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "References can be reassigned after being initialized"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "References are not objects"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "References are implemented using pointers"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93564,
+      "Explanation": "Unlike pointers, once a reference is initialized to an object, it cannot be changed to refer to another object.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you try to create a reference to a literal directly in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compile-time error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Creates a reference successfully"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Results in undefined behavior"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Creates a copy of the literal"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93565,
+      "Explanation": "References must be initialized with a variable, not with a literal value, leading to a compile-time error if attempted otherwise.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following syntax is correct for declaring a reference variable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int &ref = 10;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int *ref = &a;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int &ref = a;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int &ref;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93566,
+      "Explanation": "The correct syntax for declaring a reference variable is using the &apos;&&apos; symbol followed by the variable name to assign it to a previously declared variable.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of reference variables in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To facilitate dynamic memory allocation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To provide aliases for existing variables"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To access private data members"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To manage multithreading tasks"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93567,
+      "Explanation": "Reference variables provide an alias or alternative name to access an existing variable, offering a way to indirectly modify the variable.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can a reference variable in C++ refer to a null value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only with special syntax"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Depending on the compiler"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93568,
+      "Explanation": "References in C++ cannot be null. They must be initialized to refer to a valid object or variable since they are not separate objects like pointers.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is one key difference between a pointer and a reference in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Pointers are aliases; references are addresses"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "References must be initialized; pointers can be uninitialized"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Pointers can be reassigned; references cannot"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "References can be incremented; pointers cannot"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93569,
+      "Explanation": "One key difference is that pointers can be reassigned to different addresses during their lifetime, whereas a reference must remain bound to the object it initially refers to.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why can't you change what a reference refers to after its initialization?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Because they point to memory addresses"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Due to their nature as constant pointers"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Since they are not actual variables themselves"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Because they're tied to an object's lifecycle"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93570,
+      "Explanation": "References are not separate memory objects; they are just aliases. Thus, the reference itself can&apos;t be changed to refer to another object.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which scenario would you use a reference variable instead of a pointer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When you need a modifiable, re-assignable address"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When implementing dynamic arrays"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "If you require an alias without null-checking"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "If you want to store the variable's address in a different variable"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93571,
+      "Explanation": "Use references when you need an alias that doesn&apos;t require null-checking or re-assignment, providing a safer option than pointers in some scenarios.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the 'new' operator in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To create a copy of an existing object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To allocate memory dynamically for a variable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To delete a pointer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To initialize a static variable"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93572,
+      "Explanation": "The &apos;new&apos; operator in C++ is used to allocate memory dynamically on the heap for a variable or object.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about the 'delete' operator?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It initializes a variable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It allocates memory for an array"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It frees the memory allocated by the 'new' operator"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It changes a variable's data type"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93573,
+      "Explanation": "The &apos;delete&apos; operator in C++ is used to free the memory that was previously allocated using the &apos;new&apos; operator.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you use 'delete' on a pointer that points to a local variable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The local variable is deleted"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Undefined behavior occurs"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The program crashes immediately"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The memory is freed"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93574,
+      "Explanation": "Using &apos;delete&apos; on a pointer that points to a local variable leads to undefined behavior because such memory is not allocated by &apos;new&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you properly deallocate an array of integers allocated using 'new'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "delete arr[];"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "delete *arr;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "delete &arr;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "delete[] arr;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93575,
+      "Explanation": "To deallocate memory allocated for an array using &apos;new&apos;, you should use &apos;delete[]&apos; followed by the pointer.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is memory leak in the context of using 'new' and 'delete'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When memory is allocated using 'new' but not released using 'delete'."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When 'delete' is used without 'new'"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When 'new' and 'delete' are used together"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When a program crashes due to stack overflow"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93576,
+      "Explanation": "Memory leak occurs when memory is allocated using &apos;new&apos; but not released when it is no longer needed, leading to wastage of resources.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following correctly initializes an integer pointer with memory allocated by 'new'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int* ptr = new int();"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int* ptr = new int;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int ptr = *new int;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int ptr = new *int;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93577,
+      "Explanation": "Option B correctly initializes an integer pointer with memory allocated dynamically using &apos;new&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the return value of 'new' if it fails to allocate memory?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A null pointer"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An exception is thrown"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It returns zero"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The program automatically terminates"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93578,
+      "Explanation": "If &apos;new&apos; fails to allocate the requested memory, it throws a std::bad_alloc exception.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which C++ feature largely eliminates the need to explicitly use 'new' and 'delete'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "C++ Templates"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Smart Pointers"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Lambda expressions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Macros"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93579,
+      "Explanation": "Smart pointers in C++, like std::unique_ptr and std::shared_ptr, can manage memory automatically, largely eliminating the need to manually use &apos;new&apos; and &apos;delete&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If 'new' successfully allocates memory but the constructor throws an exception, what will happen?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The object is half-constructed"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The allocated memory is automatically released"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The program crashes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Memory leak occurs"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93580,
+      "Explanation": "If &apos;new&apos; allocates memory but the constructor throws an exception, the memory is automatically deallocated, preventing memory leaks.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a correct statement to delete a pointer to an integer allocated by 'new'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "delete *ptr;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "delete ptr;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "delete &ptr;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "delete[] ptr;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 93581,
+      "Explanation": "Option B is the correct statement to delete a pointer to an integer allocated by &apos;new&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which of the following is correct about this pointer in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "this pointer is passed as a hidden argument in all the functions of a class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "this pointer is passed as a hidden argument in all non-static functions of a class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "this pointer is passed as a hidden argument in all static functions of a class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "this pointer is passed as a hidden argument in all static variables of a class"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 87475,
+      "Explanation": "this pointer is passed as a hidden argument in all non static variables of a class<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What is std in C++?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "std is a standard class in C++ <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "std is a standard namespace in C++"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "std is a standard header file in C++ <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "std is a standard file reading header in C++ <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 87477,
+      "Explanation": "std is a standard namespace present in C++ which contains different stream classes and objects like cin, cout, etc. and other standard functions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;iostream&gt;<br>int main(int argc, char const *argv[])<br>{<br>&nbsp;&nbsp; &nbsp;cout&lt;&lt;\"Hello World\";<br>&nbsp;&nbsp; &nbsp;return 0;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Hello World"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hello<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Hello world<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Run-time error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 87478,
+      "Explanation": "cout is defined under the namespace std and without including std namespace we cannot cout, therefore, the program gives an error.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include&lt;iostream&gt;<br>using namespace std;<br>int x = 1;<br>int main()<br>{<br>&nbsp;&nbsp;&nbsp; int x = 2;<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int x = 3;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; ::x &lt;&lt; endl;<br>&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp; return 0;<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "123<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 87479,
+      "Explanation": "While printing x we are using :: operator hence the refernce is given to global variable hence the global variable x = 1 is printed.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include&lt;iostream&gt;<br>using namespace std;<br>class A<br>{<br>&nbsp; ~A(){<br>&nbsp;&nbsp;&nbsp; cout&lt;&lt;\"Destructor called \";<br>&nbsp; }<br>};<br>int main()<br>{<br>&nbsp;&nbsp;&nbsp; A a;<br>&nbsp;&nbsp;&nbsp; return 0;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Destructor called"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Nothing will be printed"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Segmentation fault"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 87480,
+      "Explanation": "&nbsp;Whenever a destructor is private then one should not define any normal object as it will be destroyed at the end of the program which will call destructor and as destructor is private the program gives error during compile while in case of pointer object the compiler at compile does not know about the object, therefore, does not gives compile error. Hence when the destructor is private then the programmer can declare pointer object but cannot declare a normal object.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the delete operator in C++?&nbsp;<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To remove elements from a container."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To deallocate memory for an object or array allocated with new."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To remove a function from a class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To delete a file from the file system."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 94480,
+      "Explanation": "To deallocate memory for an object or array allocated with new.&nbsp;&nbsp;",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the difference between delete and delete[] in C++?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "delete is syntactically correct but delete[] is wrong and hence will give an error if used in any case"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": " delete is used to delete normal objects whereas delete[] is used to pointer objects"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "delete is a keyword whereas delete[] is an identifier"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "delete is used to delete single object whereas delete[] is used to multiple(array/pointer of) objects"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 145,
+      "QuestionTypeId": 0,
+      "QuestionId": 94481,
+      "Explanation": "Explanation: delete is used to delete a single object initiated using new keyword whereas delete[] is used to delete a group of objects initiated with the new operator.",
+      "Answer": "D",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

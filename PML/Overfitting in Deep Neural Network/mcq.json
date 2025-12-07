@@ -1,0 +1,996 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is the primary purpose of implementing early stopping in training deep neural networks?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To increase the training dataset"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To prevent overfitting"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To decrease model complexity"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To improve computational efficiency"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 98319,
+      "Explanation": "Early stopping is a regularization technique used to prevent overfitting by stopping the training process once the validation performance starts to degrade.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "At which point during the training of a neural network should the early stopping mechanism halt the process?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When the training accuracy reaches 100%"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When the loss on the validation set begins to increase"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When the loss on the training set begins to decrease"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When the testing accuracy goes below 50%"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 98320,
+      "Explanation": "Early stopping monitors the loss on the validation set and halts training once this loss begins to increase, indicating potential overfitting.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about early stopping is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It increases the model&#39;s risk of underfitting"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It requires the model be trained on a larger dataset"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It requires a separate validation dataset to monitor performance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It stops training when the training loss stops improving"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 98321,
+      "Explanation": "Early stopping typically uses a separate validation dataset to assess the model performance, ensuring it doesn&#39;t overfit to the training data.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does early stopping contribute to the efficiency of training deep neural networks?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It reduces the amount of data needed for training"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It eliminates the need for data preprocessing"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It decreases the total number of training epochs"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It increases the speed of the network&#39;s computation"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 98322,
+      "Explanation": "Early stopping can help reduce the number of epochs required by halting training once overfitting begins, thereby saving computational resources.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which hyperparameter setting is crucial for effectively implementing early stopping?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Batch size"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Learning rate"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Patience"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Number of layers"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 98323,
+      "Explanation": "The &#39;patience&#39; hyperparameter determines how many epochs to wait after the last improvement in validation loss before stopping training. It helps in balancing between stopping early and giving the model more chances to improve.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of using dropout in a deep neural network?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To improve training speed"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To prevent overfitting"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To increase the model&#39;s complexity"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To enhance the activation functions"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 98324,
+      "Explanation": "Dropout is a regularization technique used in deep neural networks to prevent overfitting during training by randomly dropping units, along with their connections.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "During training with dropout, what is the main action performed on neurons in a network?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Scaling up the weight values"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Zeroing out the weights"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Randomly setting some neurons to zero"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Duplicating neuron weights"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 98325,
+      "Explanation": "Dropout randomly sets some neurons&#39; output to zero during training, which helps in preventing the network from becoming too reliant on any particular neuron.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the typical range for dropout rate in a deep learning model during training?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0.0 to 0.2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0.3 to 0.7"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0.8 to 1.0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "0 to 1.5"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 98326,
+      "Explanation": "A dropout rate between 0.3 and 0.7 is commonly used, as it effectively balances variance and bias by dropping enough units to prevent overfitting but not so many that the model cannot learn appropriately.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens to the dropout rate during the testing phase in a neural network utilizing dropout?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is increased to ensure robustness"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It is decreased to fine-tune predictions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is set to zero"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It remains the same as during training"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 98327,
+      "Explanation": "During testing, dropout is typically turned off, meaning all neurons are used, and their outputs are not randomly set to zero. Dropout is only needed during training to prevent overfitting.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following best describes the main objective of L1 regularization in neural networks?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To minimize the squared difference between predicted and actual values"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To prevent model complexity by adding a penalty equivalent to the absolute value of coefficients"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To ensure weights are strictly positive"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To maximize the likelihood function"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 98328,
+      "Explanation": "L1 regularization aims to prevent model complexity and reduce overfitting by adding a penalty equal to the absolute value of the coefficients to the loss function.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a key characteristic of L2 regularization?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It promotes sparsity in weight matrices"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It discourages large weights by penalizing their square"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It always results in zero weights"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is preferable for models with very large features"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 98329,
+      "Explanation": "L2 regularization discourages large weights by adding a penalty which is the square of the magnitude of coefficients, thus effectively reducing overfitting.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary difference between L1 and L2 regularization?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "L1 uses squared errors, L2 uses absolute errors"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "L1 penalizes using the absolute values of weights, L2 penalizes using squared values"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "L1 is differentiable, L2 is not"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "L1 decreases model complexity, whereas L2 increases it"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 98330,
+      "Explanation": "The main difference is in the penalty applied; L1 regularizes using the absolute values of coefficients, while L2 uses squared values, impacting weight decay differently.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In what scenario might L1 regularization be preferred over L2?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When we want to induce sparsity in the model"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When training is computationally expensive"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When we have very few features"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When underfitting is the major issue"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 98331,
+      "Explanation": "L1 regularization is preferred when sparsity (many weights being zero) is desired, as it can effectively zero out some weights under certain conditions.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which regularization technique is more likely to cause weight vector sparsity?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Dropout regularization"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "L1 regularization"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Batch normalization"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "L2 regularization"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 98332,
+      "Explanation": "L1 regularization encourages sparsity in the weight vector by driving some weights to zero.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why is L2 regularization often referred to as weight decay?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Because it forces weights to decay over time to zero values"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Because it stabilizes the learning rate"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Because it reduces the weight values throughout training"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Because it differentiates weights based on their magnitude"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 98333,
+      "Explanation": "L2 regularization is called weight decay because it continuously reduces the weight values during training, effectively discouraging large weights.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does combining L1 and L2 regularization, known as Elastic Net, benefit model training?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By preventing underfitting"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By providing a balance between sparsity and model complexity prevention"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By increasing training speed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By enhancing the interpretability of the model"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 98334,
+      "Explanation": "Elastic Net combines the features of both L1 and L2 regularization, promoting sparsity while also reducing model complexity, thereby offering a balanced regularization approach.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What common problem in neural networks is directly addressed by the use of L1 and L2 regularization?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Underfitting"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Overfitting"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Data leakage"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Data scarcity"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 98335,
+      "Explanation": "Both L1 and L2 regularization are techniques used to address overfitting by introducing additional penalties to the loss function that constrain the model complexity.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "You are training a deep learning model for image classification. During training, the validation accuracy starts to decrease after initially increasing. This might be a sign of:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Underfitting"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Overfitting"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Learning rate being too high"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both b and c"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 88047,
+      "Explanation": "It can be both overfitting and high learning rate as when a model starts to memorize the training data too well and loses its ability to generalize to unseen data, this is overfitting and the learning rate controls how much the model updates its weights during training.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Overfitting in deep neural networks occurs when:<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The model performs well on training data but poorly on test data <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The model performs well on test data but poorly on training data <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The model has a high bias <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The model has a high variance <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 88403,
+      "Explanation": "Overfitting happens when the neural network learns noise and details in the training data that do not generalize well to unseen test data. As a result, the model&apos;s performance on the training data is high (low error), but it fails to generalize to new, unseen data, leading to poor performance on test data. <br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following techniques can help mitigate overfitting in deep neural networks?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Increasing the number of epochs during training <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Adding more layers to the neural network <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Applying dropout regularization <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Decreasing the learning rate <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 88405,
+      "Explanation": "Dropout regularization is a technique where randomly selected neurons are ignored (dropped out) during training. This helps prevent neurons from co-adapting too much to each other and thus reduces overfitting by improving the generalization ability of the neural network.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Early stopping is a regularization technique used to prevent overfitting by:<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Stopping the training process as soon as the validation loss starts to increase <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Training the neural network for a longer period <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Increasing the learning rate gradually <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Adding more layers to the neural network <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 88406,
+      "Explanation": "Early stopping involves monitoring the validation (or test) loss during training. Training is stopped when the validation loss stops decreasing and starts to increase, indicating that the model is starting to overfit the training data. <br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Data augmentation is used in deep learning to:<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Increase the number of trainable parameters <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Increase the size of the training dataset <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Reduce the number of layers in the neural network <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Decrease the learning rate <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 88407,
+      "Explanation": "Data augmentation involves artificially enlarging the training dataset by applying transformations such as rotations, translations, and flips to the existing data samples. This helps expose the model to more varied examples during training, thereby improving its ability to generalize and reducing overfitting. <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Regularization techniques such as L1 and L2 are commonly used in deep neural networks to:<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Increase model complexity <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Penalize large weights <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Decrease training time <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Decrease the number of layers <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 88408,
+      "Explanation": "L1 and L2 regularization techniques penalize large weights (coefficients) in the neural network&apos;s loss function. This helps prevent the model from becoming too complex and overfitting to the training data by encouraging smaller weights and thus improving generalization. <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Normalization and standardization are techniques used in deep learning to:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Reduce the computational cost of training"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Improve the convergence of the training process"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Prevent overfitting"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 88039,
+      "Explanation": "All of the above can be achieved using normalization and standardization techniques.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Regularization techniques in deep learning can help to:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Reduce the complexity of the model"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Prevent overfitting"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Improve the generalization ability of the model"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 88040,
+      "Explanation": "All of the above can be achieved using regularization techniques.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a potential remedy for underfitting in a neural network?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Adding more training data. <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Decreasing the number of epochs during training. <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Increasing the learning rate. <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Adding more layers or neurons. <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 88351,
+      "Explanation": "Underfitting is the case where model fails to learn from the input data. Hence adding more layers or neurons may overcome the underfitting.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method helps in preventing underfitting in machine learning models?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Adding more features to the dataset."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Decreasing the model complexity."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Increasing the training duration."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using a smaller training dataset."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 88352,
+      "Explanation": "By decreasing the model complexity, the underfitting can be avoided.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "It would be better if we modify learning rate for every epoch for neural network.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "TRUE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FALSE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 83437,
+      "Explanation": "Modifying the learning rate for every epoch for neural network will result in better performance of model.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods DOES NOT prevent a model from overfitting to the training set?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Dropout"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Pooling"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Early stopping"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Data augmentation"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 86093,
+      "Explanation": "Pooling method does not prevent a model from overfitting to training set.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Early stopping is commonly applied during:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Training a neural network."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Feature selection."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Hyperparameter tuning."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Model evaluation."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 86112,
+      "Explanation": "Early stopping is commonly applied during the training of neural networks, although it can be used in other machine learning algorithms as well.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Early stopping is a practical technique to prevent:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Overfitting on the testing data"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Underfitting on the testing data."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Overfitting on the training data."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Underfitting on the training data."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 86113,
+      "Explanation": "Early stopping is a practical technique to prevent overfitting on the training data, allowing the model to generalize better to unseen data.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a neural network, which of the following techniques is used to deal with overfitting?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Dropout <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Regularization <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Batch Normalization <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of these <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 87667,
+      "Explanation": "All of the above methods are used to avoid overfitting in neural network.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is back propagation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is another name given to the curvy function in the perceptron"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It is the transmission of error back through the network to adjust the inputs"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is the transmission of error back through the network to allow weights to be adjusted so that the network can learn"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 5951,
+      "QuestionTypeId": 0,
+      "QuestionId": 78321,
+      "Explanation": "Back propagation is the transmission of error back through the network to allow weights to be adjusted so that the network can learn.",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

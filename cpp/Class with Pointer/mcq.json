@@ -1,0 +1,786 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is a shallow copy in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Copying the object's memory address."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Copying an object's elements as they are."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Copying both object and its resources."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Copying only the object's static content."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 93795,
+      "Explanation": "A shallow copy involves copying the data members of the object as is, without duplicating the dynamically allocated resources they might point to.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about deep copy?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It copies only the pointer addresses."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It creates a new object with copied primitive data types but shared resources."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It duplicates both the object and the dynamic resources it owns."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It copies only non-pointer data members."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 93796,
+      "Explanation": "A deep copy involves copying both the fields and the dynamically allocated resources pointed to, ensuring the new object is independent.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When is a deep copy constructor necessary?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When the class has only primitive types."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When the class holds pointers to dynamic memory."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When the class has only static variables."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When the class doesn't manage resources."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 93797,
+      "Explanation": "A deep copy constructor is necessary when the class manages dynamic memory using pointers, ensuring that each object has its own copy of dynamic data.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C++, which of the following is used to prevent shallow copy of objects?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Destructor"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Default constructor"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Copy constructor"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Assignment operator"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 93798,
+      "Explanation": "The copy constructor can be defined to create a deep copy, thus preventing the default shallow copy behavior.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is a potential issue caused by shallow copying?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Improved performance."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Multiple deletions leading to undefined behavior."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Memory leak."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "More memory is used."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 93799,
+      "Explanation": "Shallow copying can lead to multiple object instances sharing the same memory resources, potentially resulting in double deletions and undefined behavior.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is true about the assignment operator concerning deep copies?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It always creates a shallow copy."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It should be overloaded for deep copying."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It cannot be overloaded."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is irrelevant for copying."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 93800,
+      "Explanation": "The assignment operator should be overloaded to perform deep copying when a class involves dynamic memory, in the copy assignment process.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given a class with a dynamically allocated array, what can you do to prevent shallow copies?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Define a deep copy constructor."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use the default destructor."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Avoid overloading operators."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Share the array among objects."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 93801,
+      "Explanation": "To prevent shallow copies, one should define a deep copy constructor that correctly copies the dynamically allocated array.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main disadvantage of a deep copy?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Complex implementation."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Less memory used."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No independence of objects."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Faster execution time."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 93802,
+      "Explanation": "The main disadvantage of a deep copy is that it requires a more complex implementation because dynamic resources need to be individually duplicated.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When dealing with a class in C++ that uses a deep copy, what must be ensured?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "All data members are integers."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Resources are handled by static variables."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Proper management of resource ownership."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All objects are allocated on the stack."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 93803,
+      "Explanation": "Ensuring proper management of resource ownership is crucial to make sure each copy accurately maintains its own set of resources.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does a default copy constructor in C++ handle pointers?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It creates deep copies of the objects pointed to."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It performs a shallow copy of the pointer itself."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It nullifies the pointers."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It initializes them to default values."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 93804,
+      "Explanation": "The default copy constructor in C++ performs a shallow copy, meaning it copies the pointer value, not the memory it points to.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the key distinction between copy constructors and assignment operators for deep copying?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Copy constructors cannot be overloaded."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Assignment operators do not deal with deep copies."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Assignment operators modify existing objects; copy constructors initialize new ones."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Assignment operators are only used with inheritance."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 93805,
+      "Explanation": "Assignment operators modify existing objects and are involved in deep copying when implemented, whereas copy constructors initialize new objects.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which scenario typically requires defining your own copy constructor?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When you have no member pointers."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When there are only static data members."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When the object uses runtime dynamic allocation."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When using only automatic storage classes."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 93806,
+      "Explanation": "A custom copy constructor is often necessary when dynamic allocation occurs to ensure each copy has its own independent resource set.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of not handling resource freeing in a deep copy?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Memory leaks occur."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Faster program execution."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Enhanced program efficiency."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Reduced memory trashes."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 93807,
+      "Explanation": "If deep copies don&apos;t properly free resources, memory leaks can occur since each object copy may own separate dynamic resources.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which process is involved when you assign one object to another and need a deep copy?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Initialization"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Shallow Copying"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Copy Assignment Operator Overloading"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Destructor Loading"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 93808,
+      "Explanation": "The copy assignment operator overloading is necessary to perform a deep copy when assigning one object to another if they involve dynamic resources.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a class manages resources with RAII (Resource Acquisition Is Initialization), which action is essential?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Declaring a static constructor."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Implementing deep copy logic."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Ignoring destructor definitions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Avoiding any form of copy."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 93809,
+      "Explanation": "Implementing deep copy logic is vital in a class using RAII to ensure each instance manages its own resources safely.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following are class relationship?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "is-a-relationship"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Part-of relationship<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "has-a relationship<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of these options<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 87471,
+      "Explanation": "Write explaination here..<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why do we need relationships between classes?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To use the functionality of one class into another<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To enhance the communication between classes<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To increase code re-usability<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 87472,
+      "Explanation": "Relationships are needed to increase the use of features of one class into the other classes i.e. increasing the re-usability of codes and increasing communication between classes.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The deep copy is possible only with the help of __________&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Implicit copy constructor"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "User defined copy constructor<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Parameterized constructor"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Default constructor"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 71130,
+      "Explanation": "In  User defined copy constructor we can assign new memory to pointer variable to achive deep copy which is not possible in implicit copy constructor. <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "which of the following statements is correct",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Pointer to base class cannot be created"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Pointer to derived class cannot be created"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Derive class pointer cannot point to base class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Base class pointer cannon point to derived class"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 71171,
+      "Explanation": "Base class pointer is generic pointer so it can point to any derive class pointer or can hold address derive class object . But derive class pointer cannot point to base class.<br><br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "________ is also known as generic pointer because it can point to object of any class  derived from it directly or indirectly.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void pointer<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "this pointer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "derived class pointer<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "base class pointer<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 71178,
+      "Explanation": "Base class pointer is known as generic pointer because, it is able to hold address of any derive class object. this pointer is pointer to invoking object.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A dangling pointer is a pointer ______________",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "which points to NULL<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It is un-initialized pointer <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "which holds address of deallocated memory <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 64213,
+      "Explanation": "A pointer pointing to a memory location that has been deleted (or freed) is called dangling pointer. so option B is right answer. <br>For example:<br>int main() {<br>&nbsp;&nbsp;&nbsp; int*p; // Un-initialized pointer<br>&nbsp;&nbsp;&nbsp; int*q=NULL; // Null pointer<br>&nbsp;&nbsp;&nbsp; p= new int[3]; // Pointer initialized to point to array of int<br>&nbsp;&nbsp;&nbsp; delete []p; /* Memory block pointed by p is now de-allocated. Hence here onwards p will be called dangling pointer till it is re-assigned memory. */<br>}<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In case of a copy constructor, which of the following is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Used to instantiate an object from another existing object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Substitute to a function to copy one object to other."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Can be a substitute for a \u2018=\u2019 operator."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 64206,
+      "Explanation": "<span id=\"explanation64206\">Copy Constructor is a type of constructor which is used to create a copy of an already existing object of a class type. The compiler provides a default Copy Constructor to all the classes. </span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Copy constructor must receive its arguments by",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "either pass-by-value or pass-by-reference"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "only pass-by-value"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "only pass-by-reference"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "only pass by address"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 64241,
+      "Explanation": "<span id=\"explanation64241\">Copy Constructor is a type of constructor which is used to create a copy of an already existing object of a class type. So while passing parameters we should pass it by reference. </span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A copy constructor is written for a class to avoid",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Memory Leakage<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Dangling Pointer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both A and B"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Function call overheads"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 64255,
+      "Explanation": "&nbsp;Dangling pointers arise during&nbsp; object destruction&nbsp;<a data-cke-saved-href=\"https://en.wikipedia.org/wiki/Object_destruction\" href=\"https://en.wikipedia.org/wiki/Object_destruction\" class=\"mw-redirect\" title=\"Object destruction\" style=\"text-decoration: none; color: rgb(11, 0, 128); background: none rgb(255, 255, 255); font-family: sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;\"></a>, when an object that has an incoming reference is deleted or deallocated, without modifying the value of the pointer, so that the pointer still points to the memory location of the deallocated memory. <br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which other keywords are also used to declare the user define data type other than class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "struct"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "union"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "both a &amp; b"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 64049,
+      "Explanation": "<span id=\"explanation64049\">structure and unions are also container like class.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In case of a copy constructor, which of the following is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Used to instantiate an object from another existing object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To copy one object to another existing object."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Can be a substitute for a \u2018=\u2019 operator."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 419,
+      "QuestionTypeId": 0,
+      "QuestionId": 63883,
+      "Explanation": "In C++, a Copy Constructor may be called in following cases:<br style=\"color: rgba(0, 0, 0, 0.84); font-family: Roboto, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\">1. When an object of the class is returned by value.<br style=\"color: rgba(0, 0, 0, 0.84); font-family: Roboto, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\">2. When an object of the class is passed (to a function) by value as an argument.<br style=\"color: rgba(0, 0, 0, 0.84); font-family: Roboto, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\">3. When an object is constructed based on another object of the same class.<br style=\"color: rgba(0, 0, 0, 0.84); font-family: Roboto, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\">4. When the compiler generates a temporary object.",
+      "Answer": "D",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

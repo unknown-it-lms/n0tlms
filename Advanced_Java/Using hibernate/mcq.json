@@ -1,0 +1,1536 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Which component in Hibernate is responsible for transaction management?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Session"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Configuration"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Transaction"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Query"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 101746,
+      "Explanation": "The Transaction interface in Hibernate is responsible for managing transactions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in Hibernate should be used to save an entity instance to the database?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "session.persist(entity)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "session.merge(entity)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "session.update(entity)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "session.refresh(entity)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 102082,
+      "Explanation": "The session.persist() method is used to save a transient entity instance to the database and make it persistent.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the difference between the update() and saveOrUpdate() methods in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "update() can save and update, saveOrUpdate() only updates."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "update() only updates, saveOrUpdate() can save if the entity is transient."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both methods can only update."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "update() uses a separate transaction, saveOrUpdate() does not."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 102083,
+      "Explanation": "The update() method only updates an existing entity, while saveOrUpdate() checks if the object is already persistent and performs an update or save accordingly.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does the delete operation in Hibernate affect an entity object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Deletes the entity object from session cache only."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Removes the entity object from both the session cache and the database."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Deletes the entity object from the database only."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Marks the entity object as deprecated but does not delete it."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 102084,
+      "Explanation": "The delete operation in Hibernate removes the entity from both the session cache and the database.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is not typically used to update an entity in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "session.merge(entity)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "session.update(entity)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "session.refresh(entity)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "session.saveOrUpdate(entity)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 102085,
+      "Explanation": "The session.refresh(entity) method is used to re-read the state of the given instance from the database, not to update the entity.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which scenario should you use the merge() method over update() in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When the entity instance is detached."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When you want to delete an entity."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When the entity&#39;s primary key is null."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When you want to save a new entity."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 102086,
+      "Explanation": "The merge() method is used when you have a detached entity and want to merge its state with a persistent entity.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operation must be performed to immediately synchronize the Hibernate session with the database?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "session.clear()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "session.refresh(entity)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "session.flush()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "session.close()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 102087,
+      "Explanation": "session.flush() is used to synchronize the session&#39;s in-memory state with the database by executing SQL statements.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Where is mapping information placed when using annotation-based configuration in Hibernate?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "In .hbm.xml file"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "In hibernate.properties"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "In Java classes using annotations"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "In external JavaScript files"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 102533,
+      "Explanation": "<span style=\"color:#0000ff;\">When using annotation-based mapping, Hibernate mappings are defined directly in the Java class using annotations like @Entity, @Table, @Id, etc.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does Hibernate know which field is the primary key in a Java class?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Field name must be id"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Field must be marked with @Pk"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Field must be marked with @Id"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Field must be first in the class"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 102534,
+      "Explanation": "<span style=\"color:#0000ff;\">The @Id annotation identifies the primary key property of the entity. It is required for every entity class.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Hibernate, which of the following files is commonly used to define XML-based mappings?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "hibernate.cfg.xml"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": " mapping.xml"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "hibernate.mapping.xml"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;classname&gt;.hbm.xml"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 102535,
+      "Explanation": "<span style=\"color:#0000ff;\">Hibernate uses .hbm.xml files to define mappings between Java classes and database tables when XML-based mapping is used (as an alternative to annotations).</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary function of SessionFactory in Hibernate?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Execute queries directly"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Manage caching"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Create and manage Session objects"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Handle transactions"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 102536,
+      "Explanation": "<span style=\"color:#0000ff;\">SessionFactory is a heavyweight object that provides Session instances. It is created once and reused across the application.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a lightweight, short-lived object in Hibernate?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SessionFactory"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Configuration"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Session"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Transaction"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 102537,
+      "Explanation": "<span style=\"color:#0000ff;\">Session is a lightweight object used for CRUD operations and database interaction. It is created from the SessionFactory and closed after use.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to save an object into the database using Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "save()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "refresh()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "store()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "create()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91285,
+      "Explanation": "<span id=\"explanation91285\" style=\"color:blue\">The save() method is used to save an object into the database and return the generated identifier.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Hibernate, which annotation is used to specify a class as an entity?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@Table"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@Entity"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@Column"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@Data"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91286,
+      "Explanation": "The @Entity annotation marks a class as an entity, allowing it to be mapped to a database table.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which one of the following collection types does Hibernate support for persistent collections?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "java.util.Set"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "java.util.Stack"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "java.util.Queue"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "java.util.PriorityQueue"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91287,
+      "Explanation": "Hibernate supports java.util.Set as a persistent collection type among others like List and Map.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Hibernate, which configuration file is used to define database connections?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "hibernate.cfg.xml"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "persistence.xml"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "database.properties"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "hibernate.properties"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91288,
+      "Explanation": "The hibernate.cfg.xml file is used for defining database connections and other session factory-level settings.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default fetching strategy in Hibernate for @ManyToOne associations?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "EAGER"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LAZY"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DEFAULT"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECTIVE"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91289,
+      "Explanation": "@ManyToOne uses the EAGER fetching strategy by default, which means the associated object is fetched immediately.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Hibernate interface is used to create a query programmatically?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "QueryBuilder"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "CriteriaBuilder"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SessionFactory"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "QueryFactory"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91290,
+      "Explanation": "CriteriaBuilder is used to construct queries programmatically in Hibernate&apos;s criteria API.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Hibernate, what is the role of the SessionFactory?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To manage session lifecycle"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To create sessions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To hold configuration data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91292,
+      "Explanation": "SessionFactory is responsible for managing the lifecycle of sessions and holds the configuration data about the database.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following options is not a valid state of an entity in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Managed"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Detached"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Persistent"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Transitional"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91293,
+      "Explanation": "<span id=\"explanation91293\" style=\"color:blue\">An entity in Hibernate can be in a persistent or managed state, meaning it is associated with a session and stored in the database or can be in a detached state. Transitional is not valid state of entity.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is cascade in Hibernate used for?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To apply operations to associated entities automatically"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To merge queries"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To perform lazy loading"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To optimize transactions"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91294,
+      "Explanation": "Cascade is used to apply operations like save or delete automatically to associated entities in relationships.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which component of Hibernate manages and maintains a particular framework to interact with the database?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Session"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Transaction"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Configuration"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SessionFactory"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91295,
+      "Explanation": "Session in Hibernate manages the persistence operations and serves as an interface between the application and the database.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is an identifier generation strategy in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "AUTO_INCREMENT"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "NATIVE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "GUID"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "IDENTITY"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91296,
+      "Explanation": "IDENTITY is one of the identifier generation strategies in Hibernate that relies on the database&apos;s identity column.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does Hibernate's dirty checking feature do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Ensures data integrity by validating persistent data against schemas"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Automatically detects changes to entities and updates the database"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Finds unused entities in the database to delete"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Finds discrepancies between cache and database"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91297,
+      "Explanation": "Hibernate&apos;s dirty checking automatically detects changes made to persistent entities and synchronizes them with the database.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used in Hibernate to refresh an entity from the database?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "load()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "update()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "refresh()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "revert()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91298,
+      "Explanation": "The refresh() method is used to reload the entity from the database and overwrite any changes made in the session.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What exception does Hibernate throw when a non-unique object is found in the session cache?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DuplicateEntityException"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "NonUniqueObjectException"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SessionException"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CacheException"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91299,
+      "Explanation": "Hibernate throws a NonUniqueObjectException if there is a duplicate object with the same identifier already in the session.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to persist an object in a database using Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "saveObject()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "insert()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "persist()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "saveOrPersist()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 101730,
+      "Explanation": "The persist() method is used in Hibernate to save an entity instance or object into the database.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of using Hibernate in Java applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To provide graphical user interface components."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To manage application security."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To map Java objects to database tables and vice versa."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To perform multi-threading operations."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 101725,
+      "Explanation": "Hibernate is an ORM (Object-Relational Mapping) framework that maps Java objects to database tables, simplifying database operations.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the correct way to configure Hibernate using XML?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By defining mappings in the web.xml file."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using hibernate.cfg.xml to specify database connection and mappings."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using applicationContext.xml with spring beans."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By annotating classes directly without any XML files."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 101726,
+      "Explanation": "The hibernate.cfg.xml file is used to define database connections and mapping configurations in Hibernate.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which annotation is used to specify an entity in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@EntityTable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@PersistenceTable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@Table"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@Entity"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 101727,
+      "Explanation": "The @Entity annotation is used to mark a Java class as an entity, which means it is a persistent class in Hibernate.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following configuration files is used by default in Hibernate to configure data source, properties, and mapping files?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "hibernate.properties"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "hibernate.xml"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "persistence.xml"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "hibernate.cfg.xml"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 101732,
+      "Explanation": "The &#39;hibernate.cfg.xml&#39; is the default configuration file used by Hibernate to define database connections and mapping settings.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the Hibernate configuration file &#39;hibernate.cfg.xml&#39;, what is the purpose of the &lt;property&gt; element?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To list the entity classes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To list Hibernate core properties"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To define metadata"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To specify mapping configuration"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 101733,
+      "Explanation": "The &lt;property&gt; element is used to specify Hibernate&#39;s core properties, such as database dialect, connection URL, username, and password.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you include a mapping xml files in the 'hibernate.cfg.xml' file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;include resource=\"resource_name\"&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;mapping resource=\"resource_name\"/&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;map-file resource=\"resource_name\"/&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;entity-mapping resource=\"resource_name\"/&gt;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 101734,
+      "Explanation": "<span id=\"explanation101734\" style=\"color:blue\">To include a mapping resource in &apos;hibernate.cfg.xml&apos;, you use the &lt;mapping&gt; element with the attribute &apos;resource&apos; to specify the file.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which tag is mandatory in the Hibernate configuration file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;database&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;session-factory&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;hibernate-session&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;hibernate-settings&gt;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 101735,
+      "Explanation": "The &lt;session-factory&gt; tag is mandatory in &#39;hibernate.cfg.xml&#39; as it encapsulates all the properties and mapping files required for session creation.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the role of the &#39;hibernate.dialect&#39; property in the configuration file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To enable logging of SQL queries"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To specify the database type Hibernate should generate SQL for"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To define the username and password for database access"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To set the caching strategy for queries"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 101736,
+      "Explanation": "The &#39;hibernate.dialect&#39; property specifies the SQL dialect Hibernate should use to generate SQL statements compatible with the specific database.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the &#39;hibernate.hbm2ddl.auto&#39; property control in a Hibernate configuration?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Cache management strategy"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Automatic schema generation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Connection pool size"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Query optimization"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 101737,
+      "Explanation": "The &#39;hibernate.hbm2ddl.auto&#39; property determines how the database schema is automatically created or updated. It can have values like &#39;create&#39;, &#39;update&#39;, etc.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following options is NOT a valid property name in the Hibernate configuration file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "hibernate.connection.url"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "hibernate.format_sql"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "hibernate.auto.commit"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "hibernate.connection.charset"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 101738,
+      "Explanation": "<span id=\"explanation101738\" style=\"color:blue\">The property &apos;hibernate.auto.commit&apos; is invalid. Hibernate uses the session and transaction management to handle commit operations explicitly.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following classes in Java is primarily used for mapping key-value pairs where keys are mapped to a single value each?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "HashSet"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "HashMap"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "LinkedList"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "TreeSet"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 101739,
+      "Explanation": "HashMap is a part of Java&#39;s Collection framework and is used to store data in key-value pairs. Each key can map to at most one value.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What method would you use to retrieve a value associated with a specific key from a Java Map?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "getValue()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "getKey()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "retrieve()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "get()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 101741,
+      "Explanation": "The get() method in Map interface is used to retrieve a value mapped to a specific key.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does the performance of a HashMap in Java generally compare to that of a TreeMap when looking up values?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "HashMap is generally slower than TreeMap."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "TreeMap is generally faster than HashMap."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "HashMap is generally faster than TreeMap."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They both have identical performance."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 101742,
+      "Explanation": "HashMap provides a constant-time complexity of O(1) on average for insertions and lookups, while TreeMap provides O(log n) complexity as it is based on a Red-Black tree.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Java Map class maintains the order of entries based on the natural ordering of its keys?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "HashMap"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "TreeMap"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "LinkedHashMap"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ArrayMap"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 101743,
+      "Explanation": "TreeMap maintains entries in ascending order of keys according to the natural ordering or by a specified comparator.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Hibernate method is used to make a transient instance persistent?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "attach()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "save()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "merge()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "sync()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91281,
+      "Explanation": "The save() method in Hibernate is used to persist a transient object, assigning it a defined identifier.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which component of Hibernate is responsible for providing the caching mechanism?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SessionCache"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SecondLevelCache"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "EntityCache"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CacheProvider"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 101750,
+      "Explanation": "CacheProvider interacts with caching libraries to provide the second-level cache mechanism in Hibernate.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What method in Hibernate is suitable for updating an object that is already persistent?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "saveOrUpdate()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "persist()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "refresh()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "update()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 101751,
+      "Explanation": "The update() method is used to update an object that is already present in the database.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods in Hibernate generates an exception if the entity does not exist?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "save()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "update()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "delete()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "merge()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 101752,
+      "Explanation": "The update() method throws an exception if the entity to be updated does not exist in the database.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What operation is performed by the delete() method in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Removes an object from the session cache"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Removes an object from the database"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Detaches an object from the session"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Removes an object from the entity manager"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 101753,
+      "Explanation": "The delete() method removes an object from the database.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does Hibernate distinguish between a transient and a persistent instance when using update()?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Based on the object&#39;s identifier"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Through the mapping file configuration"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using the hash code of the object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By checking the object&#39;s state in the database"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 101754,
+      "Explanation": "Hibernate uses the object&#39;s identifier to determine if it is transient or already persistent.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method can be used for both save and update operations depending on the existence of the identifier?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "persist()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "saveOrUpdate()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "merge()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "lock()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 101755,
+      "Explanation": "The saveOrUpdate() method performs a save if the object is new (transient) and an update if it already exists (persistent).",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the merge() method do in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Copies the state of the given object onto the persistent instance in the session"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Attaches a transient instance to the session"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Saves a new object and assigns it an identifier"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Removes persistent objects from the session"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 101756,
+      "Explanation": "The merge() method copies the state of the given object onto the persistent instance with the same identifier in the session if it exists.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of Dialect in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To manage caching"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To translate HQL queries to correct SQL based on the database"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To handle transactions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To specify properties of the entity"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91277,
+      "Explanation": "<span id=\"explanation91277\" style=\"color:blue\">Dialect in Hibernate is used to translate HQL queries into SQL queries that are specific to the database being used.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Select the correct file name for the hibernate configuration file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "hibernate.xml"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "hibernate.config.xml"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "hibernate.conf.xml"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "hibernate.cfg.xml"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4819,
+      "QuestionTypeId": 0,
+      "QuestionId": 82707,
+      "Explanation": "<span id=\"explanation82707\">hibernate.cfg.xml is the hibernate configuration file.</span>",
+      "Answer": "D",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

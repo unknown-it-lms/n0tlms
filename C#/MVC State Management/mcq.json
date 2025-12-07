@@ -1,0 +1,2256 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Which of the following is NOT a method of state management in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ViewData"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "TempData"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Session"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ClientData"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95862,
+      "Explanation": "ClientData is not a recognized method of state management in ASP.NET Core MVC. The correct methods include ViewData, TempData, and Session.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of TempData in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To persist data across multiple sessions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To pass data between actions until it's read"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To store data in the query string"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To keep data available for a long time"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95863,
+      "Explanation": "TempData is used to pass temporary data between actions and is cleared after it&apos;s read.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to check if TempData contains a specific key in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "TempData.HasKey"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "TempData.Check"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "TempData.ContainsKey"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "TempData.KeyExists"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95864,
+      "Explanation": "TempData.ContainsKey is the correct method to check if a specific key exists in TempData.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How is ViewData different from ViewBag in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ViewData is static, and ViewBag is dynamic"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ViewData requires more memory than ViewBag"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ViewData is a dictionary, ViewBag is a dynamic property"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ViewBag allows passing data across sessions"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95865,
+      "Explanation": "ViewData is based on a dictionary object storing key-value pairs, while ViewBag is a dynamic property on the Controller base class used to pass data to views.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which collection can store data for the duration of a user's session?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ViewData"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "TempData"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Session"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Cookies"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95866,
+      "Explanation": "Session state is a feature that allows you to store and retrieve user data specifically for a user session in ASP.NET Core.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default storage mechanism for session data in ASP.NET Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Memory"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Database"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "File System"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Cookies"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95867,
+      "Explanation": "By default, ASP.NET Core stores session data in-memory. However, other storage providers like distributed memory cache, SQL Server, or Redis can be configured.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which service needs to be configured in Startup.cs to use session state in ASP.NET Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "AddMvc()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "AddSession()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "AddView()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "AddTempData()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95868,
+      "Explanation": "You must add the &apos;AddSession()&apos; service to the ConfigureServices method in Startup.cs to utilize session state in ASP.NET Core.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of object is used to access session data in a controller?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "HttpContext.Session"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "HttpRequest.Session"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SessionManager"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SessionProvider"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95869,
+      "Explanation": "In ASP.NET Core, session data is accessed using the HttpContext.Session object within a controller.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which type of state management is typically used for passing data from a controller to a view for a single request?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Session"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "TempData"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ViewData"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Database"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95870,
+      "Explanation": "ViewData is used for passing data from controllers to views for the duration of a single request.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you ensure TempData remains available for subsequent requests in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By calling TempData.Keep()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By configuring persistent TempData in Startup.cs"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using TempData.Retain()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By adding TempData to session storage manually"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95871,
+      "Explanation": "TempData.Keep() is used to preserve TempData for subsequent requests, preventing it from being deleted after a read operation.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of ViewData in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To maintain session state across requests"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To store data to render in a view"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To permanently store data globally across different controllers"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To handle data serialization in controllers"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95872,
+      "Explanation": "ViewData is used to pass data from a controller to a view in ASP.NET MVC Core. It is a dictionary of objects accessible by string keys.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about the lifespan of ViewData items?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Data in ViewData is persisted between different HTTP requests."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Data in ViewData is available only for a single HTTP request."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ViewData items are serialized to cookies for later use."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ViewData items can be shared between different sessions."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95873,
+      "Explanation": "ViewData items are stored for the duration of a single HTTP request and are not preserved across multiple requests.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you retrieve a string item named 'Message' from ViewData in a view?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ViewData['Message']"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ViewBag.Message"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "TempData['Message']"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Session['Message']"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95874,
+      "Explanation": "ViewData is accessed like a dictionary. To retrieve a value, you use the key in square brackets. ViewBag and TempData are different mechanisms.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following collections are checked if a controller action accesses only the ViewData property?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "TempData"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Session"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "RouteData"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None, it only uses ViewData"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95875,
+      "Explanation": "If a controller action accesses only the ViewData property, it directly uses its own collection without checking other data collections like TempData or Session.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does ViewData differ from ViewBag in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ViewData is a dynamic property, whereas ViewBag is a dictionary"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ViewData requires explicit casting to get a data item, unlike ViewBag"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ViewData is not available in views, unlike ViewBag"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ViewData allows for more complex data structures than ViewBag"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95876,
+      "Explanation": "ViewData is a dictionary and requires explicit casting to obtain the data type from Object. ViewBag uses dynamic properties and therefore does not require explicit casting.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of using ViewBag in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To store data persistently for an entire application"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To pass data from a controller to a view temporarily"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To manage user authentication and authorization"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To improve application performance by caching data"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95877,
+      "Explanation": "ViewBag is used to pass data from a controller to a view for a single request. It allows you to pass data dynamically without using strong typing.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How is data stored in ViewBag accessed within an ASP.NET MVC Core view?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By casting ViewBag to a specific data type"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using strong typing with ViewModel"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Directly using the dynamic property name with ViewBag"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By using a session variable"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95878,
+      "Explanation": "ViewBag is a dynamic property and allows access to any data stored in it directly by using the property name in the view.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which is NOT a characteristic of ViewBag in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is a dynamic object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Data lives only during a single HTTP request"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is strongly typed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It allows for easy data passing without pre-defining properties"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95879,
+      "Explanation": "ViewBag is not strongly typed; rather, it is a dynamic object that allows properties to be added at runtime.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following can be an advantage of using ViewBag?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ViewBag improves data security between client and server"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ViewBag allows for static type checking at compile time"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ViewBag allows for flexible and quick data passing without needing a model"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ViewBag provides better performance compared to strongly-typed views"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95880,
+      "Explanation": "One advantage of using ViewBag is its flexibility and ability to quickly pass data to a view without needing a pre-defined model.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why might developers prefer using a strongly-typed view model over ViewBag?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Strongly-typed view models are more flexible than ViewBag"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Strongly-typed view models use less memory than ViewBag"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Strongly-typed view models allow for compile-time type checking"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Strongly-typed view models allow for dynamic property addition"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95881,
+      "Explanation": "Strongly-typed view models provide compile-time type checking, which reduces errors and improves maintainability by ensuring that types are consistent between the view and the controller.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of TempData in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To store data for the entire lifetime of the application."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To transfer data between two successive requests."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To store session data permanently."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To persist data across multiple user sessions."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95882,
+      "Explanation": "TempData is designed to transfer data from one request to the next, typically from a controller to a view or controller to controller in the subsequent request.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which object in ASP.NET MVC Core is TempData based on?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Session"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Cookies"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ViewData"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "TempDataDictionary"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95883,
+      "Explanation": "TempData in ASP.NET MVC Core is based on TempDataDictionary, which is a dictionary object that allows data to be passed between different requests.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How long does data stored in TempData last in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Until the browser is closed"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Until explicitly cleared"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Until it is read"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "For the duration of the session"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95884,
+      "Explanation": "Data stored in TempData lasts until it is read. Once it&apos;s read, the TempData is automatically cleared at the end of the request.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What method would you use to keep specific TempData items after a read operation in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Keep()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Persist()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Save()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Retain()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95885,
+      "Explanation": "The Keep() method is used to preserve TempData values for another request even after they have been read.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you check if a TempData entry with a specific key exists in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "TempData.KeyExists(\"key\")"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "TempData.ContainsKey(\"key\")"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "TempData.HasKey(\"key\")"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "TempData.Exists(\"key\")"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95886,
+      "Explanation": "The TempData.ContainsKey method is used to determine if an entry with a specific key exists in TempData.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default session storage mechanism in ASP.NET Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "In-Process"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Distributed Cache"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Memory Cache"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SQL Server"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95887,
+      "Explanation": "In ASP.NET Core, the default session storage mechanism is Memory Cache, which stores session data in-memory on the server.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following middleware components is essential to enable session state in ASP.NET Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "UseRouting"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "UseSession"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "UseAuthentication"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "UseEndpoints"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95888,
+      "Explanation": "To enable session state in an ASP.NET Core application, the UseSession middleware must be added to the request pipeline in the Configure method.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which service must be configured in ASP.NET Core to store session data in a distributed cache?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "AddDistributedMemoryCache"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "AddSqlServerCache"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "AddDataProtection"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "AddSession"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95889,
+      "Explanation": "To store session data in a distributed cache, services.AddSession() must be configured in the ConfigureServices method.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can session state be maintained across multiple servers in ASP.NET Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use Memory Cache"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use In-Process Storage"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use Distributed Cache"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use Local File Storage"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95890,
+      "Explanation": "To maintain session state across multiple servers, a distributed cache, such as a SQL Server or Redis, can be used to store session data centrally.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What data type is used to store objects in ASP.NET Core session state?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "byte[]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "string"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "object"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95891,
+      "Explanation": "Session data in ASP.NET Core is stored as a byte array (byte[]) and must be serialized/deserialized when setting or getting complex data types.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which configuration setting dictates the session timeout in ASP.NET Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Session.TimeOut"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Session.CookieTime"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "IdleTimeout"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SessionExpiration"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95892,
+      "Explanation": "The session timeout is configured using the IdleTimeout property in the options when adding session services in the ConfigureServices method.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In ASP.NET Core, which method is used to set a value in the session?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Session.SetValue"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Session.SetInt32"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Session.SetString"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Session.Store"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95893,
+      "Explanation": "Session.SetString is used to store string data in session. Other types like int can be set using their respective &apos;Set&apos; methods like SetInt32.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if session middleware is enabled after routing in ASP.NET Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Session will not work"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Routing will not work"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "There is no effect"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both will not work"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95894,
+      "Explanation": "Session middleware must be added before routing in the middleware pipeline; otherwise, the session will not work correctly.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main purpose of using Controllers in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To handle database operations"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To render the HTML content dynamically"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To act as an intermediary between the View and the Model"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To manage client-side validations"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95895,
+      "Explanation": "Controllers in ASP.NET MVC Core are responsible for processing incoming requests, handling user input, and returning responses. They act as an intermediary between the View and the Model, orchestrating data flow and rendering the appropriate views.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a feature of Razor in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Client-side rendering"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Separation of markup and server-side code"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "JavaScript compilation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Integrated CSS styling"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95896,
+      "Explanation": "Razor is a markup syntax for embedding server-based code into webpages in ASP.NET MVC Core. It allows for a clear separation of markup and server-side logic, thus making the code cleaner and more maintainable.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In ASP.NET Core MVC, what is the role of 'View Components'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To replace partial views"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To manage styles and themes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To inject dependencies into controllers"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To create reusable pieces of UI"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95897,
+      "Explanation": "View Components in ASP.NET Core MVC are used to create reusable, encapsulated chunks of UI. They allow for cleaner code and can be used wherever a discrete piece of functionality is needed in the View.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which folder in an ASP.NET Core MVC project contains static files like images, CSS, and JavaScript?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Views"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Controllers"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Models"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "wwwroot"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95898,
+      "Explanation": "The wwwroot folder in an ASP.NET Core MVC project is designated for static files. This includes images, CSS files, JavaScript, and other static resources.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is routing in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A way to connect client-side with server-side"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A mechanism to handle authentication"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A pattern matching system for URLs"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A method of parsing HTTP requests"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95899,
+      "Explanation": "Routing in ASP.NET Core MVC is a pattern matching system that parses the incoming URLs and determines which controller actions to invoke. It helps in defining routes for application request handling.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can dependency injection be achieved in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using @inject directive in Views"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Through service registration in the Startup class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By manually instantiating objects in Controllers"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using JavaScript"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95900,
+      "Explanation": "Dependency injection in ASP.NET Core MVC is typically achieved by registering services in the Startup class&apos;s ConfigureServices method. This allows dependencies to be automatically provided to controllers and other services.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What attribute would you use to restrict access to an action method in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[Route]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[ValidateAntiForgeryToken]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[Authorize]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "[BindProperty]"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95901,
+      "Explanation": "The [Authorize] attribute is used in ASP.NET Core MVC to restrict access to controllers or action methods, ensuring that only authenticated users can access certain resources.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary functionality of the 'Startup' class in an ASP.NET Core MVC application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To define database models"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To provide entry to middleware pipeline"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To configure view engines"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To initiate client-side scripts"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95902,
+      "Explanation": "The Startup class in an ASP.NET Core MVC application is responsible for configuring the middleware pipeline and services. It defines how incoming requests are handled by setting up the needed middleware components.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following namespaces is used for handling cookies in ASP.NET Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Microsoft.AspNetCore.Http"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "System.Web.Http"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Microsoft.AspNetCore.Authentication"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "System.IO"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95903,
+      "Explanation": "Microsoft.AspNetCore.Http is the namespace that includes types for managing HTTP requests and responses, including cookies in ASP.NET Core.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to set a cookie in ASP.NET Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Response.Append"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Response.Cookies.Append"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Response.SetCookie"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Response.WriteCookie"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95904,
+      "Explanation": "The Response.Cookies.Append method is used in ASP.NET Core to add a new cookie.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you retrieve the value of a cookie in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Request.Cookies.GetValue"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Request.Cookies.Retrieve"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Request.Cookies.Get"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Request.Cookies.TryGetValue"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95905,
+      "Explanation": "The Request.Cookies.TryGetValue method is used to safely attempt to get a cookie value in ASP.NET Core.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What datatype does the Request.Cookies indexer return in ASP.NET Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "string"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "bool"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95906,
+      "Explanation": "In ASP.NET Core, the Request.Cookies indexer returns the value of a cookie as a string.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following options is required to set an expiration date for a cookie?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Expires"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "MaxAge"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SetExpire"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SetTime"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95907,
+      "Explanation": "In ASP.NET Core, the &apos;Expires&apos; property of a CookieOptions object is used to set an expiration date for a cookie.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What method can you use to delete a cookie?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Response.Cookies.Delete"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Response.Cookies.Remove"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Response.Cookies.Clear"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Response.Cookies.Destroy"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95908,
+      "Explanation": "The Response.Cookies.Delete method is used to delete a cookie in ASP.NET Core.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following best describes a secure cookie?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A cookie that can only be read by the server"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A cookie sent only over HTTPS"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A cookie with encryption applied"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A cookie not accessible via JavaScript"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95909,
+      "Explanation": "A secure cookie is one that is sent to the server only if the request is being sent over HTTPS, ensuring encryption in transit.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What purpose does the 'HttpOnly' flag serve in setting a cookie?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It prevents the cookie from being accessed via JavaScript."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It ensures the cookie is only sent over HTTP connections."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It encrypts the cookie content on the client side."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It makes the cookie accessible only to server-side scripts."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95910,
+      "Explanation": "The &apos;HttpOnly&apos; flag, when set on a cookie, prevents client-side scripts from accessing the cookie, mitigating certain types of attacks.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of using a QueryString in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To manage complex data types that are passed to the server."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To maintain user sessions between requests."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To pass small amounts of data along with the URL between requests."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To handle file uploads from the client to the server."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95911,
+      "Explanation": "QueryStrings are used to pass small amounts of data in the URL, which can be accessed on the server for various purposes.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in ASP.NET MVC Core is typically used to read QueryString values in a controller?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Request.Query"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "RouteData.Values"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "HttpContext.Session"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Request.QueryString"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95912,
+      "Explanation": "In ASP.NET MVC Core, you can use Request.Query to access QueryString values.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you access a QueryString parameter named 'page' in a controller action?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "var page = HttpContext.Current.Request.Query['page'];"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "var page = HttpContext.Request.Query['page'];"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "var page = Request.Query['page'];"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "var page = Request.QueryString['page'];"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95913,
+      "Explanation": "In ASP.NET MVC Core, you use Request.Query to access QueryString parameters within a controller.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What do you need to ensure about QueryString data being passed to the server?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It should always be encrypted."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It should only contain numeric data."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It should be validated to prevent security vulnerabilities."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It should always maintain session state."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95914,
+      "Explanation": "QueryString data should be validated to ensure it does not introduce security vulnerabilities such as injection attacks.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT true regarding QueryString in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "QueryString is visible to users in the browser\u2019s address bar."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "You can send large amounts of data using QueryString."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "QueryString values can be easily tampered with by users."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "QueryString is suitable for bookmarking purposes."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95915,
+      "Explanation": "QueryStrings are not suitable for large amounts of data; they are meant for small, succinct data pieces.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you ensure the security of data passed via QueryString?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compress the data before appending it to the URL."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Always use SSL/TLS to encrypt the entire URL."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use both client-side and server-side validation for the data."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Avoid passing sensitive data in QueryString altogether."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95916,
+      "Explanation": "Sensitive data should not be passed in QueryString since it is exposed in the URL. Secure practices involve using POST requests or other methods.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which feature does ASP.NET MVC Core use to pass data between requests when you don\u2019t want to expose it via QueryString?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Cookies"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "TempData"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ViewBag"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Html.HiddenFor"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95917,
+      "Explanation": "TempData is used to pass data temporarily between requests without including it in the QueryString.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the result of trying to access a non-existent QueryString parameter in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An exception is thrown."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A boolean 'false' is returned."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The compiler raises an error at compile time."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A null value is returned."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95918,
+      "Explanation": "ASP.NET MVC Core returns a null value when a non-existent QueryString parameter is accessed.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which ORM framework is commonly used with Asp.Net MVC Core for database operations?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "NHibernate"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Entity Framework Core"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Dapper"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "LINQ to SQL"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95919,
+      "Explanation": "Entity Framework Core is the most commonly used ORM framework in Asp.Net MVC Core applications for handling database operations efficiently.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is typically used in Entity Framework Core to fetch data from a database?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ExecuteNonQuery"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SaveChanges"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ToList"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "BeginTransaction"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95920,
+      "Explanation": "The ToList method is used to execute the query and fetch data from the database in the form of a list.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Asp.Net MVC Core, which class is used to configure the database connection string?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Startup"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DbContext"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "HomeController"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Program"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95921,
+      "Explanation": "The Startup class is used to configure services, including the database connection string, using the ConfigureServices method.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is 'DbContext' primarily used for in Entity Framework Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To handle HTTP requests"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To create database migrations"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To act as a bridge between the application and the database"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To manage MVC routes"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95922,
+      "Explanation": "DbContext is the primary class in Entity Framework Core that acts as a bridge between the application and the database, enabling CRUD operations.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a feature of Entity Framework Core in Asp.Net MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Support for LINQ queries"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Automatic database updates"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Transaction management"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Built-in UIs for database interaction"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 95923,
+      "Explanation": "Entity Framework Core supports LINQ queries, automatic database updates, and transaction management, but it does not provide built-in UIs for database interaction.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": ". . . . . helps you to maintain data when you move from controller to controller .",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "View Bag"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "View Data"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Temp Data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 77769,
+      "Explanation": "TempData is a dictionary object to store data temporarily. It is a TempDataDictionary class type and instance property of the Controller base class.<br>TempData is able to keep data for the duration of a HTTP request, in other words it can keep live data between two consecutive HTTP requests. It will help us to pass the state between action methods. TempData only works with the current and subsequent request. TempData uses a session variable to store the data.<br>In the ASP.NET MVC core framework, ViewData and ViewBag are used to pass data from a controller to a view.<br>ViewData is a dictionary object that is used to store and pass data from a controller to a view.<br>ViewBag is a dynamic property that is used to store and pass data from a controller to a view.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How to releases all the resources associated with the session in ASP.net MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Session.Abandon();"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Session.Clear();"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Session.RemoveAll();"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 81624,
+      "Explanation": "There Are 3 ways to Destroy Session.<br>Session.Abandon();<br>Session.Clear();<br>Session.RemoveAll();<br><br>In ASP.NET MVC, you can end a session by calling the Session.Abandon method. This method ends the current session and releases all the resources associated with the session.<br><br>Alternatively, you can use the Session.Clear method to clear all the data in the session, but keep the session alive.<br><br>Session.RemoveAll is a method in the ASP.NET Web Forms framework that is used to remove all the keys and values from the session. It is equivalent to calling the Session.Clear method in ASP.NET MVC.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Are both TempData/ViewData require typecasting in MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Both (TempData/ViewData) requires type casting to avoid null exception."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, these (TempData/ViewData) does not require type casting."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only TempData requires type casting to avoid null exception."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only ViewData requires type casting to avoid null exception."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 81659,
+      "Explanation": "Both (TempData/ViewData) requires type casting to avoid null exception and requires typecasting for complex data type .",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is ViewBag in ASP.NET MVC used for?&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Passing data from controller to view"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Storing data on the server side"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Persisting data across multiple requests"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Handling user input validation"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 81660,
+      "Explanation": "The ViewBag object in ASP.NET MVC is used for passing data from the controller to the view. It is a dynamic wrapper around a dictionary that allows you to add properties to it dynamically in the controller and access those properties in the view. This provides a flexible way to send data from the controller action to the corresponding view for rendering.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Are both TempData/ViewData property of Controller base class in MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both A &amp; B"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 81663,
+      "Explanation": "ViewData is a dictionary object and it is property of ControllerBase class.<br>ViewBag is Dynamic property of ControllerBase class.<br>TempData is a dictionary object and it is property of controllerBase class.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In MVC App TempData is used to pass data from ...",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Controller to Controller"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Views To Controller"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Controller to View"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 81664,
+      "Explanation": "TempData is used to transfer data from view to controller, controller to view, or from one action method to another action method of the same or a different controller.&nbsp;<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Default Session state mode in ASP.Net MVC core Application.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "StateServer<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Session Object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "In-Memory"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 81844,
+      "Explanation": "The default session state mode in ASP.NET MVC Core is \"In-Memory\" mode. In this mode, the session data is stored in memory on the server, and is lost if the server is restarted or the application pool is recycled. It provides fast and efficient storage, but is not suitable for large amounts of data or for scenarios where data needs to persist across server restarts.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "By default, ASP.NET MVC Core store SessionIDs in _________.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Cookies"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Cache"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Database"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Global variable"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 81855,
+      "Explanation": "By default, ASP.NET MVC Core stores session IDs in a cookie on the client&apos;s device. This allows the server to associate a user&apos;s session with their specific browser, and maintain their session state across multiple requests. The cookie used to store the session ID is typically named \"ASP.NET_SessionId\" and is stored in the client&apos;s browser. In some cases, it may be necessary to store the session ID in a different location, such as in a URL query string or a custom cookie, and this can be accomplished through configuration changes in the ASP.NET MVC Core application.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is used to maintain the data across All users?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Application state"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Session state"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Cookies"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ViewState"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 70526,
+      "Explanation": "<ul><li><p>Application state: Used to store data that should be maintained across all users and sessions of an application. It is stored on the server and is available to all users.</p></li><li><p>Session state: Used to store data specific to a particular user session. It is stored on the server and is accessible throughout the user&apos;s session.</p></li><li><p>Cookies: Used to store small pieces of data on the client side. Cookies are specific to each user and can persist data between sessions.</p></li><li><p>ViewState: Used in Web Forms (not in ASP.NET MVC) to persist the state of controls across postbacks within the same page.</p></li></ul>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Which approach to state management allows you to store information that can be maintained for all</div><div>users of an application in such a way that it will never expire ?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Application state"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Caching"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Session state"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Cookies"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 70503,
+      "Explanation": "Application state is a data repository available to all classes in an ASP.NET application. Application state is stored in memory on the server and is faster than storing and retrieving information in a database. Unlike session state, which is specific to a single user session, application state applies to all users and sessions. Therefore, application state is a useful place to store small amounts of often-used data that does not change from one user to another.<br>Application State does not have a default expiration period.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Which type of cookies are stored on your local disk?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Persistent cookie"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Session cookie"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Application cookie"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "User cookie"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 70550,
+      "Explanation": "There are two types of cookies: persistent cookies and session cookies. Session cookies do not contain an expiration date. Instead, they are stored only as long as the browser or tab is open. As soon as the browser is closed, they are permanently lost.<br><br>Persistent cookies do have an expiration date. These cookies are stored on the user\u2019s disk until the expiration date and then permanently deleted.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following state management techniques is suitable for storing small amounts of data in the client-side?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Session state"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Query string"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Cookies"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Application state"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 86616,
+      "Explanation": "Cookies are suitable for storing small amounts of data in the client-side. Cookies are text files stored in the user&apos;s web browser and can be used to store information like user preferences or session-related data.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In ASP.NET MVC, where can you store data temporarily between two consecutive requests?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ViewData"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "TempData"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Query string"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Application state"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5510,
+      "QuestionTypeId": 0,
+      "QuestionId": 86617,
+      "Explanation": "TempData is used to store data temporarily between two consecutive requests. It is a dictionary-like object that helps in passing data from the current request to the subsequent request.<br>",
+      "Answer": "B",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

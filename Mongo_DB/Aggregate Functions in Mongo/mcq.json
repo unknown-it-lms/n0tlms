@@ -1,0 +1,426 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Which of the following aggregate functions in MongoDB is used to calculate the average value of a numeric field across documents in a collection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "$sum"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "$avg"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "$min"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "$max"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5652,
+      "QuestionTypeId": 0,
+      "QuestionId": 94448,
+      "Explanation": "<span id=\"explanation94448\" style=\"color:blue\">The $avg operator is used to calculate the average value for specified fields in documents.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the MongoDB aggregation pipeline, which stage is used to group documents by a specified expression?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "$group"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "$match"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "$sort"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "$project"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5652,
+      "QuestionTypeId": 0,
+      "QuestionId": 94449,
+      "Explanation": "$group is used in the aggregation pipeline to group documents by a specified key and perform operations on aggregated data.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following operators cannot be used directly in a MongoDB aggregation $group stage?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "$first"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "$last"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "$push"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "$add"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5652,
+      "QuestionTypeId": 0,
+      "QuestionId": 94450,
+      "Explanation": "<span id=\"explanation94450\" style=\"color:blue\">$add is an arithmetic operator used for mathematical operations, not directly within a $group stage for aggregation.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the $sort stage in the MongoDB aggregation pipeline?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To filter documents"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To exclude fields"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To sort documents"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To join collections"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5652,
+      "QuestionTypeId": 0,
+      "QuestionId": 94451,
+      "Explanation": "<span id=\"explanation94451\" style=\"color:blue\">$sort is used to order the documents based on specified fields during the aggregation process.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement about the $unwind stage is true in MongoDB aggregation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "$unwind expands an array field into multiple documents."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "$unwind is used to group documents by keys."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "$unwind only works with numeric fields."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "$unwind merges documents from other collections."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5652,
+      "QuestionTypeId": 0,
+      "QuestionId": 94452,
+      "Explanation": "$unwind takes an array field from a document and creates separate documents for each element.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of pipeline stage is $lookup in MongoDB's aggregation framework?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Array operator"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Lookup operator"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Filter operator"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5652,
+      "QuestionTypeId": 0,
+      "QuestionId": 94453,
+      "Explanation": "<span id=\"explanation94453\" style=\"color:blue\">$lookup is used to perform left outer join&nbsp; with another collection within an aggregation pipeline.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using the $max operator in a $group stage, what is the expected result?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It returns the sum of values."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It returns the minimum value."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It returns the maximum value."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It returns the average of values."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5652,
+      "QuestionTypeId": 0,
+      "QuestionId": 94454,
+      "Explanation": "<span id=\"explanation94454\" style=\"color:blue\">$max is used to find the highest value for the specified field within grouped documents.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main purpose of the $project stage in a MongoDB aggregation pipeline?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To join collections"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To project desired fields and shapes of documents"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To filter documents"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To sort documents"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5652,
+      "QuestionTypeId": 0,
+      "QuestionId": 94455,
+      "Explanation": "<span id=\"explanation94455\" style=\"color:blue\">$project is used to reshape each document in a pipeline, specifying which fields to include or exclude.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does the $match stage function in the MongoDB aggregation pipeline?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Aggregates data into one document"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Filters documents by specified criteria"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Joins documents from multiple collections"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Calculates total values across documents"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5652,
+      "QuestionTypeId": 0,
+      "QuestionId": 94456,
+      "Explanation": "<span id=\"explanation94456\" style=\"color:blue\">$match is used to filter documents that match specified criteria in the aggregation pipeline early.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following stages in the MongoDB aggregation pipeline can be used to limit the number of documents processed in subsequent stages?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "$skip"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "$limit"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "$sort"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "$group"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5652,
+      "QuestionTypeId": 0,
+      "QuestionId": 94457,
+      "Explanation": "<span id=\"explanation94457\" style=\"color:blue\">$limit is used to constrain the number of documents passed to the next stage.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the $sample stage do in a MongoDB aggregation pipeline?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Sorts documents"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Joins documents with another collection"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Filters out a random set of documents"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Calculates average values of a field"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5652,
+      "QuestionTypeId": 0,
+      "QuestionId": 94458,
+      "Explanation": "<span id=\"explanation94458\" style=\"color:blue\">$sample randomly selects a specified number of documents from a collection.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the MongoDB aggregation framework, what does the $sum operator do when used in a $group stage?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Calculates the average"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Adds up all values"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Finds the maximum value"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Finds the minimum value"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5652,
+      "QuestionTypeId": 0,
+      "QuestionId": 94459,
+      "Explanation": "$sum calculates the total of the specified field values within the grouped documents.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which aggregation operator is used in MongoDB to output a field that contains an arithmetic negation of a specified field?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "$subtract"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "$divide"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "$mod"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "$multiply"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5652,
+      "QuestionTypeId": 0,
+      "QuestionId": 94460,
+      "Explanation": "<span id=\"explanation94460\" style=\"color:blue\"></span><span style=\"color:blue\">{<br>&nbsp; $multiply: [\"$field\", -1]<br>}&nbsp;</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the wrong statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Secondary indices is not available in MongoDB"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "MongoDB supports search by field,range queries, regular expression searches"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "MongoDB can store the business subject in the minimal number of documents"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5652,
+      "QuestionTypeId": 0,
+      "QuestionId": 76352,
+      "Explanation": "Any field in a MongoDB document can be indexed.",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

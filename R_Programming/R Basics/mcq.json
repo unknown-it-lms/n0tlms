@@ -1,0 +1,3336 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Which of the following is a valid identifier in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1variable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "_variable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "variable1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "var-iable"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100450,
+      "Explanation": "Identifiers in R must start with a letter or a period followed by letters, numbers, or underscores. &#39;variable1&#39; is valid because it starts with a letter.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these cannot be used as an identifier in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "my_var"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": ".myVar"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "NA"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "var1"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100451,
+      "Explanation": "&#39;NA&#39; is a reserved constant in R and cannot be used as an identifier.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Among the following options, which one is NOT a valid identifier in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": ".3rdPlace"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": ".myVariable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "dataset2019"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "dataVariable"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100452,
+      "Explanation": "Identifiers cannot start with a number, even if prefixed by a period. Thus, &#39;.3rdPlace&#39; is not valid.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following keywords is used to represent a predefined object in R that doesn't consume memory?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "NULL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "NA"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Inf"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "NaN"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100453,
+      "Explanation": "<span id=\"explanation100453\" style=\"color:blue\">In R, &apos;NULL&apos; is a keyword used to represent the absence of a value or an undefined object. It doesn&apos;t occupy any storage space.<br></span><ul><li><p><span style=\"color:#0000ff;\">NA: Stands for \"Not Available\" and represents missing data in vectors\u2014memory is still allocated.</span></p></li><li><p><span style=\"color:#0000ff;\">Inf: Represents infinity (e.g., from division by zero), and is a valid numeric value.</span></p></li><li><p><span style=\"color:#0000ff;\">NaN: Stands for \u201cNot a Number,\u201d typically resulting from undefined mathematical operations (e.g., 0/0).</span></p></li></ul><p><span style=\"color:#0000ff;\">So when you want a truly \u201cmemory-less\u201d placeholder, NULL is your lightweight champ.</span></p><br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used in R to denote an infinite value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "NA"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Inf"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "NaN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "FALSE"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100454,
+      "Explanation": "&#39;Inf&#39; is used in R to denote infinity, which can result from division by zero or operations that exceed the numerical limit.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the return value of the &#39;next&#39; keyword when used inside a for loop in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The loop is terminated"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The current iteration is skipped"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An error message is returned"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The loop pauses until manually resumed"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100455,
+      "Explanation": "In R, the &#39;next&#39; keyword is used to skip the current iteration of a loop and move on to the next iteration.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used in R to check whether an expression is logically true or false during conditional statements?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "if"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "else"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "while"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "TRUE"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100456,
+      "Explanation": "The &#39;if&#39; keyword in R is used to perform a test on a condition, evaluating whether it is TRUE or FALSE.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When performing debugging in R, which keyword allows you to jump out of a loop entirely?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "continue"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "break"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "stop"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "halt"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100457,
+      "Explanation": "The &#39;break&#39; keyword in R is used to exit loops before they have finished executing all iterations.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In R, which of the following correctly assigns the value 5 to a variable 'x'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "x &lt;- 5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "5 -&gt; x"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "x = 5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "x &lt;- 5;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100458,
+      "Explanation": "<span style=\"color:#0000ff;\">All of the options (A, B, C, and D) correctly assign the value 5 to variable x in R. But&nbsp;</span><p data-start=\"175\" data-end=\"227\">\u200b\u200b\u200b\u200b\u200b\u200b\u200b<span style=\"color: blue;\">In R, the correct and most common way to assign a value to a variable is using the &apos;&lt;-&apos; operator.&nbsp;</span><span style=\"color:#0000ff;\">x &lt;- 5</span>&nbsp;<span style=\"color:#0000ff;\">most common and recommended assignment in R.</span></p>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you remove a variable called &#39;y&#39; from your R environment?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "remove(y)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "delete(y)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "rm(y)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "clear(y)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100459,
+      "Explanation": "The &#39;rm()&#39; function is used to remove objects from the R environment. To delete a variable, you use &#39;rm(variable_name)&#39;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of 'class(num)' if a variable 'num' is defined as 'num &lt;- 12L' in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "'integer'"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "'numeric'"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "'character'"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "'logical'"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100460,
+      "Explanation": "<span id=\"explanation100460\" style=\"color:blue\">In R, appending &apos;L&apos; to a number defines it explicitly as an integer. Hence, &apos;num&apos; is an integer and &apos;class(num)&apos; will return &apos;integer&apos;.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not a valid variable name in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": ".var_name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "varName1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1varName"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": ".s123var"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100461,
+      "Explanation": "<span id=\"explanation100461\" style=\"color:blue\">Variable names in R cannot begin with a number. They can start with a letter or a period, followed by letters, numbers, or underscores.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If you create a variable &#39;flag&#39; using &#39;flag &lt;- TRUE&#39;, what will be the output of &#39;is.logical(flag)&#39;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "TRUE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FALSE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "NA"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "NULL"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100462,
+      "Explanation": "The &#39;is.logical()&#39; function checks if a variable is of logical type. Since &#39;flag&#39; is assigned &#39;TRUE&#39;, a logical value, &#39;is.logical(flag)&#39; returns TRUE.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the correct way to multiply two vectors, x and y, element-wise in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "x * y"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "x %*% y"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "outer(x, y)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "x %/% y"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100463,
+      "Explanation": "The * operator performs element-wise multiplication for vectors in R.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What operator in R is used to combine vectors by their corresponding elements(column-wise)?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "cbind()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "rbind()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "+"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "merge()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100464,
+      "Explanation": "<span id=\"explanation100464\" style=\"color:blue\">cbind() is used to combine vectors or matrices by columns, aligning corresponding elements.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In R, which operator would you use for integer division?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "/"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "%%"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "%/%"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "^"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100465,
+      "Explanation": "%/% performs integer division, returning the quotient without the remainder.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following operators checks if a value is not in a vector in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "%ni%"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "%in%"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "!%in%"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "in()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100466,
+      "Explanation": "!%in% is the correct operator to check if a value is not in a vector, using the not element-wise logical operator (!).",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator in R is used to test if two objects are exactly equal?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "=="
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "equals()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "identical()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all.equal()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100467,
+      "Explanation": "identical() checks if two objects have the same type and data exactly, more strict compared to ==",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the &lt;- operator in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It compares two variables"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It is an assignment operator"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It multiplies two variables"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is used for subsetting data"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100468,
+      "Explanation": "&lt;- is used to assign values on the right to objects or variables on the left.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you perform element-wise logical OR between two vectors in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "||"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "|"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&amp;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "%or%"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100469,
+      "Explanation": "| operator is used for element-wise logical OR operation between vectors.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator would you use to compare two vectors for element-wise inequality in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "!="
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "not()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "!=="
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100470,
+      "Explanation": "The != operator checks if the elements of two vectors are not equal.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In R, which operator is used to raise a number to a power?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "**"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "^"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "exp()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "pow()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100471,
+      "Explanation": "^ is the exponentiation operator. It raises the number on the left to the power of the number on the right.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator would be used to concatenate two strings in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "concat()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&amp;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "+"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "paste()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100472,
+      "Explanation": "<span id=\"explanation100472\" style=\"color:blue\">paste() is used to concatenate strings in R with options for separators.<br></span><ul><li><p><span style=\"color:#0000ff;\">paste(): Combines strings with a space (or custom separator).</span></p></li><li><p><span style=\"color:#0000ff;\">paste0(): Combines strings with no separator.</span><tr class=\"cls100473\" style=\"display:none\"></tr></p></li></ul>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a primary data type in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Character"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Numeric"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Scalar"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Logical"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100473,
+      "Explanation": "R does not have a scalar type as a primary data type. Scalars are represented as vectors of length one.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What data type is returned by the &#39;nchar()&#39; function in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Integer"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Character"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Numeric"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Logical"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100474,
+      "Explanation": "The &#39;nchar()&#39; function returns an integer representing the number of characters in a string.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function in R converts a vector to a factor?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "as.factor()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "to.factor()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "factor.create()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "convert.factor()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100475,
+      "Explanation": "The &#39;as.factor()&#39; function is used to convert a vector into a factor in R.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the data type of the expression 5 / 2 in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Integer"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Numeric"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Complex"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Logical"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100476,
+      "Explanation": "The result of 5 / 2 in R is a numeric value (2.5), as division in R results in partial values which are represented as numeric.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following functions is used to change a variable\u2019s data type in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "typeof()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "as.data.type()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "convert()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "as()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100477,
+      "Explanation": "The &#39;as()&#39; function is not directly available; however, R uses functions prefixed with &#39;as.&#39; like &#39;as.numeric()&#39;, &#39;as.character()&#39; to explicitly coerce types.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the data type of the result of &#39;TRUE + 1&#39; in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Logical"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Character"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Numeric"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Integer"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100478,
+      "Explanation": "In R, logical values are treated as numeric, where TRUE is 1 and FALSE is 0. Thus, TRUE + 1 results in a numeric type (2).",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If x is a character vector, which function will return its length?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "length()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "nchar()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "dim()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "size()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100479,
+      "Explanation": "The &#39;length()&#39; function returns the number of elements in a vector or list, while &#39;nchar()&#39; returns the number of characters in a string.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following data types can be used to store categorical data in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Numeric"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Logical"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Factor"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Integer"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100480,
+      "Explanation": "Factor data types in R are specifically designed for categorical data, and they store data as levels.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the result of the following R code: class(1:5)?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "numeric"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "integer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "character"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "logical"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100481,
+      "Explanation": "In R, the &#39;:&#39; operator creates sequences of integers, so &#39;1:5&#39; results in an integer vector.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following signifies a complex number in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "3 + 4i"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3L"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "TRUE"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100482,
+      "Explanation": "The &#39;i&#39; denotes an imaginary component in R, thus &#39;3 + 4i&#39; is a complex number.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which data structure in R is most suitable for storing heterogeneous data types?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Vector"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "List"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Matrix"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Array"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100483,
+      "Explanation": "In R, lists are the most suitable data structures for storing heterogeneous data types, as they can contain different data types within the same list.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function is used to add an element to a vector in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "add()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "append()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "insert()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "concat()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100484,
+      "Explanation": "The append() function is used to add elements to a vector in R. It can add values at specified positions or at the end of the vector.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct way to create a sequence of numbers from 5 to 15 in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "seq(5, 15)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "range(5, 15)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "series(5, 15)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "array(5, 15)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100485,
+      "Explanation": "The seq() function is used in R to create sequences of numbers. seq(5, 15) will generate a sequence from 5 to 15.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In R, which data structure allows the removal of elements using indices?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Data Frame"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Matrix"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Vector"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "List"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100486,
+      "Explanation": "Vectors in R allow the removal of elements using negative indices. For example, vector[-index] removes the element at the specified position.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which data structure in R can be used to store tabular data?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Vector"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Matrix"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Data Frame"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "List"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100487,
+      "Explanation": "Data frames are used in R to store tabular data. They can hold heterogeneous data types and have labeled columns, similar to a table.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does R handle missing values in vectors?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "NA"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "NULL"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "NAN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MISSING"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100488,
+      "Explanation": "R uses the NA symbol to represent missing values in vectors and other data structures. NA is used to indicate the absence of a value.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What function in R is used to combine vectors by rows or columns?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "combine()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "c()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "bind()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "cbind()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100489,
+      "Explanation": "The cbind() function is used to combine vectors by columns and the rbind() function is used to combine them by rows in R.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator is used in R to extract elements that meet certain conditions from a data structure?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "=="
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ifelse()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "subset()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "filter()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100490,
+      "Explanation": "The subset() function in R is used to extract elements from a data structure that meet certain conditions, such as rows from a data frame.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which data structure in R supports hierarchical data storage?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Vector"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "List"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Factor"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Data Frame"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100491,
+      "Explanation": "Lists in R are versatile data structures that support hierarchical data storage, as they can contain other lists, allowing for nested structures.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not a base data structure in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Vector"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Matrix"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Array"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Graph"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100492,
+      "Explanation": "Vector, matrix, and array are base data structures in R, while graphs are not inherently a base data structure in R. Graphs can be created using specific packages.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function in R is used to take input from the user?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "input()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "readline()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "scanf()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "print()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100493,
+      "Explanation": "The readline() function in R is used to take input from the user as it reads a line from the terminal.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you convert numeric input from a user into an integer in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "as.character()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "as.integer()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "as.numeric()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "as.double()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100494,
+      "Explanation": "The function as.integer() is used to convert a numeric input to an integer type in R.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What R function is typically used to read data from a CSV file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "read.csv()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "readFile()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "load.csv()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "csv.read()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100495,
+      "Explanation": "The read.csv() function is specifically designed to read data from a CSV file in R.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following functions can be used to read a file line by line in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "readLines()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "readFile()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "scan()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "lineRead()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100496,
+      "Explanation": "The function readLines() reads a file line by line, and is especially useful for text files.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method would you use to read raw binary data from a file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "read.table()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "read.csv()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "readBin()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "readLines()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100497,
+      "Explanation": "The readBin() function is used for reading binary data from a file in R.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To read a table separated by spaces, which function is most suitable in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "read.table()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "read.csv()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "read.space()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "readSheet()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100498,
+      "Explanation": "read.table() is the go-to function for reading tabular data, especially when they are space-separated.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If you need input from a console and want to ensure it is treated as numeric, which construct should be used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "as.numeric(readline())"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "as.character(readline())"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "read.table()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "as.integer(scan())"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100499,
+      "Explanation": "Using as.numeric(readline()) ensures that the input taken from readline() is converted into a numeric format.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function allows you to read in a large text file while skipping a number of lines?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "read.csv()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "readLines() with the skip parameter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "file.skip()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "scan()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100500,
+      "Explanation": "<span style=\"color:#0000ff;\">scan</span><span style=\"color:blue\">() function can be used with the &apos;skip&apos; parameter to skip a given number of lines at the beginning of the file.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What function would you use to read an Excel spreadsheet file in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "read.xlsx()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "read.excel()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "read.xls()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "load.xlsx()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100501,
+      "Explanation": "The read.xlsx() function (from the &#39;xlsx&#39; package) is used to read Excel spreadsheet files into R.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which package in R would you load to get enhanced functions for reading and writing data, specifically with fast performance?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "data.table"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "dplyr"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "readr"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "tidyr"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100502,
+      "Explanation": "The &#39;readr&#39; package provides an enhanced suite of read and write functions that perform efficiently compared to base R.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function would you use in R to print an object to the console in the simplest form?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "cat()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "print()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "message()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "str()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100503,
+      "Explanation": "The print() function is the most basic way to display an object or value in R, showing it in the console.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function allows for formatted printing with the use of placeholders in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "sprintf()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "paste()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "cat()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "write()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100504,
+      "Explanation": "The sprintf() function in R enables formatted output, allowing for complex formatting through placeholders.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using the write() function in R, what is its primary purpose?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Writing data to the console"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Writing data to a file"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Saving plots"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Printing messages"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100505,
+      "Explanation": "The write() function in R is primarily used to write data to a file, rather than displaying it in the console.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the noquote() function do to R output?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Removes quotes from numeric output"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Suppresses printing to the console"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Disables quotes around character strings"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Converts output to uppercase"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100506,
+      "Explanation": "The noquote() function in R removes quotes around character strings when printing them, but doesn&#39;t convert them to numeric values.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How is the message() function different from the cat() function in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "message() doesn't print output to the console"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "cat() can output warnings, but message() can't"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "message() outputs to standard error, cat() does not"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "message() requires a file connection first"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100507,
+      "Explanation": "<span id=\"explanation100507\" style=\"color:blue\">The message() function outputs text to the standard error stream, useful for warnings or additional information, while cat() outputs to standard output.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In R, which function is suitable for combining strings before displaying them?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "paste()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "cat()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "format()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "print()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100508,
+      "Explanation": "The paste() function is used to concatenate strings in R, often before displaying them or performing other operations.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function is used to provide a concise summary of an R object\u2019s structure?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "summary()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "str()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "print()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "cat()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100509,
+      "Explanation": "The str() function in R offers a compact, human-readable description of the structure of an object, showing its data types and content.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default separator used by the paste() function in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A comma"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A semicolon"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A space"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A hyphen"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100510,
+      "Explanation": "By default, the paste() function in R uses a space as the separator to join multiple strings together.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function would you use to ensure that the output is redirected to a specific file connection in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "cat()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "sink()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "write()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "format()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100511,
+      "Explanation": "The sink() function in R is used to redirect R output to a file connection rather than the console, enabling the capture of the output.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following symbols is used to start a single line comment in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "#"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "//"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "/*"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "--"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100512,
+      "Explanation": "In R, a single line comment is started with the &#39;#&#39; symbol. Anything following this symbol on the same line is considered a comment.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If you want to add a multi-line comment in R, which of the following approaches would you use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use &#39;#&#39; at the start of each line"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Enclose the comment with /* and */"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use /** to start and **/ to end"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use backticks ` to enclose the comment"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100513,
+      "Explanation": "R does not have a built-in syntax for multi-line comments like some other languages. Instead, you use the &#39;#&#39; symbol at the start of each line you want to comment.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why are comments used in R scripts?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To increase execution speed"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To generate random numbers"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To describe the code and make it more readable"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To enable graphical output"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100514,
+      "Explanation": "Comments are used to explain and document the code, making it easier to understand for others (or oneself at a later time). They do not affect the execution or speed.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following R code snippets correctly uses comments to temporarily disable lines of actual code?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "#x &lt;- rnorm(10)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "/*x &lt;- rnorm(10)*/"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "//x &lt;- rnorm(10)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;!-- x &lt;- rnorm(10) --&gt;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100515,
+      "Explanation": "The correct approach in R is to use &#39;#&#39; to comment out code you don\u2019t want to execute. Other options are not valid in R for commenting out code.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens when the comment symbol &#39;#&#39; is used in the middle of a line in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The entire line is converted into a comment"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "R raises an error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Everything after the &#39;#&#39; symbol on that line becomes a comment"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The comment symbol is ignored by R"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 100516,
+      "Explanation": "In R, everything after the &#39;#&#39; symbol on the same line is considered a comment and is ignored during execution. The part before the &#39;#&#39; is treated as normal code.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the output of the following code ? &gt; x &lt;- 1:4 &gt; y &lt;- 6:9 &gt; x/y",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0.1666667 0.2857143 0.4444444"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0.1666667 0.2857143 0.3750000 0.4444444"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0.2857143 0.3750000 0.4444444"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75371,
+      "Explanation": "Logical operations return a logical vector of TRUE and FALSE.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statement would print \"0'' \"1\" \"2\" \"3\" \"4\" \"5\" \"6\" for the following code ? &gt; x &lt;- 0:6",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "as.character(x)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "as.logical(x)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "as.numeric(x)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75242,
+      "Explanation": "a Explanation: as.character would print number from 0 to 6.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following code constructs vector of length 11 ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&gt; v &lt;- 3*x + y + 1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&gt; v &lt;- 3*x + y + 2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&gt; v &lt;- 2*x + y + 1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75239,
+      "Explanation": "The elementary arithmetic operators are the usual +, -, *, / and ^ for raising to a power.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the followin code represents internal representation of a Date object ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "class(as.Date(\"1970-01-02\"))"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "unclass(as.Date(\"1970-01-02\"))"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "unclassint(as.Date(\"1970-01-02\"))"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75375,
+      "Explanation": "You can see the internal representation of a Date object by using the unclass() function.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the output of the following code ? &gt; x &lt;- as.Date(\"1970-01-01\") &gt; x",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "\"1970-01-01\""
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "\"1970-01-02\""
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "\"1970-02-01\""
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75377,
+      "Explanation": "Dates are represented by the Date class and can be coerced from a character string using the as.Date() function.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the output of the following code ? &gt; x &lt;- Sys.time() &gt; class(x)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "\"POSIXct\" \"POSIXt\""
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "\"POSIXXt\" \"POSIXt\""
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "\"POSIXct\" \"POSIct\""
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75378,
+      "Explanation": "Times can be coerced from a character string using the as.POSIXlt or as.POSIXct function.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following function gives the day of the week ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "weekdays"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "months"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "quarters"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75379,
+      "Explanation": "months function give the month name.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the correct statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The complement to the textual format is the binary format"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "If you have a lot of objects that you want to save to a file, you can save all objects in your workspace using the save.image() function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The serialize() function is used to convert individual R objects into a binary format that can be communicated across an arbitrary connection"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75337,
+      "Explanation": "It\u2018s better to stick with a binary format for efficiency and accuracy.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statement will save the output to the file for following code ? &gt; a &lt;- data.frame(x = rnorm(100), y = runif(100)) &gt; b &lt;- c(3, 4.4, 1 / 3)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "save(a, b, file = ?mydata.rda?)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "save_image(a, b, file = ?mydata.rda?)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "keep(a, b, file = ?mydata.rda?)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75338,
+      "Explanation": "You can save all objects in your workspace using the save.image() function.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statement will load the objects to the file named \"mydata.RData\" ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "save(\"mydata.RData\")"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "load(\"mydata.RData\")"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "loadAll(\"mydata.RData\")"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75339,
+      "Explanation": ".rda and .RData are fairly common extensions and you may want to use them because they are recognized by other software.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the wrong statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When you call unserialize() on an R object, the output will be a raw vector coded in hexadecimal format"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "serialize() function is the only way to perfectly represent an R object in an exportable format"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": ".rda extension is used when save() function is incorporated"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75340,
+      "Explanation": "Output may get sent to a file, but it could get sent over a network or other connection.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "________ opens a connection to a file compressed with gzip.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "url"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "gzfile"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "bzfile"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "file View Answer"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75341,
+      "Explanation": "\"file\" opens a connection to a file.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Connections to text files can be created with the ________ function.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "url"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "gzfile"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "bzfile"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "file View Answer"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75342,
+      "Explanation": "The file() function has a number of arguments that are common to many other connection functions.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the followin code creates a connection to =foo.txt\u2018 ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "con &lt;- file(?foo.txt?)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "open(con, ?r?)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "opencon(con, ?r?)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75343,
+      "Explanation": "Open is used for opening connection to =foo.txt\u2018 in read-only mode.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following code opens a connection to the file foo.txt, reads from it, and closes the connection when its done?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "data &lt;- read.csv(\"foo.txt\")"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "data &lt;- read.csvo(\"foo.txt\")"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "data &lt;- readonly.csv(\"foo.txt\")"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75344,
+      "Explanation": "Connections must be opened, then the are read from or written to, and then they are closed.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following opens connection to gz-compressed text file ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "con &lt;- gzfiles(\"words.gz\")"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "con &lt;- gzfile(\"words.gz\")"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "con &lt;- gzfile2(\"words.gz\")"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75345,
+      "Explanation": "For more structured text data like CSV files or tab-delimited files, there are other functions like read.csv() or read.table().",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the correct statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use explicit TRUE and FALSE values when indicating logical values"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "rm command is used to remove objects in R"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "R operates on named data structures"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75226,
+      "Explanation": "A number occurring by itself in an expression is taken as a vector of length one.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the result of following code ? &gt; x &lt;- 6 &gt; class(x)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "\"integer\""
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "\"double\""
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "\"real\""
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75229,
+      "Explanation": "class is used to determine data type of the variable.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will the following code print ? &gt; x &lt;- 0:6 &gt; as.logical(x)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "FALSE TRUE TRUE TRUE TRUE TRUE TRUE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "\"0\" \"1\" \"2\" \"3\" \"4\" \"5\" \"6\""
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0 1 2 3 4 5 6"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75234,
+      "Explanation": "Sometimes, R can\u2018t figure out how to coerce an object and this can result in NAs being produced.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Point out the correct statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The usual operator, &lt;-, can be thought of as a syntactic short-cut to expression operation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Assignment can also be made using the function assignment()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Vectors can be used in arithmetic expressions, in which case the operations are performed element by element"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75236,
+      "Explanation": "Vectors occurring in the same expression need not all be of the same length.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Numbers in R are generally treated as _______ precision real numbers.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "single"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "double"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "real"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75206,
+      "Explanation": "This means that even if you see a number like \u2015\"1\" or \u2015\"2\" in R, which you might think of as integers, they are likely represented behind the scenes as numeric objects something like \u2015\"1.00\" or \u2015\"2.00\".",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If you explicitly want an integer, you need to specify the _____ suffix.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "D"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "R"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<strong>L</strong>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75208,
+      "Explanation": "Entering 1 in R gives you a numeric object; entering 1L explicitly gives you an integer object.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the correct statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The value NaN represents undefined value"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Number Inf represents infinity in R"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "NaN can also be thought of as a missing value"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75209,
+      "Explanation": "This allows us to represent entities like 1 / 0.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Attributes of an object (if any) can be accessed using the ______ function.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "objects()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "attrib()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "attributes()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75213,
+      "Explanation": "Not all R objects contain attributes, in which case the attributes() function returns NULL.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;R objects can have attributes, which are like ________ for the object.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "metadata"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "features"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "expression"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75216,
+      "Explanation": "These metadata can be very useful in that they help to describe the object.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following can be considered as object attribute ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "dimensions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "length"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75219,
+      "Explanation": "All objects in R have an Attribute list.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is used for reading in saved workspaces ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "unserialize"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "load"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "get"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75278,
+      "Explanation": "unserialize is used for reading single R objects in binary form.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the wrong statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "write.table is used for for writing tabular data to text files (i.e. CSV) or connections"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "writeLines is used for for writing character data line-by-line to a file or connection"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "dump is used for for dumping a textual representation of multiple R objects"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75279,
+      "Explanation": "There are analogous functions for writing data to files.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "________ is used for outputting a textual representation of an R object",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "dput"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "dump"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "dget"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75280,
+      "Explanation": "dump is used for dumping a textual representation of multiple R objects.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following argument denotes if the file has a header line ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "header"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "sep"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "file"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75281,
+      "Explanation": "sep is a string indicating how the columns are separated.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the correct statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "unserialize is used for converting an R object into a binary format for outputting to a connection"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "save is used for saving an arbitrary number of R objects in binary format to a file"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The read.data() function is one of the most commonly used functions for reading data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75282,
+      "Explanation": "read.table reads a file in table format and creates a data frame from it.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statement would read file ?foo.txt? ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "data &lt;- read.table(\"foo.txt\")"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "read.data &lt;- read.table ('foo.txt\")"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "data &lt;- read.data(\"foo.txt\")"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75283,
+      "Explanation": "R will automatically skip lines that begin with a #.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following function is identical to read.table ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "read.csv"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "read.data"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "read.tab"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75284,
+      "Explanation": "The read.csv() function is identical to read.table except that some of the defaults are set differently (like the sep argument).",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the result of following R code ?&nbsp; &gt; x &lt;- 1 &gt; print(x)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75187,
+      "Explanation": "When a complete expression is entered at the prompt, it is evaluated and the result of the evaluated expression is returned.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the wrong statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The grammar of the language determines whether an expression is complete or not"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The &gt;- symbol is the assignment operator in R"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The ## character indicates a comment"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75188,
+      "Explanation": "Unlike some other languages, R does not support multi-line comments or comment blocks.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following code is example of explicit printing ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&gt; x &lt;- 5 &gt; x"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&gt; x &lt;- 5 &gt; print(x)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&gt; x &lt;- \"auto\" &gt; x"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75189,
+      "Explanation": "Print command is used for outputting the value.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the wrong statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": ": operator is used to create integer sequences"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The numbers in the square brackets are part of the vector itself"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "There is a difference between the actual R object and the manner in which that R object is printed to the console"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75190,
+      "Explanation": "Answer to be reviewed",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If commands are stored in an external file, say commands.R in the working directory work, they may be executed at any time in an R session with the command :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "source(\u2015commands.R\")"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "exec(\u2015commands.R\")"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "execute(\u2015commands.R\")"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75191,
+      "Explanation": "For Windows, Source is also available on the File menu.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;_______ will divert all subsequent output from the console to an external file.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "sink"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "div"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "exp"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75193,
+      "Explanation": "sink() restores it to the console once again.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The entities that R creates and manipulates are known as ________",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "objects"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "task"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "container"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75194,
+      "Explanation": "These may be variables, arrays of numbers, character strings, functions, or more general structures built from such components.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following can be used to display the names of (most of) the objects which are currently stored within R ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "object()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "objects()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "list()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75196,
+      "Explanation": "During an R session, objects are created and stored by name.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Files containing R scripts ends with extension :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": ".S"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": ".R"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": ".Rp"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75200,
+      "Explanation": "Under many versions of UNIX and on Windows, R provides a mechanism for recalling and re-executing previous commands.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Collection of objects currently stored in R is called as",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "package"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "workspace"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "list"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75202,
+      "Explanation": "All objects created during an R session can be stored permanently in a file for use in future R sessions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "R has how many atomic classes of objects",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "5"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5746,
+      "QuestionTypeId": 0,
+      "QuestionId": 75203,
+      "Explanation": "The most basic type of R object is a vector.",
+      "Answer": "D",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

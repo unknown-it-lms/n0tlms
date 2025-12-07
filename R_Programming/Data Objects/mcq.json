@@ -1,0 +1,4382 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What will be the output of following code ? &gt; x &lt;- list(a = 1:5, b = rnorm(10)) &gt; lapply(x, mean)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "$a [1] 3 $b [1] 0.1322028"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "$a [1] 4 $b [1] 0.1322028"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "$a [1] 5 $b [1] 0.1322028"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75538,
+      "Explanation": "If the original list has names, the the names will be preserved in the output.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the wrong statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The sapply() function behaves similarly to lapply()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "With multiple factors and many levels, creating an interaction can result in many levels that are empty"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "apply() can be thought of as a combination of split() and sapply() for vectors only"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75539,
+      "Explanation": "tapply() can be thought of as a combination of split() and sapply() for vectors only.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following code ? &gt; x &lt;- 1:4 &gt; lapply(x, runif)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[[1]] [1] 0.02778712 [[2]] [1] 0.5273108 0.8803191 [[3]] [1] 0.37306337 0.04795913 0.13862825 [[4]] [1] 0.3214921 0.1548316 0.1322282 0.2213059"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[[1]] [1] 1.02778712 [[2]] [1] 2.5273108 0.8803191 [[3]] [1] 3.37306337 0.04795913 0.13862825 [[4]] [1] 0.3214921 0.1548316 0.1322282 0.2213059"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[[1]] [1] 1.02778712 [[2]] [1] 0.5273108 0.8803191 [[3]] [1] 0.37306337 0.04795913 0.13862825 [[4]] [1] 3.3214921 2.1548316 1.1322282 0.2213059"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75540,
+      "Explanation": "In the above question, the first argument of runif() is n, and so the elements of the sequence 1:4 all got passed to the n argument of runif().",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following code will print the following result ? [[1]] [1] 2.263808 [[2]] [1] 1.314165 9.815635 [[3]] [1]3.270137 5.069395 6.814425 [[4]] [1] 0.9916910 1.1890256 0.5043966 9.2925392",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&gt; x &lt;- 1:4 &gt; lapply(x, runif, min = 0, max = 10)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&gt; x &lt;- 1:4 &gt; lapply(x, runif, min = 0, max = 9)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&gt; x &lt;- 1:3 &gt; lapply(x, runif, min = 0, max = 10)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75541,
+      "Explanation": "Once the call to lapply() is finished, the function disappears and does not appear in the workspace.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "_________ require you to pass a function whose argument is a vector of parameters.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "optimize()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "optimise()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "opt()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75521,
+      "Explanation": "Optimization routines in R like optim(), nlm(), and optimize() require you to pass a function.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function in R is used to concatenate strings?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "paste()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "strcat()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "concat()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "append()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100620,
+      "Explanation": "The paste() function in R is used to concatenate strings and join them into a single character string.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following functions in R is used to convert a number to a string?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "as.character()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "toString()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "numToStr()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "stringify()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100621,
+      "Explanation": "The as.character() function is used to convert numbers or other data types into strings in R.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the following R expression: nchar(&#39;data123&#39;)?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "7"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "8"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "9"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100622,
+      "Explanation": "The nchar() function returns the number of characters in a string, and &#39;data123&#39; has 7 characters.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you convert the string &#39;  R program  &#39; to &#39;R program&#39; in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "trim(&#39;  R program  &#39;)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "strip(&#39;  R program  &#39;)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "trimws(&#39;  R program  &#39;)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "reducews(&#39;  R program  &#39;)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100623,
+      "Explanation": "The trimws() function is used in R to remove leading and trailing whitespaces from a string.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function can be used to search for a pattern in a string in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "regsearch()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "grep()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "patternsearch()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "find()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100624,
+      "Explanation": "The grep() function in R is used for pattern matching and searching within strings.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the R function toupper(&#39;hello&#39;) return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "HELLO"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "hello"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Hello"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "hELLO"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100625,
+      "Explanation": "The toupper() function converts all characters in a string to uppercase. Therefore, &#39;hello&#39; becomes &#39;HELLO&#39;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function is used to split a string into substrings in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "split()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "strsplit()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "substring()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "divide()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100626,
+      "Explanation": "The strsplit() function is used in R to split a string into substrings based on a specified delimiter.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you replace all occurrences of &#39;data&#39; with &#39;info&#39; in a string &#39;data analysis&#39; in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "replace(&#39;data analysis&#39;, &#39;data&#39;, &#39;info&#39;)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "gsub(&#39;data&#39;, &#39;info&#39;, &#39;data analysis&#39;)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "sub(&#39;info&#39;, &#39;data&#39;, &#39;data analysis&#39;)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "str_replace(&#39;data analysis&#39;, &#39;data&#39;, &#39;info&#39;)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100627,
+      "Explanation": "The gsub() function is used to replace all occurrences of a pattern with a replacement, so &#39;gsub(&#39;data&#39;, &#39;info&#39;, &#39;data analysis&#39;)&#39; replaces &#39;data&#39; with &#39;info&#39;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be returned by the R expression: tolower(&#39;ABcD&#39;)?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "abcd"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ABCD"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "aBcD"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Abcd"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100628,
+      "Explanation": "The tolower() function converts all characters in a string to lowercase. Therefore, &#39;ABcD&#39; becomes &#39;abcd&#39;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function is used to check if a string contains a specific substring in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "contains()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "str_detect()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "has_substr()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "findstr()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100629,
+      "Explanation": "The str_detect() function from the stringr package in R is used to check if a string contains a specific substring.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function is used to combine values into a vector in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "combine()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "c()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "vector()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "attach()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100630,
+      "Explanation": "The c() function is used to combine values into a vector in R.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the R expression length(c(4, 2, 8, 5))?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "8"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "5"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100631,
+      "Explanation": "The length() function returns the number of elements in a vector. Here, the vector has 4 elements.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following will create a vector of numbers from 1 to 10 in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "c(1, 10)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1:10"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "seq(0, 10)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "rep(1, 10)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100632,
+      "Explanation": "The colon operator : is used to create a sequence of numbers, making 1:10 generate a vector from 1 to 10.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the expression c(1, 2, 3) + c(4, 5, 6) return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A single vector with the value 21"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A single vector with elements 5, 7, 9"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A single vector with elements 4, 5, 6"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An error due to incompatible vectors"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100633,
+      "Explanation": "When two vectors of the same length are added, corresponding elements are added together to produce a new vector.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you explicitly specify the type of a vector in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "as.numeric()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "set.type()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "typeof()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "coerce()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100634,
+      "Explanation": "The as.numeric() function can be used to convert or coerce elements to numeric type.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following will return TRUE for all elements of the vector c(2, 4, 6, 8) &gt; 5?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "all(c(2, 4, 6, 8) &gt; 5)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "any(c(2, 4, 6, 8) &gt; 5)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "sum(c(2, 4, 6, 8) &gt; 5)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "length(c(2, 4, 6, 8) &gt; 5) &gt; 5"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100635,
+      "Explanation": "The any() function checks if any element of the specified condition is TRUE in the vector.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function can be used to repeat the elements of a vector in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "seq()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "rep()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "recycle()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "repeat()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100636,
+      "Explanation": "The rep() function is used to replicate the elements of a vector.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of c(1:3, 4:6) in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An error stating improper concatenation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A single vector with elements 1, 2, 3, 4, 5, 6"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Two separate vectors: [1, 2, 3] and [4, 5, 6]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100637,
+      "Explanation": "The c() function concatenates values, and when used with sequences like 1:3, it produces a single continuous vector.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the expression as.character(c(1, 2, 3)) return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "NULL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A character vector with strings &#39;1&#39;, &#39;2&#39;, &#39;3&#39;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An error since numeric cannot be coerced"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A numeric vector"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100638,
+      "Explanation": "The as.character() function converts the elements to their character string equivalents.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function will correctly return the type of a vector in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "typeof()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "class()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "mode()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "type()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100639,
+      "Explanation": "The typeof() function in R returns the internal storage type of an object.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function is used to create a list in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "c()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "list()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "data.frame()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "matrix()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100640,
+      "Explanation": "The list() function in R is used to create a list, which can contain elements of different types.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you access the second element of a list named &#39;my_list&#39; in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "my_list[2]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "my_list[[2]]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "my_list$2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "my_list[[1]]"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100641,
+      "Explanation": "In R, to access the second element of a list, double square brackets are used: my_list[[2]].",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which R function can be used to set or inquire about the names of list elements?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "names()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "length()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "typeof()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "str()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100642,
+      "Explanation": "The names() function in R is used to get or set the names of elements in a list.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of length(list(a=1, b=2, c=3))?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "0"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100643,
+      "Explanation": "The length() function, when applied to a list, returns the number of top-level elements, which in this case is 3.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you change the second element of a list &#39;my_list&#39; to a new value &#39;10&#39;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "my_list[2] &lt;- 10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "my_list[[2]] &lt;- 10"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "my_list$2 &lt;- 10"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "my_list[1] &lt;- 10"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100644,
+      "Explanation": "To modify the second element of a list, use double square brackets: my_list[[2]] &lt;- 10.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of data structure is a list in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Homogeneous"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Heterogeneous"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Atomic"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Sequential"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100645,
+      "Explanation": "Lists in R are heterogeneous data structures, meaning they can hold elements of different data types.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method would you use to add a new element to the end of a list &#39;my_list&#39;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "append(my_list, new_element)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "my_list[[length(my_list) + 1]] &lt;- new_element"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "my_list[length(my_list)] &lt;- new_element"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "rbind(my_list, new_element)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100646,
+      "Explanation": "To add a new element to the end of a list, you use my_list[[length(my_list) + 1]] &lt;- new_element.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command will return the structure of a list named &#39;data_list&#39;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "class(data_list)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "typeof(data_list)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "str(data_list)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "summary(data_list)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100647,
+      "Explanation": "The str() function is used to return the internal structure of an R object, which is useful for lists.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you remove the third element of a list &#39;my_list&#39;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "my_list[-3]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "my_list &lt;- my_list[-3]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "remove(my_list[3])"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "delete(my_list[3])"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100648,
+      "Explanation": "To remove the third element from a list, you should reassign the list without the third element: my_list &lt;- my_list[-3].",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you test if &#39;x&#39; is a list in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "is.list(x)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "is.vector(x)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "is.data.frame(x)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "is.matrix(x)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100649,
+      "Explanation": "The is.list() function checks if the object x is a list in R.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function in R is used to convert a vector into a factor?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "as.vector()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "as.factor()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "as.matrix()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "as.list()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100650,
+      "Explanation": "The as.factor() function is specifically used to convert a vector into a factor in R.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary use of factors in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Storing numeric data"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Handling character strings"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Representing categorical data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Performing matrix operations"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100651,
+      "Explanation": "Factors in R are used to represent categorical data with a fixed number of categories or levels.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In R, what does the levels() function do when applied to a factor?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Adds a new level to the factor"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Removes a level from the factor"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Sets or retrieves the levels of a factor"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Transforms the factor into a character vector"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100652,
+      "Explanation": "The levels() function is used to set or retrieve the levels of a factor in R.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will the function is.factor() return when applied to a factor in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "NULL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "TRUE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "FALSE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "NA"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100653,
+      "Explanation": "The is.factor() function checks if the object is a factor, and returns TRUE if it is.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens when two factors with different levels are combined using the c() function in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An error is thrown"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Factors are combined with levels converted to numbers"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Factors are coerced to character type and combined"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Factors are combined with overlapping levels preserved"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100654,
+      "Explanation": "When combining factors with different levels using c(), they are coerced to character type before combining.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a factor has three levels in R, what would be the result of length() function applied to this factor?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The number of levels"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The total number of elements in the factor"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Length is not applicable to factors"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Always returns 1"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100655,
+      "Explanation": "The length() function returns the total number of elements in a factor, not the number of levels.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you identify if a factor is an ordered factor in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using is.ordered() function"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using is.factor() function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By checking if levels are numeric"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using class() function"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100656,
+      "Explanation": "The is.ordered() function is used to check if a factor is an ordered factor.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When creating a factor using factor(), what does the &#39;exclude&#39; argument do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Includes only the specified levels"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Excludes specific values from being treated as levels"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Excludes the factor from data frames"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Converts the excluded values to NA"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100657,
+      "Explanation": "In factor(), the &#39;exclude&#39; argument is used to specify values that should not be treated as levels.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function is used to create an array in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "matrix()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "list()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "array()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "vector()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100658,
+      "Explanation": "The function array() is specifically designed to create arrays in R.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default data type of an array in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Numeric"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Character"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Logical"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Depends on the data input"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100659,
+      "Explanation": "The data type of an array depends on the data input provided during its creation.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you access the first element of a 3-dimensional array named \u2018arr\u2019?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "arr[1]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "arr[1, 1, 1]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "arr[0, 0, 0]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "arr[[1, 1, 1]]"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100660,
+      "Explanation": "In a 3-dimensional array in R, the first element is accessed using the indices for each dimension: arr[1, 1, 1].",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function would you use to check the dimensions of an array in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "length()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "dim()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "str()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "size()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100661,
+      "Explanation": "The dim() function in R returns the dimensions of an array or a matrix.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If you have an array &#39;arr&#39; with dimensions (3, 4, 2), how many elements does it contain?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "9"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "12"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "24"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "48"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100662,
+      "Explanation": "The total number of elements in a 3x4x2 array is 3*4*2 = 24.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the command &#39;dim(array(1:24, c(3,4,2)))&#39;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "NULL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3 4"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3 4 2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "2 3 4"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100663,
+      "Explanation": "The dim() function returns the dimension of the array, which in this case is specified as (3,4,2).",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which option correctly describes how to create a 3x3 identity matrix using an array in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "diag(3)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "array(0, c(3,3))"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "array(1:9, c(3,3))"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "array(diag(3), c(3,3,3))"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100664,
+      "Explanation": "The function diag(3) creates a 3x3 identity matrix. This can also be interpreted as using arrays for constructing a matrix.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In R, what does the function &#39;apply(arr, 1, sum)&#39; do if &#39;arr&#39; is a 3-dimensional array?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Sums across columns of the first dimension"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Sums across columns of the second dimension"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Sums across matrices defined by the third dimension"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Sums across all dimensions"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100665,
+      "Explanation": "The apply() function with a second argument &#39;1&#39; applies the function (here sum) across rows (first dimension) of each matrix slice formed by the third dimension in a 3-dimensional array.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following can NOT be a valid input to the &#39;dim()&#39; function for an array?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A list"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An integer vector"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A single integer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "NULL"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100666,
+      "Explanation": "The dim() function expects either NULL, an integer vector representing dimensions, or a single integer if setting a dimension, but not a list.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you use &#39;dimnames()&#39; on an array in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It returns the names of array dimensions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It sets new dimensions to the array"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It errors out because arrays don&#39;t support dimnames"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It returns the dimension numbers"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100667,
+      "Explanation": "The dimnames() function retrieves or sets the names of the dimensions of the array if they exist or are specified.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of a matrix in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To perform vectorized operations on a single row or column."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To store and manage complex data structures."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To perform mathematical operations on a two-dimensional data structure."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To create graphical data visualizations."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100668,
+      "Explanation": "A matrix in R is primarily used for mathematical operations on two-dimensional arrays of data.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function is used to create a matrix in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "matrix()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "array()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "data.frame()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "list()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100669,
+      "Explanation": "The matrix() function is specifically designed to create matrices in R.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How would you extract the element in the second row, third column of a matrix &#39;m&#39; in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "m[3, 2]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "m[2, 3]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "m[2][3]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "m(2, 3)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100670,
+      "Explanation": "In R, the syntax m[2, 3] is used to access the element in the second row and third column of a matrix.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the result of multiplying a 2x3 matrix with a 3x2 matrix?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2x2 matrix"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3x3 matrix"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3x2 matrix"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "2x3 matrix"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100671,
+      "Explanation": "Matrix multiplication rules dictate that multiplying a 2x3 matrix with a 3x2 matrix results in a 2x2 matrix.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about the dimensions of a matrix created using matrix(1:9, nrow=3)?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It has 3 rows and 3 columns."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It has 1 row and 9 columns."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It has 9 rows and 1 column."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It has 9 rows and 3 columns."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100672,
+      "Explanation": "The matrix is created with the sequence 1:9, and nrow=3 implies 3 rows with required columns to accommodate all elements, resulting in a 3x3 matrix.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you convert a data frame to a matrix?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "data.frame()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "as.list()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "as.matrix()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "as.vector()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100673,
+      "Explanation": "The as.matrix() function is used to convert a data frame to a matrix in R.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a matrix in R is labeled &#39;mat&#39;, how would you fetch its dimensions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "dimensions(mat)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "dim(mat)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "size(mat)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "length(mat)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100674,
+      "Explanation": "The dim() function returns the dimensions of a matrix or array, making it applicable here.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How to find the transpose of a matrix &#39;mat&#39; in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "transpose(mat)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "t(mat)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "rev(mat)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "trans(mat)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100675,
+      "Explanation": "The t() function in R is used to transpose a matrix.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function is used to create a data frame in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "create.frame()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "make.frame()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "data.frame()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "frame.data()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100676,
+      "Explanation": "The function data.frame() is used in R to create data frames.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you view the structure of a data frame in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "view()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "str()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "see()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "inspect()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100677,
+      "Explanation": "The str() function provides the structure of an R object, including data frames.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will the function nrow(df) return when applied to a data frame?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Number of columns in df"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Number of rows in df"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Number of elements in df"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Number of data types in df"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100678,
+      "Explanation": "nrow() function returns the number of rows present in a data frame or matrix.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not a valid way to access columns in a data frame?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using the $ operator"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using the [ ] indexing"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using the @ operator"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using the [[ ]] indexing"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100679,
+      "Explanation": "The @ operator is not used to access data frame columns. It is used with S4 objects.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you convert a data frame to a matrix in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "as.frame()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "to.matrix()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "matrix()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "as.matrix()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100680,
+      "Explanation": "The as.matrix() function is used to convert a data frame to a matrix.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you combine a numeric and a character vector into a data frame?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An error is thrown"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Implicit type conversion occurs: numeric becomes character"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A warning is issued"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only numeric values are retained"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100681,
+      "Explanation": "Data frames will coerce numeric values to character when combined with character vectors to maintain uniform column types.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function would you use to measure the dimensions of a data frame?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "length()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "count()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "size()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "dim()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 100682,
+      "Explanation": "The dim() function returns the dimensions (number of rows and columns) of a data frame.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "______ generate aesthetic mappings from a string",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "aes_all"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "aes_auto"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "aes_string"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75671,
+      "Explanation": "Aesthetic mappings describe how variables in the data are mapped to visual properties (aesthetics) of geoms.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the wrong statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "is.rel reports whether x is a theme object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "is.theme reports whether x is a theme object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "opts build a theme (or partial theme) from theme elements"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75673,
+      "Explanation": "is.rel reports whether x is a real object.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the wrong statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "is.rel reports whether x is a theme object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "is.theme reports whether x is a theme object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "opts build a theme (or partial theme) from theme elements"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75674,
+      "Explanation": "is.rel reports whether x is a real object.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following code ? <br>&gt; x &lt;- list(a = matrix(1:4, 2, 2), b = matrix(1:6, 3, 2)) <br>&gt; lapply(x,function(elt) { elt[,1] })<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "$a [1] 1 2 $b [1] 1 2 3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "$a [1] 1 2 3 $b [1] 1 2 3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "$a [1] 1 2 3 $b [1] 1 2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75543,
+      "Explanation": "You can put an arbitrarily complicated function definition inside lapply().",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The _____ function takes a vector or other objects and splits it into groups determined by a factor or list of factors.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "apply()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "lsplit()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "split()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "mapply()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75544,
+      "Explanation": "The combination of split() and a function like lapply() or sapply() is a common paradigm in R.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "________ loop over a list and evaluate a function on each element",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "apply()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "lapply()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "sapply()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "mapply()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75528,
+      "Explanation": "An auxiliary function split is also useful, particularly in conjunction with lapply.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the wrong statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Multi-line expressions with curly braces are just not that easy to sort through when working on the command line"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "lappy() loops over a list, iterating over each element in that list"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "lapply() does not always returns a list"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75530,
+      "Explanation": "lapply() always returns a list, regardless of the class of the input.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following should be preferred for evaluation from list of alternatives ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "subsett"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "eval"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "switch"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75435,
+      "Explanation": "Write explaination here..",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following code&nbsp;in R programming ?<br>x &lt;- c(\"a\", \"b\", \"c\", \"d\")<br>for (i in 1:4) {<br>&nbsp; ## Print out each element of 'x'<br>&nbsp; print(x[i])<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[1] \"a\" [1] \"b\" [1] \"c\" [1] \"d\""
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[1] \"c\" [2] \"b\" [3] \"a\" [4] \"d\"<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[0] \"d\" [1] \"c\" [2] \"b\" [3] \"a\"<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75437,
+      "Explanation": "creates a character vector x with four elements: \"a\", \"b\", \"c\", and \"d\". The for loop iterates from 1 to 4, and for each iteration, it prints the corresponding element of x.<br>The loop prints each element of x on a separate line. During each iteration, the print() function is used to display the value of the corresponding element of x. Therefore, each element of x is printed sequentially as \"a\", \"b\", \"c\", and \"d\".",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which of the following return a subset of the columns of a data frame ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "select"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "retrieve"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "get"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75389,
+      "Explanation": "One important contribution of the dplyr package is that it provides a ?grammar? for data manipulation and for operating on data frames.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Point out the correct statement",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The data frame is a key data structure in statistics and in R"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "R has an internal implementation of data frames that is likely the one you will use most often"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "There are packages on CRAN that implement data frames via things like relational databases that allow you to operate on very very large data frames"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75392,
+      "Explanation": "The basic structure of a data frame is that there is one observation per row and each column<br>represents a variable, a measure, feature, or characteristic of that observation.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;_________ extract a subset of rows from a data frame based on logical conditions.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "rename"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "filter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "set"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "subset"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75395,
+      "Explanation": "rename is used to rename variables in a data frame.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The _________ function can be used to select columns of a data frame that you want to focus on.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "select"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "rename"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "get"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75411,
+      "Explanation": "The select() function allows you to get the few columns you might need.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the correct statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "You can also omit variables using the select() function by using the negative sign"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The arrange() function also allows a special syntax that allows you to specify variable names based on patterns"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Reordering rows of a data frame is normally easier to do in R"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75412,
+      "Explanation": "The arrange() function is used to reorder rows of a data frame according to one of the variables/columns.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "________ function is similar to the existing subset() function in R but is quite a bit faster.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "rename"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "filter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "set"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75413,
+      "Explanation": "The filter() function is used to extract subsets of rows from a data frame.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Columns can be arranged in descending order too by using the special ____operator in R programming.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "asc()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "desc()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "descending()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "subset"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75415,
+      "Explanation": "In R, columns of a data frame can be arranged in descending order using the special - operator in combination with the desc() function from the dplyr package.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following extracts first element from the following vector ? &gt; x &lt;- c(\"a\", \"b\", \"c\", \"c\", \"d\", \"a\")",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "x[10]."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "x[1]."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "x[0]."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75346,
+      "Explanation": "Vectors are basic objects in R and they can be subsetted using the [ operator.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the correct statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "There are three operators that can be used to extract subsets of R objects"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The [operator is used to extract elements of a list or data frame by literal name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The [[ operator is used to extract elements of a list or data frame by string name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75347,
+      "Explanation": "Three operators are [,[[ and $.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following extracts first four element from the following vector in R Programming?<br>&gt; x &lt;- c(\"a\", \"b\", \"c\", \"c\", \"d\", \"a\")<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "x[0:4]."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "x[1:4]."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "x[0:3]."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75348,
+      "Explanation": "The [ operator can be used to extract multiple elements of a vector by passing the operator an integer sequence. It selects the elements at positions 1 through 4 in the vector x. In R the index is starting from 1.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the output of the following code ? &gt; x &lt;- c(\"a\", \"b\", \"c\", \"c\", \"d\", \"a\") &gt; x[c(1, 3, 4)]",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "\"a\" \"b\" \"c\""
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "\"a\" \"c\" \"c\""
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "\"a' \"c\" \"b\""
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75349,
+      "Explanation": "Write explaination here..",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the wrong statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "$ operator semantics are similar to that of [["
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The [ operator always returns an object of the same class as the original"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The $ operator is used to extract elements of a list or a data frame"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75350,
+      "Explanation": "The [[ operator is used to extract elements of a list or a data frame.It can only be<br>used to extract a single element and the class of the returned object will not necessarily be a list or data frame.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the output of the following code ? &gt; x &lt;- matrix(1:6, 2, 3) &gt; x[1, 2]",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "0"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75351,
+      "Explanation": "&nbsp;Matrices can be subsetted in the usual way with (i,j) type indices.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the output of the following code ? &gt; x &lt;- matrix(1:6, 2, 3) &gt; x[1, ]",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1 3 5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2 3 5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3 3 5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "file"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75352,
+      "Explanation": "Indices can also be missing.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the followin code extracts the second column for the following matrix ? &gt; x &lt;- matrix(1:6, 2, 3)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "x[2, ]."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "x[1, 2]."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "x[, 2]."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75353,
+      "Explanation": "This behavior is used to access entire rows or columns of a matrix.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the output of the following code ? &gt; x &lt;- matrix(1:6, 2, 3) &gt; x[1, , drop = FALSE]",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[,1] [,2] [,3] [1,] 1 3 5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[,1] [,2] [,3] [1,] 2 3 5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[,1] [,2] [,3] [1,] 1 2 5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75354,
+      "Explanation": "By default, when a single element of a matrix is retrieved, it is returned as a vector of length 1 rather than a $1 imes 1$ matrix.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the output of the following code ? &gt; x &lt;- list(foo = 1:4, bar = 0.6) &gt; x",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "$foo [1] 1 2 3 4 $bar [1] 0.6"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "$foo [1] 0 1 2 3 4 $bar [1] 0 0.6"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "$foo [1] 0 1 2 3 4 $bar [1] 0.6"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75355,
+      "Explanation": "The [[ operator can be used to extract single elements from a list.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following extracts first element from the following list ? &gt; x &lt;- list(foo = 1:4, bar = 0.6)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "x[[1]]."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "x[1]."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "x[[0]]."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75356,
+      "Explanation": "The [[ operator can also use named indices so that you don\u2018t have to remember the exact ordering of every element of the list.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the correct statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "You can also use the $ operator to extract elements by name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "$ operator can be used with computed indices"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The [[ operator can only be used with literal names"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75357,
+      "Explanation": "You don\u2018t need the quotes when you use the $ operator.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the output of the following code ? &gt; x &lt;- list(foo = 1:4, bar = 0.6, baz = \"hello\") &gt; name &lt;- \"foo\" &gt; x$name",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "NULL"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75358,
+      "Explanation": "Element ?name? doesn\u2018t exist.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the output of the following code ? &gt; x &lt;- list(foo = 1:4, bar = 0.6, baz = \"hello\") &gt; name &lt;- \"foo\" &gt; x [[name]]",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1 2 3 4"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0 1 2 3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1 2 3 4 5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75359,
+      "Explanation": "One thing that differentiates the [[ operator from the $ is that the [[ operator can be used with computed indices.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the wrong statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "$ operator semantics are similar to that of [["
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The [[ operator can take an integer sequence if you want to extract a nested element of a list"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The $ operator can be used to extract multiple elements from a list"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75360,
+      "Explanation": "The [ operator can be used to extract multiple elements from a list.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the output of the following code ? &gt; x &lt;- list(a = list(10, 12, 14), b = c(3.14, 2.81)) &gt; x[[c(1, 3)]]",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "13"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "14"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "15"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75361,
+      "Explanation": "The [[ operator can take an integer sequence if you want to extract a nested element of a list.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the output of the following code ? &gt; x &lt;- list(aardvark = 1:5) &gt; x$a",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1 2 3 4 5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2 3 5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1 3 3 5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1 2 3"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75362,
+      "Explanation": "Partial matching of names is allowed with [[ and $.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the followin code extracts 1st element of the 2nd element ? &gt; x &lt;- list(a = list(10, 12, 14), b = c(3.14, 2.81))",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "x[[c(2, 1)]]."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "x[[c(1, 2)]]."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "x[[c(2, 1,1)]]."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75363,
+      "Explanation": "[ operator always returns an object of the same class as the original.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the output of the following code ? &gt; x &lt;- list(aardvark = 1:5) &gt; x[[\"a\", exact = FALSE]]",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1 2 3 4 5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2 3 5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1 3 3 5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1 2 3"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75364,
+      "Explanation": "This is often very useful during interactive work if the object you\u2018re working with has very long element names.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the output of the following code ? &gt; x &lt;- c(1, 2, NA, 4, NA, 5) &gt; bad &lt;- is.na(x) &gt; print(bad)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "FALSE FALSE FALSE FALSE TRUE FALSE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FALSE TRUE TRUE FALSE TRUE FALSE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "FALSE FALSE TRUE FALSE TRUE FALSE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75365,
+      "Explanation": "A common task in data analysis is removing missing values (NAs).",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is example of vectorized operation as far as subtraction is concerned ? &gt; x &lt;- 1:4 &gt; y &lt;- 6:9",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "x+y"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "x-y"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "x/y"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "x\u2013y"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75366,
+      "Explanation": "&nbsp;Subtraction, multiplication and division are also vectorized.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the wrong statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Very less operations in R are vectorized"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Vectorization allows you to write code that is efficient, concise, and easier to read than in non-vectorized languages"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "vectorized means that operations occur in parallel in certain R objects"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75367,
+      "Explanation": "Many operations in R are vectorized.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the output of the following code ? &gt; x &lt;- 1:4 &gt; y &lt;- 6:9 &gt; z &lt;- x + y &gt; z",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "7 9 11 13"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "7 9 11 13 14"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "9 7 11 13"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "NULL"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75368,
+      "Explanation": "This is simplest example of adding two vectors together.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the output of the following code ?<br> &gt; x &lt;- 1:4 <br>&gt; x &gt; 2<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1 2 3 4"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FALSE FALSE TRUE TRUE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1 2 3 4 5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75369,
+      "Explanation": "creates a vector x with values 1, 2, 3, and 4. The second line x &gt; 2 performs a comparison operation, checking whether each element of x is greater than 2.<br> The resulting output is a logical vector indicating the result of the comparison. For each element in x, it checks if the element is greater than 2. Elements that satisfy the condition are represented as TRUE, while elements that do not satisfy the condition are represented as FALSE. In this case, the first two elements (1 and 2) are not greater than 2, so they are FALSE, while the last two elements (3 and 4) are greater than 2, so they are TRUE.  <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the followin code would read 100 rows ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "initial &lt;- read.table(?datatable.txt?, nrows = 100)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "tabAll &lt;- read.table(?datatable.txt?, colClasses = classes)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "initial &lt;- read.table(?datatable.txt?, nrows = 99)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned View Answer"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75285,
+      "Explanation": "You can use the Unix tool wc to calculate the number of lines in a file.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of the following code ? &gt; y &lt;- data.frame(a = 1, b = \"a\") &gt; dput(y)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "structure(list(a = 1, b = list(1L, .Label = \"a\", class = \"factor\")), .Names = c(\"a\", \"b\"), row.names = c(NA, -1L), class = \"data.frame\")"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "list(list(a = 1, b = list(1L, .Label = \"a\", class = \"factor\")), .Names = c(\"a\", \"b\"), row.names = c(NA, -1L), class = \"data.frame\")"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "structure(list(a = 1, b = structure(1L, .Label = \"a\", class = \"factor\")), .Names = c(\"a\", \"b\"), row.names = c(NA, -1L), class = \"data.frame\")"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75286,
+      "Explanation": "dput() output is in the form of R code and that it preserves metadata like the class of the object, the row names, and the column names.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is used for reading tabular data ? &gt; y &lt;- data.frame(a = 1, b = \"a\") &gt; dput(y, file = \"y.R\") &gt; new.y &lt;- dget(\"y.R\") &gt; new.y",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "a b 1 1 a"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "a b 1 2 b"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "a b 2 1 a"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75287,
+      "Explanation": "Multiple objects can be deparsed at once using the dump function and read back in using source.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Individual R objects can be saved to a file using the _____ function.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "save"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "put"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "save_image"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75336,
+      "Explanation": "The key functions for converting R objects into a binary format are save(), save.image(), and serialize().",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which of the following is invalid assignment ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&gt; c(10.4, 5.6, 3.1, 6.4, 21.7) -&gt; x"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&gt; assign(\"x\", c(10.4, 5.6, 3.1, 6.4, 21.7))"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&gt; x &lt;- c(10.4, 5.6, 3.1, 6.4, 21.7)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75237,
+      "Explanation": "Assignments can also be made in the other direction, using the obvious change in the assignment operator.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What would be the output of the following code in R programming?<br>x &lt;- matrix(1:4, 2, 2)<br>y &lt;- matrix(rep(10, 4), 2, 2)<br>x * y<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[,1] [,2]<br>[1,] 10 30<br>[2,] 20 40"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[,1] [,2]<br>[1,] 10 30<br>[2,] 30 40"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[,1] [,2]<br>[1,] 20 30<br>[2,] 20 40"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75372,
+      "Explanation": "Creates two matrices, x and y, and performs element-wise multiplication between them.<pre tabindex=\"0\" aria-label=\"Console Output\" role=\"document\" id=\"rstudio_console_output\">&gt; x\n     [,1] [,2]\n[1,]    1    3\n[2,]    2    4\n&gt; y &lt;- matrix(rep(10, 4), 2, 2)\n&gt; y\n     [,1] [,2]\n[1,]   10   10\n[2,]   10   10</pre> The element-wise multiplication is performed between the corresponding elements of x and y. For example, the value at the first row and first column of the resulting matrix is calculated as 1 * 10 = 10. Similarly, the value at the second row and second column is calculated as 2 * 20 = 40.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the correct statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Empty vectors can be created with the vector() function"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A sequence is represented as a vector but can contain objects of different classes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "\"raw\u2016\" objects are commonly used directly in data analysis"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75205,
+      "Explanation": "A vector can only contain objects of the same class.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the result of following code ? &gt; x &lt;- vector(\"numeric\", length = 10) &gt; x",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0 0 0 0 0 0 0 0 0 0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "01"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75221,
+      "Explanation": "You can also use the vector() function to initialize vectors.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The ___ function can be used to create vectors of objects by concatenating things together.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "cp()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "c()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "concat()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75222,
+      "Explanation": "The simplest such structure is the numeric vector, which is a single entity consisting of an ordered collection of numbers.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statement is invalid in R programming?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "x &lt;- c(1+0i, 2+4i)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "x &lt;- c(TRUE, FALSE)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "x &lt;- c(T, F)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75225,
+      "Explanation": "T and F are short-hand ways to specify TRUE and FALSE.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the correct statement in R programming:<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "rep() is be used for replicating an object in various complicated ways"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "seq() function has four arguments"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "sequence() is a more general facility for generating sequences"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75243,
+      "Explanation": "In the R programming language, A very useful function for creating a vector by repeating a given numbervector with the specified number of times is the rep().<br><br>The general structure of rep() : rep(v1,n1).<br><br>Here, v1 is repeated n1 times.<br><br>R \u2013 replicate elements of vector<br>The forms of rep() functions :<br><br>rep(v1, times=)<br>rep(v1, each=)<br>rep(v1, length=)",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the result of following code ? x &lt;- c(\"a\", \"b\", \"c\") &gt; as.numeric(x)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Warning"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Abnormal termination"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75244,
+      "Explanation": "NAs is introduced by coercion.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would the following code print ? &gt; x &lt;- c(\"a\", \"b\", \"c\") &gt; as.logical(x)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "a b c"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "NA NA NA"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0 1 2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75245,
+      "Explanation": "When nonsensical coercion takes place, you will usually get a warning from R.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the correct statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The elements of a logical vector cannot have the values TRUE, FALSE, and NA"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Matrices are vectors with a dimension attribute"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Numerical vectors are generated by conditions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75246,
+      "Explanation": "The dimension attribute is itself an integer vector of length 2 (number of rows, number of columns).",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is valid assignment in R Programming?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&gt; m &lt;- matrix(10,nrow = 2, ncol = 3)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&gt; m &lt;- matrics(10,nrow = 2, ncol = 3.5)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&gt; m &lt;- mat(10,nrow = 2, ncol = 3)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75247,
+      "Explanation": "The matrix() function in R is used to create a matrix from a vector of values. The syntax for the matrix() function is as follows:<br>matrix(data, nrow, ncol, byrow, dimnames)<br>data is optional. if you not provide the data , it will take NA as a Value.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the output of the following code ? &gt; m &lt;- matrix(nrow = 2, ncol = 3) &gt; dim(m)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "3 2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2 3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2 2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75249,
+      "Explanation": "&nbsp;Matrices are constructed column-wise.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the output of the following code in R Programming?<br>&gt; m &lt;- matrix(1:6, nrow = 2, ncol = 3)<br>&gt; m<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[,1] [,2] [,3]<br>[1,] 1 3 5<br>[2,] 2 4 6"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[,0] [,1] [,2]<br>[1,] 1 3 5<br>[2,] 2 4 6"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[,1] [,2] [,3]<br>[1,] 1 3 6<br>[2,] 2 4 5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75251,
+      "Explanation": "Matrices can also be created directly from vectors by adding a dimension attribute.<br>Above code creates a matrix m using the matrix() function. It generates a matrix with values 1 through 6, organized with 2 rows and 3 columns. This represents a matrix with 2 rows and 3 columns where the values are filled column-wise within each row.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would the following code print ? &gt; m &lt;- 1:10 &gt; m",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1 2 3 4 5 6 7 8 9 10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1 2 3 4 5 6 7 8 9 10 11"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0 1 2 3 4 5 6 7 8 9 10"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75252,
+      "Explanation": "Matrices can be created by column-binding.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would the following code print in R Programming?<br>&gt; x &lt;- 1:3<br>&gt; y &lt;- 10:12<br>&gt; cbind(x, y)<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "x y<br>[1,] 6 10<br>[2,] 7 11<br>[3,] 8 12"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "x y<br>[1,] 1 10<br>[2,] 2 11<br>[3,] 3 12"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[,1] [,2] [,3]<br>x 1 2 3<br>y 10 11 12"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75255,
+      "Explanation": "cbind() and rbind() both create matrices by combining several vectors of the same length. cbind() combines vectors as columns, while rbind() combines them as rows.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the correct statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Character strings are entered using either matching double (\u2015) or single (\u2017) quotes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Character vectors may be concatenated into a vector by the c() function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Subsets of the elements of a vector may be selected by appending to the name of the vector an index vector in square brackets"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75259,
+      "Explanation": "Character quantities and character vectors are used frequently in R.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What would be the result of following code&nbsp;in R programming ?<br>&gt; x &lt;- 1:3<br>&gt; y &lt;- 10:12<br>&gt; rbind(x, y)<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[,1] [,2] [,3]<br>x 1 2 3<br>y 10 11 12"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[,1] [,2] [,3]<br>x 1 2 3<br>y 10 11"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[,1] [,2] [,3]<br>x 1 2 3<br>y 4 5 6"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75260,
+      "Explanation": "rbind() function combines vector, matrix or data frame by rows.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would the following code print in R programming?<br>&gt; x &lt;- list(1, \"a\", TRUE, 1 + 4i)<br>&gt; x<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[[1]]<br>[1] 1<br><br>[[2]]<br>[1] \"a\"<br><br>[[3]]<br>[1] TRUE<br><br>[[4]]<br>[1] 1+4i"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[[1]]<br>[1] 2<br><br>[[2]]<br>[1] \"b\"<br><br>[[3]]<br>[1] TRUE<br><br>[[4]]<br>[1] 1+4i"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[[1]]<br>[1] 3<br><br>[[2]]<br>[1] \"a\"<br><br>[[3]]<br>[1] TRUE<br><br>[[4]]<br>[1] 1+4i"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75261,
+      "Explanation": "Lists can be explicitly created using the list() function, which takes an arbitrary number of arguments.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the wrong statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "matrices or more generally arrays are multi-dimensional generalizations of vectors"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "factors provide compact ways to handle categorical data"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "vectors provide a convenient way to return the results of a statistical computation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75262,
+      "Explanation": "The dimension attribute is itself an integer vector of length 2 (number of rows, number of columns).",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is invalid assignment ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&gt; x &lt;- factor(c(\"yes\", \"yes\", \"no\", \"yes\", \"no\"))<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&gt; x &lt;- fact(c(\"yes\", \"yes\", \"no\", \"yes\", \"no\"))<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&gt; x &lt;- factor(c(\"dont know\", \"yes\", \"no\", \"yes\", \"no\"))<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75263,
+      "Explanation": "Factor objects can be created with the fact() function.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the output of the following code ? <br>&gt; x &lt;- vector(\"list\", length = 5) <br>&gt; x<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "NULL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75264,
+      "Explanation": "We can also create an empty list of a pre-specified length with the vector() function.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the output of the following code&nbsp;in R programming ?<br>&gt; x &lt;- factor(c(\"yes\", \"yes\", \"no\", \"yes\", \"no\"))<br>&gt; table(x)<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "no yes<br>2 3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "yes no<br>2 3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "yes no<br>3 2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75265,
+      "Explanation": "The table() function is then applied to x to count the occurrences of each level. When you execute table(x)<br>The output of the code will be a frequency table showing the counts of each level of the factor x:<br>no yes<br>2 3<br><br>The levels of factors are stored <strong>in alphabetical order</strong>, or in the order they were specified to factor if they were specified explicitly.<br>Hence<br> x &lt;- factor(c(\"yes\", \"yes\", \"no\", \"yes\", \"no\")) <br>print(x)<br>The levels generated<br>Levels: no yes<br>and when you apply table function , It generate frequency in same order<br>table(x)<br>no yes<br>2&nbsp;&nbsp; 3<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which of the following code snippet will create a vector with NAs in it ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "x &gt;- c(1, 2, NA, 10, 3)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "x &gt;- cNA(1, 2, NA, 10, 3)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "x &gt;- NA(1, 2, NA, 10, 3)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75266,
+      "Explanation": "This returns a logical vector indicating which elements are NA.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would the following code print in R Programming?<br>&gt; x &lt;- c(1, 2, NaN, NA, 4)<br>&gt; is.na(x)<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "FALSE FALSE TRUE TRUE FALSE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FALSE TRUE TRUE TRUE FALSE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "TRUE FALSE TRUE TRUE FALSE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75267,
+      "Explanation": "The output shows a logical vector where FALSE indicates that the corresponding element is not NA, and TRUE indicates that the corresponding element is NA or NaN. In this case, the third and fourth elements of x are NA or NaN, so the corresponding positions in the output vector are TRUE.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following would print the following output ? foo bar 1 1 TRUE 2 2 TRUE 3 3 FALSE 4 4 FALSE",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&gt; x &lt;- data.frame(foo = 1:4, bar = c(F, T, F, F)) &gt; x"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&gt; x &lt;- data.frame(foo = 1:6, bar = c(F, T, F, F)) &gt; x"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&gt; x &lt;- data.frame(foo = 1:4, bar = c(T, T, F, F)) &gt; x"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75268,
+      "Explanation": "Data frames are used to store tabular data in R.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the wrong statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "is.nan() is used to test objects if they are NA"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "is.nan() is used to test for NaN"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "NA values have a class also, so there are integer NA, character NA, etc"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75269,
+      "Explanation": "A NaN value is also NA but the converse is not true.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Data frames can be converted to a matrix by calling data._______",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "matr()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "mat()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "matrix()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75270,
+      "Explanation": "&nbsp;as.matrix() function should be used to coerce a data frame to a matrix.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would the following code print ? &gt; x &lt;- data.frame(foo = 1:4, bar = c(T, T, F, F)) &gt; ncol(x)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "7"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75271,
+      "Explanation": "Data frames are represented as a special type of list where every element of the list has to have the same length.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the correct statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using factors with labels is better than using integers because factors are self-describing"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Factors are used to represent categorical data and can be unordered or ordered"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Factors are important in statistical modeling and are treated specially by modelling functions like lm() and glm()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75272,
+      "Explanation": "Having a variable that has values ?Male? and ?Female? is better than a variable that has values 1 and 2.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is invalid assignment ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&gt; x &lt;- list(\"Los Angeles\" = 1, Boston = 2, London = 3)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&gt; names(x) &lt;- c(\"New York\", \"Seattle\", \"Los Angeles\")"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&gt; name(x) &lt;- c(\"New York\", \"Seattle\", \"Los Angeles\")"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75273,
+      "Explanation": "Lists can also have names, which is often very useful.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the output of the following code ? &gt; x &lt;- 1:3 &gt; names(x)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "NULL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75274,
+      "Explanation": "R objects can have names, which is very useful for writing readable code and self-describing objects.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the output of the following code ? &gt; m &lt;- matrix(1:4, nrow = 2, ncol = 2) &gt; dimnames(m) &lt;- list(c(\"a\", \"b\"), c(\"c\", \"d\")) &gt; m",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "c d a 1 3 b 2 4"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "c d a 1 2 b 2 3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "c d a 1 3 b 4 2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75275,
+      "Explanation": "&nbsp;Matrices can have both column and row names.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statement changes column name to h and f ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "colnames(m) &lt;- c(\"h\", \"f\")"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "columnnames(m) &lt;- c(\"h\", \"f\")"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "rownames(m) &lt;- c(\"h\", \"f\")"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75276,
+      "Explanation": "Column names and row names can be set separately using the colnames() and rownames() functions.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is used for reading tabular data ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "read.csv"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "dget"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "readLines"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 1941,
+      "QuestionTypeId": 0,
+      "QuestionId": 75277,
+      "Explanation": "read.table can also be used for reading dataset in structured form.",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

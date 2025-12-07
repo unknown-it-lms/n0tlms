@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Notes - MySQL_Triggers</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  body{font-family:system-ui,Segoe UI,Roboto,Arial;max-width:900px;margin:24px auto;padding:18px;line-height:1.6;color:#111}
+  h1{font-size:1.4rem;margin-bottom:0.6rem}
+  .topic{font-weight:700;margin-top:1rem}
+  .subtopic{font-weight:600;margin-top:0.8rem}
+  .content{margin:0.6rem 0 1.2rem 0}
+  pre{white-space:pre-wrap;background:#f7f7f7;padding:10px;border-radius:6px;overflow:auto}
+  img{max-width:100%;height:auto}
+  table{border-collapse:collapse;width:100%}
+  table, th, td{border:1px solid #ccc;padding:6px}
+</style>
+</head>
+<body>
+<h1>Notes: MySQL- Triggers</h1>
+
+<div class="courseware subtopic">Concept of Trigger&nbsp;<hr><div class="courseware subsubtopic">&nbsp;Need of triggers</div></div><div class="courseware content">Triggers are special procedures which get called automatically if some action occurs.</div><div class="courseware content"><br>Actions on which the triggers are fired</div><ul><li class="courseware content">&nbsp;&nbsp; before</li><li class="courseware content">&nbsp;&nbsp; after</li><li class="courseware content">&nbsp;&nbsp; insteadof ----- this is used with view ---- does not work in mysql</li></ul><div class="courseware content"><br>Triggers are called on delete,update,insert DML statements.<br>&nbsp;<br>Triggers work on&nbsp; &nbsp;</div><div class="courseware content"><br>Database level --- works only oracle<br>&nbsp;&nbsp; before database shutdown<br>&nbsp;&nbsp; after databse start&nbsp; &nbsp;<br>&nbsp;&nbsp; after login<br>&nbsp;&nbsp; before logout<br><br>level<br>&nbsp;&nbsp; statement level ---- not possible in mysql<br>&nbsp;&nbsp; row level<br><br><br><br><br>create table course_audit<br>(old_cid int,<br>new_cid int,<br>chdt date,<br>user varchar(20),<br>action varchar(20),<br>ofid int,<br>nfid int);<br><br>delimiter //&nbsp;&nbsp;&nbsp; &nbsp;<br><br>create trigger upd_course after update&nbsp; on course<br>for each row<br>begin<br>&nbsp; insert into course_audit values(OLD.cid,NEW.cid,curdate(),user(),'update',OLD.fid,NEW.fid);<br>end//<br><br>delimiter ;<br><br>delimiter //&nbsp;&nbsp;&nbsp; &nbsp;<br><br>create trigger del_course after delete&nbsp; on course<br>for each row<br>begin<br>&nbsp; insert into course_audit values(OLD.cid,null,curdate(),user(),'delete',OLD.fid,null);<br>end//<br><br>delimiter ;<br><br>delimiter //<br>create trigger ins_course before insert&nbsp; on course<br>for each row<br>begin<br>&nbsp; insert into course_audit values(null,NEW.cid,curdate(),user(),'insert',null,NEW.fid);<br>end//<br><br>delimiter ;</div>
+
+
+</body>
+</html>

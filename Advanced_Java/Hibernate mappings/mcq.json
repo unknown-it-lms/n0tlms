@@ -1,0 +1,666 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is the purpose of mappedBy in association mapping?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To define the primary key"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To specify the owning side of the relationship"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To enable lazy loading"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To create a join table"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4821,
+      "QuestionTypeId": 0,
+      "QuestionId": 102540,
+      "Explanation": "<span style=\"color:#0000ff;\">mappedBy tells Hibernate which entity owns the relationship, avoiding redundant join tables.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which annotation is used for component mapping in Hibernate?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@Entity"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@Embedded"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@Inheritance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@JoinColumn"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4821,
+      "QuestionTypeId": 0,
+      "QuestionId": 102541,
+      "Explanation": "<span style=\"color:#0000ff;\">The @Embedded annotation is used to include a component class inside an entity.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is TRUE about @OneToMany relationship in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It indicates a one-to-one association between two entities."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It refers to a many-to-one relationship."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It does not require a mappedBy attribute."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It signifies a one-to-many relationship where one entity is related to multiple instances of another entity."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4821,
+      "QuestionTypeId": 0,
+      "QuestionId": 101731,
+      "Explanation": "@OneToMany annotation is used in Hibernate to define a one-to-many relationship, indicating that a single entity instance is related to many instances of another entity.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which annotation is used in Hibernate to specify the inheritance strategy in the entity class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@Inheritance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@InheritanceStrategy"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@EntityInheritance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@JoinTable"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4821,
+      "QuestionTypeId": 0,
+      "QuestionId": 101773,
+      "Explanation": "The @Inheritance annotation is used to specify the inheritance strategy at the class level in Hibernate.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the single table inheritance strategy, how are the subclass entities distinguished from each other?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using a separate table for each subclass"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using a discriminator column"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using primary key constraints"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By using unique constraints"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4821,
+      "QuestionTypeId": 0,
+      "QuestionId": 101774,
+      "Explanation": "<span id=\"explanation101774\" style=\"color:blue\">In a single table strategy, a discriminator column is used to distinguish between each subclass.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a potential disadvantage of using the joined table inheritance strategy in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Higher risk of data redundancy"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Slower performance due to multiple joins"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No support for polymorphism"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "More complex discriminator column logic"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4821,
+      "QuestionTypeId": 0,
+      "QuestionId": 101775,
+      "Explanation": "The joined table strategy can result in slower performance due to the need for multiple joins to retrieve a single entity with its related data.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which inheritance strategy in Hibernate leads to the lowest potential for data redundancy?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Single Table"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Table per Class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Joined Table"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Hierarchical Table"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4821,
+      "QuestionTypeId": 0,
+      "QuestionId": 101776,
+      "Explanation": "<span id=\"explanation101776\" style=\"color:blue\">The Joined Table strategy leads to the lowest data redundancy as it normalizes the data by splitting it across multiple related tables.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How are columns for subclass attributes managed in the Table per Class strategy?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Subclass attributes are stored in a single table shared by all entities"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Each subclass has its own table for its attributes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Subclass attributes are stored in a dedicated column within the superclass table"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Subclass attributes are inherited from parent class columns"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4821,
+      "QuestionTypeId": 0,
+      "QuestionId": 101777,
+      "Explanation": "In the Table per Class strategy, each subclass gets its own table where its specific attributes are stored.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following inheritance strategies is typically the fastest for read operations?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Single Table"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Table per Class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Joined Table"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Vertical Table"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4821,
+      "QuestionTypeId": 0,
+      "QuestionId": 101778,
+      "Explanation": "<span id=\"explanation101778\" style=\"color:blue\">The Single Table strategy is typically the fastest for read operations as all data is retrieved from one table, avoiding joins.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Hibernate, which annotation is used to establish a many-to-one association between entities?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@OneToOne"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@ManyToOne"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@OneToMany"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@ManyToMany"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4821,
+      "QuestionTypeId": 0,
+      "QuestionId": 101779,
+      "Explanation": "The @ManyToOne annotation is used to establish a many-to-one relationship between two entities, indicating that many instances of an entity can be associated with a single instance of another entity.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main purpose of the @JoinColumn annotation in Hibernate association mapping?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To define the name of the foreign key column"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To specify the fetch type of the association"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To indicate a unidirectional relationship"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To establish a primary key in the entity"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4821,
+      "QuestionTypeId": 0,
+      "QuestionId": 101780,
+      "Explanation": "<span id=\"explanation101780\" style=\"color:blue\">The @JoinColumn annotation is used to specify the foreign key column name in the database that is used to join two associated entities in a relationship.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Hibernate association mapping requires a third join table to manage the relationship?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "One-to-One"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Many-to-One"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "One-to-Many"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Many-to-Many"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4821,
+      "QuestionTypeId": 0,
+      "QuestionId": 101781,
+      "Explanation": "<span id=\"explanation101781\" style=\"color:blue\">A Many-to-Many association mapping requires a third join table to maintain the associations between entities as there are potentially multitudes of cross references.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When two entities are associated with a bidirectional one-to-many relationship, what annotation is typically used on the collection side?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@ManyToOne"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@MapsId"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@OneToMany"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@ElementCollection"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4821,
+      "QuestionTypeId": 0,
+      "QuestionId": 101782,
+      "Explanation": "In a bidirectional one-to-many relationship, the @OneToMany annotation is used on the collection side to indicate that one entity is associated with a collection of other entities.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What attribute of the @ManyToMany annotation is used to specify the name of the join table?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "table"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "joinColumn"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "mappedBy"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "joinTable"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4821,
+      "QuestionTypeId": 0,
+      "QuestionId": 101783,
+      "Explanation": "The joinTable attribute is used in the @ManyToMany annotation to specify the table that holds the foreign keys linking the entities involved in the association.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about component mapping in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is used to map a one-to-many relationship."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It requires a dedicated Hibernate mapping file."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It allows embedding an object within an entity table."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is used to map collections only."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4821,
+      "QuestionTypeId": 0,
+      "QuestionId": 101784,
+      "Explanation": "<span id=\"explanation101784\" style=\"color:blue\">Component mapping in Hibernate allows embedding an object within an entity table, where the object&apos;s properties are mapped to the columns of the table.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Hibernate, a component is a type of:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Collection mapping"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Single-valued association"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Inherited class mapping"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Composite value type"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4821,
+      "QuestionTypeId": 0,
+      "QuestionId": 101785,
+      "Explanation": "A component in Hibernate is considered a composite value type, composed of multiple properties mapped to the database table columns.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you define a component mapping in Hibernate using annotations?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@Embeddable and @Embedded"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@Component and @ComponentScan"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@Entity and @Table"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@JoinColumn and @Column"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4821,
+      "QuestionTypeId": 0,
+      "QuestionId": 101786,
+      "Explanation": "In Hibernate, component mapping using annotations can be defined with @Embeddable for the class and @Embedded for the field within the entity class.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using XML configuration, which element do you use to map a component in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;component&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;composite&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;property&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;embedded&gt;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4821,
+      "QuestionTypeId": 0,
+      "QuestionId": 101787,
+      "Explanation": "When using XML configuration, the &lt;component&gt; element is used in Hibernate to map a component, specifying its class and its properties.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a characteristic of Hibernate component mapping?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Components can be shared across multiple entities."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Components do not have their own primary key."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Component properties are persisted in the owner&#39;s table."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Components are a way to support entity composition."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4821,
+      "QuestionTypeId": 0,
+      "QuestionId": 101788,
+      "Explanation": "In Hibernate, components are not shared across multiple entities as they are embedded within a single entity&#39;s table structure. They do not have their own primary key.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How to override attributes from embeddable class in hibernate ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "using @AttributeOverride"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "using @AssociationOverride"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Automatically mapped, no annotation is required"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4821,
+      "QuestionTypeId": 0,
+      "QuestionId": 82238,
+      "Explanation": "<span id=\"explanation82238\">To override attributes from embeddable class in hibernate use @AttributeOverride&nbsp; annotation.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a single table hosts all the properties of subclass instances of a class hierarchy, then which InheritanceType is used in hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "JOINED strategy"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SINGLE_TABLE strategy"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "TABLE_PER_CLASS strategy"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "TABLE_PER_HIERARCHY strategy"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4821,
+      "QuestionTypeId": 0,
+      "QuestionId": 82235,
+      "Explanation": "<span id=\"explanation82235\"><span id=\"explanation82235\">If&nbsp; a single table host all the instances&nbsp; of a class hierarchy&nbsp; , then it is known as SINGLE_TABLE inheritance strategy.</span></span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When serval entities&nbsp; point to the target&nbsp; entity , that is achieved by",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@ManyToOne"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@ManyToMany"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@oneToMany"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@Collection"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4821,
+      "QuestionTypeId": 0,
+      "QuestionId": 82236,
+      "Explanation": "<span id=\"explanation82236\">The serval entities&nbsp; point to the target&nbsp; entity , that is achieved by @ManyToOne .</span>",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

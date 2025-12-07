@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Notes - MySQL_Update clause</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  body{font-family:system-ui,Segoe UI,Roboto,Arial;max-width:900px;margin:24px auto;padding:18px;line-height:1.6;color:#111}
+  h1{font-size:1.4rem;margin-bottom:0.6rem}
+  .topic{font-weight:700;margin-top:1rem}
+  .subtopic{font-weight:600;margin-top:0.8rem}
+  .content{margin:0.6rem 0 1.2rem 0}
+  pre{white-space:pre-wrap;background:#f7f7f7;padding:10px;border-radius:6px;overflow:auto}
+  img{max-width:100%;height:auto}
+  table{border-collapse:collapse;width:100%}
+  table, th, td{border:1px solid #ccc;padding:6px}
+</style>
+</head>
+<body>
+<h1>Notes: MySQL- Update clause</h1>
+
+<div class="courseware topic">Update clause<hr></div><div class="courseware content">Sometimes we need to make changes in existing data stored in the tables. The data stored in table is always stored permanently. So to make changes (update or modify) in the data, RDBMS has given us UPDATE Clause.&nbsp;<br>Value of a column in the table is modified and it is necessary to specify all column names correctly for whome the value needs to be modified.&nbsp;One need to handle update clause carefully as <strong><span style="color:#3498db;">default scope of Update Clause is entire table</span></strong>. This scope can be restricted using where clause .&nbsp;<br><div class="courseware subsubtopic">Updating Column</div><div class="courseware content">​​​​​Sometimes there is a need to make changes in the data stored in the database. To change existing data from the table, UPDATE statement is used. This will modify current values stored in the database. New values given to the column in update command will now be stored in the table. Old values will be over written.<br><br><span style="color:#cc9900;"><strong>UPDATE</strong></span> table_name<br><span style="color:#cc9900;"><strong>SET</strong> </span>column1 = value1, column2 = value2, ...<br>[ <span style="color:#cc9900;"><strong>WHERE</strong></span> condition ];<br><br><span style="color:#cc9900;">UPDATE </span>Customers<br><span style="color:#cc9900;">SET</span> ContactName = 'Alfred Schmidt', City= 'Frankfurt'<br><span style="color:#cc9900;">WHERE</span> CustomerID = 1;<br><br><span style="color:#cc9900;">UPDATE</span> Customers<br><span style="color:#cc9900;">SET </span>ContactName='Juan';</div></div>
+<div class="courseware subtopic">Using update<br></div><div class="courseware content"><div class="courseware content"><hr><strong>Syntax:&nbsp; &nbsp; &nbsp;</strong><br><br><span style="color:#cc9900;"><strong>UPDATE</strong>&nbsp;</span> table_name<br><span style="color:#cc9900;"><strong>SET</strong></span> [column_name1= value1,...column_nameN = valueN]<br>[<span style="color:#cc9900;"><strong>WHERE</strong></span> condition]&nbsp; &nbsp;<br><br>For example:<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br><span style="color:#cc9900;">UPDATE&nbsp;</span>&nbsp; student&nbsp;&nbsp;<br><span style="color:#cc9900;">SET&nbsp;</span> fname = 'Jhon', sname= 'Wick'<br>[<span style="color:#cc9900;">WHERE</span> rollno = 30];&nbsp; &nbsp;&nbsp;<table border="1" cellpadding="1" cellspacing="1" style="width: 549px;"><tbody><tr><td style="width: 81px;"><strong>rollno</strong></td><td style="width: 79px;"><strong>fname</strong></td><td style="width: 82px;"><strong>sname</strong></td><td style="width: 93px;"><strong>course</strong></td><td style="width: 156px;"><strong>admission_date</strong></td></tr><tr><td style="width: 81px;">10</td><td style="width: 79px;">John</td><td style="width: 82px;">Wick</td><td style="width: 93px;">DAC</td><td style="width: 156px;">NULL</td></tr><tr><td style="width: 81px;">20</td><td style="width: 79px;">John</td><td style="width: 82px;">Wick</td><td style="width: 93px;">DBDA</td><td style="width: 156px;">2022-02-07</td></tr><tr><td style="width: 81px;">30</td><td style="width: 79px;">John</td><td style="width: 82px;">Wick</td><td style="width: 93px;">DBDA</td><td style="width: 156px;">2021-08-9</td></tr><tr><td style="width: 81px;">40</td><td style="width: 79px;">John</td><td style="width: 82px;">Wick</td><td style="width: 93px;">DAC</td><td style="width: 156px;">2021-08-7</td></tr><tr><td style="width: 81px;">50</td><td style="width: 79px;">John</td><td style="width: 82px;">Wick</td><td style="width: 93px;">DBDA</td><td style="width: 156px;">2021-08-01</td></tr></tbody></table>If the above query is executed without using where clause , all fname&nbsp; will be changed to John and all sname to Wick.</div></div>
+
+
+</body>
+</html>

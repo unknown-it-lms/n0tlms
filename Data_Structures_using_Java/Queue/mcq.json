@@ -1,0 +1,1270 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "The Time Complexity of Enqueue is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "O(1)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "O(0)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "O(n)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "O(n-1)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 86148,
+      "Explanation": "<span id=\"explanation86148\">Data added at rear position. So no need to travel. So Complexity is O(1).</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a Double Ended Queue (Dequeue) if these operations are performed on an empty queue what would the Queue<br>comprise at the end?<br>int main(){<br>Insert_Front(1);<br>Insert_Front(2);<br>Insert_Rear(3);<br>Delete_Front();<br>Insert_Rear(4);<br>Insert_Rear(1);<br>Delete_Rear();<br>Insert_Rear(5);<br>Display_list();<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1 3 1 5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2 3 4 5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2 3 4 1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1 3 4 5"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 86150,
+      "Explanation": "&nbsp;Insert_Front will add :&nbsp; Queue 1<br> &nbsp;Insert_Front will add :&nbsp; Queue 2 1<br>&nbsp;Insert_Rear will add&nbsp;&nbsp; : Queue 2 1 3<br>Delete_Front will delete : Queue 1 3<br>Insert_rear will add&nbsp; : Queue 1 3 4 <br> Insert_rear will add&nbsp; : Queue 1 3 4 1<br> Delete_rear will delete : Queue 1 3 4 <br> &nbsp;Insert_Rear will add&nbsp;&nbsp; : Queue 1 3 4&nbsp; 5<br><br><br><br><br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider one Queue is created and having some values.<br>void fun(Queue *Q) {<br>&nbsp;&nbsp;&nbsp; Stack S; <br>&nbsp;&nbsp;&nbsp; while (!isEmpty(Q))&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; push(&amp;S, deQueue(Q));<br>&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp; while (!isEmpty(&amp;S))&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; enQueue(Q, pop(&amp;S));<br>&nbsp;&nbsp;&nbsp; }<br>}<br>What does the above function do in general?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Removes the last from Q"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Keeps the Q same as it was before the call"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Makes Q empty"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Reverses the Q"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 86103,
+      "Explanation": "The function takes a queue Q as an argument. It dequeues all items of Q and pushes them to a stack S. Then pops all items of S and enqueues the items back to Q. Since stack is LIFO order, all items of queue are reversed.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Breadth First Search of Graph, which of the following data structure is used ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Stack."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Queue."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Linked List."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 83953,
+      "Explanation": "The Breadth First Search explores every node once and put that node in queue and then it takes out nodes from the queue and explores it\u2019s neighbors.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the following piece of code do?<br>public Object function ()<br>{ <br>&nbsp;&nbsp;&nbsp;&nbsp;if ( isEmpty ())<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return - 999 ;<br>&nbsp;&nbsp;&nbsp;&nbsp;else &nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;Object high ;<br>&nbsp;&nbsp;&nbsp;&nbsp;high = q [ front ] ;<br>&nbsp;&nbsp;&nbsp;&nbsp;return high ;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Dequeue"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Enqueue"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Return the Front element"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 84023,
+      "Explanation": "In this function high=q[front] is used and after that returning value of high so it will return front element.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The Time Complexity of Enqueue is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "O(1)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "O(0)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "O(n)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "O(n-1)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 84228,
+      "Explanation": "O(1) for inserting or adding data we need to add data in array where rear is pointing. So don&apos;t need any iteration.<br>",
+      "Answer": "1",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Let the following circular queue can accommodate maximum six elements with the<br>following data<br>&nbsp;front = 1 rear = 4<br>&nbsp;queue = ___, ___, L, M, N, ___, ___<br>&nbsp;What will happen after ADD 'O' character&nbsp; operation takes place?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "front = 1 rear = 5<br>queue = ___, ___, L, M, N, O, ___"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "front = 2 rear = 5<br>queue = L, M, N, O, ___"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "front = 3 rear = 4<br>queue = ______; L, M, N, O, ___"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "front = 2 rear = 4<br>queue = L, M, N, O, ___"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 83873,
+      "Explanation": "<span id=\"explanation83873\">In Circular queue we add data from rear end so front will remain same as 1 and rear will increament by one and become 5.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A linear list of elements in which deletion can be done from Beginning and insertion can take place only from end&nbsp; is known as a",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Queue."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Stack"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Tree"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Linked List"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 83847,
+      "Explanation": "<span id=\"explanation83847\"><strong>Q</strong>ueue&nbsp;is a linear&nbsp;data structure&nbsp;where the first element is inserted from one end called REAR and deleted from the other end called as FRONT.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a priority queue, insertion and deletion takes place at ..................&nbsp;&nbsp;&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "front, rear end"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "only at rear end"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "only at front end"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "according to priority"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 83943,
+      "Explanation": "<span id=\"explanation83943\">in priority queue, insertion/deletion takes place on front and rear end</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In what kind of storage we can easily insert,delete,concatenate and rearrange substrings ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Linked list"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Stack"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Queue"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Array"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 83945,
+      "Explanation": "<span id=\"explanation83945\">In linked list elements are grow/shrink dynamically as per the requirement.Adding and delting elements from linklist is very easy compare to other data structures.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the following piece of code do?<br>for(int i = 0; i &lt; row; i++)<br>{&nbsp;<br>&nbsp;&nbsp;&nbsp; for(int j = 0; j &lt; column; j++)<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(i == j)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sum = sum + (array[i][j]);<br>&nbsp;&nbsp;&nbsp; }<br>}<br>System.out.println(num);",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Normal of a matrix"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Trace of a matrix"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Square of a matrix"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Transpose of a matrix"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 78204,
+      "Explanation": "<span id=\"explanation78204\"></span><span>The trace of a matrix is the sum of the elements on the main diagonal of a square matrix. The main diagonal of a matrix consists of the elements that run from the top left corner to the bottom right corner.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a priority queue, insertion and deletion takes place at ..................&nbsp;&nbsp;&nbsp;<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "front, rear end"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "only at rear end"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "only at front end"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "rear and front<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 77985,
+      "Explanation": "In a priority queue, insertion typically takes place at the rear (or end) of the queue, while deletion (or removal) typically occurs at the front (or beginning) of the queue. This structure ensures that the item with the highest priority is always at the front and ready to be removed first.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following conditions are applicable to check whether circular queue if full?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "front == 0 and rear == size-1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "front == (rear+1) % queue_size"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "only a"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both a and b"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 78002,
+      "Explanation": "<span id=\"explanation78002\">In a normal Queue, we can insert elements until queue becomes full. But once queue becomes full, we can not insert the next element even if there is a space in front of queue but in circular queue we can utilize emplty spaces available at beginning. so we need check Check ((rear == SIZE-1 &amp;&amp; front == 0) || ( front == (rear+1) % queue_size )).</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The initial contents of a queue is a,b,c,d (a is the front end). To get the contents d, a, b, c&nbsp; one needs a minimum of ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2 deletions and 3 insertions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3 insertions and 2 deletions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3 deletions and 3 insertions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "3 deletions and 4 insertions"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 77989,
+      "Explanation": "<span id=\"explanation77989\">After one deletion and one insertion &nbsp; a, b, c, d&nbsp; will be b c d a<br>after second deletion and insertion b c d a become c d a b<br>after third deletion and insertion c d a b&nbsp; become d a b c.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which data structure allows deleting data elements from front and inserting at rear?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Stacks"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Queues"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Deques"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Binary search tree"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 77959,
+      "Explanation": "In queue, we always dequeue (or access) data, pointed by&nbsp;front&nbsp;pointer and while enqueing (or storing) data in the queue we take help of&nbsp;rear&nbsp;pointer.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "At any point of time, the number of elements in the queue is given by.( front is pointing to 0 ,if we delete first element).<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "rear - front + 1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "rear - front"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "rear-1<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of these"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 77969,
+      "Explanation": "New element is inserted from one end called as Rear. And Front is always pointing to index where next element is going from queue.so if at any point we want to check number of element available in queue, we need to do rear-front.<br><br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Identify the data structure which allows deletions at both ends of the list but insertion at only one end.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Input-restricted deque"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Output-restricted deque"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Priority queues"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 77961,
+      "Explanation": "In input restricted double ended queue, insertion is permitted on only 1 end but deletion can be done from both(front &amp; rear) end.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A queue is a _____________",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "FIFO (First In First Out) list."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LIFO (Last In First Out) list."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Ordered array."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Linear tree."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 77920,
+      "Explanation": "<strong>Q</strong>ueue&nbsp;is a linear&nbsp;data structure&nbsp;where the first element is inserted from one end called REAR and deleted from the other end called as FRONT. So element which is inserted first is going out first so it works on FIFO principle.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Let the following circular queue can accommodate maximum seven elements with the<br>following data<br>&nbsp;front = 1 rear = 4<br>&nbsp;queue = ___, ___, L, M, N, ___, ___<br>&nbsp;What will happen after ADD 'O' character&nbsp; operation takes place?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "front = 1 rear = 5<br>queue = ___, ___, L, M, N, O, ___"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "front = 2 rear = 5<br>queue = L, M, N, O, ___"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "front = 3 rear = 4<br>queue = ______; L, M, N, O, ___"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "front = 2 rear = 4<br>queue = L, M, N, O, ___"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 77906,
+      "Explanation": "In Circular queue we add data from rear end so front will remain same as 1 and rear will increament by one and become 5.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A linear list of elements in which deletion can be done from Beginning and insertion can take place only from end&nbsp; is known as a",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Queue."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Stack"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Tree"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Linked List"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 77879,
+      "Explanation": "<strong>Q</strong>ueue&nbsp;is a linear&nbsp;data structure&nbsp;where the first element is inserted from one end called REAR and deleted from the other end called as FRONT.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The initial contents of a queue is a,b,c,d (a is the front element ). To get the contents d, a, b, c&nbsp; one needs a minimum of ?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2 deletions and 3 insertions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3 insertions and 2 deletions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3 deletions and 3 insertions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "3 deletions and 4 insertions"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 64123,
+      "Explanation": "&nbsp;Front &lt;-- a b c d &lt;-- rear<br>&nbsp;First deleted element a&nbsp;&nbsp; Queue become b c d a <br>&nbsp;Second deleted element b , Queue become c d a b&nbsp;<br>&nbsp;Third deleted element c, Queue is d a b&nbsp; c<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following real-life scenarios can be best represented by a queue data structure?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Calling a function recursively"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Browsing the internet"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Processing tasks in a printer queue"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Storing data in a stack"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 100922,
+      "Explanation": "A printer queue processes requests in the order they were received, making it a perfect representation of the First-In-First-Out (FIFO) nature of a queue.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In an airline reservation system, what aspect can be efficiently managed using a queue data structure?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Booking and cancelling flights"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Managing check-in details of passengers"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Processing customer service calls"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Calculating passenger fares"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 100923,
+      "Explanation": "Customer service calls in an airline reservation system can be managed using a queue to ensure they are handled in the order they are received, adhering to a FIFO principle.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a real-world application of queues in software applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Implementing undo functionality in a text editor"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Caching recently visited web pages"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Maintaining a waitlist for seat reservations"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Performing a breadth-first search in graphs"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 100924,
+      "Explanation": "Waitlists for seat reservations are an example of a queue in practice, as they manage reservations in a sequential order.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In computer networks, how is a queue data structure used in a router?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To store routing protocols"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To manage the order of packets to be processed"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To encrypt and decrypt data packets"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To host website buffers"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 100925,
+      "Explanation": "Routers use queues to manage and process packets in the order they are received, providing an efficient way to handle network traffic.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In operating systems, what purpose do queues serve in task scheduling?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To store memory addresses"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To manage the lifecycle of processes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To hold jobs before they are executed by the CPU"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To archive completed tasks"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 100926,
+      "Explanation": "In task scheduling, queues are used to hold jobs in a ready-to-execute state until they are processed by the CPU, ensuring tasks are managed in a FIFO order.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the time complexity of enqueuing an element into a queue implemented using an array, assuming no resizing is needed?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "O(1)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "O(n)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "O(log n)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "O(n^2)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 100927,
+      "Explanation": "In an array-based queue implementation with no resizing, enqueuing an element simply involves adding the element at the rear position of the queue, which is a constant time operation, O(1).",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a drawback of na&#239;ve queue implementation using a fixed-size array?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Difficult to maintain sorted order"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Memory overflow"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Under-utilization of space due to empty slots at the start"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Difficulty in removing elements"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 100928,
+      "Explanation": "A queue implemented using a fixed-size array can lead to under-utilization of memory because elements dequeued from the front leave empty slots that are not reused unless circular handling is implemented.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following describes a circular queue when implemented using an array?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The front and rear pointers do not wrap around"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It can only enqueue after dequeues"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The rear pointer cycles back to the start of the array when it reaches the end"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It has infinite capacity"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 100929,
+      "Explanation": "In a circular queue, the rear pointer wraps around to the start of the array after reaching the end, using available space efficiently.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you detect if the queue is full in an array-based queue implementation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When front equals rear"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When size equals zero"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When rear equals the length of the array minus one"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When (rear + 1) % array.length equals front"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 100930,
+      "Explanation": "In a circular queue implementation using arrays, the condition (rear + 1) % array.length == front indicates that the queue is full, as the next position of rear would be front.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method initializes both front and rear pointers to -1 in an array-based queue implementation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Enqueue"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Dequeue"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Initialization method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Peek"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 100931,
+      "Explanation": "During the initialization of the queue, both the front and rear pointers are typically set to -1, indicating the queue is empty and no valid element index exists yet.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the enqueue method of an array-based queue, what must be done after adding an element to the array?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Decrement the rear index"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Increment the front index"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Increment the rear index"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Rotate the array elements"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 100932,
+      "Explanation": "When an element is added to the queue using the enqueue method, the rear index is incremented to point to the new last element of the queue.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following Java code snippet when performing a dequeue operation on an empty queue implemented using an array?<br>int[] queue = new int[5];<br>int front = -1, rear = -1;<br>// Dequeue operation<br>int data;<br>if (front == -1) {<br>&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"Queue is empty\");<br>} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;data = queue[front];<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ArrayIndexOutOfBoundsException"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "NullPointerException"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "\"Queue is empty\""
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 100933,
+      "Explanation": "<span id=\"explanation100933\" style=\"color:blue\">Since the queue is empty, the condition &apos;front == -1&apos; evaluates to true, so it will print \"Queue is empty\".</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a circular queue implemented using arrays, what should be the condition to check if the queue is full?<br/>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "rear == queue.length - 1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "front == queue.length - 1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "(rear + 1) % queue.length == front"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "(front + 1) % queue.length == rear"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 100934,
+      "Explanation": "In a circular queue, the queue is full when the next position of &#39;rear&#39; is equal to &#39;front&#39;, i.e., (rear + 1) % queue.length == front.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the time complexity of the enqueue operation in a simple queue implemented using an array?<br/>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "O(n)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "O(log n)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "O(1)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "O(n^2)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 100935,
+      "Explanation": "The enqueue operation in a simple array-based queue is O(1) as it involves inserting the element at the rear end, which is a constant-time operation.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given the following code snippet of a queue implemented using an array, what will be the output after two enqueue operations?<br/><br/>int[] queue = new int[3];<br/>int front = 0, rear = -1;<br/>// Enqueue operation<br/>queue[++rear] = 10;<br/>queue[++rear] = 20;<br/>System.out.println(Arrays.toString(queue));<br/>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[10, 20, 0]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[10, 20, -1]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[0, 10, 20]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "[10, 20, rear]"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 100936,
+      "Explanation": "After two enqueue operations, the queue array will have 10 and 20 added in the first two positions respectively, resulting in [10, 20, 0].",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens to the &#39;front&#39; and &#39;rear&#39; pointers in a simple array-based queue after performing an enqueue operation when the queue was initially empty?<br/>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "front = 0, rear = 0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "front = -1, rear = 0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "front = 0, rear = -1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "front = -1, rear = -1"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 100937,
+      "Explanation": "When the first element is enqueued in an empty queue, both &#39;front&#39; and &#39;rear&#39; pointers are set to the same index, typically 0.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you initialize a queue of a fixed size using arrays in Java?<br/>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int[] queue = new int[];"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int queue[] = new int[5];"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int queue = new int{5};"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int queue[] = int[5];"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 100938,
+      "Explanation": "To initialize a fixed-size array in Java, use the syntax &#39;int queue[] = new int[5];&#39;. This declares a queue with space for 5 elements.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What output does the following Java code produce after performing both an enqueue and a dequeue operation?<br/><br/>int[] queue = new int[3];<br/>int front = -1, rear = -1;<br/>// Enqueue operation<br/>queue[++rear] = 15;<br/>if (front == -1) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;front++;<br/>}<br/>// Dequeue operation<br/>System.out.println(queue[front++]);<br/>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "15"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "NullPointerException"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ArrayIndexOutOfBoundsException"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 100939,
+      "Explanation": "The code performs an enqueue operation increasing the &#39;rear&#39; and directly assigning &#39;15&#39; to &#39;queue[0]&#39;. The front is updated from -1 to 0. During dequeue, queue[front++] returns the first value, 15.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which condition will indicate that the queue is empty?<br/>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "front == rear"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "front == -1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "rear == queue.length"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "rear == 0"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 100940,
+      "Explanation": "In an array-based implementation of a queue, an empty queue is typically indicated by &#39;front&#39; having a specific value, usually -1.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A data structure where elements can be added or removed at either end but not in the middle is called .",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Stacks<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Queues<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Dequeue<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Linked List<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 86308,
+      "Explanation": "DeQueue is double ended Queue where insertion can be possible from both end.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Write the question here123456",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Option A2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Option B"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Option C"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Option D"
+        },
+        {
+          "OptionId": "E",
+          "OptionText": "Option E"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4272,
+      "QuestionTypeId": 0,
+      "QuestionId": 102352,
+      "Explanation": "<span id=\"explanation102352\" style=\"color:blue\"><span id=\"explanation102352\" style=\"color:blue\"><span id=\"explanation102352\" style=\"color:blue\"><span id=\"explanation102352\" style=\"color:blue\">Write the explanation here</span></span></span></span>",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

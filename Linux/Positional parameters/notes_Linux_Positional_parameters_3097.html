@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Notes - Linux_Positional parameters</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  body{font-family:system-ui,Segoe UI,Roboto,Arial;max-width:900px;margin:24px auto;padding:18px;line-height:1.6;color:#111}
+  h1{font-size:1.4rem;margin-bottom:0.6rem}
+  .topic{font-weight:700;margin-top:1rem}
+  .subtopic{font-weight:600;margin-top:0.8rem}
+  .content{margin:0.6rem 0 1.2rem 0}
+  pre{white-space:pre-wrap;background:#f7f7f7;padding:10px;border-radius:6px;overflow:auto}
+  img{max-width:100%;height:auto}
+  table{border-collapse:collapse;width:100%}
+  table, th, td{border:1px solid #ccc;padding:6px}
+</style>
+</head>
+<body>
+<h1>Notes: Linux- Positional parameters</h1>
+
+<div class="courseware topic">Positional parameters</div><div class="courseware content"><hr>​​​​​​​​​​​​​​A positional parameter is an argument specified on the command line, used to launch the current process in a shell. Positional parameter values are stored in a special set of variables maintained by the shell. We can pass many arguments in command line.<br>&nbsp;&nbsp;</div>
+<div class="courseware subtopic">Command Line arguments in Linux</div><div class="courseware content"><hr>​​​​​​​Conside followimg example&nbsp; where we run a script script.sh with 10 argument a to j<br><strong>$ script.sh a b c d e f g h i j</strong><br>The detail of output we get from positional parameters are ::<table border="1" cellpadding="1" cellspacing="1" height="311" width="641"><tbody><tr><td><strong>Paramater</strong></td><td><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Description</strong></td><td><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Value</strong></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp; $0<strong>&nbsp;</strong></td><td>name of script</td><td>./script.sh</td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp; $1</td><td>first parameter passed.</td><td>a</td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp; $2</td><td>second parameter passed.</td><td>b</td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp; $ {10}</td><td>10 parameter passed</td><td>use bracket for double digit<br>if no bracket is used i.e. $10 then the output is a0</td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp; $@</td><td>lists all positional parameters, it sees parameters as different words.</td><td>a b c d e f g h i j</td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp; $*</td><td>lists all parameter, it sees parameters as a single word if quoted ('$*').</td><td>&nbsp;a b c d e f g h i j</td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp; $#</td><td>number of parameter passed.</td><td>10 &nbsp;&nbsp; $0 is the name of the shell.</td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp; $$0</td><td>Bash</td><td>name of the shell</td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp; $?</td><td>Gives the exit status of most recently executed command.</td><td>It gives 0 for successful, or an integer in the range 1 - 255 on error. &nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></div>
+
+
+</body>
+</html>

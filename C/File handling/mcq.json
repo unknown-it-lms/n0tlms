@@ -1,0 +1,666 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "#include &lt;stdio.h&gt; &nbsp;<br>void main(){ &nbsp;<br>&nbsp;&nbsp; FILE *fp; &nbsp;<br>&nbsp;<br>&nbsp;&nbsp; fp = fopen(\"myfile.txt\",\"w+\"); &nbsp;<br>&nbsp;&nbsp; fputs(\"This is know-IT\", fp); &nbsp;<br>&nbsp;&nbsp; &nbsp;<br>&nbsp;&nbsp; fseek( fp, 7, SEEK_SET ); &nbsp;<br>&nbsp;&nbsp; fputs(\" CDAC Center\", fp); &nbsp;<br>&nbsp;&nbsp; fclose(fp); &nbsp;<br>}&nbsp;<br><br>content in Myfile.txt file are....",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "This is know-IT"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "This is CDAC Center"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "This is know-IT CDAC Center"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "This is CDAC Center know-IT"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 12,
+      "QuestionTypeId": 0,
+      "QuestionId": 75856,
+      "Explanation": "The fseek() function is used to set the file pointer to the specified offset. It is used to write data into file at desired location. Hence fseek will skip first 7 character and write CDAC Center .",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "File: myfile.txt&nbsp; contains&nbsp;&nbsp;&nbsp; this is a simple text&nbsp;<br><br>#include&lt;conio.h&gt;<br>void main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; FILE *fp;<br>&nbsp; char c;<br>&nbsp;<br>&nbsp; fp = fopen (\"myfile.txt\", \"r\");<br><br>&nbsp; while ((c = fgetc (fp)) != EOF)<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf (\"%c\", c);<br>&nbsp;&nbsp;&nbsp; }<br><br>&nbsp; rewind (fp);<br><br>&nbsp; while ((c = fgetc (fp)) != EOF)<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf (\"%c\", c);<br>&nbsp;&nbsp;&nbsp; }<br><br>&nbsp; fclose (fp);<br>&nbsp; getch ();</div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "this is a simple text"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compiletime Error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "this is a simple text this is a simple text"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 12,
+      "QuestionTypeId": 0,
+      "QuestionId": 75860,
+      "Explanation": "The rewind() function sets the file pointer at the beginning of the stream. It is useful if you have to use stream many times. Here first while loop print the file content and then rewind functuin move the pointer again at the begining of file. and then second while loop again print the file content from the begining.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following cannot take file pointer to beginning Of File?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "rewind.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "fseek.<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "fopen.<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "fflush.<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 12,
+      "QuestionTypeId": 0,
+      "QuestionId": 63802,
+      "Explanation": "The C library function int fflush(FILE *stream) flushes the output buffer of a stream. stream \u2212 This is the pointer to a FILE object that specifies a buffered stream.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following file opening mode deletes contents of file, if it already exists?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "\u201cw\u201d"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "\u201cwb\u201d"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "\u201cwb+\u201d"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of these"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 12,
+      "QuestionTypeId": 0,
+      "QuestionId": 64018,
+      "Explanation": "In w mode file will be overwritten if already some content exists or it will create new file if does not exist.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is not a parameter to fseek?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "offset.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FILE ptr.<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "reference position.<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "filename.<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 12,
+      "QuestionTypeId": 0,
+      "QuestionId": 64010,
+      "Explanation": "fseek accepts file pointer but not the file name .<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function can be used to write entire structure in binary file?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "fputc."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "fputs."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "fprintf."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "fwrite."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 12,
+      "QuestionTypeId": 0,
+      "QuestionId": 64012,
+      "Explanation": "fread() and fwrite() functions are commonly used to read and write binary data to and from the file respectively.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which one function can be used to close all files f1, f2, f3 having their file pointers<br>&nbsp;&nbsp;&nbsp;&nbsp; fp1, fp2, fp3 respectively?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "fclose( );"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "fclose(f1,f2,fC);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "fclose(fp1,fp2,fpC);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "fcloseall( );<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 12,
+      "QuestionTypeId": 0,
+      "QuestionId": 64020,
+      "Explanation": "fclose() accepts only one argument at a time. fcloseall() closes all the files that are opened.<br>The fcloseall() function closes all open streams, including stdin, stdout, and stderr. This includes streams created (and not yet closed) by fdopen(), fopen(), and freopen().<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which one of the following calls will open the file test.txt for reading and writing by fgetc?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "fopen( \"test.txt\", \"r+\" );<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "read( \"test.txt\" );"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "fileopen( \"test.txt\", \"w\" );<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "fread( \"test.txt\" );"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 12,
+      "QuestionTypeId": 0,
+      "QuestionId": 64025,
+      "Explanation": "fopen() is a function used for opening the file. r+ mode is used to read as well as write content in the file.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "f = fopen( filename, \"r\" );<br>Referring to the code above, what is the proper definition for the variable f?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "FILE f;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FILE *f;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int f;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "struct FILE f;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 12,
+      "QuestionTypeId": 0,
+      "QuestionId": 64026,
+      "Explanation": "f is a variable of type FILE * because it deals with file.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "EOF is defined in _____header file<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "stdlib.h"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "stdio.h"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "conio.h"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "stdfile.h"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 12,
+      "QuestionTypeId": 0,
+      "QuestionId": 64076,
+      "Explanation": "EOF is a symbolic constant that stands for End Of File.<br>EOF macro which expands to an integer constant expression, with type int and a negative value, that is returned by several functions to indicate end-of-file, that is, no more input from a stream. EOF is defined in stdio. h (and is usually -1).<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Consider the following code<br>void main( )&nbsp;&nbsp;<br>{<div style=\"margin-left: 40px;\">FILE *fp;<br>fp=fopen(\"file1\", \"r\");&nbsp;&nbsp;&nbsp;<br></div>}<br>If file is exisiting &amp; found, fp will point to<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Name of that file."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "NULL."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "First character of that file."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A structure that contains information about that file."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 12,
+      "QuestionTypeId": 0,
+      "QuestionId": 64053,
+      "Explanation": "FILE is structure and *fp is pointer pointing to structure hence correct answer is D.<br>This structure is internally stored and this structure contains info like what character is currently being read, what mode are u using etc. So the pointer u declared above actually points to this structure which further stores the first character of file when u just open the file along with other things.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the use of fseek function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Copying data in file."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Searching a number in file."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Positioning a File pointer."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Reading a data at specified location."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 12,
+      "QuestionTypeId": 0,
+      "QuestionId": 64056,
+      "Explanation": "int fseek(FILE *stream, long offset, int whence); <br>The fseek() function is used to set the file position indicator for the stream to a new position. This function accepts three arguments. The first argument is the FILE stream pointer returned by the fopen() function.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;stdio.h&gt;<br>#include &lt;stdlib.h&gt;<br>void main( )<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FILE *fp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fp=fopen(\"C:a.txt\",\"w\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(!fp)&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; exit(0);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fclose(fp);<br></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; point out error in the above code<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Path provided in function fopen( )."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The file should be closed before exit( )."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The function fclose( ) must have the filename as parameter."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The above code will compile successfully."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 12,
+      "QuestionTypeId": 0,
+      "QuestionId": 63790,
+      "Explanation": "No error in the code. Code compile and run successfully.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; unsigned char ch;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FILE *fp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fp=fopen(\"alpha.txt\", \"r\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while((ch=fgetc(fp))!=EOF) putchar(ch);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fclose(fp);</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will display contents of file alpha.txt.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It will go in infinite loop."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will display contents of file alpha.txt &amp; then it will go in infinite loop.<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 12,
+      "QuestionTypeId": 0,
+      "QuestionId": 63791,
+      "Explanation": "ch is declared as unsigned so it can not store value as -1 so it will never read EOF and while will never terminate.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { <div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; char&nbsp;&nbsp;&nbsp; ch;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; clrscr( );<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ch=getch( );<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fprintf(stdout,\u201c%c\u201d, ch);<br></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; While executing above code, \u2018s\u2019 is typed then what will be seen on screen?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "s ."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "s s ."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No output ."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Garbage."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 12,
+      "QuestionTypeId": 0,
+      "QuestionId": 63792,
+      "Explanation": "Nothing is printed on the screen. fprintf is used to write data in file.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is returned by function ftell( )?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Character Present at current position."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ASCII value of Character Present at current position."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Current position of File pointer ( offset )"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "File size"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 12,
+      "QuestionTypeId": 0,
+      "QuestionId": 63795,
+      "Explanation": "ftell() returns the current file position of the specified stream with respect to the starting of the file. This function is used to get the total size of file after moving the file pointer at the end of the file.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;void main( )<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<div style=\"margin-left: 80px;\">&nbsp;FILE *fp;<br>&nbsp; char ch = 'O';<br>&nbsp; fp = fopen (\"A.dat\", \"w\");<br>&nbsp; fputc (ch, fp);</div><div style=\"margin-left: 80px;\">&nbsp; fputs (\"let's study together\", fp);</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What will be contents of file \u201cA.dat\u201d after executing above program?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "O."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Let\u2019s study together ."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "O let\u2019s study together."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error in Program."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 12,
+      "QuestionTypeId": 0,
+      "QuestionId": 63796,
+      "Explanation": "First char O will get written into the file and then string will get written into the file.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if specified file does not exist while opening that file in program(fopen)?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will create new File"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Function fopen will return NULL"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Different Action will be taken Depending on file opening mode"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It will generate Runtime Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 12,
+      "QuestionTypeId": 0,
+      "QuestionId": 63799,
+      "Explanation": "The&nbsp;<em>fopen</em>() function shall open the file whose pathname is the string pointed to by&nbsp;<em>filename</em>, and associates a stream with it.<br>The&nbsp;<em>mode</em>&nbsp;argument points to a string. If the string is one of the following, the file shall be opened in the indicated mode. Otherwise, the behavior is undefined.<br><em>r</em>&nbsp;or&nbsp;<em>rb</em><br>Open file for reading.<br><em>w</em>&nbsp;or&nbsp;<em>wb</em><br>Truncate to zero length or create file for writing.<br><em>a</em>&nbsp;or&nbsp;<em>ab</em><br>Append; open or create file for writing at end-of-file.<br><em>r+</em>&nbsp;or&nbsp;<em>rb+</em>&nbsp;or&nbsp;<em>r+b</em><br>Open file for update (reading and writing).<br><em>w+</em>&nbsp;or&nbsp;<em>wb+</em>&nbsp;or&nbsp;<em>w+b</em><br>Truncate to zero length or create file for update.<br><em>a+</em>&nbsp;or&nbsp;<em>ab+</em>&nbsp;or&nbsp;<em>a+b</em><br>Append; open or create file for update, writing at end-of-file.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which header file is required for using file handling functions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "stdio.h"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "stdlib.h"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "stdfile.h"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "conio.h"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 12,
+      "QuestionTypeId": 0,
+      "QuestionId": 63800,
+      "Explanation": "The type FILE is used for a file variable and is defined in the stdio.h file. It is used to define a file pointer for use in file operations.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which one of the following is valid for opening a read-only ASCII file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "fileOpen (filenm, \"r\");"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "fileOpen (filenm, \"read\");"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "fopen (filenm, \"read\");"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "fopen (filenm, \"r\");"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 12,
+      "QuestionTypeId": 0,
+      "QuestionId": 63770,
+      "Explanation": "fopen() function accepts filename as first argument and mode of opening as second argument. &apos;r&apos; is a mode used for reading.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Code:<div style=\"margin-left: 40px;\">FILE *f ;<br>f= fopen( fileName, \"r\" );<br>readData( f );<br><br>if( ???? )<br>{<br></div><div style=\"margin-left: 80px;\">&nbsp;puts( \"End of file was reached\" );<br></div><div style=\"margin-left: 40px;\">}<br></div>Which one of the following can replace the ???? in the code above to determine if the end of a file has been reached?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "f == EOF"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "feof( f )"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "f == NULL"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "!f"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 12,
+      "QuestionTypeId": 0,
+      "QuestionId": 63774,
+      "Explanation": "feof(file pointer) is a function which will check whether end of file is reached which will return true or false.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of 'r' in fopen() function used below in the code?<br>FILE *fp;<br>fp = fopen(\"source.txt\", \"r\");",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Open file \"source.txt\" in reading mode."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Open file \"source.txt\" in reading and writing mode."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Create a new file \"source.txt\" for reading."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 12,
+      "QuestionTypeId": 0,
+      "QuestionId": 63612,
+      "Explanation": "r is the mode in which the file will be accessed only for reading purpose. r stands for readonly mode..<br>",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

@@ -1,0 +1,1198 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Cross-validation is used in machine learning primarily for:<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Feature selection <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hyperparameter tuning <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Data augmentation <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Model evaluation <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 88410,
+      "Explanation": "Cross-validation is a technique used to evaluate the performance of machine learning models by training and testing on multiple subsets of the data. It helps assess how the model generalizes to unseen data and provides a more reliable estimate of its performance compared to a single train-test split. <br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which cross-validation technique involves partitioning the data into k subsets, where each subset is used as a test set exactly once?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Holdout validation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Leave-One-Out (LOO) cross-validation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "K-fold cross-validation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Stratified cross-validation"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 88411,
+      "Explanation": "K-fold cross-validation divides the dataset into k subsets (folds) of approximately equal size. Each fold is used as a validation set once while the remaining k-1 folds are used for training. This process is repeated k times (with each fold used once as a validation set), and the results are averaged to obtain a single estimation.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Stratified cross-validation is particularly useful when dealing with:<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Imbalanced datasets <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Small datasets <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Large datasets <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Regression problems <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 88412,
+      "Explanation": "Stratified cross-validation ensures that each fold maintains the same proportion of class labels as the original dataset, which is crucial for accurate evaluation in the case of imbalanced datasets where one class may dominate the others. <br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The advantage of using cross-validation over a single train-test split is:<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It provides multiple estimates of model performance <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It requires less computation <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It prevents overfitting <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It allows for faster training times <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 88413,
+      "Explanation": "Cross-validation provides multiple estimates of model performance by averaging the results of multiple train-test splits. This helps in obtaining a more reliable assessment of how the model will generalize to unseen data compared to a single train-test split. <br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Holdout validation involves splitting the dataset into two subsets: ___________.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Training and testing sets <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Training and validation sets <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Validation and testing sets <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Training, validation, and testing sets<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 88419,
+      "Explanation": "Holdout validation splits the dataset into two subsets: a training set used to train the model and a validation set used to evaluate its performance during hyperparameter tuning or model selection. <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement about cross-validation is true?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It guarantees that the model will generalize well to any new data <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It requires less computational resources than a single train-test split <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It eliminates the need for hyperparameter tuning <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It helps in detecting data leakage <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 88420,
+      "Explanation": "Cross-validation does not guarantee perfect generalization, but it provides a more reliable estimate of how well the model will perform on unseen data compared to a single train-test split. <br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;In k-fold cross-validation, the dataset is divided into k folds. If k = 5, what percentage of the data is used for validation in each iteration?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5% <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10% <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "20% <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "25% <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 88422,
+      "Explanation": "In k-fold cross-validation, each fold serves as the validation set once, while the remaining (k-1) folds are used for training. If k = 5, each fold represents 1/5 or 20% of the dataset, leaving 80% for training in each iteration. <br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which cross-validation technique is more computationally expensive compared to standard k-fold cross-validation?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Leave-One-Out (LOO) cross-validation <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Stratified cross-validation <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Shuffle Split cross-validation <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Nested cross-validation <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 88423,
+      "Explanation": "Leave-One-Out (LOO) cross-validation is computationally expensive because it requires fitting and evaluating the model k times, where k is equal to the number of data points in the dataset. <br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Cross-validation helps in addressing which of the following issues in machine learning?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Underfitting"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Overfitting"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Data preprocessing"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Feature selection"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 88424,
+      "Explanation": "Cross-validation helps in evaluating the model&apos;s performance on unseen data, thereby assisting in identifying and mitigating overfitting issues by providing a more realistic estimate of the model&apos;s ability to generalize.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Time complexity of K-fold cross-validation is<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "linear in K <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "quadratic in K <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "cubic in K <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "exponential in K <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 87688,
+      "Explanation": "The time complexity in K-Fold CV is linear in K.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary advantage of Convolutional Neural Networks (CNNs) over traditional fully connected neural networks for image recognition tasks? <br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They require fewer training epochs"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They are faster to train"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They can automatically learn spatial hierarchies"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They have fewer parameters"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 88466,
+      "Explanation": "CNNs are designed to automatically learn and detect spatial hierarchies of patterns in images through the use of convolutional layers, pooling layers, and hierarchical feature learning, making them highly effective for tasks like image recognition and classification.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;In CNNs, what is the purpose of pooling layers?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To reduce the number of parameters"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To increase the spatial dimensions of the input"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To introduce non-linearity"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To perform element-wise multiplication"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 88467,
+      "Explanation": "Pooling layers in CNNs reduce the spatial dimensions (width and height) of the input volume, which helps in reducing the computational load and controlling overfitting by summarizing the features extracted by convolutional layers.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the term \"convolution\" refer to in Convolutional Neural Networks (CNNs)?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The process of extracting features from images <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The process of learning spatial hierarchies <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The process of element-wise multiplication of filters and input <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The process of reducing spatial dimensions<br><br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 88468,
+      "Explanation": "Convolution in CNNs refers to the mathematical operation where a filter (kernel) slides over the input image or feature map, performing element-wise multiplication and summing to produce a feature map that highlights specific features or patterns. <br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which layer in CNNs typically follows convolutional layers to introduce non-linearity?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Activation layer"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Pooling layer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Fully connected layer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Dropout layer"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 88469,
+      "Explanation": "Activation layers in CNNs apply non-linear activation functions (e.g., ReLU, sigmoid) to the output of convolutional layers, enabling the network to learn complex patterns and relationships in the data.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the fully connected (dense) layers at the end of a CNN architecture?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To reduce the spatial dimensions of the input"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To introduce non-linearity"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To perform element-wise multiplication"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To make final predictions"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 88470,
+      "Explanation": "Fully connected layers at the end of a CNN architecture take the features extracted by earlier layers and use them to make predictions by mapping them to the output classes or categories in classification tasks.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which technique is used in CNNs to handle overfitting by randomly dropping units during training?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Regularization"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Batch normalization"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Dropout"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Weight decay<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 88471,
+      "Explanation": "Dropout is a regularization technique used in CNNs (and other neural networks) to prevent overfitting by randomly deactivating (dropping out) a proportion of neurons during each training iteration, forcing the network to learn redundant representations.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In CNNs, what does the term \"stride\" refer to?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The number of filters used in convolutional layers"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The size of the filter/kernel <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The amount by which the filter slides over the input"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The number of convolutional layers in the network"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 88472,
+      "Explanation": "Stride in CNNs refers to the number of pixels by which the filter/kernel moves across the input image or feature map during the convolution operation. It determines how much the filter shifts between each application.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of using K-Fold Cross-Validation in machine learning?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To reduce computational cost of training models"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To effectively estimate the performance of a machine learning model"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To increase the accuracy of a model"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To select the best features for a model"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 98206,
+      "Explanation": "K-Fold Cross-Validation is commonly used to estimate the performance of a model by splitting the dataset into K parts and ensuring that each fold is used for testing once.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In K-Fold Cross-Validation, what does the &#39;K&#39; stand for?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The number of layers in the neural network"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The number of folds or subsets created from the dataset"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The number of hyperparameters to tune"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The number of features in the dataset"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 98207,
+      "Explanation": "&#39;K&#39; represents the number of subsets or folds that the dataset is divided into during cross-validation.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If you choose K to be equals to the size of the dataset in K-Fold Cross-Validation, what is this specific method called?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Leave-One-In Cross-Validation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Bootstrap Aggregating"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Leave-One-Out Cross-Validation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Hold-Out Cross-Validation"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 98208,
+      "Explanation": "Leave-One-Out Cross-Validation (LOOCV) occurs when K equals the number of observations, making each fold contain only a single data point.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does K-Fold Cross-Validation help in reducing model variance?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By ensuring each fold has balanced classes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using different datasets for training"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By averaging the performance across different folds"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By increasing the size of the training data"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 98209,
+      "Explanation": "K-Fold Cross-Validation reduces model variance by averaging the evaluation metrics across all K folds, mitigating fluctuations due to dataset partitions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which scenario is commonly handled using Stratified K-Fold Cross-Validation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When computational resources are limited"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When datasets have highly imbalanced classes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When feature selection is necessary"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When datasets are very large"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 98210,
+      "Explanation": "Stratified K-Fold Cross-Validation ensures that each fold has a similar distribution of class labels, which is particularly useful for imbalanced datasets.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the effect of increasing the K value in K-Fold Cross-Validation on model training?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Decreases training time"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Increases risk of overfitting"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Increases variance between test results"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Reduces bias in performance estimation"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 98211,
+      "Explanation": "Increasing the number of folds K generally reduces bias in performance estimation, but can increase computational cost.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does combining K-Fold Cross-Validation with grid search allow a practitioner to do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Reduce the number of features"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Simultaneously optimize for training time"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Perform hyperparameter tuning more reliably"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Improve data scaling methods"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 98212,
+      "Explanation": "Combining K-Fold Cross-Validation with grid search enables better hyperparameter tuning by evaluating each possible hyperparameter configuration rigorously.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary goal of using Stratified K-Fold cross-validation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To create balanced test and train splits"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To increase the computational efficiency of validation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To improve prediction accuracy by increasing the size of the test set"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To ensure each fold has the same number of samples"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 98213,
+      "Explanation": "Stratified K-Fold aims to create splits that maintain the same proportion of each class as the complete dataset.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which scenario is Stratified K-Fold cross-validation especially useful?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When dealing with small datasets"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When the dataset has an imbalanced class distribution"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When there are multiple classes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When the features are unscaled"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 98214,
+      "Explanation": "Stratified K-Fold is useful for imbalanced datasets as it ensures each fold has a proportional class representation, preventing skewed performance metrics.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does Stratified K-Fold differ from regular K-Fold cross-validation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It uses a different metric to evaluate models"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It randomizes data more effectively"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It ensures each fold has a similar class distribution"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It decreases the training time"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 98215,
+      "Explanation": "Stratified K-Fold ensures that each fold has a class distribution similar to the entire dataset, unlike regular K-Fold which may result in uneven class distributions in the folds.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can Stratified K-Fold be used for regression tasks?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, but with a minor modification"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, it&#39;s meant exclusively for classification"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, with no modifications needed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No, it cannot handle continuous output values"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 98216,
+      "Explanation": "While primarily used for classification tasks, a variation called &#39;StratifiedShuffleSplit&#39; or creating balanced bins can be adapted for regression tasks.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why might repeated Stratified K-Fold cross-validation be preferred?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To enhance the speed of model training"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To average out randomness and obtain more reliable performance estimates"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To reduce the size of the dataset"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To specifically test performance on minority classes"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 98217,
+      "Explanation": "Repeating Stratified K-Fold cross-validation helps average out variance and provides a better estimate of the model&#39;s performance.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What issue does Stratified K-Fold address that simple cross-validation might face?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "High variance in model predictions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Class imbalance leading to misleading performance metrics"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Presence of outliers"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Excessive data augmentation"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 98218,
+      "Explanation": "Simple cross-validation might generate folds with imbalanced classes, leading to biased performance metrics; stratification ensures balanced class representation.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When selecting the number of folds in Stratified K-Fold, what should you consider?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only use as many folds as there are samples"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The typical number is always 10, no exceptions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "More folds mean less training data per fold, but potentially lower bias"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Select a prime number to avoid bias"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 98219,
+      "Explanation": "Increasing the number of folds increases the amount of test data per fold at the cost of having less training data per fold, affecting bias-variance trade-off.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a typical drawback of using more folds (e.g., 10 over 5) in Stratified K-Fold?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Higher risk of overfitting the model"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Increased computational cost and time"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Less accurate model validation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Lower likelihood of data leakage"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 98220,
+      "Explanation": "Using more folds results in more model training iterations, leading to higher computational costs and increased training time.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following can be used to generate balanced cross\u2013validation groupings from a set of data ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Create Folds"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Create Sample"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Create Resample"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the Mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 78435,
+      "Explanation": "Create Folds can be used to generate balanced cross\u2013validation groupings from a set of data.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is correct use of cross validation ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Selecting variables to include in a model"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Comparing predictors"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Selecting parameters in prediction function"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the Mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 78517,
+      "Explanation": "Cross validation is also used to pick type of prediction function to be used.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "For k cross validation,larger k value implies more bias.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 78523,
+      "Explanation": "Larger k value implies more variance.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following method is used for train Control resampling ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "repeatedcv"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "svm"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "bag32"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the Mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 78524,
+      "Explanation": "repeatedcv stands for repeated cross validation.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider the hyperparameter \u201cnumber of trees\u201d and arrange the options in terms of time taken by each hyperparameter for building the Gradient Boosting model?<br><br>Note: remaining hyperparameters are same<br><br>1. Number of trees = 100<br>2. Number of trees = 500<br>3. Number of trees = 1000",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1~2~3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1&lt;2&lt;3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1&gt;2&gt;3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1~2&gt;3"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 78228,
+      "Explanation": "As the number of trees increases, the time taken to build Gradient Boosting model increases.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following hyper parameter(s), when increased may cause random forest to over fit the data?<br>1. Number of Trees<br>2. Depth of Tree<br>3. Learning Rate",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only 1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only 2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only 3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1 and 2"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 78236,
+      "Explanation": "The increase in Number of Trees and Depth of Tree may cause overfitting.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "For a sklearn function of supervised model fitting using GridSearchCV, you have 3 parameters with each having 5, 3 and 2 distinct values respectively. For how many parameter sets will the GridSearchCV.fit( ) run?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "300"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "100"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "30"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 83434,
+      "Explanation": "Total parameter sets = distinct values for A * distinct values for B * distinct values for C = 5 * 3 * 2 = 30",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "We require to shuffle the data with function of Kfold for ____________",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "having randomized order of the data"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "optimization of errors"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "reducing the data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of Above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6071,
+      "QuestionTypeId": 0,
+      "QuestionId": 83435,
+      "Explanation": "We require to shuffle the data with function of Kfold for having randomized order of the data.",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

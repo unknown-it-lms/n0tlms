@@ -1,0 +1,910 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is a trigger in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A scheduled event that executes SQL scripts."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A stored procedure that can be called manually."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A statement that executes automatically in response to a specific event on a table or view."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A function that returns a computed value."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 92552,
+      "Explanation": "A trigger in MySQL is a database object that automatically executes a predefined set of operations when a specified event occurs on a table or view.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following events can a MySQL trigger be associated with?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "INSERT, SELECT"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "UPDATE, DELETE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DELETE, SELECT"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "INSERT, DELETE, UPDATE"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 92553,
+      "Explanation": "MySQL triggers can be associated with INSERT, DELETE, and UPDATE events but not with SELECT operations.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "At which timing can triggers be activated in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "BEFORE and DURING"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "AFTER and DURING"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "BEFORE and AFTER"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "IMMEDIATELY and AFTER"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 92554,
+      "Explanation": "Triggers in MySQL can be activated at two timings: BEFORE and AFTER the triggering event.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to create a trigger in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CREATE TRIGGER"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "INITIATE TRIGGER"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "MAKETRIGGER"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SET TRIGGER"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 92556,
+      "Explanation": "The CREATE TRIGGER statement is used to create a new trigger in MySQL.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default order of execution if there are multiple triggers for the same event?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Lexicographical order"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The order they were created"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Random order"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Ascending order of trigger names"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 92557,
+      "Explanation": "<span id=\"explanation92557\" style=\"color:blue\"></span><span style=\"color:blue\">When multiple triggers are defined for the same table and event (e.g., BEFORE INSERT), most relational database systems do not guarantee a specific execution order unless explicitly specified using options like FOLLOWS or PRECEDES (in databases that support such features, like MySQL 5.7+ or Oracle).<br>So, by default, the order of execution is considered arbitrary or random if not otherwise controlled.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true regarding MySQL triggers?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Triggers can include COMMIT statements."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Triggers can call stored procedures."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Triggers can change the values of the New and Old variables."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Triggers can perform network operations."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 92558,
+      "Explanation": "Triggers in MySQL can call stored procedures but cannot perform COMMIT, change NEW or OLD variables, or perform network operations.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which MySQL privilege is required to create a trigger?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "TRIGGER"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CREATE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "EXECUTE"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 92559,
+      "Explanation": "The TRIGGER privilege is required to create triggers in MySQL.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the OLD keyword in MySQL triggers?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Refers to non-updated values."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Stores historical data."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Refers to the column values before the event occurred."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Indicates the age of the record."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 92560,
+      "Explanation": "The OLD keyword is used in MySQL triggers to refer to the column values that existed before the event occurred.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the NEW keyword in MySQL triggers?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Refers to the updated column values."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Identifies the latest record in a table."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Stores data for future reference."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Refers to the age of the data."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 92561,
+      "Explanation": "The NEW keyword is used in triggers to refer to the column values after the event has occurred, specifically for INSERT and UPDATE events.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following cannot be done within a MySQL trigger?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Updating a different table"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Calling a stored procedure"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using transactional statements like COMMIT or ROLLBACK"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using conditionals like IF"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 92562,
+      "Explanation": "Transactional statements like COMMIT or ROLLBACK are not allowed within a trigger in MySQL, as triggers are atomic operations.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a trigger is defined for an UPDATE event, which keywords can be used within that trigger?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "NEW only"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "OLD only"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both OLD and NEW"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Neither can be used"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 92563,
+      "Explanation": "For an UPDATE event, both OLD and NEW keywords can be used to reference the before and after values of the update.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is one of the main purposes of using triggers in a database?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To schedule regular backups"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To automate repetitive administrative tasks"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To automatically enforce complex business rules and data integrity"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To ensure better performance"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 92564,
+      "Explanation": "Triggers are used to automatically enforce business rules, maintain data integrity, and execute complex calculations or updates in response to data changes.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To create a trigger that fires before an update operation on a table, which syntax would you use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "AFTER UPDATE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "BEFORE INSERT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "BEFORE UPDATE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "BEFORE DELETE"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 92565,
+      "Explanation": "To create a trigger that executes before an UPDATE operation, the syntax \"BEFORE UPDATE\" is used in the trigger definition.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a MySQL AFTER DELETE trigger, what does the OLD keyword reference?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The values after the row is deleted"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The row's values before it was deleted"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The current values in the database"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The latest inserted row values"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 92566,
+      "Explanation": "In an AFTER DELETE trigger, the OLD keyword refers to the values of the row before it was deleted.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is true about disabling a trigger in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Triggers can be temporarily disabled using the DISABLE keyword."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Triggers cannot be disabled directly; they must be dropped."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Triggers are disabled using the ALTER TRIGGER statement."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Triggers can be disabled using the SET TRIGGERS statement."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 92567,
+      "Explanation": "MySQL does not provide a command to directly disable a trigger. To disable it, you must drop the trigger and recreate it later if needed.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can a trigger be removed from a MySQL database?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DROP TRIGGER"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DELETE TRIGGER"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "REMOVE TRIGGER"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "UNINSTALL TRIGGER"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 92568,
+      "Explanation": "The DROP TRIGGER statement is used to remove a trigger from a MySQL database.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which MySQL statement allows checking for multiple triggers on a single table?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SHOW TABLES"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SHOW TRIGGERS"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SHOW EVENTS"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DESCRIBE TRIGGERS"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 92570,
+      "Explanation": "The SHOW TRIGGERS statement provides information about the triggers that exist in the database, including those on a specific table.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When would a BEFORE INSERT trigger be used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To modify data already in the database before a new row is added."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To perform calculations and set defaults before a row is inserted."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To remove obsolete records before a new row is inserted."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To remove the dependency of referential constraints."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 92571,
+      "Explanation": "A BEFORE INSERT trigger can be used to perform calculations or set default values before a new row is inserted into the database.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if a trigger fails during execution in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The operation that fired the trigger is completed."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The operation that fired the trigger is rolled back."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The failed trigger is logged for debugging."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A backup of the table is created."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 92572,
+      "Explanation": "If a trigger fails in MySQL during execution, the operation that fired the trigger is rolled back to ensure data integrity.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How is recursion typically handled with triggers in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Recursion is allowed with some limitations."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Recursion is automatically optimized by MySQL."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Triggers do not support recursive calls."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Traders provide a built-in recursion limit."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 92574,
+      "Explanation": "MySQL triggers do not support recursion. Recursive calling triggers can lead to deadlocks or stack overflows.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a correct format for defining a trigger in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CREATE TRIGGER trigger_name ON table_name BEFORE INSERT"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "CREATE TRIGGER trigger_name ON table_name WHEN INSERT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CREATE TRIGGER trigger_name BEFORE INSERT ON table_name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CREATE TRIGGER trigger_name AFTER INSERT ON table_name"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 92575,
+      "Explanation": "The correct format for defining a trigger in MySQL is CREATE TRIGGER trigger_name BEFORE/AFTER event ON table_name.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can triggers be used to enforce referential integrity in MySQL's InnoDB tables?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, triggers are the main mechanism for enforcing referential integrity."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, triggers do not work with InnoDB tables."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, but it's preferable to use foreign key constraints with InnoDB."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No, referential integrity cannot be enforced in MySQL."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 92576,
+      "Explanation": "While triggers can be used for referential integrity, it&apos;s preferable to use foreign key constraints in InnoDB tables for this purpose.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "________ is a special type of stored procedure&nbsp; that is attached to a table to perform some specific task.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Stored function"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "embedded SELECT statement"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "trigger"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "cursor"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 65298,
+      "Explanation": "Trigger is the PLSQL Database Object, it is&nbsp; attached with table or view.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How many maximum triggers can be applied to a table?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "6<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "12"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "9"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 74470,
+      "Explanation": "Total 6 triggers can be applied on the table<br>After &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Insert<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Update<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Delete<br>Before &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Insert<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Update<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Delete &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>CREATE&nbsp; TRIGGER update_emp</div><div>AFTER UPDATE ON EMP&nbsp;</div><div>BEGIN</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; INSERT INTO audit_table (who, audited) VALUES (USER,curdate() );&nbsp;</div><div>END;&nbsp;</div><div><br></div><div>You issue an update command on the EMP table that results in changing ten rows. How many rows are inserted into the AUDIT_TABLE?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "NONE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Value equal to the number of rows in the emp table."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 65177,
+      "Explanation": "Here in the example&nbsp; if&nbsp; xyz user fires update query on emp table changing data in 10 rows, a trigger is called at the backend.&nbsp;<br>This will insert 1 row in&nbsp; audit_table 1 . Entry in audit table is nowhere related to number of rows processed in emp table.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Triggers does not support ____________.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "update"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "insert"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "view"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "delete"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 86647,
+      "Explanation": "Views does not support triggers.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "CREATE TRIGGER abc<br>after def<br>ON ghi<br>FOR EACH ROW<br>jkl;<br>from the given options, select right part of trigger to replace in place of 'abc', 'def', 'ghi' and 'jkl' can be replaced by",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "trigger name, table name, DML operation, trigger body"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "trigger name, DML operation, table name, trigger body"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "table name, DML operation, trigger name, trigger body"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Above trigger definition is wrong"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 86651,
+      "Explanation": "following is the syntax for trigger<br><br>create trigger trigger_name<br>before/after DML operation<br>on table_name<br>for each row<br>body;",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Trigger is a __________",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "statement that enables to start any dbms"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "statement that is executed by the user when debugging an application program"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "the condition that the system tests for the validity of database user"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "statement that is executed automatically by the system as a side effect of the changes on the database table.<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 86652,
+      "Explanation": "Triggers are stored procedures, that are automatically called once an event occurs.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Write the question here",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "B"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "D"
+        },
+        {
+          "OptionId": "E",
+          "OptionText": "E"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 90794,
+      "Explanation": "Write the explanation here",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true concerning triggers?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "You do not create them with SQL."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They execute against only some applications that access a database. <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They have an event, condition, and action. <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They cannot cascade (cause another trigger to fire). <br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6547,
+      "QuestionTypeId": 0,
+      "QuestionId": 88873,
+      "Explanation": "Triggers are database objects that execute automatically in response to specific events that occur on a database table. They consist of three main components: &nbsp;<br><br>Event: The action that triggers the execution of the trigger (e.g., INSERT, UPDATE, DELETE). &nbsp;<br>Condition: The condition that must be met for the trigger to execute. &nbsp;<br>Action: The SQL statements that are executed when the trigger is fired. &nbsp;<br>Here are some additional points about triggers:<br><br>Creation: Triggers are created using SQL statements.<br>Execution: They execute against all applications that access the database.<br>Cascading: Triggers can cascade and cause other triggers to fire.<br><br>",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Notes - C_Iterative statements-2</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  body{font-family:system-ui,Segoe UI,Roboto,Arial;max-width:900px;margin:24px auto;padding:18px;line-height:1.6;color:#111}
+  h1{font-size:1.4rem;margin-bottom:0.6rem}
+  .topic{font-weight:700;margin-top:1rem}
+  .subtopic{font-weight:600;margin-top:0.8rem}
+  .content{margin:0.6rem 0 1.2rem 0}
+  pre{white-space:pre-wrap;background:#f7f7f7;padding:10px;border-radius:6px;overflow:auto}
+  img{max-width:100%;height:auto}
+  table{border-collapse:collapse;width:100%}
+  table, th, td{border:1px solid #ccc;padding:6px}
+</style>
+</head>
+<body>
+<h1>Notes: C- Iterative statements-2</h1>
+
+<div class="courseware topic">Iterative statements-2<hr><div class="courseware content">​​​​​​​​​​​​​​When working with nested loops in C, the <code>break</code> and <code>continue</code> statements can be used to control the flow of execution.</div></div><div class="courseware content"><br></div>
+<div class="courseware subtopic">Break</div><div class="courseware content"><hr>The break statement ends the loop immediately when it is encountered.<br>Its syntax is:<br>break;<br>The break statement is almost always used with if...else statement inside the loop.<table border="1" cellspacing="1" cellpadding="1" style="width: 100%;"><tbody><tr><td>#include &lt;stdio.h&gt;<br>int main()<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int var;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (var =100; var&gt;=10; var --)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("var: %d ", var);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (var==99)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp; printf("Out of for-loop");<br>&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br>}<br></td><td><strong>Output</strong>:<br>var: 100<br>var: 99<br>Out of for-loop<br></td></tr></tbody></table><br></div>
+<div class="courseware subtopic">Continue&nbsp;<hr></div><div class="courseware content">The continue statement skips the current iteration of the loop and continues with the next iteration. Its syntax is:<br>continue;<br>The continue statement is almost always used with the if...else statement.<table border="1" cellspacing="1" cellpadding="1" style="width: 100%;"><tbody><tr><td>#include &lt;stdio.h&gt;<br>int main()<br>{<br>&nbsp;&nbsp; int j=0;<br>&nbsp;&nbsp; do<br>&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (j==7)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; j++;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; continue;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("%d ", j);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; j++;<br>&nbsp;&nbsp; }while(j&lt;10);<br>&nbsp;&nbsp; return 0;<br>}<br></td><td>Output:<br>0 1 2 3 4 5 6 8 9<br><br></td></tr></tbody></table>Here you can see no 7 is missing.</div>
+<div class="courseware subtopic">Nested loops<hr><div class="courseware content">Loop inside another loop is called as nested loop.</div></div><div class="courseware content"><table border="1" cellspacing="1" cellpadding="1" style="width: 100%;"><tbody><tr><td>for(i=1;i&lt;5;i++)<br>{<br>&nbsp;&nbsp; for(j=1; j&lt;3; j++)<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print(" Hello&nbsp; %d",j);<br>&nbsp;&nbsp;&nbsp; }<br>}</td><td>output<br>Hello 1&nbsp; Hello 2&nbsp; Hello 3<br>Hello 1&nbsp; Hello 2&nbsp; Hello 3<br>Hello 1&nbsp; Hello 2&nbsp; Hello 3<br>Hello 1&nbsp; Hello 2&nbsp; Hello 3<br>Hello 1&nbsp; Hello 2&nbsp; Hello 3</td></tr></tbody></table>here inner loop of j executes for every value of i.</div>
+
+
+</body>
+</html>

@@ -1,0 +1,366 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Where do you add Constraint objects?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To the Constraint collection of the DataTable object."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To the Constraint collection of the DataColumns object."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To the Constraint collection of the DataSet object."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To the Constraint collection of the DataRelation object."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5531,
+      "QuestionTypeId": 0,
+      "QuestionId": 70382,
+      "Explanation": "In ADO.NET, constraints such as UniqueConstraint and ForeignKeyConstraint are added to the ConstraintCollection of a DataTable.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Asynchronous ADO.NET, what is the return type of the asynchronous methods?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Task"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "void"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Task&lt;T&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "async"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5531,
+      "QuestionTypeId": 0,
+      "QuestionId": 86673,
+      "Explanation": "The return type of asynchronous methods in Asynchronous ADO.NET is Task&lt;T&gt;, where T represents the result type of the asynchronous operation. For example, Task&lt;int&gt; for ExecuteNonQueryAsync.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is commonly used to begin an asynchronous operation for executing a command in ADO.NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SqlCommand.ExecuteNonQueryAsync"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SqlCommand.BeginExecuteNonQuery"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SqlCommand.BeginExecuteReader"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SqlCommand.ExecuteScalarAsync"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5531,
+      "QuestionTypeId": 0,
+      "QuestionId": 95792,
+      "Explanation": "The SqlCommand.BeginExecuteReader method is used to start executing a command asynchronously, typically when retrieving results from a database.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the ExecuteNonQueryAsync method return in ADO.NET when performing an asynchronous command execution?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A DataReader object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An integer representing the number of rows affected"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A Task representing the asynchronous operation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A boolean indicating success or failure"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5531,
+      "QuestionTypeId": 0,
+      "QuestionId": 95793,
+      "Explanation": "ExecuteNonQueryAsync returns a Task that represents the asynchronous operation, allowing developers to use async and await patterns for non-blocking database interactions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main benefit of using asynchronous command execution in ADO.NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Improved exception handling"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Reduced code complexity"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Better scalability and responsiveness"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Simplified syntax for SQL queries"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5531,
+      "QuestionTypeId": 0,
+      "QuestionId": 95794,
+      "Explanation": "Asynchronous command execution allows applications to handle more requests concurrently, improving scalability and responsiveness, especially in server applications.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which event or method is used to retrieve the completed result of an asynchronous database read operation in ADO.NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SqlCommand.EndExecuteReader"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SqlCommand.ExecuteReaderCompleted"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SqlCommandReader.GetResult"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SqlCommandAsync.Result"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5531,
+      "QuestionTypeId": 0,
+      "QuestionId": 95795,
+      "Explanation": "SqlCommand.EndExecuteReader is used to complete the asynchronous operation initiated by BeginExecuteReader, retrieving the results of the operation.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using an asynchronous ADO.NET command execution, how can you ensure that exceptions are caught and handled?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using a try-catch block around the async call"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using the catch handler in the Begin method"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using the Task continuation to handle exceptions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By checking the IsFaulted property of the command"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5531,
+      "QuestionTypeId": 0,
+      "QuestionId": 95796,
+      "Explanation": "When using asynchronous methods, exceptions can be caught by attaching a continuation task to the original Task, which can handle any exceptions that occur during command execution.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary benefit of using asynchronous connections in ADO.NET when accessing a database?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Reduced syntax complexity"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Improved performance for single-threaded applications"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Ability to run background tasks while waiting for data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Enhanced security for data transactions"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5531,
+      "QuestionTypeId": 0,
+      "QuestionId": 95797,
+      "Explanation": "Asynchronous connections allow the application to perform other operations or handle user interactions while waiting for database operations to complete, improving overall responsiveness.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods is used to open a connection asynchronously in ADO.NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Open"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "OpenAsync"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ConnectAsync"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "StartAsync"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5531,
+      "QuestionTypeId": 0,
+      "QuestionId": 95798,
+      "Explanation": "The OpenAsync method is specifically designed to open a connection asynchronously in ADO.NET, allowing other tasks to run concurrently.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the context of ADO.NET asynchronous operations, what does the term 'Task-based Asynchronous Pattern (TAP)' refer to?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A pattern that uses callbacks for asynchronous operations"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A pattern that utilizes threading exclusively"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A pattern that uses tasks to represent asynchronous operations"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A pattern that serializes data asynchronously"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5531,
+      "QuestionTypeId": 0,
+      "QuestionId": 95799,
+      "Explanation": "The Task-based Asynchronous Pattern (TAP) utilizes Task objects to represent asynchronous operations, making it easier to manage by providing a consistent programming model.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a common method in ADO.NET used to execute a command asynchronously?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ExecuteReaderAsync"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ExecuteReader"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ExecuteAsync"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ExecuteCommandAsync"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5531,
+      "QuestionTypeId": 0,
+      "QuestionId": 95800,
+      "Explanation": "ExecuteReaderAsync is the asynchronous version of ExecuteReader, which reads data from a data source asynchronously, preventing blocking of the main thread.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What must be configured to ensure an ADO.NET command executes asynchronously?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The 'ConnectionString' property"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The 'CommandType' property"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The 'CommandTimeout' property"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The 'Async' keyword or method"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5531,
+      "QuestionTypeId": 0,
+      "QuestionId": 95801,
+      "Explanation": "To execute an ADO.NET command asynchronously, the &apos;Async&apos; keyword or method (such as ExecuteReaderAsync, ExecuteScalarAsync) must be used to enable asynchronous execution.",
+      "Answer": "D",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

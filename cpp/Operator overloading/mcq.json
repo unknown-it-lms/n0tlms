@@ -1,0 +1,1506 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is the primary purpose of overloading binary operators in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To change the precedence of operators."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To define custom operations for user-defined types."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To increase the execution speed of operators."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To enable operators on primitive data types."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93760,
+      "Explanation": "Overloading binary operators allows developers to define custom behaviors for operators when they are used with user-defined types, like classes and structs.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a correct syntax for overloading the '+' operator for a class 'Complex'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Complex operator+ (Complex c1, Complex c2);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Complex operator+ ();"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Complex operator+ (const Complex &c) const;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Complex complex::operator+(Complex c1);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93761,
+      "Explanation": "The correct syntax for overloading a binary operator is to make it a member function by taking one parameter and using &apos;const&apos; correctness.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When a binary operator is overloaded as a member function, how many arguments does it accept?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "None"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "One"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Two"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Three"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93762,
+      "Explanation": "When defined as a member function, the binary operator implicitly takes one object (the caller) and one explicit parameter, making it one argument.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword must be used to overload operators for class sophistication?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "operator"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "override"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "virtual"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93763,
+      "Explanation": "The &apos;operator&apos; keyword is used to indicate that a certain operator is being overloaded for class customization.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the return type of an overloaded binary operator typically?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "bool"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Depends on the intended result"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93764,
+      "Explanation": "The return type of an overloaded binary operator depends on the intended operation and result, such as integer addition or string concatenation.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which situation is it necessary to overload a binary operator as a friend instead of a member function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When you want to access private or protected data."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When the left operand is a primitive type."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When the class has no private members."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When using operator chaining."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93765,
+      "Explanation": "If the left operand is not an object of the class, you cannot use a member function, hence a friend function is used to access non-member operands.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following binary operators can be overloaded?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&&"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "||"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "|"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": ":"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93766,
+      "Explanation": "Among the listed operators, only the bitwise OR operator &apos;|&apos; can be overloaded. Logical AND and OR cannot be overloaded.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is one potential drawback of overloading binary operators in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Slower execution of operators."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Less readable and maintainable code."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Increased compile time."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "More memory consumption."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93767,
+      "Explanation": "Overloading operators can make code less readable and more difficult to maintain, as the operator&apos;s meaning can be changed.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator is most suitable for overloading to perform concatenation on a custom string class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "=="
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "+"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "*"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "--"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93768,
+      "Explanation": "The &apos;+&apos; operator is commonly used and overloaded to support concatenation operations with string-like objects.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you access the private members of a class when overloading a binary operator as a non-member function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use a getter function."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Declare the operator function as 'friend'."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use reflection."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Access is not possible."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93769,
+      "Explanation": "By declaring the non-member operator function as a &apos;friend&apos;, it can access the private and protected members of the class.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator is typically NOT overloaded as a unary operator in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "+"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "-"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "++"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "=="
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93770,
+      "Explanation": "The &apos;==&apos; operator is a binary operator, not unary. Unary operators operate on a single operand.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct way to declare the overloaded unary minus ('-') operator inside a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void operator-();"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "void operator()();"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "void operator-() const;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "void operator+();"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93771,
+      "Explanation": "The correct declaration is &apos;void operator-() const;&apos; where the operator acts on a single object without modifying it.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Where should the overloaded unary operator function be defined to allow it to work with class objects?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Inside the main function"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "As a member function of the class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "As a global function"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "As a friend function only"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93772,
+      "Explanation": "Unary operators are typically overloaded as member functions of the class they operate on.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why would a unary operator overload require the keyword 'const'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To alter the data members"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To avoid const data member issues"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To indicate that it does not modify the object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To prevent object instantiation"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93773,
+      "Explanation": "The &apos;const&apos; keyword is used to indicate that the operation does not modify the object\u2019s state.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Overloading which unary operator could potentially require returning an object by value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "++"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "--"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "-- and ++"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93774,
+      "Explanation": "Both &apos;++&apos; and &apos;--&apos; when overloaded may return a new object by value to reflect their outcome without modifying the current object state.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which unary operator's overloading often involves incrementation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "--"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "sizeof"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "!= "
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "++"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93775,
+      "Explanation": "The &apos;++&apos; operator, when overloaded, often involves incrementing a value or a state in an object.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C++, what is the return type of a unary operator overload when it modifies the class object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "const reference"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "reference to the class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93776,
+      "Explanation": "Returning a reference to the class itself allows for chained operations on the object.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is true about overloading the unary '!' operator in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It cannot be overloaded"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It must return a float"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It can be overloaded to return a boolean"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is only implemented for integers"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93777,
+      "Explanation": "The unary &apos;!&apos; operator can be overloaded to logically invert and usually returns a bool value due to its nature.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct return type for overloading the unary '*' operator?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Reference"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Pointer"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93778,
+      "Explanation": "Overloading the unary &apos;*&apos; operator typically involves returning a reference to the object it points to.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which unary operator typically allows you to access the memory address of its operand?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "+"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "-"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "*"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93779,
+      "Explanation": "The &apos;&&apos; operator is used to obtain the memory address of its operand and can be overloaded to perform additional functionalities.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct way to declare the pre-increment operator in a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ClassName operator++();"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ClassName operator++(int);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ClassName& operator++();"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "void operator++();"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93780,
+      "Explanation": "The correct declaration for pre-increment is using the signature &apos;ClassName& operator++();&apos;, which should return a reference to the incremented object.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true about overloading post-increment operator?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The post-increment operator cannot be overloaded."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The post-increment operator must take a dummy integer parameter."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The post-increment operator returns void."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The post-increment operator is overloaded by default."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93781,
+      "Explanation": "The post-increment operator is distinguished from the pre-increment operator by taking an extra dummy integer parameter, usually written as &apos;int&apos; to overload it.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the statement 'ClassName operator++(int)', what does 'int' represent?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A placeholder to distinguish post-increment."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The integer value to increment."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The new value of the object."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The return type of the function."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93782,
+      "Explanation": "The &apos;int&apos; parameter is not used in calculations but is a placeholder to distinguish the post-increment version of the operator.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is typically returned by the overloaded post-increment operator?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A void type."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A reference to the current instance."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A copy of the original object before increment."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The new incremented value."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93783,
+      "Explanation": "The post-increment operator should return a copy of the object as it was before the increment.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does the compiler differentiate between pre and post increment when overloading?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By the return type used."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By the presence of a specific keyword."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By utilizing 'const' keyword."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By the parameter list, where post-increment takes a dummy int parameter."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93784,
+      "Explanation": "Pre-increment has no parameters, while post-increment includes a dummy &apos;int&apos; parameter for differentiation.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a class needs to overload both pre and post increment operators internally, how should they ideally return values?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Pre-increment returns a new object, and post-increment returns void."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Pre-increment returns void, and post-increment returns a new object."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Pre-increment returns a reference, and post-increment returns a value."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both should return void."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93785,
+      "Explanation": "For consistency, pre-increment returns a reference to the incremented object, while post-increment typically returns a value.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To correctly implement the post-increment operator, which aspect is most crucial?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Ensuring no parameters are used."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Ensuring the function is const."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Ensuring a dummy int parameter is present."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Ensuring it modifies the object directly."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93786,
+      "Explanation": "The presence of a dummy int parameter is crucial as it identifies the overloaded post-increment operator.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which access level should a pre and post increment operator have within a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Public access is required."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Private access is preferred."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Protected access is mandatory."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Friend access is optimal."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93787,
+      "Explanation": "Operators like pre and post increment should have public access so they are accessible to code using the class.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When implementing an overloaded pre-increment operator, what should be the result of this operation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The value should not be changed."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The value is incremented and returned."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The operation should behave like decrement."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The same value should be returned without change."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93788,
+      "Explanation": "A pre-increment operator increments the value and returns the incremented object.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not a characteristic of overloading pre and post increment operators?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Return type can always be a void type."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They can be overloaded for user-defined types."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The post-increment operator requires a dummy parameter."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They follow specific syntax to differentiate between pre and post versions."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93789,
+      "Explanation": "Void return types are not suitable for pre/post increment overloads as they typically need to return an object either by reference or value.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of overloading the '<<' operator in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To perform mathematical calculations."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To simplify input operations."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To define custom output behavior for user-defined types."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To alter the way arithmetic operations are performed."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93790,
+      "Explanation": "Overloading the &apos;<<&apos; operator is mainly used to customize how objects of user-defined types are outputted, making it easier to display these objects using cout.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When overloading the '>>' operator for a class, what is typically returned?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "istream&"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ostream&"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93791,
+      "Explanation": "The &apos;>>&apos; operator is overloaded to return a reference to an istream, so that multiple input operations can be chained together.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is true about overloading the insertion '<<' operator for a user-defined class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It must be defined as a member function of the class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It must be defined as a non-member function."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It can only be used with int data type."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It should always take a single parameter."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93792,
+      "Explanation": "The insertion operator &apos;<<&apos; when overloaded needs to be implemented as a non-member function because the left operand is an ostream object, which isn&apos;t a part of the user-defined class.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider class MyClass, how would you declare a friend function to overload the '<<' operator for this class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ostream& operator+(ostream& os, const MyClass& obj)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "MyClass& operator<<(ostream& os, const MyClass& obj);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ostream& operator<<(ostream& os, const MyClass& obj);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "istream& operator<<(istream& is, const MyClass& obj);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93793,
+      "Explanation": "The correct declaration for overloading the &apos;<<&apos; operator involves using an ostream reference and the user-defined class as arguments.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a correct example of overloading '>>' operator to read data into a user-defined class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "istream& operator>>(istream& is, MyClass obj) { return is; }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "istream& operator>>(istream& is, MyClass& obj) { return is; }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ostream& operator>>(ostream& os, MyClass& obj) { return os; }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "istream& operator[](istream& is, MyClass& obj) { return is; }"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 93794,
+      "Explanation": "The correct prototype involves returning a reference to istream and taking a reference to the object to modify it directly using standard input.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<span style=\"color:#50484f\">Name the operators that can be overload </span>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "++"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "::"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": ":"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "sizeof"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 70824,
+      "Explanation": "Rest Of Operators can not be overload.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Operators such as \u2026\u2026\u2026\u2026\u2026\u2026\u2026. cannot be overloaded.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "+"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "::"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "++"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "=="
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 71191,
+      "Explanation": "only 5 operators we cannot overload ( dot(.), :: , : , ?: , sizeof() ).<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;iostream&gt;<br>using namespace std;<br>ostream &amp; operator&lt;&lt; (ostream &amp; i, int n)<br>{<br>&nbsp; return i;<br>}<br><br>int<br>main ()<br>{<br>&nbsp; cout &lt;&lt; 5 &lt;&lt; endl;<br>&nbsp; cin.get ();<br>&nbsp; return 0;<br>}<br><br><br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "runtime error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 71125,
+      "Explanation": "In this program, there will arise an ambiguous overload .<br>error: ambiguous overload for \u2018operator&lt;&lt;\u2019 (operand types are \u2018std::ostream {aka std::basic_ostream}\u2019 and \u2018int\u2019)<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following c++ operators cannot be overload using frind function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "+="
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;&lt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "-&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "-"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 87452,
+      "Explanation": "Operators that cannot be overloaded when declaring that function as friend function are = () [] -&gt;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is overloading the function operator?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Requires a class with an overloaded operator"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<div>Requires a class with an overloaded [ ]</div><div>operator</div>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Allows you to create objects that act syntactically like functions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<div>Usually make use of a constructor that takes</div><div>arguments</div>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 73788,
+      "Explanation": "In C++, function operator overloading grants you the ability to redefine the behavior of standard operators (like +, -, *, ==, etc.) for user-defined data types (classes and structs). This means you can make these operators work with your custom objects in a way that&apos;s similar to how they work with built-in types, such as numbers.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;iostream&gt;<br>using namespace std;<br>void main()<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp; &nbsp;cString s1;<br>&nbsp;&nbsp; &nbsp;s1.Display();<br><br>&nbsp;&nbsp; &nbsp;cString s2(\"seeta\");<br>&nbsp;&nbsp; &nbsp;s2.Display();<br><br>&nbsp;&nbsp; &nbsp;cString s3;<br>&nbsp;&nbsp;&nbsp; s3= s2;<br>&nbsp;&nbsp; &nbsp;s3.Display();</div><br>}<br>In above code consider user define cString class is available.<br>cString s3;<br>s3=s2;<br>is call for __________________",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "copy constructor"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "\" = \" operator overload"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "parameterised constructor"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 71198,
+      "Explanation": "<span id=\"explanation71198\">If call is cString s3=s2 it is call for copy constructor , but in this code object s3 is already created so now it is call for \"=\"&nbsp; operator overload .</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A class declaring another class as a friend will:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Have wine and cheese with that other friend."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Allow that class to declare an instance of it in its list of private variables."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Allow the other class (the one declared as friend) to access to the declaring class\u2019 s private variables"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Allow the class declaring the other as a friend to access the declared class\u2019 s private variables."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 73339,
+      "Explanation": "<span id=\"explanation73339\">A C++ friend functions are special functions which can access the private members of a class.<br>Similar to friend functions, a friend class is a class whose members have access to the private or protected members of another class</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The operator that cannot be overloaded using member function is &nbsp;&nbsp;&nbsp;&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "++"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "::"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<strong></strong>( )"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "-"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 64231,
+      "Explanation": "In operator oveloading some operators we can&apos;t overload and one the operator is :: .<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which rule will not affect the friend function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "private and protected members of a class cannot be accessed from outside"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "private and protected member can be accessed anywhere"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both A &amp; B"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 64232,
+      "Explanation": "Friend fucntion is function available in class but it is not member function of class. And because it is friend of class ,it can access private and protected member of class.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is use of overloading the function operator i.e ()?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "() operator cannot be overloaded<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<div>Requires a class with an overloaded [ ]</div><div>operator</div>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Allows you to create objects that act syntactically like functions<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<div>Usually make use of a constructor that takes<br></div><div>arguments</div>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 64224,
+      "Explanation": "The function call operator () can be overloaded for objects of class type. When you overload ( ), you are not creating a new way to call a function. Rather, you are creating an operator function that can be passed an arbitrary number of parameters. <br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a class A, declaring another class B as a friend will:<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Give error during compilation <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Allow class B to declare an instance of class A in its list of private variables."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Allow class B (the one declared as friend) to access class A private variables<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above. <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 64207,
+      "Explanation": "Friend Class B can access private and protected members of other class in which it is declared as friend.&nbsp;It is sometimes useful to allow a particular class to access private members of other class. Though C++ supports this feature, it is recommended not to use it as far as possible because it violates the principle of encapsulation and data security.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following operators cannot be overloaded?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "?: , :: , sizeof(),<strong> .</strong>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[] , ()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "^<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 64212,
+      "Explanation": "?: , ::, sizeof() , .<br> These operators cannot be overloaded because if we overload them it will make serious programming issues. <br>For an example the sizeof operator returns the size of the object or datatype as an operand. This is evaluated by the compiler. It cannot be evaluated during runtime. So we cannot overload it. <br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not the member of class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Static function"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Friend function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Const function"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All Of Above <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 64243,
+      "Explanation": "Friend fucntion is declare in class, but it is friend of class not member of class.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What is the output of this program?</div><div>#include &lt;iostream&gt;</div><div>using namespace std;<br></div><div>class sample</div><div>{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public:</div><div style=\"margin-left: 80px;\">sample(int i) : m_i(i) { }</div><div style=\"margin-left: 40px;\">public:</div><div style=\"margin-left: 80px;\">int operator()(int i = 0) const</div><div style=\"margin-left: 80px;\">{</div><div style=\"margin-left: 120px;\">return m_i + i;</div><div style=\"margin-left: 80px;\">}</div><div style=\"margin-left: 80px;\">operator int () const</div><div style=\"margin-left: 80px;\">{</div><div style=\"margin-left: 120px;\">return m_i;</div><div style=\"margin-left: 80px;\">}</div><div style=\"margin-left: 40px;\">private:</div><div style=\"margin-left: 80px;\">int m_i;</div><div style=\"margin-left: 80px;\">friend int g(const sample&amp;);</div><div>};</div><div>int f(char c)</div><div>{</div><div style=\"margin-left: 40px;\">return c;</div><div>}</div><div>int main()</div><div>{</div><div style=\"margin-left: 40px;\">sample f(2);</div><div style=\"margin-left: 40px;\">cout &lt;&lt; f(2);<br>cout&lt;&lt;f;</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return 0;</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "32"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "42"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "53"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 64188,
+      "Explanation": "<span id=\"explanation64188\">int above code f(2) will call</span><div style=\"margin-left: 80px;\"><span id=\"explanation64188\">int operator()(int i = 0) const</span></div><div style=\"margin-left: 80px;\"><span id=\"explanation64188\">{</span></div><div style=\"margin-left: 120px;\"><span id=\"explanation64188\">return m_i + i;</span></div><div style=\"margin-left: 80px;\"><span id=\"explanation64188\">}<br><u>which will return 4</u><br>and cout&lt;&lt;f&nbsp;&nbsp;&nbsp;&nbsp; will call<br>operator int () const<br>{<br>return m_i;<br>}<br><u>which will return 2</u><br>So answer is 42</span>&nbsp;</div>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What is the output of following C++ code?<br>#include&lt;iostream&gt;<br>using namespace std;<br>class extra {<br>&nbsp;&nbsp;&nbsp; int a,b;<br>&nbsp;public:<br>&nbsp;&nbsp;&nbsp; extra(int x,int y) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a = x;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b = y;<br>&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp; extra operator += (int);<br>&nbsp;&nbsp;&nbsp; void display() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; endl &lt;&lt; a &lt;&lt; \" \" &lt;&lt; b;<br>&nbsp;&nbsp;&nbsp; }<br>};<br>extra extra::operator += (int n) {<br>&nbsp;&nbsp;&nbsp; a = a + n;<br>&nbsp;&nbsp;&nbsp; b = b + n;<br>&nbsp;&nbsp;&nbsp; return *this;<br>}<br>int main() {<br>&nbsp;&nbsp;&nbsp; extra e1(3,5);<br>&nbsp;&nbsp;&nbsp; e1 += 20;<br>&nbsp;&nbsp;&nbsp; e1.display();<br>&nbsp;&nbsp;&nbsp; return 0;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "3 5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "25 23"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "23 25"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error because += operator cannot be overloaded"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1264,
+      "QuestionTypeId": 0,
+      "QuestionId": 64165,
+      "Explanation": "<span id=\"explanation64165\">e1+=20 is equivalent to statement e1 = e1+20. Operator+= can be overloaded. We have added &apos;n&apos; to &apos;a&apos; as well as &apos;b&apos; in our overloaded definition.</span>",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

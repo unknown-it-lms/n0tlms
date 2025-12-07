@@ -1,0 +1,2376 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What&nbsp; will&nbsp; following query&nbsp; do?<br><br>SELECT d.dname, COUNT(empno) total<br>FROM dept d<br>INNER JOIN emp e<br>ON d.deptno=e.deptno<br>GROUP BY d.dname<br>HAVING COUNT(empno) &gt; 2;&nbsp;&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Will fetch count of all employees in the table ."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Will fetch those rows whose empno is greater than 2 ."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Will fetch those rows whose empno is greater than 2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Will fetch those rows whose empno is greater than 2 for a perticular department."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 86257,
+      "Explanation": "\u201cHAVING\u201d clause&nbsp; works&nbsp; similar as \u201cWHERE\u201d clause.&nbsp;&nbsp;&nbsp;&nbsp;",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Table user has foriegn key department_id to table department.<br> Table department has columns id (primary key), name and is_active. <br>Which of the following query is wrong to list all users whose department is active.....<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT * FROM user LEFT JOIN department ON user.department_id = department.id WHERE department.is_active = 1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT * FROM user NATURAL JOIN department WHERE department.is_active = 1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT * FROM user, department WHERE user.department_id = department.id AND department.is_active = 1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT * FROM user WHERE department_id = (SELECT id FROM department WHERE is_active = 1)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 86499,
+      "Explanation": "Write explaination here..",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How will you&nbsp; print only system date in MySQL?&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "sysdate."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "sysdate()."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "current_date."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both b &amp; c"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 82798,
+      "Explanation": "<span id=\"explanation82798\">current_date&nbsp; is used to get system date in MySQL.<br>e.g<br>SELECT current_date;&nbsp;<br>sysdate() gives date as well as time.</span><br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A database was queried with the following SQL statement:<br>SELECT CONCAT (LOWER (SUBSTR (Stud_name, 1, 3)), subject_id) 'Subject Description' FROM Student;<br>In which order are the functions evaluated?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CONCAT, LOWER, SUBSTR"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LOWER, SUBSTR, CONCAT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SUBSTR, LOWER, CONCAT"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All three will be evaluated simultaneously"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 82803,
+      "Explanation": "The function evaluation order should be inner to outer so that answer is SUBSTR,LOWER,CONCAT.&nbsp;",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To produce a meaningful result set without any cartesian products, what is the minimum number of join conditions that should appear for joining four-table join?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3 <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No such criteria"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 88296,
+      "Explanation": "To connect n tables we require n-1 joins.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which query is evaluated once per row processed by the parent statement?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CORRELATED <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SUBQUERY <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "OUTER JOIN <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "INNER JOIN <br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 88872,
+      "Explanation": "A correlated subquery is evaluated once per row processed by the parent statement. i.e subquery&apos;s results can depend on the values of the current row being processed in the outer query. This can lead to performance overhead, especially for large datasets.<br><br>The other options (subquery, outer join, and inner join) are evaluated differently:<br><br>Subquery:&nbsp; Can be evaluated once or multiple times depending on the query context.<br>Outer join: Evaluates both sides of the join and combines the results based on the join condition.<br>Inner join:&nbsp; Evaluates both sides of the join and returns only the rows that match the join condition.<br><br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The Cartesian product is _______________ .",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A group function."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The result of fuzzy logic ."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A special feature of MySQL server."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Produced as a result of a join statement without any where clause.<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 88304,
+      "Explanation": "Cartesian product is a result of cross join.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Following query can also be written as&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "select name,cust_id from teaches, instructor where instructor_id = course_id;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "select name,cust_id from teaches natural join instructor ;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "select name,cust_id from instructor ;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "select cust_id from instructor join teaches;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 88886,
+      "Explanation": "Natural join is a join where 2 tables are joined using the columns having same in the tables.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Following query can also be written as&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "select name,cust_id from teaches, instructor where instructor_id = course_id;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "select name,cust_id from teaches natural join instructor ;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "select name,cust_id from instructor ;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "select cust_id from instructor join teaches;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 88887,
+      "Explanation": "Natural join is a join where 2 tables are joined using the columns having same in the tables.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of an SQL INNER JOIN when there is no matching row between the tables being joined?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The query returns an error."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The query returns all rows from both tables."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The query returns a single row with NULL values."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The query returns empty set. <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 86705,
+      "Explanation": "If there is no common data as per the requirement, then MySQL will fetch an empty set.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "USING clause will not work with which of the following joins?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Natural Join."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Inner Join"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Left Outer Join"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Right Outer Join"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 64973,
+      "Explanation": "Natural join internally applies join conditions&nbsp; So&nbsp; using clause is not implimented .",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which case would you use a FULL OUTER JOIN?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Both tables have NULL values."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "You want all unmatched data from one table."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "You want all matched data from both tables."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "You want all matched and unmatched data from both tables.<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 65003,
+      "Explanation": "Full outer join is combination of matched data from both table and unmatched from both table.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is true&nbsp; about joining tables?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A WHERE clause must specify a column in one table that directly corresponds to a same column name in the second table."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The tables being joined must NOT have any columns with the same name."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The number of join conditions required is always one less than the number of tables being joined."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No more than three tables can be joined using an equijoin."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 65078,
+      "Explanation": "For joining &apos;n&apos; tables write &apos;n-1&apos; joining conditions.<br>The output is the get valid data from valid and invalid combinations.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is one of the basic approaches for joining tables?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Subqueries"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Natural join"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Union operator"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 65061,
+      "Explanation": "All are types of different joins.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<p>EMPNO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ENAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SAL<br>-------------------------------------------------------------------------------<br>A822&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RAMASWAMY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3500<br>A812&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NARAYAN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 5000<br>A973&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UMESH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2850<br>A500&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BALAJI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5750<br><br>Use these data for the following Question:<br>Select SAL from EMP E1 where 3 &gt; (Select count (*) from EMP E2 where E1.SAL &gt; E2.SAL) will retrieve?</p>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "3500,5000,2850"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "5000,2850"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2850,5750"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "5000,5750"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 65131,
+      "Explanation": "Its corelated query. For every record of outer table is maped with every record of inner table and according to condition gives the output.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following query is correct?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "select emp_id,name,sal,dept_name<br>from employees<br>on departments;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "select emp_id,name,sal,dept_name<br>from employees<br>join departments<br>having dept_id=10;<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<p>select emp_id,name,sal,dept_name<br>from employees<br>join departments<br>on employees.dept_id = departments.dept_id;</p>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 65195,
+      "Explanation": "when join keyword is used for Join the two table then it is with &apos;on&apos; keyword.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To produce a meaningful result set without any cartesian products, what is the minimum number of conditions that should appear to join four-tables ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "8"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "4"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 65190,
+      "Explanation": "If you want to join &apos;N&apos; tables then for joining them N-1 join conditions required. So here houtput is &apos;C&apos;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "You want to join the data from two tables, A and B, into one result set and display that set in your session. Tables A and B have a common column, called C in both tables. Which of the following choices correctly displays the where clause you should use if you want to see the data in table A where the value in column C equals 5, even when no corresponding value appears in table B?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Where A.C = 5 and A.C = B.C;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Where A.C = 5 and A.C = B.C (+);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Where A.C = 5 and A.C (+) = B.C (+);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Where A.C = 5;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 65142,
+      "Explanation": "All data from one table and and match from another table. So its outer join concept. From above option only &apos;B&apos; is the right syntax of outer join.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "You are testing several SQL statements for accuracy and usefulness. A SQL statement will result in a Cartesian product as the result of which of the following items?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A join statement without a where clause."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The result of the sum () operation."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Select * from DUAL;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The result of the AVG () operation."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 65145,
+      "Explanation": "If use the cartesian product then query look like select * from tab1,tab2,tab3.... So it gives result and which is without where clause.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Find the odd one out&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Equi Join"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Full Outer Join <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Loop Join <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Left Outer Join"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 65084,
+      "Explanation": "<span id=\"explanation65084\">No such a join is exist in SQL. We know that left and right join.</span><br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Select a.alpha, b.gamma<br>from chart a, energy b<br>where a.alpha = 'chlorine' and a.alpha = b.alpha and a.mass_no = '17';<br><br>Which type of join is shown?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Equijoin<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Nonequijoin<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Self-Join"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Outerjoin"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 65089,
+      "Explanation": "Join condition write in a where clause with &apos;=&apos; equal to operator so its equi Join.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How many join conditions should be there to avoid a Cartesian Join for joining three tables?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 65070,
+      "Explanation": "For joining &apos;n&apos; tables we write &apos;n-1&apos; joining conditions.<br>Hence to join 3 tables we need 2 conditions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Select instructor.*</div><div>from instructor, teaches</div><div>where instructor.ID= teaches.ID;</div><div>This query does which of the following operation?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "All attributes of instructor and teaches are selected"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "All attributes of instructor are selected on the given condition"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "All attributes of teaches are selected on given condition"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only the some attributes from instructed and teaches are selected"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 74096,
+      "Explanation": "In select clause only all instructor attributes are mention with &apos;*&apos;. SO option &apos;B&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "which of the following joins are not supported by MySQL",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "FULL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Left"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Right"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Inner"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 76005,
+      "Explanation": "Full join is not supported by MySQL, but it achieved through union operation.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following joins will return highest number of rows?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Cross Join"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Left Join"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Inner Join"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Right Join"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 76006,
+      "Explanation": "<span id=\"explanation76006\">Cross join return m x n number of&nbsp; rows when m rows in first table and n rows in another table.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Find the name of all cities with their temperature, humidity and countries.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT city, temperature, humidity, country FROM location;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT weather.city, temperature, humidity, country FROM weather, location;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT weather.city, temperature, humidity, country FROM weather, location WHERE weather.city = location.city;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT weather.city, temperature, humidity FROM weather SELECT country FROM location WHERE weather.city = location.city;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 76652,
+      "Explanation": "Answer to be reviewe<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following join is also called as an 'inner-join'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Non-Equi Join"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Self-Join"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Equi Join"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of th above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 76702,
+      "Explanation": "All above joins are inner join.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The EXISTS keyword will be true if:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Any row in the subquery meets the condition ."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "All rows in the subquery fail the condition ."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both of these two conditions are met."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Neither of these two conditions is met."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 76074,
+      "Explanation": "<span id=\"explanation76074\">The SQL EXISTS Operator<br>The EXISTS operator is used to test for the existence of any record in a subquery.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The____condition allows a general predicate over the relations being joined.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "On"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Set"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Where"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 76079,
+      "Explanation": "Answer to be reviewed",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the join operations do not preserve non matched tuples.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Left outer join"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Right outer join"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Inner join"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 76080,
+      "Explanation": "Inner join will always fetch matching data from the tables.&nbsp; <br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of join is needed when you wish to include rows that do not have matching values?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Equi-join"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Natural join"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Outer join"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 76081,
+      "Explanation": "Answer to be reviewed<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How many tables may be included with a join?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "One"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Two"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Three"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 76082,
+      "Explanation": "Answer to be reviewed",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In SQL the statement select * from R, S is equivalent to",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Select * from R natural join S"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Select * from R cross join S"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Select * from R union join S"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Select * from R inner join S"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 76083,
+      "Explanation": "Answer to be reviewed",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;A _____ indicates an absent value that may exist but is unknown or that may not exist at all.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Empty tuple"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "New value"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Null value"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Old value"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 76084,
+      "Explanation": "NULL values are unknown and unassigned valus in the table.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operators test whether a subquery returns any rows?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IN and NOT IN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "EXISTS and NOT EXISTS"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "PRESENT"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ABSENT"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 76956,
+      "Explanation": "<span id=\"explanation76956\">The operators&nbsp; EXISTS&nbsp; and&nbsp; NOT EXISTS&nbsp; operators only test whether a subquery returns any rows. If it returns a row EXISTS&nbsp; results into true and&nbsp; NOT EXISTS&nbsp; results into false.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;An uncorrelated subquery does not contain any reference to the values from the outer query.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "_"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "_"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 76957,
+      "Explanation": "MySQL has two kinds of subqueries, namely, uncorrelated subquery and correlated subquery. An uncorrelated subquery does not contain any reference to the values from the outer query.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which subquery cannot be executed by itself as a separate statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Correlated"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Uncorrelated"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "EXISTS"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "NOT EXISTS"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 76958,
+      "Explanation": "An uncorrelated subquery contains references to the values from the outer query. So, it is dependent on it. Therefore, a correlated subquery cannot be executed by itself as a separate statement.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The clause that filters JOIN results is called _________",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "WHERE clause"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ORDER BY clause"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "GROUP BY clause"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "HAVING clause"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 76913,
+      "Explanation": "<span id=\"explanation76913\">Sometimes the result of a join is very large and is not desirable. In these cases, the results can be filtered with the help of the \u201eWHERE? clause which is followed by a set of condition(s).</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "CROSS JOIN and JOIN are similar to __________",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "INNER JOIN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "NATURAL JOIN"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "OUTER JOIN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CARTESIAN JOIN"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 76915,
+      "Explanation": "<span id=\"explanation76915\">The joins CROSS JOIN and&nbsp; JOIN&nbsp; types are exactly similar to the&nbsp; INNER JOIN . The statements containing&nbsp; INNER JOIN&nbsp; can replace it with&nbsp; CROSS JOIN&nbsp; or&nbsp; &nbsp;JOIN&nbsp; to get exactly the same result.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The comma operator can also be used to join tables.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "--"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "--"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 76919,
+      "Explanation": "The comma (,) operator can be used to join the tables as well. It joins them in the \u201eINNER JOIN? type. It is not desirable to use the comma operator since it has different precedence rules.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The left and right joins are also known as __________",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "INNER JOIN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "NATURAL JOIN"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "OUTER JOIN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CARTESIAN JOIN"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 76921,
+      "Explanation": "<span id=\"explanation76921\">The inner join only deals with rows where a match can be found in both tables. The LEFT JOIN and RIGHT JOIN types are OUTER JOIN types which differ from inner joins in this sense.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is joining a table to itself called?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "COMPLETE Join"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELF Join"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "OUTER Join"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CROSS Join"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 76924,
+      "Explanation": "<span id=\"explanation76924\">Joining a table to itself in a database is called self-join. When a self-join is being performed, the table is being used multiple times within the query and a table name qualifier is unnecessary.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which join all the rows from the left table appear in the output irrespective of the content of the other table?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RIGHT JOIN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LEFT JOIN"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "INNER JOIN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "OUTER JOIN"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 76928,
+      "Explanation": "<span id=\"explanation76928\">In a LEFT JOIN , the output is produced for every row of the left table, even if it does not exist in the right table. This is the reason it is called a&nbsp; LEFT JOIN . LEFT JOIN&nbsp; is a kind of OUTER JOIN.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The join in which all the rows from the right table appear in the output irrespective of the content of the other table is ___________",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CARTESIAN JOIN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "CROSS JOIN"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "INNER JOIN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "RIGHT JOIN"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 76930,
+      "Explanation": "<span id=\"explanation76930\">In a&nbsp; RIGHT JOIN, the output is produced for every row of the right table, even if it does not exist in the other table. This is the reason why it is called a RIGHT JOIN . RIGHT JOIN&nbsp; and&nbsp; LEFT JOIN&nbsp; are a kind of OUTER JOIN.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of using a JOIN in SQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To combine data from two or more tables based on a related column"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To partition tables into smaller tables"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To delete data from multiple tables"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To create backup copies of tables"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92392,
+      "Explanation": "A JOIN is used to combine rows from two or more tables based on a related column between them.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is TRUE about INNER JOIN?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It returns all rows from the left table and matched rows from the right table"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It returns only the rows that have matching values in both tables"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It returns all rows from both tables"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It returns all rows from the right table and matched rows from the left table"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92393,
+      "Explanation": "An INNER JOIN returns only the rows where there is a match in both tables.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does a FULL OUTER JOIN do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Returns only the records that have a match in both tables"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Returns all records from the left table and the matched records from the right table"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Returns all records when there is a match in either left or right table records"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Returns all unmatched records only"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92395,
+      "Explanation": "A FULL OUTER JOIN returns all records when there is a match in either left or right table records.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which JOIN operation is used to return all records from the left table and the matched records from the right table?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "INNER JOIN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LEFT JOIN"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "RIGHT JOIN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "FULL OUTER JOIN"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92396,
+      "Explanation": "A LEFT JOIN returns all records from the left table, and the matched records from the right table.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a LEFT JOIN, what does it mean if a column in the right table is NULL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "There was no match in the right table"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The right table has a NULL value"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "All rows from the right table are fetched"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "There is a syntax error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92397,
+      "Explanation": "If a column in the right table of a LEFT JOIN is NULL, it indicates that there was no match in the right table.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about RIGHT JOIN is FALSE?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RIGHT JOIN returns all rows from the right table"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "RIGHT JOIN can also be referred to as RIGHT OUTER JOIN"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "RIGHT JOIN only returns matched rows from both tables"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "RIGHT JOIN returns unmatched rows from the right table with NULL in columns from the left table"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92398,
+      "Explanation": "RIGHT JOIN returns all rows from the right table, and unmatched rows from the right table show as NULL in the left table.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If you want to join three tables A, B, and C, which statement is accurate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "You only need to specify JOIN condition for A and B"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "You need to specify JOIN conditions for each pair: A-B and B-C"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "You would need a SELF JOIN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "JOINing multiple tables is not possible in SQL"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92399,
+      "Explanation": "When joining three tables, you need to specify JOIN conditions for each pair of tables.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which JOIN would you use to show all possible combinations of rows between two tables?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CROSS JOIN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "INNER JOIN"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "LEFT JOIN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "RIGHT JOIN"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92400,
+      "Explanation": "A CROSS JOIN returns the Cartesian product of the two tables, showing all possible combinations.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How are common columns from two tables handled if they have the same name in a JOIN?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The query fails"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "You must alias at least one table\u2019s columns"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SQL automatically appends a suffix to the column name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "You can only use one of the columns in the SELECT statement"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92402,
+      "Explanation": "If common column names exist, you should use table aliases to avoid ambiguity.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which JOIN is best suited for linking records of the same table?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CROSS JOIN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELF JOIN"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "OUTER JOIN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "INNER JOIN"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92403,
+      "Explanation": "A SELF JOIN is used to join a table to itself, often giving meaningful context between rows of the same table.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does a NATURAL JOIN rely on to perform its operation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Column names"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Column data types"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Index presence"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Primary key relationships"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92404,
+      "Explanation": "A NATURAL JOIN automatically handles the JOIN operation by using columns with the same names in both tables.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of an INNER JOIN if there is no common data between tables?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Returns all rows from both tables"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Returns no rows"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Returns unmatched rows"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Throws an error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92405,
+      "Explanation": "An INNER JOIN only returns rows with common data, so if there&apos;s no match, no rows are returned.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If you perform a RIGHT JOIN, which table\u2019s rows will always appear in the output?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Right table"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Left table"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both tables"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Neither always appear"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92406,
+      "Explanation": "In a RIGHT JOIN, all rows from the right table will always appear in the result set.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using a LEFT JOIN, what happens to rows in the left table that have no counterpart in the right table?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They are excluded from the results"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They appear with NULLs in place of columns from the right table"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A default value is inserted for them"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A syntax error is thrown"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92407,
+      "Explanation": "Rows with no match in a LEFT JOIN from the left table appear with NULL values for columns from the right table.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What key clause mostly differentiates INNER JOIN from a NATURAL JOIN?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ON clause"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "USING clause"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "WHERE clause"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ORDER BY clause"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92408,
+      "Explanation": "INNER JOIN generally uses an ON clause for join conditions, whereas NATURAL JOIN uses column names automatically.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which SQL keyword is used to combine results of two SELECT queries, each with different columns being joined on?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "JOIN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "UNION"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "INTERSECT"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "FULL JOIN"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92410,
+      "Explanation": "The UNION keyword is used to combine the results of two or more SELECT statements with different columns.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To avoid duplicate records when joining tables, which clause should be used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "UNION ALL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "WHERE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DISTINCT"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "HAVING"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92411,
+      "Explanation": "The DISTINCT clause is used in a SELECT statement to remove duplicate records from the result set.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In an INNER JOIN, if only a few rows meet the join condition, how does that influence the result set?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Few rows are returned"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "All rows from both tables"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only distinct rows are returned"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Same number of rows as the larger table"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92412,
+      "Explanation": "In an INNER JOIN, only rows meeting the join condition are returned, influencing the amount of data retrieved.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can a CROSS JOIN use ON or USING clauses?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, always"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, it can't"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only with NATURAL keyword"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only in specific SQL dialects"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92413,
+      "Explanation": "A CROSS JOIN cannot use ON or USING clauses. It returns the Cartesian product of the tables involved.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using JOINs, what is a typical reason for performance issues?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Too many columns"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Too many indexes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Excessive number of JOIN operations"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Low disk space"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92414,
+      "Explanation": "Excessive JOIN operations can lead to complex queries that are resource-intensive, resulting in performance issues.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is ensured when using the USING clause in an SQL JOIN?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Column alignment only by name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Implicit cartesian product"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Exact match by value and type"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compatibility with subqueries"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92415,
+      "Explanation": "The USING clause ensures that columns are aligned by both value and type, using matching column names.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you specify a column in SELECT that doesn't exist in the joined tables?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The result is incomplete"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An error is raised"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Nulls are automatically returned"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The database auto-corrects it"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92416,
+      "Explanation": "SQL will raise an error if a specified column in the SELECT statement does not exist in any of the joined tables.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why might you prefer a FULL OUTER JOIN over separate LEFT and RIGHT JOINs in a query?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To simplify query writing"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To avoid duplication of results"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To include all rows from both tables"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To speed up query execution"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92417,
+      "Explanation": "A FULL OUTER JOIN is preferred to avoid writing separate LEFT and RIGHT JOINs, simplifying the query.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which JOIN is optimal for finding rows that do NOT have a match in either table?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "FULL OUTER JOIN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LEFT JOIN"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "RIGHT JOIN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "LEFT JOIN with WHERE IS NULL"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92418,
+      "Explanation": "Using LEFT JOIN with a WHERE condition to check IS NULL allows you to find unmatched records.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In SQL, how can you limit the number of rows returned by a JOIN operation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using the LIMIT clause"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using the MAX clause"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By setting a JOIN threshold"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By specifying column subset"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92419,
+      "Explanation": "The LIMIT clause is used in SQL to restrict the number of rows returned in a result set.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If two tables have a many-to-one relationship, which type of JOIN allows you to view the \u2018many\u2019 side of the relationship?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "INNER JOIN only"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FULL OUTER JOIN"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Any type of JOIN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "RIGHT JOIN with a WHERE clause"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92420,
+      "Explanation": "With proper conditions, any type of JOIN can be used to view the \u2018many\u2019 side of a relationship in a many-to-one model.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When applying multiple JOINs consecutively in one query, what is important to ensure?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The logical order of JOINs does not matter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "All tables should be joined in pairs with join conditions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Multiple aliases for the tables must be used for clarity"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All INNER JOINs must appear before any OUTER JOIN"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92421,
+      "Explanation": "When using multiple JOINs, it&apos;s important to ensure that every join is properly paired with appropriate conditions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a MySQL JOIN operation, which keyword is used to combine rows from different tables based on a related column?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CONCAT"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "MERGE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "JOIN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "COMBINE"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92240,
+      "Explanation": "The JOIN keyword is used in SQL to combine rows from two or more tables based on a common field between them.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of JOIN would you use in a MySQL query if you want to return all records from the left table and the matched records from the right table?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "INNER JOIN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FULL JOIN"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "LEFT JOIN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "RIGHT JOIN"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92241,
+      "Explanation": "LEFT JOIN returns all records from the left table, and the matched records from the right table. If there is no match, NULLs are returned for columns of the right table.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which SQL statement would you use to retrieve unique departments from two tables, 'employees' and 'projects', where department IDs match?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT DISTINCT department FROM employees NATURAL JOIN projects;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT department FROM employees INNER JOIN projects;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT DISTINCT department FROM employees UNION projects;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT department FROM employees, projects WHERE employees.dept_id = projects.dept_id;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92242,
+      "Explanation": "NATURAL JOIN will automatically combine columns based on the same name and retrieve unique combinations. The DISTINCT keyword further ensures no duplicate departments are selected.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In MySQL, which keyword can you use to fetch rows that exist only in the left table specified in a LEFT JOIN operation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ON"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "USING"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "WHERE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "HAVING"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92243,
+      "Explanation": "Using &apos;WHERE&apos; with a condition on the right table column as NULL will ensure fetching only those rows which exist in the left table but have no matching right table row.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In MySQL, if you want to see the Cartesian product of two tables, which type of JOIN should you use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "INNER JOIN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LEFT JOIN"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CROSS JOIN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "OUTER JOIN"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92246,
+      "Explanation": "A CROSS JOIN returns the Cartesian product of the two tables involved, meaning every row from the first table is combined with every row from the second table.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which MySQL JOIN clause is automatically used when only one table is referenced?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "NATURAL JOIN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "INNER JOIN"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELF JOIN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No JOIN is used"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92247,
+      "Explanation": "When referencing only one table, no JOIN operation is required as data is selected directly from that single table without joining it to another.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following keywords should be used in a JOIN clause to specify columns to compare when their names differ in the tables being joined?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ON"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "USING"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "HAVING"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "WHERE"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92248,
+      "Explanation": "The &apos;ON&apos; keyword is used to specify which columns to compare when performing a JOIN operation, which is crucial when column names differ.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why would you use an alias in a query involving multiple joined tables in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To shorten the SQL query"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To clarify which table's columns are being referenced"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To improve the performance of the JOIN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To ensure the tables are kept in memory"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6540,
+      "QuestionTypeId": 0,
+      "QuestionId": 92249,
+      "Explanation": "Aliases provide clarity and brevity in complex queries by making it clear which table columns are being referenced, especially important in queries with multiple JOIN operations.",
+      "Answer": "B",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

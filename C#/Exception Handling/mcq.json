@@ -1,0 +1,1446 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "' finally ' block in the try..catch statement will execute",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "when there is an exception in the try..catch block"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "when there is exception in the catch block only"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "when there is no exception"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "irrespective of whether an exception occurs or not"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 70480,
+      "Explanation": "In a try...catch statement, the finally block is always executed &nbsp; before the control flow exits the construct, regardless of whether an exception is thrown or not.&nbsp;This ensures that the code in the finally block is executed even if an unexpected exception occurs.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following are methods or properties of System.Exception",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Message"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "HelpLink"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both A and B"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of A and B"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 70588,
+      "Explanation": "Both properties are used for information and troubleshooting purposes.<br>Message: is more commonly used to display error messages to users or for logging. Provides a human-readable description of the error that occurred. <br>HelpLink:&nbsp; is optional and can provide additional guidance for developers. Stores a URL or path to a help file or documentation relevant to the exception. <br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of given C# code snippet?<br>&nbsp;class program<br>&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp; public static void Main(string[] args)<br>&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; try<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; throw new NullReferenceException(\"C\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine(\"A\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; catch (ArithmeticException e)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine(\"B\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.ReadLine();<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "B"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compile time error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Runtime error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 77754,
+      "Explanation": "try block is throwing NullPointerException and the catch block is used to catch Arithmetic Exception. Hence NullPointerException occurs since no catch is there which can handle it so runtime error occurs.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which among the following is NOT an exception?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Stack Overflow"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Arithmetic Overflow or underflow"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Incorrect Arithmetic Expression"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 81748,
+      "Explanation": "Incorrect Arithmetic Expression: This is generally a logical error or a syntax error in the code, but it is not classified as an exception by itself. It could lead to exceptions when executed, but the expression alone isn&apos;t an exception.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Select the statements which describe the correct usage of exception handling over conventional error<br>handling approaches?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "As errors can be ignored but exceptions cannot be ignored"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Exception handling allows separation of program\u2019s logic from error handling logic making software more&nbsp;reliable and maintainable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "try \u2013 catch \u2013 finally structure allows guaranteed clean up in event of errors under all circumstances"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 81749,
+      "Explanation": "Conventional error handling may overlook errors, while exceptions ensure they are addressed.<br>Exception handling separates error handling from the main program logic, making the code more reliable and easier to maintain.&nbsp;The finally block ensures that cleanup code runs regardless of whether an exception occurs.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Select the correct statement about an Exception?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It occurs during loading of program"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It occurs during Just-In-Time compilation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It occurs at run time"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 81750,
+      "Explanation": "An exception is an event that occurs during the execution of a program (at run time) that disrupts the normal flow of instructions.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these keywords is not a part of exception handling?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "try"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "finally"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "thrown"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "catch"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 81751,
+      "Explanation": "In most programming languages that support exception handling, the common keywords used are <code>try</code>, <code>catch</code>, and <code>finally</code>. The keyword <code>throw</code> (not <code>thrown</code>) is used to raise an exception, but <code>thrown</code> itself is not a standard keyword in exception handling.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these keywords must be used to monitor exceptions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "try"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "finally"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "throw"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "catch"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 81752,
+      "Explanation": "The <code>try</code> keyword is used to monitor a block of code for exceptions. It allows you to specify a block where exceptions will be caught and handled, typically followed by <code>catch</code> blocks to handle specific exceptions and optionally a <code>finally</code> block for cleanup actions.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these keywords is used to manually throw an exception?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "try"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "finally"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "throw"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "catch"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 81753,
+      "Explanation": "The <code>throw</code> keyword is used to manually raise an exception in your code. This allows you to create and signal an error condition explicitly.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Choose the correct output for the given set of code:<br>1. class program<br>2. {<br>3. static void main(string[] args)<br>4. {<br>5. int i = 5;<br>6. int v = 40;<br>7. int[] p = new int[4];<br>8. try<br>9. {<br>10. p[i] = v;<br>11. }<br>12. catch(IndexOutOfRangeException e)<br>13. {<br>14. Console.WriteLine(\"Index out of bounds\");<br>15. }<br>16. Console.WriteLine(\"Remaining program\");<br>17. }<br>18. }",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Value 40 will be assigned to a[5];"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The output will be :<br>Index out of bounds<br>Remaining program"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "he output will be :<br>Remaining program"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 81754,
+      "Explanation": "<p>Here&apos;s a breakdown of what happens:</p><ol><li>int i = 5; sets i to 5.</li><li>int v = 40; sets v to 40.</li><li>int[] p = new int[4]; creates an array p of size 4, with valid indices 0 to 3.</li><li>The try block attempts to assign v to p[i], but since i is 5, this results in an IndexOutOfRangeException.</li><li>The catch block catches the IndexOutOfRangeException and prints \"Index out of bounds\".</li><li>The program then continues to execute and prints \"Remaining program\".</li></ol><br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Choose the correct output for the given set of code:<br>1. static void Main(string[] args)<br>2. {<br>3. try<br>4. {<br>5. Console.WriteLine(\"csharp\" + \" \" + 1/Convert.ToInt32(0));<br>6. }<br>7. catch(ArithmeticException e)<br>8. {<br>9. Console.WriteLine(\"Java\");<br>10. }<br>11. Console.ReadLine();<br>12. }",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "csharp"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "java"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Run time error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "csharp 0"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 81755,
+      "Explanation": "--",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the correct statement about exception handling in C#.NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Finally clause is compulsory"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A program can contain multiple finally clauses"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The statement in final clause will get executed no matter whether an exception occurs or not"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 81756,
+      "Explanation": "The finally clause is not compulsory. It is optional and used for cleanup code. A program cannot contain multiple finally clauses for a single try block. Each try block can have only one finally clause.&nbsp;The finally block is guaranteed to execute whether an exception is thrown or not, making it the correct statement about exception handling in C#.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Choose the correct output for given set of code:<br>1. class Program<br>2. {<br>3. static void Main(string[] args)<br>4. {<br>5. try<br>6. {<br>7. Console.WriteLine(\"csharp\" + \" \" + 1/0);<br>8. }<br>9. finally<br>10. {<br>11. Console.WriteLine(\"Java\");<br>12. }<br>13. Console.ReadLine();<br>14. }<br>15. }",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "csharp 0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Run time Exception generation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compile time error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Jawa"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 81757,
+      "Explanation": "<ul><li>The code attempts to execute Console.WriteLine(\"csharp\" + \" \" + 1/0); within the try block.</li><li>The expression 1/0 causes a DivideByZeroException because dividing by zero is not allowed.</li><li>The finally block is executed, which prints \"Java\" to the console.</li><li>After the finally block executes, the DivideByZeroException is propagated and the program will terminate unless the exception is caught by a higher-level exception handler.</li></ul><br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of given code snippet?<br>class HelloWorld<br>{<br>&nbsp; static void Main ()<br>&nbsp; {<br>&nbsp;&nbsp;&nbsp; try<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int[] a = { 1, 2, 3, 4, 5 };<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (int i = 0; i &lt; 7; ++i)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Console.WriteLine (a[i]);<br>&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp; catch (IndexOutOfRangeException e)<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine (\"0\");<br>&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp; Console.ReadLine ();<br>&nbsp; }<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1<br>2<br>3<br>4<br>5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1<br>2<br>3<br>4<br>5<br>0<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1<br>2<br>3<br>4<br>5 <br>0<br>0<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compile time error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 81758,
+      "Explanation": "Array length is 5 and we are trying to access upto 7 hence&nbsp; it will throw  IndexOutOfRangeException&nbsp; and Output will be<br> 1<br>2<br>3<br>4<br>5<br>0 <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;When no exception is thrown at runtime then who will catch it?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CLR"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Operating System"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Loader"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compiler"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 81759,
+      "Explanation": "The CLR is responsible for managing the execution of .NET programs, including handling exceptions. If an exception is not caught by any user-defined try-catch block, the CLR catches it and terminates the program, often displaying an error message or stack trace.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To Handle exception in C# you must use",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Try catch block"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only try"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Try \u2013 finally"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 81773,
+      "Explanation": "<span id=\"explanation81773\" style=\"color:blue\">To handle exceptions in C#, you can use the try-catch block. The try block contains the code that might throw an exception, while the catch block handles the exception:<br>try: Encloses a section of code<br>catch: Executes when an exception happens</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the correct syntax to catch a specific type of exception in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "try {<br>&nbsp; &nbsp; // code that may throw an exception<br>} catch(Exception e) {<br>&nbsp; &nbsp; // handle exception<br>}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "try {<br>&nbsp; &nbsp; // code that may throw an exception<br>} catch {<br>&nbsp; &nbsp; // handle exception<br>}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "try {<br>&nbsp; &nbsp; // code that may throw an exception<br>} catch(MyCustomException e) {<br>&nbsp; &nbsp; // handle exception<br>}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "try {<br>&nbsp; &nbsp; // code that may throw an exception<br>} catch(MyCustomException) {<br>&nbsp; &nbsp; // handle exception<br>}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 81774,
+      "Explanation": "<span id=\"explanation81774\" style=\"color:blue\"><span id=\"explanation81774\">To catch a specific type of exception in C#, you need to specify the type of exception in the <code>catch</code> block. Option C is the correct syntax where <code>MyCustomException</code> is the specific exception being caught.</span></span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "All Exceptions derived from",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "System Exception class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Application exception"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "System Exceptions class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of Above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 85523,
+      "Explanation": "<p><span id=\"explanation85523\" style=\"color:blue\"><span id=\"explanation85523\" style=\"color:blue\">In C#, all exceptions are derived from the System.Exception class. This class is the base class for all exceptions in the .NET framework. It provides a number of properties and methods that can be used to get information about the exception, including the exception message, the stack trace, and the inner exception.</span></span></p>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true about exception handling in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A catch block can catch exceptions of multiple types using a single catch block."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only one catch block can be associated with a try block."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A finally block is optional and can only follow a catch block."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The finally block executes regardless of whether an exception is thrown or not."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 94991,
+      "Explanation": "The finally block is executed after the try and catch blocks, regardless of whether an exception is thrown. It is typically used to clean up any resources that were allocated in the try block.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of a finally block in .NET exception handling?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To handle exceptions that were not caught by catch blocks."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To execute code that should run regardless of an exception occurring or not."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To re-throw exceptions to a higher-level exception handler."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To suppress exceptions that were thrown in the try block."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 94992,
+      "Explanation": "A finally block is used to execute code that needs to run regardless of whether an exception was thrown or not, ensuring that resources are released appropriately.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you re-throw the caught exception in a catch block?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "throws ex;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "rethrow;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "throw;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "throw caughtException;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 94993,
+      "Explanation": "<span id=\"explanation94993\" style=\"color:blue\">Using &apos;throw;&apos; without an argument in the catch block re-throws the original exception, preserving its stack trace.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which exception is thrown when an attempt is made to access an element in a collection with a specified key, but the key does not exist in the collection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IndexOutOfRangeException"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "KeyNotFoundException"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "NullReferenceException"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "InvalidOperationException"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 94994,
+      "Explanation": "KeyNotFoundException is thrown when the requested key for accessing a collection item does not exist in the collection.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C# exception handling, what is the role of the 'throw' statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To declare an exception but not throw it."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To create an exception object."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To throw an exception to the nearest catch block."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To log an exception message without throwing it."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 94995,
+      "Explanation": "The &apos;throw&apos; statement in C# is used to throw an exception, usually within a try block, so that it can be caught by the nearest catch block that handles it.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of a try-catch block in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To execute code irrespective of exceptions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To handle exceptions and prevent runtime errors"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To optimize code performance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To log user activities"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 94996,
+      "Explanation": "A try-catch block is used to handle exceptions, allowing the program to catch runtime errors and take appropriate action rather than crashing.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Where can the finally block be used within a try-catch statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only after the catch blocks"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Before the try block"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Inside the try block"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both before and after try-catch blocks"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 94997,
+      "Explanation": "The finally block always follows the catch blocks (or the try block if there are no catch blocks) and executes regardless of whether an exception was thrown.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following scenarios will always execute the finally block?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "If an exception is thrown in the catch block"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "If a return statement is placed in the try block"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "If the catch block rethrows the exception"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "In all of the above scenarios"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 94998,
+      "Explanation": "The finally block always executes, regardless of what happens in the try and catch blocks, including return or rethrow statements.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if there is an exception that is not caught within a try-catch block?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The application will silently continue"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The system will automatically handle it"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The application terminates abruptly"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The catch block is executed automatically"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 94999,
+      "Explanation": "If an exception is not caught, it propagates up the call stack, potentially causing the application to terminate if not handled elsewhere.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How many catch blocks can be associated with a single try block?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only one"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Two catch blocks"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Multiple catch blocks"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 95000,
+      "Explanation": "A try block can be associated with multiple catch blocks to handle different types of exceptions specifically.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of exceptions should be caught first when using multiple catch blocks?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "General exceptions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Unpredictable exceptions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Specific exceptions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Any type of exception"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 95001,
+      "Explanation": "Specific exceptions should be caught first before general ones to handle each exception type differently without masking more specific ones.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to throw an exception?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "raise"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "throw"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "raiseException"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "exception"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 95002,
+      "Explanation": "The &apos;throw&apos; keyword is used in C# to explicitly throw an exception.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can a try block exist without a catch block in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, only if accompanied by a finally block"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, catch is mandatory"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, always"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only outside of methods"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 95003,
+      "Explanation": "A try block can exist without a catch block if it is followed by a finally block, which will execute regardless of exceptions.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can you nest try-catch-finally blocks within each other?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "No, it's not allowed"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes, but only two levels deep"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, as needed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No, they must be parallel"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 95004,
+      "Explanation": "Try-catch-finally blocks can be nested to handle exceptions at different levels of a program&apos;s call stack.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if an exception is thrown in the finally block?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The program exits immediately"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The original exception is suppressed"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The program handles it implicitly"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The exception is propagated out of the finally block"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 95005,
+      "Explanation": "If an exception occurs in the finally block, it overrides any previously thrown exceptions and gets propagated to the outer context.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a typical characteristic of checked exceptions in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They are unchecked by default."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They must be declared in a method or constructor's throws clause."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They are checked at compile time."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They must be defined by the developer."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 95006,
+      "Explanation": "<span style=\"color:#0000ff;\">C# does not support checked exceptions like Java does. In C#, all exceptions are unchecked, meaning the compiler does not require them to be declared or caught explicitly.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In .NET, which exception type is typically considered unchecked?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Exception"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "System.IO.IOException"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "System.Exception"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "System.NullReferenceException"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 95007,
+      "Explanation": "<span style=\"color:#0000ff;\">System.NullReferenceException is an example of an unchecked exception in .NET. Such exceptions occur due to programming logic errors, like accessing a member on a null object reference. C# does not enforce compile-time checking for these.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does C# handle exceptions compared to Java's checked exceptions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By forcing developers to explicitly handle them"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By automatically retrying the operation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By not requiring them to be caught or declared"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By preventing the program from compiling if they are not handled"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 95008,
+      "Explanation": "<span style=\"color:#0000ff;\">C# uses unchecked exception handling, meaning there&apos;s no requirement to declare or catch exceptions. This contrasts with Java, which uses checked exceptions that must be handled or declared with throws.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a fundamental difference between exception handling in C# and Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "C# has only checked exceptions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Java has both checked and unchecked exceptions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Java exceptions must be handled at runtime only"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "C# uses checked exceptions similar to Java"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 95009,
+      "Explanation": "Java distinguishes between checked exceptions, which must be declared or caught, and unchecked exceptions, while C# does not make this distinction.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true about C# exceptions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "C# has a throws clause like Java."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "C# does not differentiate between checked and unchecked exceptions."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "All exceptions in C# are checked by default."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "C# forces exception handling at compile time."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 95010,
+      "Explanation": "C# does not have a formal distinction between checked and unchecked exceptions. All exceptions can be caught, but there is no requirement to do so.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which exception, if any, must be handled or declared in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "System.IO.IOException"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "There are none"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "System.DivideByZeroException"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "System.OutOfMemoryException"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 95011,
+      "Explanation": "C# does not enforce any exception to be handled or declared, contrasting with Java&apos;s handling of checked exceptions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if an exception is not handled in a C# program?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The exception is automatically caught and suppressed."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The program may terminate with an error message."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The .NET runtime will attempt to fix the error."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The exception is converted to a warning."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 95012,
+      "Explanation": "If an exception is not handled in a C# application, the program will terminate, and an error message will be displayed.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is considered as best practice when dealing with exceptions in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Catch all exceptions using a generic catch block."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Catch specific exceptions and handle them appropriately."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Ignore exceptions and let the runtime handle them."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Convert all exceptions to warnings."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 95013,
+      "Explanation": "It is a best practice to catch specific exceptions in C# to provide meaningful error handling rather than catching all exceptions generally, which can mask problems.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why is the 'finally' block used in C# exception handling?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To execute code only when an exception occurs."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To declare checked exceptions."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To ensure code execution regardless of an exception occurrence."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To suppress exceptions altogether."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 95014,
+      "Explanation": "The &apos;finally&apos; block in C# is used to execute code regardless of whether an exception was thrown or not, typically for cleanup activities.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of the following C# code snippet in terms of exception handling? try { int x = 10 / 0; } catch (DivideByZeroException e) { Console.WriteLine(\"Divide by zero!\"); }",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compile-time error."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Runtime error with no output due to exception not being caught."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Output: Divide by zero!"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No output, exception will be swallowed silently."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 95015,
+      "Explanation": "The code will catch the DivideByZeroException and print \"Divide by zero!\" to the console.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a user-defined exception in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An exception that is automatically handled by the .NET runtime"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An exception type that is defined and thrown by a developer for specific conditions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An exception that only occurs during the build process"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An exception related to input/output operations"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 95016,
+      "Explanation": "A user-defined exception in C# is an exception that is created and thrown by developers to handle specific conditions that the .NET framework doesn&apos;t automatically cover.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which class should a user-defined exception in C# derive from?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "System.ApplicationException"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "System.InvalidOperationException"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "System.Exception"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "System.CustomException"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 95017,
+      "Explanation": "User-defined exceptions should derive from the System.Exception class to be recognized as an exception type by the .NET framework.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What keyword is used to throw a user-defined exception in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "raise"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "throw"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "flush"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "catch"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 95018,
+      "Explanation": "The &apos;throw&apos; keyword is used in C# to throw an exception, including user-defined exceptions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why might a developer choose to create a user-defined exception?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To optimize database connections"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To enable low-level device programming"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To handle specific application scenarios not covered by built-in exceptions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To improve the performance of built-in string operations"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 95019,
+      "Explanation": "Developers create user-defined exceptions to handle unique application-specific scenarios that aren&apos;t adequately covered by the default exceptions provided by the .NET framework.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you ensure that a user-defined exception class is serializable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By marking the class with the [Serializable] attribute"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By implementing the System.Array interface"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By inheriting from System.Collections"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By using the XmlExceptionConverter"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2372,
+      "QuestionTypeId": 0,
+      "QuestionId": 95020,
+      "Explanation": "To ensure a user-defined exception class is serializable, you should mark the class with the [Serializable] attribute, which allows the exception to be serialized and deserialized correctly.",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Notes - Cassandra_Alter table</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  body{font-family:system-ui,Segoe UI,Roboto,Arial;max-width:900px;margin:24px auto;padding:18px;line-height:1.6;color:#111}
+  h1{font-size:1.4rem;margin-bottom:0.6rem}
+  .topic{font-weight:700;margin-top:1rem}
+  .subtopic{font-weight:600;margin-top:0.8rem}
+  .content{margin:0.6rem 0 1.2rem 0}
+  pre{white-space:pre-wrap;background:#f7f7f7;padding:10px;border-radius:6px;overflow:auto}
+  img{max-width:100%;height:auto}
+  table{border-collapse:collapse;width:100%}
+  table, th, td{border:1px solid #ccc;padding:6px}
+</style>
+</head>
+<body>
+<h1>Notes: Cassandra- Alter table</h1>
+
+<div class="courseware topic">Alter table</div><div class="courseware content"><hr>​​​​​​​Alter in Cassandra is used same as in RDBMS to change the table sturcture.<br><div class="courseware subsubtopic"><strong>Adding new column&nbsp;</strong></div><strong>Syntax</strong><br><span style="color:#f1c40f;"><strong>ALTER TABLE</strong></span> table_name<br><strong><span style="color:#f1c40f;">ADD</span></strong> new_column datatype;<br>eg<br>alter table emp<br>add email string;<br><div class="courseware subsubtopic"><strong>Deleting the column<span style="color:#f1c40f;"></span></strong></div><strong>Syntax</strong><br><strong><span style="color:#f1c40f;">ALTER TABLE </span></strong>table_name<br><span style="color:#f1c40f;"><strong>DROP COLUMN</strong></span> column_name;<br>eg<br>ALTER TABLE emp<br>DROP COLUMN mgr;<br><div class="courseware subsubtopic"><strong>Renaming Column</strong></div><strong><span style="color:#2980b9;">Can rename only PK.</span></strong><br><strong>Syntax</strong><br><strong><span style="color:#f1c40f;">ALTER TABLE</span></strong> table_name<br><span style="color:#f1c40f;"><strong>RENAME</strong></span> column_name<strong><span style="color:#f1c40f;"> to</span></strong> new_column_name;<br>eg<br>alter table mytab<br>rename num to find;<br><div class="courseware subsubtopic"><strong>Delete Table</strong></div><strong><span style="color:#2980b9;">Truncate will delete the table as well as the structure</span></strong>.<br><strong>Syntax</strong><br><span style="color:#f1c40f;"></span><span style="color:#f1c40f;"><strong>TRUNCATE</strong>&nbsp;</span> table_name;<br>eg<br>TRUNCATE emp;<br><div class="courseware subsubtopic"><strong>Createing Index</strong></div><strong>Syntax</strong><br><strong><span style="color:#f1c40f;">CREATE INDEX </span></strong>idx_name<br><span style="color:#f1c40f;"><strong>ON TABLE</strong></span>(column_name);<br>eg<br>create index idx_nm<br>on student(name);<br><div class="courseware subsubtopic"><strong>Deleting Index</strong></div><strong>Syntax</strong><br><strong><span style="color:#f1c40f;">DROP INDEX</span></strong> index_name;<br>eg<br>DROP INDEX idx_nm;<br></div>
+
+
+</body>
+</html>

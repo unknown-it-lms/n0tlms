@@ -1,0 +1,3006 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Which of the following hooks is used to manage side effects in a function component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "useState"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "useContext"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "useEffect"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "useCallback"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97551,
+      "Explanation": "The useEffect hook is utilized for handling side effects in function components, such as data fetching or manual DOM manipulations.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the correct syntax for initializing state with useState?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "const [state, setState] = useState(0);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "const state = useState(0);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "useState(const [state, setState] = 0);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "const state = setState(useState(0));"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97731,
+      "Explanation": "The correct syntax is &#39;const [state, setState] = useState(initialState);&#39; where initialState is the initial value of the state.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you update the state value defined with useState?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Directly assign a new value to the state variable."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use the setState function returned by useState."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use the set function provided by ReactDOM."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Call the updateState method with the new value."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97732,
+      "Explanation": "The setState function returned by useState is used to update the state value. It takes the new value as an argument.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you try to update state with the same value using setState from useState?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "React will re-render the component."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "React will skip the re-render."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An error will be thrown."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Previous state will be lost."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97733,
+      "Explanation": "If you set state to the same value as the current state, React will skip the re-render to optimize performance.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following scenarios is best suited for using the useState hook?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Managing global application state across multiple components."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Tracking complex form input states in a single object."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Handling local UI states like toggling visibility of a modal."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Implementing API request caching."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97734,
+      "Explanation": "useState is ideal for managing local component states such as toggling UI elements like modals, making it suitable for handling local, transient states.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of the useEffect Hook in React?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To manage component state"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To access the DOM directly"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To perform side effects in functional components"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To enhance CSS styling"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97735,
+      "Explanation": "The useEffect Hook is designed to handle side effects in React functional components, such as fetching data, manipulating the DOM, or setting up subscriptions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When does the useEffect function run by default after initial rendering?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only once"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "On every re-render"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Never automatically"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When a callback function is called"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97736,
+      "Explanation": "By default, the useEffect function runs after every completed render of the component.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you prevent the useEffect from running on every re-render?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use useState instead"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Pass an empty array as the second argument"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Place useEffect inside useMemo"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use custom hooks only"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97737,
+      "Explanation": "Passing an empty array as the second argument to useEffect will make it run only once, similar to componentDidMount.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following describes a potential issue when not specifying a dependency array in useEffect?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It&#39;ll never run"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It might cause memory leaks"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will run additional instances of the component"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It will automatically optimize code"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97738,
+      "Explanation": "Not specifying a dependency array can lead to running effects on every render, potentially causing performance issues or memory leaks, especially for functions that subscribe to external sources.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if you include a function as a dependency in the dependency array of useEffect?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will ignore the function"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It will cause the effect to rerun only once"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will cause the effect to rerun any time the function changes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It will throw a runtime error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97739,
+      "Explanation": "Including a function in the dependency array will cause the effect to rerun each time the function is recreated, which usually happens on every render if the function isn&#39;t stabilized using useCallback.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of the useContext Hook in React?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To manage global state across multiple components"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To re-render components based on state changes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To optimize component re-renders"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To perform side effects after component has mounted"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97740,
+      "Explanation": "The useContext Hook is used to access the values from a React context, which allows components to consume context data without passing props through every level of the component tree.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you access a context value using the useContext Hook?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "React.useContext(contextName)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "useContext(contextName)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "useState(contextName)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "useEffect(contextName)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97741,
+      "Explanation": "To access a context value in a functional component, you use the useContext Hook with the specific context as useContext(contextName).",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following correctly describes a scenario where useContext would be useful?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When you want to fetch data from an API"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When you need to share a theme object across multiple components"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When you want to manage local component state"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When you need to debounce an input handler"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97742,
+      "Explanation": "useContext is useful for sharing data like theme objects, user data, or authenticated status globally across multiple components without the need for prop drilling.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What should be passed as an argument to the useContext Hook?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A string representing the context name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A function that computes the context value"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A reference to the context object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An array of context dependencies"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97743,
+      "Explanation": "The useContext Hook takes a reference to the context object as its argument, which is typically created using React.createContext().",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When a context value changes in React, which components using useContext will re-render?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "All components in the application"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only the components that consume the context directly"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only the parent component of the context provider"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No components will re-render automatically"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97744,
+      "Explanation": "When a context value changes, only the components that are directly consuming that context using useContext will re-render. This helps in improving performance and avoids unnecessary re-renders.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of the useRef Hook in React?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To optimize rendering of components."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To allow side effects in functional components."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To access or modify a DOM element directly."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To manage state similar to useState Hook."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97745,
+      "Explanation": "The useRef Hook is mainly used to access a DOM element directly and persist a value across renders without causing a re-render.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is true about the value held in a useRef Hook?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The value resets on each render."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The value is static and cannot be changed."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The value is mutable and persists across renders."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The value is similar to a prop and passed down to children."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97746,
+      "Explanation": "The useRef Hook allows you to persist a mutable object across renders without causing re-renders when the value changes.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using useRef to store a reference to a DOM element, when is the ref&#39;s current property set initially?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "After the component has rendered and DOM is mounted."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Before the component renders for the first time."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "During the initial rendering phase."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only if specified in the prop types."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97747,
+      "Explanation": "The current property of a ref object is set after the component&#39;s DOM elements are mounted during useEffect or useLayoutEffect.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can useRef be used to avoid unnecessary re-renders in a component when tracking state?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By storing state in an external database."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using useRef to hold mutable state that doesn\u2019t affect the component&#39;s output."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using useRef and forceUpdate simultaneously."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By combining useRef and useState in the component."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97748,
+      "Explanation": "useRef can be used to hold mutable state across renders, which doesn&#39;t cause the component to re-render when it changes.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a common use case for useRef?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Accessing a child component&#39;s instance method."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Persisting a value across renders without causing re-renders."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Triggering an error boundary in case of an error."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Storing a reference to a DOM element rendered by a component."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97749,
+      "Explanation": "useRef is not used to trigger error boundaries; instead, it is used for accessing DOM elements, persisting mutable values across renders, and accessing child component methods.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is one of the main benefits of using the useReducer hook over the useState hook?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "useReducer is only useful for managing global state."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "useReducer is better for performance compared to useState."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "useReducer is useful for managing complex state logic that involves multiple sub-values."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "useReducer automatically persists state to local storage."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97750,
+      "Explanation": "useReducer is often used when the state logic becomes complex; for example, when multiple state variables need to be updated based on a single event.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method returns the initial state in the useReducer hook?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "dispatch()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "initialState()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "useState()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None: initial state is passed directly to useReducer."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97751,
+      "Explanation": "The initial state is passed as the second argument to useReducer, not returned by a function.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which argument type is typically passed to the dispatch function in useReducer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A string indicating the state key to update"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An object with an action type"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A boolean indicating the new state"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An array of state changes"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97752,
+      "Explanation": "The dispatch function expects an action object, which typically contains at least a type property.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can useReducer help in optimizing performance in medium to large scale React applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By reducing the number of re-renders by updating large chunks of state at once."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By allowing state to be automatically memoized."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By batching all state updates and performing them asynchronously."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By directly manipulating the DOM to update elements."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97753,
+      "Explanation": "useReducer can optimize performance when managing complex state logic by grouping state updates, reducing component re-renders.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true regarding side effects in a useReducer setup?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Side effects should be executed inside the reducer function."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Side effects should be executed by calling dispatch with a side effect type."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Side effects should be handled outside of the reducer, typically using useEffect."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Side effects are automatically managed by useReducer."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97754,
+      "Explanation": "Side effects like data fetching should be handled outside the reducer function, often using useEffect, as reducers should be pure functions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of the useCallback Hook in React?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To memoize values between renders"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To memoize functions to prevent unnecessary re-creations"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To manage side effects in function components"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To replace the component lifecycle methods"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97755,
+      "Explanation": "The useCallback Hook is used to memoize functions so that their identity is maintained between component re-renders, preventing unnecessary re-creation of these functions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When would you typically use useCallback Hook?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When you have a functional component that heavily relies on local state."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When you want to conditionally apply effects."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When passing a callback function as a prop to a child component."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When you need to delay a state update."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97756,
+      "Explanation": "useCallback is commonly used when you pass callback functions to optimized child components that rely on reference equality to prevent unnecessary renders.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does useCallback help in optimizing performance?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By skipping a component&#39;s re-render process entirely."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By caching function results."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By preventing functions from being re-created on every render."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By avoiding unnecessary re-renders of the component tree."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97757,
+      "Explanation": "useCallback prevents functions from being re-created on every render, which helps in maintaining the function&#39;s reference and optimizing performance, especially when the function is passed as a prop.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about the dependency array in useCallback?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It specifies when to invoke the function returned by useCallback."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It lists dependencies that trigger useCallback to recreate the function when they change."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It should always be an empty array to prevent any updates."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is optional and does not affect the function recreation."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97758,
+      "Explanation": "The dependency array specifies values that, when changed, will cause useCallback to recreate the memoized function. This ensures that the function gets updated when necessary dependencies change.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which is a potential downside of using the useCallback Hook incorrectly?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It may lead to a significant increase in memory usage."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It may severely slow down component rendering."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It can cause functions to be recreated more often than needed."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It might result in stale closures if not handled properly."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97759,
+      "Explanation": "Improper usage of useCallback, like failing to specify necessary dependencies, can lead to stale closures, where the function references outdated state or props.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of the useMemo Hook in React?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To memorize the state between renders"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To cache the result of a computation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To prevent re-renders of components"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To manage global state"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97760,
+      "Explanation": "The primary purpose of useMemo is to memorize the result of a computation so that it does not need to be recalculated on every render, thus optimizing performance for expensive calculations.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is an appropriate use case for useMemo?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Managing state transitions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Storing default prop values"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Computing a derived state value that is expensive to calculate"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Triggering side effects when a state changes"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97761,
+      "Explanation": "useMemo is useful when you have a derived state calculation that is computationally expensive, and you want to optimize it by avoiding unnecessary recalculations on every render.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When does useMemo recalculate the memoized value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When the component re-renders"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When any state in the component changes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When one of the dependencies has changed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Every time a function is called within the component"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97762,
+      "Explanation": "useMemo recalculates the memoized value only when one of the dependencies listed in its dependency array changes, thus ensuring that the value is up-to-date while avoiding unnecessary recalculations.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you declare a useMemo Hook with dependencies?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "const memoizedValue = useMemo(() =&gt; expensiveOperation(), [])"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "const [memoizedValue] = useMemo(expensiveOperation, [dependency])"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "useMemo: (expensiveOperation, [dependency])"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "const result = useMemo[]; const expensiveOperation();"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97763,
+      "Explanation": "The correct syntax for declaring a useMemo Hook includes a function and a dependency array. The function is executed only when one of the dependencies changes, otherwise, the memoized value is returned.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if you don&#39;t provide a dependency array to useMemo?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will throw an error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It will never recalculate the memoized value"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will default to recalculating on every render"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It will automatically detect dependencies"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97764,
+      "Explanation": "If you do not provide a dependency array to useMemo, it will default to recalculating the value on every render. This makes useMemo behave like the function itself without any optimization benefits.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of creating custom hooks in React?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To enhance performance by bundling similar components"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To reuse stateful logic across multiple components"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To directly modify the state of a parent component"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To automatically optimize component rendering"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97765,
+      "Explanation": "Custom hooks allow you to reuse stateful logic across different components without duplicating code, promoting a more organized and maintainable codebase.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How should a custom React hook be named according to conventions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "With a &#39;hook&#39; suffix"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "With a &#39;use&#39; prefix"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "With a &#39;custom&#39; prefix"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "With a &#39;state&#39; suffix"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97766,
+      "Explanation": "By convention, custom hooks in React should start with the prefix &#39;use&#39; to signify that they are a hook, enabling lint tools to validate hook rules effectively.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a common benefit of using custom hooks in React?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Improved internationalization support"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Easier testing and debugging"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Built-in security enhancements"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Enhanced component styling"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97767,
+      "Explanation": "Custom hooks can make testing and debugging easier by isolating logic into separate functions, allowing developers to target specific functionality for testing.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which scenario would you consider creating a custom hook in React?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When you need to manage local component state"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When you want to reuse code across multiple components involving useState or useEffect"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When you require rendering the elements in a loop"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When you need to apply CSS-in-JS styling techniques"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97768,
+      "Explanation": "Creating a custom hook is appropriate when you want to encapsulate and reuse complex state logic or side effects across different React components.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which React hook is often used together with custom hooks to manage subscriptions, timers, or event listeners?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "useContext"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "useState"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "useEffect"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "useReducer"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97769,
+      "Explanation": "The useEffect hook is commonly used in custom hooks to manage side effects such as subscriptions, timers, or event listeners, ensuring clean-up when the component unmounts.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which lifecycle method was deprecated and often used for updating component state based on props changes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "componentWillMount"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "componentWillUpdate"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "componentWillReceiveProps"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "componentDidCatch"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97707,
+      "Explanation": "componentWillReceiveProps is a lifecycle method that was used for updating state based on prop changes, but it has been deprecated in favor of getDerivedStateFromProps.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When should componentDidUpdate be used in a React component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "For updating the state directly after the component mounts"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To set up a subscription or some external data source"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "For making DOM manipulations after the component is updated"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To define static properties for the component"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97708,
+      "Explanation": "componentDidUpdate is invoked immediately after updating occurs, and it is a good place to interact with the DOM or perform other side-effects like network requests.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of getSnapshotBeforeUpdate in React?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To predict the next state of a component"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To capture some information from the DOM before it is potentially changed"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To define default prop values"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To perform cleanup tasks before re-rendering"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97709,
+      "Explanation": "getSnapshotBeforeUpdate lets you capture information from the DOM before it potentially changes, and whatever value is returned will be useful in the componentDidUpdate lifecycle method.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method would you use to optimize the performance of a frequently updating component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "componentDidMount"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "shouldComponentUpdate"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "componentDidUpdate"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "componentWillUpdate"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97710,
+      "Explanation": "shouldComponentUpdate allows you to decide whether a re-rendering of the component is necessary, thus optimizing the performance by controlling unnecessary updates.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "React&#39;s getDerivedStateFromProps is called during which phases of the component lifecycle?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only during the mounting phase"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "During both the mounting and updating phases"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only during the updating phase"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "During unmounting phase"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97711,
+      "Explanation": "getDerivedStateFromProps is called during both the mounting and updating phases to perform state transitions based on changing props values.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which React lifecycle method allows for asynchronous operations and can result in deferred state changes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "getDerivedStateFromProps"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "componentDidUpdate"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "componentWillUpdate"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "setState"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97712,
+      "Explanation": "componentDidUpdate allows you to perform asynchronous operations and can include state updates that result from those operations.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using strict mode in React, which lifecycle methods will trigger additional logging to assist in the debugging process?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "getDerivedStateFromProps and getSnapshotBeforeUpdate"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "render and componentDidUpdate"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "componentWillMount and componentWillUnmount"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "componentWillReceiveProps and componentWillUpdate"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97713,
+      "Explanation": "In React&#39;s strict mode, certain lifecycle methods such as componentWillMount and componentWillUnmount will trigger additional lifecycle method calls to help identify unsafe operations.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of the unmounting phase in a React component&#39;s lifecycle?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To initialize state and set default props"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To remove components from the DOM"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To update the component&#39;s state and re-render"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To apply conditional rendering logic"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97714,
+      "Explanation": "The unmounting phase is responsible for removing a component from the DOM when it is no longer used or needed.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which lifecycle method is specifically designed to be invoked during the unmounting phase of a React component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "componentDidUpdate"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "componentDidMount"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "componentWillUnmount"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "shouldComponentUpdate"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97715,
+      "Explanation": "componentWillUnmount is the lifecycle method invoked just before a component is removed from the DOM, allowing for cleanup activities.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What kind of tasks are typically handled in the componentWillUnmount lifecycle method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Updating the component&#39;s state"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Cleaning up event listeners or timers"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Fetching new data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Modifying the component&#39;s props"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97716,
+      "Explanation": "componentWillUnmount is often used for cleanup tasks such as removing event listeners or clearing timers to prevent memory leaks.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When a React component is unmounted, what happens to its state and props?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They are transferred to a new component"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They persist in memory indefinitely"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They are cleared up and removed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They are saved to local storage by default"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97717,
+      "Explanation": "Upon unmounting, the component&#39;s state and props are cleared and removed from memory.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which scenario would you most likely implement componentWillUnmount in a React component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To optimize rendering performance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To remove event listeners when a component is no longer needed"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To fetch updated data from an API"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To update the component&#39;s state based on props"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97718,
+      "Explanation": "componentWillUnmount is useful for removing event listeners and other cleanup tasks when the component is about to be removed.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does the componentWillUnmount method affect future re-renders of the same component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It improves the performance of future renders"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It prevents the component from ever re-rendering"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It has no direct effect on future re-renders"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It forces the component to re-render immediately after unmount"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97719,
+      "Explanation": "componentWillUnmount is related to cleanup and does not directly affect rendering logic or performance of future re-renders.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Is componentWillUnmount available as a lifecycle method when using React Hooks?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, it can be used directly"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, it&#39;s replaced by useEffect cleanup"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, but with limited functionality"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No, React Hooks do not support unmounting phase"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97720,
+      "Explanation": "In React Hooks, the cleanup of the useEffect hook functions as componentWillUnmount by returning a cleanup function.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if you forget to remove an event listener in componentWillUnmount?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It leads to future optimizations"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It causes a state update"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It causes a memory leak"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It enhances component performance"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97721,
+      "Explanation": "Not cleaning up resources such as event listeners can lead to memory leaks, as references might persist even after the component unmounts.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of using React Hooks?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To perform server-side rendering"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To improve the performance of functional components"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To use state and other React features without writing a class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To directly manipulate the DOM"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97722,
+      "Explanation": "React Hooks allow you to use state and other React features without having to write a class component, thereby simplifying component logic and encouraging functional programming.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which React Hook is used to handle side effects in functional components?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "useState"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "useReducer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "useEffect"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "useCallback"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97723,
+      "Explanation": "The useEffect Hook is used to handle side effects such as data fetching, subscriptions, or manually changing the DOM in React functional components.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you ensure a React useEffect Hook only runs once after the initial render?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By providing an empty dependency array"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By not providing any dependency array"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By providing a dependency array with state variables"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By using return statement within useEffect"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97724,
+      "Explanation": "Providing an empty dependency array means the useEffect Hook is only executed once after the initial render, since it has no dependencies to watch for changes.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Hook should be used to optimize a component with complex state logic?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "useState"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "useReducer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "useMemo"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "useRef"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97725,
+      "Explanation": "The useReducer Hook is ideal for managing complex state logic in components, as it allows developers to manage local state using a reducer function.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the useRef Hook primarily provide?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A way to directly manipulate the DOM"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A mechanism to manage component state"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A means to perform async operations"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A way to memoize computationally expensive functions"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97726,
+      "Explanation": "The useRef Hook primarily provides a way to directly access or manipulate a DOM node or React element directly, as well as to persist a value across renders without causing re-renders.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you prevent a function from being re-created on every render in a functional component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use useMemo Hook"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use useReducer Hook"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use useEffect with an empty array"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use useCallback Hook"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97727,
+      "Explanation": "The useCallback Hook is used to memoize functions, ensuring that the same instance of the function is returned on every render if its dependencies haven&#39;t changed.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which scenario would you use the useMemo Hook?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To store a large computational value that does not change often"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To perform side effects after every render"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To replace Redux for global state management"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To create a mutable object that persists across renders"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97728,
+      "Explanation": "The useMemo Hook is used to memoize a calculated value, avoiding unnecessary calculations by recomputing the value only when its dependencies change.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not a built-in React Hook?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "useLayoutEffect"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "useRequest"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "useImperativeHandle"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "useContext"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97729,
+      "Explanation": "useRequest is not a built-in React Hook. The built-in React Hooks include useLayoutEffect, useImperativeHandle, and useContext.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can React&#39;s useEffect hook be leveraged to handle more complex form input logic?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using it to update form styles dynamically"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To run side-effects like fetching dropdown options after input changes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Directly inside the event handler for real-time updates"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Replacing all class component lifecycle methods with it"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97672,
+      "Explanation": "The useEffect hook can handle complex side-effects, such as fetching or calculating data based on an input change.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a lifecycle method that is called once, before the initial render?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "componentDidMount"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "componentWillMount"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "componentWillReceiveProps"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "componentWillUnmount"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97686,
+      "Explanation": "componentWillMount is called once before the initial render when using a class component. However, it&#39;s considered unsafe for use and is not recommended in React 16.3+.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which lifecycle method is invoked immediately after a component is added to the DOM?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "componentDidUpdate"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "componentWillMount"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "componentDidMount"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "componentWillUnmount"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97687,
+      "Explanation": "componentDidMount is invoked immediately after a component is mounted, i.e., inserted into the tree.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which lifecycle method should you make API calls and perform subscriptions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "componentDidMount"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "render"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "componentWillReceiveProps"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "componentWillUnmount"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97688,
+      "Explanation": "componentDidMount is the best place to make API calls or initiate subscriptions because the component has been fully rendered to the DOM.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which lifecycle method is used to clean up resources such as timers or subscriptions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "componentDidUpdate"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "componentWillMount"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "componentWillReceiveProps"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "componentWillUnmount"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97689,
+      "Explanation": "componentWillUnmount is used to perform any necessary cleanup just before the component is removed from the DOM.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is considered a &#39;snapshot&#39; method where you can capture the state before a component updates?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "getSnapshotBeforeUpdate"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "componentDidMount"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "componentWillUpdate"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "componentWillReceiveProps"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97690,
+      "Explanation": "getSnapshotBeforeUpdate allows you to capture the current state of a component before it updates, typically used to capture scroll positions.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following lifecycle methods is deprecated and should no longer be used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "componentDidMount"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "componentDidUpdate"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "componentWillMount"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "getDerivedStateFromProps"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97691,
+      "Explanation": "componentWillMount is deprecated and should no longer be used in React starting from version 16.3.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What should be returned from the render method of a React component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An array"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A single or multiple React elements"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A promise"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An object"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97692,
+      "Explanation": "The render method should return a single React element or multiple React elements wrapped in a parent element such as a div or Fragment.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which hook is equivalent to componentDidMount for functional components?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "useContext"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "useReducer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "useEffect([])"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "useState"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97693,
+      "Explanation": "useEffect with an empty dependency array ([]) acts similarly to componentDidMount, only running once when the component mounts.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which lifecycle method is typically used to re-render when the props or state change?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "shouldComponentUpdate"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "componentDidUpdate"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "componentWillReceiveProps"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "componentWillUpdate"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97694,
+      "Explanation": "shouldComponentUpdate is used to let React know if a component\u2019s output is not affected by the current change in state or props, and can be used to conditionally control re-rendering.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you prevent a re-render in a class component when props have changed?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using componentDidMount"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using shouldComponentUpdate"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using componentWillUnmount"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using render"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97695,
+      "Explanation": "shouldComponentUpdate allows you to prevent a re-render by returning false when props have changed but you don&#39;t need to update the component.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which lifecycle method should be used to perform necessary updates after a component has re-rendered?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "componentDidMount"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "componentDidUpdate"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "componentWillMount"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "shouldComponentUpdate"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97696,
+      "Explanation": "componentDidUpdate is used to perform operations or updates after the component has been re-rendered due to changes in state or props.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which lifecycle method is never re-invoked if a component\u2019s state or props do not change?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "componentDidMount"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "componentDidUpdate"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "componentWillUnmount"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "componentWillReceiveProps"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97697,
+      "Explanation": "componentDidMount is only invoked once, after the initial mounting, and never re-invoked regardless of state or props changes.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the first method called in the mounting phase of a React component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "componentDidMount()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "render()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "constructor()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "componentWillMount()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97698,
+      "Explanation": "The constructor() is called first during the mounting phase to initialize state and bind event handlers.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which lifecycle method is commonly used to make API calls when the component is first added to the DOM?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "componentWillMount()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "componentDidMount()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "render()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "shouldComponentUpdate()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97699,
+      "Explanation": "componentDidMount() is used to perform operations like API calls after the component is mounted.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which out of the following phase react re-renders the components due to change in prop/state?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Updating phase"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Mounting phase"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "UnMounting phase"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Initialization phase"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97700,
+      "Explanation": "<span id=\"explanation97700\" style=\"color:blue\"><span id=\"explanation97700\" style=\"color:blue\">When props or state change in react component, react component re-renders by executing all life cycle callbacks of updating phase.</span></span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following method will actually decide whether component should re-render in response to change in props/state.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "componentWillReceiveProps()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "componentDidUpdate()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "shouldComponentUpdate()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "componentWillMount()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97701,
+      "Explanation": "shouldComponentUpdate() returns boolean value. if it returns true, component will re-render and if returns false,&nbsp;component will skip re-rendering.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why is the render() method crucial during the mounting phase?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is responsible for initial state setup."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It binds event handles to methods."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It defines what the UI should look like."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It optimizes performance by memoizing variables."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97702,
+      "Explanation": "render() is crucial as it specifies the UI structure and is called with initial props and state.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which lifecycle method is primarily used to set up subscriptions during the mounting phase?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "componentWillMount()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "render()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "componentDidMount()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "shouldComponentUpdate()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97703,
+      "Explanation": "componentDidMount() is the ideal place to set up subscriptions after the component is fully mounted.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which React Hook is equivalent to the lifecycle method&nbsp;componentWillUnmount()&nbsp;for cleaning up before a component is removed?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "useState()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "useEffect() with cleanup function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "useMemo()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "useCallback()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97704,
+      "Explanation": "<span style=\"color:#2980b9;\">In functional components, you can return a cleanup function inside useEffect()&nbsp;that runs when the component unmounts, similar to&nbsp;componentWillUnmount() in class components</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which one of the following is typically NOT performed in the mounting phase?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Updating the State"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Fetching Initial Data"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Event Subscription"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Rendering the UI"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97705,
+      "Explanation": "Updating the state is generally performed after the initial state has been set, typically in response to user interactions or data fetching.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a component&#39;s state changes, what is the React lifecycle method that is triggered next?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "componentWillUnmount"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "componentDidMount"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "componentDidUpdate"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "shouldComponentUpdate"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 97606,
+      "Explanation": "shouldComponentUpdate is called when a component&#39;s state changes and determines if the component should re-render.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct order of lifecycle methods during the Mounting phase?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "constructor() \u2192 render() \u2192 componentDidMount()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "render() \u2192 componentDidMount() \u2192 constructor()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "componentDidMount() \u2192 render() \u2192 constructor()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": " constructor() \u2192 componentDidMount() \u2192 render()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 102437,
+      "Explanation": "The correct order is: constructor() \u2192 render() \u2192 componentDidMount().",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following lifecycle methods belongs to the Updating phase?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "componentDidMount()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "componentWillUnmount()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "componentDidUpdate()<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "componentWillUpdate()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 102438,
+      "Explanation": "componentDidUpdate() is a life cycle method executed in the updating phase like<br>componentDidUpdate(prevProps, prevState) {<br>&nbsp; if (this.props.count !== prevProps.count) {<br>&nbsp; &nbsp; console.log(&apos;Count has changed!&apos;);<br>&nbsp; }<br>}",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you run useEffect only when a specific prop or state changes?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Pass that variable in the dependency array"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use useMemo instead"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use useEffect without any array"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use useRef to track changes"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 102439,
+      "Explanation": "Including a variable in the dependency array ensures the effect runs only when that variable changes.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When is the cleanup function in useEffect executed?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Before the first render"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "After every render"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Before the component unmounts or before the effect re-runs"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only when props change"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 102440,
+      "Explanation": "Cleanup runs before the component unmounts or before the effect re-runs due to dependency changes",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the cleanup function in useEffect?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To reset state"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To remove side effects like subscriptions or timers<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To re-render the component"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To update props"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 102441,
+      "Explanation": "Cleanup functions prevent memory leaks by removing side effects like event listeners, timers, or subscriptions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "At the highest level, React components have lifecycle events that fall into&nbsp; ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Initialization"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "State/Property Updates"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Destruction"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of these"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 80299,
+      "Explanation": "<span id=\"explanation80299\">React Component life cycle events are initialization,state property and destruction also.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How many phases are there in React js life cycle ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "0"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 80289,
+      "Explanation": "<span id=\"explanation80289\">There are 3 stages of ReactJS life cycle.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In relation to React js component lifecycle, which statement is true ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "only function component can have life cycle"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only class components can have life cycle"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both type of components can have life cycle"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 80290,
+      "Explanation": "<span id=\"explanation80290\">Only class components can have life cycle which is statefull .</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In react, this is used to pass data to component from outside? &nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "set state"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "render with argument"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "props"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "propTypes"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 80291,
+      "Explanation": "<span id=\"explanation80291\">props used to pass data between components.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which of the following condition, the React.js Lifecycle method static getDerivedSateFromProps(props, state) is called?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The component is created for the first time."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The state of the component is updated."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both of the above."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 80276,
+      "Explanation": "In React.js, the static getDerivedSateFromProps(props, state) is called in both cases when a component is created and when a component is updated.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "____________ is React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of the component tree that crashed.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Fallback component"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Exception"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Root component"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error boundary"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 85540,
+      "Explanation": "When react component fails at runtime, some other UI can be displayed using error boundary. <br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "React has a powerful composition model, and we recommend using ____________ instead of ___________ to reuse code between components",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Inheritance, Composition"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Composition, Inheritance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Encapsulation, Containment"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 85541,
+      "Explanation": "Composition is preferred using inheritance in react component design.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which lifecycle method do you make requests for data in a class component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "constructor"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "componentDidMount"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "componentWillReceiveProps"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "componentWillMount"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 85899,
+      "Explanation": "<span id=\"explanation85899\">The componentDidMount() method is called after the component is rendered.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods does not get executed in the mounting phase of a React component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "componentDidUpdate"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "getDerivedStateFromProps"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "render"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "componentDidMount"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 88841,
+      "Explanation": "<span id=\"explanation88841\">The methods in the correct order for the mounting phase are constructor, getDerivedStateFromProps (optional), render, and componentDidMount.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following options represents an event in the React component lifecycle?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "rendering"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "componentDidUpdate<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "stateChange"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "propsReceived"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3135,
+      "QuestionTypeId": 0,
+      "QuestionId": 88082,
+      "Explanation": "componentDidUpdate: This event occurs after the component&apos;s updates are flushed to the DOM. It is called immediately after the component&apos;s updates have been applied, and it receives both the previous props and state as parameters. It&apos;s often used for performing side effects such as network requests or updating the DOM in response to prop or state changes.<br>Options A), C), and D) are incorrect because there are no events named rendering, stateChange, or propsReceived in the React component lifecycle.",
+      "Answer": "B",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

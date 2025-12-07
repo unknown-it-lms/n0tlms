@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Subjects</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="subjects.js"></script>
+</head>
+<body>
+  <div class="page">
+  <h1>Select a Subject</h1>
+  <ul id="subject-list"></ul>
+
+  <script>
+    const list = document.getElementById("subject-list");
+    Object.keys(subjects).forEach(subject => {
+      const li = document.createElement("li");
+      const link = document.createElement("a");
+      link.href = `subject.html?subject=${encodeURIComponent(subject)}`;
+      link.textContent = subject;
+      li.appendChild(link);
+      list.appendChild(li);
+    });
+  </script>
+  </div>
+</body>
+</html>

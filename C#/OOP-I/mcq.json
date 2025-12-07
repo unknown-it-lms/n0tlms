@@ -1,0 +1,5144 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is method overloading in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using different return types for the same method name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using the same method name with different parameters"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using the same method name in different classes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using the same method name but with compile-time errors"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94650,
+      "Explanation": "Method overloading in C# allows multiple methods to have the same name with different parameters, such as differing in the number of parameters or their type.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following does NOT constitute valid method overloading in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Methods with the same name differing in parameter types"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Methods with the same name differing in return types only"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Methods with the same name differing in the number of parameters"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Methods with the same name differing in both parameter types and number"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94651,
+      "Explanation": "Method overloading is not possible just by differing in return types; there must be a difference in the parameters to qualify as overloads.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why is method overloading useful in C# programming?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It allows methods to ignore checking for exceptions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It helps in reducing the size of the codebase"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It increases readability by allowing similar operations with different inputs"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It enhances performance by avoiding method calls"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94652,
+      "Explanation": "Method overloading increases code readability and usability by allowing different methods to use the same name but respond differently according to their parameter lists.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a valid method overload declaration?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void Calculate(int a, int b) and int Calculate(int x, int y)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "void Print() and void Print()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "void Display(int a) and void Display(int a, string b)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int Add(int a) and int Add(int b)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94653,
+      "Explanation": "Method overloads must have different parameter lists. Option C is valid because despite sharing the method name, the parameter list is different.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if two overloaded methods have signatures that differ only by ref and out parameters?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They can successfully overload, no differences"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They overload with warnings"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Cannot overload, causes compilation error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They overload with performance issues"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94654,
+      "Explanation": "<span id=\"explanation94654\" style=\"color:blue\">C# does not allow method overloading just by changing ref and out keywords because they are treated differently by the compiler, leading to a compilation error. I</span><span style=\"color:#0000ff;\">f you try to overload a method just by swapping ref with out, the compiler will throw a compile-time error saying the methods have the same signature.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of optional parameters in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To allow methods to have more parameters than necessary."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To provide default values for parameters that can be omitted by the caller."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To enforce mandatory parameter passing."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To simplify method overloading."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94655,
+      "Explanation": "Optional parameters allow a method to define default values for certain parameters, so that when the method is called, those parameters can be omitted.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which C# version introduced optional parameters?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "C# 9.0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "C# 8.0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C# 4.0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "C# 3.0"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94656,
+      "Explanation": "<span id=\"explanation94656\" style=\"color:blue\">Optional parameters were introduced in C# 4.0, allowing developers to specify default values for parameters.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if you try to call a method with optional parameters without providing values for those parameters?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The method will throw a runtime exception."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The method will automatically fill in the missing parameter values with their default values."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The method call will be illegal, as all parameters must be provided."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The compiler will ignore the optional parameters."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94657,
+      "Explanation": "When calling a method with optional parameters, you can omit any of the parameters by not providing values for them, and the default values will be used.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you define an optional parameter in a method signature?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By marking the parameter with the 'optional' keyword."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By providing a default value in the parameter list of the method."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By placing the parameter in a separate overload of the method."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By using the 'option' keyword in the method signature."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94658,
+      "Explanation": "An optional parameter is defined by assigning a default value in the method signature (e.g., &apos;int x = 5&apos;).",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which scenario would using optional parameters NOT be recommended?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When creating libraries for public consumption."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When intending to minimize method overloading."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When the API should encourage named arguments for clarity."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When a method must always have some parameters filled with specific values."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94659,
+      "Explanation": "Optional parameters should not be used when all method parameters must be explicitly provided by the caller, as optional parameters allow for defaults to be used, potentially ignoring required input.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true regarding named parameters in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Named parameters allow you to omit some arguments when calling a method."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Named parameters allow you to specify arguments in a different order than the parameter list."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Named parameters can only be used with static methods."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Named parameters are mandatory in all .NET 5.0 applications."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94660,
+      "Explanation": "Named parameters allow arguments to be supplied in any order, which improves code readability by allowing them to be matched with parameter names.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of calling the following method with these arguments: 'DisplayValues(y: 20, x: 10);'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "x = 10, y = 20"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "x = 20, y = 10"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "y = 10, x = 20"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94661,
+      "Explanation": "Using named parameters allows parameters to be specified in any order, so the method &apos;DisplayValues&apos; will correctly assign 10 to &apos;x&apos; and 20 to &apos;y&apos;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the correct definition of a method using named and positional parameters in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void TestMethod(int x, int y = 5)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "void TestMethod(int x = 5, int y)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "void TestMethod(int x, int y: 5)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "void TestMethod(x = 5, int y)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94662,
+      "Explanation": "In C#, optional parameters must come after all required positional parameters. Therefore, &apos;int y = 5&apos; can be optional as it&apos;s placed after &apos;int x&apos;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does C# decide which method to call when overloaded methods are used with named parameters?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "C# ignores named parameters and calls the first method declaration."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "C# calls the method that matches the parameters both in name and type."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C# cannot resolve overloaded methods with named parameters."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "C# calls the method with the most parameters."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94663,
+      "Explanation": "C# resolves overloaded methods using both parameter names and their types to determine which method to invoke when named parameters are used.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT an advantage of using named parameters?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Improves code readability by clarifying which values are being passed."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Allows changing the order of parameters in a method call."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Eliminates the need for explicitly specifying values for optional parameters."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Enhances compile-time checking by matching parameter names."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94664,
+      "Explanation": "<span id=\"explanation94664\" style=\"color:blue\">Named parameters do not eliminate the need for specifying optional parameters; they simply allow specifying only the essential ones and in a flexible order.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of using the 'params' keyword in a C# method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To specify the return type of the method."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To allow the method to accept a variable number of arguments."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To encapsulate method arguments in a class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To make the method as a Generic method."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94665,
+      "Explanation": "The &apos;params&apos; keyword allows a method to accept a variable number of arguments, which can be passed as an array.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following can be used with the 'params' keyword in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "params object[]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "params int"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "params params[]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "params void[]"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94666,
+      "Explanation": "The &apos;params&apos; keyword is typically used with a single-dimensional array, commonly &apos;params object[]&apos; or &apos;params int[]&apos;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true for using the 'params' keyword?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A method can have multiple 'params' parameters."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The 'params' parameter must be the first parameter in a method signature."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The 'params' parameter must be the last parameter in a method signature."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is compulsory to pass at least one argument to the 'params' parameter."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94667,
+      "Explanation": "A method can have only one &apos;params&apos; parameter, and it must be the last parameter in the method signature.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the context of using 'params', what does the following method call imply: 'CalculateTotal()'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An error will occur as 'params' requires at least one argument."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The method is called without any arguments, and an empty array is passed for 'params'."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only the default parameters are used as 'params' is ignored."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The 'params' array will be instantiated with a single null value."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94668,
+      "Explanation": "Calling a method with &apos;params&apos; without arguments results in passing an empty array to the &apos;params&apos; parameter.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a method using 'params' takes additional regular parameters, how should it be called?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Regular parameters must come after 'params'."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The regular parameters must be passed as an array."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Regular parameters must be passed before any 'params' arguments."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Regular parameters can be mixed with 'params' arguments."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94669,
+      "Explanation": "Regular parameters should precede the &apos;params&apos; array arguments in both method calls and definitions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a local function in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A function that can only be called within the class it is declared."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A nested function defined within another function or method."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A function declared within a namespace outside of any class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A function that is declared as static within the main function."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94670,
+      "Explanation": "A local function in C# is a function defined within another function or method, allowing encapsulation and simplifying code.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT true about local functions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Local functions can use variables defined in the containing method."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Local functions can have default parameter values."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Local functions can be declared static."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Local functions cannot be recursive."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94671,
+      "Explanation": "Local functions can be recursive, meaning they can call themselves. Option D is false.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do local functions affect code readability in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They reduce readability by hiding logic in nested functions."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They improve readability by organizing related logic together."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They do not impact readability in any significant way."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They always cause a decrease in readability due to scope confusion."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94672,
+      "Explanation": "Local functions improve code readability by allowing you to group related logic within the same function, enhancing code organization.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can a local function be async?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, local functions can be async."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, local functions cannot be async."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, but only if they do not return a value."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Yes, but only if they are static."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94673,
+      "Explanation": "Local functions can be async, allowing them to perform asynchronous operations.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which version of C# introduced local functions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "C# 5.0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "C# 6.0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C# 7.0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "C# 8.0"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94674,
+      "Explanation": "Local functions were introduced in C# 7.0 as a way to improve code encapsulation and simplification.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about properties in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Properties can be used to store data only."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Properties can define a set of qualities about an object."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Properties allow you to control the accessibility of a class variable."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Properties can only be used with primitive data types."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94675,
+      "Explanation": "Properties provide a mechanism for accessing a class&apos;s data fields. They allow you to control how a class variable is set or accessed, including defining accessibility using get and set accessors.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you prevent a property from being set outside the class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using private access modifier on the set accessor"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using public access modifier on the get accessor"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Defining both get and set accessors"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Omitting the get accessor"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94676,
+      "Explanation": "By setting the access modifier of the set accessor to private, you can restrict the ability to modify a property from outside the class, thus ensuring controlled access.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C#, what keyword is used to automatically implement a property?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "auto"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "var"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "prop"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94677,
+      "Explanation": "The shorthand syntax using &apos;prop&apos; (in code snippets like &apos;prop&apos; press Tab) allows for automatic property implementation in C#. It creates both a private backing field and a public property.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following C# property declaration can have different access modifiers for get and set accessors?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public string Name { get; private set; }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "private string Name { get; set; }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "string Name { get; set; }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "protected string Name { get; set; }"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94678,
+      "Explanation": "In C#, you can have different access levels for the get and set accessors of a property. A common pattern is to have the get accessor be public and the set accessor be private to control write access.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is NOT correct about auto-implemented properties in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The compiler provides a default backing field."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Auto-implemented properties must define a body for get and set."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They simplify property declarations when no additional logic is required."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Auto-properties can be read-only by omitting the set accessor."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94679,
+      "Explanation": "Auto-implemented properties do not require the definition of a block for the get or set accessors. The compiler implicitly defines a backing field for them.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of a readonly property in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To allow a property to be set only once during its declaration."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To make a property accessible only to derived classes."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To prevent a property from being modified once it is initialized."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To ensure a property is always initialized at compile-time."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94680,
+      "Explanation": "A readonly property in C# is designed so that once its value is set, typically in the constructor, it cannot be changed later, ensuring its immutability.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which situations is it most appropriate to use a readonly property?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When you need to ensure that a property value is computed dynamically."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When a property value should remain constant once instantiated."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "In cases where a property is private and accessed only within the class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When a property requires validation logic before assigning a value."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94681,
+      "Explanation": "Readonly properties are best used when a property should have a fixed value once the containing object is instantiated, ensuring immutability.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following correctly defines a readonly property with a backing field in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "private int myValue; public int MyValue { get; private set; }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "private readonly int myValue; public int MyValue => myValue;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "private int myValue; public int MyValue { get; set; }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "private int myValue; public readonly int MyValue { get; }"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94682,
+      "Explanation": "Option B correctly shows a readonly property using an arrow function syntax, where &apos;myValue&apos; is a readonly backing field.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can a readonly property be initialized in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Directly within the property definition using a lambda expression."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "In the class constructor or a property initializer."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only by using reflection to set the property's backing field."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Through a public set accessor provided by the property."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94683,
+      "Explanation": "Readonly properties can typically be initialized in the class constructor or through a property initializer at the time of declaration.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is true regarding the modifications of readonly properties?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Readonly properties can be modified in static methods."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Readonly properties can be modified multiple times after declaration."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Readonly properties can be modified only within static constructors."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Readonly properties cannot be modified after they are set during object initialization."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94684,
+      "Explanation": "Once a readonly property is set during initialization, it cannot be modified thereafter, enforcing immutability.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following can be used to describe a constructor in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A method that returns a specific data type."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A special method that is automatically invoked when an object is instantiated."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A static method that initializes the class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A method used to finalize an object before garbage collection."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94685,
+      "Explanation": "A constructor is a special method that is automatically invoked when an instance of a class is created. It does not have a return type and is used to initialize objects.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you do not provide a constructor for your class in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The class will not compile."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A default constructor will be provided by the compiler."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An exception is thrown when you try to instantiate the class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The class cannot have any methods."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94686,
+      "Explanation": "If no constructor is provided for a class in C#, the compiler automatically provides a default parameterless constructor.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following best describes a static constructor in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A constructor that initializes instance members of a class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A method that returns a static object."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A constructor used to initialize the static members of a class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A constructor that must be explicitly called by the developer."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94687,
+      "Explanation": "A static constructor is used to initialize the static members of a class and is automatically called once, when the class is first accessed.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about constructors in C# is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Constructors can have any number of return statements."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Constructors are called with the 'new' keyword and can return values."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Constructors can be overloaded with different parameters."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Constructors can be inherited by derived classes."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94688,
+      "Explanation": "Constructors can be overloaded to take different sets of parameters, allowing objects to be initialized in various ways.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you explicitly call a constructor of the base class from a derived class in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Base()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "super()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "this()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "using base()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94689,
+      "Explanation": "In C#, the base keyword is followed by parenthesis to explicitly call a constructor of a base class.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which constructor is called when an object of a derived class is created?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only the constructor of derived class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only the constructor of base class."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "First the constructor of base class, then the constructor of derived class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "First the constructor of derived class, then the constructor of base class."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94690,
+      "Explanation": "In C#, when an object of a derived class is created, the base class constructor is called first, followed by the constructor of the derived class.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can a constructor be private in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "No, constructors cannot be private."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes, but only in abstract classes."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, it is commonly used in singleton patterns."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No, because constructors must be public to create instances."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94691,
+      "Explanation": "A private constructor is possible in C#, and it is often used to implement the singleton pattern, ensuring only one instance of a class is created.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used for constructor chaining in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "continue"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "base"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "this"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "inherit"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94692,
+      "Explanation": "The &apos;this&apos; keyword is used for constructor chaining in the same class, which allows one constructor to call another constructor.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of using an object initializer in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To create a class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To initialize an object's properties without calling a constructor"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To destroy an object explicitly"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To establish polymorphism"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94693,
+      "Explanation": "Object initializers allow you to set properties of an object without explicitly calling a constructor, thus making object creation more concise and readable.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider the code snippet: 'var person = new Person { Name = \"John\", Age = 30 };'. What does this snippet demonstrate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Overloading"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Inheritance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Object Initializer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Encapsulation"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94694,
+      "Explanation": "This code snippet demonstrates an object initializer, where &apos;Person&apos; object is being initialized with property values directly after the &apos;new&apos; keyword.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true regarding object initializers in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Object initializers cannot initialize static properties."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Object initializers must always call a parameterized constructor."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Object initializers allow for late binding."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Object initializers can be used with read-only fields."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94695,
+      "Explanation": "Object initializers in C# cannot be used to set values for static properties; they are intended for instance properties. The other options are incorrect as object initializers do not require a parameterized constructor, do not enable late binding, and cannot set read-only fields.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of a destructor in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To initialize an object's fields before the object is created"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To release resources before an object is garbage collected"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To create a deep copy of an object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To override a base method in a derived class"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94696,
+      "Explanation": "Destructors are used to destroy instances of classes by releasing unmanaged resources before the object is reclaimed by the garbage collector.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When is the destructor of a class called in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When the class constructor is called"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "As soon as the object goes out of scope"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Indeterminately by the garbage collector"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When the program explicitly calls it"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94697,
+      "Explanation": "The destructor is called by the garbage collector and the exact time of call is not deterministic. It&apos;s not called as soon as the object goes out of scope.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true about destructors in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Destructors can be set to private or protected."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only a single destructor is allowed per class."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Destructors can take parameters."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Destructors can be called manually."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94698,
+      "Explanation": "In C#, only one destructor is allowed per class, and it cannot be explicitly defined with parameters or modifiers.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to define a destructor in a C# class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "dispose"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "finalize"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "deconstruct"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No specific keyword, it uses a tilde symbol (~) before the class name"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94699,
+      "Explanation": "In C#, destructors are defined by using a tilde symbol (~) followed by the class name, and they have no return type or parameters.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can destructors in C# classes be overloaded?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, by providing different numbers of parameters."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, destructors cannot be overloaded."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, by changing the return type."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Yes, by using different access modifiers."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94700,
+      "Explanation": "Destructors in C# cannot be overloaded as they don\u2019t take parameters and only one destructor is allowed per class.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of implementing the IDisposable interface in a C# class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To handle exceptions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To manage memory more efficiently"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To release unmanaged resources"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To improve performance of IEnumerable"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94701,
+      "Explanation": "The IDisposable interface is primarily used to release unmanaged resources like file handles or database connections explicitly.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method must be implemented when a class implements the IDisposable interface?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Finalize"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Dispose"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Close"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Abort"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94702,
+      "Explanation": "The Dispose method is required to be implemented when a class implements the IDisposable interface, to manually free unmanaged resources.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When should you call the Dispose method on an object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When you no longer need the object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Immediately after creating the object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "After calling the constructor"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When garbage collection occurs"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94703,
+      "Explanation": "Dispose should be called when the object is no longer needed to free up unmanaged resources and improve system performance.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a common design pattern used with IDisposable to ensure Dispose is called?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Factory Pattern"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Observer Pattern"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Disposable Pattern"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using Statement"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94704,
+      "Explanation": "The &apos;using&apos; statement is a common pattern that ensures Dispose is called automatically, even if an exception occurs.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a drawback of not implementing IDisposable in classes that use unmanaged resources?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Increased compilation time"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Reduced data encapsulation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Memory leaks and resource exhaustion"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Decreased application security"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94705,
+      "Explanation": "Not implementing IDisposable can lead to memory leaks and resource exhaustion since unmanaged resources are not automatically reclaimed by the garbage collector.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following best describes a class in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A blueprint for creating objects."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An instance of an object."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A collection of related functions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A method that performs a particular task."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94706,
+      "Explanation": "A class in C# serves as a blueprint for creating objects, defining properties and methods that the instantiated objects will have.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you create an instance of a class in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using the new keyword followed by the class name and parentheses."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By declaring a variable of the class type."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using the class keyword followed by the object name."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By importing the class using 'import' statement."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94707,
+      "Explanation": "In C#, you can create an instance of a class by using the &apos;new&apos; keyword followed by the class name and parentheses. This initializes a new object.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is encapsulation in the context of classes and objects?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Hiding the internal state and requiring all interaction through an object's methods."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The ability to define multiple methods with the same name."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The creation of a class from another class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The process of defining different forms of a function."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94708,
+      "Explanation": "Encapsulation restricts direct access to some of an object&apos;s components and can prevent the accidental modification of data. It involves bundling of data with the methods that operate on that data.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default access modifier for class members in C# if none is specified?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "private"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "protected"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "internal"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94709,
+      "Explanation": "In C#, if no access modifier is specified, the default access level for class members is &apos;private&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is used to access members of a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The dot operator (.)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The arrow operator (->)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The ampersand operator (&)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The asterisk operator (*)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94710,
+      "Explanation": "The dot operator (.) is used to access members (fields, methods) of a class in C#.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about inheritance is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A class can inherit from multiple base classes in C#."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A class can only have one base class but multiple interfaces in C#."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Inheritance is not supported in C#."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A class can have any number of base classes and interfaces."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94711,
+      "Explanation": "C# supports single inheritance for classes, meaning a class can have only one base class, but it allows multiple interface inheritance.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to define a class in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "define"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "create"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94712,
+      "Explanation": "The &apos;class&apos; keyword is used to declare a new class in C#.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following best describes an object in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An abstraction that defines a data type."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An instance of a class that can have unique values and behaviors."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A set of values defined within a class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A module that contains several related classes."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94713,
+      "Explanation": "An object is an instance of a class, complete with its own data (state) and behavior (methods), unique to that instance.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of a constructor in a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To define methods of a class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To initialize objects of a class when they are created."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To delete objects of a class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To hold constant values throughout the class."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94714,
+      "Explanation": "Constructors are special methods that are called when an object of a class is instantiated, primarily used to initialize the object&apos;s properties.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How would you describe 'polymorphism' in the context of OOP in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A property that allows one form to be treated as another form."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The ability to hide internal details of how an object functions."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The process of breaking down a program into parts."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The inheritance of properties from multiple classes."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94715,
+      "Explanation": "Polymorphism in C# and OOP allows methods to have the same name but behave differently based on the objects that call them, thus allowing for flexible code.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary use of an indexer in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To overload methods."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To provide array-like access to a class or struct."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To perform arithmetic operations."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To implement interface inheritance."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94716,
+      "Explanation": "Indexers are commonly used to provide a class or struct with array-like access to its internal data.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How is an indexer defined in a C# class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using the 'index' keyword."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using the '[]' syntax."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using the '->' operator."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By using the 'get' and 'set' keywords only."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94717,
+      "Explanation": "Indexers are defined by using the &apos;this&apos; keyword followed by square brackets, like this: &apos;public int this[int index]&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the return type of an indexer typically dependent on?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The number of parameters."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The data stored within the container."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The accessibility level of the indexer."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The namespace of the class."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94718,
+      "Explanation": "The return type of an indexer corresponds to the type of data being stored in the collection it is accessing.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which accessibility modifier is commonly used for the get accessor of an indexer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "private"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "public"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "internal"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "protected"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94719,
+      "Explanation": "The &apos;get&apos; accessor of an indexer is typically public to allow external code to access the indexer&apos;s elements.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Is it possible to have an indexer with no set accessor?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, indexers can be read-only."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, indexers must always have both accessors."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only if the indexer is static."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only if using explicit interface implementation."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94720,
+      "Explanation": "An indexer can be read-only if it has only the &apos;get&apos; accessor and no &apos;set&apos; accessor.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When implementing an indexer, which keyword is used to refer to the indexer itself?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "base"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "this"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "self"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "super"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94721,
+      "Explanation": "The &apos;this&apos; keyword is used to define an indexer in a class or struct.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can indexers be overloaded in a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "No, overloading is not allowed for indexers."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes, but they must have the same parameter types."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, indexers can be overloaded with different parameter types."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only if the indexer is static."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94722,
+      "Explanation": "Indexers can be overloaded by having different parameter lists, similar to methods.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can a class in C# have more than one indexer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "No, a class can only have one indexer."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes, but they must have different return types."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, by overloading the indexers."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only if they are static."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94723,
+      "Explanation": "A class can have multiple indexers if they differ by the number or types of their parameters, essentially overloading them.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you try to access an indexer with an invalid index?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It always returns null."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It throws an IndexOutOfRangeException by default."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Results in a compiler error."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Returns the first element."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94724,
+      "Explanation": "If an indexer is accessed with an invalid index, it usually raises an IndexOutOfRangeException.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which class are indexers most commonly implemented?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Generic classes only."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Non-generic classes."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Collection-like classes."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Static classes."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94725,
+      "Explanation": "Indexers are most commonly used in collection-like classes to provide access to the collection&apos;s contents.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following access specifier in C# allows a class member to be accessible within its own class and by derived class instances?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Public"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Private"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Protected"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Internal"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94726,
+      "Explanation": "The &apos;Protected&apos; access specifier allows access to the member class within its own class and by derived class instances.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which access specifier is used to ensure that a class member is only accessible within the same assembly?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Public"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Internal"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Private"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Protected"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94727,
+      "Explanation": "The &apos;Internal&apos; access specifier limits access to the containing assembly, making the class member accessible only within its own assembly.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C#, how would you declare a method that can only be accessed by the containing class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public void MyMethod()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "private void MyMethod()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "protected void MyMethod()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "internal void MyMethod()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94728,
+      "Explanation": "<span id=\"explanation94728\" style=\"color:blue\">Methods declared with &apos;Private&apos; can only be accessed within the containing class.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct access specifier to use in C# if you want a method to be accessible by any code in the same class or struct, derived classes, and containing assembly?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Public"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Private"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Protected Internal"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Protected"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94729,
+      "Explanation": "&apos;Protected Internal&apos; allows access from the same assembly or from derived classes.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which access modifier would you choose for ensuring maximum accessibility to the class members from all parts of your program and other programs?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Protected"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Internal"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Private"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Public"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94730,
+      "Explanation": "The &apos;Public&apos; access specifier allows maximum accessibility to class members from any code in the current assembly or any other assembly.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you achieve the least access level for a C# class member that should not be accessible from outside the class itself?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Protected"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Internal"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Private"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Public"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94731,
+      "Explanation": "&apos;Private&apos; is the least access level, restricting visibility only to the containing type.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following combines two access specifiers, allowing greater flexibility in member accessibility in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Public Private"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Internal Protected"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Protected Internal"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Private Protected"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94732,
+      "Explanation": "&apos;Protected Internal&apos; allows the member to be accessed by any code in the assembly and by derived classes in another assembly.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C#, which access specifier should be used if you want the class member to be available only to derived classes regardless of the assembly they belong to?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Internal"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Protected"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Protected Internal"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Private"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94733,
+      "Explanation": "&apos;Protected&apos; allows access to members from derived classes regardless of the assembly they belong to.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default access specifier for class members in C# when none is specified?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Private"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Public"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Protected Internal"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Internal"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94734,
+      "Explanation": "If no access specifier is defined, C# assigns &apos;Private&apos; by default for class members.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which access specifier is used to expose a member to derived classes regardless of the location of the derived class but not to any other classes within the containing assembly?&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Public"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Protected"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Internal"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Private Protected"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94735,
+      "Explanation": "<span id=\"explanation94735\" style=\"color:blue\"></span><span style=\"color:blue\">In C#, the protected access modifier allows a class member to be accessed only by derived classes, no matter where those derived classes are located \u2014 even if they exist in a different assembly.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the access modifier of a field if none is explicitly specified in a C# class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Protected"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Public"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Private"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Internal"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94736,
+      "Explanation": "In C#, if no access modifier is specified for a field, it defaults to &apos;Private&apos;. This means the field is only accessible within the same class.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to define a constant field in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "readonly"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "const"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "final"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94737,
+      "Explanation": "The &apos;const&apos; keyword is used to define a constant field in C#. A constant field is static by default and its value is set at compile time.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the significant difference between a 'const' field and a 'readonly' field in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Const fields cannot be static"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Readonly fields can only be assigned at initialization or in a constructor"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Const fields can be assigned in different methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Readonly fields cannot be initialized at declaration"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94738,
+      "Explanation": "A &apos;readonly&apos; field can be assigned during its declaration or in a constructor, allowing for runtime initialization, while a &apos;const&apos; field&apos;s value must be set at compile-time.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about static fields in C# is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Static fields can only be accessed in static methods."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Each instance of a class has a separate copy of a static field."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Static fields belong to the type itself rather than any instance."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Static fields must be declared as 'readonly'."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94739,
+      "Explanation": "Static fields in C# belong to the type itself and not to any particular instance. This means that all instances share the same static field.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following fields cannot be accessed directly from outside the class even when using inheritance?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Public fields"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Protected fields"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Internal fields"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Private fields"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 94740,
+      "Explanation": "Private fields in C# cannot be accessed directly from outside the class, even in derived classes. They are accessible only within the class they are declared in.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the order of constructor call in case of inheritance when you create the object of sub class.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "base class constructor is called first, then sub class constructor is called"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "sub class constructor is called first, then base class constructor is called"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "only sub class construct is called"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "sub class constructor is called, then base class constructor is called only if explicit call is given to base class constructor."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 70500,
+      "Explanation": "Whenever you create derived class object, first the base class default constructor is executed and then the derived class&apos;s constructor finishes execution.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to refer base class members inside derive class.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "this"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "base"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "super"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "object"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 70510,
+      "Explanation": "The base keyword is used to access members of the base class from within a derived class.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "________ are also known as smart fields.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "indexers"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "properties"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "delegates"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "events"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 70570,
+      "Explanation": "Properties in .NET are often referred to as smart fields because they provide a flexible mechanism to read, write, or compute the values of private fields. Properties enable the class to expose a public way of getting and setting values, while hiding the implementation or verification code. They provide a way to protect a field in a class by reading and writing to it through the property methods, thus ensuring the integrity and consistency of the data.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Is there any errors in the below Employee constructor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div>public class Employee&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div>{</div><div>&nbsp;&nbsp;&nbsp;&nbsp;public int Employee() { emp_id = 100; }&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br></div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "No error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Return type"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Formal parameter"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both B and C"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 70539,
+      "Explanation": "Constructors does not have any return types.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>While passing parameter to method, ______________ copies actual value of an argument into the formal parameter of the function.<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Output parameter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Value parameter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Reference parameter"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Initial parameter"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 70540,
+      "Explanation": "Pass by Value is the mechanism in C# that copies the actual value of an argument into the formal parameter of the function. <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to refer baseclass constructor from subclass constructor?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "this"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "base"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "extend"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 77755,
+      "Explanation": "The base keyword is used to access members of the base class from a derived class.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The capability of an object in Csharp to take number of different forms and hence display behaviour as according is known as ___________",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Encapsulation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Polymorphism"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Abstraction"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 80326,
+      "Explanation": "Polymorphism uses those methods to perform different tasks. This allows us to perform a single action in different ways.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the return type of destructor?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "void"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "float"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 80253,
+      "Explanation": "Destructors do not have any return type not even void.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which procedure among the following should be used to implement a \u2018Is a\u2019 or a \u2018Kind of\u2019 relationship<br>between two entities?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Polymorphism"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Inheritance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Templates"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Encabculation"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 81701,
+      "Explanation": "Inheritance is the procedure used to implement an \"Is a\" or \"Kind of\" relationship between two entities in object-oriented programming. It allows a class (subclass or derived class) to inherit fields and methods from another class (superclass or base class). This establishes a hierarchical relationship, where the subclass is a specialized version of the superclass, promoting code reuse and the logical organization of related classes. For example, a Dog class might inherit from an Animal class, indicating that a Dog \"is a\" kind of Animal. <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Inheritance concept, which of the following members of base class are accessible to derived class members?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Static"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Protected"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Private"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Shared"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 81702,
+      "Explanation": "In the context of inheritance in object-oriented programming, protected members of a base class are accessible to derived class members. The protected access modifier allows a member to be accessed within its own class and by derived class instances. <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "which form of inheritance is not supported directly by C# .NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Multiple inheritance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Multilevel inheritance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Single inheritance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Hierarchical inheritance"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 81703,
+      "Explanation": "C# does not support multiple inheritance directly, meaning a class cannot inherit from more than one class. However, C# supports multiple inheritance through interfaces, allowing a class to implement multiple interfaces. <br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If no access modifier for a member of a class is specified, then class member accessibility is defined as?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Static"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Protected"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Privete"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Internal"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 81704,
+      "Explanation": "Default access modifier for Class is Internal and Class members are private by default.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The process of defining two or more methods within the same class that have same name but different<br>parameters list?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Method overloading"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Method overriding"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Encapsulation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 81706,
+      "Explanation": "Method overloading is the process of defining multiple methods within the same class that have the same name but different parameter lists. This allows methods to be called with different sets of arguments, providing flexibility and improving code readability.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these can be overloaded?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Constructors"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Methods"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both a &amp; b"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 81707,
+      "Explanation": "In C#, both constructors and methods can be overloaded. Overloading allows a class to have more than one method or constructor with the same name but different parameter lists. This provides flexibility in creating instances of a class with different initial states and calling methods with different sets of arguments.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The modifier used to hide the base class methods in child class?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Virtual"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "New"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Override"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Sealed"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 81716,
+      "Explanation": "The modifier used to hide the base class methods in child class in C# is <strong>\"new\"</strong>.<br>In C#, if you have a method in a base class and a method with the same name in a derived class, using the <code>new</code> modifier explicitly hides the base class method in child class.  <br>In C#, the <code>new</code> modifier is used to hide a method, property, indexer, or event of the base class in a derived class. When the <code>new</code> modifier is used, it indicates that the member in the derived class is intended to hide the base class member with the same name. <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output for the given set of code?<br>using System;<br><br>// Base class 'a'<br>class a<br>{<br>&nbsp;&nbsp;&nbsp; // Method in base class 'a'<br>&nbsp;&nbsp;&nbsp; public void fun()<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine(\"base method\");<br>&nbsp;&nbsp;&nbsp; }<br>}<br><br>// Derived class 'b' inheriting from 'a'<br>class b : a<br>{<br>&nbsp;&nbsp;&nbsp; // Method in derived class 'b' hiding 'fun' from base class 'a'<br>&nbsp;&nbsp;&nbsp; public new void fun()<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine(\"derived method\");<br>&nbsp;&nbsp;&nbsp; }<br>}<br><br>// Main program class<br>class Program<br>{<br>&nbsp;&nbsp;&nbsp; static void Main(string[] args)<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Create an instance of class 'b'<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b k = new b();<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Call 'fun' method on instance 'k'<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; k.fun();<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Read line to keep console window open (for demo purposes)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.ReadLine();<br>&nbsp;&nbsp;&nbsp; }<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "base method"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "derived method"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Code runs successfully prints nothing"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compile time error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 81717,
+      "Explanation": "Here&apos;s an explanation of how this output is determined:<ol><li><p>Class a (Base Class): <br></p><ul><li>Defines a method fun() which prints \"base method\" to the console.</li></ul></li><li><p>Class b (Derived Class):</p><ul><li>Inherits from class a.<br></li><li>Overrides the fun() method using the new keyword, which means it hides the base class method fun().</li></ul></li><li><p>Main Method (Program class):</p><ul><li>Creates an instance k of class b.</li><li>Calls the fun() method on object k.</li></ul></li></ol><p>When k.fun() is called:<br></p><ul><li>Since k is an object of class b, the method fun() from class b is invoked due to method hiding with the new keyword.</li><li>Therefore, \"derived method\" is printed to the console.<br></li></ul> Thus, the output of the program will be \"derived method\".<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output for the given set of code?<br>using System;<br>class A {<br>&nbsp; public virtual void display() {<br>&nbsp;&nbsp;&nbsp; Console.Write(\"A\");<br>&nbsp; }<br>}<br>class B: A {<br>&nbsp; public override void display() {<br>&nbsp;&nbsp;&nbsp; Console.Write(\" B\");<br>&nbsp; }<br>}<br>class Program {<br>&nbsp; static void Main(string[] args) {<br>&nbsp;&nbsp;&nbsp; A obj1 = new A();<br>&nbsp;&nbsp;&nbsp; B obj2 = new B();<br>&nbsp;&nbsp;&nbsp; A r;<br>&nbsp;&nbsp;&nbsp; r = obj1;<br>&nbsp;&nbsp;&nbsp; r.display();<br>&nbsp;&nbsp;&nbsp; r = obj2;<br>&nbsp;&nbsp;&nbsp; r.display();<br>&nbsp;&nbsp;&nbsp; Console.ReadLine();<br>&nbsp; }<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A, A"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "B, B"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compile time error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A, B"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 81718,
+      "Explanation": "Class A:<br>&nbsp;&nbsp; &nbsp;Contains a virtual method display that writes \"A\" to the console.<br>Class B:<br>&nbsp;&nbsp; &nbsp;Inherits from class A.<br>&nbsp;&nbsp; &nbsp;Overrides the display method to write \" B\" to the console.<br>Main Method:<br>&nbsp;&nbsp; &nbsp;An instance of class A (obj1) is created.<br>&nbsp;&nbsp; &nbsp;An instance of class B (obj2) is created.<br>&nbsp;&nbsp;&nbsp; A reference variable r of type A is declared. r is assigned obj1, so calling r.display() executes the display method of class A, printing \"A\". r is then assigned obj2, so calling r.display() now executes the display method of class B, printing \" B\".<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the given set of code?<br>using System;<br>class maths {<br>&nbsp; public int length;<br>&nbsp; public int breadth;<br>&nbsp; public maths(int x, int y) {<br>&nbsp;&nbsp;&nbsp; length = x;<br>&nbsp;&nbsp;&nbsp; breadth = y;<br>&nbsp;&nbsp;&nbsp; Console.WriteLine(x + y);<br>&nbsp; }<br>&nbsp; public maths(double x, int y) {<br>&nbsp;&nbsp;&nbsp; length = (int) x;<br>&nbsp;&nbsp;&nbsp; breadth = y;<br>&nbsp;&nbsp;&nbsp; Console.WriteLine(x * y);<br>&nbsp; }<br>}<br>class Program {<br>&nbsp; static void Main(string[] args) {<br>&nbsp;&nbsp;&nbsp; maths m = new maths(20, 40);<br>&nbsp;&nbsp;&nbsp; maths k = new maths(12.0, 12);<br>&nbsp;&nbsp;&nbsp; Console.ReadLine();<br>&nbsp; }<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "60 24"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "60 0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "60 144"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "60 144.0"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 81719,
+      "Explanation": "Class maths:<br>It has two constructors.<br>The first constructor takes two int parameters, assigns them to length and breadth, and prints their sum.<br>The second constructor takes a double and an int parameter, assigns the casted double to length and the int to breadth, and prints their product.<br>Main Method:<br>Creates an instance of maths using the first constructor (new maths(20, 40)), which prints the sum of 20 and 40.<br>Creates another instance of maths using the second constructor (new maths(12.0, 12)), which prints the product of 12.0 and 12.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the given set of code?<br>class maths {<br>&nbsp;&nbsp;&nbsp; public int length;<br>&nbsp;&nbsp;&nbsp; public int breadth;<br>&nbsp;&nbsp; &nbsp;<br>&nbsp;&nbsp;&nbsp; // Constructor 1<br>&nbsp;&nbsp;&nbsp; public maths(int x) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; length = x + 1;<br>&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp; &nbsp;<br>&nbsp;&nbsp;&nbsp; // Constructor 2<br>&nbsp;&nbsp;&nbsp; public maths(int x, int y) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; length = x + 2;<br>&nbsp;&nbsp;&nbsp; }<br>}<br><br>class Program {<br>&nbsp;&nbsp;&nbsp; static void Main(string[] args) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; maths m = new maths(6);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; maths k = new maths(6, 2);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine(m.length);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine(k.length);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.ReadLine();<br>&nbsp;&nbsp;&nbsp; }<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "8, 8"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0, 2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "8, 10"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "7, 8"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 81720,
+      "Explanation": "The program demonstrates constructor overloading in the maths class. The first constructor takes one parameter and sets length to x + 1, while the second constructor takes two parameters and sets length to x + 2. When creating instances m and k with new maths(6) and new maths(6, 2), m.length is set to 7 and k.length to 8.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What will be the output of the given set of code?<br>class maths {<br>&nbsp;&nbsp;&nbsp; int i;<br>&nbsp;&nbsp;&nbsp; public maths(int x) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i = x;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine(\" hello: \");<br>&nbsp;&nbsp;&nbsp; }<br>}<br><br>class maths1 : maths {<br>&nbsp;&nbsp;&nbsp; public maths1(int x) : base(x) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine(\"bye\");<br>&nbsp;&nbsp;&nbsp; }<br>}<br><br>class Program {<br>&nbsp;&nbsp;&nbsp; static void Main(string[] args) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; maths1 k = new maths1(12);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.ReadLine();<br>&nbsp;&nbsp;&nbsp; }<br>}<br><br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "hello bye"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "12 hello"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "bye 12"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compile time error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 81721,
+      "Explanation": "The program demonstrates inheritance and constructor chaining. When creating an instance of the maths1 class with new maths1(12), the base class maths constructor is called first, printing \" hello: \", followed by the derived class maths1 constructor, which prints \"bye\". <br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Select the correct statement about properties of read and write in C#.NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A property can simultaneously be read or write only"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A property can be either read only or write only"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A write only property will only have get accessor"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A read only property will only have set accessor"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 81722,
+      "Explanation": "<strong>A property can be either read only or write only</strong>: Correct. A property can be defined with only a <code>get</code> accessor (read-only) or only a <code>set</code> accessor (write-only). <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following snippet of code?<br>class number {<br>&nbsp;&nbsp;&nbsp; int length = 50;&nbsp; // Private field<br><br>&nbsp;&nbsp;&nbsp; // Public property with get and set accessors<br>&nbsp;&nbsp;&nbsp; public int number1 {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; get {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return length;&nbsp; // Returns the value of length<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; set {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; length = value;&nbsp; // Sets the value of length<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp; }<br>}<br>class Program {<br>&nbsp;&nbsp;&nbsp; public static void Main(string[] args) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; number p = new number();&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; p.number1 = p.number1 + 40;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int k = p.number1 * 3 / 9;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine(k); <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.ReadLine();<br>&nbsp;&nbsp;&nbsp; }<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "180"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "30"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compile time error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 81723,
+      "Explanation": "The program demonstrates property usage in C#. The <code>number</code> class has a private field <code>length</code> initialized to 50 and a property <code>number1</code> that gets and sets <code>length</code>. In the <code>Main</code> method, <code>number1</code> is incremented by 40 (making it 90), and then the value of <code>number1</code> is used in a calculation. The result of <code>90 * 3/9</code> is 30, which is printed. <br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What will be the output of the following snippet of code?<br>1. class number<br>2. {<br>3.&nbsp;&nbsp;&nbsp;&nbsp; int length = 60;<br>4.&nbsp;&nbsp;&nbsp;&nbsp; public int number1<br>5.&nbsp;&nbsp;&nbsp;&nbsp; {<br>6.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; get<br>7.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>8.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return length;<br>9.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>10.&nbsp;&nbsp;&nbsp;&nbsp; }<br>11. }<br>12. class Program<br>13. {<br>14.&nbsp;&nbsp;&nbsp;&nbsp; public static void Main(string[] args)<br>15.&nbsp;&nbsp;&nbsp;&nbsp; {<br>16.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; number p = new number();&nbsp; <br>17.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int l;<br>18.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; l = p.number1 + 40;&nbsp;&nbsp;&nbsp;&nbsp; <br>19.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int k = l * 3 / 4;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>20.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine(k);&nbsp;&nbsp;&nbsp;&nbsp; <br>21.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.ReadLine();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>22.&nbsp;&nbsp;&nbsp;&nbsp; }<br>23. }<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "30"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "75"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "80"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "0"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 81724,
+      "Explanation": "This C# code defines a class number with a property number1 that returns the value of its private length field (initialized to 60). In Main, it creates an instance of number, accesses number1, performs arithmetic (l = p.number1 + 40;, k = l * 3 / 4;), and prints the result (75). <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of following snippet of code?<br>class number<br>{<br>&nbsp;&nbsp;&nbsp; private int num1;<br>&nbsp;&nbsp;&nbsp; private int num2;<br><br>&nbsp;&nbsp;&nbsp; public int anumber<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; get { return num1; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; set { num1 = value; }<br>&nbsp;&nbsp;&nbsp; }<br><br>&nbsp;&nbsp;&nbsp; public int anumber1<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; get { return num2; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; set { num2 = value; }<br>&nbsp;&nbsp;&nbsp; }<br>}<br><br>class Program<br>{<br>&nbsp;&nbsp;&nbsp; public static void Main(string[] args)<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; number p = new number();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; p.anumber = 20;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; number k = new number();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; k.anumber1 = 40;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int m = p.anumber;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int t = k.anumber1;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int r = p.anumber + k.anumber1;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine(\"number = \" + m);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine(\"number = \" + t);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine(\"sum = \" + r);<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.ReadLine();<br>&nbsp;&nbsp;&nbsp; }<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compile time error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "60"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the above mentioned<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 81725,
+      "Explanation": "The output of the provided C# code snippet will be: <br>number = 20<br>number = 40<br>sum = 60<br>So correct answer is D  none of the above mentioned <br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider a class maths and we had a property called as sum.b is a reference to a maths object and we<br>want the statement b.sum = 10 to fail.Which of the following is the correct<br>solution to ensure this functionality?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Declare sum property with both get and set accessors"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Declare sum property with only get accessor"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Declare sum property with get, set and normal accessors"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 81726,
+      "Explanation": "<span id=\"explanation81726\" style=\"color:blue\">By declaring sum with only a get accessor, you prevent external code from assigning a new value to sum. The property can only be read to retrieve the current value of _sum.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "_________ method can by called creating an instance of a class.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Non Static"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Static"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "All of the above"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 81763,
+      "Explanation": "When a method is declared as non-static, it means that you need to create an instance (object) of the class in order to call that method.<br>Static methods, on the other hand, can be called directly on the class itself without needing an instance.<br>Therefore, the blank should be filled with Non Static to complete the statement correctly.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output for the set of code?<br>&nbsp;using System;<br>&nbsp;class Myclass{<br>&nbsp;static void Main(string[] args)<br>&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int i = 5;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int j = 6;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(ref i);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(6);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(i);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.ReadLine();<br>&nbsp;}<br>&nbsp;static void add(ref int x)<br>&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x = x * x;<br>&nbsp;}<br>&nbsp;static void add(int x)<br>&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(x * x * x);<br>&nbsp;}<br>&nbsp;}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compile time error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "25 0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "216 0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "216 25"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 81711,
+      "Explanation": "In above code,<br>add(ref i) modifies the value of i using the ref parameter. The square of 5 (i) is assigned back to i.<br>add(6) prints the cube of 6 to the console i.e. 216. Note that this method does not modify the original value of i.<br>Finally, Console.WriteLine(i) prints the modified value of i to the console, which is now the square of the original value (5 * 5 = 25).",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to declare a base class method while performing overriding of base class methods?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "This"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Virtual"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Override"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Extend"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 81712,
+      "Explanation": "In C#, the virtual keyword is used in the base class to indicate that a method can be overridden in derived classes. The override keyword is used in the derived class to explicitly indicate that you are providing a new implementation for a method declared in the base class. <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The process of defining a method in subclass having same name &amp; type signature as a method in its superclass<br>is known as?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Method overloading"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Method overriding"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "none of the mentioned"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Named Method"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 81713,
+      "Explanation": "The process you&apos;re describing is known as <strong>method overriding</strong>. Method overriding occurs when a subclass provides a specific implementation of a method that is already defined in its superclass. <br>The overriding method must have the same name, parameter types, and return type as the method it overrides. This allows the subclass to provide its own implementation of the method while maintaining the same method signature as the superclass.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which of the following is true for a special member of the class namely \u2018this\u2019",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "this cannot be used in a static method"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "this cannot be used in a class A to access a member of class B"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The this member can never be declared: it is automatically implied when you create a class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All the above are correct"
+        },
+        {
+          "OptionId": "E",
+          "OptionText": "None of above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 81822,
+      "Explanation": "this cannot be used in a static method:<br>Correct. this refers to the current instance of a class. Static methods operate at the class level and do not have access to any specific instance, so this cannot be used in them.<br><br>this cannot be used in a class A to access a member of class B:<br>Also correct. this refers to the current instance of the class it&apos;s used in. It cannot be used to directly access members of another class instance (class B). You would need an instance of class B to access its members.<br><br>The this member can never be declared: it is automatically implied when you create a class:<br>True. In languages like Java and C#, this is automatically understood by the compiler as a reference to the current object instance within instance methods. It&apos;s not explicitly declared in the code.<br>Therefore, all the statements are correct, making the answer: All the above are correct.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "using System;<br>class Program<br>{<br>&nbsp;&nbsp;&nbsp; static void Main(string[] args)<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mycall(\"Vittal\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mycall(\"Vittal\", 55);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.ReadLine();<br>&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp; static void mycall(string message, int age = 25)<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine(\"{0}\", message);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine(\"{0}\", age);<br>&nbsp;&nbsp;&nbsp; }<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Vittal , 25 , Vittal, 55"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Vittal , Vittal,55"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Vittal ,55, Vittal,25"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 81782,
+      "Explanation": "This C# code defines a Program with a Main method that calls a mycall method twice:<br>First with a string argument \"Vittal\", which prints \"Vittal\" and the default age 25.<br>Second with \"Vittal\" and an integer argument 55, which prints \"Vittal\" and 55.<br>Each call demonstrates method overloading and default parameter values in C#.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "using System;<br>class Program<br>{<br>&nbsp;&nbsp;&nbsp; static void Main(string[] args) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DisplayFancyMessage(message: \"Vittal\", age: 25, addr: \"juhu\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.ReadLine();<br>&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp; static void DisplayFancyMessage(int age, string message, string addr) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine(message);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine(\"{0} {1}\", age, addr);<br>&nbsp;&nbsp;&nbsp; }<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Vittal ,25,juhu"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "juhu, Vittal,25"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "runtime error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 81783,
+      "Explanation": "This C# code snippet defines a Program with a Main method that calls DisplayFancyMessage, passing \"Vittal\" as message, 25 as age, and \"juhu\" as addr. The DisplayFancyMessage method prints message first and then prints age followed by addr in a formatted manner using Console.WriteLine. <br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "class Program<br>&nbsp;{<br>&nbsp;static void Main(string[] args) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DisplayFancyMessage( \"Wow! Very Fancy indeed!\", 50, name:\"raj\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DisplayFancyMessage( \"geeta\", message: \"hello\",50);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.ReadLine();<br>&nbsp;}<br>&nbsp;static void DisplayFancyMessage( string message, int number, string name,) {<br>&nbsp;&nbsp;&nbsp;&nbsp;Console. WriteLine(\"{0},{1},{2}\",number, name, message );<br>&nbsp;}<br>&nbsp;}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "50, geeta, hello"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "hello,geeta,50"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 81785,
+      "Explanation": "The DisplayFancyMessage method has three parameters: message, number, and name. However, in the second call to the method, we are trying to pass the values in a different order and using named arguments. This will cause a compile-time error because the method does not have optional parameters or parameter arrays.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What are indexers in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Special keywords used to define loops in C#."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Methods used to access elements in an array."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Properties that allow objects to be accessed using array-like syntax."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Reserved keywords used for defining namespaces in C#."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 86593,
+      "Explanation": "C. Properties that allow objects to be accessed using array-like syntax.<br>In C#, indexers are a special type of property that allows objects to be accessed using array-like syntax.<br>They provide a way to access elements in an object as if the object were an array. Indexers are defined using the this keyword and square brackets ([]) to specify the index.<br>They are useful when you want to make an object behave like a collection or when you need to access elements in an object using a custom index. <br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements best describes a class in .NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A class is a template for creating objects and defines their behavior."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A class is a method that performs operations on data."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A class is a file that contains a collection of related functions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A class is a primitive data type in .NET."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91139,
+      "Explanation": "A class in .NET serves as a blueprint from which individual objects can be created. It defines behavior through methods and interaction with its data through properties.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In .NET, what is the purpose of a constructor within a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To perform cleanup operations before garbage collection."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To initialize objects and allocate system resources."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To manage object inheritance relationships."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To execute code after an object is destroyed."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91140,
+      "Explanation": "A constructor is used to initialize a new object of a class. It can assign initial values to fields or properties and allocate necessary resources.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT true about objects in .NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Objects can be created directly without defining a class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Objects are instances of classes."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Objects encapsulate data and behavior."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Objects can have methods, properties, and events."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91141,
+      "Explanation": "In .NET, objects cannot be created without defining a class. Objects are always instances of a class.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How is data encapsulation achieved in a .NET class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By defining all class members as public."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using private fields and public methods or properties to access them."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using only static members."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By avoiding the use of constructors."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91142,
+      "Explanation": "Data encapsulation is achieved by making fields private and exposing them through public methods or properties, which control the access and modification of class data.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which access modifier in .NET allows a class member to be accessed only within its own class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "protected"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "internal"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "private"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91143,
+      "Explanation": "The &apos;private&apos; access modifier restricts the access of class members to the containing class only.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the role of the 'static' keyword when applied to a class in .NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Allows the class to be inherited."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Restricts the class to a single instance."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Indicates that the class is thread-safe."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Defines that the class members belong to the type itself rather than to any specific object."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91144,
+      "Explanation": "When a class is declared as static, all its members belong to the type itself, rather than to any object. This means no instances of the class can be created.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about inheritance in .NET is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A .NET class can inherit from multiple base classes."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A .NET class can inherit private members of its base class."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A .NET class can override methods marked as 'virtual' in its base class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A .NET class can use the 'sealed' keyword to allow inheritance of its members."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91145,
+      "Explanation": "Inheritance in .NET allows a derived class to override methods defined in its base class if they are marked as &apos;virtual&apos;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is method overloading in the context of .NET classes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Defining multiple classes with the same name in the same namespace."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Providing two or more methods in the same class with the same name but different parameters."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Defining a method in a derived class with the same name as a method in the base class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Having multiple constructors with the same parameters."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91146,
+      "Explanation": "Method overloading occurs when a class has multiple methods with the same name but different parameter lists (type or number of parameters).",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement correctly explains the concept of a 'namespace' in .NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A namespace is a separate area in memory for class objects."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A namespace is a collection of classes, interfaces, structs, and enums."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A namespace defines the method execution order in a class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A namespace is a way to define access levels for class members."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91147,
+      "Explanation": "A namespace is a container that provides a way to group logically related classes, interfaces, structs, and enums, preventing naming conflicts.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of an interface in .NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To provide a complete implementation for a class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To allow multiple inheritance of class functionality."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To define a contract of methods and properties that implementing classes must fulfill."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To encapsulate a set of related classes within a single class."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91148,
+      "Explanation": "An interface defines a contract that implementing classes must adhere to by providing specific methods and properties without any implementation.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C#, which keyword is used to specify optional parameters in a method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "default"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "optional"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "params"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ref"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91149,
+      "Explanation": "The &apos;default&apos; keyword is used in method declarations to specify optional parameters by providing a default value.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using named arguments in C#, which of the following is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Named arguments must always follow positional arguments."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Named arguments can be mixed with positional arguments in any order."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Named arguments must be at the start of the parameter list."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Named arguments are not supported in C#."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91150,
+      "Explanation": "Named arguments allow you to specify arguments in any order, as long as named arguments follow positional arguments.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which parameter type allows you to pass a variable number of arguments?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Optional"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Named"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Params"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Reference"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91151,
+      "Explanation": "The &apos;params&apos; keyword allows you to pass a variable number of arguments to a method.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the following method signature suggest: void Method(int a, int b = 5)?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "b is a named parameter."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "b is an optional parameter with a default value of 5."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "b is a positional parameter."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "b is a ref parameter."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91152,
+      "Explanation": "The method signature specifies &apos;b&apos; as an optional parameter with a default value of 5.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is true about default parameters in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They can only be used with integer types."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They must be provided for every method call."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They are initialized to default values specified in the method signature."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They are not allowed in C#."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91153,
+      "Explanation": "Default parameters are initialized to values specified in the method signature and are not required in method calls.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C#, how can you call a method with default parameters without using any argument?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By specifying null for parameters."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By simply skipping the parameters in the call."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using the 'default' keyword."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By overriding the method."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91154,
+      "Explanation": "When calling a method with default parameters, you can skip arguments that have default values specified.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Named parameters improve code clarity by:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Allowing multiple methods with the same name."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Eliminating the need for method overloading."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Specifying which parameter each argument refers to."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Automatically generating documentation."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91155,
+      "Explanation": "Named parameters improve clarity by explicitly indicating the parameter each argument pertains to in the method call.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C#, which method call correctly uses a named argument?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Method(5, 10, c:15)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Method(a:5, 10, 15)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Method(5, c:10, 15)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Method(5, 10, 15, b:20)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91156,
+      "Explanation": "Named arguments should follow positional arguments in a method call and can be intermixed with positional arguments if the rules are followed.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following defines a method with both optional and named parameters?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void Method(int x, int y)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "void Method(int x, int y = 10)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "void Method(int x, int y = 10, int z = 20)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91157,
+      "Explanation": "The method &apos;Method(int x, int y = 10, int z = 20)&apos; includes optional parameters decorated with default values which can be used with named parameter syntax.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does using optional parameters help reduce method overloads?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By enforcing strict type checking."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By reducing the need for multiple versions of the same method."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By allowing only one version of a method."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By increasing code complexity."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91158,
+      "Explanation": "Optional parameters allow a single method to fulfill multiple roles that previously required separate overloaded methods.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output if you call DemoMethod(10) with the following signature: void DemoMethod(int a, int b = 20)?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will result in a compile-time error."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It will throw a runtime exception."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "b will be set to 20."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is mandatory to specify both parameters."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91159,
+      "Explanation": "The method uses an optional parameter &apos;b&apos; which defaults to 20 if not explicitly provided in the method call.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is an advantage of using named parameters over positional parameters?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Reduced method overloading."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Improved readability and clarity."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Increased execution speed."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Less memory usage."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91160,
+      "Explanation": "Named parameters improve the readability and clarity of a method call by explicitly indicating which parameter&apos;s value is being set.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Choose the correct statement regarding named arguments in C#: ",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Their order does not matter if all preceding positional parameters are supplied."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Named arguments must always appear first in the argument list."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Named arguments can only be used with optional parameters."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Named arguments increase method call performance."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91161,
+      "Explanation": "Named arguments, when used, allow flexibility in the order of arguments, provided all preceding positional parameters are supplied.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following constructs helps reduce the ambiguity often caused by multiple overloaded methods?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Named parameters only"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Optional parameters only"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both named and optional parameters"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Neither named nor optional parameters"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91162,
+      "Explanation": "Both named and optional parameters help reduce ambiguity by allowing flexibility in specifying which parameters to set and which to omit.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following will result in a compile-time error in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using named arguments out of order."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using optional parameters without default values."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Mixing named and optional parameters in a method call."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Providing a named parameter with a value that does not match its data type."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91163,
+      "Explanation": "Providing a named parameter with a value that doesn&apos;t match its data type causes a compile-time error due to a type mismatch.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main purpose of using an indexer in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To iterate over collections."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To access elements in an object using an index similar to an array."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To manage data binding in ASP.NET applications."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To improve the speed of LINQ queries."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91164,
+      "Explanation": "Indexers in C# allow objects to be indexed in a similar manner to arrays, enabling access through an index.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you define an indexer in a C# class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public void this[int index] { get; set; }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "public datatype[] indexer[int index] { get; set; }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "public datatype this[int index] { get; set; }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "public indexer void this[int index] { get; set; }"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91165,
+      "Explanation": "An indexer in C# is defined using the &apos;this&apos; keyword followed by a parameter list and accessors.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which feature is necessary for the class containing the indexer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It must implement the IEnumerable interface."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It must have a constructor."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It must have a backing storage (such as an array or list)."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It must override the ToString() method."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91166,
+      "Explanation": "Indexers require a backing storage to store and retrieve the values indexed, such as an array, list, or other collection.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you determine if a class supports an indexer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By checking if the class implements IIndexer interface."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By finding the keyword 'indexer' in the class."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By checking for a 'this' accessor with parameters within the class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By verifying that the class inherits from System.IndexedObject."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91167,
+      "Explanation": "A class that supports an indexer will have &apos;this&apos; defined with parameters to allow for indexed access.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a key difference between indexers and properties in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Indexers must be public, while properties can be protected."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Properties can return a value of any type, but indexers can only return reference types."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Indexers allow more than one parameter, whereas properties do not have parameters."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Properties cannot have get and set accessors, but indexers can."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91168,
+      "Explanation": "Indexers can have multiple parameters which allow specifying an index along more than one dimension, whereas properties do not take parameters.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In .NET, what is a constructor primarily used for?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A) To destroy an object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "B) To initialize an object's fields with default or specific values"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C) To access and manipulate an object's properties"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "D) To manage an object's lifecycle"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91169,
+      "Explanation": "A constructor in .NET is a special method used to initialize objects and set initial values for fields.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to define a destructor in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A) finalize"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "B) destroy"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C) ~"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "D) delete"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91170,
+      "Explanation": "In C#, a destructor is defined using a tilde (~) followed by the class name.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of properties in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A) To store static values"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "B) To manage the memory of an object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C) To provide a flexible mechanism to read, write or compute the value of a private field"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "D) To enforce security constraints"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91171,
+      "Explanation": "Properties in C# provide a way to get or set the value of a field, enabling control over how values are accessed or mutated.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is used in C# to define a property with both a get and a set accessor?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A) Field"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "B) Method"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C) Property"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "D) Constructor"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91172,
+      "Explanation": "A property in C# can have both get and set accessors to allow reading and writing values.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is true about constructors in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A) Constructors can return a value."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "B) Constructors can have parameters."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C) Constructors can be called explicitly outside the class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "D) Constructors are automatically static."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91173,
+      "Explanation": "Constructors in C# can have parameters that are used to pass values during object instantiation.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What modifier would you use to prevent a property from being set outside its containing class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A) public"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "B) private set"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C) protected"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "D) internal"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91174,
+      "Explanation": "The &apos;private set&apos; modifier on a property allows it to be set only within its containing class, making it read-only from outside.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In .NET, which statement correctly defines an auto-implemented property?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A) public int MyProperty;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "B) public int MyProperty { get; set; }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C) public int MyProperty() {}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "D) public get() { return value; }"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91175,
+      "Explanation": "Auto-implemented properties in C# have a basic syntax with &apos;get&apos; and &apos;set&apos; accessors that create a private field automatically.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is a correct statement about the 'get' accessor in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A)Itisusedtosetthevalueofafield."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "B)Itcanonlybeusedwithinasealedclass."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C)Itisusedtoreturnthepropertyvalue."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "D)Itmustbestatic."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91176,
+      "Explanation": "The&apos;get&apos;accessorisusedtoreturnthepropertyvalueinC#.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a class in C# does not include a constructor,whathappens?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A)Theclasscannotbeinstantiated."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "B)Theclasswillbeautomaticallyassignedastaticconstructor."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C)Adefaultconstructorisprovidedby.NETframework."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "D)TheclassinheritsaconstructorfromSystem.Object."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91177,
+      "Explanation": "If a class does not explicitly define any constructor,   C# provides a default parameterless constructor automatically.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How would you declare a private field in a class to be accessed by a public property?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A)publicstringmyField;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "B)privatestringMyField;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C)internalstringmyField;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "D)protectedstringmyField;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91178,
+      "Explanation": "Declaring a field as private provides encapsulation,while a public property can be used to access this field.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "WhatisabackingfieldinC#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A)Astaticfieldusedbyallinstancesofaclass."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "B)Aprivatefieldaccessedindirectlyusingproperties."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C)Apublicfieldusedtobackupdata."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "D)Atemporarystorageduringcompile-time."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91179,
+      "Explanation": "Abackingfieldisaprivatefieldthatisaccessedindirectlyviathepropertiesofaclass.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "WhichoftheseisNOTavaliduseofapropertyinC#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A)Definelogictovalidatevalues."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "B)Automaticallycomputereturnvalues."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C)Initializefieldvaluesduringobjectconstruction."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "D)Enforceread-onlyorwrite-onlydataaccess."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91180,
+      "Explanation": "While properties can manage getting and setting values with logic,actual initialization during object construction is done using constructors.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you define only a 'get' accessor in a property?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A)Compilationerror."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "B)Thepropertybecomeswrite-only."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C)Thepropertybecomesareadonlyproperty."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "D)Automatic'set'iscreatedbydefault."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91181,
+      "Explanation": "A property with only a &apos;get&apos; accessor is read-only,meaning its value can only be accessed,notchanged.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Whichkeywordcanbeusedwithinthepropertyaccessortorefertotheobjectitself?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A)base"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "B)class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C)self"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "D)this"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91182,
+      "Explanation": "The&apos;this&apos;keywordisusedwithinaproperty(ormethod)torefertotheinstanceoftheobject.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "WhichoneoftheseistrueaboutdestructorsinC#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A)Theycanhaveparameters."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "B)Theycanbecalledexplicitly."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C)Theyareusedtoreleaseunmanagedresources."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "D)Theyarewrittenusing'void'keyword."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 91183,
+      "Explanation": "DestructorsinC#areusedtofreeunmanagedresourcesthattheobjectwasholding.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Write the question here1",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Option A"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Option B"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Option C"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Option D"
+        },
+        {
+          "OptionId": "E",
+          "OptionText": "Option E"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2367,
+      "QuestionTypeId": 0,
+      "QuestionId": 98979,
+      "Explanation": "Exp",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

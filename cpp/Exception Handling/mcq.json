@@ -1,0 +1,1416 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is the output of this program?<br>&nbsp;&nbsp; #include &lt;iostream&gt;<br>&nbsp;&nbsp; using namespace std;<br>&nbsp;&nbsp; namespace Box1 &nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp; int a = 4;<br>&nbsp;&nbsp; }<br>&nbsp;&nbsp; namespace Box2 &nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp; int a = 13;<br>&nbsp;&nbsp; }<br>&nbsp;&nbsp; int main () &nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp; int a = 16;<br>&nbsp;&nbsp;&nbsp;&nbsp; Box1::a;<br>&nbsp;&nbsp;&nbsp;&nbsp; Box2::a;<br>&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; a;<br>&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br>&nbsp;&nbsp; }",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "13"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "16"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "compile time error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 64079,
+      "Explanation": "<span id=\"explanation64079\">In this case we are just calling&nbsp;Box1::a;<br>&nbsp;&nbsp;&nbsp;&nbsp; Box2::a; but we are printing a (without any namespace)hence value of a is 16.&nbsp;</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What is the output of this program?<br>&nbsp;&nbsp; #include &lt;iostream&gt;<br>&nbsp;&nbsp; using namespace std<br>&nbsp;&nbsp; namespace space<br>&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp; int x = 10;<br>&nbsp;&nbsp; }<br>&nbsp;&nbsp; namespace space<br>&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp; int y = 15;<br>&nbsp;&nbsp; }<br>&nbsp;&nbsp; int main(int argc, char * argv[])<br>&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp; space::x = space::y =5;<br>&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; space::x &lt;&lt; space::y;<br>&nbsp;&nbsp; }",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1015"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1510"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "55"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "compile time error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 64080,
+      "Explanation": "<span id=\"explanation64080\">As we are assigning value 5 for X and Y variables present in namespace and then printing the value of x and y hence answer is 55. (x=5 ,y=5)</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A default catch block catches",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "all thrown objects"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "no thrown objects"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "any thrown object that has not been caught by an earlier catch block"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all thrown objects that have been caught by an earlier catch block"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 64142,
+      "Explanation": "<span id=\"explanation64142\">If matching catch block is not found then the control will go to default catch also known as catch all</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator is used to signify the namespace?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "conditional operator"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ternary operator"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "scope resolution operator"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 64055,
+      "Explanation": "<span id=\"explanation64055\">A namespace is a declarative region that provides a scope to the identifiers (the names of types, functions, variables, etc) inside it. Namespaces are used to organize code into logical groups and to prevent name collisions that can occur especially when your code base includes multiple libraries. hence use scope resolution operator to signify the namespace</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How to define the user-defined exceptions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "inheriting and overriding exception class functionality"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "overriding class functioality"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "inheriting class functionality"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 64153,
+      "Explanation": "<span id=\"explanation64153\">User defined exception classes inherit exception class provided by C++ and overrides it\u2019s functionality according to our needs. </span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Point out the compile time error in the program given below.<br>#include&lt;iostream&gt;<br>using namespace std;</div><div>int main()</div><div>{</div><div style=\"margin-left: 40px;\">int *x;</div><div style=\"margin-left: 40px;\">*x=100;</div><div style=\"margin-left: 40px;\">return 0;</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Error: invalid assignment for x"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Error: suspicious pointer conversion"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 64189,
+      "Explanation": "<span id=\"explanation64189\">In above code x is pointer and it is not pointing to any location. So statement *x=100 will generate ERROR</span><br><br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Where is an exception raised?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "In the catch block"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "In the try block"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "In the constructor of a class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only when memory allocation fails."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 64209,
+      "Explanation": "<span id=\"explanation64209\">A&nbsp;try&nbsp;block identifies a block of code for which particular exceptions will be activated(raised). It&apos;s followed by one or more catch blocks. </span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>#include&lt;iostream&gt;<br>using namespae std;</div><div>void main()</div><div>{</div><div style=\"margin-left: 40px;\">int a = 0;</div><div style=\"margin-left: 40px;\">cout&lt;&lt;(a = 10/a);</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compile Time error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Runtime Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 64198,
+      "Explanation": "<span id=\"explanation64198\">You cannot divide by zero</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Exception handling is targeted at",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Run-time"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compile time"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Logical error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 64238,
+      "Explanation": "<span id=\"explanation64238\">&nbsp;Exceptions are run-time anomalies or abnormal conditions that a program encounters during its execution.&nbsp; </span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "namespace N1 {<br>int f(int n) {return n*2;}<br>}<br>namespace N2 {<br>int f(double n) {return n*3;}<br>}<br>void main() {<br>using N1::f;<br>int i1=f(1.0);<br>using N2::f;<br>int i2=f(1.0);<br>}<br>In the above code what would be the values of i1 and i2",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "i1=2 i2=2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "i1=2 i2=3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "i1=3 i2=2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 73755,
+      "Explanation": "<span id=\"explanation73755\"></span><span>When using N1::f is declared, and f(1.0) is called, it will attempt to call N1::f, which expects an int. However, since 1.0 is a double, this will result in a type conversion, causing the double value 1.0 to be converted to int (1). Thus, N1::f(int) will be called with 1 and return 2.<br>After using N2::f, calling f(1.0) will correctly resolve to N2::f(double) without any type conversion, returning 3.<br>Thus, the values of i1 and i2 will be:<br>i1 = 2 (due to the conversion of 1.0 to int and calling N1::f(int) which returns 1 * 2)<br>i2 = 3 (directly calling N2::f(double) which returns 1.0 * 3)</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In nested try block, if inner catch handler gets executed, then __________?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Program execution stops immediately."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Outer catch handler will also get executed."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compiler will jump to the outer catch handler and then executes remaining executable statements of main()."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compiler will execute remaining executable statements of outer try block and then the main()."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 71134,
+      "Explanation": "<span id=\"explanation71134\">if , inner catch block handle exception then , it is not for outer try block so remaining executable statements of outer try block.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements are true about Catch handler?<br>i) It must be placed immediately after try block T.<br>ii) It can have multiple parameters.<br>iii) There must be only one catch handler for every try block.<br>iv) There can be multiple catch handler for a try block T.<br>v) Generic catch handler can be placed anywhere after try block.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only i, iv, v"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only i, ii, iii"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only i, iv"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only i, ii"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 71135,
+      "Explanation": "<span id=\"explanation71135\"><span style=\"display:none\">&nbsp;</span>catch block must be immediately after try block and , there can be multiple catch blocks for one try block</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;If inner catch handler is not able to handle the exception then__________ .",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compiler will look for outer try handler"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Program terminates abnormally"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compiler will check for appropriate catch handler of outer try block"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of these"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 71136,
+      "Explanation": "<span id=\"explanation71136\">if inner catch handler is not able to hadle the exception then compiler will check for appropriate catch hadler of outer try block</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The code of statements which may cause abnormal termination of the program should be written under_________ block.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "try"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "catch"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "finally"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 71137,
+      "Explanation": "<span id=\"explanation71137\">Try is block where exception(abnormal termination) may occure and catch is handler for that exception</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In nested try blocks, if both inner and outer catch handlers are not able to handle the exception, then ______________ .",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compiler executes only executable statements of main()."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compiler issues compile time errors about it."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Program will be executed without any interrupt."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Program will be terminated abnormally."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 71138,
+      "Explanation": "<span id=\"explanation71138\">if any exception is not handle it get teeminated abnormally.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What this code will do?<br>#include &lt;iostream&gt;<br>using namespace std;<br>int main()&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;int x = -1;<br>&nbsp;&nbsp;&nbsp;&nbsp; char *ptr;<br>&nbsp;&nbsp;&nbsp;&nbsp; ptr = new char[256];<br>&nbsp;&nbsp;&nbsp;&nbsp; try&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (x &lt; 0)&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; throw x;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (ptr == NULL)&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; throw \" ptr is NULL \";<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp; catch (...)<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; \"Exception occurred: exiting \"&lt;&lt; endl;<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "-1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ptr is NULL"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "exception occured: exiting"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 71139,
+      "Explanation": "<span id=\"explanation71139\">if specific handler is not available it goes to catch all ( catch(...)) and it will display \"Exception occurred : exiting\".</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Exception handlers are declared with ____________ keyword.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "try"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "catch"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "throw"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "finally"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 71140,
+      "Explanation": "<ul><li><span id=\"explanation71140\">try is block where exception may occure</span></li><li><span id=\"explanation71140\">catch is handler</span></li><li><span id=\"explanation71140\">throw is use to raise exception</span></li><li><span id=\"explanation71140\">and finally is not use in CPP</span></li></ul>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which type of program is recommended to include in try block?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Static memory allocation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Dynamic memory allocation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Const reference"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Pointer"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 71141,
+      "Explanation": "&nbsp; While during dynamic memory allocation there are lot of chances to fail with any resone , Your system may not have sufficient resources to handle it, So it is better to use it inside the try block.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;iostream&gt;<br>#include &lt;string&gt;<br>using namespace std;<br>int main()&nbsp;{<br>&nbsp;&nbsp;&nbsp; try {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; throw 'b';<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp; catch (int param)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; \"Int Exception\";<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp; catch (...)<br>&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; \"Default Exception\";<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp; cout &lt;&lt; \"After Exception\";<br>&nbsp; &nbsp; return 0;<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Default Exception<br>After Exception"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Int Exception<br>After Exception"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Int Exception"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Default Exception"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 71142,
+      "Explanation": "<span id=\"explanation71142\">The block catch(...) is used for catch all, when a data type of a thrown exception doesn&apos;t match with any other catch block, the code inside catch(...) is executed. Note that the implicit type conversion doesn&apos;t happen when exceptions are caught. The character &apos;a&apos; is not automatically converted to int.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of exception handling in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To handle syntax errors"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To manage errors during compilation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To manage runtime errors"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To optimize code performance"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 93945,
+      "Explanation": "Exception handling in C++ is primarily used to manage runtime errors, allowing a program to handle errors gracefully.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used in C++ to throw an exception?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "throw"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "catch"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "try"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "handle"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 93946,
+      "Explanation": "The &apos;throw&apos; keyword is used to signal an exception in C++.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which block is used in C++ to test a block of code for errors?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "throw"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "catch"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "try"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "finally"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 93947,
+      "Explanation": "The &apos;try&apos; block is used to test a block of code for exceptions in C++.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if an exception is not caught in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The program will ignore the exception"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The program will terminate"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The program will automatically catch the exception"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The program will handle the exception using default handler"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 93948,
+      "Explanation": "If an exception is not caught, the program will terminate because C++ does not provide a default exception handling mechanism at runtime.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which section in C++ is used to handle the exception that was thrown?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "try"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "catch"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "throw"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "finally"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 93949,
+      "Explanation": "The &apos;catch&apos; block is used in C++ to handle exceptions that are thrown.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the code: try { throw 20; } catch (int e) { cout << e; }?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "No output"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "20"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Runtime error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 93950,
+      "Explanation": "The integer 20 is thrown as an exception, and the catch block captures and outputs it.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following can be used as a catch block parameter?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "All of the above"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "std::exception"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "custom user-defined exception"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 93951,
+      "Explanation": "In C++, catch blocks can take various types as parameters including basic data types, standard exceptions, and custom exceptions.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following keyword is used to define a destructor that might throw an exception?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "try"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "catch"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "throw"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "noexcept"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 93952,
+      "Explanation": "The noexcept specifier specifies whether a function may throw exceptions.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How many catch blocks can be associated with a single try block?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Multiple"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 93953,
+      "Explanation": "A try block can be followed by multiple catch blocks to handle different types of exceptions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which type of handler can be used to catch all types of exceptions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "catch(...)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "catch()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "catch(...) with int"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "catch(all)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 93954,
+      "Explanation": "The catch(...) syntax is used to catch any exception regardless of its type.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the following code do? try { // code } catch (baseExceptionType& e) { throw; }",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Re-throws the same exception caught"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Throws a new exception"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Catches and handles the exception"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compiles but does not throw any exception"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 93955,
+      "Explanation": "Using &apos;throw;&apos; in a catch block will re-throw the current active exception.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following captures a floating-point exception?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "catch(float)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "catch(double)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "catch(std::exception)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No standard C++ catch can capture a floating-point exception"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 93956,
+      "Explanation": "Floating-point exceptions aren&apos;t caught using C++ try-catch blocks as they are usually hardware-level exceptions.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which order should exceptions be caught?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Order does not matter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "From most generic to most specific"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "From most specific to most generic"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Alphabetical order"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 93957,
+      "Explanation": "In C++, exceptions should be caught from the most specific type to the most generic type.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What keyword is C++11 introduced to prevent exceptions from propagating from a function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "final"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "override"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "noexcept"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "const"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 93958,
+      "Explanation": "The &apos;noexcept&apos; keyword signals that a function is not expected to throw exceptions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which type of exception would you use for a failed dynamic_cast operation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "std::bad_cast"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "std::exception"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "std::bad_alloc"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "std::runtime_error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 93959,
+      "Explanation": "The std::bad_cast exception is used for a failed dynamic_cast operation.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if a throw statement is executed outside a try block?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The program will crash"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The program will terminate"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The exception will be ignored"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The program will throw a syntax error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 93960,
+      "Explanation": "If a throw statement is executed outside a try block, the program will terminate.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can a function catch an exception thrown by another function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "No"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only in derived classes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only in the main function"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 93961,
+      "Explanation": "Yes, a function can catch an exception thrown by another function, provided it contains the try-catch block.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the standard exception std::out_of_range represent?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An excessive memory allocation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A container index goes out of size"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Attempting to cast incompatible types"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An arithmetic overflow"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 93962,
+      "Explanation": "std::out_of_range is used to signal that a function has been passed an illegal parameter value outside of its valid range.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following exceptions cannot be caught with a catch block in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "std::bad_alloc"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "std::out_of_range"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "std::runtime_error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Hardware exceptions like divide by zero"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 93963,
+      "Explanation": "Hardware exceptions such as divide by zero cannot be caught by C++ catch blocks.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When should exceptions be used in a program?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "For normal control flow"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "For handling asynchronous events"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "For error handling"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "For input validation"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 93964,
+      "Explanation": "Exceptions are intended for error handling, not for directing normal program control flow.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What keyword in C++ is used to define a block that is executed regardless of exception handling?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "default"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "concurrent"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "finally"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of these"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 93965,
+      "Explanation": "C++ does not have a &apos;finally&apos; keyword as part of its exception handling mechanism.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a standard exception class in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "std::invalid_cast"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "std::io_exception"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "std::logic_error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "std::error_handling"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 93966,
+      "Explanation": "std::logic_error is a standard exception class in C++.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can destructors throw exceptions in C++ by default?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only if specified with throw()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only in derived classes"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 93967,
+      "Explanation": "Destructors should not throw exceptions because they are automatically called during stack unwinding which could lead to terminate being called.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function in the standard exception class is used to get the description of an exception?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "describe()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "what()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "cause()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "message()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 93968,
+      "Explanation": "The what() function is used in the standard exception class to return a C-style character string describing the general cause of the current error.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the base class for all standard exceptions in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "std::error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "std::runtime_error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "std::exception"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "std::logic_error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 93969,
+      "Explanation": "std::exception is the base class for all standard exceptions in C++.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "By default, what a program does when it detects an exception?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Continue running"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Results in the termination of the program"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Calls other functions of the program"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Removes the exception and tells the programmer about an exception"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 87712,
+      "Explanation": "By default, whenever a program detects an exception the program crashes as it does not know how to handle it hence results in the termination of the program.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the difference between error and exception?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Both are the same<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Errors can be handled at the run-time but the exceptions cannot <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Exceptions can be handled at the run-time but the errors cannot"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both can be handled during run-time"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 87713,
+      "Explanation": "Exceptions can be handled during run-time whereas errors cannot be because exceptions occur due to some unexpected conditions during run-time whereas about errors compiler is sure and tells about them during compile-time.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements are true about Catch handler? i) It must be placed immediately after try block T. ii) It can have multiple parameters. iii) There must be only one catch handler for every try block. iv) There can be multiple catch handler for a try block T. v) Generic catch handler can be placed anywhere after try block.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only i, iv, v"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only i, ii, iii"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only i, iv"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only i, ii"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1401,
+      "QuestionTypeId": 0,
+      "QuestionId": 87714,
+      "Explanation": "Only i, iv statements are true about Catch handler.",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

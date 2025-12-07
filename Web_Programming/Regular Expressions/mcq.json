@@ -1,0 +1,1506 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Which JavaScript method is typically used to check if an input value matches a specific pattern during form validation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "validate()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "test()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "match()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "exec()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96910,
+      "Explanation": "The test() method is used with regular expressions to check if a string conforms to a specified pattern, which is ideal for form validation purposes.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of this code?<br>let re = /hello/;<br>console.log(re.test(\"hello world\"));<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "\"hello\""
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "false"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "true"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "undefined"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 102363,
+      "Explanation": "The string contains \"hello\", so test() returns true",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which RegExp matches a string that starts with \"A\" and ends with \"Z\"?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "/A.Z/"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "/^A.*Z$/"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "/A.*Z/"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "/[A-Z]/"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 102364,
+      "Explanation": "&nbsp;^A.*Z$ matches strings that start with \"A\", end with \"Z\", and have any characters in between.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of this code?<br>let re = /\\d+/;<br>console.log(\"abc123\".match(re));<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "null"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[\"123\"]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[\"abc\"]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "[\"1\", \"2\", \"3\"]"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 102365,
+      "Explanation": "\\d+ matches one or more digits; match() returns [\"123\"].",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Consider the following statements</div><div>var text = 'testing: 1, 2, 3';&nbsp;&nbsp;&nbsp;&nbsp; //Sample text</div><div>var pattern = /\\d+/g&nbsp;&nbsp;&nbsp; //Matches all instances of one or more digits</div><div>In order to check if the pattern matches with the</div><div>string \u201ctext\u201d, the statement is</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "pattern.test(text)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "text==pattern"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "text.equals(pattern)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "text.test(pattern)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 64579,
+      "Explanation": "<span id=\"explanation64579\"><span id=\"explanation64579\">To match pattern with the string text statement is pattern.test(text).</span></span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&lt;script type='text/javascript'&gt;<br>var s = '9123456 or 80000?';<br>var pattern = /\\d{4}/;<br>var output = s.match(pattern);<br>document.write(output);<br>&lt;/script&gt;<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "9123"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "91234"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "80000"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 64618,
+      "Explanation": "<span id=\"explanation64618\">&nbsp; The match() method returns an array of match results.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The JavaScript ______class represents regular expressions, and both string and ______ define methods that use regular expressions",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RegExpObj"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "RegExpClass"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "StringExp"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "RegExp"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 69094,
+      "Explanation": "<span id=\"explanation69094\">RegExp : Regular Expressions</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&lt;script type=\"text/javascript\"&gt;<br>&nbsp;var s = \"9123456 or 800000\";<br>&nbsp;var pattern = /[0-9]{4}/;<br>&nbsp;var output = s.match(pattern);<br>&nbsp;document.write(output)<br>&lt;/script&gt;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "9123456"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "9123"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "true"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "4"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 82717,
+      "Explanation": "<span id=\"explanation82717\">match fuction returns first match found according to the pattern</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following string will match the RegEx defined as<br>var exp=/[\\\\d].[\\\\d\\\\d]{2}$/",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "223.123"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "22.123"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "223.12"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "2.2"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 86489,
+      "Explanation": "<span id=\"explanation86489\">As per the given RegEx it can have any number of digits before the decimal point. But it should have only 2 digits after the decimal point.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following regular expression syntax is used in JavaScript to match the beginning of a string?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "^"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "$"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "*"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "+"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96849,
+      "Explanation": "In JavaScript regular expressions, the caret (^) symbol is used to match the beginning of a string.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will the expression `/\\d+/` match in a JavaScript string?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "All alphabetic characters"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "All whitespace characters"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "One or more digits"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96850,
+      "Explanation": "The regular expression `/\\d+/` will match one or more digits in a string. The `\\d` is a digit character class and the `+` indicates one or more matches.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How would you create a regular expression to be case insensitive in JavaScript?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use the `i` flag"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use the `g` flag"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use the `^` operator"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use square brackets"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96851,
+      "Explanation": "To make a regular expression case insensitive in JavaScript, you use the `i` flag after the expression.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method would you use to replace occurrences of a pattern in a string using a regular expression in JavaScript?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "String.match()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "String.replace()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "String.search()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "String.split()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96852,
+      "Explanation": "The `replace()` method is used in JavaScript to replace occurrences of a pattern in a string using a regular expression.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the expression `/[^a-z]/` match in a string?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only uppercase letters"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Anything that is not a lowercase letter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only digits"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only special characters"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96853,
+      "Explanation": "The expression `/[^a-z]/` matches any characters that are not lowercase letters. The caret inside the brackets indicates negation.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you test if a string contains a number using a regular expression in JavaScript?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "`/.test()` executes the match"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "`/\\d/.test()` executes the match"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "`/.exec()` executes the match"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "`/\\D/.test()` executes the match"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96854,
+      "Explanation": "The regular expression `/\\d/.test(str)` will return true if the string `str` contains at least one digit.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following will find all occurrences of &#39;cat&#39; in a string, considering the case sensitivity?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "/cat/"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "/cat/i"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "/cat/g"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "/cat/m"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96855,
+      "Explanation": "The `g` flag enables the global search for all occurrences in the string, and it is case-sensitive without the `i` flag.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the expression `/\\bword\\b/` signify in a regular expression?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Matches &#39;word&#39; at word boundaries"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Matches &#39;word&#39; anywhere"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Matches beginning of the line with &#39;word&#39;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Matches end of the line with &#39;word&#39;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96856,
+      "Explanation": "The `\\b` asserts position at a word boundary, so `/\\bword\\b/` will match &#39;word&#39; only if it appears as a whole word.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the flag &#39;u&#39; signify when used in a JavaScript regular expression?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Matches global occurrences"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Enables case-sensitive matching"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Treats a pattern as a sequence of Unicode code points"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Ignores whitespace in the expression"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96857,
+      "Explanation": "The `u` flag in a JavaScript regular expression makes the expression treat the pattern as a sequence of Unicode code points.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method will you use to find the first occurrence of the pattern in a string using a JavaScript regex?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "String.search()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "String.split()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "String.match()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "String.replace()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96858,
+      "Explanation": "The `search()` method returns the index of the first occurrence of the specified regex pattern in a string.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which modifier in JavaScript regular expressions is used to perform a global search?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "g"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "i"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "m"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "s"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96859,
+      "Explanation": "The &#39;g&#39; modifier is used to perform a global search for all matches in the string, rather than stopping after the first match.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the &#39;i&#39; modifier do in a JavaScript regular expression?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Enables special character handling"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Performs case-insensitive matching"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Allows multiline search"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Matches any single character"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96860,
+      "Explanation": "The &#39;i&#39; modifier performs case-insensitive matching, meaning that it will match letters without regard to case.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To enable multiline mode in a JavaScript regular expression, which modifier should be used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "m"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "g"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "i"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "x"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96861,
+      "Explanation": "The &#39;m&#39; modifier is used to enable multiline mode, where the start (^) and end ($) assertions match the start and end of each line, not just the start and end of the string.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which JavaScript regular expression modifier allows matching across multiple lines?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "i"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "g"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "s"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "m"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96862,
+      "Explanation": "The&nbsp;<code>m</code>&nbsp;flag enables&nbsp;<strong>multiline mode</strong>, where&nbsp;<code>^</code>&nbsp;and&nbsp;<code>$</code>&nbsp;match the start and end of each line within a string, not just the start/end of the entire string.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What effect does combining the &#39;g&#39; and &#39;i&#39; modifiers have on a JavaScript regex?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It makes the regex ignore spaces"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It makes the regex sensitive to capitalization"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It performs a global, case-sensitive search"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It performs a global, case-insensitive search"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96863,
+      "Explanation": "Combining &#39;g&#39; and &#39;i&#39; modifiers makes the regex perform a global search for all matches, while ignoring case during matching.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In JavaScript regular expressions, which type of bracket is used to create a capturing group?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Square brackets []"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Curly brackets {}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Angle brackets &lt;&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Parentheses ()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96864,
+      "Explanation": "Parentheses () are used to create capturing groups in JavaScript regular expressions. Capturing groups can store the part of the regex match for later use.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of using non-capturing groups in JavaScript regular expressions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To increase the speed of the regex"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To group part of the regex without capturing"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To provide optional matching"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To replace matched text"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96865,
+      "Explanation": "Non-capturing groups, defined by (?:), allow you to group parts of the regex pattern without capturing the match.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which syntax is used to define non-capturing groups in JavaScript regular expressions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "(?:)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "[]"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96866,
+      "Explanation": "(?:) is the syntax used for non-capturing groups in JavaScript regular expressions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you specify a character set in JavaScript regular expressions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using parentheses ()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using square brackets []"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using curly brackets {}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using backslashes \\"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96867,
+      "Explanation": "Character sets in JavaScript regular expressions are specified using square brackets []. They allow you to match any one of the characters inside the brackets.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which syntax correctly defines a lookbehind assertion in JavaScript regular expressions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "(?&lt;=)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "(?&lt;! )"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "(=?)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "(?::)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96868,
+      "Explanation": "(?&lt;=) is the syntax for a positive lookbehind assertion in JavaScript regular expressions, allowing you to match a group before a particular substring.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which metacharacter in JavaScript regular expressions is used to match the beginning of a string?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "\\b"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "^"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "$"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "\\A"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96869,
+      "Explanation": "The caret symbol (^) is used in JavaScript regular expressions to denote the start of a string or line.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In JavaScript regular expressions, which metacharacter is used to denote a newline character?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "\\n"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "\\r"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "\\s"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96870,
+      "Explanation": "The &#39;\\n&#39; metacharacter is used to represent a newline character in JavaScript regular expressions.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which metacharacter can be used in JavaScript regex to match any alphanumeric character including underscore?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "\\d"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "\\w"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "\\s"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "\\a"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96871,
+      "Explanation": "The &#39;\\w&#39; metacharacter matches any alphanumeric character, akin to [a-zA-Z0-9_], including underscores.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the dot (.) metacharacter in JavaScript regular expressions represent?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Any non-digit character"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Start of a string"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "End of a string"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Any character except newlines"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96872,
+      "Explanation": "The dot (.) metacharacter matches any character except for newline characters in JavaScript regular expressions.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which metacharacter combination is used to match zero or more occurrences of the preceding element?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "?"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "+"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "*"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "#"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96873,
+      "Explanation": "The asterisk (*) metacharacter matches zero or more occurrences of the preceding element in JavaScript regular expressions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the quantifier &#39;?&#39; signify in a JavaScript regular expression?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Matches zero or more times"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Matches one or more times"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Matches zero or one time"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Matches exactly one time"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96874,
+      "Explanation": "The &#39;?&#39; quantifier matches the preceding element zero or one time, meaning the element is optional.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which quantifier should be used in JavaScript regular expressions to ensure a pattern is matched exactly 3 times?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "{3}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{3,}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "{,3}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "{3,5}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96875,
+      "Explanation": "The quantifier &#39;{3}&#39; specifies that the preceding element must match exactly 3 times.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In JavaScript regular expressions, what does the quantifier &#39;*&#39; match?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "One or more times"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Zero or more times"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Zero or one time"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Exactly once"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96876,
+      "Explanation": "The &#39;*&#39; quantifier matches the preceding element zero or more times, allowing it to be omitted or repeated.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How would you specify a pattern in JavaScript regular expressions to match a character at least 2 but not more than 4 times?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "{,4}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{2,4}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "{2,}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "{4,2}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96877,
+      "Explanation": "The quantifier &#39;{2,4}&#39; indicates that the preceding element must match at least 2 times but no more than 4 times.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which quantifier in JavaScript regular expressions specifies that a pattern should match at least once but there is no upper limit?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "++"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "*"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "+"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "{1,}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96878,
+      "Explanation": "The &#39;+&#39; quantifier matches the preceding element one or more times, enforcing at least one match but with no upper limit.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which property of the RegExp object in JavaScript returns the index at which a regular expression search starts?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "lastIndex"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "source"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "global"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ignoreCase"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96879,
+      "Explanation": "The &#39;lastIndex&#39; property specifies the index at which to start the next match. It is primarily used with the &#39;g&#39; modifier for global searches.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If you want to check whether a regex is using case-insensitive matching, which RegExp object property should you use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "global"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ignoreCase"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "multiline"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "sticky"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96880,
+      "Explanation": "The &#39;ignoreCase&#39; property is a boolean that indicates whether the &#39;i&#39; flag is used with a regex, meaning it will perform case-insensitive matching.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which RegExp object property contains the source text of a regular expression, excluding any flags?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "source"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "flags"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "lastIndex"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "multiline"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96881,
+      "Explanation": "The &#39;source&#39; property returns the text of the RegExp pattern as a string, ignoring any flags that were used when the regular expression was created.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which JavaScript RegExp method is used to test whether a pattern exists in a string?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "test()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "exec()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "match()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "search()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96882,
+      "Explanation": "The test() method is used in JavaScript regular expressions to find whether there is a match for the pattern in the input string or not. It returns a boolean value.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the exec() method return when a match is found in a string?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An array with the matched text and its capturing groups"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A boolean value indicating a match"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The index of the matched string"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The number of matches found"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96883,
+      "Explanation": "The exec() method returns an array containing the matched text along with any capturing groups. If no match is found, it returns null.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a key difference between the match() method used with strings and the exec() method used with RegExp objects?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "match() always returns a boolean"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "exec() can find multiple matches in a string using a loop"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "match() can only be used with global search"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "exec() modifies the original string"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96884,
+      "Explanation": "The exec() method can be used in a loop to find multiple matches in a string when a global regular expression is used, while match() returns all matches directly when used with a global flag.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in JavaScript is used to test whether a string matches a specified regular expression?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "match()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "test()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "replace()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "exec()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96885,
+      "Explanation": "The &#39;test()&#39; method is used to test whether a pattern exists in a specified string, and returns true or false depending on the outcome. It is used with regular expressions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the regular expression /^\\d{3}-\\d{2}-\\d{4}$/ validate in a JavaScript application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Email address"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Social Security number"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Phone number"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Date format"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96886,
+      "Explanation": "The regular expression /^\\d{3}-\\d{2}-\\d{4}$/ checks for a pattern matching a Social Security number, which consists of three digits, a dash, two more digits, another dash, and then four digits.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In JavaScript RegExp, what will the expression &#39;/a+/g&#39; match against the string &#39;caaabbcaaa&#39;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[&#39;a&#39;, &#39;a&#39;, &#39;a&#39;]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[&#39;aaa&#39;, &#39;aa&#39;, &#39;a&#39;]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[&#39;aaa&#39;, &#39;aaa&#39;]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "[&#39;c&#39;, &#39;b&#39;, &#39;c&#39;]"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96887,
+      "Explanation": "The &#39;/a+/g&#39; regular expression finds one or more &#39;a&#39;s globally. In the string &#39;caaabbcaaa&#39;, it matches &#39;aaa&#39; twice, producing the matches [&#39;aaa&#39;, &#39;aaa&#39;].",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which characters are used in a regular expression to denote the start and end of a word boundary in JavaScript?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "^ and $"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "\\b"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "\\W"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "\\s"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96888,
+      "Explanation": "In regular expressions, &#39;\\b&#39; denotes a word boundary. It can be used at the start or end of a word to match positions where a word character is not followed or preceded by another word character.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you make a regular expression pattern case-insensitive in JavaScript?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Add a &#39;c&#39; flag"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use \\i"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Add an &#39;i&#39; flag"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use toLowerCase()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 1435,
+      "QuestionTypeId": 0,
+      "QuestionId": 96889,
+      "Explanation": "In JavaScript regular expressions, the &#39;i&#39; flag is used to create a case-insensitive search. This means that the pattern will match letters in both upper and lower case.",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

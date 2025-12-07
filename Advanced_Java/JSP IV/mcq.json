@@ -1,0 +1,1326 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Which EL implicit object accesses cookies sent by the client?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "cookies"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "cookie"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "allcookies"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the given"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 102517,
+      "Explanation": "<span style=\"color:#0000ff;\">cookie allows access to cookies by name, e.g., ${cookie.username.value}.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you use a JSTL tag without declaring the taglib directive?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The tag is ignored "
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The page compiles but fails at runtime"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A compilation error occurs"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The tag works only in Tomcat"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 102518,
+      "Explanation": "<span style=\"color:#0000ff;\">Without the taglib directive, the JSP compiler doesn\u2019t recognize the tag prefix and throws an error.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In JSP, what does EL stand for and what is its primary use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Expression Logic; to handle arithmetic operations"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Element Language; for managing XML data"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Expression Language; to simplify access to data stored in JavaBeans components"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Enhanced Learning; for optimizing code execution"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 101690,
+      "Explanation": "EL stands for Expression Language in JSP. It is primarily used to simplify the access to data stored in JavaBeans components, implicit objects, and collections, improving JSP readability and maintainability.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a valid syntax for accessing a JavaBean property using EL in JSP?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "${bean.property}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@{bean.property}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "#{bean.property}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&amp;{bean.property}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 101691,
+      "Explanation": "The correct syntax for accessing a JavaBean property using EL in JSP is ${bean.property}. EL uses the ${} notation to evaluate expressions.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which implicit EL object would you use to access request parameters directly in JSP?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "session"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "param"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "request"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "paramValues"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 101692,
+      "Explanation": "The implicit object &#39;param&#39; is used in JSP EL to access request parameters. For example, ${param[&#39;paramName&#39;]} accesses the value of a request parameter in JSP.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will ${1 + 2 * 3} evaluate to in JSP Expression Language?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "7"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "9"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "5"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 101693,
+      "Explanation": "In JSP Expression Language, operations follow the standard operator precedence, where multiplication is performed before addition. So, 2 * 3 = 6, and then 1 + 6 = 7.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the &lt;c:forEach&gt; tag in JSTL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To execute a block of code conditionally"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To iterate over a collection of objects"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To include a resource"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To evaluate an expression"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 101694,
+      "Explanation": "The &lt;c:forEach&gt; tag in JSTL is used to iterate over a collection of objects, such as arrays, lists, or other iterable types.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which JSTL core library tag is used for URL encoding in JSP pages?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;c:url&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;c:redirect&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;c:import&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;c:out&gt;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 101695,
+      "Explanation": "The &lt;c:url&gt; tag is used to generate a URL with optional parameters and perform URL encoding with proper escaping of special characters.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which JSTL tag library would you use to perform SQL operations directly from JSP?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "fmt"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "sql"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "core"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "xml"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 101696,
+      "Explanation": "The &#39;sql&#39; tag library in JSTL provides tags to facilitate embedding SQL queries into JSP and executing them directly.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you declare the JSTL core library in a JSP page?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;%@ taglib uri=&quot;http://java.sun.com/jsp/jstl/core&quot; prefix=&quot;core&quot; %&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;%@ taglib uri=&quot;http://java.sun.com/jstl/core&quot; prefix=&quot;c&quot; %&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;%@ taglib uri=&quot;http://java.sun.com/jsp/jstl/core&quot; prefix=&quot;c&quot; %&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;%@ taglib uri=&quot;http://java.sun.com/jsp/jstl/core&quot; prefix=&quot;jstl&quot; %&gt;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 101697,
+      "Explanation": "To use the JSTL core library in a JSP page, you declare it with the uri &#39;http://java.sun.com/jsp/jstl/core&#39; and commonly use the prefix &#39;c&#39;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a correct step in creating a custom tag in JSP?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Define the tag in web.xml."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Create a Java class that implements the Tag interface."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Create a Java class that extends HttpServlet."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Override the main method in the tag class."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 101698,
+      "Explanation": "To create a custom tag in JSP, you need a Java class that implements the Tag interface to define its behavior.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the TLD file in JSP custom tags?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To specify the tag library descriptor for custom tags."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To compile the custom tag into a Java class."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To import libraries for the JSP page."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To define the style for custom tags."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 101699,
+      "Explanation": "The TLD (Tag Library Descriptor) file is used to specify the tag library descriptor, which describes the custom tags and their attributes.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following lifecycle methods are part of the Tag interface in JSP custom tag development?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "doGet(), doPost(), destroy()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "doTag(), setParent(), findAncestorWithClass()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "doStartTag(), doEndTag(), release()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "init(), service(), destroy()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 101700,
+      "Explanation": "The doStartTag(), doEndTag(), and release() methods are lifecycle methods in the Tag interface for JSP custom tag development.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a custom tag implementation, what is the role of the doStartTag() method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It processes the body content of the tag."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It is called once the tag processing is completed."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It executes when the start of the tag is encountered in the JSP."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is used to initialize any configuration parameters for the tag."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 101701,
+      "Explanation": "The doStartTag() method is called by the container when the start of the tag is encountered, and it controls whether the tag&#39;s body is evaluated.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you pass attributes to a custom tag from a JSP page?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using query strings in the URL on which JSP is accessed."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using the setAttribute() method in the custom tag class."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using tag attributes defined in the TLD file."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By accessing JavaBeans from within the custom tag class."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 101702,
+      "Explanation": "Attributes can be passed to a custom tag from a JSP page via tag attributes defined in the TLD file, which can then be accessed in the custom tag class.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the primary purpose of using JSTL in JSP?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To connect to databases directly"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To manage servlet lifecycle"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To avoid writing Java code in JSP pages"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To create custom tags"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 91245,
+      "Explanation": "JSTL (JavaServer Pages Standard Tag Library) provides core functionalities for JSP, including iteration, conditionals, and other common tasks, reducing the need to embed Java code directly in JSP pages.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In JSP Expression Language (EL), which syntax is used to access bean properties?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "${bean.property}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "$[bean.property]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "#[bean.property]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "#[bean:property]"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 91246,
+      "Explanation": "In JSP EL, the syntax to access bean properties is ${bean.property}, where &apos;bean&apos; is the name of the bean and &apos;property&apos; is the property you want to access.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which tag library must be imported to use JSTL core tags in a JSP page?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "http://java.sun.com/jsp/jstl/core"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "http://java.sun.com/jstl/core"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "http://javaserver.com/jsp/core"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "http://jstl.java.com/core"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 91247,
+      "Explanation": "The JSTL core library tag URI is &apos;http://java.sun.com/jsp/jstl/core&apos;, which must be imported to use core tags in a JSP page.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the function of the 'c:forEach' tag in JSTL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It formats dates according to locale"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It is used to iterate over collections"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It sets scoped variables"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It imports content from other files"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 91248,
+      "Explanation": "The &apos;c:forEach&apos; tag in JSTL is used to loop over collections such as arrays, lists, and maps.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods is essential to define when developing a custom tag handler in JSP?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "init()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "doTag()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "doProcess()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "execute()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 91249,
+      "Explanation": "<span id=\"explanation91249\" style=\"color:blue\">The method doTag() must be defined when developing a custom tag handler especially when developing simple tag API, as it dictates what the tag will do when it is encountered.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using EL, what does the variable 'pageScope' refer to?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Variable available only to the current page"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Variable shared across all sessions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Variable shared across all requests"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Variable available across entire web application"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 91250,
+      "Explanation": "The &apos;pageScope&apos; in EL refers to variables that are available only within the context of the current JSP page.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which attribute in the 'c:choose' JSTL tag specifies the alternative path if all conditions fail?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "c:otherwise"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "c:else"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "c:when"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "c:default"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 91251,
+      "Explanation": "<span id=\"explanation91251\" style=\"color:blue\">The &apos;c:otherwise&apos; tag in JSTL is used within the &apos;c:choose&apos; tag to define the path of execution when no &apos;c:when&apos; condition evaluates to true. It works like default case in switch case construct.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not an implicit object in JSP EL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "sessionScope"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "pageContext"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "applicationScope"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "serverInfo"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 91252,
+      "Explanation": "The &apos;serverInfo&apos; is not an implicit object in JSP EL. Implicit objects include &apos;sessionScope&apos;, &apos;pageContext&apos;, and &apos;applicationScope&apos;, among others.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the return type of the 'doEndTag()' method in a custom tag handler class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "boolean"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "String"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 91253,
+      "Explanation": "The &apos;doEndTag()&apos; method in a custom tag handler class returns an int, which can be either &apos;EVAL_PAGE&apos; or &apos;SKIP_PAGE&apos;.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you create a dynamic attribute in a custom tag in JSP?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using the 'dynamic-attributes' tag"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Implementing the 'DynamicAttributes' interface"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using 'setAttribute' method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using the 'attribute-dynamic' tag"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 91254,
+      "Explanation": "To create a dynamic attribute in a custom tag, you need to implement the &apos;DynamicAttributes&apos; interface in your tag handler class, allowing the tag to accept arbitrary attributes.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is stored at client side?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Cookies"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "URL rewriting"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SSL sessions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Hidden form fields"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 82809,
+      "Explanation": "<span id=\"explanation82809\">Cookies are stored at client side. Hence, in some cases&nbsp; clients can&nbsp; disable cookies.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following leads to high network traffic?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Cookies"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SSL sessions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "URL rewriting"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Hidden form fields"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 82811,
+      "Explanation": "<span id=\"explanation82811\">URL rewriting requires large data transfer to and from the server which leads to network traffic and access may be slow.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about session?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "All users have same session variable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "One session can save information about multiple clients."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Every request creates a separate session for any client"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Session timeout value can be configured in deployment descriptor."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 82813,
+      "Explanation": "<span id=\"explanation82813\">Default timeout value for session variable is 20 minutes. This can be configured in web.xml which is deployment descriptor</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "SessionIDs are stored in cookies.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "--"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "--"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 82815,
+      "Explanation": "<span id=\"explanation82815\">SessionIDs are by default stored in cookies, if cookies are disabled URLs and hidden form fields can be used in storing session ids.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can we destroy a session?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "session.falsify()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "session.invalidate()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "session.destroy()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "session.discontinue()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 82819,
+      "Explanation": "<span id=\"explanation82819\">We can destroy session by calling session.invalidate() to destroy the session.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which tag is used along with uri ,to specify the tiles framework's .tld file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;%@ taglib uri='/WEB-INF/tiles.tld' prefix='tiles'%&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;%@taglib url='/WEB-INF/tile.tld' prefix='tiles'%&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;%@taglibs uri='/WEB-INF/tiles.tld' prefix='tiles'%&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;%@taglib uri='/WEB-INF/tlds/tiles.tld' prefix='tiles'%&gt;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 82288,
+      "Explanation": "<form class=\"form-background\" id=\"Form1\" style=\"height: auto !important;\" action=\"/question-21-Struts\" method=\"post\" data-cke-pa-onsubmit=\"javascript:return WebForm_OnSubmit();\"><section class=\"middle-sec-2\" style=\"height: auto !important;\"><div class=\"container_16\"><div class=\"grid_11\" style=\"height: auto !important;\"><div class=\"pagedata-inner-1\" style=\"height: auto !important;\"><p>&lt;%@taglib uri=\"/WEB-INF/tiles.tld\" prefix=\"tiles\"%&gt; is used to specify the tiles framework file.<br></p></div></div></div></section></form>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the below is not a session tracking method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "History"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Cookies"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "URL rewriting"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SSL sessions"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 82807,
+      "Explanation": "<span id=\"explanation82807\">History is not a session tracking type. Cookies, URL rewriting, Hidden form fields and SSL sessions are session tracking methods.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "JSTL stands for ______.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "JavaServer Pages Standard Tag Library"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Java Standard Tag Library"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "JSP Tag Library"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 82799,
+      "Explanation": "<span id=\"explanation82799\">JSTL : Java Server Pages Standard Tag Library.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which out of the following group of JSTL libraries is used to format and display text, the date, the time, and numbers for internationalized Websites",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Core Tags"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Formatting tags"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SQL tags"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "JSTL Functions"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 83641,
+      "Explanation": "<span id=\"explanation83641\">Formatting group of tags provide tags like formatDate, formatNumber, setLocale to format and display text, the date, the time.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A custom tag handler class in JSP should implement ________ interface or it can also extend ____________ class.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "JSPSupport, Tag"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Tag, TagAttribute"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Tag, SimpleTagSupport"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "TagExt, TagBody"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 83642,
+      "Explanation": "<span id=\"explanation83642\">A tag handler class should implement Tag/IterationTag/ BodyTag interface or it can also extend&nbsp; TagSupport / BodyTagSupport /SimpleTagSupport class.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method creates fields in the HTML which are not shown to the user?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "URL writing"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "HTML Hidden field"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "HTML invisible field"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "User authentication"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 82821,
+      "Explanation": "<span id=\"explanation82821\">HTML Hidden field is the simplest way to pass information but it is not secure and a session can be hacked easily.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Name the element within the tag element that defines the tag class that implements the functionality of tag in tag library descriptor file.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "tag"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "tag-class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "tag-name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "tag-uri"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 82266,
+      "Explanation": "<span id=\"explanation82266\">tag-class element defines tag class that implements the functinality of tag.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the elements defined within the taglib element of taglib descriptor file are required.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "description"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "validator"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "tag"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "name"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 82254,
+      "Explanation": "taglib element needs existence of one or more tag elements.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following &nbsp;method are available with HttpServletResponse object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public void setStatus ( int statusCode )"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "public void getStatus ( int statusCode )"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "public void setStatus ( char status)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 82182,
+      "Explanation": "<div class=\"mui-container-fluid content\"><div class=\"mui-container\"><div class=\"mui-col-md-6 tutorial-content\">response can be used to set the status code using setStatus(int statuscode)&nbsp;</div></div></div>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in session tracking is used in a bit of information that is sent by a web server to a browser and which can later be read back from that browser by the server?&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "HttpSession"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "URL rewriting"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Cookies"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Hidden form fields"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 82158,
+      "Explanation": "<span id=\"explanation82158\">A <b>cookie</b> is a small piece of information that is persisted between the multiple client requests.<br>Using <strong>URL Rewriting</strong> for <strong>Session</strong> Management in Servlet If the client has disabled cookies in the browser then <strong>session</strong> management using cookie wont work. In that case <strong>URL Rewriting</strong> can be used as a backup. <strong>URL rewriting</strong> will always work</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "One of the following JSTL tag performs URL rewriting.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "link"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "url"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "aHref"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "import"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 80910,
+      "Explanation": "<span id=\"explanation80910\">JSTL tag &lt;url&gt; performs&nbsp;</span><span>formatting and rewriting URLs within your JSP pages.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;For every tag encounter, a new instance of Tag Class is created.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "--"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "--"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 80966,
+      "Explanation": "No,&nbsp; JSP create a pool of instances for each tag handler class used in your JSP pages. When a tag is encountered in a JSP page, the container retrieves an instance from the pool to process the tag.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "All EL implicit objects are internally",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Map"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "List"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Set"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 80968,
+      "Explanation": "<span id=\"explanation80968\">All EL implicit objects are internally&nbsp; Map.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about &lt;c:forEach &gt; tag?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The &lt;c:forEach &gt; exists as a good alternative to embedding a Java for, while, or do-while loop via a scriptlet."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The &lt;c:forEach &gt; is used to iterate over a collection in jsp."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both of the above"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2153,
+      "QuestionTypeId": 0,
+      "QuestionId": 67781,
+      "Explanation": "<span id=\"explanation67781\"><span id=\"explanation67781\">&lt;c:forEach&gt; tag can be used only in JSP to itearate over the collection.</span></span>",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

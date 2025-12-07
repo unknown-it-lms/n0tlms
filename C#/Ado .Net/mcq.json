@@ -1,0 +1,3366 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Which namespace is typically used to access SQL Server functionality using Microsoft.Data.SqlClient in ADO.NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "System.Data.SqlClient"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Microsoft.Data"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Microsoft.Data.SqlClient"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "System.Data"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95404,
+      "Explanation": "Microsoft.Data.SqlClient is the correct namespace used in ADO.NET applications to work with SQL Server databases in .NET Core and .NET Framework applications.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of SqlCommand object in Microsoft.Data.SqlClient?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To establish a connection to a database."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To execute SQL queries and commands."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To manage server configurations."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To log execution commands."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95405,
+      "Explanation": "SqlCommand is used to execute SQL queries and commands against a SQL Server database, including executing stored procedures and individual SQL statements.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to begin a new transaction with Microsoft.Data.SqlClient?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SqlConnection.BeginNewTransaction()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SqlCommand.StartTransaction()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SqlConnection.BeginTransaction()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SqlTransaction.Start()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95406,
+      "Explanation": "SqlConnection.BeginTransaction() is the correct method to initiate a database transaction in Microsoft.Data.SqlClient, allowing multiple operations to be executed atomically.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does Microsoft.Data.SqlClient handle connection pooling?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Connection pooling needs to be implemented manually."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It is always disabled by default."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is enabled by default to optimize performance."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is always activated post .NET Core 3.0."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95407,
+      "Explanation": "Connection pooling in Microsoft.Data.SqlClient is enabled by default, which helps to improve performance by reusing existing connections instead of opening new ones for each request.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following helps to avoid SQL Injection attacks when using Microsoft.Data.SqlClient?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using unfiltered string concatenation to form SQL queries."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using SqlCommand without parameters."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Utilizing stored procedures without validation."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using parameterized queries."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95408,
+      "Explanation": "Using parameterized queries is a recommended practice to protect against SQL Injection attacks as it ensures that user input is treated as data only, not executable code.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary object used in ADO.NET to connect to a database using connected architecture?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DataReader"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DataAdapter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SqlConnection"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DataSet"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95409,
+      "Explanation": "In ADO.NET&apos;s connected architecture, the SqlConnection object is used to establish a connection to the database.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to open a database connection using the SqlConnection object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Open()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Connect()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Start()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Begin()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95410,
+      "Explanation": "The Open() method of the SqlConnection object is used to open a connection to the database.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In connected architecture, which object is primarily used to execute a command against a database?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SqlCommand"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SqlDataReader"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SqlParameter"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SqlDataAdapter"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95411,
+      "Explanation": "The SqlCommand object is used to execute SQL commands and stored procedures against a database.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method of SqlCommand is used to execute a query that returns a single value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ExecuteDataSet"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ExecuteNonQuery"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ExecuteReader"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ExecuteScalar"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95412,
+      "Explanation": "The ExecuteScalar method is used to execute a query that returns a single value, for example, an aggregate function result like COUNT.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you ensure a database connection is properly closed after its usage in connected architecture?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using the connection in a try-catch block"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By calling the Dispose() method"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using a using statement"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By setting the connection object to null"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95413,
+      "Explanation": "Using a using statement ensures that the connection object&apos;s Dispose() method is called, which closes the connection automatically.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which SqlCommand method is used for executing a command that affects rows but returns no results?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ExecuteReader"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ExecuteNonQuery"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ExecuteScalar"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ExecuteXmlReader"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95414,
+      "Explanation": "The ExecuteNonQuery method is used to execute SQL commands like INSERT, UPDATE, DELETE, which do not return any data.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the role of the SqlDataReader in the connected architecture?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To update the database"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To open a connection to the database"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To read data in a forward-only manner"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To manage database transactions"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95415,
+      "Explanation": "SqlDataReader is used for reading data from a database in a forward-only, read-only manner, providing fast access to data.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method of SqlCommand is used to execute commands that return rows of data in a connected architecture?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ExecuteScalar"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ExecuteDataTable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ExecuteReader"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ExecuteXmlReader"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95416,
+      "Explanation": "The ExecuteReader method is used with SqlCommand to execute SQL queries that return result sets, like SELECT statements.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which property of SqlDataReader indicates if it has any rows?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RowsAvailable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "HasRows"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "RowCount"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "IsNotEmpty"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95417,
+      "Explanation": "The HasRows property of SqlDataReader indicates whether the SqlDataReader contains one or more rows.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you do not explicitly close a SqlDataReader?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It automatically closes when the SqlCommand object is disposed"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The associated SqlConnection remains open"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The associated transaction is committed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The associated SqlConnection is closed"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95418,
+      "Explanation": "If you do not explicitly close a SqlDataReader, the associated SqlConnection remains open until the connection is closed or disposed.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which object in ADO.NET's disconnected architecture is used to hold multiple DataTable objects?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DataRow"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DataSet"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DataAdapter"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DataReader"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95419,
+      "Explanation": "A DataSet can hold multiple DataTable objects, making it suitable for maintaining a collection of tables.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In disconnected architecture, which method of the DataAdapter is used to fill data into a DataSet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Update()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Fetch()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Fill()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Load()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95420,
+      "Explanation": "The Fill() method of the DataAdapter is used to populate data from a data source into a DataSet.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the role of the DataAdapter in ADO.NET's disconnected model?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To execute SQL commands directly"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To establish a connection with the data source"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To provide a bridge between a DataSet and a data source for retrieving and saving data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To maintain a live connection to the database"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95421,
+      "Explanation": "The DataAdapter acts as a bridge that retrieves and saves data between a DataSet and the data source without maintaining a continuous connection.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which event is raised when a DataRow is successfully updated in a DataTable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RowUpdating"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "RowUpdated"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "RowChanged"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "RowDeleted"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95422,
+      "Explanation": "The RowUpdated event is triggered after a DataRow in a DataTable is successfully updated.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Where does the DataSet store its data in ADO.NET's disconnected architecture?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "On the server"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "In memory"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "In a temporary file"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "In a local database"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95423,
+      "Explanation": "In the disconnected architecture, the DataSet stores its data in memory, which allows for data manipulation offline.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to accept all changes made to a DataSet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CommitChanges()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "AcceptChanges()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SaveChanges()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ApplyUpdates()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95424,
+      "Explanation": "The AcceptChanges() method commits all the changes made to the DataSet since it was loaded or since AcceptChanges() was last called.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method of the DataAdapter is used to reconcile changes in the DataSet back to the database?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Update()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Insert()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Delete()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Commit()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95425,
+      "Explanation": "The Update() method in the DataAdapter is used to apply changes in the DataSet to the respective database.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens when the RejectChanges() method is called on a DataSet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Commits all changes to the database"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Reverts all changes since the last AcceptChanges()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Deletes all rows in the DataSet"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Saves changes locally"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95426,
+      "Explanation": "RejectChanges() reverts all changes made to the DataSet since the last AcceptChanges(), undoing any modifications.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does the DataSet enforce the integrity of data in its tables?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By constantly checking data with the database"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Through constraints and relationships"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using server-side triggers"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By caching data locally"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95427,
+      "Explanation": "The DataSet enforces data integrity through constraints (such as foreign keys) and relationships defined within its tables.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which namespace must be included to work with ADO.NET's disconnected classes like DataSet and DataAdapter?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "System.IO"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "System.Data.SqlClient"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "System.Data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "System.Net"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95428,
+      "Explanation": "The System.Data namespace is necessary to utilize ADO.NET&apos;s disconnected classes such as DataSet, DataAdapter, and others.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to open a connection to a database using a Connection object in ADO.NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Open()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Connect()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Start()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "BeginConnection()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95429,
+      "Explanation": "The Open() method is used to open a connection to a database using a Connection object in ADO.NET. This prepares the connection for executing commands.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What property of the Connection object specifies the string used to open a database?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "OpenString"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ConnectString"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ConnectionString"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DatabaseString"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95430,
+      "Explanation": "The ConnectionString property of the Connection object specifies the string used to open a database. It includes database name, server, user ID, password, etc.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you call the Close() method on an ADO.NET Connection object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The connection is destroyed"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The connection resources are released but the object can be reopened"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The connection object is removed from memory"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The database itself is shut down"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95431,
+      "Explanation": "Calling the Close() method releases the connection resources, but the object can be reopened. It does not destroy the object or the database.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can a Connection object be shared among multiple threads in ADO.NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, it can be shared safely"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, it must be recreated for each thread"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, but only with appropriate synchronization"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No, it raises an exception when shared"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95432,
+      "Explanation": "A Connection object can be shared among multiple threads, but it must be appropriately synchronized to avoid conflicts.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which event is raised by the Connection object when a connection is successfully opened?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Opening"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Opened"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Connected"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Started"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95433,
+      "Explanation": "The Opened event is raised by the Connection object after the connection to the database is successfully opened.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following types of connections does ADO.NET support?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "File and Network"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Local and Remote"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Managed and Unmanaged"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SQL and OLE DB"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95434,
+      "Explanation": "ADO.NET supports connections using SQL and OLE DB data providers.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In ADO.NET, what will happen if you try to open an already open Connection object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will throw an InvalidOperationException"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It will close and reopen the connection"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will keep the connection open with no change"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It will open another instance of the connection"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95435,
+      "Explanation": "Attempting to open an already open Connection object will throw an InvalidOperationException, indicating the connection state is invalid for opening.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default state of a Connection object when it is first created?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Open"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Closed"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Pending"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Initialized"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95436,
+      "Explanation": "When a Connection object is first created in ADO.NET, its default state is &apos;Closed&apos;. You must call the Open() method to open the connection.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a type of Command in ADO.NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Text"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Scalar"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "StoredProcedure"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "TableDirect"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95437,
+      "Explanation": "Scalar is a type of operation that a command can perform, but not a type of command itself. The types of commands are Text, StoredProcedure, and TableDirect.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What method of the Command object is used to execute a query that returns a single value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ExecuteNonQuery"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ExecuteScalar"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ExecuteReader"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ExecuteXmlReader"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95438,
+      "Explanation": "ExecuteScalar method is used to execute queries that return a single value from the database, such as an aggregate function.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To perform a database operations without returning any data, which method of Command is used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ExecuteDataSet"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ExecuteScalar"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ExecuteNonQuery"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ExecuteXmlReader"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95439,
+      "Explanation": "ExecuteNonQuery is used to execute the Command for operations that do not produce any result set, like INSERT, UPDATE, DELETE.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which property of Command object specifies how the CommandText property is interpreted?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CommandType"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "CommandTimeout"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CommandText"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Connection"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95440,
+      "Explanation": "CommandType property specifies how the CommandText property is interpreted, such as if it is a Text, StoredProcedure, or TableDirect.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the CommandTimeout property of a Command object represent?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The time to wait for a command to execute before terminating the attempt"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The time to wait for a connection to open"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The time to wait for data reading"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The time to wait for packet submission"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95441,
+      "Explanation": "CommandTimeout sets the wait time before terminating the attempt to execute a command and generating an error.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method of the Command object returns a DataReader object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ExecuteNonQuery"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ExecuteReader"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ExecuteScalar"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "OpenDataReader"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95442,
+      "Explanation": "ExecuteReader method is used to execute a command that returns rows of data, typically through a DataReader object.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of command should be specified for CommandType when you want to execute a plain SQL statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "StoredProcedure"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Text"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "TableDirect"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "PlainSQL"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95443,
+      "Explanation": "When you want to execute a plain SQL statement, you set the CommandType to Text.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which option does NOT correctly describe the role of the Command object in ADO.NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Sending SQL queries to a database"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Retrieving metadata from a database"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Returning data in the form of a DataRow"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Executing stored procedures"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95444,
+      "Explanation": "The Command object does not directly return data in the form of a DataRow. Instead, it executes queries, and data retrieval is typically handled by DataReader or DataAdapter.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a primary feature of the SqlDataReader class in ADO.NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It retrieves data in a non-sequential manner."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It allows reading of data forward-only and read-only."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It supports disconnected data access."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It enables data update directly to the database."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95445,
+      "Explanation": "The SqlDataReader provides fast, forward-only, read-only access to query results from a database.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method must be called to execute a SqlDataReader?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ExecuteReader()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ExecuteNonQuery()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ExecuteScalar()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ExecuteXmlReader()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95446,
+      "Explanation": "ExecuteReader() is the method used to execute a command that returns a SqlDataReader instance.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why is it important to close a SqlDataReader after its use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To free web server resources."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To end the transaction."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To free up the connection for other operations."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To commit any changes made."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95447,
+      "Explanation": "Closing a SqlDataReader releases the database connection so it can be used for other operations, especially important in connection pooling.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you retrieve the value of the third column in the current row of a SqlDataReader?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "reader[2]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "reader[3]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "reader.GetValue(2)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "reader.GetString(3)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95448,
+      "Explanation": "SqlDataReader is zero-based, so reader[2] accesses the third column.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What method is used to advance the SqlDataReader to the next record?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "MoveNext()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ReadNext()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Next()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Read()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95449,
+      "Explanation": "Read() advances the SqlDataReader to the next record, returning true if there are more rows.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is TRUE about the DataReader object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It caches all the rows from the server."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It's used for both read and write operations."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It provides connected data access."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It automatically closes the database connection when no longer needed."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95450,
+      "Explanation": "The DataReader object provides connected, forward-only data access, primarily aimed at reading large amounts of data efficiently.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What should you do before closing the connection with a DataReader?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Set the DataReader to null."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Check the IsClosed property."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Ensure that Close() has been called on the DataReader."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Dispose the database connection."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95451,
+      "Explanation": "Before closing the connection, ensure that the DataReader has been properly closed with Close() to release any resources.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which property of the DataReader object provides the number of fields in the current data record?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "FieldCount"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "RecordsAffected"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "HasRows"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Depth"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95452,
+      "Explanation": "FieldCount gives the number of columns in the current row of the SqlDataReader.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary role of a DataAdapter in ADO.NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To act as a bridge between a DataSet and a DataReader."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To act as a conduit between a DataSet and a database."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To execute SQL commands directly from a stored procedure."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To represent in-memory cache of data."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95453,
+      "Explanation": "The primary function of a DataAdapter is to serve as a bridge between a DataSet and a data source for retrieving and saving data.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method of DataAdapter is used to fill a DataSet with data from a data source?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Fetch"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Load"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Fill"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Import"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95454,
+      "Explanation": "The Fill method of the DataAdapter populates a DataSet with the results of a query from a data source.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens when you call the Update method on a DataAdapter?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It reloads all data from the bound data source into the DataSet."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It sends changes made in the DataSet back to the data source."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It clones the current DataSet."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It clears all changes made to the DataSet."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95455,
+      "Explanation": "The Update method of a DataAdapter sends changes made in the DataSet back to the connected data source, allowing for synchronization.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following command objects does a DataAdapter require to update data?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SelectCommand only"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "UpdateCommand only"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "InsertCommand, UpdateCommand, or DeleteCommand"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ExecuteCommand only"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95456,
+      "Explanation": "A DataAdapter requires InsertCommand, UpdateCommand, and DeleteCommand to appropriately apply changes from the DataSet to the data source.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a DataAdapter is used, what type of architecture does it generally implement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Two-tier object-based programming"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Thin-client architecture"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Disconnected architecture"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Client-server architecture"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95457,
+      "Explanation": "A DataAdapter typically supports a disconnected architecture by allowing the DataSet to function independently from the data source once the data has been loaded.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods are used to retrieve schema information with a DataAdapter?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "GenerateSchema"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "GetSchemaTable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "FillSchema"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "LoadSchema"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95458,
+      "Explanation": "The FillSchema method is used with a DataAdapter to retrieve schema information and configure the DataTable schema to match the data source.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which event is fired by a DataAdapter immediately before each row is updated?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RowUpdating"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "RowUpdated"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "OnRowUpdated"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "BeforeRowUpdate"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95459,
+      "Explanation": "The RowUpdating event occurs before a data row is sent to the data source, allowing for event handling or custom logic prior to updating.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the benefit of using a DataAdapter with DataSets over direct data communication?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Increased memory consumption"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Real-time data update with no latency"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Ability to work with data in a disconnected mode"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Faster data retrieval from the data source"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95460,
+      "Explanation": "A significant benefit of using DataAdapters with DataSets is the ability to handle and process data while disconnected from the actual data source, which helps in offline data access scenarios.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a DataSet in ADO.NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A component that maintains connection with the data source."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A collection of data tables that can hold data from multiple tables and relations."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A specialized collection for storing data relationships."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A method to execute SQL commands directly on the database."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95461,
+      "Explanation": "A DataSet in ADO.NET is an in-memory representation of data that can contain multiple data tables and relationships among them.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods is used to fill a DataSet with data in ADO.NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ExecuteQuery"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Fill"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "AddRows"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Load"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95462,
+      "Explanation": "The Fill method of the DataAdapter is used to populate a DataSet with data from a data source.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which object in ADO.NET is primarily used to retrieve data into a DataSet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DataReader"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Command"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DataAdapter"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Connection"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95463,
+      "Explanation": "DataAdapter is responsible for retrieving data from a data source and filling it into a DataSet.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you create a relationship between two DataTables in a DataSet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using the DataTable.Merge method"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By defining a DataRelation object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using SQL queries only"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By linking DataTables with primary keys"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95464,
+      "Explanation": "A DataRelation object is used to define a relationship between two DataTables within a DataSet.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method would you use to persist a DataSet to an XML file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "WriteXmlSchema"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Save"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "WriteXml"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ExportXml"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95465,
+      "Explanation": "The WriteXml method is used to write the contents of a DataSet into an XML file.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default index of the first row in a DataTable within a DataSet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Depends on the DataSet"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Null"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95466,
+      "Explanation": "In .NET, collections are zero-indexed, so the default index for the first row in a DataTable is 0.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you access a specific DataTable in a DataSet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DataList.Tables[\"TableName\"]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DataSet.Tables[\"TableName\"]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DataSet.Tables[TableIndex].GetTable(\"TableName\")"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DataSet.GetTable[\"TableName\"]"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95467,
+      "Explanation": "The Tables collection of a DataSet can be accessed by specifying the name or index of the table within DataSet.Tables.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to remove a DataTable from a DataSet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Delete"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Clear"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Remove"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Drop"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95468,
+      "Explanation": "The Remove method is used to delete a DataTable from the Tables collection of a DataSet.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of a DataTable in ADO.NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To represent a collection of database connections"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To store data in a tabular format"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To manage transactions across multiple databases"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To generate SQL queries automatically"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95469,
+      "Explanation": "A DataTable in ADO.NET is used to store data in a tabular format with rows and columns, similar to a database table.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to add a new row to a DataTable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "AddNewRow()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Insert()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Add()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "NewRow() and then Rows.Add()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95470,
+      "Explanation": "To add a new row to a DataTable, you first use the NewRow() method to create a new DataRow, and then add it to the DataTable using the Rows.Add() method.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you create a DataTable with specific columns in ADO.NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use the DataTable constructor with column names"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Define columns using the Columns property"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Columns are automatically created based on data type"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use SQL query to define columns"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95471,
+      "Explanation": "In ADO.NET, you define specific columns in a DataTable using the Columns property by adding DataColumn objects to it.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which property of DataTable allows you to access the collection of DataRows in it?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Elements"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Cells"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Rows"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Entries"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95472,
+      "Explanation": "The Rows property of a DataTable provides access to the collection of DataRow objects contained in the DataTable.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you create a primary key in a DataTable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Set the PrimaryKey property to an array of DataColumn objects"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use a SQL command to define a primary key"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Set the Primary property to a single DataColumn"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Primary keys cannot be set in a DataTable"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95473,
+      "Explanation": "A primary key is set by assigning an array of DataColumn objects to the PrimaryKey property of the DataTable.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you attempt to add a duplicate primary key value to a DataTable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The duplicate value is ignored"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An exception is thrown"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The first occurrence is overwritten"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The DataTable automatically adjusts the value to be unique"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95474,
+      "Explanation": "If a duplicate primary key value is added to a DataTable, an exception is thrown to enforce the uniqueness constraint of primary keys.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method of the DataTable class is used to get all changes made to it since it was loaded or since AcceptChanges was last called?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "GetChanges()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FetchUpdates()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "RetrieveModifications()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "LoadChanges()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95475,
+      "Explanation": "The GetChanges() method returns a copy of the DataTable that contains all changes made to it since it was loaded or since AcceptChanges was last called.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which event of the DataTable is fired when a DataRow is changed?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RowUpdated"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "RowRowChanged"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "RowDataBound"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "RowChanged"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95476,
+      "Explanation": "The RowChanged event is fired whenever a change is made to a DataRow object in a DataTable.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary advantage of using asynchronous commands in ADO.NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They provide more secure data storage."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They allow the application to continue executing other tasks while waiting for the command to complete."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They reduce memory usage of the application."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They ensure that command execution errors do not occur."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95477,
+      "Explanation": "Asynchronous commands in ADO.NET allow the application to perform other operations while waiting for the command to complete, improving the efficiency and responsiveness of the application.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method would you use to begin executing a SQL command asynchronously using ADO.NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ExecuteReader"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ExecuteNonQuery"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "BeginExecuteReader"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "AsyncExecuteReader"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95478,
+      "Explanation": "The BeginExecuteReader method is used to start executing a SQL command asynchronously. It is suitable for commands that return single or multiple result sets.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you handle the completion of an asynchronous operation in ADO.NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By calling EndExecute method in the callback method."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using Task.Wait method."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By polling the status of the operation."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By synchronizing asynchronously using Semaphores."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95479,
+      "Explanation": "In ADO.NET, the EndExecute method is used within the callback method to complete an asynchronous operation and retrieve the results of the command.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true about ADO.NET's asynchronous methods?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They do not support transactions."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They always run as background tasks."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They require explicit ending using End methods."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They are available in all .NET frameworks."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95480,
+      "Explanation": "Asynchronous methods in ADO.NET require explicit completion by invoking the corresponding End methods such as EndExecuteReader, EndExecuteNonQuery, etc., to obtain the results or confirm the completion of the asynchronous operation.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which ADO.NET class is often used for asynchronous command execution to read data?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DataReader"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DataTable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DataSet"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SqlDataReader"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95481,
+      "Explanation": "SqlDataReader is commonly used in conjunction with asynchronous command execution to read data from databases in a forward-only, read-only manner.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of using asynchronous connections in ADO.NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To increase the speed of data retrieval."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To prevent blocking the main application thread."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To automatically manage database connections."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To ensure data consistency and integrity."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95482,
+      "Explanation": "Asynchronous connections in ADO.NET are primarily used to prevent blocking of the main application thread, allowing other operations to continue while waiting for a database operation to complete.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to open a connection asynchronously in ADO.NET using C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "OpenAsync()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "OpenConnectionAsync()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "BeginOpen()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "AsyncOpen()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95483,
+      "Explanation": "The OpenAsync() method is used to open a database connection asynchronously in ADO.NET with C#.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using asynchronous ADO.NET operations, which keyword is commonly used in conjunction?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "async"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "await"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "callback"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "thread"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95484,
+      "Explanation": "The &apos;await&apos; keyword is used in conjunction with asynchronous operations to pause the execution of the method until the awaited task is complete, allowing for non-blocking operations.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which class in ADO.NET supports asynchronous execution of SQL commands?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SqlCommand"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SqlDataAdapter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DataSet"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DataTable"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95485,
+      "Explanation": "The SqlCommand class in ADO.NET supports asynchronous execution of SQL commands, allowing for operations like ExecuteNonQueryAsync, ExecuteReaderAsync, and ExecuteScalarAsync.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a key benefit of using asynchronous operations in ADO.NET besides non-blocking UI?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Simplified connection management."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Reduction in server load."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "More efficient use of resources."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Increased security."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 95486,
+      "Explanation": "Besides a non-blocking user interface, asynchronous operations in ADO.NET allow for more efficient use of resources by not tying up threads unnecessarily, thus improving overall application performance.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To use the .NET Framework Data Provider for SQL Server, an application must reference the<br>_____________ namespace.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "System.Data.Client"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "System.Data.SqlClient"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "System.Data.Sql"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 81823,
+      "Explanation": "To use the .NET Framework Data Provider for SQL Server, which enables applications to interact with SQL Server databases, you must reference the System.Data.SqlClient namespace in your application. This namespace contains classes such as SqlConnection, SqlCommand, SqlDataReader, SqlDataAdapter, etc., which are essential for connecting to and working with SQL Server databases.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The DataSet object is a _________ storage.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "connected"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "disconnected"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "polling"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 81827,
+      "Explanation": "Disconnected: A DataSet object in ADO.NET is disconnected, meaning it is independent of the data source once data is loaded into it. It can store data retrieved from a database, XML file, or other sources temporarily in-memory, allowing manipulation and navigation without a constant connection to the data source.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How instantiate the DataReader ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "by calling a Command object's ExecuteReader."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "by calling a Query object's ExecuteQuery."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "by calling a new()."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 81829,
+      "Explanation": "You create a Command object (SqlCommand, OleDbCommand, etc.), set its CommandText property to a SQL query, and then call ExecuteReader() method on the Command object. This method returns a DataReader object that allows you to iterate over the result set returned by the query.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If we are not returning any records from the database which method is used",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ExecuteReader ()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ExecuteScalar ()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ExecuteScalar ()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ExecuteNonQuery()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 81831,
+      "Explanation": "<ul><li><p>ExecuteNonQuery(): This method is used to execute SQL statements (such as INSERT, UPDATE, DELETE) or stored procedures that do not return any data. It returns the number of rows affected by the command. It is typically used when you want to perform database operations that do not require retrieving data.<tr class=\"cls81833\" style=\"display:none\"></tr></p></li></ul>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does ADO stand for?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Advanced Data Object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Active Data Objects"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ActiveX Directory Objects"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ActiveX Data Objects"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 81833,
+      "Explanation": "ADO stands for ActiveX Data Objects. It is a Microsoft technology that allows programmers to access and manipulate data from various sources in a uniform and efficient manner. ADO provides a set of COM-based objects and interfaces for accessing data, performing operations like querying databases, executing commands, and managing data relationships.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "You need to get access to a database that is stored on a server running Microsoft Access 2002. Which data adapter would you use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SqlDataAdapter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "OleDbDataAdapter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "OleDataAdapter"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ODBCDataAdapter"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 70433,
+      "Explanation": "When connecting to a Microsoft Access database (.mdb or .accdb file), you typically use the OleDbDataAdapter in ADO.NET. This adapter is specifically designed to work with OLE DB data sources, which include Microsoft Access databases.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a transaction?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A banking term."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A concept used to describe a step in the business process."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A combination of DML steps that must succeed or the data is returned to its initial state."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A combination of DDL steps that must succeed or the data is returned to its initial state."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 70438,
+      "Explanation": "Transaction refers to a logical unit of work that is performed as a single operation. It consists of one or more database operations, typically Data Manipulation Language (DML) statements like INSERT, UPDATE, DELETE, etc.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "On what object is the transaction in ADO.NET focused on?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The command object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The DataSet object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The connection object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The DataAdapter object"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 70443,
+      "Explanation": "In ADO.NET, you control transactions with the Connection object. You can initiate a local transaction with the BeginTransaction method.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following object types allow you to view read-only, forward-only data?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DataAdapter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DataSet"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DataReader"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DataCommand"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 70444,
+      "Explanation": "C# DataReader class represents a data reader. The DataReader provides a read-only, forward-only mechanism to access data via ADO.NET from a datasource.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What ASP.NET object encapsulates the state of the client and the browser?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The Session object."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The Application object."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The Response object."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The Request object."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 70451,
+      "Explanation": "In ASP.NET, the Request object encapsulates the state of the client and the browser. It represents the HTTP request made by the client to the server and provides access to various client-side information such as form data, cookies, query strings, and browser information. The Request object allows the server-side code to retrieve and process data sent by the client in an HTTP request.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which code segment will populate a DataSet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "sqlDataProvider.Fill (dsUsers1);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "sqlDataProvider.Fill (dataAdapter1);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "sqlDataAdapter.Fill (dsUsers1);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "sqlDataAdapter.Fill (dataAdapter1);"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 70384,
+      "Explanation": "<span id=\"explanation70384\">Use the Fill method of SqlDataAdapter object to fill the DataSet with the result of query string.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct way of creating a DataTable in a DataSet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DataTable dtOrders = new DataTable(\"Orders\");"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DataTable dtOrders = DataTable(\"Orders\");"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DataTable dtOrders;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ds.Tables.Add(\"Orders\");"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 70390,
+      "Explanation": "ds.Tables.Add(\"Orders\");<ul><li>This statement adds a new DataTable object named \"Orders\" to an existing DataSet (ds). The Tables property of DataSet represents a collection of DataTable objects, and the Add method is used to add a new table to this collection with the specified name.</li></ul>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What are the core components of the .Net framework data provider?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DataAdapter and DataReader"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Connection and Command"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DataAdapter, Connection, and Command"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<div>DataAdapter, DataReader, Connection, and Command</div>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 70515,
+      "Explanation": "DataAdapter, DataReader, Connection, and Command <br>\u200b\u200b\u200b\u200b\u200b\u200b\u200bThese components form the foundational tools for interacting with databases and other data sources in .NET applications, enabling data retrieval, manipulation, and update operations. They provide a flexible and efficient means to work with data from various sources within the .NET Framework ecosystem.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Which of the following types of cursors is available with ADO.NET DataReader object?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<div>server-side, forward-only, and read-write cursor</div>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<div>server-side, forward-only, and read-only cursor</div>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<div>server-side, backward-only, and read-write cursor</div>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<div>server-side, bidirectional, and read-only cursor</div>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 70516,
+      "Explanation": "<p>In ADO.NET, the DataReader object typically supports a forward-only, read-only cursor type when working with data. Here&apos;s what each option represents:</p><ul><li><p>Server-side: Refers to where the cursor is positioned and how data is fetched. Server-side means that the data is fetched from the server as needed, rather than being completely loaded into memory on the client side.</p></li><li><p>Forward-only: Indicates that the cursor can only move forward through the data once. It cannot move backwards or re-read rows.</p></li><li><p>Read-only: Specifies that the cursor does not support updating or modifying data. It is used solely for reading data.</p></li></ul>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method of DataAdapter is used to load the DataSet with data?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Load()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Fill()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DataBind()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Update()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 70528,
+      "Explanation": "<p>In ADO.NET, the Fill() method of the DataAdapter class is used to populate a DataSet or DataTable with data from the data source. Here&apos;s how it works:</p><ul><li>DataAdapter.Fill(): This method retrieves data from the data source specified by the DataAdapter (through its associated Command object) and fills the specified DataSet (or DataTable) with the retrieved data. It can populate multiple tables within a DataSet if the query returns multiple result sets.</li></ul>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following method is used to retrieve a single value from database.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ExecuteNonQuery"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ExecuteScalar"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ExecuteReader"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ExecuteSingle"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 70512,
+      "Explanation": "The ExecuteScalar() in C# SqlCommand Object is using for retrieve a single value from Database after the execution of the SQL Statement. The ExecuteScalar() executes SQL statements as well as Stored Procedure and returned a scalar value on first column of first row in the returned Result Set.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which class is used to execute the SQL statement or stored procedure against a data source.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Data adapter class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "connection class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Dataset class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Command class"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 70487,
+      "Explanation": "In ADO.NET, the Command class is used to execute SQL statements or stored procedures against a data source. It represents a command to execute against a database and provides methods and properties to set the command text (SQL query or stored procedure name), parameters, and execute the command to retrieve data, perform updates, or execute other database operations.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is used to fetch values from the data source to the DataSet and also update the data source with the values in the DataSet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DataReader"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DataAdapter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DataManager"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 70489,
+      "Explanation": "The DataAdapter class in ADO.NET is used to fetch data from a data source into a DataSet and also to update the data source with changes made to the DataSet. It acts as a bridge between the DataSet and the data source, providing methods (Fill, Update, Insert, Delete) to populate the DataSet with data from the database and to propagate changes back to the database.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A relationship within a DataSet is represented by which one of the following?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DataTable object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DataColumn object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Foreign-key relationship"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Primary-key relationship"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 70490,
+      "Explanation": "E",
+      "Answer": "E",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which of the following is not a member of ADO SqlCommand object",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ExecuteReader"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ExecuteScalar"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ExecuteStream"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CommandText"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 70587,
+      "Explanation": "<p>In ADO.NET, the SqlCommand object represents a SQL statement or stored procedure to execute against a database. Here&apos;s a brief overview of the options:</p><ul><li><p>A) ExecuteReader: Executes the command and returns a DataReader object for retrieving results from a query.</p></li><li><p>B) ExecuteScalar: Executes the command and returns the first column of the first row in the result set, typically used for retrieving single-value results like aggregate functions.</p></li><li><p>C) ExecuteStream: There is no ExecuteStream method or property in the SqlCommand class. This option is incorrect because it does not exist in ADO.NET.</p></li><li><p>D) CommandText: Gets or sets the SQL command text to execute against the database. This property is a key member of the SqlCommand object, where you specify the SQL statement or stored procedure.</p></li></ul><p>Therefore, the correct answer to the question \"Which of the following is not a member of ADO SqlCommand object?\" is C) ExecuteStream, as it is not a valid method or property of the SqlCommand object in ADO.NET.</p>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a connection string (for SQL Server)_____________ represents name of the database.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Data Source"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Initial Catalog"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Catalog Initial"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Dataset"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 77759,
+      "Explanation": "Initial Catalog is the name of the database to be used by the connection string, which is located on the server that was specified in the Data Source part of the connection string.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the use of SqlCommand object in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SQLCommand object allows user to interact with the database."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SQLCommand object allows user to interact with the users."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SQLCommand object allows user to interact with the dataset."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SQLCommand object allows user to interact with the server."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 77760,
+      "Explanation": "A SqlCommand object allows you to query and send commands to a database. It has methods that are specialized for different commands. The ExecuteReader method returns a SqlDataReader object for viewing the results of a select query. For insert, update, and delete SQL commands, you use the ExecuteNonQuery method.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "SQLclient provider is used to access only ______database",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "MySql Server"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Wamp Server"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Sql Server"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MS Access."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 77761,
+      "Explanation": "A .NET Framework data provider is used for connecting to a database, executing commands, and retrieving results. SQLclient provider Provides data access for Microsoft SQL Server. Uses the System.Data.SqlClient namespace.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which ado.net class provide disconnected environment?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DataReader"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DataSet"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Command"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 77762,
+      "Explanation": "DataSet ado.net class provide disconnected environment.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;__________object is used to fill a DataSet/DataTable with query results in ADO.net.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DataReader"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Dataset"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DataAdapter"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DataTables"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 81276,
+      "Explanation": "In ADO.NET, the DataAdapter object is used to fill a DataSet or DataTable with query results from a data source.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Classes used to access a SQL Server database in the managed space.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>Valid Code for Creating a SqlConnection Object would be :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SqlConnection conn = new SqlConnection(<br>\"Data Source=(local);Initial Catalog=Northwind;Integrated Security=SSPI\");"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SqlConnect conn = new SqlConnection(<br>\"Data Source=(local);Initial Catalog=Northwind;Integrated Security=SSPI\");"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SqlConnection conn = new SqlConnect(<br>\"Data Source=(local);Initial Catalog=Northwind;Integrated Security=SSPI\");<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 81277,
+      "Explanation": "<ul><li><p>This correctly initializes a SqlConnection object with a connection string that specifies the server name ((local) in this case), the initial database to connect to (Northwind), and integrated security (SSPI).</p></li><li><p>SqlConnect is not a valid class in ADO.NET. The correct class name is SqlConnection.</p></li></ul><br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Syntax for closing and opening the connection in ADO.net is :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "sqlConn.open() and sqlConn.close()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "sqlConn.open() and sqlConn.Close()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "sqlConn.Open() and sqlConn.Close()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 81278,
+      "Explanation": "sqlConn.Open() and sqlConn.Close()<br>This uses the correct casing (Open() and Close()) for calling the Open and Close methods of a SqlConnection object (sqlConn), which are used to explicitly open and close the database connection.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "_____________ is a bridge between a DataSet and data source for retrieving and saving data.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DataControler"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DataCommand"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DataAdapter"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 81280,
+      "Explanation": "A DataAdapter in ADO.NET acts as a bridge between a DataSet (or DataTable) and a data source (such as a database). It facilitates retrieving data from the database into the DataSet and saving data from the DataSet back to the database. The DataAdapter uses a combination of Command objects (SqlCommand, OleDbCommand, etc.) to execute SQL commands (like SELECT, INSERT, UPDATE, DELETE) against the database.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When we need to retrieve only a single value from the Database,which Method is efficient",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ExecuteReader()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ExecuteScalar()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ExecuteNonQuery()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ExecuteXmlReader()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2379,
+      "QuestionTypeId": 0,
+      "QuestionId": 81282,
+      "Explanation": "The&nbsp;ExecuteScalar()&nbsp;method is commonly used in programming, especially with database connections. It\u2019s typically associated with retrieving a single value (such as a count or an aggregate result) from a database query.&nbsp;<br>",
+      "Answer": "B",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

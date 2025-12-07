@@ -1,0 +1,1326 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is the correct way to declare middleware that applies to all requests in an Express application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "app.use(middlewareFunction);&nbsp;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "app.get('*', middlewareFunction);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "app.all('*', middlewareFunction);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "app.everyRequest(middlewareFunction);"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 88844,
+      "Explanation": "<span id=\"explanation88844\">The app.use method is the primary way to register middleware in Express. It takes a middleware function as an argument and attaches it to the application&apos;s middleware stack.<br>(b) app.get(&apos;*&apos;, middlewareFunction); (using wildcard route with GET)<br>(c) app.all(&apos;*&apos;, middlewareFunction); (using all HTTP methods and wildcard route)<br>(d) app.everyRequest(middlewareFunction);(everyRequest is not valid function)</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Using ___________ method, you can serve static resources directly by specifying the folder name where you have stored your static resource in Express.JS",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "express.static-resources()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "express.use()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "express.static()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "express.serve-static()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 84130,
+      "Explanation": "<span id=\"explanation84130\">It is easy to serve static files using built-in middleware in Express.js called express.static. Using express.static() method, you can server static resources directly by specifying the folder name where you have stored your static resources.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the following middleware function do in Express.js?<br>app.use(express.static('public'));.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It serves static files from the 'public' directory."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It encrypts data transmitted over the network."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It parses incoming cookies from client's request"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It serves html files from the 'public' directory."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 87967,
+      "Explanation": "<span id=\"explanation87967\">use function indicates that middleware is used and static middleware helps in serving static files from public directory</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "____ functions are those that interact with the request and response objects (req, res) during the request-response cycle before or after actual request processing?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Data binding"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Routing"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Middleware"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Modules"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 87481,
+      "Explanation": "<span id=\"explanation87481\">Middleware functions are those that interact with the request and response objects (req, res) during the request-response cycle.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following represents the correct syntax for defining middleware in an Express application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "app.use('/api', middlewareFunction(req, res, next) {<br>// Middleware logic here<br>next();<br>});"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "app.middleware('/api', middlewareFunction(req, res, next) {<br>// Middleware logic here<br>next();<br>});"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "app.use('/api', (req, res, next) =&gt; {<br>// Middleware logic here<br>next();<br>});"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "app.use('/api', middlewareFunction) {<br>// Middleware logic here<br>next();<br>});"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 87951,
+      "Explanation": "<span id=\"explanation87951\">Option C represents the correct syntax for defining middleware in an Express application. The app.use() method is used to mount the middleware function at the specified path. The middleware function typically takes three arguments: req, res, and next.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which one is best to explain about MongoDB processes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "mongod.exe is a shell process and mongo.exe is an actual database process."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "mongo.exe is a shell process and mongod.exe is an actual database process."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To run the database, we need to process the monogDB server - mongos.exe"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To import database backup dump, we can use mongodump.exe"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 77726,
+      "Explanation": "<span id=\"explanation77726\"><span id=\"explanation77726\">MongoDB Processes :&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mongo.exe is a shell process.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mongod.exe is an actual database process. </span></span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which middleware is used in Express JS to parse the request data send by the user using the form&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "cookie-parser"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "body-parser"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "url-parser"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "express-middleware"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 64650,
+      "Explanation": "<span id=\"explanation64650\"><span id=\"explanation64650\">body-parser is used in Express JS to parse the request data send by the user using the form&nbsp; .</span></span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you serve static files in an Express.js application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using res.status()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using express.static() middleware"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using app.get()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using res.sendFile()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97365,
+      "Explanation": "Express.js uses the express.static() middleware function to specify a directory from which to serve static files such as images, CSS, and JavaScript.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the next function in middleware in Express.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To stop the execution of other middleware functions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To modify the request and response objects"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To pass control to the next middleware function in the stack"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To render a view"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97366,
+      "Explanation": "The next function is a callback function in Express.js that is used to pass control to the next middleware function. This is essential for ensuring that the request and response can be processed through a series of steps.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary function of the app.use() method in Express.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To define routes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To register middleware"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To start the server"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To send HTTP responses"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97303,
+      "Explanation": "The app.use() method in Express.js is used to register middleware functions, which execute during the request-response cycle.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you serve static files in an Express.js application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "app.static()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "app.getStatic()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "express.static()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "app.serveFiles()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97304,
+      "Explanation": "Static files in an Express.js application can be served using the express.static() middleware function.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To handle errors in an Express.js application, which of the following best describes an error-handling middleware function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An Express.js function with three parameters"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An Express.js function with two parameters"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An Express.js function with four parameters"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An Express.js function with a single parameter"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97368,
+      "Explanation": "Error-handling middleware functions in Express.js must have four parameters: err, req, res, and next. This is because the first parameter, err, is used to identify any errors that have occurred.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is application-level middleware in Express.js primarily used for?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Handling database connections"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Managing input validation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Implementing centralized error handling"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Defining request-handling logic"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97338,
+      "Explanation": "Application-level middleware is used to define request-handling logic and is responsible for controlling the request-response cycle at the application level.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When defining middleware in Express.js, which of the following arguments is typically included?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "global"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "config"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "req"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "port"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97339,
+      "Explanation": "<span id=\"explanation97339\" style=\"color:blue\">Middleware functions in Express.js typically include &apos;req&apos; (request), &apos;res&apos; (response), and &apos;next&apos; as arguments.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Where should application-level middleware be loaded in an Express.js application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "After route definitions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Before route definitions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Inside view templates"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "During the database setup"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97340,
+      "Explanation": "Application-level middleware should be loaded before route definitions to ensure that all requests pass through the middleware.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following middleware functions would be used to parse incoming request bodies in Express.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "errorHandler"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "bodyParser"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "cors"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "helmet"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97341,
+      "Explanation": "bodyParser is a middleware function that parses incoming request bodies, making it accessible under req.body.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you skip the remaining middleware functions in Express.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Call res.stop()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Call res.send()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Throw an error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Call next() without any arguments"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97342,
+      "Explanation": "<span id=\"explanation97342\" style=\"color:blue\"><span id=\"explanation97342\" style=\"color:blue\">Calling next() without any arguments skips the remaining middleware functions and passes control to the next middleware or route handler.</span></span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What method chain is used to apply application-level middleware to all routes in an Express.js app?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "app.use()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "app.all()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "app.route()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "app.listen()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97343,
+      "Explanation": "The app.use() method is used to apply middleware to all routes in an Express application, regardless of method.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Express.js, what does the &#39;next&#39; parameter indicate in middleware?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The next server request"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The next middleware function in the stack"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The next database query"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The next client response"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97344,
+      "Explanation": "The &#39;next&#39; parameter in middleware refers to the next middleware function in the stack, which is executed if &#39;next()&#39; is called inside the current middleware.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is an example of third-party middleware commonly used with Express.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "cookieParser"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "configReader"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "dbConnector"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "sessionManager"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97345,
+      "Explanation": "cookieParser is a third-party middleware for Express.js that parses cookie header and populates req.cookies with an object. It is commonly used together with Express.js applications.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main purpose of using router-level middleware in Express.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To manage incoming requests in a centralized manner."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To handle view rendering for server-side applications."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To apply middleware only to specific routes in an application."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To enhance the performance of the database queries."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97346,
+      "Explanation": "Router-level middleware in Express.js is used to bind middleware to specific instances of `express.Router()`, allowing you to apply middleware only to certain routes rather than the entire application.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method would you use to apply router-level middleware to an Express Router instance?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "app.use()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "router.use()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "app.route()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "router.route()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97347,
+      "Explanation": "The `router.use()` function is used to bind middleware to a specific instance of `express.Router()`, which allows middleware to execute only for routes defined on that router instance.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you define a path-specific router-level middleware in Express?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "router.get(&#39;/&#39;, middlewareFunc)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "router.use(&#39;/&#39;, middlewareFunc)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "app.middleware(&#39;/&#39;, middlewareFunc)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "app.router(middlewareFunc)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97348,
+      "Explanation": "Using `router.use(&#39;/&#39;, middlewareFunc)` allows you to define middleware that is only invoked for the routes that match the &#39;/&#39; path pattern on that specific router.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can router-level middleware be executed after the route handler?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It cannot be executed after the route handler."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Set it as a post-request middleware using `router.post()`."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use the middleware after defining the route handler."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Invoke `next()` at the end of the route handler."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97349,
+      "Explanation": "<span id=\"explanation97349\" style=\"color:blue\"></span><span style=\"color:blue\">In Express.js, router-level middleware can be executed after the route handler if the route handler calls next(). This tells Express to continue processing the next middleware in the stack, even after the main response logic.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What best describes how router-level middleware affects application performance?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It significantly slows down application performance due to request re-routing."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It can optimize performance by minimizing global middleware processing."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It slightly enhances performance by caching requests."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It has no impact on performance whatsoever."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97350,
+      "Explanation": "By attaching middleware to specific routers rather than the entire app, router-level middleware can help optimize performance, as only requests that match specific routes will pass through the middleware.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Express.js, what happens if next() is not called within router-level middleware?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Subsequent middleware will not run, and the request will hang."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The request will automatically proceed to the next middleware."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Express.js will throw an unhandled exception."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A default response is sent to the client."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97351,
+      "Explanation": "If `next()` is not invoked within a middleware, the request-response cycle is left open, and no other middleware will be executed. This can result in a hanging or stalled request.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When binding multiple middleware functions to a single route, in which way are they executed?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They are executed simultaneously."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They invoke one another recursively."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They execute sequentially in the order they are defined."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They execute based on their alphabetical order."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97352,
+      "Explanation": "Middleware functions bound to a route execute sequentially in the order they are defined, each passing control to the next by calling `next()`.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a proper use-case for router-level middleware?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Performing authentication checks"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Logging request information"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Serving static files"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Validating data in request bodies"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97353,
+      "Explanation": "Serving static files is typically not done using router-level middleware. It is commonly done using the built-in `express.static()` middleware that serves files directly from a directory.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main purpose of error-handling middleware in an Express.js application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To handle validation logic for incoming requests"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To manage database connection pooling"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To define routes for effective API management"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To handle errors and manage error responses"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97354,
+      "Explanation": "Error-handling middleware in Express.js is specifically designed to catch and manage errors, sending appropriate responses to the client. It allows developers to provide consistent error responses and log error details.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following correctly describes the structure of an error-handling middleware function in Express.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "function (req, res, next, err) { ... }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "function (err, req, res, next) { ... }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "function (req, err, res, next) { ... }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "function (req, res, err, next) { ... }"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97355,
+      "Explanation": "Error-handling middleware functions in Express.js have four arguments. The signature function (err, req, res, next) ensures errors are captured first, followed by the request, response, and next middleware function.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When should an error-handling middleware be added to the middleware stack in an Express.js application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "At the beginning, before any other middleware"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Immediately after defining the routes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "After all other middleware and route handlers"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Before the setup of static files"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97356,
+      "Explanation": "Error-handling middleware should be added at the end of the middleware stack to catch errors that occur in any preceding middleware or route handlers.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does an error-handling middleware function signal that an error has been successfully handled?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By setting res.status to 200"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By calling next(error)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By sending a response using res.send() or res.json() without calling next()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By modifying the error object and calling next() again"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97357,
+      "Explanation": "Once an error response is sent via res.send() or res.json(), there&#39;s no need to call next(), as the response cycle has been completed.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If an error is not explicitly passed to the next() function, how does Express.js handle this scenario in the context of error-handling middleware?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The request is silently logged and discarded"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Express.js will throw a runtime exception"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It bypasses any error-handling middleware"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Express.js treats it as a normal request-handling step without invoking error-handlers"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97358,
+      "Explanation": "In Express.js, if an error is not passed to the next() function explicitly as next(error), it does not trigger any error-handling middleware and is treated as a normal step in the middleware chain.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following built-in middleware is used in Express.js to parse incoming requests with URL-encoded payloads?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "express.json()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "express.url()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "express.static()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "express.urlencoded()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97359,
+      "Explanation": "The express.urlencoded() middleware is used to parse incoming requests with URL-encoded payloads, typically from HTML form submissions.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Express.js, which built-in middleware serves static files such as images, CSS files, and JavaScript files?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "express.static()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "express.json()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "express.raw()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "express.urlencoded()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97360,
+      "Explanation": "express.static() is a middleware function in Express.js that serves static files like images, CSS, and JavaScript.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which built-in middleware is used to parse incoming requests with JSON payloads in Express.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "express.raw()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "express.json()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "express.text()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "express.urlencoded()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97361,
+      "Explanation": "The express.json() middleware is used in Express.js to parse incoming requests with JSON payloads.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the function of express.raw() middleware in Express.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To parse incoming requests with JSON payloads"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To parse incoming requests with URL-encoded payloads"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To parse incoming requests into Buffer objects"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To serve static files"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97362,
+      "Explanation": "express.raw() middleware is used to parse incoming requests into Buffer objects, which is useful when dealing with raw data.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Express.js middleware would you use to parse incoming requests with text payloads?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "express.text()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "express.static()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "express.urlencoded()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "express.json()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97363,
+      "Explanation": "The express.text() middleware is used to parse incoming requests with text payloads.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a modern Express.js application, which built-in middleware is now recommended over &#39;body-parser&#39; for JSON payloads?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "express.json()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "express.bodyParser()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "express.urlencoded()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "express.raw()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97372,
+      "Explanation": "Since Express 4.16.0, &#39;express.json()&#39; provides JSON parsing functionality that was previously provided by the &#39;body-parser&#39; package.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the role of middleware in Express.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To format JSON data"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To connect Express to SQL databases"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To execute actions at a specific point in the request-response cycle"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To secure passwords using encryption"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 97301,
+      "Explanation": "Middleware functions in Express.js are used to execute code, modify the request and response objects, and end the request-response cycle or call the next middleware function.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you forget to call next() in middleware?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The server crashes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The request hangs and never completes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The middleware is skipped"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The response is sent automatically"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 102405,
+      "Explanation": "Without next(), the request stays stuck in that middleware and never reaches the route handler.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which middleware parses incoming JSON payloads?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "express.static()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "express.urlencoded()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "express.json()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "express.body()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 102406,
+      "Explanation": "express.json() parses JSON-formatted request bodies.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you apply a custom middleware to a specific route?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "app.use('/route', middleware)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "app.route(middleware)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "app.get(middleware)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "app.listen(middleware)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 102407,
+      "Explanation": "You can scope middleware to a specific path using app.use(&apos;/path&apos;, middleware).",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a valid use case for custom middleware?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Logging requests"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Authenticating users"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Parsing custom headers"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 724,
+      "QuestionTypeId": 0,
+      "QuestionId": 102408,
+      "Explanation": "<span id=\"explanation102408\" style=\"color:blue\">Custom middleware is ideal for reusable logic like logging, auth, and request preprocessing.</span>",
+      "Answer": "D",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

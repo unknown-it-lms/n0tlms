@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>MCQ Quiz</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page">
+
+  <button onclick="history.back()">Back</button>
+  <h1 id="quiz-title"></h1>
+  <div id="quiz"></div>
+
+  <script>
+  const params = new URLSearchParams(window.location.search);
+  const subject = params.get("subject");
+  const subtopicName = params.get("subtopic");
+
+  document.getElementById("quiz-title").textContent = `${subject} - ${subtopicName}`;
+
+  const mcqPath = `/${subject}/${subtopicName}/mcq.json`;   // FIXED PATH
+
+  async function loadMCQ() {
+    const res = await fetch(mcqPath);
+    const data = await res.json();
+    const questions = data.m_Item1;
+    const quizDiv = document.getElementById("quiz");
+
+    questions.forEach((q, idx) => {
+
+      // container div
+      const qDiv = document.createElement("div");
+      qDiv.className = "question";
+      qDiv.innerHTML = `<p><b>Q${idx+1}:</b> ${q.QuestionText}</p>`;
+
+      // option group
+      const optionGroup = [];
+
+      q.Options.forEach(opt => {
+        const label = document.createElement("label");
+        label.className = "optionLabel";
+
+        const btn = document.createElement("input");
+        btn.type = "radio";
+        btn.name = "q" + idx;
+        btn.value = opt.OptionId;
+
+        optionGroup.push(btn);
+
+        btn.onclick = () => {
+
+          // Disable all options after one is selected
+          optionGroup.forEach(b => b.disabled = true);
+
+          // mark correct / incorrect
+          // if (opt.OptionId === q.Answer) {
+          //   label.style.backgroundColor = "#d4edda";  // green
+          // } else {
+          //   label.style.backgroundColor = "#f8d7da";  // red
+
+          //   // highlight correct answer also
+          //   optionGroup.forEach((b, i) => {
+          //     if (q.Options[i].OptionId === q.Answer) {
+          //       b.parentElement.style.backgroundColor = "#d4edda";
+          //     }
+          //   });
+          // }
+          if (opt.OptionId === q.Answer) {
+              label.classList.add("correct");
+          } else {
+              label.classList.add("wrong");
+
+              // highlight correct
+              optionGroup.forEach((b, i) => {
+                  if (q.Options[i].OptionId === q.Answer) {
+                      b.parentElement.classList.add("correct");
+                  }
+              });
+          }
+
+
+          // add explanation if not already added
+          if (!qDiv.querySelector(".explanation")) {
+            const expl = document.createElement("p");
+            expl.className = "explanation";
+            expl.innerHTML = `<i>Explanation:</i> ${q.Explanation}`;
+            qDiv.appendChild(expl);
+          }
+        };
+
+        label.appendChild(btn);
+        label.appendChild(document.createTextNode(` ${opt.OptionId}) ${opt.OptionText}`));
+
+        qDiv.appendChild(label);
+        qDiv.appendChild(document.createElement("br"));
+      });
+
+      quizDiv.appendChild(qDiv);
+    });
+  }
+
+  loadMCQ();
+</script>
+</div>
+</body>
+</html>

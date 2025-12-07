@@ -1,0 +1,756 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "<div>Assume integer is 2 bytes wide. How many bytes will be allocated for the following code?</div><div>#include&lt;stdio.h&gt;</div><div>#include&lt;stdlib.h&gt;</div><div>#define MAXROW 3</div><div>#define MAXCOL 4</div><div><br></div><div>int main()</div><div>{</div><div style=\"margin-left: 40px;\">&nbsp;int (*p)[MAXCOL];<br></div><div style=\"margin-left: 40px;\">&nbsp;p = (int (*) [MAXCOL])malloc(MAXROW *sizeof(*p));</div><div style=\"margin-left: 40px;\">&nbsp;return 0;</div><div>}<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "56 bytes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "128 bytes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "24 bytes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "12 bytes"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 10,
+      "QuestionTypeId": 0,
+      "QuestionId": 63327,
+      "Explanation": "Here p is pointer array of size 4 hence size of p is 4 * size of (int) i.e 8<br>in malloc function we are allocating memory for MAXROW i.e 3 so 8*3 is 24 bytes.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can we reduce a final size of executable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using dynamic linking for libraries."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using static linking for libraries."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both are correct"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above are correct"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 10,
+      "QuestionTypeId": 0,
+      "QuestionId": 63329,
+      "Explanation": "In dynamic linking it will load the required library only if needed.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>#include &lt;stdio.h&gt;<br>#include&lt;string.h&gt;<br>#include&lt;stdlib.h&gt;<br><br>void main ()<br>{<br></div><div style=\"margin-left: 40px;\">&nbsp; char *dest, *source = \"SUN ITS\";<br>&nbsp; dest = (char *) malloc (strlen (source));<br>&nbsp; strcpy (dest, source);<br>&nbsp; printf (\"%s\", dest);<br>&nbsp; free (dest);<br></div><div>}<br><br><br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "free( ) fails"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "strcpy( ) fails to copy string"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SUN ITS"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 10,
+      "QuestionTypeId": 0,
+      "QuestionId": 63379,
+      "Explanation": "malloc function will assign the memory to dest and then strcpy functionc will copy content of source string to dest string.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>int a[3] = { 29, 16, 59 };<br><br>void main ()<br>{</div><div style=\"margin-left: 40px;\">&nbsp; int *a = (int *) malloc (2 * sizeof (int));<br>&nbsp; a[0] = 4;<br>&nbsp; a[1] = 5;<br>&nbsp; printf (\"%d\", a[2]);<br>&nbsp; free (a);<br></div><div>}<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "59"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Garbage/Error<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 10,
+      "QuestionTypeId": 0,
+      "QuestionId": 63403,
+      "Explanation": "In main, we accessing variable with name a which is present locally as well as globally. Here preference is given to local variable hence the local array \u2018a\u2019 will be accessed. The local array \u2018a\u2019 has only 2 members and in printf we are trying to access 3rd element which is not present. Hence the program will either give garbage value or may give runtime error if that memory location is not accessible. Hence D is the most suitable answer.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which one of the following statements allocates enough space to hold an array of 10 integers that are initialized to 0?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int *ptr = (int *) malloc(10, sizeof(int));"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<p>int *ptr = (int *) calloc(10, sizeof(int));</p>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int *ptr = (int *) malloc(10*sizeof(int));"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int *ptr=(int *)calloc(sizeof(int));"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 10,
+      "QuestionTypeId": 0,
+      "QuestionId": 63769,
+      "Explanation": "calloc() function accepts 2 arguments, first is no of blocks and second is size of each block. calloc() also intializes values to zero.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How will you free the memory allocated by the following program?<br>#include&lt;stdio.h&gt;<br>#include&lt;stdlib.h&gt;<br>#define MAXROW 3<br>#define MAXCOL 4<br><br>int main()<br>{<br>&nbsp;&nbsp;&nbsp; int **p, i, j;<br>&nbsp;&nbsp;&nbsp; p = (int **) malloc(MAXROW * sizeof(int*));<br>&nbsp;&nbsp;&nbsp; return 0;<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "free(**p);<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "dealloc(p);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "malloc(p, 0);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "free(p);<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 10,
+      "QuestionTypeId": 0,
+      "QuestionId": 63780,
+      "Explanation": "free() is function used to deallocate memory which is allocated dynamically. **p is value present at that memory location and not address. Hence free(p) is correct answer. <br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Calloc(m,n) is equivalent to",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Ptr = malloc(m*n); memset(p,0, m*n);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Malloc(m*n,0);<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Malloc(0,m*n);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Ptr = malloc(m*n); strcpy(p,0);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 10,
+      "QuestionTypeId": 0,
+      "QuestionId": 63782,
+      "Explanation": "malloc() needs only one argument no of bytes to be allocated. It will initialize members with garbage value so memset() function is needed &nbsp;to initialize value with 0.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Specify the 2 library functions to dynamically allocate memory?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "malloc() and memalloc().<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "alloc() and memalloc().<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "malloc() and calloc().<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "memalloc() and faralloc().<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 10,
+      "QuestionTypeId": 0,
+      "QuestionId": 63784,
+      "Explanation": "malloc() and calloc() are the functions for allocating memory dynamically",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "With every use of a memory allocation function, what function should be used to release allocated memory which is no longer needed?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "unalloc().<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "dealloc().<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "release()..<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "free().<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 10,
+      "QuestionTypeId": 0,
+      "QuestionId": 63786,
+      "Explanation": "free() function is used for releasing memory which is allocated dynamically.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which header file should be included to use functions like malloc() and calloc()?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "string.h .<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "stdlib.h .<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "dos.h .<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "memory.h .<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 10,
+      "QuestionTypeId": 0,
+      "QuestionId": 64065,
+      "Explanation": "The stdlib.h header defines four variable types, several macros, and various functions for performing general functions. malloc() and calloc() are define in stdlib.h.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out error in the program<br>int main()<br>{<br>int *a[3];<br>a = (int*) malloc(sizeof(int)*3);<br>free(a);<br>return 0;<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Unable to allocate memory."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "We cannot store address of allocated memory in a."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Unable to free memory."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No error."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 10,
+      "QuestionTypeId": 0,
+      "QuestionId": 64033,
+      "Explanation": "Allocated memory can be stored in element of array a. e.g;<br>a[0]=(int *)malloca(sizeof(int)*3); a is an array so needs a subscript.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the correct statement which correctly allocates memory dynamically for 2D array following program?<br>int main()<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp; int *p, i, j;<br>&nbsp;&nbsp; /* Add statement here */<br>&nbsp;&nbsp; for(i=0; i&lt;3; i++)<br>&nbsp;&nbsp; {</div><div style=\"margin-left: 80px;\">&nbsp;&nbsp;&nbsp;&nbsp; for(j=0; j&lt;4; j++)<br>&nbsp;&nbsp;&nbsp;&nbsp; {<br></div><div style=\"margin-left: 120px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; p[i*4+j] = i;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(\"%d\", p[i*4+j]);<br></div><div style=\"margin-left: 80px;\">&nbsp;&nbsp;&nbsp;&nbsp; }<br></div><div style=\"margin-left: 40px;\">&nbsp;&nbsp; }<br>&nbsp;&nbsp; return 0;<br></div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "p = (int*) malloc(3, 4);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "p = (int*) calloc(3*sizeof(int));<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "p = malloc(3*4*sizeof(int));"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "p = (int*) malloc(3*4*sizeof(int));<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 10,
+      "QuestionTypeId": 0,
+      "QuestionId": 64034,
+      "Explanation": "2D array will consist of total 12 elements. So total memory allocated should be 3*4*sizeof(int) and should be type casted into int*.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the return type of malloc() or calloc()?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void *<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "void ** <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Pointer of allocated memory type"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int *<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 10,
+      "QuestionTypeId": 0,
+      "QuestionId": 64047,
+      "Explanation": "malloc() and calloc() return void *. We may get warning/error in C if we don&apos;t type cast the return type to appropriate pointer.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What all is true about heap:<br>1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The heap is where dynamic memory (obtained by malloc(), calloc(), realloc()) comes from.<br>2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Everything on a heap is anonymous.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only 1.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only 2.<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1,2.<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above.<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 10,
+      "QuestionTypeId": 0,
+      "QuestionId": 64050,
+      "Explanation": "everything on heap is refered from variables present on stack.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the program (16-bit platform)?<br>#include&lt;stdio.h&gt;<br>#include&lt;stdlib.h&gt;<br>int main()<br>{<br>&nbsp;&nbsp;&nbsp; int *p;<br>&nbsp;&nbsp;&nbsp; p = (int *)malloc(20);<br>&nbsp;&nbsp;&nbsp; printf(\"%d \", sizeof(p));<br>&nbsp;&nbsp;&nbsp; free(p);<br>&nbsp;&nbsp;&nbsp; return 0;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "8"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Garbage value"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 10,
+      "QuestionTypeId": 0,
+      "QuestionId": 64082,
+      "Explanation": "*P is integer pointer ,hence in 16 bit machine size of p is 2.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Code:<br>char ptr1[] = \"Hello World\";<br>char *ptr2 = malloc( 5 );<br>ptr2 = ptr1;<br>What is wrong with the above code (assuming the call to malloc does not fail)?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "There will be a memory overwrite.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "There will be a memory leak.<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "There will be a segmentation fault.<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above.<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 10,
+      "QuestionTypeId": 0,
+      "QuestionId": 64077,
+      "Explanation": "The memory leak occurs, when a piece of memory which was previously allocated by the programmer is not properly deallocated. In the above case ptr will holds \"Hello\".&nbsp; No pointer is pointing to \"World\".Hence the it will remain in the memory.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the error in the following program.<br>#include&lt;stdio.h&gt;<br>#include&lt;stdlib.h&gt;<br><br>int main()<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp; char *ptr;<br>&nbsp;&nbsp;&nbsp; *ptr = (char)malloc(30);<br>&nbsp;&nbsp;&nbsp; strcpy(ptr, \"RAM\");<br>&nbsp;&nbsp;&nbsp; printf(\"%s\", ptr);<br>&nbsp;&nbsp;&nbsp; free(ptr);<br>&nbsp;&nbsp;&nbsp; return 0;<br></div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Error: in strcpy() statement<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Error: in *ptr = (char)malloc(30);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "RAM<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 10,
+      "QuestionTypeId": 0,
+      "QuestionId": 64022,
+      "Explanation": "There are two errors : <br>1. malloc will return memory address and not value hence insted of *ptr we have to use ptr .<br><br>2. After allocating memory using malloc, type casting is nedded to (char *) not char.<br>Statement should be<br>ptr = (char*)malloc(30);<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include&lt;stdio.h&gt;<br>#include&lt;stdlib.h&gt;<br>#include&lt;string.h&gt;<br>int main()<br>{<div style=\"margin-left: 40px;\">&nbsp; char *p;<br>&nbsp; char *get();<br>&nbsp; p = get();<br>&nbsp; printf(\"%s\",p);<br>&nbsp; return 0;<br></div>&nbsp;}<br>char* get()<br>{<div style=\"margin-left: 40px;\">&nbsp; char *str=(char*)malloc(20*sizeof(char));<br>strcpy(str,\"AB\");<br>&nbsp; return str; &nbsp;<br></div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "AB"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Garbage value"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Error: returning local variable address"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 10,
+      "QuestionTypeId": 0,
+      "QuestionId": 64008,
+      "Explanation": "Inside function memory allcated dynamically, so it persists after function returns and accessible through main. So \"AB\" gets printed.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the program?<br>#include&lt;stdio.h&gt;<br>#include&lt;stdlib.h&gt;<br>int main()<br>{<br>&nbsp;&nbsp;&nbsp; int *p;<br>&nbsp;&nbsp;&nbsp; p = (int *)malloc(20); /* Assume p has address of 1400 */<br>&nbsp;&nbsp;&nbsp; free(p);<br>&nbsp;&nbsp;&nbsp; printf(\"%u\", p);<br>&nbsp;&nbsp;&nbsp; return 0;<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1400"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Garbage value"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1402"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Random address"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 10,
+      "QuestionTypeId": 0,
+      "QuestionId": 63818,
+      "Explanation": "%u is an unsigned integer. Addresses only make sense as unsigned numbers, hence %u is used to print address. Memory at  1400 will be freed but pointer will hold the address  1400&nbsp; hence it will print 1400..<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the problem with following code?<br>#include&lt;stdio.h&gt;<br>int main()<br>{<br>&nbsp;&nbsp;&nbsp; int *p = (int *)malloc(sizeof(int));<br>&nbsp;&nbsp;&nbsp;&nbsp; p = NULL;<br>&nbsp;&nbsp;&nbsp;&nbsp; free(p);<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compiler Error: free can't be applied on NULL pointer"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Memory Leak"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Dangling Pointer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The program may crash as free() is called for NULL pointer."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 10,
+      "QuestionTypeId": 0,
+      "QuestionId": 75574,
+      "Explanation": "free() can be called for NULL pointer, so no problem with free function call. The problem is memory leak, p is allocated some memory which is not freed, but the pointer is assigned as NULL. The correct sequence should be following:<br>&nbsp;&nbsp;&nbsp; free(p);<br>&nbsp;&nbsp;&nbsp; p = NULL;<br><br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is/are true",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "calloc() allocates the memory and also initializes the allocates memory to zero,<br>while memory allocated using malloc() has random data."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "malloc() and memset() can be used to get the same effect as calloc()."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "calloc() takes two arguments, but malloc takes only 1 argument.<br>Both malloc() and calloc() return 'void *' pointer."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 10,
+      "QuestionTypeId": 0,
+      "QuestionId": 75578,
+      "Explanation": "All of the above are true.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "We use malloc and calloc for",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Dynamic memory allocation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Static memory allocation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both dynamic and static memory allocation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 10,
+      "QuestionTypeId": 0,
+      "QuestionId": 75583,
+      "Explanation": "Both Calloc() and Malloc() are used for dynamic memory allocation.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "This program will allocate the memory of ___ bytes for pointer \u201cptr\u201d. (int size is 4 bytes)&nbsp;&nbsp;<br><br>#include&lt;stdio.h&gt; &nbsp;<br>#include&lt;stdlib.h&gt;<br>int main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; int *ptr;<br>&nbsp; ptr = (int *) malloc (sizeof (int) * 4);<br>&nbsp; ptr = realloc (ptr, sizeof (int) * 2);<br>&nbsp; return 0;</div>}<br><br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "16"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "24"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "8"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 10,
+      "QuestionTypeId": 0,
+      "QuestionId": 75645,
+      "Explanation": "&nbsp;We can also use the realloc() to make memory block smaller. The realloc() function accepts two arguments, the first argument ptr is a pointer to the first byte of memory that was previously allocated using malloc() or calloc() function. The newsize parameter specifies the new size of the block in bytes, which may be smaller or larger than the original size.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main()<br>{<br>&nbsp;&nbsp; &nbsp;void *vptr = (void*)malloc(sizeof(void));<br>&nbsp;&nbsp; &nbsp;vptr++;<br>}<br>will the above execute?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compile time error.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Runtime error.<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Run successfully.<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Memory failure.<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 10,
+      "QuestionTypeId": 0,
+      "QuestionId": 70804,
+      "Explanation": "Error because, Memory will not be allocated for void as sizeof(void)=0",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How many bytes (16 bit platform) of memory will the following code reserve?<br>#include&lt;stdio.h&gt;<br>#include&lt;stdlib.h&gt;<br>int main()<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp; int *p;<br>&nbsp;&nbsp;&nbsp; p = (int *)malloc(256 * 256);<br>&nbsp;&nbsp;<br>&nbsp; if(p == NULL)<br></div><div style=\"margin-left: 80px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(\"Allocation failed\");<br></div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp; return 0;<br></div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "65536"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Allocation Failed"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No Output"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 10,
+      "QuestionTypeId": 0,
+      "QuestionId": 73562,
+      "Explanation": "Here 256*256 = 65536 is passed to malloc() function which can allocate upto 65535. So the memory allocation will be failed in 16 bit platform (Turbo C in DOS).<br><br>If you compile the same program in 32 bit platform like Linux (GCC Compiler) it may allocate the required memory<br>",
+      "Answer": "B",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

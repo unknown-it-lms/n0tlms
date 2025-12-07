@@ -1,0 +1,966 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is a materialized view in Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A view that is created on a column family to allow for fast querying"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A view that is created on a node to allow for fast querying"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A view that is created on a non-primary key column to allow for fast querying"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A view that is created on a primary key column to allow for fast querying"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 88602,
+      "Explanation": "&nbsp; A materialized view in Cassandra is a view that is created on a column family to allow for fast querying.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a compound primary key in Cassandra? 6",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A primary key that consists of a single column 1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A primary key that consists of multiple columns 2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A primary key that consists of a single partition key and multiple clustering columns 3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A primary key that consists of multiple partition keys and a single clustering column 4"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 88610,
+      "Explanation": "<span id=\"explanation88610\"><span id=\"explanation88610\">&nbsp;A compound primary key in Cassandra is a primary key that consists of multiple columns. It is same as composite key in RDBMS. 5</span></span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary command to list all keyspaces in Cassandra using CQLSH?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DESCRIBE ALL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LIST KEYSPACES"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SHOW KEYSPACES"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DESCRIBE KEYSPACES"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94211,
+      "Explanation": "The command &apos;DESCRIBE KEYSPACES&apos; lists all keyspaces in Cassandra using the CQL shell (cqlsh).",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command is used to switch to a particular keyspace in CQLSH?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "USE keyspace_name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT keyspace_name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SET keyspace_name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SWITCH keyspace_name"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94212,
+      "Explanation": "The command &apos;USE keyspace_name&apos; switches the current session to the specified keyspace.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you view the details of a table schema in Cassandra using CQLSH?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DESCRIBE SCHEMA table_name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SHOW SCHEMA table_name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DESCRIBE table_name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT SCHEMA FROM table_name"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94213,
+      "Explanation": "The &apos;DESCRIBE table_name&apos; command displays the schema details of the specific table in the current keyspace.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct command to exit the cqlsh interface?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "QUIT"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "EXIT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "LOGOUT"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CLOSE"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94214,
+      "Explanation": "The &apos;EXIT&apos; command is used to terminate the cqlsh session and exit the interface.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which option correctly describes how to execute a CQL script file using cqlsh?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "EXECUTE file_name.cql"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "RUN file_name.cql"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SOURCE 'file_name.cql'"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "LOAD file_name.cql"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94215,
+      "Explanation": "The &apos;SOURCE &apos;file_name.cql&apos;&apos; command executes the CQL commands contained within the specified script file.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What command is utilized to create a keyspace in Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CREATE NEW KEYSPACE keyspace_name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "NEW KEYSPACE keyspace_name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CREATE KEYSPACE keyspace_name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ADD KEYSPACE keyspace_name"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94216,
+      "Explanation": "The command &apos;CREATE KEYSPACE keyspace_name&apos; creates a new keyspace with the specified name.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command allows you to remove a table from a keyspace?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DROP TABLE table_name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DELETE TABLE table_name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "REMOVE TABLE table_name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CLEAR TABLE table_name"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94217,
+      "Explanation": "The &apos;DROP TABLE table_name&apos; command removes the specified table from the keyspace.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To alter the replication factor of a keyspace, which command should be used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ALTER KEYSPACE keyspace_name WITH REPLICATION = {'class': 'SimpleStrategy', 'replication_factor': 2}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "CHANGE KEYSPACE keyspace_name {replication = 2}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "UPDATE KEYSPACE keyspace_name SET REPLICATION {factor = 2}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MODIFY KEYSPACE keyspace_name WITH REPLICATION 2"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94218,
+      "Explanation": "The &apos;ALTER KEYSPACE keyspace_name WITH REPLICATION = {...}&apos; command is used to change the replication settings for a keyspace.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you select all rows from a table named 'users'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "FETCH ALL FROM users"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "GET * FROM users"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT * FROM users"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SHOW ALL FROM users"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94219,
+      "Explanation": "The &apos;SELECT * FROM users&apos; command is used to retrieve all rows from the &apos;users&apos; table.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command in CQLSH can be used to describe all tables in the current keyspace?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DESCRIBE TABLES"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SHOW TABLES"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "LIST TABLES"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DISPLAY TABLES"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94220,
+      "Explanation": "&apos;DESCRIBE TABLES&apos; lists all the tables in the current keyspace.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To update data in a Cassandra table, which command is applicable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "MODIFY table_name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "UPDATE table_name SET"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ALTER table_name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CHANGE table_name"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94221,
+      "Explanation": "The &apos;UPDATE table_name SET&apos; command is used to update existing data in a specified table.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command is used to insert data into a Cassandra table?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "INSERT INTO table_name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ADD INTO table_name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CREATE IN table_name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "PUT INTO table_name"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94222,
+      "Explanation": "The &apos;INSERT INTO table_name&apos; command is utilized for inserting data into a specified table.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What command removes all records from a Cassandra table but retains the table structure?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DELETE FROM table_name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DROP table_name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "TRUNCATE table_name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CLEAR table_name"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94223,
+      "Explanation": "The &apos;TRUNCATE table_name&apos; command deletes all rows from the table while preserving the table&apos;s structure.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To create an index on a column in Cassandra, which command do you use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CREATE INDEX ON table_name(column_name)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ADD INDEX column_name IN table_name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "NEW INDEX column_name FOR table_name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "INDEX column_name ON table_name"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94224,
+      "Explanation": "The &apos;CREATE INDEX ON table_name(column_name)&apos; creates an index on the specified column of a table.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the command to remove an index in Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DELETE INDEX index_name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DROP INDEX index_name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "REMOVE INDEX index_name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CLEAR INDEX index_name"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94225,
+      "Explanation": "The &apos;DROP INDEX index_name&apos; command is used to remove an existing index from a table.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To grant permissions on a keyspace, which command is appropriate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ALLOW user ON keyspace_name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "GRANT user keyspace_name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "GRANT PERMISSION ON keyspace_name TO user"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "GIVE user PERMISSIONS ON keyspace_name"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94226,
+      "Explanation": "The command &apos;GRANT PERMISSION ON keyspace_name TO user&apos; is used to assign specific permissions to a user on a keyspace.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command can be used to revoke a user's permission from a keyspace?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "REVOKE PERMISSION ON keyspace_name FROM user"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "REMOVE user FROM KEYSPACE keyspace_name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DENY user FROM keyspace_name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "REVOKE user ON keyspace_name"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94227,
+      "Explanation": "&apos;REVOKE PERMISSION ON keyspace_name FROM user&apos; removes a user&apos;s permission from the specified keyspace.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Appending a semicolon to a CQL command in CQLSH signifies what?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It indicates a comment."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It executes the command."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is optional and has no effect."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It terminates the command."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94228,
+      "Explanation": "A semicolon is used to terminate a command in CQLSH and prepare it for execution.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is used to represent a null value when inserting data with CQLSH?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "VOID"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "NIL"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "NONE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "NULL"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94229,
+      "Explanation": "The special value &apos;NULL&apos; is used to represent missing or unspecified data during insert operations.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command can be used to check the current cqlsh version?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "VERSION"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SHOW VERSION"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DISPLAY VERSION"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "VERSION CQLSH"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94230,
+      "Explanation": "The &apos;VERSION&apos; command outputs the current version of cqlsh being used.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you see the help for cqlsh commands?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "HELP"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "?"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "HELP COMMANDS"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SHOW HELP"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94231,
+      "Explanation": "Typing &apos;HELP&apos; in cqlsh displays a list of available commands and their descriptions.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To start CQLSH with a specific authentication user, you should use which option?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "--login user"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "-u user"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "-auth user"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "--user user"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94232,
+      "Explanation": "The &apos;-u user&apos; option is used with cqlsh to authenticate with a specific user.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command is used to batch insert data in CQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "BULK INSERT BEGIN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "BEGIN MULTI INSERT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "BEGIN BATCH"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "START BULK INSERT"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94233,
+      "Explanation": "The &apos;BEGIN BATCH&apos; command initiates a batch operation for inserting multiple rows simultaneously.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To determine the current keyspace in CQLSH, which command should you use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CURRENT KEYSPACE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SHOW CURRENT KEYSPACE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DESCRIBE CURRENT"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT keyspace_name FROM system.local"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94234,
+      "Explanation": "You can determine the current keyspace by querying &apos;SELECT keyspace_name FROM system.local&apos;.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which option specifies the host when starting CQLSH?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "-h hostname"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "--host hostname"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "-hostname hostname"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "--connect hostname"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94235,
+      "Explanation": "The &apos;-h hostname&apos; option when starting cqlsh specifies the host to connect to.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What command allows the addition of a new column to an existing table?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ALTER TABLE table_name ADD column_name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "MODIFY TABLE table_name ADD column_name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "UPDATE TABLE table_name ADD column_name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CHANGE TABLE table_name ADD column_name"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94236,
+      "Explanation": "The &apos;ALTER TABLE table_name ADD column_name&apos; command adds a new column to an existing table.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To remove a keyspace, which CQL command should you use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DELETE KEYSPACE keyspace_name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DROP KEYSPACE keyspace_name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "REMOVE KEYSPACE keyspace_name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ERASE KEYSPACE keyspace_name"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94237,
+      "Explanation": "The &apos;DROP KEYSPACE keyspace_name&apos; command removes the specified keyspace from the cluster.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What command is used to rename a table in Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RENAME TABLE old_name TO new_name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ALTER TABLE old_name RENAME TO new_name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CHANGE TABLE old_name TO new_name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MODIFY TABLE old_name SET NAME new_name"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94238,
+      "Explanation": "The &apos;ALTER TABLE old_name RENAME TO new_name&apos; command renames a table within a keyspace.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command will export the schema of a keyspace to a file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SCHEMA EXPORT keyspace_name TO file_name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DESCRIBE keyspace_name TO file_name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "COPY SCHEMA keyspace_name TO file_name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DESCRIBE keyspace_name > file_name"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94239,
+      "Explanation": "To export the schema of a keyspace to a file, use the &apos;DESCRIBE keyspace_name > file_name&apos; command.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What command in CQLSH resets the prompt to its default line?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RESET PROMPT"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "PROMPT RESET"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SET PROMPT"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DEFAULT PROMPT"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6885,
+      "QuestionTypeId": 0,
+      "QuestionId": 94240,
+      "Explanation": "The &apos;RESET PROMPT&apos; command in cqlsh is used to restore the default prompt line.",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

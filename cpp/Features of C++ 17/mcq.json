@@ -1,0 +1,816 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is the primary advantage of using nested namespaces introduced in C++17?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Improves namespace performance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Reduces code duplication"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Simplifies definition and readability of deeply nested namespaces"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Increases execution speed"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99109,
+      "Explanation": "Nested namespaces in C++17 allow developers to define multiple levels of namespaces in a more compact and readable way, enhancing code readability and simplicity when dealing with deeply nested namespaces.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you declare nested namespaces in C++17?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "namespace A::B::C {}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "namespace A nested B nested C {}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "namespace A::B::C:: {}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "namespace A then B then C {}"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99110,
+      "Explanation": "In C++17, nested namespaces can be declared using the syntax &#39;namespace A::B::C {}&#39;, which allows for a concise representation.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you declare a function in a nested namespace using the syntax introduced in C++17?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The function will not be visible outside the namespace"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The function is automatically inline"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The function can be accessed with its qualified name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The function must be defined outside the namespace block"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99111,
+      "Explanation": "Functions declared in a nested namespace using C++17 syntax are accessible using their fully qualified name, enhancing organization and modular code management.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a valid use of nested namespaces in C++17?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "namespace A::B { int x; }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "namespace A:: { int x; }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "namespace A::B::C { void func(); }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "namespace A::B { namespace C {} }"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99112,
+      "Explanation": "The syntax &#39;namespace A:: { int x; }&#39; is invalid because a namespace separator must directly follow an identifier, not be isolated.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using C++17 nested namespaces, which declaration is equivalent to &#39;namespace A { namespace B { namespace C { int var; }}}&#39;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "namespace A then B then C { int var; }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "namespace A::B::C { int var; }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "namespace (A)(B)(C) { int var; }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "namespace A type B type C { int var; }"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99113,
+      "Explanation": "The equivalent declaration using C++17 nested namespace syntax is &#39;namespace A::B::C { int var; }&#39;, which compacts multiple levels of namespaces.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C++17, what happens if you use a variable declared in a &#39;switch&#39; statement inside one of its &#39;case&#39; labels?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It&#39;s not possible to declare variables in &#39;switch&#39; statements."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The variable is automatically in scope for all &#39;case&#39; labels."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The variable is only in scope for the specific &#39;case&#39; label it was declared in."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The variable declaration in a &#39;switch&#39; statement is completely outside the scope."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99114,
+      "Explanation": "Variables declared in a &#39;switch&#39; statement are scoped only to the specific &#39;case&#39; label or block in which they are declared.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does declaring a variable in an &#39;if&#39; statement differ in C++17 compared to previous standards?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The variable must be declared as &#39;const&#39;."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Variables declared in the &#39;if&#39; expression are scoped to the entire &#39;if-else&#39; block."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Variables cannot be initialized in the &#39;if&#39; statement anymore."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "There is no difference in variable declaration in &#39;if&#39; statements from previous C++ versions."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99115,
+      "Explanation": "In C++17, variables declared in the &#39;if&#39; condition are accessible in both the &#39;if&#39; and &#39;else&#39; blocks thereby expanding their scope compared to earlier versions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a valid restriction when declaring a variable in a &#39;switch&#39; statement in C++17?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Variables declared in &#39;switch&#39; are global by default."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Variables cannot be declared with data types other than int."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Variables are only scoped to the block they are declared in."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Variables must be initialized before their declaration."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99116,
+      "Explanation": "In C++17, variables declared in &#39;switch&#39; are scoped only to the specific block they are declared in, similar to variables declared within the &#39;if&#39; condition.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does variable initialization in &#39;if&#39; and &#39;switch&#39; in C++17 provide better code readability?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By removing the need for variables based on the context."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By keeping the variable declarations outside of the &#39;if&#39; and &#39;switch&#39; scopes."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By declaring and initializing variables directly within the &#39;if&#39; or &#39;switch&#39; scope, which limits their lifetime and visibility."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By allowing variables to be used as magic variables throughout the program."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99117,
+      "Explanation": "In C++17, declaring and initializing variables directly within &#39;if&#39; or &#39;switch&#39; statements limits their scope and visibility, making code more modular and readable by focusing the variable usage.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of the &#39;if constexpr&#39; statement in C++17?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To execute code at runtime based on conditions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To evaluate conditions at compile time"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To define constant expressions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To create templates"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99118,
+      "Explanation": "&#39;if constexpr&#39; is used to evaluate conditions at compile time, allowing for the elimination of code paths that are not compiled.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which scenario is most suitable for using &#39;if constexpr&#39;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When you want to perform calculations at runtime"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When handling different message formats at runtime"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When you need to select different code paths at compile time"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When dealing with user input validation"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99119,
+      "Explanation": "&#39;if constexpr&#39; is best used for selecting code paths at compile time based on template parameters or constant expressions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if the condition in &#39;if constexpr&#39; evaluates to false?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The code in the &#39;else&#39; block is executed at compile time"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The false branch is compiled but not executed"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The false branch is neither compiled nor executed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The compiler generates a runtime error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99120,
+      "Explanation": "If the condition evaluates to false, the false branch is neither compiled nor executed, optimizing code paths that are not needed.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about &#39;if constexpr&#39; in relation to template instantiation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It forbids instantiation of templates"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It requires templates to be fully specialized"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It can prevent instantiation of template branches not needed for specific template arguments"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It mandates instantiation of all template branches"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99121,
+      "Explanation": "&#39;if constexpr&#39; can avoid the instantiation of template branches that are not needed for specific template arguments, helping to reduce template bloat and improve compile times.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following code snippets correctly uses structured bindings to unpack a tuple in C++17?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "auto [a, b, c] = std::make_tuple(1, 2, 3);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "std::tuple a, b, c = std::make_tuple(1, 2, 3);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "std::tie(a, b, c) = std::make_tuple(1, 2, 3);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "tuple_bind&lt;a, b, c&gt;(std::make_tuple(1, 2, 3));"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99122,
+      "Explanation": "In C++17, structured bindings allow you to unpack tuples directly into named variables using the syntax: auto [a, b, c] = std::make_tuple(1, 2, 3);",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you use structured bindings with a pair instead of a tuple in C++17?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It results in a compilation error."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only the first element will be unpacked."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Structured bindings can also unpack pairs into variables."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The behavior is undefined."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99123,
+      "Explanation": "Structured bindings in C++17 can be used to unpack both tuples and pairs into separate named variables.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can structured bindings be used with arrays in C++17, and if so, how is the syntax different from tuples?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Structured bindings cannot be used with arrays."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes, using the same syntax: auto [a, b] = myArray;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, but only with special syntax: array_bind&lt;a, b&gt;(myArray);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Structured bindings with arrays require the array to be a std::array."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99124,
+      "Explanation": "Structured bindings can be used with arrays in C++17 with the same syntax as tuples: auto [a, b] = myArray; However, the array must have a fixed size known at compile time.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a benefit of using structured bindings in C++17?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Allows for dynamic memory allocation."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Increases the speed of code execution."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Improves code readability by allowing variable unpacking."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Automatically handles exceptions at runtime."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99125,
+      "Explanation": "Structured bindings improve code readability by enabling the direct unpacking of tuples, structs, and pairs into named variables.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using structured bindings with user-defined types, which feature of the type is primarily utilized?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Copy constructor"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Default constructor"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Member-wise assignment operator"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Decomposition declarations"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99126,
+      "Explanation": "Structured bindings in C++17 utilize decomposition declarations in user-defined types, allowing member variables to be directly bound to named variables.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a fold expression in C++17 mainly used for?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To optimize compile time of template code"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To apply a binary operator over all elements of a parameter pack"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To enforce type safety in template functions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To simplify the use of lambda functions"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99127,
+      "Explanation": "A fold expression in C++17 allows the application of a binary operator to all elements in a parameter pack, enabling the compact and efficient summation or operation of these elements.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you use a fold expression and the parameter pack is empty?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The program will result in a compile-time error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It uses a default value specified if provided, otherwise results in an error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It returns a garbage value"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The fold expression automatically ignores the empty pack without any issue"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99128,
+      "Explanation": "If the parameter pack in a fold expression is empty, it uses the default value if provided, otherwise it leads to a compile-time error.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following correctly represents a binary right fold expression using subtraction?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "(... - args)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "(args - ...)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "(args - ... - init)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "(init - ... - args)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99129,
+      "Explanation": "The expression &#39;(init - ... - args)&#39; represents a binary right fold using subtraction, with &#39;init&#39; as the initial value.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the context of C++17 fold expressions, what is meant by &#39;init&#39;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A runtime-determined value passed to the fold"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An initial value combined with the first element and subsequently used in binary folds"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A syntactic placeholder for automated type deduction"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A default variable type used in template specialization"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99130,
+      "Explanation": "&#39;init&#39; in C++17 fold expressions refers to an initial value which is used to start the operation for binary folds, acting as a starting point in right or left fold evaluation.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which C++ version introduced direct list initialization for enums?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "C++11"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "C++14"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C++17"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "C++20"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99131,
+      "Explanation": "C++17 introduced direct list initialization for enums, allowing enumeration values to be directly initialized with a list.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a valid direct list initialization for an enum in C++17?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "enum Color { Red, Green, Blue } colors = { Red, Blue };"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "enum Color { Red, Green, Blue } = { Red, Green };"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "enum class Color { Red, Green, Blue } colors{ Red, Blue };"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "enum class Color { Red, Green, Blue } = { Red, Green };"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99132,
+      "Explanation": "In C++17, direct list initialization is valid in the form of initializing an object of an enum class using curly braces, like in Option C.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the advantage of direct list initialization for enums introduced in C++17?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Prevents narrowing conversions."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Allows implicit conversion to integers."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Enables automatic incremental enumeration."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Supports enumeration value ordering."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99133,
+      "Explanation": "Direct list initialization prevents narrowing conversions by ensuring that values can only be initialized if they are valid for the enum type.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement correctly demonstrates the use of direct list initialization for scoped enums in C++17?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "enum Months { Jan, Feb, Mar }; Months m = { Feb };"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "enum class Months { Jan, Feb, Mar }; Months m{ Feb };"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "enum Months { Jan, Feb, Mar }; Months m{ Feb };"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "enum class Months { Jan, Feb, Mar } m{ Feb };"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99134,
+      "Explanation": "Option B correctly uses direct list initialization for a scoped enum (enum class). Scoped enums ensure that &#39;Feb&#39; is associated with &#39;Months.&#39;",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why does direct list initialization in C++17 prevent certain kind of implicit conversions in enums?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Because it only allows integral values directly assignable."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Because it initializes only scalar types."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Because it is stricter in type-checking, disallowing narrowing."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Because it can initialize multiple values at once."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 115,
+      "QuestionTypeId": 0,
+      "QuestionId": 99135,
+      "Explanation": "Direct list initialization is stricter in type-checking and disallows narrowing conversions, thus preventing invalid implicit conversions.",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

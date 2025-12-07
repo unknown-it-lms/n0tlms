@@ -1,0 +1,3456 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Which of the following is not a valid Razor syntax in ASP.NET MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@{ }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@( )"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@[]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@if { }"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 85939,
+      "Explanation": "@[] is not a valid Razor syntax in ASP.NET MVC.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the @model directive in an ASP.NET MVC view?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To specify the model type for the view"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To create a new instance of the model"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To serialize the model data<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To pass data from the view to the controller"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 85941,
+      "Explanation": "The @model directive is used to specify the model type for the view.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is strongly typed view in MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "View created with model class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "View having same name as class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "View created with strong keyword"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "View created with controller class"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 70548,
+      "Explanation": "The view which binds to a specific type of ViewModel is called as Strongly Typed View. By specifying the model, the Visual studio provides the intellisense and compile time checking of type.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What is the difference between HtmlTextbox and HtmlTextboxFor using ASP.Net MVC Razor Engine?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<div>@Html.TextBox is strongly typed, @Html.TextBoxFor is not strongly typed that is why should be use @Html.TextBox in MVC Razor Engine.</div>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<div>@Html.TextBox is not strongly typed, @Html.TextBoxFor is strongly typed that is why should be use @Html.TextBoxFor in MVC Razor Engine</div>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "All"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<div>None</div>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 70523,
+      "Explanation": "Html.TextBox is extension method of HtmlHelper class that draws HTML TextBox and accept input from user. Html.TextBox is loosely typed method that renders plain textbox input and doesn&apos;t get bounded with any model properties. Because it is loosely type bounded, it also does not check for error at compile time so, if you passed wrong string as parameter that don\u2019t match to model properties, you are likely to get runtime error.<br><br>Html.TextBoxFor also used for drawing text box in asp.net web pages but it is strongly bounded with model properties. The benefit of using Html.TextBoxFor is, it checks for error at compile time and saves you from any uncertain runtime error. Because it is strongly bounded with model properties, you will also get Intellisense suggestion when using it.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>The Razor View Engine uses ______&nbsp; to render server side content.</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;%= %&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both A &amp; B"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<div>None</div>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 70521,
+      "Explanation": "The Razor View Engine is an advanced view engine, available with MVC 3.0 and later versions. Razor uses the \"@\" character instead of \"&lt;% %&gt;\" as used by the ASPX View Engine.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If Razor View Engine need to add JQuery function and contain @ special character then how we can<br>write it in Razor View?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Replace @ to @@@ (tripple)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Replace @ to @@ (double)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "None"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both (A &amp; B)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 81683,
+      "Explanation": "<p>In Razor syntax, the @ character is used for switching between C# code and markup. If you need to include JavaScript or jQuery functions that contain the @ character (especially in string literals or URLs), you should escape it by doubling it (@@). This tells Razor not to interpret the @ as part of Razor syntax but as a literal @ character in the output.</p><p>Therefore, option B is the correct approach for handling @ characters in jQuery functions within Razor views.</p>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How to set Default Value to Hidden Input Box using ASP.Net MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@Html.HiddenFor(m =&gt; m.Name, \"Jack\")"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@Html.HiddenFor(m =&gt; m.Name, new { Value = \"Jack\"})"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@Html.Hidden(m =&gt; m.Name, new { Value = \"Jack\"})"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 81684,
+      "Explanation": "<p>In ASP.NET MVC, if you want to set a default value for a hidden input field using the HtmlHelper, you should use option B. Here&apos;s why:</p><ul><li><p>Html.HiddenFor(m =&gt; m.Name, \"Jack\"): This syntax is incorrect because the HiddenFor method does not accept a second parameter for setting a default value directly like this.</p></li><li><p>@Html.HiddenFor(m =&gt; m.Name, new { Value = \"Jack\"}): This is the correct syntax. Here, you use an anonymous object to specify additional attributes for the HTML element. The Value = \"Jack\" part sets the default value for the hidden input.</p></li><li><p>@Html.Hidden(m =&gt; m.Name, new { Value = \"Jack\"}): This syntax is for generating a plain &lt;input type=\"hidden\"&gt; tag and does not use the strongly-typed model binding that HiddenFor provides.</p></li></ul><p>Therefore, option B is the correct way to set a default value for a hidden input box using ASP.NET MVC.</p>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How to check all errors of Model using ASP.Net MVC core?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "var errors = Model.Values.SelectMany(v =&gt; v.Errors);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "var errors = ModelState.SelectMany(v =&gt; v.Errors);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "var errors = ModelState.Values.SelectMany(v =&gt; v.Errors);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 81685,
+      "Explanation": "Using LINQ:<br>IEnumerable&lt;ModelError&gt; allErrors = ModelState.Values.SelectMany(v =&gt; v.Errors);<br>will check all errors of Model .<br>The ModelState.Values property returns a collection of ModelStateEntry objects, each of which represents the state of a single model property. The SelectMany method is used to flatten the collection of ModelStateEntry objects into a single collection of errors.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The model is a _________________.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Shape of data."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Html content."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "collection of data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Type of data"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 81677,
+      "Explanation": "In MVC M stands for Model and Model is a normal C# class.<br>Model is responsible for handling data and business logic.<br>A model represents the shape of the data.<br>Model is responsible for handling database related changes<br>The Model is the part of MVC which implements the domain logic. In simple terms, this logic is used to handle the data passed between the database and the user interface (UI).",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "For which ModelState.IsValid Validate ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It checks for Entityframework Model state."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It checks for valid Model State using DataAnnotations."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It checks for SQL database state."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 81679,
+      "Explanation": "ModelState.IsValid property is an inbuilt property of ASP.Net MVC which verifies two things:<br>1. Whether the Form values are bound to the Model.<br>2. All the validations specified inside Model class using Data annotations have been passed.<br>ModelState.IsValid property can be used to perform some logical operations based on the values submitted by the User.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "HtmlHelper class _________.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Generates html elements"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Generates html view"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Generates html help file"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Generates model data"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 81614,
+      "Explanation": "The HtmlHelper class in ASP.NET MVC is used to generate HTML elements within views. It provides methods like TextBox, DropDownList, TextArea, etc., which generate HTML markup based on the provided parameters. These methods simplify the process of rendering HTML controls and allow for easier integration of server-side data into HTML forms and views. Therefore, option A, \"Generates html elements,\" accurately describes the functionality of the HtmlHelper class.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;_____ attributes can be used for data validation in MVC.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DataAnnotations"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Fluent API"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DataModel"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "HtmlHelper"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 81615,
+      "Explanation": "DataAnnotations attributes are used for data validation in ASP.NET MVC. They allow you to apply validation rules to model properties, which are then enforced by the MVC framework. These attributes are found in the System.ComponentModel.DataAnnotations namespace and include validators like [Required], [StringLength], [Range], [EmailAddress], etc. This helps ensure that the data submitted to the application meets the defined requirements.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following view contains common parts of UI?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Partial view"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Html View"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Layout view"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Razor view"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 81616,
+      "Explanation": "A Layout view in ASP.NET MVC contains common parts of the UI that are shared across multiple views, such as headers, footers, and navigation menus. It is similar to a master page in Web Forms and helps maintain a consistent look and feel throughout the application.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;How to transfer data from controller to view?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using model object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using ViewBag"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using ViewData"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 81617,
+      "Explanation": "There are multiple ways by which we can&nbsp; transfer data from controller to view .<ol><li>Using model object</li><li>Using ViewBag</li><li>Using ViewData</li></ol>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following method of html helper generates html control based on the data type of<br>specified property?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Html.TextBox"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Html.Password"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Html.Editor"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Html.Display"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 81623,
+      "Explanation": "The Html.Editor method in ASP.NET MVC generates an HTML control based on the data type of the specified property. It dynamically chooses the appropriate HTML input element depending on the property type, such as a text box for string properties, a checkbox for boolean properties, a date picker for date properties, etc. This method provides a flexible and efficient way to create forms that adapt to different data types.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What is the extension of MVC view when using C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "cshtml"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "vbhtml"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "None"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both A &amp; B"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 81636,
+      "Explanation": "cshtml is the extension of MVC view when using C#.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you comment using Razor Syntax?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "*@ Comment me *@"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@* Comment me *@"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@* Comment me @*"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "*@ Comment me @*"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 81638,
+      "Explanation": "razor comment block that starts with @* and ends with *@.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Namespace is used for Razor View Engine ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "System.Web.Razor"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "System.Web.Mvc.WebFormViewEngine"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both A &amp; B"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 81639,
+      "Explanation": "The Razor View Engine is a popular view engine in ASP.NET MVC used to dynamically generate web pages. It provides a streamlined syntax for embedding server-based code (typically C#) within HTML markup. The namespace responsible for the Razor View Engine is System.Web.Razor.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Namespace is used for ASPX View Engine ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "System.Web.Razor"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "System.Web.Mvc.WebFormViewEngine"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both A &amp; B"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 81640,
+      "Explanation": "System.Web.Mvc.WebFormViewEngine&nbsp;Namespace is used for ASPX View Engine.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The ASPX View Engine uses to render server side content.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;%= %&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both A &amp; B"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 81642,
+      "Explanation": "The ASPX View Engine, which is also known as the Web Forms View Engine, uses the <code>&lt;%= %&gt;</code> syntax to render server-side content. This syntax allows embedding server-side code within HTML to output dynamic content.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which is more faster between ASPX View Engine and Razor View Engine.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ASPX View Engine"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Razor View Engine"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both A &amp; B"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 81643,
+      "Explanation": "The Razor View Engine is generally considered faster and more efficient compared to the ASPX View Engine. Razor&apos;s syntax is more concise and designed to be more readable and maintainable, which can lead to performance improvements in rendering views. Additionally, Razor is optimized for MVC patterns and reduces the amount of boilerplate code needed, contributing to better performance and quicker rendering times.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of a Layout file in ASP.NET MVC?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Layout files define the structure and common UI elements for multiple views."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Layout files enforce data validation rules for input fields."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Layout files execute database queries before rendering a view."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Layout files are used to handle HTTP requests.<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 81644,
+      "Explanation": "Layout files (_Layout.cshtml in Razor syntax) in ASP.NET MVC define the overall structure, common UI elements (like header, footer, navigation menu), and layout for multiple views in the application. They allow for consistent design across multiple pages and help in separating the common UI elements from individual view content. Layout files do not handle data validation, execute database queries, or handle HTTP requests directly; these tasks are typically handled by controllers, models, and specific views.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How to Print value from Controller to View in MVC ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ViewBag.ECMDetail = \"my message\"; and in view @ViewBag.ECMDetail"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ViewBag.ECMDetail = \"my message\"; and in view ViewBag.ECMDetail"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ViewBag.ECMDetail = \"my message\"; and in view ViewBag.Title"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 81646,
+      "Explanation": "In the above example, we want to display the ECMDetail in a view. So, we have attached the ECMDetail property to the ViewBag and assigned&nbsp; \"my message\" value.<br>Now, in the view, you can access ViewBag. ECMDetail property, as @ViewBag.ECMDetail .<br>ViewBag only transfers data from controller to view, not visa-versa. ViewBag values will be null if redirection occurs.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does work Viewstart in MVC (ASP.Net)?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Viestart is used to layout of the application."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Viewstart is used like Masterpage in traditional forms (ASP.Net pages)."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Viewstart render first in the views."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A, B and C."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 81652,
+      "Explanation": "E",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Viewstart comes under which folder name ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Vievs"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Account"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Shared"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Home"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 81653,
+      "Explanation": "--",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about Partial Views in ASP.NET MVC?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Partial Views can be invoked using the @Html.RenderPartial() method."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Partial Views cannot have their own layout file."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Partial Views always inherit the model of their parent view."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Partial Views are always cached by default.<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 81654,
+      "Explanation": "Partial Views in ASP.NET MVC are reusable components that can be included in multiple views. They can be invoked using the @Html.RenderPartial() or @Html.Partial() methods. Partial Views can have their own layout file (_Layout.cshtml) if needed. They can also accept a separate model from their parent view, allowing for flexibility in data binding. Partial Views are not cached by default; caching can be implemented using output caching directives.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the name of default Viewstart Page in ASP.Net MVC ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "_ViewStart.cshtml"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "_Layout.cshtml"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "_Login.cshtml"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 81655,
+      "Explanation": "In ASP.NET MVC, the default name for the ViewStart page is _ViewStart.cshtml. The _ViewStart.cshtml file is a special view file that is executed before any other view is rendered in the application. It is used to specify common layout settings or code that should be applied to all views in the application.<br><br>The _ViewStart.cshtml file typically contains Razor code to set layout pages, which define the common layout structure for all views. By defining the layout in the _ViewStart.cshtml, you avoid the need to specify the layout in each individual view, promoting code reusability and consistency across the application.<br><br>The _ViewStart.cshtml file is placed in the Views folder of the MVC project, and its settings apply to all views within that folder and its subfolders. However, if there is another _ViewStart.cshtml file in a subfolder, it will override the settings defined in the parent folder&apos;s _ViewStart.cshtml.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the name of default viewstart page in asp.net mvc core?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "_ViewStart.cshtml"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "_Login.cshtml"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "_Layout.cshtml"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 81610,
+      "Explanation": "The default name of the viewstart page in ASP.Net MVC Core is _ViewStart.cshtml. This file is located in the Views folder and is used to specify the default layout for all views in the application. The _ViewStart page is executed before any other view and allows you to specify common layout, styles, scripts, and other content that should be included in every view in the application. The content specified in the _ViewStart page will be applied to all views in the application, unless it is overridden in a specific view.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of the Model in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To handle user input validation."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To represent the application's data and business logic."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To display data in a structured format."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To manage routing configurations."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95667,
+      "Explanation": "In ASP.NET MVC Core, the Model is responsible for representing and managing the application&apos;s data and business rules. This might involve interacting with a database and applying the relevant business logic.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which class in Entity Framework Core is generally used as the Model class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DbContext"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DataTable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DbSet"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "POCO class"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95668,
+      "Explanation": "Plain Old CLR Objects (POCO) classes are used as Model classes since they represent the data in a simple, easy-to-understand way without being tied to a particular database schema or library.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements correctly describes 'Data Annotations' in ASP.NET Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Data Annotations are used to generate routing configurations."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Data Annotations are used for client-side scripting."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Data Annotations are attributes used for validation in Model classes."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Data Annotations facilitate communication between the Controller and View."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95669,
+      "Explanation": "Data Annotations are attributes applied to Model properties to enforce validation rules and define how data is displayed and formatted.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In ASP.NET Core MVC, how can you include model validation logic?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using middleware functions."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By setting up filters in the controller."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using data annotation attributes in the Model class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By configuring routes in Startup.cs."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95670,
+      "Explanation": "Model validation in ASP.NET Core MVC is typically done using data annotation attributes in the Model class to specify the rules for validating data.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the use of the INotifyPropertyChanged interface in models?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It enables event handling for ASP.NET Core applications."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It supports real-time data fetching from the server."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It notifies clients that a property value has changed."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It synchronizes data between the View and Controller."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95671,
+      "Explanation": "INotifyPropertyChanged is used to notify clients, such as Views in an MVVM architecture, that a property value has changed, which is useful for data-binding scenarios.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which interface is often implemented for Model validation serverside only in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IValidatableObject"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "IModelBinder"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "IActionFilter"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "IConvertable"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95672,
+      "Explanation": "The IValidatableObject interface is implemented to provide a way to perform model validation that occurs only on the server-side in ASP.NET MVC Core.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default return data type of a Model property decorated with the [Key] attribute in Entity Framework Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "string"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Guid"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "long"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95673,
+      "Explanation": "The [Key] attribute is mainly used to indicate a primary key in Entity Framework Core, often defaulting to an integer type in many database configurations.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using Entity Framework Core, what command can you use to add scaffolding for a database context and model classes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "dotnet ef migrations add"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "dotnet ef dbcontext scaffold"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "dotnet ef migrations script"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "dotnet ef model schema"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95674,
+      "Explanation": "The command &apos;dotnet ef dbcontext scaffold&apos; is used to scaffold a database context and model classes from an existing database in Entity Framework Core.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which attribute is used to specify that a model property should not be mapped to a database column?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "NotMapped"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ColumnIgnore"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Unmapped"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SkipColumn"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95675,
+      "Explanation": "The [NotMapped] attribute is used to indicate that a model property should not be used when creating a database schema, meaning that the property will not be mapped to a database column.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a primary benefit of using ViewModel over directly passing models to the View in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It automatically improves performance by optimizing queries."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It provides a strongly-typed mechanism for rendering views."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It helps separate View data from domain operations for better design."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It eliminates the need for Entity Framework."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95676,
+      "Explanation": "ViewModels are designed to encapsulate data that the View requires, separating it from domain or business models, which results in cleaner architecture and more focused View logic.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a view in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A C# class handling HTTP requests"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A component that displays data and collects user input"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A JSON object sent from server to client"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An ASP.NET Core service for database management"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95677,
+      "Explanation": "In ASP.NET Core MVC, a view is responsible for generating the user interface and is used to display data and collect user input.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which view engine is used by default in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "JavaScript"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Razor"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "JSP"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Thymeleaf"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95678,
+      "Explanation": "The Razor view engine is the default view engine in ASP.NET Core MVC, used for rendering HTML from .cshtml files.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Where are view files typically located in an ASP.NET Core MVC project?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "/wwwroot"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "/Configuration"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "/Controllers"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "/Views"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95679,
+      "Explanation": "View files are typically located in the /Views folder in an ASP.NET Core MVC project.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What file extension do Razor view files use in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": ".html"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": ".razor"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": ".cshtml"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": ".mvc"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95680,
+      "Explanation": "Razor view files use the .cshtml file extension, which combines HTML with C# code.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you pass data from a controller to a view in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using sessions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using cookies"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Through ViewData or ViewBag"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By editing the Global.asax file"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95681,
+      "Explanation": "Data can be passed from a controller to a view using ViewData or ViewBag, which are both dynamic objects.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which layout file is used by default in an ASP.NET Core MVC application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "_Layout.cshtml"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Default.cshtml"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "MainLayout.cshtml"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Base.cshtml"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95682,
+      "Explanation": "The default layout file used in ASP.NET Core MVC is _Layout.cshtml, typically found in the Views/Shared directory.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the @RenderSection directive in a Razor view?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To execute JavaScript code"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To define a placeholder for optional content"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To import partial views"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To include CSS styles"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95683,
+      "Explanation": "@RenderSection is used to define a section within a layout that derived views can fill with optional content.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you specify a layout file for a view in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using the @model directive"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using the @inject directive"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using the @inherits directive"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using the @layout directive"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95684,
+      "Explanation": "The @layout directive is used to specify a layout file for a Razor view, typically placed at the top of the view file.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary difference between ViewData and ViewBag in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ViewData is strongly typed while ViewBag is loosely typed"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ViewData is a dictionary and ViewBag is a dynamic property"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ViewBag stores data in session while ViewData does not"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They are identical in every way"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95685,
+      "Explanation": "ViewData is a dictionary object that stores data as key-value pairs, whereas ViewBag is a dynamic property that allows adding and accessing data dynamically.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you include a partial view in a Razor view?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using the Html.RenderPage method"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using the @partial directive"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using the Html.Partial or Html.RenderPartial methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By importing the view with the @import directive"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95686,
+      "Explanation": "Partial views can be included in a Razor view using Html.Partial or Html.RenderPartial methods, which allow reusability of view components.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In an Asp.Net MVC Core application, where are shared views typically stored?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Under the 'Controllers' directory."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Inside the 'Models' folder."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "In the 'Shared' folder under the 'Views' directory."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "In the 'wwwroot' folder."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95687,
+      "Explanation": "Shared views are typically stored in the &apos;Shared&apos; folder within the &apos;Views&apos; directory, allowing multiple controllers to reuse these views.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the '_ViewImports.cshtml' file in an MVC Core application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To define global styles for shared views."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To import commonly used namespaces and tag helpers across multiple views."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To import shared views from external libraries."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To store business logic and data models."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95688,
+      "Explanation": "The &apos;_ViewImports.cshtml&apos; file is used to include common namespaces, tag helpers, and other directives for all razor views in the application, streamlining view development.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which layout file is commonly stored in the 'Shared' folder by default in an MVC Core project?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "_SiteLayout.cshtml"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "_SharedLayout.cshtml"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "_DefaultLayout.cshtml"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "_Layout.cshtml"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95689,
+      "Explanation": "The &apos;_Layout.cshtml&apos; file is the default layout file for MVC Core applications and is often stored in the &apos;Shared&apos; folder to be accessible by all views using the layout.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using the 'Partial' tag helper in Razor views, what is the main purpose?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To render and inject pieces of content or other views into the main layout."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To authenticate users and manage session state."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To apply middleware to incoming HTTP requests."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To manage database migrations."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95690,
+      "Explanation": "The &apos;Partial&apos; tag helper is used to render partial views, which helps in modularizing the UI components by injecting reusable pieces of content into views.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can a shared view be referenced in Razor syntax in an MVC Core application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@Html.Partial(\"_ViewName\")"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@RenderPartial(\"_ViewName\")"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@PartialView(\"_ViewName\")"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@RenderView(\"_ViewName\")"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95691,
+      "Explanation": "The &apos;@Html.Partial&apos; method is commonly used to render a shared view or partial view in Razor syntax, where &apos;_ViewName&apos; is the name of the shared view being referenced.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a Partial View in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A view that serves as the main layout for an application"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A simple HTML page stored separately that cannot be reused"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A reusable view fragment that can be embedded into other views"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A type of Controller that handles view logic on its own"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95692,
+      "Explanation": "A Partial View in ASP.NET MVC Core is a reusable view fragment that can be embedded in other views, helping to reduce code duplication and separation of concerns.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Razor syntax is used to render a Partial View in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@Html.Partial(\"PartialViewName\")"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@RenderPage(\"PartialViewName\")"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@RenderView(\"PartialViewName\")"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@Html.RenderComponent(\"PartialViewName\")"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95693,
+      "Explanation": "@Html.Partial(\"PartialViewName\") is used to render a partial view in ASP.NET Core MVC Razor syntax, allowing partial views to be included within parent views.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you pass a model to a Partial View in ASP.NET Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using the Url.Action method"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By directly accessing ViewBag"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Passing the model as a second parameter in Html.Partial"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using the HttpContext object"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95694,
+      "Explanation": "You can pass a model to a Partial View by using Html.Partial(\"PartialViewName\", model), where the model parameter carries the data needed by the partial view.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following scenarios is NOT ideal for using partial views?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Shared header and footer across multiple views"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Reusable sections of code like menus or side panels"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Rendering complex view logic with separate data processing"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Breaking down large views into manageable sections"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95695,
+      "Explanation": "Partial views should not be used for handling complex view logic with separate data processing, as they are intended for rendering existing data rather than modifying or processing it.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used for asynchronously rendering a partial view in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Html.PartialAsync"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Html.RenderPartialAsync"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Component.RenderAsync"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Html.IncludePartialAsync"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95696,
+      "Explanation": "Html.RenderPartialAsync is used to render a partial view asynchronously in ASP.NET Core MVC, which can be beneficial for performance in applications with heavy view rendering operations.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In ASP.NET Core MVC, which approach is commonly used to pass search filters from the View to the Controller?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using custom HTML attributes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using Query Strings"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using Data Annotations"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using Header Values"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95697,
+      "Explanation": "Query Strings are often used to pass search filters from the View to the Controller in ASP.NET Core MVC applications as they are included in the URL and easily accessible.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in ASP.NET Core MVC Controller is typically used to handle data submitted for a search operation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "HttpPut"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "HttpGet"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "HttpDelete"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "HttpPost"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95698,
+      "Explanation": "The HttpPost method is typically used to handle data submitted from a form, like search filters, as it supports sending complete form data.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the name of the Razor syntax used to loop over a collection of search results in an ASP.NET Core MVC View?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "foreach"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "for"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@for"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@foreach"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95699,
+      "Explanation": "In Razor views, @foreach is used to loop over a collection, making it suitable for iterating search results and rendering them on the page.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To perform a server-side search in ASP.NET Core MVC, which step is generally necessary?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Modify the _Layout.cshtml file"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Create a SQL query inside the View"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Create an action method in the Controller"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Declare a search variable in Program.cs"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95700,
+      "Explanation": "Creating an action method in the Controller is essential for handling server-side logic, including processing search queries and returning filtered results.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which tag helper in ASP.NET Core MVC can be used to generate a form suitable for sending search queries?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<input>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<select>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<form>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<a>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95701,
+      "Explanation": "The <form> tag helper in ASP.NET Core MVC is used to create a form for user input, which can be utilized to send search queries to the Controller using the specified method (GET or POST).",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In an ASP.NET Core MVC application, where is the default location for storing layout files?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Views/Layouts"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Views/Shared"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Views/Pages"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Views/Layout"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95702,
+      "Explanation": "Layout files are typically stored in the Views/Shared folder in ASP.NET Core MVC applications, making them accessible to any views within the application.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main purpose of using a layout in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To render partial views"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To improve the performance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To maintain consistent look and feel across multiple views"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To define routes"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95703,
+      "Explanation": "Layouts are used to define a consistent structure for multiple views by specifying common interface elements, like headers, footers, and navigation menus.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which HTML helper is used in ASP.NET Core to specify a section that can be rendered in a layout file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Html.RenderAction"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Html.Partial"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Html.Section"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Html.RenderSection"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95704,
+      "Explanation": "Html.RenderSection is used to define named sections in a layout file that can be overridden by content views.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a Razor layout view (_Layout.cshtml), which method is used to render the body of a view?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RenderBody()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "RenderSection()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "IncludeBody()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "RenderPage()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95705,
+      "Explanation": "RenderBody() is the method used in a Razor layout (_Layout.cshtml) to insert the content of a view that is based on the layout.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you define a layout for a specific Razor page in an ASP.NET Core MVC application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using a layout attribute in the @page directive"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Setting the Layout property in the @model directive"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using the @section directive"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Assigning the layout to the Layout property at the top of the Razor page"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95706,
+      "Explanation": "To define a specific layout for a Razor page, you set the Layout property at the top of the page with the path to the desired _Layout.cshtml file.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of the '_ViewStart.cshtml' file in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To define routing rules for the application."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To specify common layouts for all views in a folder."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To configure middleware for the application."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To handle exceptions globally."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95707,
+      "Explanation": "The &apos;_ViewStart.cshtml&apos; file is used to specify the common layout page for all the views in a folder and its subdirectories.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Where should the '_ViewStart.cshtml' file ideally be located in an ASP.NET Core MVC project?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "In the root directory of the project."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "In the 'Controllers' folder."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "In the 'Views' folder."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "In the 'wwwroot' folder."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95708,
+      "Explanation": "The &apos;_ViewStart.cshtml&apos; file is typically placed in the &apos;Views&apos; folder to be applied to all subfolders containing views.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If you want to specify a different layout for a particular view in an ASP.NET Core MVC application, what should you do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Change the layout in the '_ViewStart.cshtml' file only."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Specify the layout at the top of that specific view."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Create a separate '_ViewStart.cshtml' file in that view's directory."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Edit the Startup.cs file to include a layout configuration."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95709,
+      "Explanation": "To use a different layout for a specific view, specify the desired layout page at the top of that view file using the &apos;@{ Layout = ... }&apos; syntax.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does the '_ViewStart.cshtml' file affect the rendering process of views?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It compiles the Razor views into static HTML."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It dictates the order in which views are rendered."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It applies the specified layout before any view is rendered."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It dynamically generates C# code from Razor syntax."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95710,
+      "Explanation": "The &apos;_ViewStart.cshtml&apos; file sets a layout for views, ensuring that the specified layout is applied before the views are rendered.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can you have multiple '_ViewStart.cshtml' files in an ASP.NET Core MVC project, and if so, how are they utilized?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "No, only one '_ViewStart.cshtml' file is allowed per project."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes, each controller can have its own '_ViewStart.cshtml' file."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, you can have a '_ViewStart.cshtml' file for each views folder, with more specific files overriding less specific ones."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Yes, but only the one in the 'Views' root folder is used."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95711,
+      "Explanation": "You can have multiple &apos;_ViewStart.cshtml&apos; files in different views folders. The most specific file (closest to the view) will override more general files.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which section in ASP.NET MVC Core is responsible for handling requests and determining the appropriate action method in a controller?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Model"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "View"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Controller"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Routing"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95712,
+      "Explanation": "The routing component in ASP.NET MVC Core is responsible for directing incoming requests to the appropriate controller and action method based on the URL pattern.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In ASP.NET MVC Core, which section is primarily responsible for representing the application's data and business logic?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Model"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "View"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Controller"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Middleware"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95713,
+      "Explanation": "The &apos;Model&apos; represents the application&apos;s data and the business logic layers that are essential for data handling in an ASP.NET MVC Core application.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which section of ASP.NET MVC Core is used for defining the UI (User Interface) of the application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Controller"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "View"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Model"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Service"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95714,
+      "Explanation": "The &apos;View&apos; is responsible for the layout of the application, displaying data to the user, and rendering the UI elements in ASP.NET MVC Core.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the role of a 'Controller' in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Managing database operations"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Rendering HTML pages"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Handling user input and updating the model as needed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Configuring the application start-up"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95715,
+      "Explanation": "In ASP.NET MVC Core, &apos;Controllers&apos; process incoming requests, handle user input, and update the model data accordingly.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which section of ASP.NET MVC Core application configures the middleware and the services the application will use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Web.config"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Startup.cs"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Program.cs"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "AppSettings.json"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95716,
+      "Explanation": "In ASP.NET MVC Core, the &apos;Startup.cs&apos; file is responsible for configuring the middleware and services required by the application at runtime.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In ASP.NET MVC Core, what is the primary purpose of returning a model from a controller action to the view?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To pass data from the view to the controller."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To represent the structure of the database table."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To pass data from the controller to the view for rendering."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95717,
+      "Explanation": "The primary purpose of returning a model from a controller action to the view in ASP.NET MVC Core is to pass data that needs to be displayed or further processed in the view.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods is typically used in a controller action to return a model to a view in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RedirectToAction"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "CreateView"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "View"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "JsonResult"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95718,
+      "Explanation": "The &apos;View&apos; method is used in a controller action to generate a view result that returns a model from the controller to the view.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct way to pass a strongly-typed model to a view in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "return View(Model);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "return View(model);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "return View(data);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "return View(object);"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95719,
+      "Explanation": "&apos;model&apos; is the variable typically passed to the view, representing a strongly-typed model object in the MVC Core framework.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In ASP.NET MVC Core, how do you pass additional data, along with a model, to the view?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using ViewBag or ViewData."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using TempData."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using model binding."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using session variables."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95720,
+      "Explanation": "ViewBag and ViewData are used to pass additional data from a controller to a view in ASP.NET MVC Core, alongside the main model.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What should be the return type of an action method when you return a view with a model in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Json"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "IActionResult"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "HttpResponseMessage"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Task<IActionResult>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95721,
+      "Explanation": "The return type should be &apos;IActionResult&apos; for an action method that returns a view with a model in ASP.NET MVC Core, allowing for various types of responses including views.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods is commonly used in ASP.NET Core MVC to pass data from a controller to a view?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ViewData[]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "TempData[]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ViewBag<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both A and C"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95722,
+      "Explanation": "<ul><li data-start=\"1029\" data-end=\"1089\"><p data-start=\"1031\" data-end=\"1089\"><span style=\"color:#0000ff;\">Use ViewBag or ViewData for passing data to views.</span></p></li><li data-start=\"1090\" data-end=\"1177\"><p data-start=\"1092\" data-end=\"1177\"><span style=\"color:#0000ff;\">ViewBag is preferred for its cleaner syntax and is commonly used in practice.</span></p></li></ul>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is one of the main limitations of using ViewBag to pass data from an action to a view?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is not type-safe."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It can only store string values."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It does not persist data between requests."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It cannot pass complex objects."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95723,
+      "Explanation": "ViewBag is a dynamic object, meaning it is not type-safe. This can lead to runtime errors if types are misused or misspelled.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is an advantage of using strongly-typed views when passing data from Controller to View in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Supports validation directly in the view."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Allows storing data in session state."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Guaranteed compile-time type checking."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Enables using JSON objects directly."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95724,
+      "Explanation": "Strongly-typed views in MVC utilize a model to provide compile-time type safety, thereby reducing runtime errors and making the code more readable and maintainable.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does TempData differ from ViewData in ASP.NET Core MVC for passing data to a view?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "TempData persists data for the duration of a single request."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "TempData persists data across multiple requests."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "TempData is only available to derived classes."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "TempData cannot pass primitive data types."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95725,
+      "Explanation": "TempData is used to pass data from a current request to the next one, allowing data to persist across redirects. This differs from ViewData, which is only available for the duration of the current request.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using ViewData or ViewBag to pass data to a view, which of the following is a recommended best practice?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use ViewData for large amounts of data."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Minimize ViewData usage for better performance."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Avoid using models in the presence of ViewData."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use ViewBag to explicitly define data types."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95726,
+      "Explanation": "It is recommended to minimize the use of ViewData/ViewBag for passing data since they are not type-safe and can lead to performance issues when used for large amounts of data.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of using a ViewModel in ASP.NET MVC Core applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To directly interact with the database"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To organize controllers"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To pass data between a controller and a view"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To manage server-side caching"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95727,
+      "Explanation": "ViewModels are used to transfer data between the controller and the view, shaping data specifically for display in the user interface.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement about ViewModel is TRUE in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ViewModel should be tightly coupled with the database schema."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ViewModel is suitable for handling UI-specific data and logic."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ViewModel can be directly used for querying databases."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ViewModel automatically handles user authentication."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95728,
+      "Explanation": "A ViewModel is designed to encapsulate data and logic that are specific to the view, providing a tailored data structure for UI concerns.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does a ViewModel differ from a Model in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ViewModels contain validation logic, while Models do not."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Models handle UI logic, whereas ViewModels map directly to database structures."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ViewModels focus on presentation logic, while Models often map to data-persistence layers."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ViewModels are part of Razor views, whereas Models are always part of controllers."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95729,
+      "Explanation": "ViewModels are intended for presentation concerns, separating them from Models which often have a direct relationship to the data-persistence layer, such as the database.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a common practice when designing ViewModels in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Include all database fields in ViewModels."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use ViewModels to handle business logic."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Structure ViewModels to match the exact structure of a database table."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Include only properties necessary for the view in ViewModels."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95730,
+      "Explanation": "ViewModels should include only the properties needed by the view for rendering, keeping them lightweight and focused on the UI requirements.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which component is responsible for mapping between a Model and a ViewModel in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Middleware"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Entity Framework"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Automapper"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Razor Engine"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95731,
+      "Explanation": "Automapper is a library often used to facilitate mapping between Models and ViewModels, allowing properties to be transferred efficiently without manual copying.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In ASP.NET Core MVC, which feature is primarily used to share reusable pieces of UI code across multiple views?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "View Components"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Layout Views"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Partial Views"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Tag Helpers"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95732,
+      "Explanation": "<span style=\"color:#0000ff;\">Partial Views</span><span style=\"color:blue\"> in ASP.NET Core MVC are designed to encapsulate reusable pieces of UI code, making them ideal for sharing across multiple views.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When defining a View Component in ASP.NET Core, which method must be implemented in the component class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RenderAsync"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ExecuteAsync"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ViewComponentAsync"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "InvokeAsync"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95733,
+      "Explanation": "The &apos;InvokeAsync&apos; method must be implemented in a View Component class in ASP.NET Core to process logic and render the output.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "By convention, in which folder are View Components located in an ASP.NET Core MVC project?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Components"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Views"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ViewComponents"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Shared"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95734,
+      "Explanation": "<span id=\"explanation95734\" style=\"color:blue\"></span><span style=\"color:blue\">In ASP.NET Core MVC, View Components are typically structured as follows:<br>1. Class Location (C# Code):<br>View Component classes (e.g., public class MyMenuViewComponent : ViewComponent) are usually placed in the **/ViewComponents** folder or just alongside other classes (there&apos;s no strict rule).<br><br>2. View Location (Razor UI):<br>By convention, the corresponding ViewComponent view (.cshtml) is stored in:<br><br>/Views/Shared/Components/&lt;ComponentName&gt;/Default.cshtml<br>For a component called MyMenuViewComponent, the view would be located at:<br><br>/Views/Shared/Components/MyMenu/Default.cshtml<br>This is why the correct answer is D) Shared, because that&apos;s where the reusable view part lives.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To use a View Component in a Razor view, which Razor syntax is used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@component()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@model"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@viewComponent()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@invoke()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95735,
+      "Explanation": "To render a View Component in a Razor view, the syntax &apos;@await Component.InvokeAsync()&apos; or its shorthand &apos;@viewComponent()&apos; is used in ASP.NET Core MVC.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a benefit of using View Components in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Encapsulation of rendering logic"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Increased performance via caching"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Elimination of the need for controllers"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Reusability across multiple views"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95736,
+      "Explanation": "View Components do not eliminate the need for controllers in ASP.NET Core MVC. They complement controllers by allowing the encapsulation of rendering logic, increased performance, and reusability.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main advantage of using asynchronous view components in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Improved readability of the code."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Decreased server load by executing long-running tasks without blocking threads."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Increased complexity of the view logic."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Automatic memory management in the application."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95737,
+      "Explanation": "Asynchronous view components allow non-blocking execution, which can improve the scalability of web applications by freeing up threads to handle other requests while waiting for long-running tasks, such as database queries or API calls.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method signature is correct for creating an asynchronous view component in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public string InvokeAsync()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "public IViewComponentResult InvokeAsync()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "public async Task<IViewComponentResult> Invoke()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "public async Task<IViewComponentResult> InvokeAsync()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95738,
+      "Explanation": "The correct method signature for creating an asynchronous view component is &apos;public async Task<IViewComponentResult> InvokeAsync()&apos;, as the method should return Task<IViewComponentResult> to be able to run asynchronously.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you call an asynchronous view component in a Razor view?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@await Component.InvokeAsync(\"ComponentName\")"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@Component.InvokeAsync(\"ComponentName\")"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@await Html.RenderComponentAsync(\"ComponentName\")"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@Component.Invoke(\"ComponentName\")"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95739,
+      "Explanation": "Asynchronous view components are invoked in Razor views using the syntax &apos;@await Component.InvokeAsync(\"ComponentName\")&apos;, which supports asynchronous execution within the Razor view.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which class should you define an asynchronous view component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The view component should be defined in a class inheriting from IViewComponent."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The view component should be defined in a class inheriting from ControllerBase."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The view component should be defined in a class inheriting from ViewComponent."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The view component should be defined in a class inheriting from PageModel."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95740,
+      "Explanation": "Asynchronous view components should be defined in classes that inherit from ViewComponent, which provides the necessary methods for rendering views and handling asynchronous logic.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What parameter does the 'InvokeAsync' method of a view component typically take?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It must accept an HttpContext parameter."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It must accept a cancellation token."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It takes any number of parameters you define based on the information required for the view."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It takes no parameters by default."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95741,
+      "Explanation": "The &apos;InvokeAsync&apos; method of a view component can take custom parameters defined by the developer. These parameters help the method to gather necessary data before rendering the view.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a key benefit of using Strongly Typed Views in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They ensure type-safety by providing IntelliSense."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They simplify data binding by eliminating the need for model classes."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They automatically generate controllers for models."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They allow for weak binding, increasing flexibility."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95742,
+      "Explanation": "Strongly Typed Views provide type-safety in MVC applications by allowing views to be bound to specific model types. This ensures that the data sent to the view is compatible with what the view is expecting, and provides IntelliSense in the view.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Razor syntax is used to reference a property on a strongly typed model in a View?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@Model.PropertyName"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@Html.Model.PropertyName"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "${Model.PropertyName}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Model.PropertyName"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95743,
+      "Explanation": "In a strongly typed view, properties of the model can be accessed directly using the syntax @Model.PropertyName, allowing you to bind data to the UI.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What directive do you use to enforce strongly typing in a Razor view?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@stronglyType"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@model"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@controller"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@viewType"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95744,
+      "Explanation": "The @model directive is used in a Razor view to specify the data type of the view&apos;s model, enabling strongly typed views in ASP.NET MVC Core.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does strongly typed view prevent runtime errors?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By enabling automatic balancing of properties."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Through compile-time checking of model binding."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By providing automatic error tracing."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Via built-in exception handling."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95745,
+      "Explanation": "Strongly typed views contribute to the prevention of runtime errors by enabling compile-time checking, which ensures that all model bindings are correct and property names are accurate, reducing the risk of null references or missing properties.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In ASP.NET MVC Core, how is a strongly typed view typically defined in a controller action?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using View(dynamicModel)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By passing the ViewBag to View()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using View(stronglyTypedModel)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By returning JsonResult with model data"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95746,
+      "Explanation": "In an ASP.NET MVC Core controller, a strongly typed view is typically returned using the View() method with a model instance passed as a parameter, like View(stronglyTypedModel), to ensure the view can use the model&apos;s properties.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main purpose of using scaffold templates in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To build custom HTML helpers."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To generate controllers and views based on the model."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To integrate external libraries into a project."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To manage application routing more efficiently."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95747,
+      "Explanation": "Scaffold templates in ASP.NET MVC Core are used to automatically generate controllers and views that are based on the application&apos;s data model, facilitating faster development.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which tool in Visual Studio provides the user interface for adding scaffolded items in an ASP.NET Core project?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Solution Explorer"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Package Manager Console"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Add New Item Wizard"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Add Scaffolded Item Wizard"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95748,
+      "Explanation": "The &apos;Add Scaffolded Item Wizard&apos; in Visual Studio is specifically designed to add scaffolded items to an ASP.NET Core project, providing a step-by-step interface.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using scaffolding to create CRUD operations in ASP.NET Core MVC, which template option would you typically select?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "MVC View Layout"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Razor Page"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "MVC Controller with views, using Entity Framework"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "API Controller - Empty"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95749,
+      "Explanation": "The &apos;MVC Controller with views, using Entity Framework&apos; template is used to scaffold controllers and views for CRUD operations based on an Entity Framework model in an ASP.NET Core MVC application.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command can be used in the .NET CLI to scaffold a controller in an ASP.NET Core MVC application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "dotnet mvc-cli scaffold object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "dotnet add scaffolded item"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "dotnet scaffold controller"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "dotnet aspnet-codegenerator controller"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95750,
+      "Explanation": "The &apos;.NET CLI&apos; command &apos;dotnet aspnet-codegenerator controller&apos; is used to scaffold a controller in an ASP.NET Core MVC application, providing a quick way to generate essential boilerplate code.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a requirement for using scaffold templates with Entity Framework Core in an ASP.NET Core project?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The project must use ASP.NET Core Identity."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A database connection string must be configured."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The controllers need to be created manually first."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Scaffold templates are unsupported in ASP.NET Core."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 95751,
+      "Explanation": "To utilize scaffold templates with Entity Framework Core in an ASP.NET Core project, a database connection string must be configured so that the Entity Framework can access the database to build the model.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "@model List&lt;string&gt;<br><br>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&nbsp;&nbsp;&nbsp; &lt;title&gt;Index&lt;/title&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&nbsp;&nbsp;&nbsp; &lt;h1&gt;List of Names&lt;/h1&gt;<br>&nbsp;&nbsp;&nbsp; &lt;ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @foreach (var name in Model)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;@name&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp; &lt;/ul&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;<br><br>What type of data should be passed to this view from the controller?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A single string value."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An integer value."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A list of integers."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A list of strings."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 86695,
+      "Explanation": "The view (Index.cshtml) is expecting a model of type List&lt;string&gt;. The controller should pass a list of strings to this view.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "using Microsoft.AspNetCore.Mvc;<br><br>public class ProductController : Controller<br>{<br>&nbsp;&nbsp;&nbsp; public IActionResult Index()<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return View();<br>&nbsp;&nbsp;&nbsp; }<br><br>&nbsp;&nbsp;&nbsp; public IActionResult Details(int id)<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Code to fetch product details by id from the database<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // ...<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return View(product);<br>&nbsp;&nbsp;&nbsp; }<br>}<br>Which URL pattern will invoke the Details action method with the parameter id set to 123?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "/Product/Details/123"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "/Product/Details?id=123"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "/Product/Details/?id=123"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "/Product/123/Details"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5492,
+      "QuestionTypeId": 0,
+      "QuestionId": 86703,
+      "Explanation": "The correct URL pattern to invoke the Details action method with the parameter id set to 123 is /Product/Details/123. In this pattern, the value 123 is passed as a segment of the URL.",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

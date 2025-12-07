@@ -1,0 +1,816 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What will be the output of below question?<br>import re<br>sum = 0<br>pattern = 'back'<br>if re.match(pattern, 'backup.txt'):<br>&nbsp;&nbsp;&nbsp; sum += 1<br><br>if re.match(pattern, 'text.back'):<br>&nbsp;&nbsp;&nbsp; sum += 2<br><br>if re.search(pattern, 'backup.txt'):<br>&nbsp;&nbsp;&nbsp; sum += 4<br><br>if re.search(pattern, 'text.back'):<br>&nbsp;&nbsp;&nbsp; sum += 8<br><br>print(sum)<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "7"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "13"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "14"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 70630,
+      "Explanation": "search method will see if the pattern exists anywhere in the string,<br>while match will only check if the pattern exists in the beginning of the string. Here Backup.txt and text.back are strings and not files. Hence All if statements are true except second if statement. Hence answer will be 13.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What is the ouput of following Python code?<br>re.findall('good', 'good is good')</div><div>re.findall('good', 'bad is good')</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[\u2018good\u2019, \u2018good\u2019]<br>[\u2018good\u2019]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "(\u2018good\u2019, \u2018good\u2019)<br>(good)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "(\u2018good\u2019)<br>(\u2018good\u2019)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "[\u2018good\u2019]<br>[\u2018good\u2019]"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 70177,
+      "Explanation": "Return all non-overlapping matches of pattern in string, as a list of strings. The string is scanned left-to-right, and matches are returned in the order found.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a method to achieve data hiding in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Making variables public"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using decorators"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Naming variables with a single underscore prefix"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Making functions protected"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 93152,
+      "Explanation": "In Python, prefixing a variable with a single underscore (e.g., _var) is a convention to indicate that it is intended for internal use within a module or class, thus achieving data hiding.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does name mangling accomplish in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Enhances code readability"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Protects module methods from being overridden"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Prevents accidental access to class's private variables"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Makes variable names more descriptive"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 93153,
+      "Explanation": "In Python, name mangling is used to change the name of a class&apos;s private variables and methods to make it harder to access them directly, aiding in data hiding.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can data hiding be implemented for a method in a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Starting the method name with a single underscore"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using a double underscore prefix before the method name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Naming the method with all capital letters"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Adding a suffix '_hide' to the method name"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 93154,
+      "Explanation": "<span id=\"explanation93154\" style=\"color:blue\">Data hiding for a method in Python can be implemented by prefixing the method name with double underscores (e.g., __method), resulting in name mangling that provides protection against accidental access.&nbsp;</span><span style=\"color:#0000ff;\">In Python, data hiding (or name mangling) is commonly implemented by prefixing the method name with <strong>double underscores</strong> (<code>__</code>). This alters the way the method is stored in the class&apos;s internal dictionary, making it harder (though not impossible) to access from outside the class.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a reason why data hiding is important?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It enhances code security"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It improves module accessibility"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It makes code maintenance easier"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It prevents unintended interactions with the class's internals"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 93155,
+      "Explanation": "Data hiding is not focused on improving module accessibility; instead, it is designed to protect the internal state of an object from being unintentionally accessed or modified, thereby enhancing security and maintainability.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which access modifier is typically associated with data hiding in object-oriented programming?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Public"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Default"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Protected"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Private"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 93156,
+      "Explanation": "In object-oriented programming, the &apos;private&apos; access modifier is associated with data hiding, as it restricts access to class members, allowing them to be accessed only within the class itself.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the regular expression 'r\\d+' match?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "One or more non-digit characters"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Zero or more word characters"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "One or more digit characters"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A single letter character"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 93157,
+      "Explanation": "The pattern &apos;\\d+&apos; matches one or more digit characters. &apos;\\d&apos; is a shorthand character class for digits 0-9.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which module in Python provides support for regular expressions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "regex"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "re"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "regexp"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "rex"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 93158,
+      "Explanation": "The &apos;re&apos; module in Python is used for working with regular expressions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the caret symbol (^) represent in a regular expression pattern?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "End of a string"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Beginning of a string"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Match a single character"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Beginning of a line"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 93159,
+      "Explanation": "In a regular expression, the caret symbol (^) is used to match the beginning of a string.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will 're.search('^a', 'apple').group()' return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "'a'"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "'apple'"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "None"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 93160,
+      "Explanation": "The expression &apos;^a&apos; checks if the string &apos;apple&apos; starts with &apos;a&apos;. Since it does, &apos;a&apos; is returned.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following regular expressions will ONLY match strings that contain exactly two consecutive 'a' characters?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "a{2}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "aa+"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "a{2,2}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "aa"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 93161,
+      "Explanation": "The pattern &apos;a{2,2}&apos; matches strings with exactly two consecutive &apos;a&apos; characters.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function in the 're' module would you use to replace matches with a new string?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "re.replace"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "re.sub"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "re.remove"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "re.match"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 93162,
+      "Explanation": "The &apos;re.sub&apos; function is used to replace occurrences of a pattern with a new string.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the '$' symbol match in a regular expression pattern?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "End of a string"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Beginning of a string"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Any single character"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Escape character"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 93163,
+      "Explanation": "In regular expressions, the &apos;$&apos; symbol matches the end of a string.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How would you compile a regular expression pattern using the 're' module?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "re.pattern()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "re.compile()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "re.match()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "re.find()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 93164,
+      "Explanation": "The &apos;re.compile()&apos; function is used to compile a regular expression pattern into a regular expression object.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In regular expressions, what does the question mark '?' signify when placed after a character?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Match one or more occurrences"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Match zero or one occurrence"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Match any single character"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "End of line"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 93165,
+      "Explanation": "The &apos;?&apos; character in regular expressions signifies zero or one occurrences of the preceding character.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which regular expression pattern matches a valid email address format?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[^\\s]+@[^\\s]+"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[\\w]+@[\\w]+\\.com"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "[a-zA-Z]+@[a-zA-Z]+"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 93166,
+      "Explanation": "Pattern &apos;[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+&apos; correctly matches a standard email address format.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of 're.split('\\s+', 'one two  three')?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "['one', 'two', 'three']"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "['one', ' two', '  three']"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "['one two  three']"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "['one', ' ', 'two', '  ', 'three']"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 93167,
+      "Explanation": "The &apos;re.split()&apos; function splits the string by the pattern &apos;\\s+&apos;, which is one or more whitespace characters.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will 're.findall(r'\\d', 'abc 123 def 45')' return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "['123', '45']"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "['1', '2', '3', '4', '5']"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "['1', '2', '3', '45']"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "['abc', 'def']"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 93168,
+      "Explanation": "The pattern &apos;\\d&apos; finds all individual digit characters, which includes &apos;1&apos;, &apos;2&apos;, &apos;3&apos;, &apos;4&apos;, and &apos;5&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the expression 're.match('abc', 'abcdef')' return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "None"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Match object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "['abc']"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 93169,
+      "Explanation": "The &apos;re.match&apos; function checks for a match only at the beginning of the string; &apos;abc&apos; is at the start in &apos;abcdef&apos;, so it returns a match object.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the 're.IGNORECASE' flag do in regular expressions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Enables case-sensitive matching"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Enables case-insensitive matching"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Removes case considerations"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only matches uppercase letters"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 93170,
+      "Explanation": "The &apos;re.IGNORECASE&apos; flag enables case-insensitive matching, allowing &apos;A&apos; to match both &apos;a&apos; and &apos;A&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which regular expression would match the string \"123abc\" followed by any whitespace?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "r'123abc\\s'"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "r'123abc[\\w]'"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "r'123abc[a-z]'"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "r'123abc\\d'"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 93171,
+      "Explanation": "The pattern &apos;123abc\\s&apos; will match the string \"123abc\" followed specifically by any whitespace character.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the result of 're.sub(r'\\s', '-', 'hello world')'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "'hello-world'"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "'hello world'"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "'helloworld'"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "'hello&nbsp; - world'"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 93172,
+      "Explanation": "<span id=\"explanation93172\" style=\"color:blue\">The &apos;re.sub&apos; function replaces occurrences of whitespace characters &apos;\\s&apos; with a hyphen &apos;-&apos;, so &apos;hello world&apos; becomes &apos;hello-world&apos;.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method would return all non-overlapping matches of the pattern in the string, as a list of strings?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "re.match"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "re.split"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "re.findall"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "re.search"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 93173,
+      "Explanation": "The &apos;re.findall()&apos; method returns all non-overlapping matches of the pattern in the string, as a list of strings.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the regular expression 'r'[a-zA-Z]+' match?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "One or more alphabetic lowercase characters"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "One or more alphabetic uppercase characters"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "One or more alphabetic characters"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "One or more digits"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 93174,
+      "Explanation": "The pattern &apos;[a-zA-Z]+&apos; matches one or more alphabetic characters, regardless of case.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would 're.search(r'\\bflutter\\b', 'I love to flutter around')' return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "None"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Match object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "['flutter']"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 93175,
+      "Explanation": "<span id=\"explanation93175\" style=\"color:blue\">The &apos;\\b&apos; denotes word boundaries. The term &apos;flutter&apos; at the start of the second word matches the pattern, so it returns a match object.&nbsp;</span><span style=\"color:#0000ff;\">A match object representing the word &apos;flutter&apos;.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which regular expression pattern will match any single character except a newline?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": ".*"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[^\\n]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "[^a-zA-Z]"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 540,
+      "QuestionTypeId": 0,
+      "QuestionId": 93176,
+      "Explanation": "The dot &apos;.&apos; matches any single character except a newline character, thus option B is correct.",
+      "Answer": "B",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

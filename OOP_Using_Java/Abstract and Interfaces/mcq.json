@@ -1,0 +1,3190 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "<div>public abstract class Shape {</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private int x;</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private int y;</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public abstract void draw();</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void setAnchor(int x, int y) {</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.x = x;</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.y = y;</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</div><div>}</div><div>Which of the following declared class use the Shape class correctly?&nbsp;</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<div>public class Circle extends Shape {</div><div>private int radius;</div><div>public void draw();</div>}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<div>public abstract class Circle implements Shape {</div><div>private int radius;</div><div>public void draw();</div><div>}</div>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<div>public class Circle extends Shape {</div><div>private int radius;</div><div>public void draw() {/* code here */}</div><div>}</div>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<div>public abstract class Circle implements Shape {</div><div>private int radius;</div><div>public void draw() {/* code here */}</div><div>}</div>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 72470,
+      "Explanation": "<span id=\"explanation72470\" style=\"color:blue\"><span id=\"explanation72470\">Shape class is abstract here so we have to inherit the class. It is a responsibility of subclass. In option C Class circle extends Shape and we implement abstract draw() method which is correct implementation.</span></span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which one of the following is not true about abstract class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A class containing abstract methods is called an abstract class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Abstract methods should be implemented in the derived class."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An abstract class cannot have non-abstract methods."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A class must be qualified as \u2018abstract\u2019 class, if it contains one abstract method."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 72392,
+      "Explanation": "<font color=\"#0000ff\">An abstract class can have non-abstract(concrete) methods.</font>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Which of the following statements about abstract methods/classes in Java is/are true?</div><div>i) An abstract class cannot be instantiated.</div><div>ii) Constructors cannot be abstract.</div><div>iii) A subclass of an abstract class must implement the abstract methods otherwise atleast declare itself as abstract.</div><div>iv) Static methods may be declared abstract.</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Both (I) and (II) above"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "(I), (II) and (III) above"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only (I) above"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only (II) above"
+        },
+        {
+          "OptionId": "E",
+          "OptionText": "All (I), (II), (III) and (IV) above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 72403,
+      "Explanation": "<span id=\"explanation72403\" style=\"color:blue\"><span id=\"explanation72403\">Rules for Java Abstract Class<br><br>\u2022We can declare an abstract class using the abstract keyword.<br>\u2022We can have abstract and non-abstract methods in an abstract class.<br>\u2022An abstract class can have constructors and static methods.<br>\u2022An abstract class can have final methods which will force the subclass to not change the body of the method.<br>\u2022We cant instantiate an abstract class.</span></span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Given:</div><div>interface Jumper&nbsp;{</div><div style=\"margin-left: 40px;\">public void jump();</div><div>}</div><div>class Animal { }&nbsp;<br></div><div>class Dog extends Animal&nbsp;{</div><div style=\"margin-left: 40px;\">Tail tail;</div><div>}<br></div><div>class Beagle extends Dog implements Jumper&nbsp;{</div><div style=\"margin-left: 40px;\">public void jump() {}</div><div>}<br></div><div>class Cat implements Jumper&nbsp;{</div><div style=\"margin-left: 40px;\">&nbsp;public void jump() {}</div><div>}</div><div>Which of the following is true?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Cat is-a Animal"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Dog is-a Jumper"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Cat has-a Animal"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Beagle has-a Tail"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 72613,
+      "Explanation": "<span id=\"explanation72613\">Dog has tail and Beagle extends Dog. So Beagle has-a relationship with Tail.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following class definitions define a legal abstract class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "class A{abstract void unfinished();}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "class A{abstract void unfinished(){}}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "abstract class A{abstract void unfinished()}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "public class abstract A{abstract void unfinished();}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 72617,
+      "Explanation": "<span id=\"explanation72617\">When the method in the class is declared as abstract, class should be compulsorily declared as abstract. Abstract keyword should be written before class keyword.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Given:</div><div>public class Base<br>{</div><div style=\"margin-left: 40px;\">public static final String FOO = \"foo\";</div><div style=\"margin-left: 40px;\">public static void main(String[] args)<br>{</div><div style=\"margin-left: 80px;\">Base b = new Base();</div><div style=\"margin-left: 80px;\">Sub s = new Sub();</div><div style=\"margin-left: 80px;\">System.out.print(Base.FOO);</div><div style=\"margin-left: 80px;\">System.out.print(Sub.FOO);</div><div style=\"margin-left: 80px;\">System.out.print(b.FOO);</div><div style=\"margin-left: 80px;\">System.out.print(s.FOO);</div><div style=\"margin-left: 80px;\">System.out.print(((Base)s).FOO);</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>class Sub extends Base<br>{</div><div style=\"margin-left: 40px;\">public static final String FOO=\"bar\";</div><div>}</div><div>What is the result?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "foofoofoofoofoo"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "foobarfoobarbar"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "foobarfoofoofoo"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "foobarfoobarfoo"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 72608,
+      "Explanation": "<span id=\"explanation72608\">Static members can be accesible by class name as well as objects. So Base class FOO varibale has a value \"foo\" and Sub class FOO variable has a value \"bar\". In the last statement object s is type casted to Base, so it prints FOO variable from Base class. So outcome is \"foobarfoobarfoo\".</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which interface out of the following is not a marker interface",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Serializable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Clonable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Remote"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Set&lt;E&gt;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 72478,
+      "Explanation": "<ul><li><span id=\"explanation72478\"><span id=\"explanation72478\">Marker interface is that having not methods declared(no abstract methods) but it can have static and default methods implemented</span></span></li><li><span id=\"explanation72478\"><span id=\"explanation72478\">It is an empty interface (no field or methods).</span></span></li><li><span id=\"explanation72478\"><span id=\"explanation72478\">Examples of marker interface are Serializable, Clonnable and Remote interface. All these interfaces are empty interfaces.</span></span></li><li><span id=\"explanation72478\"><span id=\"explanation72478\">&nbsp; &nbsp; &nbsp; &nbsp;public interface Serializable&nbsp;</span>&nbsp; &nbsp; &nbsp; {</span></li><li><span id=\"explanation72478\"><span id=\"explanation72478\">&nbsp; &nbsp; &nbsp; &nbsp;// nothing here</span>&nbsp; &nbsp; &nbsp; &nbsp; }</span></li></ul>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "1)final &nbsp;&nbsp;&nbsp;2)abstract &nbsp;&nbsp;3)private<br>i)can't access outside the class<br>ii)can\u2019t override<br>iii)can\u2019t instantiate<br>Select correct pair:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1-ii , 2-i ,3-iii"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1 \u2013 ii , 2 \u2013 iii , 3 \u2013 i"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1-i , 2-ii ,3-iii"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1-iii , 2-i ,3-ii"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 72579,
+      "Explanation": "<ol><li><span id=\"explanation72579\">Final method can not be overridden.</span></li><li><span id=\"explanation72579\">Abstract class can not&nbsp; be instantiated.</span></li><li><span id=\"explanation72579\">Private data members can not be accessed outside the class</span></li></ol>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Given:</div><div>public abstract interface Frobnicate<br>{</div><div style=\"margin-left: 40px;\">public void twiddle(String s);</div><div>}</div><div>Which is a correct class?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<div>public abstract class Frob implements Frobnicate {</div><div>public abstract void twiddle(String s) { }</div><div>}</div>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "public abstract class Frob implements Frobnicate { }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<div>public class Frob extends Frobnicate {</div><div>public void twiddle(Integer i) { }</div><div>}</div>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<div>public class Frob implements Frobnicate {</div><div>public void twiddle(Integer i) { }</div><div>}</div>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 72649,
+      "Explanation": "Frobnicate needs to be implemented as it is interface. The implementing class should provide concrete implementation of abstract method twiddle(String s). If not atleast implementing class should be declared as abstract. So option B is correct.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Given:</div><div>interface TestA{</div><div style=\"margin-left: 40px;\">String toString();</div><div>}</div><div>public class Test{<br>&nbsp; &nbsp;&nbsp;public static void main(String[] args) {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;System.out.println(new TestA(){</div><div style=\"margin-left: 240px;\">public String toString()<br>{</div><div style=\"margin-left: 280px;\">return \"test\";</div><div style=\"margin-left: 240px;\">}</div><div style=\"margin-left: 200px;\">});</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>What is the result?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "test"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "null"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An exception is thrown at runtime."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation fails"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 72658,
+      "Explanation": "<span id=\"explanation72658\">Interface instance is created by using anonymus instance and required toString() method is overridden which displays \"test\".</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement from the following is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "local variable can be declared as final variables"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An abstract class can be declared as final"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A class can inherit constructors from any of it's super classes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Two methods may have the same name and argument list but different return types"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 72291,
+      "Explanation": "<span id=\"explanation72291\">The java final keyword can be used in various context:<br>\u25fefinal variable - A variable declared as final prevents the content of that variable being modified<br>\u25fefinal method - A method declared as final prevents the user from overriding that method<br>\u25fefinal class - A class declared as final cannot be extended thus prevents inheritance<br><br>Example:<br><br>final class TestClass<br>{<br>//this class can&apos;t be subclassed/extended<br>&nbsp; final double pie=3.14;//this variable can only be initialized once<br>&nbsp; private final Integer testMethod(final String input){ //this method can&apos;t be overidden<br>&nbsp;&nbsp;&nbsp; return 0;<br>&nbsp; }<br>}</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Which of the following are modifiers that can be applied to a method declaration within an interface?</div><div>i. abstract</div><div>ii. final</div><div>iii. private</div><div>iv. protected</div><div>v. public</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "i,iv,v"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "i,ii,iii"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "i,v"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of these"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 72315,
+      "Explanation": "<span id=\"explanation72315\">Interface can have methods declared as public and abstract</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>interface A&nbsp;</div><div>{</div><div>&nbsp; final void m1(); &nbsp;&nbsp;&nbsp;&nbsp;// 1</div><div>&nbsp; synchronized void m2(); // 2</div><div>&nbsp; native void m3(); &nbsp;&nbsp;&nbsp; // 3</div><div>&nbsp; abstract void m4(); &nbsp;&nbsp; // 4&nbsp;</div><div>&nbsp; public void m5(); &nbsp;&nbsp;&nbsp; // 5</div><div>}</div><div>Compile-time errors are generated at which lines?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1,2,3"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 72328,
+      "Explanation": "<span id=\"explanation72328\">An interface in java is a blueprint of a class. It has static constants and abstract methods. The interface in Java is a mechanism to achieve abstraction.<br>Syntax:<br>1.interface &lt;interface_name&gt;{ &nbsp;<br>2.&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>3.&nbsp;&nbsp;&nbsp; // declare constant fields &nbsp;<br>4.&nbsp;&nbsp;&nbsp; // declare methods that abstract&nbsp; &nbsp;<br>5.&nbsp;&nbsp;&nbsp; // by default. &nbsp;<br>6.}&nbsp; </span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To prevent any method from overriding, we declare the method as,",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "const"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "final"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "abstract"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 72249,
+      "Explanation": "<span id=\"explanation72249\">Final methods can not be overridden,</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The fields in an interface are implicitly specified as,",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "static only"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "protected"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "private"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "both static and final"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 72260,
+      "Explanation": "<span id=\"explanation72260\">Interface fields are by default treated as static and final.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What will happen when you attempt to compile and run the following code</div><div>class Base&nbsp;{</div><div style=\"margin-left: 40px;\">protected int i = 99;</div><div>}</div><div>public class Ab {</div><div style=\"margin-left: 40px;\">private int i=1;&nbsp;</div><div style=\"margin-left: 40px;\">public static void main(String argv[])</div><div style=\"margin-left: 40px;\">{</div><div style=\"margin-left: 80px;\">Ab a = new Ab();</div><div style=\"margin-left: 80px;\">a.hallow();</div><div style=\"margin-left: 40px;\">}</div><div style=\"margin-left: 40px;\">abstract void hallow()</div><div style=\"margin-left: 40px;\">{</div><div style=\"margin-left: 80px;\">System.out.println(\"Claines \"+i);</div><div style=\"margin-left: 40px;\">}</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compile time error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compiles and output of Claines 99"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compiles and output of Claines 1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation and not output at runtime"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 72262,
+      "Explanation": "<span id=\"explanation72262\">Abstract methods should not have body defined. So it results in compilation error.&nbsp; </span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>interface TestA { String toString(); }<br></div><div>public class Test {</div><div>public static void main(String[] args) {</div><div>System.out.println(new TestA() {</div><div>public String toString() { return \"test\"; }</div><div>});</div><div>}</div><div>}<br>What is the result?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "test"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "null"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An exception is thrown at runtime."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation fails because of an error in line 1."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 72221,
+      "Explanation": "<span id=\"explanation72221\">In given example, within TestA() constructor is defined then toString() method is called which return \"test\".</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "public&nbsp; abstract&nbsp; interface&nbsp; Manager &nbsp;<br>{<br>&nbsp;&nbsp; public void interview(String s);<br>}<br>Which&nbsp; is&nbsp; a&nbsp; correct class definition out of following?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public void abstract&nbsp; class HiringManager&nbsp;&nbsp;&nbsp; implements&nbsp;&nbsp; Manager<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public&nbsp; abstract&nbsp; void interview&nbsp; (String s)&nbsp;&nbsp;&nbsp; {}<br>}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "public abstract&nbsp;&nbsp; class&nbsp;&nbsp; HiringManager&nbsp;&nbsp;&nbsp; implements&nbsp;&nbsp; Manager {}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "public class&nbsp; HiringManager&nbsp;&nbsp; extends&nbsp; Manager<br>{<br>&nbsp;&nbsp; public&nbsp;&nbsp; void interview(lnteger&nbsp;&nbsp; i)&nbsp; {}<br>}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "public class&nbsp; HiringManager&nbsp;&nbsp; implements&nbsp; Manager&nbsp;&nbsp;<br>{<br>&nbsp;&nbsp; public void interview&nbsp; (Integer&nbsp;&nbsp;&nbsp; i) {}<br>}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 70809,
+      "Explanation": "<span id=\"explanation70809\">Class should implement Manager interface and override the method public void interview(String s)&nbsp; or declare itself as abstract.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A class which cannot have a&nbsp; subclass&nbsp; is called as ___________&nbsp; class",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "abstract"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "parent class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "final"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of these"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 70753,
+      "Explanation": "<span id=\"explanation70753\">When a class is declared as final, is can not be inherited further i.e. it&apos;s subclass can not be created.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What are marker interfaces in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The interfaces with no method declaration"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The interface with no method implementation."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The interface with partial implementation."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A &amp; B"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 70782,
+      "Explanation": "<ul><li><span id=\"explanation70782\">Marker interface is that having not methods declared(no abstract methods) but it can have static and default methods implemented.</span></li></ul><div class=\"wrapper\" id=\"main\"><div class=\"site-content\" id=\"primary\"><div id=\"content\" role=\"main\"><article class=\"post-141177 post type-post status-publish format-standard hentry category-java\" id=\"post-141177\"><div class=\"entry-content\"><ul><li><span id=\"explanation70782\">It is an empty interface (no field or methods). </span></li><li><span id=\"explanation70782\">Examples of marker interface are Serializable, Clonnable and Remote interface. All these interfaces are empty interfaces.</span></li></ul><p><span id=\"explanation70782\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public interface Serializable<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// nothing here<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p></div></article></div></div></div>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Name any two marker interfaces in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Serializable &amp; Cloneable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Comparable and Runnable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Eventlistener and Runnable."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 70783,
+      "Explanation": "<span id=\"explanation70783\">Serializable and cloneable are empty interface in java.</span><ul><li><span id=\"explanation70783\">Examples of marker interface are Serializable, Clonnable and Remote interface. All these interfaces are empty interfaces.</span></li></ul><p><span id=\"explanation70783\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public interface Serializable<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// nothing here<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p><span id=\"explanation70783\"> </span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given:<br>abstract&nbsp; interface&nbsp;&nbsp; Pixie&nbsp;&nbsp;{<div style=\"margin-left: 40px;\">abstract&nbsp;&nbsp; void&nbsp; sprinkle();<br>static&nbsp; int&nbsp; dust=&nbsp;&nbsp;&nbsp; 3;</div>}<br>abstract&nbsp; class&nbsp; TinkerBell&nbsp; implements&nbsp;&nbsp; Pixie&nbsp;{<div style=\"margin-left: 40px;\">String&nbsp; fly()&nbsp;{</div><div style=\"margin-left: 80px;\">return&nbsp;&nbsp;&nbsp; \"flying\";</div><div style=\"margin-left: 40px;\">}</div>}<br>public&nbsp; class&nbsp; ForReal&nbsp; extends&nbsp;&nbsp; TinkerBell&nbsp;{<div style=\"margin-left: 40px;\">public&nbsp;&nbsp; static&nbsp; void&nbsp; main(String[]&nbsp;&nbsp;&nbsp; args)&nbsp;{</div><div style=\"margin-left: 80px;\">new&nbsp;&nbsp; ForReal().sprinkle();</div><div style=\"margin-left: 40px;\">}<br>public&nbsp;&nbsp; void sprinkle()&nbsp;&nbsp;{&nbsp;</div><div style=\"margin-left: 80px;\">System.out.println(fly()&nbsp; +\"&nbsp;&nbsp; \"+&nbsp;&nbsp; dust);&nbsp;&nbsp;</div><div style=\"margin-left: 40px;\">}</div>}<br>What&nbsp; is the&nbsp; result?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "flying 3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compilation fails because TinkerBell doesn't properly implement Pixie"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compilation fails because ForReal doesn't properly extend TinkerBell."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation fails because Pixie is not a legal interface"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 70755,
+      "Explanation": "<span id=\"explanation70755\">Program compiles fine and gives the outcome as \"flying 3\". Using abstract modifier for interface is redundant but will not generate any error . It will give warning.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Keyword used to inherit &nbsp;Interface from &nbsp;Interface",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "abstract"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "final"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "extends"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "implements"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 70735,
+      "Explanation": "<span id=\"explanation70735\">One interface can extends another interface.<br><span tabindex=\"-1\" contenteditable=\"false\" data-cke-widget-wrapper=\"1\" data-cke-filter=\"off\" class=\"cke_widget_wrapper cke_widget_inline cke_widget_image cke_image_nocaption\" data-cke-display-name=\"image\" data-cke-widget-id=\"6\" role=\"region\" aria-label=\" image widget\"><img data-cke-saved-src=\"data:image/png;base64,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\" src=\"data:image/png;base64,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\" height=\"300\" width=\"400\" data-cke-widget-data=\"%7B%22hasCaption%22%3Afalse%2C%22src%22%3A%22data%3Aimage%2Fpng%3Bbase64%2C%2F9j%2F4AAQSkZJRgABAQAAAQABAAD%2F2wBDAAQDAwQDAwQEAwQFBAQFBgoHBgYGBg0JCggKDw0QEA8NDw4RExgUERIXEg4PFRwVFxkZGxsbEBQdHx0aHxgaGxr%2F2wBDAQQFBQYFBgwHBwwaEQ8RGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhr%2FwgARCAEdAk4DAREAAhEBAxEB%2F8QAHQABAAICAwEBAAAAAAAAAAAAAAEHAgYDBAUICf%2FEABgBAQEBAQEAAAAAAAAAAAAAAAABAgME%2F9oADAMBAAIQAxAAAAD7%2BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIIMjEyAIMDkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIOMGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYGJkZgGJBmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQSQcZkZggwOQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHGQSchBxmQMiQCpjgAAAAAAABuptYABUZxgAAAAAAA3g2gAA100EAAAAAAEEElvEHIQYkHIACmC5wACIJNoAAAFMFzgAFMFziRQKAIhZKgACmC5wACly6CCYUAIhE2RUqABS5dBgQcgAABTBc4ABxYvidMbBNAAAAUwXOAAUwXPJxNdLWPSzpQRhFf6lhEqAAKYLnAAKXLoEeXl6mwAjLU19K49q2VAApcugGAMwAAUwXOARJXmd67Zo3XPIz2OWu81eW%2BXpzoABTBc4ABTBc0dXnr5o7T0WNLzrds3LTycun15%2Brb63HfBXob5X1nc2imC5wACly6CEqDnfC1rNivGvO1bRYqrG7N3z7M1z6xXOOv0V15bfz3lVLlzGQAAABTBc4BjmVbnfn7xVd1HTlnx6%2Bql6dMbbnYAFMFzgAFMFzydXnr5X9WbX451qa1ub9osFyqTWvK6Y2Xj06Mbl253dz3lqimC5wACly6CEqHnY1nsXpoXPVfduV1ax3uO6zz0jry3aqmx0%2Bpt89mzcraXLjOQkAAAFMFzgAAAAAAApgucAApgucAAAAAAAFMFzgAFLl0AAAAAAAApcuckAAAA%2BbS0gAAAAAAAaWXoAAfNZagAAAAAAANOLxAAKSNtAAAAAAABVB9LgAAAA8ExAAAPzzP0LJAAAPRO%2BAAeAQAAAfnafogZAAAHpndAAOoeUAAAUGeQfR5yAHGZkg2AAAAAAAAA1I%2FOA%2FRs3EAAAAAAAAAGpH5wH6LG7AAAAAAAAAEGJ8anQPtgkzBgSZAAAAAAAAAApcuaQssmoQDK0AAAAAADSjc8xQglSKRMLZoAAAAcZJpy9eTejGxKsgzjK0AAAAAAAAAUsbnztfbnAvt3HTy06rH0tmaAAAAAAApc2LDT9Z7FzrnO%2B%2FrfS1nvWcmGE6bP0xZM0AAABgYnKadmdCa1DUTXPrlzLq0WPFia0AAAAAAAAAKXLRy1y3oXPsL5DMy%2B7qbVNAAAAAAAaUduTXDT8ze9ztTfjnpWdFPRmves91QAIIMiAcZyGnx0ZfOTp16FnnxieollXQAAAAAAAAApYulIVJNCFJKgAAAAAAUuXNBJUkVMRQmVE6AAQcZJJmQcZqcnXXdbEuaKQJtAAAAAAAAAFLl0AAAAAAAAAAA0k3YAAAAAAAHGQZmQINMOubwcgAAAAAAAB8sljAAAGBmAAADxy%2BAAD5WLJAAAMDMAAAHlF6gAFIneAAAMSDMAAArA%2BrwAAAAUwXOAQIikSEikZWgAUwXOAAUwXOACJBBKkEBcqAFMFzgAgpUushIlJIFQM1qMp0QoslLl0AAAAApgucAhNdxa8l0zvz3rF6Md1uzbz9NsACmC5wACmC5wAa3jVfTOl%2BjO9YdLF7ltnXHozU2gCmC5wAYFMF1GMlXR1Ws5NE09hNsa%2Bcsrg6Y3%2BNPIzu2949SJapcugAAAAFMFzgGMlG8t97eaL6PE68%2FX8vX19T6b689sx0AApgucAApgucAFF8dd7WaK7TxumPW8vX19X6a6cdrzvJQBTBc4BBBTJdBElCYvHc9jW6647pb0cvo%2Fpj3PP0rJvXt87uZ%2BYc9vtXpwsPPSSly6AAAAAUwXOARGKSAJVJMtUACmC5wACmC5wAYSSFIlIqVmgBTBc4IOM5Sly6DGEiikiXKokLGszKlakxNtLl0AAAAApgucAAAAAAAFMFzgAFMFzgAAAAAAApgucAwBTRdAAAAAAAAKXLoAAAABSxwAAAAAAAA3w3QAApIwAAAAAAABYBthJmQcZrRXJAJAAAAAAMC8wAAAAAAAAAAAAAAAAAAAAAAAAQDExMgDMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg4wSchBiYg5CQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQYmYMCTI4wcgIMTMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgxMwYmRBxmRByAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwBmDjMyTiMjMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg4zIzMAAZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEHGZGRiDIkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEHGZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIOMyMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQcRzAAAAAAAAAAAAAAA%2F%2FxAA7EAAABQMBBAYIBQQDAQAAAAADBAUGBwABAhgIEVZXEBYXIFV3EjAzNTdAQXUTFBVRYCExMjgmNFB2%2F9oACAEBAAESAP4Fjlv6LZd2%2BH8C3Vljurfe9YY%2FW%2F8ACMt9br1jl9L9y%2BW61Wz%2FAH%2Fgm6ssd1Y5fS%2FTe2%2BvQv8AwG999br1jl%2B%2FRurLHdWOX9P61llWN99u4pbSMcJKwppJpYUMzqWazJnMNT8Z%2BKLNan4z8UWa1Pxn4os1qfjPxRZrU%2FGfiizWp%2BM%2FFFmtT8Z%2BKLNan4z8UWa1Pxn4os1qfjPxRZrU%2FGfiizWp%2BM%2FFFmtT8Z%2BKLNan4z8UWa1Pxn4os1qfjPxRZphyK3JLSjamyz4h8mUOZkh8u6d2lY1IqammjLKjmbTDgxI3bU%2FGfiizWp%2BM%2FFFmtT8Z%2BKLNan4z8UWa1Pxn4os1qfjPxRZrU%2FGfiizWp%2BM%2FFFmtT8Z%2BKLNan4z8UWa1Pxn4os1qfjPxRZrU%2FGfiizWp%2BM%2FFFmtT8Z%2BKLNan4z8UWaYr%2Fb8kIoquzT2Z8gEaEK55915vVDj1vGnA7jtyCSVyDwFG1Pxn4os1qfjPxRZrU%2FGfiizWp%2BM%2FFFmtT8Z%2BKLNan4z8UWa1Pxn4os1qfjPxRZrU%2FGfiizWp%2BM%2FFFmtT0Z%2BKLVan4z8UWa1Pxn4os1qfjPxRZrU9Gfii1WG07GniizWp%2BMPTBwFWlMC4wuAOGd8frasct3TfCrYX%2BtW7mzz7aW%2FMVU%2BR2efbS35iqne2cfd0k%2BYq%2FwDI7OPu6SfMVf721P8AB8z97R%2Bi3r9qf4PmfvaP0Xx3771jlu9Rs8%2B2lvzFVO8KJiFhlnnfdjhbfe7OeCK%2FW6TcLSO%2Fn0c9bK5cx6nZ59tLfmKqd7Zx93ST5ir%2FAECC4hYZ5iZWwwxtvyyRltMcSYCpt9RJqycY33BN9zPO2GOWWd7Wtb%2Bt7sKbWFJywrJTDcIS0dSf%2B5hbv7OPu6SfMVf721P8HzP3tH6VNfSkQQkGtKhJOEPmcSxPHuv%2BSGtFiDdcfqwEjJlxsQbCthzpTzQCC%2B2jVjyUog2GKj97an%2BD5n72j9N8d%2B%2B9Yb%2B%2Fs8%2B2lvzFVO5a9TFJfZYzM1kBMzWlQyaAIJqcyz812UxS8sJTLFRDBAXPE3AyyvoGyQ2z7NTyCkrhgj%2BhaLJ%2FcyvJycy3wpxy47LBQYYieHmCUHRIzrRo0S2WKQah3EucR33K0hmpXNsCKAGYTPkE4E5nSIaOnkcgZWCX6YojFw8zRPu7PPtpb8xVTvbOPu6SfMVf6D17WJGL5YYiW%2FDy34o81HmpslpUho7cQk4zhnhuSsJdllqO9m5Sk2GyQaTwUcU4oA9O1%2FVgF1R6i%2Fn%2BrBj9KqU59XEB34MhoqTBRV4iQBOKyk0todSX4vklUGxbpp2scqNmKKO8J2fEZLDnKpTEQUBSQcjJAtAyrKTZ2cyJ4BLZh4oGlFbtzCK5%2Fc6vJycy3wpxy47LJQYYieU5NlN8vRzIkHpTSCS2sasRUFKRZ8cTQJtFvZlmo2X%2BuELnD14PnFRfTnWme7zTRU11OJhnwlLp2cfd0k%2BYq%2F3tqf4PmfvaP0zi5bNw9Gu9FR1i6i8SRG2T%2BleQisv5xzGiAiKZwdACUwjrAkyRHglP9sn01tkJOaY4YHp7Iym%2FEaOLqLlzagMdE7qg%2BeY%2B1q7c00V5EDsU2auG8zg2ZImp0EF2OUqK0ZOXRX0nmhyV5i7bhXxDgS%2FaOs1f9VHzIYyTIsptD9CLYG4rbF804LI%2BqMraNCVINX5BdBIpY228zBVRCYrindSV0RSeTcZYLSVMt4xVW2o3MtqSsfYCzFCS3Uw0KWDJRi%2FCkmsJCdiaDkWAVS1hbg9G1R8HzX3pHrHLf6rZ59tLfmKqd2eI8VpDZZYJqDFQXIiqhVYSbsd2S261bMs941IsdFCIi%2Fii5wc9zWyk1mZdMAuvox%2Bx48gsiMXkPNbGd4sPNmLkBLCPgGy0zMqS5JVVFIwiRAupBnrWQZCmtrv11WOtc3D6DJaXchgCkuKNkJZbLCbqQ7FS60uESAQJ473dnn20t%2BYqp3tnH3dJPmKv9BzDIUoPhhbfllhlbGrw89dHZBgfov8Ay0IUK%2BZCaGctO3s66vkvzn6O8SCkeqVEB%2FIMvN2Q44aQL4xBRB0c6nSfFLhAk4d%2BpEXtqVSq6nFix9ETGE4T8NSQRwjBsx4rr6cYLJ6IjtlVKwYRbY5XctBNfAhmWcsNPFY2X2UzwE4AVeQ7ER1FCZEYvIea2M8BYfbMXICWEfANlrJMpQ093oNHbCJyE2HUp3WA8ZOi16L6kypBPMhqv5xkEnIgvNWEm2rFFZUVViHWlEwNwMC4APTs4%2B7pJ8xV%2FvbU%2FwAHzP3tH6ZwZa47zkbZtwl%2BdxRniSUj9wGWuYbSht33Jbm7mzsE3E2xGetI8xSuvqRP8FIXskr9NHhxkvxuIjhix3tEMu0RbKVizob0VPVnI4DRH2co7eJwnhYoA73EwFseXIfWEtKLBojaIKQChlKrMXHJIUTqqMS%2FNEEFXMmVIWTYydQMzrDuBixEmNIWE0sUKAMKAHKZgaSmE8iCUgKi%2BsnDRLFiOybjqqhojvjZKRE4tf0FZfIw%2B5YyOKyKBADPl1KzPDG05cj5GMoDNR05QS0VGOAl7fmCVujan%2BD5n72j1e26sb77ep2efbS35iqnyOzz7aW%2FMVU72zj7uknzFX%2FkdnH3dJPmKv8Ae2p%2Fg%2BZ%2B9o%2FyO1P8HzP3tHrdv9VD0lstoKksEHY70BBPZP8AUxsS%2FbtFnMtmV27RZzLZldu0Wcy2ZXbtFnMtmV27RZzLZldu0Wcy2ZXbtFnMtmV27RZzLZldu0Wcy2ZXbtFnMtmV27RZzLZldu0Wcy2ZXbtFnMtmV27RZzLZldu0Wcy2ZXbtFnMtmVs0qRJZKykfRzgB8gakBTFAM92E5PZDS7SU51PJuoZ%2FtBXc%2FwAt27RZzLZldu0Wcy2ZXbtFnMtmV27RZzLZldu0Wcy2ZXbtFnMtmV27RZzLZldu0Wcy2ZXbtFnMtmV27RZzLZldu0Wcy2ZXbtFnMtmV27RZzLZldu0Wcy2ZXbtFnMtmV27RZzLZlbMh8qqoL%2BPphoE4SNP9cGAMd3asHCKwyfHNC4AABK6RmIJ27RZzLZldu0Wcy2ZXbtFnMtmV27RZzLZldu0Wcy2ZXbtFnMtmV27RZzLZldu0Wcy2ZXbtFnMtmV27RZzLZldu0Wcy2ZXbtFnMtmV27RZzLZldu0Wcy2ZXbtFnMtmV27RZzLZlbRErsNzRlmltt7NpZUh1lJuEU9UZZrcODimDiAlGBxcvSEF6iNXhpGrqI1eGkauojV4aRq6iNXhpGrqI1eGkauojV4aRq6iNXhpGoztFNnDa2sasmJHZyHl1fywsxWrw0i11EavDSNXURq8NI1dRGrw0jV1EavDSNXURq8NI1dRGrw0jV1EavDSNSclEUcDIBJJFiAGWd87h90dmNs0OKOab6SOOLnfMQTqI1eGkauojV4aRq6iNXhpGrqI1eGkauojV4aRq6iNXhpGrqI1eGkalLaJbYG1pgfwTUns7LZ%2FoOYdmM1M7b7NtFrqI1eGkauojV4aRq6iNXhpGrqI1eGkauojV4aRq6iNXhpGrqI1eGkak9MJJAH5ZKJlyJff6X4fdPkCqoVELKRUA4Wz3ekD1EavDSNXURq8NI1dRGrw0jV1EavDSNXURq8NI1dRGrw0jV1EavDSNW1w5mtEURHxU1CRwHCt705LrYtdLZlSJgiCyiJA7kbW4idysxmrw0jV1EavDSNXURq8NI1dRGrw0jVkxGtw0jVixWtw0i11EavDSNWDIbAWeOYTcSMM8L2yxy%2BRkpEXXKxF5FZykAkLKiVyLAntCrh7TsGLd2JdzeSDdZ%2FNRagLrTYKEhPFTAWVdMLWKiHflJKRF1ysReRWcpAJCyolciwJ7Qq4e07Bi3diXc3kg3WfzUTtpeZsfITeeKmAsqqUXsVue%2BT%2FtavTra82c3bLCkfeF3OnE0Bto4uZNO2R9mh3RosID%2FKulOHRV9HDzPJmWP1rDL6X6c71h%2Fj8rn%2FtoD5dCdO%2F5T%2Fh%2Fazhx91dy3dzfarW6N3Tb1eV6th%2B9Sx8LHx9gP1DHwfYH%2FwA0m1a9r2q9qtle1elerW%2BWz%2F2zB8u86lGQi8ZNIZcMExlAW5gAoVLL09rrcaCW71ZiCkm7Y9YqvGHfJEiAhxgbREpAK2cixYIYACcBz8jnmiktY8fAIG7J5xQZc6KbjUG9gvNEJET1nNTAwMprp6%2FS9ED0s1SqUWVySrmnH4mmXCTFhyJQ5AslHkS4H4pb1%2Bf%2B2gPl0JUpuXNudUbCJ2Z4qouImSEzvPS2ApKoBtkg3Jpbowbpgc1OCyQQbHzDRJiGy7qxbZ8q73aG%2BB28EuIhVNcrVkJOIGcUSfzbmPOENAaBwcgn4nrEj6XtBL6qlkjYDFLgiqTX6yEAzW0NjdxIqSiNVUWPzaYQUj9y04rfWAUgfZoACeWdmDaMnmjIL5GdUsBryWSPJTbM2sSLw9KoMroqofCBIFxU4%2FmSFD9T6V99f3y6JX%2BFj4%2BwH6iIYIrC7DHMZ2DCCa6fnnmibTbXc6QtqDSSllx5pIGJwQkqz7mfityvRiNo%2BolU9K%2FOFDa9tEoLJQW4cfZA2jKayVzM3IK%2B0GhIyirlBUBxGgkkIkZMnNoORwRW05kxtWcYSi2zJKxhX7XkW8l2YIRcwMrf2zE%2BUz%2F2zB8uhKcLeTnUkmEpdLfmiI18b5Y9kzWzzTsxi6iNmnXFyAuVgxkEmultkkQUSyOknbnk7Ds0bf6zksWKm7Hs8cLCUkwcy0Q0jGE0qsBiopgUwQoCDGKVUyCkWSjYJtNzFuRu0Y%2BQ2OFcJAwP%2Bh%2BFgDhb1%2F8AxDtZw4%2B6u5bqeLAQn6EnBuYE4NgnGsTZWhYGY4wp0TMqs%2BmdU8FYxUkRQElIoBRiNZbX7KTlJqqwENDDPOJRFOHJqdgSh%2B6lhnnE7VuOqi4kjgX6pYWw4YEBMUqCWAAKLOARVLySQMCsOtApZLsARO7kwtgVCoeCWUZFMCCllq%2BY6nZWEo%2FEjTU1JfUDRM%2FYdfB%2FBVA241U5qlhQEr88J%2BNn6Yg3exy39Fst9Xx31%2FarX31K%2FwALHz9gP1EJcI3DDDAMYWEBFbCfhngSh%2ByU2Bm4jPV1pidYCxQlSbAKClknsmEFdaAQXaAKCbSLxAFuRDNnc4cVtIAFKALC%2FA5JxGHLmYdznKguEuVLGgHNACQ5wFsEy43ETBXbFs1bDCHiAryJOhaXFVdNkc%2FxSgXymX%2B2gPl0JW%2Fp39G75HP%2FAG0B8uhPUWta3qb23VvvesMfrfovjvr%2FABvUrfCt8fYD9Qx8Ho%2B%2F%2BaTayrDot8vn%2FtoD5dZ%2FL9ft0tYML9P%2FAMm7kt%2Fn%2FkMr%2FSt17Vjlv6b476lj4Wvj7AfqGd%2FY%2BwN3DSbVsL1b5GLYUYEiLkrqr3apBbUcH6pAYD6V4a5eo1aV4a5eo1aV4a5eo1aV4a5eo1aV4a5eo1aWIa5eo1aV4a5eo1aVYa9P0%2Bz5HrSvDXL1GrSvDXL1GrSvDXL1GrSvDXL1GrSvDXL1GrSvDXL1GrSvDXL1GrSvDXL1GrZfRiDcT5NSUMrgRTSL%2FUgCxfuxHB8eP8aSVd5NNOWlTr%2Bug%2FmdK8NcvUatK8NcvUatK8NcvUatK8NcvUatK8NcvUatK8NcvUatK8NcvUatKsNcvkitK8NcvUatK8NcvUatK8NcvUatK8NcvUatK8NcvUatK8NcvUatK8NcvUatK8NcvUatlxKJoLZfSWkgYFCBB%2BLZYqB3drAqCehVQKnMLDFx1ZJDFw0rw1y9Rq0rw1y9Rq0rw1y9Rq0rw1y9Rq0rw1y9Rq0rw1y9Rq0rw1y9Rq0rQ3y%2BRqw2Vob5fI9aV4a5eo1aV4a5eo1aV4a5eo1aV4a5eo1aV4a5eo1aV4a5eo1aV4a5eo1T5AsbMePLrjTZ6Ykq5ZZSbAmvVbPPtpb8xVT5HZ59tLfmKqd7Zx93ST5ir%2Fqbeo2cfd0k%2BYq%2F3tqb4QmfvaP6n%2BnRa3ct0bU%2FwfM%2Fe0f1ezz7aW%2FMVU7r1eyHHjaPuN3H8E9JI42uMMzZ8TX%2BpioIrRerRPjkBTROtnt8Jcd7KLVXl%2BxsUsDgMGGAwNoJEfbq6rnG27WYu5lrmShRy7TLZbboPo2CA7lsokj4AK62%2FwDaCRWI4hEAq2na8VQsWxMnwkRYKOBIT1ZKF%2FHIKBcMyWE7uzz7aW%2FMVU72zj7uknzFX%2B69Xshx22j7jdp7FPSSONrjDMyfE1%2FqgqCK0Xo0T45AY0TrZ7fCXHmyi1V5fsbFLA4jB4AMDaCRH26uq5ttu1lruZW5ooUcu0w2W451BGsgO5bKJQ%2BICutv%2FaCRWG4c0Aq2nc8VQsWxMnwkVZKOBIIKySL%2BMQPlwzJYS3d2cfd0k%2BYq%2FwB3O%2F0rak%2BDxn70j9MvrKYjnmB%2BsKjlTbnHQVKlMH9tBtmPHXdqqZBdVHCIQCOkiDYnxDeDLcLhQ0NyinkAXIBRbuzFPS1JSMARdyE6RVHecEzXx9rRnAGxRsEB5mWmEN%2BFm7pJnVrxcbRCq6EpHR1wAYVMx2hJcAkIaOUBcjmSgG2pKVzSok4TI14sQ201mqwH8qXwRwDdkRoy%2B1XgwBnuRO5kkQsGLmepn7TKA8XClJgDUeyUQWRrhJS45dp1toC2ppyc2Xm6iaQNkAqq6AvJzpRE9aQDeB5MUAMDBYfo2p%2Fg%2BZ%2B9o%2Fq9nn20t%2BYqp3dqVHUT7ASlNMTTSyE3nCnq55OZe0cwZXUxUSPTx5cMWIDGTQzeczlaexOzz7QMG07DM3kEsKcaKLZUto%2BNDLAfT%2Ff6Tcuq4Zqckya2WS9HYZiByOZuynmqYhmWXND%2FAGc1Xkpqd3U5IwlzBJBwthG6wuL7Dbyo8k6yQvnCAQx4n3dnn20t%2BYqp3tnH3dJPmKv93alRlA%2BwEpTTE00tBN5wp6udTmZtHMGV1MVDj08eXTFiAxk0MgOZytTYmZ55oGDadvN5ArCnGik2FLaQjQwwH0%2F3%2Bk3AVcM1KSZNbLJejsMxA5HM3JTzVLBmWXND%2BZ7VeSmpXdTjjCXMEkHG2EbLC64GE3VR5JtkhfOkQhjxPu7OPu6SfMVf7lst9ZY762p%2Fg%2BZ%2B9I3TtL%2F9%2BHfMJOoELDWQazzw354R7hUWAYAT%2FO9gcN3piomdQA5ko%2FG7ohqxwYnIZay1gKQbl45JMsBoSTKE0ITsAKWTjzKX0gujTbs6JhWxm4BBHVgAKnH4sQV9%2FN1Ob2wLTEfRZYkJ5xqzgE8DNt5Ry2Fd47KkyISBgujqYziULgAR1tOx67jjdabZuqZuQxuLDpCEAzY7usNeZZYlWN18qpGsrEIQQExrRU2UxACWwEsMr6ZYL9%2Bjan%2BD5n72j%2Br2efbS35iqndv%2FAH3d23f2efbS35iqne2cfd0k%2BYq%2F3t3ct39nH3dJPmKv9N7b7Vbfjfo2p%2Fg%2BZ%2B9o%2FRv7m7uWq1t3Ru6P36Nqf4PmfvaP6vZ59tLfmKqfI7PPtpb8xVTvbOPu6SfMVf8AkdnH3dJPmKv9zO31rC%2F97VtT%2FB8z97R%2Fkdqf4PmfvaP6tT2ZmmfW1hWBWXaljq54Q8aC0uNrix%2F1pcbXFj%2FrS42uLH%2FWlxtcWP8ArS42uLH%2FAFpcbXFj%2FrS42uLH%2FWlxtcWP%2BtLja4sf9aXG1xY%2F60uNrix%2F1pcbXFj%2FAK0uNrix%2FwBaXG1xY%2F60uNrix%2F1pcbXFj%2FqN4zRYtRjyW2hD4wJ0%2BIfMDd03swNIyrLCiWWngmCqp8dQMhaXG1xY%2FwCtLja4sf8AWlxtcWP%2BtLja4sf9aXG1xY%2F60uNrix%2F1pcbXFj%2FrS42uLH%2FWlxtcWP8ArS42uLH%2FAFpcbXFj%2FrS42uLH%2FWlxtcWP%2BtLja4sf9aXG1xY%2F60uNrix%2F1HUco8YIY6O3Mzwpcc4KdGFy31bP96tff0f43p%2FsNJkxqm225PzP6cazBEzvpcbXFj%2FrS42%2BLH%2FWlxtcWP8ArS42uLH%2FAFpcbXFj%2FrS42uLH%2FWlxtcWP%2BtLja4sf9aXG1xY%2F60uNrix%2F1pcbXFj%2FAK0uNrix%2FwBaXG1xY%2F60uNrix%2F1pcbXFj%2FrS42uLH%2FWlZoGMgLqK681EEAcIewH%2FAKl8K%2FrjWOX0vWVt9t9qwv8AT%2BB3ve9br1jlu%2Fv0bt9Xwq1726Lf1t%2F7t77rVjn%2B%2FTnf6VhbdboyturHLd03tvq2H%2Fv2w6csd%2FRe%2B61Y29Kr4%2FtWOW7%2BB51jl9L9OV6xtut0Wtv31hv%2FAIFurLHdWOX0v0Z2rHLd%2FS9Xy%2FasLfwTdWWO6scvpfovhVsP3q1t1v4LurLHdWOX0v8AwndWWO6sMt%2F9L%2Fwn9%2F8AwP%2FEAD8QAAEDAgMDCAkDAgcAAwAAAAIBAwQAEQUSFhMh0gYVICIxQNPUFCMwMkFRgoSFEDNxYWIkNUNSU3KTgJCy%2F9oACAEBABM%2FAP8A46R8AxCQLTwe8GdtghrSuKeXrSuKeXrSuKeXrSuKeXrSuKeXrSuKeXrSuKeXrSuKeXrSuKeXrSuKeXrSuKeXrSuKeXrSuKeXrSuKeXrSuKeXrSuKeXp2I9GJt4BEiBQeASuiGPw6Ufk7iL4tvtGoOBnbYUVsSfBa0rinl60rinl60rinl60rinl60rinl60rinl60rinl60rinl60rinl60rinl60rinl60rinl60rinl60rinl60rinl60rinl6OK7HIHQ98FB0RJFT%2BOkLDjyoThoAJkbEiW5EibkrSuKeXrSuKeXrSuKeXrSuKeXrSuKeXrSuKeXrSuKeXrSuKeXrSuKeXrSuKeXrSuKeXrSuKeXrSuKeXrSuKeXrSuKeXrSuKeXp%2Fk3iTQZzJBFFMmERLl7P6GO4%2FQx0vuu4%2FddL8jH7j%2BRj%2Bz%2Bhjp7E2s%2BUlBeqaISdYV7U9l9DHS%2B6%2FRVsgp86hPi8y5ZbLlMVVF3oqbuivYlNMPCIpmUbiZgguJdO0FX2H3XS%2FIx%2F1lSQaWQ8t7NNoSpnNfgKXXpGBuEZl2CIAhGS9q7kWyUgEGcF%2BOUkQk%2FhURen%2BRj%2Bz%2BhjotnkWTKePK2Gf4VycfkCcV4bWB0H16%2Be62yViM1IsVgVluoT7x%2F7GxuZIlchsUOSEdxlMxNvi4Sr1h3jWMTXmsXnAKARvMoPq22zQ7AZ1yrfkA5iO0QltEBm10BAXMVbZHfR3VFFJvOm4sq3S6dvS%2BhjpfdfoaXFdy7lT5VhsEmYYAU%2FYkjTQmllUbr2%2B9WFy3np%2BGvupdoZBlZtz5Ls0rEvTNl6B6SN9tk37fP8upXLHFihwUI%2BxhkBVHXDX379gjWETFm4XNswrjTzRot8hWso5rpU16Yc5AUEuZq2uQc7ecwG9xuCFQS3YaMNEpbaRPNzqWBLOEjfbY65DYockI7jKZiB8XDVesO8a5UOybSpSghEDIMdmTsJSrlNjAsYXhYhuPO4K3dUyuICC1yQxJZmHymDJRVEvcgMCsioXQ%2B66X5GP%2BuJQ9usTOLnrmFumR1LbjrFXXWmIXrjAzeUFUjDcAiAChXOrvrhMhHhztOf8qDkphJS4iLoSHCNVv6vZ3Q6f5TW5Qmwn8ErSOl76BasQU2gZIQaNt5wkLc2AGZmNlIrWGmEnLF9MFtze7m35Eata3Wz1ypxl1iLNmr%2B6zEaRUcQW%2B253ujgVhUlHo8mQyqJdg7r1HFIMtQJchMSw1owIwJ5XPVOKO4SQK5VcoVYxTEditicbASQWRPsBHKI86sndRMM3xykhJf9fyMf2f0MdGZdGSkMHdBO29EIVJKPHmcRelPrZGxaRqyNinXzZ6kzgBrEmgkuuLFJ1slHroQr71YTMiOyFM2bC68TIgJgt7AgoRDY70xjzUV6AwLudk1CyybgnagrZT3oNO4wxCkwTJoRdM0cTPn2o5%2FVKNxpXCc2zyD1lzkiEX8lvXpfQx0vuv0%2FravS2fhiG2%2Fcz5Pc%2FurbAGyjNo5nc6ype103DdaXFmsPNtCdRwXUN2sVfjNvQZDQrZ1l58FDIo2EqwQ46un6ggFJD7aA0RKako%2FARKtoG59IuTJnvl97de9qfmoDWIgxdThk6C5et%2FNqwmXEdkKZs2F14mRATBb2BBQiGx3oMdZwx6DJMBF4TR5LGhKN0y1MUEju5yQ88Zx%2FMAmBX3nWFnGfmvle5kb0cBBGvcsHbcOh910vyMf9dsDexjNi5nPrKl7X7ButbYN8lJamreS%2Bf3d97WragW2RmLkc6qLmGxf7kpjGWT24PuEQj6KiZ0Kzpb1tTz8EGHvgD77Btq%2BVu1z4lUQwaZiq5HAGwBtVQslxsiCK2rbAGwaKOQCViVFLetrCi1iuJR2OZla96wPiQqJqua4IpVAssEL7I2TaEbqDWdvcKohoNagbkhJAAJLsRw9YBGdlTOq2Sn5cCLJRl0yNGX%2FSWyMzCsCY2MJlxd5IyO6w3X9fyMf2f0Mdx%2Bhjpfddx%2B66X5GP3H8jH9niOLMRnFBRZseQyRbVqGJ4lahieJWoYniVqGJ4lahieJWoYniVqGJ4lahieJWoYniVqGJ4lahieJWoYniVqGJ4lahieJWoYniVqGJ4lRnRdbdBQYsQkO4k6U%2FFmI7uRZS2LIZItahieJWoYniVqGJ4lahieJWoYniVqGJ4lahieJWoYniVqGJ4lahieJWoYniVqGJ4lahieJWoYniVqGJ4lahieJTBo4282Ui4mJJuIVTpGthAUxFi6rWoYniVqGJ4lahieJWoYniVqGJ4lahieJWoYniVqGJ4lahieJWoYniVqGJ4lahieJWoYniVqGJ4lahieJWoYniVBxiO%2B8dp7BLYANV9m5BbIjX5qqpvWubmuGubmuGubmuGubmuGubmuGubmuGubmuGvQ2tireffM%2F9d%2Bbt2dc3NcNc3NcNc3NcNc3NcNc3NcNc3NcNc3NcNc3NcNR2RaFS%2BdhTt3J0nIDREZKt1VVVN6rXNzXDXNzXDXNzXDXNzXDXNzXDXNzXDXNzXDSQ2tiTN7FM%2FwDWx5u3Z1ze1w1zc1w1zc1w1zc1w1zc1w1zc1w1zc1w1zc1w1HaFsb%2FADsnSfaRwCst0ui7u2ubmuGubmuGubmuGubmuGubmuGubmuGubmuGkgNIYEX7j3ZuyBRwWlN5n%2FQeX%2BRRRX%2BoVzczw1zc1w1zc1w1zc1w1zc1w1zc1w1zc1w0MBpFRfn7vcn0JUYQ%2BqZog782RSt8lr0ZzJkR9GclMIQo%2BAbmyVC35slkX5r3V9CVGEPqmaIO%2FNkUrfJa9GcyZEfRnJTAkKPNhubVULfdAsi92NlxTsAK46XyznSMOIZsvNi4H9M4F3v8iHd%2FXf5Z6T%2FAOX71v7%2B7%2FbnX2zfe%2FyIU0h3dfecRtsVyAZ2uW%2FKBlbsEl3LMkyozuGhtcnpIx3IaPPMfJcgH8woMdN5t9oozroArqw7iKoOZTAboooNNNSibZlqyjvWMY6siylxFTJ5D%2BTVBiyySF%2BCRo5ZvYjdokBcpqqFftCgfB6VJhpHu2D%2FAFBVs96lkQnATP79JJkLIBXM%2FVdZfjsG2QoI9iGC59x9w%2FIhTGMPQXGDccsB2aH1wX95syESSo2MK6RuvA2rBtArA5rq6KGhKOT5nTGNkVnjMAbNgyYHaoqujuNGrU0%2F6YDROCLiEw%2BTbZKJgY36g096Wyw87FNQMXnliqy0hqJ5Nm48X%2B4QWnscKyxwQdsLxjHLZqmZMlkPPdL7OozEl44rUv8AbQUZYcbVRsRErrjI291ToMZz%2BscATadabVkVNLEmdCUMvwVyoMw3nxtEadFkAGMJOZ7qSrdSEiyCJ1DmPPpcRFVzI8ww62t1Icptj7ntft3KL4CkUKww4ciS9FVSTbC2Mjd2ftHke%2Fsp1%2BE7FN3ZIZASNys67JVs6nzEhG9PSoTbjbLds7tyk5CHemVsDN0vgFR2GDYSHKWzUlCV5FyX3KFtr8gVKwmWcZiHKdMLMOq26Lh3acuvUNpM43VCoJMSzS7FXuuzt%2FSEHLbr7HJckTN3X8iNI4TZCQkhCYGCoQGJIhCYqhCqIqKi09jUxy7jgG2TrmZ1dq7kMhR08xim5CpnHZwORHspBdp5HtqCWM%2BqJINDicpG3jAMgPONI5kN4RRER4hVxMo2Lclj5R4i4LTjq3dXKT6oSGvvISKi0OLzEGKLm42mg2uUGVT%2FAERRG%2F7am4rKnbJsfdbbV9w1bD%2B0LJ3D13%2BWek%2F%2BX71v76jYlJh5Hh907suBdRXsve1JylxIc8wPde3P7iTgpMb210adQ3D%2FAMZJFBIx3dShx2aD5y%2F%2BZ19Hto8aWsimRWRLJTWLS22gV3902WxdQGDO65jaQCLMV1W63HlLiVghl2s%2Fv%2B5S4vLVHmBJSBl%2B7v8AiGxVVyg9nEUWyUnKXERvMTcjyWf3ElNYxLZZkpshaurIOo2h5AFENBQqnYjInPH8kV18zNUT4Jmsntft3KXsUVigi1FfigcCL2bFldh8rIjh53ktucpoo4RIquBkJ2OIsorZ27bqqEu8kKhCCkk4jmXNGJEjbLJdsFugIaW9%2Bmjhmgtx1u0gm5HNz53IiIlqG5FaSZKZQBCUfqFsdmwuI2aW37dT2IRpHPZiCq06MdH2kLLmUAcEFJS6vdfyI93%2FACId3%2B3cr7Zvvf5EO77f5SUZ2Wzy%2FwBc2bN3f7c6%2B2b7nJvdG0FpUGtmVbMq2ZVsyrZlWzKtmVWPirZlWzKtmVbMq2ZVsyrZlWzKg91psW2LCnSfupZBlVsyrZlWzKtmVbMq2ZVsyqx8VbMq2ZVsyrZlWzKtmVbMq2ZUHY00D%2BUATpfMSxBhFStmVbMq2ZVsyrZlWzKtmVWPiqx8VbMq2ZVsyrZlWzKtmVbMqYAkMM09gS9n9DHcfoY6X3Xcfuul%2BRY7j%2BRj%2Bz%2Bhjokil2rYRQU3qSqqIiJXKPBVhhLALZ9kSESEo5wqGwT78h5yY4DTLYD2mZqgpXKfCfQSmNj76tdcr5awrBik4dhrnaYvvIV0yCqEVhKuTOELN9AbP3FfXMKBmsSpWRRztGKEK2Xem5U7el9DHS%2B66JCpdqoiCgpvUlVURESuUeCrDCWAWz7IkIkJRzhUOMUh995yY4DTLYD2mZkgpXKfCfQSmNj76tdYr5awrBik4dhrnaYvOoV0yCqEVhKuTWEem%2BgNn%2B2r65hQM1iVKyKOdoxQhWy703Knb0vuul%2BRY%2FXA5INBIfJDytS0JevHWy5hSsJgelvTkM3B2bICV1MUaMiugig0uG2xZl1OwPR83avam%2BpODAxhpAD6oDSOhYc4jYVTLTGAmeD7iyEe3vdQQ7hdArDY6SClGCtoLLYoVyccV0EBES3zUadwU4z%2BIg2hoEcEB25GhDnUL%2B7YqwrBXZknCYzn7QSc59UlsY2zktwqaGydgk1%2B628G%2FKYViWBExh84spGGydzL74ARDcawHAylQYDob3W3XcybwGxFZFoLojjZJdFsu9P4Xen6%2FkY%2Fs%2FoY6MVrauSozLvrBQPjZFzUGGvMsxEG1hdN0R3mpWG16hRlfkYfhxS3tvIbD5ilcqH3nmEcSPvZjk622uZNyubvi1TmDOy4eNvi4iZ0ZyEgk%2BCBZ1twCUKh4ccuFjakzdpCaVs2nxAlNkTXIQlSNk2jLpDdRyF1h%2F6rvTpfQx0vuujFa2rkqMy76wUD42Rc1BhrzLMQRtYXTdEd5qVhteoUZX5GH4eUt7byGw%2BYpXKh955gXEj72Y5OttrmTcrm74tU7gzsuHjb4uImdGchIJPggWdbcAlComHHLhY2RM3aQmlbNt8QJTZE1yEJUjZNoy6Q3UcpdYf%2Bq706X3XS%2FIsfr9LtffLX8wlp6I8GRDecs5tcuS3rQ%2BNMSn7OO2skZhlGCbUHOwBI6mW29ghtimf%2B%2B3bX2pVyXR5hcTeL99TebaNSUFsOSsW%2FzF3ITLitPp%2Fzmg2Khwl9s8MyNrn26kKAIAo5FsRVhk6Q3BlMOPGoSI4tMOXA%2FwD9VjoCE4BcMjs8IoiISZv1%2FIx%2FZ%2FQx3H6GOl913H7rpfkY%2FcfyMf2f0Mdx%2Bhjpfddx%2B66X5GP3H8jH9nh2PvxmSfc94sgWStWyuKtWyuKtWyuKtWyuKtWyuKtWyuKtWyuKtWyuKtWyuKtWyuKtWyuKtWyuKtWyuKtWyuKtWyuKtWyuKp8spLzj5iAkSmW9boCdKByhfjMq%2B8am4SAFkrVsrirVsrirVsrirVsrirVsrirVsrirVsrirVsrirVsrirVsrirVsrirVsrirVsrirVsrirVsrirVsriqdJKQ8486tzIjLeqqvSivqy4hNuC4Ciab0sQJWrZXFWrJXFWrJXFWrZXFWrZXFWrZXFWrZXFWrZXFWrZXFWrZXFWrZXFWrZXFWrZXFWrZXFWrZXFWrZXFUzlJIfaI2zQxzAS2WxD%2F8AXb%2F%2FxAAtEQACAgAFAwMDBAMBAAAAAAAAAQIRAxIhMUEQQFEiMGETMjMgI0KAUHCBkP%2FaAAgBAgEBPwD%2B69frsXapiKs27eUlDfkccm%2FYosaF1Q2JdgiOr%2FS9i9aMrXbWkauSjEnGMlruY8ss0hJOEpeDBeeOZkFbdj396byE01iKK5EknlMD7Zid2vBipxw1KJjZcPVmI3aIxUoSfggsyzS2G803GOwtUbe5HTFUfJF5s18GIrw1JEpKOFYlQlc3EVLFHJJtImnGKa5Pt0I6xsnDI6Lp12Oi0ZrCamicVNE2vqqfCISyRlb3IWvg3kTdu4%2B9NZhSX1U%2BEJP62fgw%2FRKXyRVNoxo3BRiY6zom19VS4INxUle5D7Mj4Ir6cnXJsjf3I%2FlUvBhqs98l3gqK4HFTwtdxPMtSDUczfIl67Ir7kSbyKI9dSH20SWZ3Zb%2Fp7xZwXXTkrUvwb9ryxdFovfui2VyaSLKE%2BDbtVtQpevKbaDVYlH3IbyIT%2BnBtijcVLsU%2F3FEh6mvki88kinnj%2FwBG6i2NU2vB%2FJojql8jeXBzFVBP3WTmoor0k1khfRIw%2FVLMQ9azdtQ9h%2Fd1rskqd%2BBOlXgw1WIr2RdtPwb2hu2zyePg%2FhlL0r3pRzDuQ1njXTgWiIaf42i17HF%2B8hOkVSOOu3%2Bp7SNULrXZbD26rkQve%2BC6Rwbq%2Bt8fqfZWThabMVq0jLac%2FBCp0yLzDjXYt60Ti2Y1J0Vmi2Q%2FcVieZtElRsveX5aFLNfwYiaivk2w7I6oinJuPgSvETJPMyTyIWxHcaH2NEZ1ixZODkY7Tx4rgw9MOemhg6RWmglUnRNJN12MW446lwYibVoxqlNLgw%2FxzMFNrQVKTyk14Kte9D8sWYW%2BIL8CMRSxMD0mkloYf8mRd4iI6t2Yn440STlsQ1jSJvstFqI%2BBJoRQjXN2K6NWbFXt0Rv7y8ldFVC0QjRvpxQtxaf%2Bwv%2FxAArEQACAgAFAwQCAQUAAAAAAAAAAQIRAxIhIjEQQEEgMFFhMjOAI0JQcJD%2F2gAIAQMBAT8A%2FmIuzv8AwHPcLskhP1MWvbp2V23CzENZkY1NslWZE9jGtqa8kJZ170URindknUXNE3x9mXKl9mFHPPIyDU3SMNcj2yS%2BSWjpEVUbkN5ZJfIvcnphSl8DSjCL%2BSLeeiScsWiaS0RayWS%2FVKRH8CG6bifm7RJZXTIzzdnysotugno0TjmaHXBHZEgtPeiyCaTs5wWiWsV9DlmgvowXllbMHRMgqw2iStL6HzZeeI45pL6F7k92FKPyY1uMK8EqtUSleJmRTTK2UP8AU0OScIr4IaY8pCWR0ibuWZkWc%2Fw%2FQvgXRnHaeLL0PBddhyVXTjXq9YnPbUU3qhVLClJF7T%2B5H5THtlXYy0g2PRMvlGI6g0Ja0J8F3hqROWW2VuL3e7wVZVyow1nnlIpjkkS2xJbV2yZF6sjw0UV0y9jdqirRNXBoSuLPPStuUq4te%2FycEdHmRGVTzISHHpJX21C9F9l56o8nk8ULivf4OSmaLqhf6lXRejlnnsuenPW2c%2B999foRXkqxMqvRd9jRGNkXciKuchunRLarKqOYg7V9ilaFoYe6y6aJPLoVlVmHNTR593wS%2FW2OOSCl8kHvysarFa6LdqXWFIhG42Q3Oh8jVIhNSQuex4OYNEHlpEFWZk9aJxFugrMOTcafYvWDiuSDrRkfJPlE0rtlbU3wYbF709cGRjN5cNIkqlFodLHzFtSZX9ND%2FS0aKMaMGo48iKysxXmxLILs06lRWtidr0cdj50K1v0L4Kr3%2BeutmnPT66KNW%2Bq%2F7Cf%2F2Q%3D%3D%22%2C%22alt%22%3A%22%22%2C%22width%22%3A%22400%22%2C%22height%22%3A%22300%22%2C%22lock%22%3Atrue%2C%22align%22%3A%22none%22%2C%22classes%22%3Anull%7D\" data-cke-widget-upcasted=\"1\" data-cke-widget-keep-attr=\"0\" data-widget=\"image\" class=\"cke_widget_element\" alt=\"\"><span class=\"cke_reset cke_widget_drag_handler_container\" style=\"background:rgba(220,220,220,0.5);background-image:url(https://object.co.in/LMS-4.5/FE21D4DA-BD09-4E81-8F44-3CDF07D59122/ckeditor/ckeditor_4.17.1_standard/ckeditor/plugins/widget/images/handle.png);display:none;\"><img class=\"cke_reset cke_widget_drag_handler\" data-cke-widget-drag-handler=\"1\" src=\"data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==\" width=\"15\" title=\"Click and drag to move\" height=\"15\" role=\"presentation\" draggable=\"true\"></span><span class=\"cke_image_resizer\" title=\"Click and drag to resize\">\u200b</span></span></span><br><br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statement is not true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An interface that is declared within the body of a class or interface is known as a nested interface."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A final variable cannot be a member of an interface."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A class declaration can be a member of an interface."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "If an interface is named in the implements clause of a class, then the class must implement all of the methods declared within the interface."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 67769,
+      "Explanation": "<span id=\"explanation67769\">Final variable can be a member of interface. So it is not true.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Consider the following code in file Sample.java</div><div>public class Sample implements IInt&nbsp;{</div><div style=\"margin-left: 40px;\">public static void main(String[] args)&nbsp; {</div><div style=\"margin-left: 80px;\">Sample s = new Sample(); //1</div><div style=\"margin-left: 80px;\">int j = s.thevalue; //2</div><div style=\"margin-left: 80px;\">int k = IInt.thevalue; //3</div><div style=\"margin-left: 80px;\">int l = thevalue; //4</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>interface IInt {</div><div style=\"margin-left: 40px;\">int thevalue = 0;</div><div>}</div><div>What will happen when the above code is compiled and run?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will give an error at compile time at line //1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It will give an error at compile time at line //2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will give an error at compile time at line //3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It will compile and run without any problem."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 67771,
+      "Explanation": "<span id=\"explanation67771\">Interface variables can be accessed in the implementing class by using instance variable or by using interface name or directly.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which is the valid declarations within an interface definition?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public double methoda();"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "public final double methoda();"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "static void methoda(double d1);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "protected void methoda(double d1);"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 67627,
+      "Explanation": "<span id=\"explanation67627\">Interface methods can not be final and protected. Method can be declared as static in interface but then it should have method body. </span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a valid method declaration ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public display(){}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "public void print(){}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "abstract public void displayApplet(){}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "public abstract void printApplet(){}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 67612,
+      "Explanation": "<ul><li><span id=\"explanation67612\">Method has to have return type, abstract methods can not have method body.</span><span></span></li><li><span id=\"explanation67612\"><span style=\"font-size:100%\"><span style=\"background-color:#f5f5f4\"><span style=\"font-size:100%\"><span style=\"font-size:100%\"><span style=\"float:left\"><span style=\"font-size:100%\"><span style=\"font-size:100%\">Abstract methods are those which need to be implemented in subclass/child class. </span></span></span></span></span></span></span></span></li><li><span id=\"explanation67612\"><span style=\"font-size:100%\"><span style=\"background-color:#f5f5f4\"><span style=\"font-size:100%\"><span style=\"font-size:100%\"><span style=\"float:left\"><span style=\"font-size:100%\"><span style=\"font-size:100%\">Abstract methods are only defined in superclass/parent class(Abstract class) but with no body.</span></span></span></span></span></span></span></span></li><li><span id=\"explanation67612\"><span style=\"font-size:100%\"><span style=\"background-color:#f5f5f4\"><span style=\"font-size:100%\"><span style=\"font-size:100%\"><span style=\"float:left\"><span style=\"font-size:100%\"><span style=\"font-size:100%\">Syntax of Abstract Method--&gt;</span></span></span></span></span></span></span></span></li><li><span id=\"explanation67612\"><span style=\"font-size:100%\"><span style=\"background-color:#f5f5f4\"><span style=\"font-size:100%\"><span style=\"font-size:100%\"><span style=\"float:left\"><span style=\"font-size:100%\"><span style=\"font-size:100%\">abstract class animal<br style=\"font-size:100%\">&nbsp; &nbsp;{<br style=\"font-size:100%\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;abstract void eat(); // abstract method<br style=\"font-size:100%\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;void talk(){<br style=\"font-size:100%\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;System.out.println(Welcome in Know-It\");} //concrete method<br style=\"font-size:100%\">}</span></span></span></span></span></span></span></span></li><li><span id=\"explanation67612\"><span style=\"font-size:100%\"><span style=\"background-color:#f5f5f4\"><span style=\"font-size:100%\"><span style=\"font-size:100%\"><span style=\"float:left\"><span style=\"font-size:100%\"><span style=\"font-size:100%\">A method which is not abstract i.e. if a methods definition is given in the same class its declared is <span style=\"font-size:100%\"><span style=\"background-color:#f5f5f4\"><span style=\"font-size:100%\"><span style=\"font-size:100%\"><span style=\"float:left\"><span style=\"font-size:100%\"><span style=\"font-size:100%\">called concrete. </span></span></span></span></span></span></span>&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span></span></span></span></span></span></li></ul><div id=\"page\" style=\"margin:-9px\"><div id=\"container\"><div class=\"onlycontent\" style=\"width:80%; margin-left:10px\"><div id=\"answers\">\u200b\u200b\u200b\u200b\u200b\u200b\u200b</div></div></div></div><br><br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Choose Invalid declaration of \u201ck\u201d from below options for :<br>public interface Foo { /* Line 3 */}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "final int k = 4;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "public int k = 4;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "static int k = 4;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "abstract int k = 4;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 67625,
+      "Explanation": "<span id=\"explanation67625\">Variable can not be declared as abstract</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>public abstract class Shape {</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; private int x;</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; private int y;</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public abstract void draw();</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public void setAnchor(int x, int y) {</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.x = x;</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.y = y;</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</div><div>}</div><div>Which of the following classes use the Shape class correctly?&nbsp;</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<div>public class Circle implements Shape {</div><div>private int radius;</div><div>}</div>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<div>public class Circle extends Shape {</div><div>private int radius;</div><div>public void draw(); <br></div><div>}</div>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<div>public abstract class Circle implements Shape {</div><div>private int radius;</div><div>public void draw();</div><div>}</div>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<div>public class Circle extends Shape {</div><div>private int radius;</div><div>public void draw() {/* code here */}</div><div>}</div>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 67504,
+      "Explanation": "Abstract class needs to be extended not implemented. When we extend the class by abstract class then&nbsp; either declare the class as abstract or give the implementation of abstract method.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>1.&nbsp; public interface A {</div><div>2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public void doSomething(String thing);</div><div>3.&nbsp; }</div><div>1.&nbsp; public class AImpl&nbsp; implements&nbsp; A {</div><div>2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public void doSomething(String msg) {}</div><div>3.&nbsp; }</div><div>1.&nbsp; public class B {</div><div>2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public A doit(){</div><div>3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //more code here</div><div>4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</div><div>5.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public String execute(){</div><div>6.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //more code here</div><div>7.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</div><div>8.&nbsp; }</div><div>1.&nbsp; public class C extends B {</div><div>2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public AImpl doit(){</div><div>3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //more code here</div><div>4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>\u200b\u200b\u200b\u200b\u200b\u200b\u200b5.</div><div>6.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public Object execute() {</div><div>7.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //more code here</div><div>8.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</div><div>9.&nbsp; }</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compilation will succeed for all classes and interfaces."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compilation of class C will fail because of an error in line 2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compilation of class C will fail because of an error in line 6"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation of class AImpl will fail because of an error in line 2."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 67512,
+      "Explanation": "<span id=\"explanation67512\">In overridden method return should be same or as by co-varient return type rule. Subclass overridden method should return the same type or subtype as that of return type in supeclass method.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Which of the following statement is false?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Variables declared inside of interface declaration may be changed by implementing class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Interfaces are designed to support dynamic method resolution at run time"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When an interface method is implemented it must be declared as public"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Variables declaration are implicitly final"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 67513,
+      "Explanation": "<span id=\"explanation67513\">Data member inside the interface is public and&nbsp; final and hence can not be changed by implementing classes.</span><br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "class Main<br>{<div style=\"margin-left: 40px;\">public static void main(String args[])<br>{</div><div style=\"margin-left: 80px;\">final int i;<br>i = 20;<br>System.out.println(i);</div><div style=\"margin-left: 40px;\">}</div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "20"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Garbage value"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 67541,
+      "Explanation": "<span id=\"explanation67541\">It prints value 20. Final variables can be declared in method without immediate initialization.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which&nbsp; is a valid keyword in java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "interface"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "String"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Float"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "unsigned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 67652,
+      "Explanation": "<ul><li><span id=\"explanation67652\">interface is a valid keyword which is used to declare interfaces. unsigned is not a keyword.&nbsp; </span></li><li><span id=\"explanation67652\">String and Float are the names of classes.</span></li></ul>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following class definitions defines a legal abstract class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<div>class Animal</div><div>{</div><div>abstract void growl();</div><div>}</div>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<div>abstract Animal</div><div>{</div><div>abstract void growl();</div><div>}</div>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<div>class abstract Animal</div><div>{</div><div>abstract void growl();</div><div>}</div>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<div>abstract class Animal</div><div>{</div><div>abstract void growl();</div><div>}</div>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 67657,
+      "Explanation": "<span id=\"explanation67657\">Sequence of keywords should be abstract class for class declaration. Class has to be declared as abstract when the any method in the class is&nbsp; declared as abstract.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Given:</div><div>interface Foo {}</div><div>class Alpha implements Foo {}</div><div>class Beta extends Alpha {}</div><div>class Delta extends Beta {</div><div style=\"margin-left: 40px;\">public static void main( String[] args ) {</div><div style=\"margin-left: 80px;\">Beta x = new Beta();<br>//insert code here</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>Which code, inserted at line 16, will cause a java.lang.ClassCastException?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Alpha a = x;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Foo f = (Delta)x;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Foo f = (Alpha)x;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Beta b = (Beta)(Alpha)x;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 67693,
+      "Explanation": "x is of type Beta.<br>Beta is not a subclass of Delta; rather, Delta is a subclass of Beta.<br>Therefore, attempting to cast a Beta object (x) to a Delta type will result in a ClassCastException because Beta is not a Delta.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>import java.util.*;</div><div>class GFC107 {</div><div style=\"margin-left: 40px;\">public static void main (String args[])<br>{</div><div style=\"margin-left: 80px;\">Object a = new HashSet();<br>Object b = new HashMap();<br>Object c = new Hashtable();<br>System.out.print((a instanceof Cloneable)+\",\");<br>System.out.print((b instanceof Cloneable)+\",\");<br>System.out.print(c instanceof Cloneable);</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>What is the result of attempting to compile and run the program?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Prints: false,false,false"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Prints: false,true,true"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Prints: true,false,true"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Prints: true,true,true"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 67696,
+      "Explanation": "<span id=\"explanation67696\">HashSet, HashMap as well as Hashtable have implemented Cloneable interface.</span>",
+      "Answer": "E",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Suppose that an interface, I1, is not a member of an enclosing class or interface. Which of the following modifiers can not be applied to interface I1?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "abstract"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "public"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of above."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 67727,
+      "Explanation": "<span id=\"explanation67727\">Interface which is not declared as nested interface can be only declared as public and abstract. Only inner interfaces can be declared as static.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What will be output of following output?<br>interface I10 {String name = \"I10\"; String s10 = \"I10.s10\";}</div><div>interface I20 {String name = \"I20\"; String s20 = \"I20.s20\";}</div><div>class C20 implements I10, I20{ &nbsp;&nbsp;&nbsp;&nbsp;</div><div style=\"margin-left: 40px;\">public static void main(String[] args){</div><div style=\"margin-left: 80px;\">System.out.print(I10.s10+\",\"); &nbsp;&nbsp;</div><div style=\"margin-left: 80px;\">System.out.print(I20.s20+\",\"); &nbsp;&nbsp;</div><div style=\"margin-left: 80px;\">System.out.print(I20.name); &nbsp;&nbsp;&nbsp;</div><div style=\"margin-left: 40px;\">}</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Prints: I10.s10,I20.s20,I10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Prints: I10.s10,I20.s20,I20"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Prints: I10.s10,I20.s20,"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Prints: I10.s10,I20.s20,null"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 67705,
+      "Explanation": "E",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following are modifiers that can be applied to a field declaration within an interface?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<div>static,final,public</div>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "abstract"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "synchronized"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "transient"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 67708,
+      "Explanation": "Within the interface data members can be declared only by using the keywords - public, static and final<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>class Leg { }</div><div>class Fur { }</div><div>abstract class Pet {</div><div style=\"margin-left: 40px;\">public abstract void eat();</div><div style=\"margin-left: 40px;\">public abstract void sleep();</div><div>}</div><div>class Dog extends Pet&nbsp;{</div><div style=\"margin-left: 40px;\">Leg leftFront = new Leg(), rightFront = new Leg();</div><div style=\"margin-left: 40px;\">Leg leftRear = new Leg(), rightRear = new Leg();</div><div style=\"margin-left: 40px;\">Fur fur = new Fur();</div><div style=\"margin-left: 40px;\">public Fur shed() {return fur;}</div><div style=\"margin-left: 40px;\">public void eat() {}</div><div style=\"margin-left: 40px;\">public void sleep() {}</div><div>}</div><div>class Cat extends Dog&nbsp;{</div><div style=\"margin-left: 40px;\">public void ignoreOwner() {}</div><div style=\"margin-left: 40px;\">public void climbTree() {}</div><div>}</div><div>Which of the following statements is not a true statement?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A Cat object inherits an instance of Fur and four instances of Leg from the Dog superclass."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A Cat object is not able to sleep and eat."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A Dog object is able to climb a tree."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The relationship between Dog and Fur is an example of an appropriate use of inheritance."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 67716,
+      "Explanation": "Relationship between Dog and Fur is an example of composition and not inheritance.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which is valid declaration within an interface?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public static short stop = 23"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "protected short stop = 23"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "transient short stop = 23;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "final void madness(short stop);"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 67719,
+      "Explanation": "<div id=\"b_content\" data-bm=\"41\"><main aria-label=\"Search Results\"><div class=\"b_caption b_algo\"><ul><li><span id=\"explanation67719\"><strong>transient</strong> is a variables modifier used in serialization.At the time of serialization, if we don\u2019t want to save value of a particular variable in a file, then we use <strong>transient</strong> keyword. </span></li><li><span id=\"explanation67719\">When JVM comes across <strong>transient</strong> keyword, it ignores original value of the variable and save default value of that variable data type.</span></li></ul></div></main></div><ul><li><span id=\"explanation67719\">Interafce can not have protected, transient members and can not declare final method. </span></li><li><span id=\"explanation67719\">So answer &apos;A&apos; is correct.</span></li></ul>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>interface A&nbsp; {</div><div style=\"margin-left: 40px;\">int a = 1; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 1</div><div style=\"margin-left: 40px;\">public int b = 2; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // 2</div><div style=\"margin-left: 40px;\">public static int c = 3; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 3</div><div style=\"margin-left: 40px;\">public static final int d = 4; &nbsp;&nbsp;// 4</div><div>}</div><div>Which field declaration results in a compile-time error?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 67712,
+      "Explanation": "<span id=\"explanation67712\"><span id=\"explanation67712\">By default variables in the interface are treated public, static and final even if it is not mentioned explicitly.</span></span><div><div><div><div><article><div><span id=\"explanation67712\"><span id=\"explanation67712\">Example:</span><br><span>public interface InterfaceName<br>{<br>//Any number of final, static fields<br>//Any number of abstract method declarations<br>}</span></span></div></article></div></div></div></div>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following are Invalid statements&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public class MyCalc extends Math"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Math.max(5,6);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Math.round(9.99);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Math.mod(4,10);&nbsp;&nbsp;&nbsp;&nbsp;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 67738,
+      "Explanation": "<ul><li><span id=\"explanation67738\">As Math class is declared as final, any class can not inherit from class Math. So option A is invaid.</span></li><li><span id=\"explanation67738\">Java Math class is a part of the <strong>java.lang package</strong>.</span></li><li><span id=\"explanation67738\">Basically Math class contains methods for performing basic numeric operations such as the elementary exponential, logarithm, square root and trigonometric functions.</span></li><li><span id=\"explanation67738\">Java Math class provides several methods to work on math calculations like min(), max(), avg(), sin(),<br>cos(), tan(), round(), ceil(), floor(), abs() etc </span></li><li><span id=\"explanation67738\">Java Math is a final class and it extends java.lang.Object</span></li><li><div id=\"page\" style=\"margin: -8px; height: auto !important; background-color: rgb(245, 245, 244);\"><div id=\"container\" style=\"height: auto !important;\"><div class=\"onlycontent\" style=\"height: auto !important;\"><div class=\"onlycontentinner\" style=\"height: auto !important;\"><div id=\"city\"><table class=\" cke_show_border\" height=\"18\" width=\"536\"><tbody><tr><td><br></td></tr></tbody></table></div></div></div></div></div></li></ul>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>interface A {int i = 1; int m1();}<br></div><div>interface B extends A {int i = 10; int m1();}</div><div>class C implements B&nbsp;{</div><div style=\"margin-left: 40px;\">public int m1()&nbsp;{</div><div style=\"margin-left: 80px;\">return ++i;</div><div style=\"margin-left: 40px;\">}</div><div style=\"margin-left: 40px;\">public static void main(String[] args)&nbsp;{</div><div style=\"margin-left: 80px;\">System.out.print(new C().m1());</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>What is the result of attempting to compile and run the program?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Prints: 2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Prints: 11"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compile-time error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Run-time error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 67741,
+      "Explanation": "i is a final field in the interface which can not be assigned with a new value. So program will fail for compilation at line return ++i;<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>abstract class D&nbsp;{</div><div style=\"margin-left: 40px;\">String s1 = \"D\";<br>String getS1()&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;return s1;</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>}</div><div>class E extends D&nbsp;{</div><div style=\"margin-left: 40px;\">String s1 = \"E\";<br>String getS1()<br>{</div><div style=\"margin-left: 80px;\">return s1;</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>class F&nbsp;{</div><div style=\"margin-left: 40px;\">public static void main (String[] s)&nbsp;{</div><div style=\"margin-left: 80px;\">D x = new E();<br>System.out.print(x.s1 + x.getS1());</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>What is the result of attempting to compile and run the program?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Prints: DD"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Prints: DE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Prints: ED"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Prints: EE"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 67743,
+      "Explanation": "Data binding is static in java i.e. on the basis of reference type and instance method call biding is dynamic i.e. on the basis of object type. So for x, it refers s1 from D and getS1() method gets called from class E which returns \"E\". So answer in \"DE\"<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>interface A</div><div>{</div><div style=\"margin-left: 40px;\">void m1(); &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 1</div><div style=\"margin-left: 40px;\">public void m2(); &nbsp;&nbsp;&nbsp; // 2</div><div style=\"margin-left: 40px;\">protected void m3(); &nbsp;&nbsp;// 3</div><div style=\"margin-left: 40px;\">private void m4(); &nbsp;&nbsp;&nbsp;// 4</div><div style=\"margin-left: 40px;\">abstract void m5(); &nbsp;&nbsp; // 5</div><div>}</div><div>Compile-time errors are generated at which lines?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1,2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2,3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3,4"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "4,1"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 67755,
+      "Explanation": "E",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Which of the following are modifiers that can be applied to an nested interface written within a interface ?</div><div>i.abstract</div><div>ii.implements</div><div>iii.final</div><div>iv.private</div><div>v.protected</div><div>vi.public</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "i,ii,ii"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "i,vi"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "i,iv,v,vi"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "i,iii,vi,v"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 67756,
+      "Explanation": "<div class=\"wrapper\" id=\"main\"><div class=\"site-content\" id=\"primary\"><div id=\"content\" role=\"main\"><article class=\"post-137533 post type-post status-publish format-standard hentry category-java tag-java-interfaces\" id=\"post-137533\"><div class=\"entry-content\"><ul><li><span id=\"explanation67756\"><span id=\"explanation67756\">We can declare interfaces as member of a class or another interface. Such an interface is called as member interface or nested interface.</span></span></li><li><span id=\"explanation67756\"><span id=\"explanation67756\">This interface declared in a class can either be default, public, protected not private.</span></span></li><li><span id=\"explanation67756\"><span id=\"explanation67756\">Interfaces (or classes) can have only public and default access specifiers when declared outside any other class.</span></span></li><li><span id=\"explanation67756\"><span id=\"explanation67756\">Nested interface can only be declared as public or abstract.</span></span></li></ul><div class=\"wrapper\" id=\"main\"><div class=\"site-content\" id=\"primary\"><div id=\"content\" role=\"main\"><article class=\"post-137533 post type-post status-publish format-standard hentry category-java tag-java-interfaces\" id=\"post-137533\"><br></article><article class=\"post-137533 post type-post status-publish format-standard hentry category-java tag-java-interfaces\" id=\"post-137533\"><br></article></div></div></div></div></article></div></div></div><div class=\"wrapper\" id=\"main\"><div class=\"site-content\" id=\"primary\"><div id=\"content\" role=\"main\"><article class=\"post-137533 post type-post status-publish format-standard hentry category-java tag-java-interfaces\" id=\"post-137533\"><div class=\"entry-content\"><p><br></p></div></article></div></div></div>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Abstract class A&nbsp;</div><div>{</div><div style=\"margin-left: 40px;\">private int x = 1, y = 1;</div><div style=\"margin-left: 40px;\">public A(int x, int y) {this.x = x; this.y = y;}</div><div style=\"margin-left: 40px;\">public abstract int math();</div><div>}</div><div>class B</div><div>{</div><div style=\"margin-left: 40px;\">static A a1 = new A(2,1) {public int math() {return x + y;}};</div><div style=\"margin-left: 40px;\">static A a2 = new A(2,1) {public int math() {return x - y;}};</div><div style=\"margin-left: 40px;\">static A a3 = new A(2,1) {public int math() {return x * y;}};</div><div style=\"margin-left: 40px;\">static A a4 = new A(2,1) {public int math() {return x / y;}};</div><div style=\"margin-left: 40px;\">public static void main(String[] args)&nbsp;</div><div style=\"margin-left: 40px;\">{</div><div style=\"margin-left: 80px;\">System.out.print('' \"+ a1.math() + a2.math() +a3.math() + a4.math());</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>What is the result of attempting to compile and run the program?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Prints: 3122"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Prints: 2011"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compile-time error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Run-time error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 67765,
+      "Explanation": "E",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following combinations is valid in Java?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A final abstract class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An abstract class implementing an interface"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An interface extending a class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A class extending multiple classes&nbsp;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 102279,
+      "Explanation": "An abstract class can implement an interface. Final abstract is invalid, and Java does not support multiple class inheritance.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which type of method can't be overridden?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "private methods"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "static methods"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "final methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "free methods"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91732,
+      "Explanation": "&apos;final&apos; methods cannot be overridden because it is explicitly stated they cannot be changed by subclasses.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Java, an abstract class can have:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only abstract methods"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only concrete methods"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both abstract and concrete methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No methods at all"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91777,
+      "Explanation": "An abstract class in Java can contain both abstract methods (methods without a body) and concrete methods (methods with a body). This allows for partial abstraction.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about abstract methods in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Abstract methods can have a body"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Abstract methods must be declared in a non-abstract class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Abstract methods must be defined in a subclass"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Abstract methods can be static"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91778,
+      "Explanation": "Abstract methods cannot have a body and must be implemented by subclasses of the abstract class in which they are declared.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can an abstract class be instantiated directly in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, always"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes, if it has no abstract methods"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Yes, with the new keyword"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91779,
+      "Explanation": "Java does not allow instantiation of abstract classes directly. They are intended to be subclasses where abstract methods are implemented.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to declare an abstract class in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "interface"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "abstract"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "public"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "virtual"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91780,
+      "Explanation": "The &apos;abstract&apos; keyword is used in Java to declare a class as abstract.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How is an abstract method defined in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "With a method body"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using the 'abstract' keyword and without a method body"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "With the 'interface' keyword"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "As a static method"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91781,
+      "Explanation": "An abstract method in Java is declared using the &apos;abstract&apos; keyword and does not include a method body.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What must a subclass do when it extends an abstract class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It must override all methods of the abstract class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It must implement all abstract methods of the abstract class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It must implement all methods, abstract or not"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It must be declared abstract as well"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91782,
+      "Explanation": "A subclass extending an abstract class is required to implement all the abstract methods inherited from the abstract class.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When does it make sense to use an abstract class in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When no code is shared among different implementations"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When you want to provide a base class with some default implementations"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When you want all subclasses to avoid implementing methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When you only need to use static methods"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91783,
+      "Explanation": "An abstract class is suitable when you want a base class that provides some common implementations and forces subclasses to implement certain methods.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true about abstract classes in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They cannot have class constructors"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They can have constructors, but cannot be instantiated"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They must implement all methods immediately"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They can only contain static methods"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91784,
+      "Explanation": "Abstract classes in Java can have constructors, but they cannot be instantiated. Constructors are used to initialize an object of a subclass.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if a class has one or more abstract methods but is not declared as abstract?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will compile without error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It cannot be used for inheritance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will cause a compile-time error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It will only allow static methods"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91785,
+      "Explanation": "If a class contains abstract methods, it must be declared abstract. Otherwise, it generates a compile-time error.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Is it possible for an abstract class to have a main method in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, abstract classes can have a main method"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, abstract classes cannot contain a main method"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, but only if it's private"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only if the class is final"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91786,
+      "Explanation": "Abstract classes in Java can contain a main method, like any other class. The main method is static and does not require an instance of the class.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of abstract classes in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To create instances of classes directly"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To provide a framework for other classes to extend and implement abstract methods"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To prevent inheritance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To make classes immutable"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91787,
+      "Explanation": "Abstract classes serve as a blueprint for other classes, forcing them to implement abstract methods while allowing some shared implementation.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these will properly define an abstract class in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public interface ClassName {}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "abstract class ClassName {}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "class ClassName abstract {}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "virtual class ClassName {}"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91788,
+      "Explanation": "The &apos;abstract class ClassName {}&apos; syntax is used to define an abstract class in Java.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can a final class be declared as abstract in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, if all methods are implemented"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes, always"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No, because final classes cannot be inherited"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No, abstract denotes incomplete implementation"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91789,
+      "Explanation": "A final class cannot be inherited, and as abstract classes require inheritance for method implementation, they cannot be declared final.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can an abstract class in Java contain variables?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "No, variables are not allowed"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes, but only static variables"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, both static and instance variables are allowed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only constants are allowed"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91790,
+      "Explanation": "An abstract class can contain both static and instance variables, similar to a regular class.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the result of trying to define a concrete method without a body in an abstract class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The code will compile successfully"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A compilation error will occur"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The method is treated as abstract"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The method becomes protected"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91791,
+      "Explanation": "Concrete methods must have a body. Defining a method without a body and not marking it abstract will cause a compile error.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following options is correct if a class inherits from an abstract class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It must declare itself abstract if it does not implement all abstract methods"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It cannot inherit non-abstract methods"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It automatically implements all abstract methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It does not inherit any methods"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91792,
+      "Explanation": "A class inheriting an abstract class must implement all abstract methods. If not, it must be declared abstract.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following modifiers can be used with a method in an abstract class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "abstract"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "final"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "synchronized"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91793,
+      "Explanation": "Methods in an abstract class can use various modifiers such as abstract, final, and synchronized, among others.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is an abstract method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A method with a body"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A method without a body"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A method that is private"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A method that is static"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91794,
+      "Explanation": "An abstract method is defined without a method body, and it must be implemented by any non-abstract subclasses.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How many abstract methods must an abstract class have?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "At least one abstract method"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Zero or more abstract methods"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only one abstract method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Exactly two abstract methods"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91795,
+      "Explanation": "An abstract class may have zero or more abstract methods. It is the presence of the abstract keyword that defines it as abstract.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Java, what happens if a class extends an abstract class and does not implement one of its abstract methods?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The class will compile without error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The class will inherit the method as abstract"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The class must also be declared abstract"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The class can override the method later"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91796,
+      "Explanation": "If a class extends an abstract class and does not implement all its abstract methods, it must be declared abstract.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What keyword is used to declare an interface in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "interface"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "abstract"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "implements"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "class"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91797,
+      "Explanation": "In Java, the keyword &apos;interface&apos; is used to declare an interface.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these statements is true about interfaces in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Interfaces can be instantiated."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Interfaces can have constructors."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Interfaces can have method implementations."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Interfaces cannot have constructors."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91798,
+      "Explanation": "Interfaces cannot have constructors as they cannot be instantiated directly.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can a class include an interface in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using the 'extends' keyword"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using the 'includes' keyword"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using the 'implements' keyword"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By using the 'instanceof' keyword"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91799,
+      "Explanation": "A class implements an interface using the &apos;implements&apos; keyword.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When a class implements an interface, what must it do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It must implement all methods declared in the interface."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It must extend the interface."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It must declare the interface final."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It must override all method implementations from the interface."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91800,
+      "Explanation": "A class that implements an interface must implement all of its methods.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which access modifier is implicitly used for methods declared in an interface?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "private"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "protected"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "public"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "default"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91801,
+      "Explanation": "Methods declared in an interface are implicitly public.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can an interface extend another interface in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "No"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes, using the 'extends' keyword"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, using the 'implements' keyword"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only if the interface is abstract"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91802,
+      "Explanation": "In Java, an interface can extend another interface using the &apos;extends&apos; keyword.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default access level for methods in an interface?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "protected"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "package-private"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "default"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "public"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91803,
+      "Explanation": "All methods in an interface are by default public.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of an interface in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To allow multiple inheritances"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To hide implementation details"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To define methods a class must implement"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To provide private utility methods"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91804,
+      "Explanation": "Interfaces in Java are used to define methods that a class must implement.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following can be defined within an interface?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Instance variables"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Static methods"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Constructors"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Parameterized methods"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91805,
+      "Explanation": "Since Java 8, interfaces can have static methods with implementations.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can an interface contain constants in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, and they are implicitly public, static, and final"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, interfaces cannot contain constants"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, but they must be final"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No, constants are not allowed but variables can be"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91806,
+      "Explanation": "In Java, any variable declared in an interface is implicitly public, static, and final.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Is it possible for a class to implement multiple interfaces?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "No, a class can only implement one interface"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes, but only if the interfaces have no methods"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, by separating interfaces with a comma"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No, a class must extend multiple interfaces instead"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91807,
+      "Explanation": "A class can implement multiple interfaces by separating them with a comma in the implements clause.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which feature allows an interface to have a method with an implementation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Default method"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Abstract method"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Static method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Protected method"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91808,
+      "Explanation": "Since Java 8, interfaces can have implemented methods marked with the &apos;default&apos; keyword.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword defines that a class fulfills the contract of an interface?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "extends"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "fulfills"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "implements"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "provides"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91809,
+      "Explanation": "The &apos;implements&apos; keyword indicates that a class will provide the concrete implementation for an interface.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Java 8, which new feature was introduced to interfaces?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Generic interfaces"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Lambda expressions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Default methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Nested interfaces"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91810,
+      "Explanation": "Java 8 introduced default methods that allow interfaces to have method implementations.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is true about interface methods implemented in classes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They can be private."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They are implicitly public."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They must be static."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They must be protected."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91811,
+      "Explanation": "When implementing interface methods in a class, they must be public since the interface methods are implicitly public.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can interfaces in Java have private methods?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, since Java 9"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, interfaces cannot have private methods"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, private methods are allowed since Java 8"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No, but they can have protected methods"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91812,
+      "Explanation": "From Java 9 onward, interfaces can contain private methods.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is not a characteristic of an interface?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An interface can contain abstract methods"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An interface can be instantiated"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Methods in an interface are known as abstract methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An interface can be extended by another interface"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91813,
+      "Explanation": "Interfaces cannot be instantiated; they can only be implemented.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When implementing an interface, what must a class provide?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only public methods"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Implementations for all interface methods"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Implementations for some interface methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Instance variables for the interface"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91814,
+      "Explanation": "A class implementing an interface must provide concrete implementations for all of its methods.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which feature is unique to an interface compared to an abstract class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Can contain both abstract and concrete methods"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Can be instantiated"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Methods are implicitly abstract"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Supports constructors"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91815,
+      "Explanation": "Interface methods are implicitly abstract, whereas abstract classes can have non-abstract methods.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A class is said to honor the contract of an interface. What does this mean?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The class must be declared abstract"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The class is allowed to have instance variables"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The class implements all methods declared in the interface"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The class must implement at least one method"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 91816,
+      "Explanation": "A class honors the contract of an interface by implementing all the methods defined in the interface.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Cloneable interface contains \u201cclone()\u201d method",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It has two mrthods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 81287,
+      "Explanation": "<span id=\"explanation81287\">Cloneable is a marker interface having no methods.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Clone method is declared as throws",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IOException"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "CloneNotFoundException"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CloneNotSupportedException"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 81288,
+      "Explanation": "<span id=\"explanation81288\">clone() method throws CloneNotSupportedException if a class does not implement Cloneable interface or the fields it deals with are references of classes which does not implement Cloneable interface.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Clone() method in Object class is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Protected"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Public"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Default"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Private"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 81289,
+      "Explanation": "<span id=\"explanation81289\">clone() method in Object class is declared as protected.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If u override \u201cclone()\u201d method u can apply access modifier",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Protected"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Public"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "protected or public"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Default"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 81290,
+      "Explanation": "<span id=\"explanation81290\">Originally method declared as protected in class Object. We can widen the scope of the method which is being overridden, so protected and public scope are allowed</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "By default \u201cclone\u201d method does",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Shallow copy"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Deep copy"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Shallow and deep both copies"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 81291,
+      "Explanation": "<span id=\"explanation81291\">Clone method in class Object performs shallow copy.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Interface which does not contain any method is called as",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Empty"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Methodless"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Marker"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Void"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 81292,
+      "Explanation": "<span id=\"explanation81292\">Empty interfaces are called marker interfaces.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen to the following code?<br>interface X&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;static void disp()&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"in disp of X\");<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}<br>public class Trial implements X&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String args[]) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trial t=new Trial();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t.disp();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compilation error \u201cdisp not available with Trial\u201d"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compilation error \u201cstatic method can not be defined inside an interface\u201d"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compilation error \u201c Trial class must define disp as it is there inside parent interface\u201d"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Output \u201c in disp of X\u201d"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 81512,
+      "Explanation": "<span id=\"explanation81512\">Write explaination here..</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given<br>interface emp // functional interface<br>{<br>String wish(String name);<br>}<br>Lambda expression in order to use above interface would be:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "emp ref2=(String name)-&gt;{ return \"Welcome to our site\\t\"+name;};"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "emp ref2=(String name){ return \"Welcome to our site\\t\"+name;};"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both A and B"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 81513,
+      "Explanation": "<span id=\"explanation81513\" style=\"color:blue\">A. emp ref2 = (String name) -&gt; { return \"Welcome to our site\\t\" + name; };<br>This lambda expression takes a String name parameter and returns a formatted welcome message. The syntax (parameters) -&gt; { body } is correct for lambda expressions.<br><br>B. emp ref2 = (String name) { return \"Welcome to our site\\t\" + name; };<br>This syntax is incorrect for lambda expressions. In Java, lambda expressions require the arrow (-&gt;) notation to separate parameters and body. Simply using (parameters) { body } without the arrow is not valid for lambda expressions.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of following code ?<br>interface emp&nbsp; {&nbsp; }<br>public class Trial implements emp&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String args[])&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trial t=new Trial();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(t instanceof Trial)&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"Trial\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(t instanceof emp)&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"emp\");<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(t instanceof Object)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"Object\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Trial, emp, Object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Trial, emp"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "compilation error \u201ccan not use instanceof with interface\u201d"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Trial, Object"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 81505,
+      "Explanation": "<span id=\"explanation81505\">Write explaination here..</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can you declare method local variable as final and can an abstract class may be final?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, yes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes, no"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No, yes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No, no"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 81350,
+      "Explanation": "<span id=\"explanation81350\">Local variable can be declared as final and abstract class can not be final as abstract classes need to be inherited but final classes can not be inherited.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about a final class in Java is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&nbsp;A final class can not be subclassed."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A final class cannot have any methods."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A final class can declare abstract methods."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A final class provides more flexibility for inheritance."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 81518,
+      "Explanation": "<span id=\"explanation81518\" style=\"color:blue\"><span id=\"explanation81518\">A final class in Java is one that cannot be extended further. Once a class is declared as final, it cannot have any subclasses. This restriction is imposed to prevent inheritance and enforce the finality of the class design. A final class canot have abstract methods</span></span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "String class is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "final"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "abstract"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "transient"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 81519,
+      "Explanation": "The final keyword in Java prevents inheritance and subclassing, making the String class immutable and secure in its implementation.<br>Options B (abstract), C (static), and D (transient) are not applicable to the String class:<br>abstract: Abstract classes cannot be instantiated directly and must be subclassed. The String class is not abstract; it is concrete and can be instantiated.<br>static: Static members belong to the class rather than instances and do not apply to individual objects like String instances.<br>transient: Transient is used to indicate that a member variable should not be serialized, which is unrelated to the immutability and finality of the String class.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In order to make a class abstract:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Apply abstract keyword to class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Declare abstract method inside class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both a and b"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 81534,
+      "Explanation": "<span id=\"explanation81534\">Write explaination here..</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can a final method in a final class be overridden in a subclass?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, it can be overridden freely. <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&nbsp;No, it cannot be overridden. <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&nbsp;Yes, but only if the subclass is in the same package."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&nbsp;Yes, but only if the method in the superclass is static.<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 81531,
+      "Explanation": "A final method in a final class cannot be overridden by any subclass. The final keyword applied to a method signifies that the method&apos;s implementation is complete and cannot be altered by subclasses, ensuring consistency and preventing unintended modifications.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Final keyword can be applied to",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Instance member"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Class variable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Local variable"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 81532,
+      "Explanation": "<span id=\"explanation81532\">Write explaination here..</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement about interface inheritance is TRUE?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An interface can inherit from a class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An interface can inherit from multiple interfaces"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An interface cannot extend another interface"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A class can inherit multiple interfaces but cannot implement them"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6819,
+      "QuestionTypeId": 0,
+      "QuestionId": 102734,
+      "Explanation": "<span id=\"explanation102734\" style=\"color:blue\">One interface can extend from multiple interfaces</span>",
+      "Answer": "B",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

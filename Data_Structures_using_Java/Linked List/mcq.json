@@ -1,0 +1,1146 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Which of the following is a real-life application where singly linked lists are used for implementing a low-cost, fast insertion mechanism?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Priority queue"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Sparse matrix representation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Address book with random access"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Graph adjacency matrix"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 100980,
+      "Explanation": "Sparse matrices can use a singly linked list to efficiently store only non-zero elements, allowing fast insertion of these elements without using excessive space.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following use cases would benefit most from the use of a singly linked list in terms of memory efficiency?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Storing data received from network packets"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Multithreaded logging system"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Order processing in an e-commerce platform"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Storing transactional logs in sequence"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 100981,
+      "Explanation": "Network packets, which arrive sequentially, can be efficiently stored in a singly linked list as it allows for easy addition of new packets, leading to improved memory utilization.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following operations on a singly linked list does NOT have a constant time complexity?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Insertion at the head"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Deletion at the head"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Searching for an element"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Updating the data of the head node"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 100982,
+      "Explanation": "Searching for an element in a singly linked list is a linear time complexity operation, O(n), because you may need to traverse the entire list to find the desired element.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the time complexity of inserting a new node at the tail of a singly linked list if the tail is being maintained?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "O(1)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "O(n)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "O(log n)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "O(n^2)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 100983,
+      "Explanation": "If the tail is maintained, then inserting an element at the tail of a singly linked list is done in constant time, O(1), because we can directly access the tail node.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operation would cause the singly linked list to become empty?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Adding a node at the head"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Adding a node at the tail"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Deleting the head node repeatedly"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Updating the tail node value"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 100984,
+      "Explanation": "Deleting the head node repeatedly can eventually make the list empty when the last remaining node is deleted.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you effectively reverse a singly linked list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By recursively calling the reverse function"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By traversing the list and swapping values of consecutive nodes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using two-pointer technique to invert node pointers"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By creating a new list and copying elements in reverse order"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 100985,
+      "Explanation": "The most efficient way to reverse a singly linked list is by using a two-pointer technique to reverse the direction of the node pointers.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operation can be performed in O(1) time on a singly linked list if a pointer to a node is provided?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Searching for an element"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Deleting a node after the provided node"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Accessing the last node"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Inserting a node before the provided node"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 100986,
+      "Explanation": "If a pointer to a particular node is given, deleting the node immediately after it can be done in constant time, O(1), by directly changing the next pointer.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which scenario is a singly linked list preferred over an array?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When frequent insertions and deletions at arbitrary positions are needed"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When rapid access to elements is required"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When memory usage needs to be minimized"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When the data is static and does not change"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 100987,
+      "Explanation": "Singly linked lists are preferred over arrays when frequent insertions and deletions are needed, as these can be done in constant time with linked lists.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens when you attempt to delete a node in a singly linked list without a head pointer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The node will be automatically deleted"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "You cannot delete the node"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The operation will complete but the program may crash"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Another random node might be deleted"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 100988,
+      "Explanation": "Without a head pointer or a pointer to the node before the one to be deleted, you can&#39;t access the list, making deletion impossible.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which data structure is best suited for implementing undo functionality using a singly linked list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Queue"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Binary Tree"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Stack"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Heap"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 100989,
+      "Explanation": "A stack is best suited for implementing undo functionality because you can push actions onto it and pop the last action when an undo is performed.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When performing the merge operation of two sorted singly linked lists, what is the expected time complexity?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "O(1)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "O(n)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "O(n log n)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "O(n^2)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 100990,
+      "Explanation": "Merging two sorted linked lists has a time complexity of O(n) where n is the total number of nodes in both lists because each element needs to be visited once.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If you want to find the middle element of a singly linked list in one traversal, which method would you use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Two-pointer technique also known as slow and fast pointers"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Divide and conquer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Recursion"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using a queue"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 100991,
+      "Explanation": "Using the slow and fast pointer technique allows you to find the middle of a singly linked list in one traversal efficiently.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the following code snippet?<br/><br/>class Node {<br/>&nbsp;&nbsp;&nbsp;&nbsp;int data;<br/>&nbsp;&nbsp;&nbsp;&nbsp;Node next;<br/>&nbsp;&nbsp;&nbsp;&nbsp;Node(int d) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data = d;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;next = null;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>}<br/>public class LinkedList {<br/>&nbsp;&nbsp;&nbsp;&nbsp;Node head;<br/>&nbsp;&nbsp;&nbsp;&nbsp;public void append(int new_data) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Node new_node = new Node(new_data);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (head == null) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;head = new_node;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Node last = head;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while (last.next != null)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;last = last.next;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;last.next = new_node;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String[] args) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LinkedList list = new LinkedList();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list.append(10);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list.append(20);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list.append(30);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(list.head.next.next.data);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>}<br/>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "20"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "30"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "NullPointerException"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 100992,
+      "Explanation": "The list appends 10, 20, and 30 in order. The line accessing `list.head.next.next.data` points to the third element, which is 30.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods correctly deletes the head node of a singly linked list?<br/><br/>class LinkedList {<br/>&nbsp;&nbsp;&nbsp;&nbsp;Node head;<br/>&nbsp;&nbsp;&nbsp;&nbsp;class Node {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int data;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Node next;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Node(int d) { data = d; }<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;public void deleteHead() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Method implementation<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>}<br/>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "head = head.next;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "head.next = null;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "head = null;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "head = head.next.next;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 100993,
+      "Explanation": "The correct way to delete the head of a singly linked list is to make `head` point to the next node.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the following method do?<br/><br/>public int length() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;int count = 0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;Node current = head;<br/>&nbsp;&nbsp;&nbsp;&nbsp;while (current != null) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count++;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;current = current.next;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;return count;<br/>}<br/>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Calculates the length of the linked list"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Finds the middle element of the list"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Counts the number of even elements"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Returns -1 if the list is empty"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 100994,
+      "Explanation": "The method traverses the list and increments the count for each node, thereby calculating the total length.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Considering the linked list operations in Java, which method correctly updates a value at a specific index?<br/><br/>class LinkedList {<br/>&nbsp;&nbsp;&nbsp;&nbsp;Node head;<br/>&nbsp;&nbsp;&nbsp;&nbsp;class Node {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int data;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Node next;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Node(int d) { data = d; }<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;public void updateAtIndex(int index, int newVal) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Method implementation<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>}<br/>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Traverse to the node at position `index` and update `node.data` to `newVal`."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Update the data at head + index positions with newVal."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Remove the node at `index` and insert a new node with `newVal`."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Create a new node with `newVal` and insert it at `index`."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 100995,
+      "Explanation": "To update a node&#39;s value, traverse to the node at the given index and then set `node.data` to `newVal`.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods correctly reverses a singly linked list?<br/><br/>class LinkedList {<br/>&nbsp;&nbsp;&nbsp;&nbsp;Node head;<br/>&nbsp;&nbsp;&nbsp;&nbsp;class Node {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int data;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Node next;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Node(int d) { data = d; }<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;public void reverse() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Method implementation<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>}<br/>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use three pointers: previous, current, and next to iterate and reverse links."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Swap data values only between the first and last nodes, then move inwards."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Reverse the linked list using a recursive method."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Traverse and insert nodes to a new list in reverse order."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 100996,
+      "Explanation": "Using three pointers (previous, current, and next), you can reverse the direction of connections by iterating through the list.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the time complexity for searching an element in a singly linked list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "O(1)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "O(n)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "O(log n)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "O(n^2)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 100997,
+      "Explanation": "In the worst case, every node needs to be checked when searching for an element, leading to an O(n) complexity.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the following code do?<br/><br/>public void push(int new_data) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;Node new_node = new Node(new_data);<br/>&nbsp;&nbsp;&nbsp;&nbsp;new_node.next = head;<br/>&nbsp;&nbsp;&nbsp;&nbsp;head = new_node;<br/>}<br/>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Appends a new element to the end of the list."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Adds a new element at the beginning of the list."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Adds a new element after the head node."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Initializes a new list with a single element."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 100998,
+      "Explanation": "The `push` method adds a new node at the beginning of the list by setting its `next` to the current head.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you detect a loop in a singly linked list efficiently?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using a set to check for nodes already visited."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Iterate and backtrack to confirm connection."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Keep a count of visited nodes."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using two pointers: slow and fast moving at different speeds."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 100999,
+      "Explanation": "The two-pointer technique (Floyd\u2019s Cycle-Finding Algorithm) uses slow and fast pointers to detect loops, where both meet if a loop exists.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you count the number of elements in the circular linked list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public int length(Node head) {<br>&nbsp;&nbsp;&nbsp;&nbsp;int length = 0;<br>&nbsp;&nbsp;&nbsp;&nbsp;if( head == null)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>&nbsp;&nbsp;&nbsp;&nbsp;Node temp = head.getNext();<br>&nbsp;&nbsp;&nbsp;&nbsp;while(temp != head) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;temp = temp.getNext();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;length++;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;return length;<br>}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "public int length(Node head) {<br>&nbsp;&nbsp;&nbsp;&nbsp;int length = 0;<br>&nbsp;&nbsp;&nbsp;&nbsp;if( head == null)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>&nbsp;&nbsp;&nbsp;&nbsp;Node temp = head.getNext();<br>&nbsp;&nbsp;&nbsp;&nbsp;while(temp != null) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;temp = temp.getNext();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;length++;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;return length;<br>}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "public int length(Node head) {<br>&nbsp;&nbsp;&nbsp;&nbsp;int length = 0;<br>&nbsp;&nbsp;&nbsp;&nbsp;if( head == null)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>&nbsp;&nbsp;&nbsp;&nbsp;Node temp = head.getNext();<br>&nbsp;&nbsp;&nbsp;&nbsp;while(temp != head &amp;&amp; temp != null) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;temp = head.getNext();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;length++;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>return length;<br>}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "public int length(Node head) {<br>&nbsp;&nbsp;&nbsp;&nbsp;int length = 0;<br>&nbsp;&nbsp;&nbsp;&nbsp;if( head == null)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>&nbsp; &nbsp; &nbsp;Node temp = head.getNext();<br>&nbsp; &nbsp; &nbsp;while(temp != head &amp;&amp; temp == null) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;temp = head.getNext();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;length++;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;return length;<br>}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 86506,
+      "Explanation": "<span id=\"explanation86506\">&nbsp;If the head is null, it means that the list is empty. Otherwise, traverse the list until the head of the list is reached.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the functionality of the following piece of code? Select the most appropriate.<br>public void function(int data) {<br>&nbsp;&nbsp; &nbsp;int flag = 0;<br>&nbsp;&nbsp; &nbsp;if( head != null)&nbsp; {<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Node temp = head.getNext();<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;while((temp != head) &amp;&amp; (!(temp.getData()) == data))) {<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;temp = temp.getNext();<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;flag = 1;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;break;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;}<br>&nbsp;&nbsp; &nbsp;}<br>&nbsp;&nbsp; &nbsp;if(flag==1)<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;System.out.println(\"success\");<br>&nbsp;&nbsp; &nbsp;else<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;System.out.println(\"fail\");<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Print success if a particular element is not found"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Print fail if a particular element is not found at position 1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Print success if a particular element is equal to 1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Print fail if the list is empty"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 86507,
+      "Explanation": "<span id=\"explanation86507\">This code is for searching element in LinkedList</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is false about a circular linked list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Every node has a successor"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Time complexity of inserting a new node at the head and at the end of the list is O(1)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Time complexity for deleting the last node is O(n)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 86516,
+      "Explanation": "<span id=\"explanation86516\">In circular Linked list last node is connected to first node, so adding new node at the head of the list need O(n) Complexity not O(1) .<br>So answer is B</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not a type of Linked List ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Doubly Linked List."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Circular Linked List."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Hybrid Linked List."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Singly Linked List."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 84014,
+      "Explanation": "<span id=\"explanation84014\">Doubly Linklist,circular linklist,singly linklist these are forms of Linklist.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp; Consider a linked list of n elements. What is the time taken to insert an element after element pointed by same pointer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "O<sub>(1)</sub>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "O<sub>(log n) 2</sub>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "O<sub>(n)</sub>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "O<sub>(n log n) 2</sub>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 83853,
+      "Explanation": "<span id=\"explanation83853\" style=\"color:blue\"><span id=\"explanation83853\">In Linklist each and every element is dynamically allocated and every previous node is holding address of next node so time taken to insert node after any node pointed by some pointer need o(1) time.</span></span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a linked list with n nodes, the time taken to insert an element after an element pointed by some pointer is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0 (1)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0 (log n)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0 (n)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "0 (n 1og n)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 78068,
+      "Explanation": "<span id=\"explanation78068\">If aready pointer is pointed to some element , so inserting elemnet required only O(1) time.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not a type of Linked List ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Doubly Linked List."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Circular Linked List."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Hybrid Linked List."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Singly Linked List."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 78216,
+      "Explanation": "<span id=\"explanation78216\">Doubly Linklist,circular linklist,singly linklist these are forms of Linklist.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Linked list is generally considered as an example of _________ type of memory allocation",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Dynamic ."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Early Time."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compile Time ."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Static ."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 78217,
+      "Explanation": "<span id=\"explanation78217\">Each element in linklist is dynamically allocated .Linked lists are dynamic allocations , done on the heap section of memory.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider function for reversing the linked list , with prev, next, and current pointers. What should be added in end, in place of ---------------------------, so that the function correctly reverses a linked list.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "*head_ref = prev"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "*head_ref = current"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "*head_ref = next"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "*head_ref = NULL"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 78218,
+      "Explanation": "<span id=\"explanation78218\">At the end of while loop, the prev pointer points to the last node of original linked list. We need to change *head_ref so that the head pointer now starts pointing to the last node. See the following complete running program.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Each Node contain minimum two fields one field called data field to store data. Another field is of type _________.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "reference to Class ."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "reference to Character."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "reference to an Integer ."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "reference to Node ."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 78219,
+      "Explanation": "<span id=\"explanation78219\">Each node in linklist containes two fields data and , pointer or reference&nbsp; to next node. With this pointer nodes are linked.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the functionality of the following code?<br>public void function(Node node) {<br>&nbsp;&nbsp; &nbsp;if(size == 0)<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;head = node;<br>&nbsp;&nbsp; &nbsp;else {<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Node temp,cur;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;for(cur = head; (temp = cur.getNext())!=null; cur = temp);<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;cur.setNext(node);<br>&nbsp;&nbsp; &nbsp;}<br>&nbsp;&nbsp; &nbsp;size++;<br>}<br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Inserting a node at the beginning of the list."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Deleting a node at the beginning of the list"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Inserting a node at the end of the list"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Deleting a node at the end of the list"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 78220,
+      "Explanation": "<span id=\"explanation78220\">&nbsp;The for loop traverses through the list and then inserts a new node as cur.setNext(node);</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider an implementation of unsorted singly linked list. Suppose it has its representation with a head pointer only. Given the representation, which of the following operation can be implemented in O(1) time?<br>i) Insertion at the front of the linked list<br>ii) Insertion at the end of the linked list<br>iii) Deletion of the front node of the linked list<br>iv) Deletion of the last node of the linked list",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "I and II"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "I and III"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "I, II and III"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "I, II and IV"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 82709,
+      "Explanation": "<span id=\"explanation82709\">Head is first node in the listedlist.Insertion and deletion of elements at the front of the linked list completes in O (1) time whereas for insertion and deletion at the last node requires to traverse through every node in the linked list. Suppose there are n elements in a linked list, we need to traverse through each node. Hence time complexity becomes O(n).</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider following singly linked-list:<br>&nbsp;10-&gt;20-&gt;30-&gt;40<br>&nbsp; If head is pointing to node 10, then how will you display 30 ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "head.getNext().getNext().getData();"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<div class=\"15\">head.getNext().GetData();<span style=\"display: none;\" data-cke-bookmark=\"1\"> </span></div>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<div class=\"15\">head.getData();<span style=\"display: none;\" data-cke-bookmark=\"1\"> </span></div>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "head.getNext().getNext();"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 78000,
+      "Explanation": "<span id=\"explanation78000\">In Link List every node is holding address of next node so, head.getNext will give give you&nbsp; address of node containg value 20 , head-&gt;next-&gt;next will gice you address of node 30 so head-&gt;next-&gt;next-&gt;data will gice you&nbsp; value 30.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In what kind of storage we can easily insert,delete,concatenate and rearrange substrings ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Linked list"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Stack"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Queue"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Array"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 77987,
+      "Explanation": "<span id=\"explanation77987\">In linked list elements are grow/shrink dynamically as per the requirement.Adding and delting elements from linklist is very easy compare to other data structures.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What kind of list is best to answer questions such as 'What is the item at position n?'",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Lists implemented with an array."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Doubly-linked lists."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Singly-linked lists."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Doubly-linked or singly-linked lists are equally best"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 77982,
+      "Explanation": "<span id=\"explanation77982\">In array we can directly access array element on any specific index.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Linked lists are best suited",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "for relatively permanent collections of data"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "for the size of the structure and the data in the structure are constantly changing"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "for both of above situation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "for none of above situation"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 77973,
+      "Explanation": "<span id=\"explanation77973\">Linked list can grow &amp; shrink(change the size) dynamically at run time.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A linear collection of data elements where the linear node is given by means of pointer or link is called ________.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "linked list"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "node list"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "primitive list"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of these"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 77908,
+      "Explanation": "<span id=\"explanation77908\" style=\"color:blue\"><span id=\"explanation77908\" style=\"color:blue\"><span id=\"explanation77908\"><span id=\"explanation77908\">In Linked list each node has its own data and the address of next node. These nodes are linked by using pointers. Node list is an object that consists of a list of all nodes in a document with in a particular selected set of nodes.</span></span></span></span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp; Consider a linked list of n elements. What is the time taken to insert an element after element pointed by same pointer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "O<sub>(1)</sub>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "O<sub>(log n) 2</sub>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "O<sub>(n)</sub>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "O<sub>(n log n) 2</sub>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4265,
+      "QuestionTypeId": 0,
+      "QuestionId": 77885,
+      "Explanation": "<span id=\"explanation77885\">In Linklist each and every element is dynamically allocated and every previous node is holding address of next node so time taken to insert node after any node pointed by some pointer need o(1) time.</span>",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

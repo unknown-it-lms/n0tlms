@@ -1,0 +1,2256 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "A class declaring another class as a friend will:<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Have wine and cheese with that other friend."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Allow that class to declare an instance of it in its list of private variables."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Allow the other class (the one declared as friend) to access to the declaring class\u2019 s private variables"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Allow the class declaring the other as a friend to access the declared class\u2019 s private variables.<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 63884,
+      "Explanation": "A function or&nbsp;class&nbsp;cannot&nbsp;declare&nbsp;itself as a&nbsp;friend&nbsp;of any&nbsp;class. In&nbsp;a class&nbsp;definition, use the&nbsp;friend&nbsp;keyword and the name of a non-member function or&nbsp;other class to&nbsp;grant it access&nbsp;to&nbsp;the private and protected members of your&nbsp;class. <br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does derived class does not inherit from the base class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "constructor and destructor"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "friends"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "operator = () members"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 63880,
+      "Explanation": "A derived class inherits all base class methods with the following exceptions \u2212<ul><li>Constructors, destructors and copy constructors of the base class.</li><li>Overloaded operators of the base class.</li><li>The friend functions of the base class.</li></ul>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What will be the output of following C++ code?<br>#include &lt;iostream&gt;<br>using namespace std;<br>class BaseClass {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int i;<br>&nbsp;&nbsp;&nbsp;&nbsp; public:<br>&nbsp;&nbsp;&nbsp;&nbsp; void setInt(int n);<br>&nbsp;&nbsp;&nbsp;&nbsp; int getInt();<br>};<br>class DerivedClass : public BaseClass {<br>&nbsp;&nbsp;&nbsp;&nbsp; int j;<br>&nbsp;&nbsp;&nbsp;&nbsp; public:<br>&nbsp;&nbsp;&nbsp;&nbsp; void setJ(int n);<br>&nbsp;&nbsp;&nbsp;&nbsp; int mul();<br>};<br>void BaseClass::setInt(int n) {<br>&nbsp;&nbsp;&nbsp;&nbsp; i = n;<br>}<br>int BaseClass::getInt() {<br>&nbsp;&nbsp;&nbsp;&nbsp; return i;<br>}<br>void DerivedClass::setJ(int n) {<br>&nbsp;&nbsp;&nbsp;&nbsp; j = n;<br>}<br>int DerivedClass::mul() {<br>&nbsp;&nbsp;&nbsp;&nbsp; return j * getInt();<br>}<br>int main() {<br>&nbsp;&nbsp;&nbsp; DerivedClass ob;<br>&nbsp;&nbsp;&nbsp; ob.setInt(10);&nbsp;&nbsp;&nbsp; &nbsp;<br>&nbsp;&nbsp;&nbsp; ob.setJ(4);&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>&nbsp;&nbsp;&nbsp; cout &lt;&lt; ob.mul();&nbsp; &nbsp;<br>&nbsp;&nbsp;&nbsp; return 0;<br>}<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "40<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error during compilation<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 63892,
+      "Explanation": "Derive class object is able to call fucntion from parent class so setint(10) will assign value to \" i \" variable which is available in base class and setj(4) is use to assign values to variable \" j \". so multiply will return 40 value.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Pick out the correct statement about multiple inheritance.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&nbsp;class derive from one direct base class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "class can have more than two base classes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "class can have more than two derive classes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 63893,
+      "Explanation": "<span id=\"explanation63893\">Multiple Inheritance is a feature of C++ where a class can inherit from more than one classes. </span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which is used to define the member of a class externally?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": ":"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "::"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "#"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 63894,
+      "Explanation": "Scope resolution operator&nbsp;is used. or using Friend Function . The&nbsp;Scope resolution operator&nbsp;can be used or the using&nbsp; <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>#include&lt;iostream&gt;<br>using namespace std;<br>int&nbsp; main( )<br></div><div>{</div><div style=\"margin-left: 40px;\">char a='A';</div><div style=\"margin-left: 40px;\">&nbsp;if(a= ='a'|| a='B' || 'b')<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a+=' &nbsp;';</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a= ='C'+' &nbsp;';</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout&lt;&lt; a;</div><div style=\"margin-left: 40px;\">return 0;</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "a"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "c"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 63489,
+      "Explanation": "Code is wrong because&nbsp; l_Value required and in else part a==&apos;C&apos;+&apos;A&apos; this is also wrong syntax.&nbsp;",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What is the output of this program?</div><div>&nbsp;&nbsp; #include &lt;iostream&gt;</div><div>&nbsp;&nbsp; using namespace std;</div><div>&nbsp;&nbsp; class Base&nbsp;&nbsp;{</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp; virtual void print() const = 0;</div><div>&nbsp;&nbsp; };</div><div>&nbsp;&nbsp; class DerivedOne : public Base&nbsp;{</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public: &nbsp;&nbsp;&nbsp;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; void print() const&nbsp;&nbsp;{</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; \"DerivedOne \";</div><div>&nbsp;&nbsp;&nbsp;&nbsp; }</div><div>&nbsp;&nbsp; };</div><div>&nbsp;&nbsp; class DerivedTwo : public Base&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp; void print() const&nbsp;&nbsp;&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; \"DerivedTwo \";</div><div>&nbsp;&nbsp;&nbsp;&nbsp; } &nbsp;&nbsp;&nbsp;</div><div>&nbsp;&nbsp; };&nbsp;</div><div>&nbsp;&nbsp; class Multiple : public DerivedOne, public DerivedTwo&nbsp;&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp; void print() const&nbsp;&nbsp;{</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DerivedTwo :: print();</div><div>&nbsp;&nbsp;&nbsp;&nbsp; }&nbsp;</div><div>&nbsp;&nbsp; };&nbsp;<br></div><div>&nbsp;&nbsp; int main()</div><div>&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; int i;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; Multiple both;&nbsp;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; DerivedOne one;&nbsp;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; DerivedTwo two;&nbsp;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; Base *array[ 3 ];&nbsp;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; array[ 0 ] = &amp;both;&nbsp;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; array[ 1 ] = &amp;one;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; array[ 2 ] = &amp;two;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; array[ i ] -&gt; print();</div><div>&nbsp;&nbsp;&nbsp;&nbsp; return 0;</div><div>&nbsp;&nbsp; }</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DerivedOne"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DerivedTwo"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 63898,
+      "Explanation": "<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does inheriatance allows you to do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "create a class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "create a hierarchy of classes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "access methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 64045,
+      "Explanation": "In inheritance we are deriving one class from another class which will create hirarchy of classes.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the following C++ code?<br>#include &lt;iostream&gt;<br>using namespace std;<br>class BaseClass {<br>&nbsp;&nbsp;&nbsp;&nbsp; int x;<br>&nbsp;&nbsp;&nbsp; public:<br>&nbsp;&nbsp;&nbsp;&nbsp; void setx(int n) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x = n;<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp; void showx() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; x ;<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>};<br>class DerivedClass : private BaseClass {<br>&nbsp;&nbsp;&nbsp;&nbsp; int y;<br>&nbsp;&nbsp;&nbsp;&nbsp; public:<br>&nbsp;&nbsp;&nbsp;&nbsp; void setxy(int n, int m) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; setx(n);&nbsp; &nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y = m;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x=y;<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp; void showxy() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; showx();&nbsp;&nbsp; &nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; y &lt;&lt; ' ';<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>};<br>int main() {<br>&nbsp;&nbsp;&nbsp;&nbsp; DerivedClass ob;<br>&nbsp;&nbsp;&nbsp;&nbsp; ob.setxy(10, 20);<br>&nbsp;&nbsp;&nbsp;&nbsp; ob.showxy();<br>&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10 10<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "20 20<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "10 20"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error during compilation<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 63889,
+      "Explanation": "Note that x is private data member of base class so it can&apos;t be accessed directly in derived class. So the line x=y will give error during compilation.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does derived class does not inherit from the base class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "constructor and destructor"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "friends"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "operator = () members"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 64093,
+      "Explanation": "Following are the things which a derived class inherits from its parent.<br>1) Every data member defined in the parent class (although such members may not always be<br>accessible in the derived class!)<br>2) Every ordinary member function of the parent class (although such members may not always be<br>accessible in the derived class!)<br>3) The same initial data layout as the base class.<br>Following are the things which a derived class doesn\u2019t inherits from its parent :<br>1) The base class\u2019s constructors and destructor.<br>2) The base class\u2019s friends<br>3)&nbsp; operator = () members",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of this program?<br>&nbsp;&nbsp; #include &lt;iostream&gt;<br>&nbsp;&nbsp; using namespace std;<br>&nbsp;&nbsp; class BaseClass&nbsp;&nbsp; &nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp; int x;<br>&nbsp;&nbsp;&nbsp;&nbsp; public:<br>&nbsp;&nbsp;&nbsp;&nbsp; void setx(int n)&nbsp;&nbsp; &nbsp; &nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x = n;<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp; void showx()&nbsp;&nbsp; &nbsp; &nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; x ;<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp; };<br>&nbsp;&nbsp; class DerivedClass : BaseClass&nbsp;&nbsp; &nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp; int y;<br>&nbsp;&nbsp;&nbsp;&nbsp; public:<br>&nbsp;&nbsp;&nbsp;&nbsp; void setxy(int n, int m)&nbsp;&nbsp; &nbsp; &nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; setx(n);&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y = m;<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp; void showxy()&nbsp; &nbsp; &nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; showx();&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; y &lt;&lt; ' ';<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp; };<br>&nbsp;&nbsp; int main()<br>&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp; DerivedClass ob;<br>&nbsp;&nbsp;&nbsp;&nbsp; ob.setxy(10, 20);<br>&nbsp;&nbsp;&nbsp;&nbsp; ob.showxy();<br>&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br>&nbsp;&nbsp; }",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "20"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "10 20"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 64068,
+      "Explanation": "<span id=\"explanation64068\">In setxy method we are calling base class function to set value of x and same in showxy method we are calling base class function to display x hence output is 10 20.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Pick out the correct statement about override.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Overriding refers to a derived class function that has the same name and signature as a base class virtual function"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Overriding has same name and different signature"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Overriding refers to a derived class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Overriding refers to having different return type in derived class"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 64151,
+      "Explanation": "Function overriding is a feature that allows us to have a same function in child class which is already present in the parent class. A child class inherits the data members and member functions of parent class, but when you want to override a functionality in the child class then you can use function overriding. It is like creating a new version of an old function, in the child class.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following programme?<br>#include &lt; iostream.h &gt;<br>#include &lt; conio.h &gt;<br>class test<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp; int a;<br></div>&nbsp;&nbsp;&nbsp;&nbsp; public:<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp; ~test() { }<br></div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp; test(){&nbsp;&nbsp; a = 10;&nbsp;&nbsp; }<br></div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp; test(int p){ a = p; }</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp; virtual void display()<br>&nbsp;&nbsp;&nbsp;&nbsp; { </div><div style=\"margin-left: 80px;\">cout &lt;&lt; endl &lt;&lt; a;</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp; }<br></div>};<br>class subtest:public test<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp; int b;<br></div>&nbsp;&nbsp;&nbsp;&nbsp; public:<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp;subtest() {&nbsp;&nbsp;&nbsp; b = 20; }</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp; subtest(int p, int q):test(p) {&nbsp;&nbsp;&nbsp;&nbsp; b = q;&nbsp;&nbsp;&nbsp; }</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp; void display() { cout &lt;&lt; endl &lt;&lt; a &lt;&lt; \u201c\u201d &lt;&lt; b; }<br></div>};<br>&nbsp;<br>void main()<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp; test *t;<br>&nbsp;&nbsp;&nbsp;&nbsp; t = new test(100);<br>&nbsp;&nbsp;&nbsp;&nbsp; t-&gt;display();<br>&nbsp;&nbsp;&nbsp;&nbsp; t = new subtest(20,40);<br>&nbsp;&nbsp;&nbsp;&nbsp; t-&gt;display();<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "100 20 40<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "20 40"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "20"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 64156,
+      "Explanation": "Base class Pointer is generic pointer so it can hold address if any derive class object . So first time t=new test(100) will call base class constructor and t-&gt;display() will display from base class. t=new subset(20,40) will call constructor from derive class .<br><br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which design patterns benefit from the multiple inheritance?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Adapter and observer pattern<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Code pattern"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Glue pattern"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 64157,
+      "Explanation": "<br>Adapter abd observer design&nbsp;pattern&nbsp;is one of the structural design&nbsp;pattern&nbsp;and its used so that two unrelated entities can work together. So it needs multiple inheritance.<br><div data-base-uri=\"/search\" id=\"ed_24\" data-ved=\"2ahUKEwjTrMbGnIPpAhWKzTgGHUftCWYQ2Z0BMA96BAgIEAo\"><br></div>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following advantages we lose by using multiple inheritance?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Dynamic binding"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Polymorphism"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both Dynamic binding &amp; Polymorphism"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 64158,
+      "Explanation": "&nbsp;The benefit of dynamic binding and polymorphism is that they help making the code easier to extend but by multiple inheritance it makes harder to track. <br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of following is not a member of a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "static function"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "const function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "virtual function<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "friend function<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 64185,
+      "Explanation": "&nbsp;&nbsp;Friend function, that is a \"friend\" of a given class, is a function that is given the same access as methods to private and protected data. A friend function is declared by the class that is granting access, so friend functions are part of the class interface, like methods.  <br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What is the output of the following program?<br> class base<br></div><div>{<br></div><div style=\"margin-left: 40px;\">public:<br></div><div style=\"margin-left: 80px;\">virtual void baseFun(){ cout\u00ab\"from base\"\u00abendl;<br></div><div>};<br></div><div>class deri:public base<br></div><div>{<br></div><div style=\"margin-left: 40px;\">public:<br></div><div style=\"margin-left: 80px;\">void baseFun(){ cout\u00ab \"from derived\"\u00abendl;}<br></div><div>};<br>void SomeFunc(base *baseObj)<br><div>{<br></div><div style=\"margin-left: 40px;\">baseObj-&gt;baseFun();<br></div><div>}<br>int main()<br></div><div>{<br></div><div style=\"margin-left: 40px;\">base baseObject;<br></div><div style=\"margin-left: 40px;\">SomeFunc(&amp;baseObject);<br></div><div style=\"margin-left: 40px;\">deri deriObject;<br></div><div style=\"margin-left: 40px;\">SomeFunc(&amp;deriObject);<br></div><div>}<br></div></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "from derived from base"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "from base from derived"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compile error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Run Time error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 64260,
+      "Explanation": "&nbsp;In inheritance compiler first call constructor of base class and then derive class.<br><br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which symbol is used to create multiple inheritance?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Dot"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Comma"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Dollar"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "%"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 64240,
+      "Explanation": "<span id=\"explanation64240\">class Calculator:public Math1,public Math2<br>{<br>};<br><br>Above is syntax for multiple inheritance.</span><br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the following code?<br>#include&lt;iostream&gt;<br>using namespace std;<br><br>class obj<br>{<div style=\"margin-left: 40px;\">public :</div><div style=\"margin-left: 40px;\">obj()<br>{</div><div style=\"margin-left: 80px;\">cout&lt;&lt;\"in\";<br></div><div style=\"margin-left: 40px;\">}</div><div style=\"margin-left: 40px;\">~obj()<br>{</div><div style=\"margin-left: 80px;\">cout&lt;&lt;\"out \";<br></div><div style=\"margin-left: 40px;\">}<br></div>};<br>int main()<br>{<div style=\"margin-left: 40px;\">obj A,B;</div><div style=\"margin-left: 40px;\">{</div><div style=\"margin-left: 80px;\">obj D;</div><div style=\"margin-left: 40px;\">}</div><div style=\"margin-left: 40px;\">obj E;</div><div style=\"margin-left: 40px;\">return 0;<br></div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "in in in out in out out out"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "in in in in out out out out"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "in in in out in out out out"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 64306,
+      "Explanation": "Here two objectes are created so two times constrcutor will print \" in in\"&nbsp; and then in separate scope object D is created which will invoke constructor and destructor .<br>and again because of object E constrcutor will print \" in \" and then three destructors.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the following code?<br>#include&lt;iostream&gt;<br>using namespace std;<br>class professor {<div style=\"margin-left: 40px;\">public:<br>professor()&nbsp;{</div><div style=\"margin-left: 80px;\">cout&lt;&lt;\"professor \";</div><div style=\"margin-left: 40px;\">}</div><div>};</div>class researcher&nbsp;{<div style=\"margin-left: 40px;\">public:</div><div style=\"margin-left: 40px;\">researcher()&nbsp;{</div><div style=\"margin-left: 80px;\">cout&lt;&lt;\"researcher \";</div><div style=\"margin-left: 40px;\">}</div><div>};</div>class teacher: public professor<br>{<div style=\"margin-left: 40px;\">public:<br>teacher()&nbsp;{</div><div style=\"margin-left: 80px;\">cout&lt;&lt;\"teacher \";</div><div style=\"margin-left: 40px;\">}</div><div>};</div>class myprofessor: public teacher, public virtual researcher&nbsp;{<div style=\"margin-left: 40px;\">public:<br>myprofessor()&nbsp;{</div><div style=\"margin-left: 80px;\">cout&lt;&lt;\"myprofessor \";</div><div style=\"margin-left: 40px;\">}</div><div>};</div>int main()<br>{<div style=\"margin-left: 40px;\">myprofessor obj;</div><div style=\"margin-left: 40px;\">return 0;</div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "professor researcher teacher myprofessor"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "researcher professor teacher myprofessor"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "myprofessor teacher researcher professor"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "myprofessor researcher professor teacher"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 64302,
+      "Explanation": "<span id=\"explanation64302\">First it will call constrcutor of virtual base class and then next classes.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is wrong in the following code?<br>#include&lt;iostream&gt;<br>using namespace std;<br>class Base&nbsp;{<div style=\"margin-left: 40px;\">public :</div><div style=\"margin-left: 40px;\">Base()<br>{};</div><div style=\"margin-left: 40px;\">virtual ~Base(){};</div>};<br>class Derived : protected Base {<div style=\"margin-left: 40px;\">public:</div><div style=\"margin-left: 40px;\">virtual ~Derived(){};</div>};<br>int main()<br>{<div style=\"margin-left: 40px;\">Base *pb = new Derived();</div><div style=\"margin-left: 40px;\">return 0;</div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "There is nothing wrong"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "One cannot have a \u2018Base\u2019 pointer to \u2018Derived\u2019 since it is not derived publicly"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "One need a derived class pointer to point to a derived class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "One required to code a constructor for Derived."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 64303,
+      "Explanation": "<span id=\"explanation64303\">Mode of inheritance is protected and constructor and destructors of base class is declare at public part.</span><br><br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the following code?<br>#include&lt;iostream.h&gt;<br>class Parent<br>{<div style=\"margin-left: 40px;\">public:</div><div style=\"margin-left: 40px;\">Parent()<br>{</div><div style=\"margin-left: 40px;\">Status();<br>}</div><div style=\"margin-left: 40px;\">virtual ~Parent()<br> { <br>Status();<br>}</div><div style=\"margin-left: 40px;\">virtual void Status()</div><div style=\"margin-left: 40px;\">{</div><div style=\"margin-left: 40px;\">cout&lt;&lt;\"Parent \";<br>}<br></div>};<br>class Child: public Parent<br>{<div style=\"margin-left: 40px;\">public:</div><div style=\"margin-left: 40px;\">Child()<br>{</div><div style=\"margin-left: 80px;\">Status();</div><div style=\"margin-left: 40px;\">}</div><div style=\"margin-left: 40px;\">virtual ~Child() <br>{ </div><div style=\"margin-left: 80px;\">Status();</div><div style=\"margin-left: 40px;\">}</div><div style=\"margin-left: 40px;\">virtual void Status()<br>{</div><div style=\"margin-left: 80px;\">cout&lt;&lt;\"Child \";</div><div style=\"margin-left: 40px;\">}<br></div>};<br>void main()<br>{<div style=\"margin-left: 40px;\">Child c;<br></div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Parent Parent"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Parent Child Child Parent"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Child Parent Parent Child"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 64304,
+      "Explanation": "Child is derive class, so when we create object of derive class it will call constructor of base class first,and base class constructor is calling virtual fucntion Status so it will print Parent then destructor of derive class and destructor of base class.<br><br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include&lt;iostream.h&gt;<br>class Base&nbsp;{<div style=\"margin-left: 40px;\">public :</div><div style=\"margin-left: 80px;\">int a;</div><div style=\"margin-left: 40px;\">protected:</div><div style=\"margin-left: 80px;\">int b;</div><div style=\"margin-left: 40px;\">private:</div><div style=\"margin-left: 80px;\">int c;</div>};<br>class Derived:public&nbsp; Base&nbsp;{<div style=\"margin-left: 40px;\">int d;</div><div style=\"margin-left: 40px;\">friend Friend;</div>};<br>class Friend&nbsp;{<div style=\"margin-left: 40px;\">Derived derived;</div>};<br>In the above code, which of the following variables can be accessed in 'Friend'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "only a and b"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "a,b and c"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "only a"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 64309,
+      "Explanation": "<span id=\"explanation64309\">Syntax is wrong.<br>1.<br>class B;<br>class A<br>{<br>&nbsp;&nbsp;&nbsp; //.. class B is a friend class of class A<br>&nbsp;&nbsp;&nbsp; friend class B;<br>};<br>class B<br>{<br>&nbsp;&nbsp; //some data members.<br><br>};<br>2 .<br>&nbsp;&nbsp; Mode of inheritance is not mentioned.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In protected inheritance:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The public members of the base class become public."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The public members of the base class become protected.<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The protected members of the base class become private.<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The public members of the base class become inaccessible.<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 64205,
+      "Explanation": "<u>public  Inheritance</u>&nbsp;\u2212 When deriving a class from a&nbsp;public&nbsp;base class,&nbsp;public&nbsp;members of the base class become&nbsp;public&nbsp;members of the derived class and&nbsp;protected&nbsp;members of the base class become&nbsp;protected&nbsp;members of the derived class. A base class&apos;s&nbsp;private&nbsp;members are never accessible directly from a derived class, but can be accessed through calls to the&nbsp;public&nbsp;and&nbsp;protected&nbsp;members of the base class. <br><br><u>Protected&nbsp; Inheritance</u>&nbsp;\u2212 When deriving from a&nbsp;protected&nbsp;base class,&nbsp;public&nbsp;and&nbsp;protected&nbsp;members of the base class become&nbsp;protected&nbsp;members of the derived class.<br><br><u>Private Inheritance</u>&nbsp;\u2212 When deriving from a&nbsp;private&nbsp;base class,&nbsp; public&nbsp;and&nbsp; protected&nbsp; members&nbsp; of the base class become&nbsp;private&nbsp;members of the derived class. <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div style=\"margin-left:0px; margin-right:0px; text-align:left\">#include&lt;iostream&gt;&nbsp;&nbsp;</div><div style=\"margin-left:0px; margin-right:0px; text-align:left\">using namespace std;<br>class Base1&nbsp;{</div><div style=\"margin-left: 40px; margin-right: 0px; text-align: left;\">public:<br>&nbsp; Base1 ()&nbsp;&nbsp; {</div><div style=\"margin-left: 80px; margin-right: 0px; text-align: left;\">&nbsp;&nbsp;&nbsp; cout &lt;&lt; \" Base1's constructor called\" &lt;&lt; endl;</div><div style=\"margin-left: 40px; margin-right: 0px; text-align: left;\">&nbsp; }</div><div style=\"margin-left:0px; margin-right:0px; text-align:left\">};<br>class Base2&nbsp;{</div><div style=\"margin-left: 40px; margin-right: 0px; text-align: left;\">public:<br>&nbsp; Base2 ()&nbsp;&nbsp; {</div><div style=\"margin-left: 80px; margin-right: 0px; text-align: left;\">&nbsp;&nbsp;&nbsp; cout &lt;&lt; \"Base2's constructor called\" &lt;&lt; endl;</div><div style=\"margin-left: 40px; margin-right: 0px; text-align: left;\">&nbsp; }</div><div style=\"margin-left:0px; margin-right:0px; text-align:left\">};<br>class Derived:public Base2, public Base1&nbsp;{</div><div style=\"margin-left: 40px; margin-right: 0px; text-align: left;\">public:<br>&nbsp; Derived ()&nbsp;&nbsp; {</div><div style=\"margin-left: 80px; margin-right: 0px; text-align: left;\">&nbsp;&nbsp;&nbsp; cout &lt;&lt; \"Derived's constructor called\" &lt;&lt; endl;</div><div style=\"margin-left: 40px; margin-right: 0px; text-align: left;\">&nbsp; }</div><div style=\"margin-left:0px; margin-right:0px; text-align:left\">};<br>int main ()&nbsp;{<br>&nbsp; Derived d;<br>&nbsp; return 0;<br>}<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<span style=\"margin-left:0px; margin-right:0px; text-align:left\">Compiler Dependent</span>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<span style=\"margin-left:0px; margin-right:0px; text-align:left\">Base1\u2032s constructor called<br>Base2\u2032s constructor called<br>Derived\u2019s constructor called</span>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<span style=\"margin-left:0px; margin-right:0px; text-align:left\">Base2\u2032s constructor called<br>Base1\u2032s constructor called<br>Derived\u2019s constructor called</span>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<span style=\"margin-left:0px; margin-right:0px; text-align:left\">Compiler Error</span>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 71184,
+      "Explanation": "<span id=\"explanation71184\"><span style=\"margin-left:0px; margin-right:0px; text-align:left\">When a class inherits from multiple classes, constructors of base classes are called in the same order as they are specified in inheritance.</span></span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div style=\"margin-left:0px; margin-right:0px; text-align:left\">#include &lt;iostream&gt;&nbsp;</div><div style=\"margin-left:0px; margin-right:0px; text-align:left\">using namespace std;</div><div style=\"margin-left:0px; margin-right:0px; text-align:left\">class Base1&nbsp;{<br>public:<br>&nbsp; ~Base1 ()&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp; cout &lt;&lt; \" Base1's destructor\" &lt;&lt; endl;<br>&nbsp; }<br>};<br>class Base2&nbsp;{<br>public:<br>&nbsp; ~Base2 ()&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp; cout &lt;&lt; \" Base2's destructor\" &lt;&lt; endl;<br>&nbsp; }<br>};<br>class Derived:public Base1, public Base2&nbsp;{<br>public:<br>&nbsp; ~Derived ()&nbsp; {<br>&nbsp;&nbsp;&nbsp; cout &lt;&lt; \" Derived's destructor\" &lt;&lt; endl;<br>&nbsp; }<br>};<br>int main () {<br>&nbsp; Derived d;<br>&nbsp; return 0;<br>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Base1's destructor<br>Base2's destructor<br>Derived's destructor"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Derived's destructor<br>Base2's destructor<br>Base1's destructor"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<br>Derived's destructor"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Depend on Compiler"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 71185,
+      "Explanation": "<span id=\"explanation71185\">Destructors are always called in reverse order of constructors. so first derived class object get destroyed and then parent class objects.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div style=\"margin-left:0px; margin-right:0px; text-align:left\">#include&lt;iostream&gt;</div><div style=\"margin-left:0px; margin-right:0px; text-align:left\">using namespace std;</div><div style=\"margin-left:0px; margin-right:0px; text-align:left\">class base<br>{<br>&nbsp; int arr[10];<br>};<br><br>class b1:public base<br>{<br>};<br><br>class b2:public base<br>{<br>};<br><br>class derived:public b1, public b2<br>{<br>};<br><br>int<br>main (void)<br>{<br>&nbsp; cout &lt;&lt; sizeof (derived);<br>&nbsp; return 0;<br>}<br><br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "40"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "80"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "4"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 71186,
+      "Explanation": "Since b1 and b2 both inherit from class base, two copies of class base are there in class derived.<br>As base class contain int arr[10] means 40 bytes and as two copies of base class are present in derived class hence the total size of derived class is 80 bytes.<br>This kind of inheritance without virtual causes wastage of space and ambiguities.&nbsp;",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div style=\"margin-left:0px; margin-right:0px; text-align:left\">#include &lt;iostream&gt;<br>#include &lt;string&gt;<br>using namespace std;<br>class ABC&nbsp;{</div><div style=\"margin-left: 40px; margin-right: 0px; text-align: left;\">public:<br>&nbsp; void print ()&nbsp;&nbsp; {</div><div style=\"margin-left: 80px; margin-right: 0px; text-align: left;\">&nbsp;&nbsp;&nbsp; cout &lt;&lt; \" Inside ABC\";</div><div style=\"margin-left: 40px; margin-right: 0px; text-align: left;\">&nbsp; }</div><div style=\"margin-left:0px; margin-right:0px; text-align:left\">};<br>class PQR:public ABC&nbsp;{<br>public:</div><div style=\"margin-left: 40px; margin-right: 0px; text-align: left;\">&nbsp; void print ()&nbsp;&nbsp; {</div><div style=\"margin-left: 80px; margin-right: 0px; text-align: left;\">&nbsp;&nbsp;&nbsp; cout &lt;&lt; \" Inside PQR\";</div><div style=\"margin-left: 40px; margin-right: 0px; text-align: left;\">&nbsp; }</div><div style=\"margin-left:0px; margin-right:0px; text-align:left\">};<br>class LMN:public PQR&nbsp;{<br>};<br>int main (void)&nbsp;{</div><div style=\"margin-left: 40px; margin-right: 0px; text-align: left;\">&nbsp; LMN obj;<br>&nbsp; obj.print ();<br>&nbsp; return 0;</div><div style=\"margin-left:0px; margin-right:0px; text-align:left\">}<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Inside ABC"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Inside PQR"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Inside ABC<br>Inside PQR"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Depend upon Compiler"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 71187,
+      "Explanation": "<span id=\"explanation71187\">The print function is not present in class Derived claa LMN. So it is looked up in the inheritance hierarchy. print() is present in both classes Base classes, which of them should be called? The idea is, if there is multilevel inheritance, then function is linearly searched up in the inheritance hierarchy until a matching function is found. Hence Print function from PQR is called.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div style=\"margin-left:0px; margin-right:0px; text-align:left\">#include&lt;iostream&gt;</div><div style=\"margin-left:0px; margin-right:0px; text-align:left\">using namespace std;<br></div><div style=\"margin-left:0px; margin-right:0px; text-align:left\">class One {</div><div style=\"margin-left: 40px; margin-right: 0px; text-align: left;\">private:</div><div style=\"margin-left: 40px; margin-right: 0px; text-align: left;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int i, j;</div><div style=\"margin-left: 40px; margin-right: 0px; text-align: left;\">public:</div><div style=\"margin-left: 40px; margin-right: 0px; text-align: left;\">&nbsp;&nbsp;&nbsp;&nbsp;Base(int _i = 0, int _j = 0): i(_i), j(_j) { }</div><div style=\"margin-left:0px; margin-right:0px; text-align:left\">};<br></div><div style=\"margin-left:0px; margin-right:0px; text-align:left\">class Two: public One {</div><div style=\"margin-left: 40px; margin-right: 0px; text-align: left;\">public:</div><div style=\"margin-left: 40px; margin-right: 0px; text-align: left;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;void show()<br>&nbsp;&nbsp;&nbsp; {</div><div style=\"margin-left: 40px; margin-right: 0px; text-align: left;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout&lt;&lt;\" i = \"&lt;&lt;i&lt;&lt;\"&nbsp; j = \"&lt;&lt;j;</div><div style=\"margin-left: 40px; margin-right: 0px; text-align: left;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</div><div style=\"margin-left:0px; margin-right:0px; text-align:left\">};<br></div><div style=\"margin-left:0px; margin-right:0px; text-align:left\">int main(void) {</div><div style=\"margin-left: 40px; margin-right: 0px; text-align: left;\">&nbsp; Two d;</div><div style=\"margin-left: 40px; margin-right: 0px; text-align: left;\">&nbsp;&nbsp;d.show();</div><div style=\"margin-left: 40px; margin-right: 0px; text-align: left;\">&nbsp;&nbsp;return 0;</div><div style=\"margin-left:0px; margin-right:0px; text-align:left\">}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "i=0,j=0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Garbage Garbage"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compiler time Error : i and j are private in base class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compile time error: Could not call constructor of base class"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 71188,
+      "Explanation": "<span id=\"explanation71188\">private data member can not be accessible for derive class.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The major goal of inheritance in C++ is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To facilitate the conversion of data types"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To help modular programming"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To facilitate the re usability of code"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To extend the capabilities of a class"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 71189,
+      "Explanation": "inheritance is facility where we can create aquire properties from one class to another class. and that is nothing but reusability of code.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Through \u2026\u2026\u2026\u2026\u2026\u2026., we can eliminate redundant code and extend the use of existing classes.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Encapsulation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Polymorphism"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Inheritance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Overloading"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 71190,
+      "Explanation": "we can achive generalization to specialization by inheritance.we are extending functionality from one class to another class with inheritance.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;iostream&gt;<br>using namespace std;<br>class base {<br>public:<br>&nbsp; &nbsp; virtual void baseFun() {<br>&nbsp; &nbsp; &nbsp; &nbsp; cout &lt;&lt; \"from base\" &lt;&lt; endl;<br>&nbsp; &nbsp; }<br>};<br>class deri : public base {<br>public:<br>&nbsp; &nbsp; void baseFun() override {<br>&nbsp; &nbsp; &nbsp; &nbsp; cout &lt;&lt; \"from derived\" &lt;&lt; endl;<br>&nbsp; &nbsp; }<br>};<br>void SomeFunc(base *baseObj) {<br>&nbsp; &nbsp; baseObj-&gt;baseFun();<br>}<br>int main() {<br>&nbsp; &nbsp; base baseObject;<br>&nbsp; &nbsp; SomeFunc(&amp;baseObject); // Calls base::baseFun()<br><br>&nbsp; &nbsp; deri deriObject;<br>&nbsp; &nbsp; SomeFunc(&amp;deriObject); // Calls deri::baseFun() due to polymorphism<br><br>&nbsp; &nbsp; return 0;<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "from derived from base"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "from base from derived"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compile error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Run Time error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 73824,
+      "Explanation": "When SomeFunc(&amp;baseObject) is called:<br><br>baseObject is of type base.<br>SomeFunc calls baseObject-&gt;baseFun(), which calls baseFun() from the base class, printing \"from base\".<br>When SomeFunc(&amp;deriObject) is called:<br><br>deriObject is of type deri, which is derived from base.<br>SomeFunc calls deriObject-&gt;baseFun(). Due to the virtual function mechanism (polymorphism), deri&apos;s baseFun() is called, printing \"from derived\".<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;iostream&gt;<br>using namespace std;<br>class Base {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int x;<br>public:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Base(int a)&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x = a;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void display()&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; \" In base class \"&lt;&lt;x;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>};<br>class Derived : Base&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int y;<br>public:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Derived(int a, int b) : Base(a)&nbsp;&nbsp; &nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y = b;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void display()&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Base::display();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; \" In derived class \"&lt;&lt;y;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }&nbsp;<br>};<br>void main()<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Derived *d = new Derived(10,20);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dynamic_cast&lt;Base*&gt;(d)-&gt;display();<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "In base class 10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "In derived class 20"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "In base class 10<br>In derived class 20<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error cannot access base class"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 73863,
+      "Explanation": "<span id=\"explanation73863\">default mode of inheritance is Private. Derived(int a,int b): Base(a) indicate mode of inheritance private. so can not access base class is ERROR</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;When you create an object of a derived class in C++",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Derived class constructor is called first then the base class constructor"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Base class constructor is called first then derived class constructor"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "base class constructor will not be called"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 87449,
+      "Explanation": "&nbsp;First, the base constructor is called. Then, the base-class members are initialized in the order in which they appear in the class declaration. Finally, the derived constructor is called.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output?<br>#include &lt; iostream &gt;<br>using namespace std;<br>class test<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp; int a;<br>&nbsp;&nbsp;&nbsp;&nbsp; public:<br>&nbsp;&nbsp;&nbsp;&nbsp; test(){ a = 10; }<br>&nbsp;&nbsp;&nbsp;&nbsp; test(int p){ a = p; }<br>&nbsp;&nbsp;&nbsp;&nbsp; test(char x)<br>&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if ( x = = \u2018i\u2019 || x = = \u2018I\u2019 )<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; test(59);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; test();<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void display()<br>&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; endl &lt;&lt; a;<br>&nbsp;&nbsp; }<br>};<br>void main()<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp; test t1,t2(100),t3(\u2018i\u2019);<br>&nbsp;&nbsp;&nbsp;&nbsp; t1.display();<br>&nbsp;&nbsp;&nbsp;&nbsp; t2.display();<br>&nbsp;&nbsp;&nbsp;&nbsp; t3.display();<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10 100 59"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10 100 10"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "10 100 garbage"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compile time error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 73879,
+      "Explanation": "<span id=\"explanation73879\">t1 is created with default constructor so value is assigned as 10,For t2 value is passed as 100 so it will print 100,</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What is the output of this program?<br>#include &lt;iostream&gt;</div><div>using namespace std;</div><div>class CDummy</div><div>{</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp; int isitme(CDummy&amp; param);</div><div>};</div><div>int CDummy::isitme (CDummy &amp;param)<br></div><div>{</div><div>&nbsp;&nbsp;&nbsp;&nbsp; if (&amp;param == this)</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return true;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; else</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return false;</div><div>}<br>int main ()<br></div><div>{</div><div>&nbsp;&nbsp;&nbsp;&nbsp; CDummy a;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; CDummy *b = &amp;a;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; if (b-&gt;isitme(a))<br>&nbsp;&nbsp;&nbsp; {</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; \" execute \";</div><div>&nbsp;&nbsp;&nbsp;&nbsp; }</div><div>&nbsp;&nbsp;&nbsp;&nbsp; else</div><div>&nbsp;&nbsp;&nbsp;&nbsp; {</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout&lt;&lt; \" not execute \";</div><div>&nbsp;&nbsp;&nbsp;&nbsp; }</div><div>&nbsp;&nbsp;&nbsp;&nbsp; return 0;</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "execute"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "not execute"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "none of the mentioned"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "both a &amp; b"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 64357,
+      "Explanation": "In above code istime is function which will return integer. So now it is returning one which is true.So it will print execute.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Find the output of the following program&nbsp;<br>#include&lt;iostream&gt;<br>usning namespace std;</div><div>class base&nbsp;{</div><div style=\"margin-left: 40px;\">public:</div><div style=\"margin-left: 40px;\">void baseFun()&nbsp;{</div><div style=\"margin-left: 80px;\">cout&lt;&lt;\"from base\"&lt;&lt;endl;</div><div style=\"margin-left: 40px;\">}</div><div>};</div><div>class deri:public base&nbsp;{</div><div style=\"margin-left: 40px;\">public:</div><div style=\"margin-left: 40px;\">void baseFun()&nbsp;{</div><div style=\"margin-left: 80px;\">cout&lt;&lt; \"from derived\"&lt;&lt;endl;</div><div style=\"margin-left: 40px;\">}</div><div>};</div><div>void SomeFunc(base *baseObj){</div><div>&nbsp;&nbsp;&nbsp;&nbsp; baseObj-&gt;baseFun();</div><div>}</div><div>int main()</div><div>{</div><div>&nbsp;&nbsp;&nbsp; base baseObject;</div><div>&nbsp;&nbsp;&nbsp; SomeFunc(&amp;baseObject);</div><div>&nbsp;&nbsp;&nbsp; deri deriObject;</div><div>&nbsp;&nbsp;&nbsp; SomeFunc(&amp;deriObject);</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "from base , from base"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "from derived, from base"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "from Base"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "from derived"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 64341,
+      "Explanation": "<span id=\"explanation64341\">Inheritance is implemented but it is not having virtual function so both time it will print from base,from base.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements are not true about destructor?<br>1. It is invoked when object goes out of the scope<br>2. Like constructor, it can also have parameters<br>3. It can be virtual<br>4. It can be declared in private section<br>5. It bears same name as that of the class and precedes Lambda sign<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only 2, 3, 5<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only 2, 3, 4<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only 2, 1, 5<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only 3, 4, 5<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 64342,
+      "Explanation": "Point 1:Destructors are usedto deallocate memory or descope an object,so it is invoked when object goes out of scope thus ,this statement is correct. Point 2:Destructors can neither return a value nor have arguments thus ,this statement is wrong. Point 3:There can be virtual destructors,we just need to add keyword virtual before the destructor name(e.g., virtual ~destruct() ).<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the syntax of &nbsp;inheritance of class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "class name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "class name : access specifer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "class name : access specifer class name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 64351,
+      "Explanation": "Syntax of inheritance is class name: access specifer class name.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens in the case of inheritance where both base and derived class are having constructors, when an<br>object of derived class is created?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "constructor of derived class will be invoked first<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "constructor of base class will be invoked first<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "constructor of derived class will be executed first followed by base class<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "constructor of base class will be executed first followed by derived class<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 70807,
+      "Explanation": "<span id=\"explanation70807\"></span><span>When an object of a derived class is created, the base class constructor is called first to ensure that the base class part of the object is properly initialized. Only after the base class constructor completes its execution does the derived class constructor get called to initialize the derived class part of the object. This sequence ensures the correct construction of the entire object.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What is the output of this program?</div><div>&nbsp;&nbsp; #include &lt;iostream&gt;</div><div>&nbsp;&nbsp; using namespace std;</div><div>&nbsp;&nbsp; class polygon&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; protected:</div><div>&nbsp;&nbsp;&nbsp;&nbsp; int width, height;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp; void set_values (int a, int b)&nbsp;{&nbsp;</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; width = a; height = b;<br>&nbsp; &nbsp; &nbsp;&nbsp;}</div><div>&nbsp;&nbsp;&nbsp;&nbsp; };</div><div>&nbsp;&nbsp;&nbsp;&nbsp; class output1&nbsp;&nbsp;{</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void output (int i);</div><div>&nbsp;&nbsp;&nbsp;&nbsp; };</div><div>&nbsp;&nbsp; void output1::output (int i)&nbsp;</div><div>&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; i&lt;&lt;\u201d\u201d;</div><div>&nbsp;&nbsp; }</div><div>&nbsp;&nbsp; class rectangle: public polygon, public output1&nbsp;</div><div>&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp; int area ()&nbsp;&nbsp; &nbsp;{&nbsp;</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return (width * height);&nbsp;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; }</div><div>&nbsp;&nbsp; };</div><div>&nbsp;&nbsp; class triangle: public polygon, public output1&nbsp;&nbsp;{</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp; int area ()&nbsp;&nbsp;{</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return (width * height / 2);&nbsp;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; }</div><div>&nbsp;&nbsp; };</div><div>&nbsp;&nbsp; int main ()&nbsp;</div><div>&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; rectangle rect;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; triangle trgl;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; rect.set_values (4, 5);</div><div>&nbsp;&nbsp;&nbsp;&nbsp; trgl.set_values (4, 5);</div><div>&nbsp;&nbsp;&nbsp;&nbsp; rect.output (rect.area());</div><div>&nbsp;&nbsp;&nbsp;&nbsp; trgl.output (trgl.area());</div><div>&nbsp;&nbsp;&nbsp;&nbsp; return 0;</div><div>&nbsp;&nbsp; }</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "20"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "20 10"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 64380,
+      "Explanation": "Explanation: We are using the multiple inheritance to find the area of rectangle and triangle.<br>Output:<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What is the output of this program?</div><div>&nbsp;&nbsp; #include &lt;iostream&gt;</div><div>&nbsp;&nbsp; using namespace std;</div><div>&nbsp;&nbsp; class Base</div><div>&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp; virtual void print() const = 0;</div><div>&nbsp;&nbsp; };</div><div>&nbsp;&nbsp; class DerivedOne : public Base</div><div>&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public: &nbsp;&nbsp;&nbsp;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; void print() const</div><div>&nbsp;&nbsp;&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; \"DerivedOne \";</div><div>&nbsp;&nbsp;&nbsp;&nbsp; }</div><div>&nbsp;&nbsp; };</div><div>&nbsp;&nbsp; class DerivedTwo : public Base</div><div>&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp; void print() const</div><div>&nbsp;&nbsp;&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; 'DerivedTwo ';</div><div>&nbsp;&nbsp;&nbsp;&nbsp; } &nbsp;&nbsp;&nbsp;</div><div>&nbsp;&nbsp; };&nbsp;</div><div>&nbsp;&nbsp; class Multiple : public DerivedOne, public DerivedTwo</div><div>&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp; void print() const</div><div>&nbsp;&nbsp;&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DerivedTwo :: print();</div><div>&nbsp;&nbsp;&nbsp;&nbsp; }&nbsp;</div><div>&nbsp;&nbsp; };&nbsp;</div><div><br></div><div>&nbsp;&nbsp; int main()</div><div>&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; int i=1;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; Multiple both;&nbsp;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; DerivedOne one;&nbsp;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; DerivedTwo two;&nbsp;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; Base *array[ 3 ];&nbsp;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; array[ 0 ] = &amp;both;&nbsp;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; array[ 1 ] = &amp;one;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; array[ 2 ] = &amp;two;</div><div>&nbsp; &nbsp; // array[ i ] -&gt; print();</div><div>&nbsp;&nbsp;&nbsp;&nbsp; return 0;</div><div>&nbsp;&nbsp; }</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DerivedOne"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DerivedTwo"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 64381,
+      "Explanation": "This output occurs because <code>array[i]</code> is pointing to the <code>one</code> object of type <code>DerivedOne</code>, and calling the <code>print()</code> method on it prints \"DerivedOne \".<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What is the output of this program?</div><div>&nbsp;&nbsp; #include &lt;iostream&gt;</div><div>&nbsp;&nbsp; using namespace std;</div><div>&nbsp;&nbsp; class student&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp; int rno , m1 , m2 ;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; void get()&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; rno = 15, m1 = 10, m2 = 10;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; }</div><div>&nbsp;&nbsp; };</div><div>&nbsp;&nbsp; class sports&nbsp;&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp; int sm;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; void getsm()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sm = 10;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; }</div><div>&nbsp;&nbsp; };</div><div>&nbsp;&nbsp; class statement:public student,public sports&nbsp;&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; int tot,avg;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp; void display()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tot = (m1 + m2 + sm);</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; avg = tot / 3;</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; tot;</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; avg;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; }</div><div>&nbsp;&nbsp; };</div><div>&nbsp;&nbsp; int main()</div><div>&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; statement obj;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; obj.get();</div><div>&nbsp;&nbsp;&nbsp;&nbsp; obj.getsm();</div><div>&nbsp;&nbsp;&nbsp;&nbsp; obj.display();</div><div>&nbsp;&nbsp; }</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "3100"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3010"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2010"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1010"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 64382,
+      "Explanation": "obj.get() sets rno = 15, m1 = 10, and m2 = 10.<br>obj.getsm() sets sm = 10.<br>obj.display():<br>tot is calculated as m1 + m2 + sm, which is 10 + 10 + 10 = 30.<br>avg is calculated as tot / 3, which is 30 / 3 = 10.<br>tot is printed, which is 30.<br>avg is printed, which is 10.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<p style=\"margin-left:0in; margin-right:0in\"><span style=\"color:#4c494c\">Which of the following is not a type of inheritance?</span></p>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<span style=\"color:#4c494c\">M</span><span style=\"color:#4c494c\">u</span><span style=\"color:#4c494c\">l</span><span style=\"color:#4c494c\">t</span><span style=\"color:#4c494c\">i</span><span style=\"color:#4c494c\">p</span><span style=\"color:#4c494c\">l</span><span style=\"color:#4c494c\">e</span>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<span style=\"color:#4c494c\">M</span><span style=\"color:#4c494c\">u</span><span style=\"color:#4c494c\">l</span><span style=\"color:#4c494c\">t</span><span style=\"color:#4c494c\">i</span><span style=\"color:#4c494c\">l</span><span style=\"color:#4c494c\">e</span><span style=\"color:#4c494c\">v</span><span style=\"color:#4c494c\">e</span><span style=\"color:#4c494c\">l</span>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<span style=\"color:#4c494c\">D</span><span style=\"color:#4c494c\">i</span><span style=\"color:#4c494c\">s</span><span style=\"color:#4c494c\">t</span><span style=\"color:#4c494c\">r</span><span style=\"color:#4c494c\">i</span><span style=\"color:#4c494c\">b</span><span style=\"color:#4c494c\">u</span><span style=\"color:#4c494c\">t</span><span style=\"color:#4c494c\">i</span><span style=\"color:#4c494c\">v</span><span style=\"color:#4c494c\">e</span>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<span style=\"color:#4c494c\">H</span><span style=\"color:#4c494c\">i</span><span style=\"color:#4c494c\">e</span><span style=\"color:#4c494c\">r</span><span style=\"color:#4c494c\">a</span><span style=\"color:#4c494c\">r</span><span style=\"color:#4c494c\">c</span><span style=\"color:#4c494c\">h</span><span style=\"color:#4c494c\">i</span><span style=\"color:#4c494c\">c</span><span style=\"color:#4c494c\">a</span><span style=\"color:#4c494c\">l</span>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 70865,
+      "Explanation": "&nbsp;Types of inheritance in cpp&nbsp;<br><ol><li>Single Inheritance</li><li>Multiple Inheritance</li><li>Multilevel Inheritance</li><li>Hierarchical Inheritance</li><li>Hybrid (Virtual) Inheritance</li></ol>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<p style=\"margin-left:0in; margin-right:0in\"><span style=\"color:#4c494c\">Which of the following &nbsp;provides a reuse mechanism?</span></p>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<span style=\"color:#4c494c\">A</span><span style=\"color:#4c494c\">b</span><span style=\"color:#4c494c\">s</span><span style=\"color:#4c494c\">t</span><span style=\"color:#4c494c\">r</span><span style=\"color:#4c494c\">a</span><span style=\"color:#4c494c\">ction</span>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<span style=\"color:#4c494c\">I</span><span style=\"color:#4c494c\">nhe</span><span style=\"color:#4c494c\">r</span><span style=\"color:#4c494c\">i</span><span style=\"color:#4c494c\">t</span><span style=\"color:#4c494c\">a</span><span style=\"color:#4c494c\">n</span><span style=\"color:#4c494c\">ce</span>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<span style=\"color:#4c494c\">D</span><span style=\"color:#4c494c\">y</span><span style=\"color:#4c494c\">na</span><span style=\"color:#4c494c\">m</span><span style=\"color:#4c494c\">i</span><span style=\"color:#4c494c\">c</span> <span style=\"color:#4c494c\">b</span><span style=\"color:#4c494c\">i</span><span style=\"color:#4c494c\">n</span><span style=\"color:#4c494c\">d</span><span style=\"color:#4c494c\">in</span><span style=\"color:#4c494c\">g</span>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<span style=\"color:#4c494c\">E</span><span style=\"color:#4c494c\">n</span><span style=\"color:#4c494c\">capsulation</span>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 70866,
+      "Explanation": "Inheritance is&nbsp;accruing property from one class to another class so, reusing classes is inheritance.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<p style=\"margin-left:0in; margin-right:0in\"><span style=\"color:#4c484c\">Which of the following can be facilitated by the Inheritance mechanism?</span><br></p><p style=\"margin-left:0in; margin-right:0in\"><span style=\"color:#4c484c\">1</span><span style=\"color:#757378\">.&nbsp;&nbsp; &nbsp;</span><span style=\"color:#4c484c\">Use </span><span style=\"color:#4c484c\">the existing functionality of base class</span><span style=\"color:#4c484c\">.<br>2.&nbsp;&nbsp; &nbsp;</span><span style=\"color:#4c484c\">O</span><span style=\"color:#4c484c\">v</span><span style=\"color:#4c484c\">e</span><span style=\"color:#4c484c\">r</span><span style=\"color:#4c484c\">r</span><span style=\"color:#4c484c\">r</span><span style=\"color:#4c484c\">i</span><span style=\"color:#4c484c\">de</span> <span style=\"color:#4c484c\">the existing functionality of base class.<br>3.&nbsp;&nbsp; &nbsp;</span><span style=\"color:#4c484c\">I</span><span style=\"color:#4c484c\">mp</span><span style=\"color:#4c484c\">l</span><span style=\"color:#4c484c\">ement new functionality in the derived class.<br>4.&nbsp;&nbsp; &nbsp;</span><span style=\"color:#4c484c\">I</span><span style=\"color:#4c484c\">m</span><span style=\"color:#4c484c\">p</span><span style=\"color:#4c484c\">l</span><span style=\"color:#4c484c\">e</span><span style=\"color:#4c484c\">m</span><span style=\"color:#4c484c\">en</span><span style=\"color:#4c484c\">t</span> <span style=\"color:#4c484c\">dynamic polymorphism<br>5</span><span style=\"color:#615e65\">.&nbsp;&nbsp;&nbsp; </span><span style=\"color:#4c484c\">I</span><span style=\"color:#4c484c\">m</span><span style=\"color:#4c484c\">p</span><span style=\"color:#4c484c\">l</span><span style=\"color:#4c484c\">e</span><span style=\"color:#4c484c\">m</span><span style=\"color:#4c484c\">en</span><span style=\"color:#4c484c\">t</span>&nbsp;<span style=\"color:#4c484c\">c</span><span style=\"color:#4c484c\">o</span><span style=\"color:#4c484c\">ntainership.</span><br></p>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1, 2 , 3, 4<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3, 4"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2, 4, 5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "3, 5"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 70871,
+      "Explanation": "Containment is using object of one class as data member of another class. We don&apos;t need inheritance for achieving this.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which concept of OOPs is shown by Virtual Functions?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Inheritance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Encapsulation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Polymorphism"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Abstraction"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 87461,
+      "Explanation": "Virtual function allows us to give different definitions of the same function i.e. overloading of functions which is known as Polymorphism.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What is the order of Constructors call when the object of derived class B is declared, provided class B is derived from class A?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Constructor of A followed by B"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Constructor of B followed by A <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Constructor of A only <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Constructor of B only <br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 87463,
+      "Explanation": "Firstly the Constructor of class A is called then class B because the Constructor of the base class is called before derived class. <br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What will be the output of the following C++ code?<br>#include &lt;iostream&gt;<br>#include &lt;string&gt;<br>using namespace std;<br>class Mammal<br>{<br>&nbsp;&nbsp; public:<br>&nbsp;&nbsp; &nbsp;Mammal(){<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;cout&lt;&lt;\"I'm a Mammal \";<br>&nbsp;&nbsp; &nbsp;}<br>&nbsp;&nbsp; &nbsp;~Mammal(){}<br>};<br>class Human: public Mammal<br>{<br>&nbsp;&nbsp; public:<br>&nbsp;&nbsp; &nbsp;Human(){<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;cout&lt;&lt;\"I'm a Human \";<br>&nbsp;&nbsp; &nbsp;}<br>&nbsp;&nbsp; &nbsp;~Human(){}<br>};<br>class Male: public Human<br>{<br>&nbsp;&nbsp; public:<br>&nbsp;&nbsp; &nbsp;Male(){<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;cout&lt;&lt;\"I'm a Male \";<br>&nbsp;&nbsp; &nbsp;}<br>&nbsp;&nbsp; &nbsp;~Male(){}<br>};<br>class Female: public Human<br>{<br>&nbsp;&nbsp; public:<br>&nbsp;&nbsp; &nbsp;Female(){<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;cout&lt;&lt;\"I'm a Female \";<br>&nbsp;&nbsp; &nbsp;}<br>&nbsp;&nbsp; &nbsp;~Female(){}<br>};<br>&nbsp;int main(int argc, char const *argv[])<br>{<br>&nbsp;&nbsp; &nbsp;Male M;<br>&nbsp;&nbsp; &nbsp;return 0;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "I'm a Mammal<br>I'm a Human<br>I'm a Male"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "I'm a Mammal<br>I'm a Human<br>I'm a Female"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "I'm a Human<br>I'm a Male"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "I'm a Mammal<br>I'm a Male"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 87464,
+      "Explanation": "As the Male class is derived from Human class and Human class is derived from the Mammal class. Therefore when an object of Male is declared then three constructors will be called namely Mammal(), Human() and Male() in the given order.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be output of following code?<br>#include &lt;iostream&gt;<br>#include &lt;exception&gt;<br>using namespace std;<br>class base { virtual void dummy() {} };<br>class derived: public base { int a; };<br>int main ()<br>&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp; try<br>&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; base * pba = new derived;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; base * pbb = new base;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; derived * pd;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pd = dynamic_cast&lt;derived*&gt;(pba);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (pd == 0)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; \"Null pointer on first type-cast\" &lt;&lt; endl;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pd = dynamic_cast&lt;derived*&gt;(pbb);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (pd == 0)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; \"Null pointer on second type-cast\" &lt;&lt; endl;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; catch (exception&amp; e)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; \"Exception: \" &lt;&lt; e.what();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br>&nbsp;}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Null pointer on first type-cast<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Null pointer on second type-cast"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Exception <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Null pointer on third type-cast <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 87456,
+      "Explanation": "In this program, We apply the dynamic cast to pd. Based on the value in the pd, it produces the output.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the keyword used to inherit a class in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "implements"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "extends"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "inherits"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "derives"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 93810,
+      "Explanation": "In C++, the &apos;extends&apos; keyword is used after the colon (:) in the derived class declaration to inherit from the base class.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which access specifier is typically used to make members private in the base class inaccessible directly in the derived class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "protected"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "private"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "default"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 93811,
+      "Explanation": "When inheritance is specified as &apos;private&apos;, public members of the base class become private members of the derived class.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C++, which of the following cannot be inherited?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Attributes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Constructors"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Operators"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 93812,
+      "Explanation": "Constructors cannot be inherited in C++ because they are invoked to create new instances of a class and must have the same name as the class.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of inheritance is used if a class inherits from multiple base classes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Single Inheritance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hierarchical Inheritance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Multiple Inheritance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Multilevel Inheritance"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 93813,
+      "Explanation": "Multiple Inheritance is when a class can inherit behaviors and features from more than one superclass.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the 'virtual' keyword indicate when used in a function declaration in a base class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The function can be overridden in a derived class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The function cannot be called"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The function is only for the base class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The function is a template"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 93814,
+      "Explanation": "The &apos;virtual&apos; keyword is used to allow a function to be overridden in any derived class, enabling polymorphism.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following denotes a derived class with public inheritance?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "class Derived : protected Base"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "class Derived : public Base"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "class Derived : Base"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "class Derived : Base(Base)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 93815,
+      "Explanation": "Public inheritance uses the syntax &apos;: public&apos;, allowing members of the base class to retain their access levels in the derived class.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a base class destructor is not made virtual, what might happen?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Nothing changes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Objects may not be destroyed properly"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Memory Leak will occur"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 93816,
+      "Explanation": "If a base class destructor is not virtual, derived class destructors may not execute correctly if an object is deleted through a base class pointer.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if a derived class does not override a virtual function in the base class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Derived version will be called"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Runtime error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Base version will be called"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 93817,
+      "Explanation": "If a derived class does not override the virtual function, the base class version will be called when an instance of the derived class invokes that function.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which inheritance type results in a diamond problem?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Single Inheritance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hierarchical Inheritance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Multiple Inheritance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Multilevel Inheritance"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 93818,
+      "Explanation": "The diamond problem is encountered in multiple inheritance when two classes derive from the same base class and a derived class inherits from both.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C++, how do you indicate that a derived class should only inherit from the interface and not directly?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "using"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "clear"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "= 0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "interface"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 93819,
+      "Explanation": "To designate a class as an interface, you set its pure virtual functions to 0, meaning the derived class must implement these functions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What access level do protected members of a base class have in a derived class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Private"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Public"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Protected"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Internal"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 93820,
+      "Explanation": "Protected members remain protected in the derived class, allowing them to be accessed by the derived class and its descendants.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What keyword is used to access the immediate base class in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "super"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "self"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "base"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "this"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 93821,
+      "Explanation": "In C++, you can use the base class name followed by the scope resolution operator &apos;::&apos; to access members directly from the base class.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A derived class constructor calls the constructor of which class first?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Derived class itself"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Base class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Global class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Friend class"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 93822,
+      "Explanation": "The base class constructor is always called prior to that of the derived class to ensure the base class components are constructed first.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is achieved if a derived class redefines a non-virtual function of the base class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Overriding"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hiding"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Overloading"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 93823,
+      "Explanation": "If the derived class redefines a non-virtual function, the base class function implementation is hidden but not overridden.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a base class function is virtual, what must the derived class function use to override it?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Must use virtual"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No need for any keyword"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Must use override"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Must use final"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 93824,
+      "Explanation": "There\u2019s no requirement to use any keywords in the derived class function, but &apos;override&apos; can be used for clarity and intent.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output if a class derived from a base class doesn\u2019t implement a pure virtual function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Instantiation error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compile-time error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Linker error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Runtime error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 93825,
+      "Explanation": "A derived class must implement all pure virtual functions; failing to do so results in a compile-time error because the derived class is still abstract.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if an abstract class contains a constructor in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The constructor is ignored"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Object can be instantiated"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Derived class can call the constructor"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 93826,
+      "Explanation": "Even though you cannot instantiate an abstract class, its constructor can be called by derived classes when those instances are created.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can a derived class access the overridden method of its base class in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using the method directly"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using base::method()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using super::method()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using this->method()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 93827,
+      "Explanation": "The syntax &apos;base::method()&apos; is used to call the overridden method from a derived class, where &apos;base&apos; is the name of the class whose method you want to invoke.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is true about the v-table in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is used with inline functions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It stores names of all members"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It supports function overloading"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is used with virtual functions"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 93828,
+      "Explanation": "The v-table (virtual method table) is a mechanism used to support dynamic polymorphism through virtual functions in C++.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How are pure virtual functions characterized?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using keyword 'pure'"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Setting to null"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Setting the function = 0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using keyword 'abstract'"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 93829,
+      "Explanation": "A pure virtual function is declared by assigning 0 in its declaration, making the class abstract.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is correct regarding abstract classes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Cannot have any method implementations"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Can only have static members"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Can have implemented methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Cannot have constructors"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 93830,
+      "Explanation": "Abstract classes can have implementations for some of its methods along with pure virtual methods.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In what situation is making a destructor virtual necessary?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When using single inheritance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When using function overloading"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When using templates"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When using inheritance with polymorphism"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 93831,
+      "Explanation": "Making destructors virtual ensures that the derived class&apos;s destructor is called when deleting an object through a base class pointer.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can a class be prevented from being derived in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use 'private' inheritance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Declare the class as 'sealed'"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Declare the class constructor as private"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Declare the destructor as final"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 93832,
+      "Explanation": "In C++, there&apos;s no native &apos;sealed&apos; keyword like in other languages, but you can prevent inheritance by making the constructor private or marking it &apos;final&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which one of the following is NOT a type of inheritance in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Classical"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Single"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Multilevel"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Hierarchical"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 93833,
+      "Explanation": "Classical inheritance is not a term used in C++, which deals with single, multiple, multilevel, and hierarchical inheritance.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following scenarios can lead to shadowing in C++ inheritance?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Overloading"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Function overloading"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Name collision"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Virtual function elimination"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 429,
+      "QuestionTypeId": 0,
+      "QuestionId": 93834,
+      "Explanation": "When a derived class member has the same name as a base class member, the base class version gets shadowed or hidden.",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

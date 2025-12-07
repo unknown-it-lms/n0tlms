@@ -1,0 +1,966 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Which of the following functions will most likely require the use of PARTITION BY?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "COUNT()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "MAX()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DENSE_RANK()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MIN()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92318,
+      "Explanation": "DENSE_RANK() is an analytical function that ranks items within partitions, so it often uses PARTITION BY to define the partitions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function is used to compute the difference between values in MySQL partitions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DIFF()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LAG()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DIFFERENCE()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "PRECEDING()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92325,
+      "Explanation": "The LAG() function can be used with PARTITION BY to get the difference between values by providing access to data from earlier rows within the same partition.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which clause is used in MySQL to partition data and compute rank among partitioned rows?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "PARTITION RANK"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "RANK() with PARTITION BY"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ORDER BY RANK()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "GROUP BY RANK"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92315,
+      "Explanation": "The RANK() function can be used with the PARTITION BY clause to rank rows within each partition.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following MySQL window functions can be used with PARTITION BY?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "LEAD()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "CURRENT_DATE()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CONCAT()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "UPPER()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92322,
+      "Explanation": "LEAD() is a window function that can be used with PARTITION BY to return the leading value from rows within the same partition.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What result does the ROW_NUMBER() function provide when used with PARTITION BY?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It creates unique row identifiers across the table."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It provides a sequential numbering of rows within each partition."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It calculates the total number of rows per partition."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It returns the row index of each partition."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92323,
+      "Explanation": "ROW_NUMBER() generates a sequential number for each row within its partition, counting from 1 for the first row in each partition.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a Window Function in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A function that operates only within a single table"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A function used for sorting data"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A function that performs calculations across a set of table rows related to the current row"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A function that creates indexes in a database"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92624,
+      "Explanation": "A Window Function performs calculations across a set of table rows that are somehow related to the current row, providing a way to implement complex calculations more easily.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which clause is used in conjunction with Window Functions to specify the window to perform calculations?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ORDER BY"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "GROUP BY"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "OVER"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "HAVING"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92625,
+      "Explanation": "The OVER() clause defines the window or set of rows for the function to operate over in a query.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a characteristic of a Window Function in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A Window Function can contain ranking functions like RANK()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Window Functions always require the OVER() clause"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A Window Function aggregates results across rows similar to GROUP BY"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Window Functions return a value for each input row"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92626,
+      "Explanation": "Window Functions do not aggregate results across rows like GROUP BY. Instead, they return results for each row by performing calculations over the window.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following window functions is used to calculate a cumulative total?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RANK()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ROW_NUMBER()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DENSE_RANK()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SUM() OVER()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92627,
+      "Explanation": "SUM() used with the OVER() clause calculates a cumulative total across a specified window.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the ROW_NUMBER() window function do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Assigns a unique number to each row in a result set"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Calculates the total number of rows"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Sorts the rows in ascending order"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Ranks rows based on a defined order"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92628,
+      "Explanation": "ROW_NUMBER() assigns a unique sequential integer to rows ordered by the ORDER BY clause within the partition defined in the query.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default behavior of the ORDER BY clause in a Window Function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is mandatory in all window functions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It orders the result set in ascending order"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It partitions the result set"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is optional and can be omitted"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92629,
+      "Explanation": "The ORDER BY clause is optional in window functions. If not specified, the window function will operate over the entire partition.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following options can restrict the rows within a partition for a Window Function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "LIMIT"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "WHERE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "PARTITION BY"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DISTINCT"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92630,
+      "Explanation": "PARTITION BY clause is used within the OVER() clause to divide the result set into partitions and perform calculations separately for each partition.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a scenario where you need to calculate the average salary of employees by department without grouping the result set, which approach would you use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "GROUP BY"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Aggregate Function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Subquery"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Window Function"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92631,
+      "Explanation": "Window Functions allow you to perform aggregate calculations like average salary by department without reducing the result set to one row per group.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function would you use to calculate a moving average in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RANK() OVER()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LEAD()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "LAG()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "AVG() OVER()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92632,
+      "Explanation": "AVG() used with the OVER() clause allows the calculation of moving averages within a specified window.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the RANGE clause in a window definition?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Specifies the range of rows preceding and following the current row"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Defines the data type of the window function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Limits the data set to a specified range"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92633,
+      "Explanation": "The RANGE clause specifies a logical window as a range of rows around the current row within a window frame.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true regarding the FIRST_VALUE() window function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It returns the last value in a set of partitioned rows"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It returns the first value in a set of partitioned rows"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It calculates the sum of all values"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It counts the distinct values"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92634,
+      "Explanation": "FIRST_VALUE() returns the first value in the input set of partitioned rows.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following clauses must be used to properly implement WINDOW functions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "LIMIT"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "PARTITION BY"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "OVER() with or without ORDER BY"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "HAVING"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92635,
+      "Explanation": "The implementation of a window function inherently requires the OVER() clause, which can optionally include the ORDER BY clause.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How is the participation of a row determined in the LEAD() and LAG() functions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Rows are included based on GROUP BY results"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Based on a defined number of rows before or after the current row"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Based on a specific condition in WHERE clause"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By joining with another table"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92636,
+      "Explanation": "LEAD() and LAG() functions participate in calculations based on a specified number of rows ahead or behind the current row in the set.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the DENSE_RANK() function do in a windowed query?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Provides a ranking without gaps in rank values when there are ties"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Provides unique sequential numbers"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Adds gaps in ranks for ties"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Adds only odd numbers"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92637,
+      "Explanation": "DENSE_RANK() assigns rank to rows in an ordered partition, unlike RANK() function it does not leave gaps in rank values when there are ties.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which MySQL version first introduced window functions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "MySQL 5.5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "MySQL 5.7"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "MySQL 8.0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MySQL 8.1"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92638,
+      "Explanation": "Window Functions were first introduced in MySQL starting with version 8.0.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the major advantage of using window functions over traditional aggregations?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They require less computational power"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They provide results for each row in the set while maintaining the ability to aggregate"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They only work on indexed tables"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They can operate across multiple databases"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92639,
+      "Explanation": "Window Functions calculate results within partitions without collapsing the result set, thus returning results for each row.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which clause limits the rows considered by a ranking window function to a specific number before and after?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "UNION"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "EXCEPT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ROWS BETWEEN ..."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "REFERENCES"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92640,
+      "Explanation": "The ROWS BETWEEN clause specifies which rows are taken into account for a computation involving the window function.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the LAG() function, what parameter determines the number of rows to look back?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "OFFSET"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "N"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "PREVIOUS ROWS"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ROWS COUNT"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92641,
+      "Explanation": "In MySQL, the LAG() function&apos;s second argument specifies the number of rows to look back. This parameter is commonly represented as &apos;N&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What role does the NTILE() function play in window functions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It divides an ordered set of rows into a specified number of contiguous groups"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It calculates the logarithm of a value"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It filters rows based on a range"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It provides a count of null values"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92642,
+      "Explanation": "NTILE() is used in window functions to divide a result set into a specified number of groups, distributing the rows evenly as possible.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the EXCLUDE CURRENT ROW clause do in MySQL window functions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Excludes the current row from the output result set"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Excludes the current row from calculations within the frame"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Excludes the current row from being updated"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Excludes the current row from the entire query"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92643,
+      "Explanation": "The EXCLUDE CURRENT ROW clause in a window function frame specification excludes the current row from calculations performed within that frame.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The default frame for a window when using ORDER BY without specifying a frame clause is?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CURRENT ROW"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92644,
+      "Explanation": "The default frame is &apos;ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW&apos; when ORDER BY is used without explicitly specifying a frame.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which window function can be used to access specific data from previous or next rows?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RANK()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "NTILE()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "LAG() or LEAD()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "FIRST_VALUE()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92645,
+      "Explanation": "LAG() and LEAD() are window functions that access data from preceding or succeeding rows, respectively.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword specifies inclusion or exclusion of specific rows in a window function result?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "EXCLUDE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FILTER"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "REFERENCE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "LIMIT"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92646,
+      "Explanation": "The EXCLUDE keyword can be used to specify whether certain rows are excluded in calculations for a window function.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which window function will provide the same rank to identical values within a set?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ROW_NUMBER()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DENSE_RANK()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SUM()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "NTILE()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92647,
+      "Explanation": "DENSE_RANK() assigns the same rank to identical values with no gaps between the rank numbers for the subsequent distinct value.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary consideration in choosing between ROW_NUMBER() and RANK() functions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The speed of query processing"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The size of the data set"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Whether to have unique or duplicate rank numbers with gaps"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Level of NULL values in data set"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92648,
+      "Explanation": "ROW_NUMBER() gives unique sequential numbers, while RANK() may give the same number for ties but leave gaps in numbering. The choice depends on whether you want unique numbers or not.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What effect does the PARTITION BY clause have on the ROW_NUMBER() generation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It guarantees consistent numbering across the database."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It restarts the numbering for each partition."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It prevents ROW_NUMBER() from being executed."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It duplicates row numbers in tiny partitions."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92334,
+      "Explanation": "PARTITION BY divides the data, and ROW_NUMBER() restarts its numbering sequence at the beginning of each partition.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a common use of PARTITION BY with the RANK() function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To rank all data as a single group."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To rank rows individually without ties."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To assign rank group within each partition."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To label partitions distinctly."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6276,
+      "QuestionTypeId": 0,
+      "QuestionId": 92336,
+      "Explanation": "When using PARTITION BY with RANK(), it ranks data rows within each partition separately, which is useful in hierarchical data analysis.",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

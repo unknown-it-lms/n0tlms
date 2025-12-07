@@ -1,0 +1,846 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Let\u2019s say, you are working with categorical feature(s) and you have not looked at the distribution of the categorical variable in the test data.<br><br>You want to apply one hot encoding (OHE) on the categorical feature(s). What challenges you may face if you have applied OHE on a categorical variable of train dataset?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "All categories of categorical variable are not present in the test dataset."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Frequency distribution of categories is different in train as compared to the test dataset."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Train and Test always have same distribution."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both A and B"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 78239,
+      "Explanation": "If the distribution of of the categories is not taken into consideration, all categorical variables won&apos;t be present in the test dataset and frequency distribution of categories is different in train as compared to test dataset.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following encoding methods is most suitable for an ordinal categorical feature?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "One-Hot Encoding"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Label Encoding"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Binary Encoding"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Frequency Encoding"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 98148,
+      "Explanation": "Label Encoding is ideal for ordinal features as it maintains the order by encoding categories with integers.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a potential drawback of using One-Hot Encoding?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It does not handle new categories well."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It leads to a loss of ordinal information."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It significantly increases the dimensionality of the dataset."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It distorts the distribution of categories."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 98149,
+      "Explanation": "One-Hot Encoding increases the dimensionality of the dataset because it creates a binary column for each category.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which encoding technique would likely be most effective for high cardinality categorical features?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "One-Hot Encoding"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Label Encoding"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Binary Encoding"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Target Encoding"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 98150,
+      "Explanation": "Target Encoding is effective for high cardinality features as it uses the target variable to create encoders, reducing dimensionality.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "For which type of encoding does the sum of all feature values across the columns equal the identity of original columns?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "One-Hot Encoding"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "One-Hot Inverse Encoding"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Binary Encoding"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Hashing Encoding"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 98151,
+      "Explanation": "In One-Hot Encoding, the sum across each row results in the identity of the column due to its binary nature.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary disadvantage of Label Encoding?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It can handle only binary categories."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It introduces ordinal relationships where there is none."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It requires significant memory resources."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It&#39;s ineffective for text data."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 98152,
+      "Explanation": "Label Encoding assigns numeric labels to categories, possibly implying incorrect ordinal relations between them.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does Binary Encoding reduce the dimensionality compared to One-Hot Encoding?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By grouping categories incrementally."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By representing classes as binary digits."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By normalizing the data."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By mapping data into a lower dimension manifold."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 98153,
+      "Explanation": "Binary Encoding uses fewer binary digits to represent each category, reducing the number of new dimensions needed.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which encoding technique is considered non-deterministic?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "One-Hot Encoding"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hashing Encoding"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Label Encoding"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Binary Encoding"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 98154,
+      "Explanation": "Hashing Encoding is non-deterministic because it can lead to hash collisions where different categories map to the same hash.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why is frequency encoding considered useful?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It preserves the relationships between categories."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It reduces dimensionality without losing information."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It captures the frequency of data points for each category."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It effectively handles unseen categories during prediction."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 98155,
+      "Explanation": "Frequency Encoding captures how often each category appears in the dataset, which can be useful for some algorithms.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following encoding techniques makes use of the characteristics of response in supervised learning?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Ordinal Encoding"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Frequency Encoding"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Target Encoding"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Hashing Encoding"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 98156,
+      "Explanation": "Target Encoding uses the properties of the target variable to transform categorical variables, making it suitable for supervised learning.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which encoding technique can potentially lead to data leakage if not used carefully?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "One-Hot Encoding"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Label Encoding"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Target Encoding"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Frequency Encoding"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 98157,
+      "Explanation": "Target Encoding might lead to data leakage if the target variable information is leaked into training data, affecting model performance.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "For two real-valued attributes, the correlation coefficient is 0.85. What does this value indicate?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The attributes are not linearly related <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "As the value of one attribute increases the value of the second attribute also increases <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "As the value of one attribute decreases the value of the second attribute increases <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The attributes show a curvilinear relationship <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 87684,
+      "Explanation": "As the coefficient is 0.85, the two variables highly positively correlated.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Feature engineering in machine learning involves:<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Selecting the best machine learning algorithm <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Creating new features from existing data <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Applying regularization techniques <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 88425,
+      "Explanation": "Feature engineering involves creating new features or transforming existing features to improve the performance of machine learning models. It focuses on extracting relevant information from raw data to make it more suitable for modeling. <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a common technique used in feature engineering to handle categorical variables?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "One-Hot Encoding <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Principal Component Analysis (PCA) <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Feature Scaling <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Regularization <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 88426,
+      "Explanation": "One-Hot Encoding is a technique used to convert categorical variables into a form that can be used by machine learning algorithms. It creates binary columns for each category and is commonly used in feature engineering to handle categorical data. <br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Feature scaling, such as normalization or standardization, is applied to:<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Convert categorical variables into numerical variables <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Handle missing values in the dataset"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Ensure all features have the same scale"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Reduce the number of features"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 88427,
+      "Explanation": "Feature scaling techniques like normalization (scaling features to a [0, 1] range) or standardization (scaling features to have zero mean and unit variance) are used to ensure that all features contribute equally to the model training process, especially when they have different scales.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following techniques can help in reducing the dimensionality of the feature space?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Feature extraction <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Feature selection <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both A and B <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 88428,
+      "Explanation": "Feature engineering techniques like feature extraction (creating new features from existing ones) and feature selection (choosing a subset of relevant features) can help in reducing the dimensionality of the feature space, which can lead to simpler models and improved performance. <br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of creating interaction features in feature engineering?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To reduce computational complexity <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To handle missing values <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To capture relationships between variables <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To normalize the feature values <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 88429,
+      "Explanation": "Interaction features are created by combining two or more features to capture relationships or interactions between variables that might be useful for the machine learning model. This can provide additional information that individual features may not capture alone.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which feature engineering technique is useful for handling datetime variables in machine learning?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Binning <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Feature scaling <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Normalization <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "One-Hot Encoding <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 88430,
+      "Explanation": "Binning involves grouping numerical values into bins or categories. It can be useful for handling datetime variables by converting them into categorical variables representing time periods (e.g., morning, afternoon, evening). <br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following techniques is used to handle missing values in feature engineering?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Mean imputation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Principal Component Analysis (PCA)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Feature scaling"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Regularization"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 88431,
+      "Explanation": "Mean imputation is a common technique in feature engineering to handle missing values by replacing them with the mean of the non-missing values for that feature. Other methods include median imputation, mode imputation, or using predictive models to estimate missing values.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which feature engineering technique can help in capturing nonlinear relationships between variables?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Polynomial features <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Feature scaling <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Binning <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Principal Component Analysis (PCA) <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 88432,
+      "Explanation": "Polynomial features involve creating higher-order terms (e.g., squares, cubes) from existing numerical features. This can help capture nonlinear relationships between variables, allowing machine learning models to better fit complex patterns in the data. <br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In text data preprocessing for natural language processing (NLP), which of the following techniques is commonly used in feature engineering?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Tokenization"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Normalization"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Principal Component Analysis (PCA)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Binning"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 88433,
+      "Explanation": "Tokenization is the process of breaking down text into individual words or tokens. It is a fundamental step in NLP feature engineering to convert text data into a format that can be used by machine learning algorithms.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which feature engineering technique can help in reducing the impact of outliers in the dataset?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Feature scaling <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Binning <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Principal Component Analysis (PCA) <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Winsorization <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 88434,
+      "Explanation": "Winsorization is a technique in feature engineering where extreme values (outliers) in a dataset are replaced with a less extreme value. This helps in reducing the impact of outliers on statistical analysis and machine learning models. <br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a dimensionality reduction technique used in feature engineering?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Principal Component Analysis (PCA) <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Singular Value Decomposition (SVD)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Recursive Feature Elimination (RFE)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "One-Hot Encoding"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 88435,
+      "Explanation": "One-Hot Encoding is used to convert categorical variables into a numerical format suitable for machine learning models. It does not reduce the dimensionality but instead increases it by creating binary columns for each category.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In feature engineering, what does the technique of feature selection involve?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Creating new features based on existing ones"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Reducing the number of input variables to only the most relevant ones"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Transforming numerical features into categorical features"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Scaling features to a specific range"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 88436,
+      "Explanation": "Feature selection involves selecting a subset of input variables (features) that are most relevant to the target variable. It helps in improving model performance by reducing overfitting and computational complexity.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following techniques can help in handling skewed distributions of numerical features?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Log transformation <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "One-Hot Encoding <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Min-Max scaling <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Polynomial feature generation <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 88437,
+      "Explanation": "Log transformation is used in feature engineering to transform skewed distributions of numerical features into more normally distributed data. It can help in improving the performance of models that assume normality in the data. <br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of feature extraction in machine learning?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To create new features based on existing ones <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To reduce the number of features by selecting the most important ones"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To transform numerical features into categorical features"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To normalize feature values to a specific range<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 88438,
+      "Explanation": "Feature extraction involves creating new features from existing ones to capture more useful information or patterns that may not be readily apparent in the original data. It helps in improving the representation of data for machine learning models.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;In time series analysis, which feature engineering technique can help capture seasonal patterns?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Lag features"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Principal Component Analysis (PCA)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Binning"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Feature scaling"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 88439,
+      "Explanation": "Lag features involve using previous values of a time series as additional features in the dataset. They can help capture temporal dependencies and seasonal patterns in the data, making them useful in time series forecasting and analysis.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following techniques is used to handle multicollinearity among features in feature engineering?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Principal Component Analysis (PCA)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Recursive Feature Elimination (RFE) <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Variance Inflation Factor (VIF)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Feature hashing"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 29,
+      "UniqueNodeId": 6083,
+      "QuestionTypeId": 0,
+      "QuestionId": 88440,
+      "Explanation": "VIF is a statistical measure used to detect multicollinearity among predictor variables (features). It assesses how much the variance of a regression coefficient is inflated due to collinearity with other variables, helping in identifying and addressing multicollinearity issues. <br>",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

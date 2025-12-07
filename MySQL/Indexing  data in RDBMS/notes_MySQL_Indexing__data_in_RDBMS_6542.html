@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Notes - MySQL_Indexing  data in RDBMS</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  body{font-family:system-ui,Segoe UI,Roboto,Arial;max-width:900px;margin:24px auto;padding:18px;line-height:1.6;color:#111}
+  h1{font-size:1.4rem;margin-bottom:0.6rem}
+  .topic{font-weight:700;margin-top:1rem}
+  .subtopic{font-weight:600;margin-top:0.8rem}
+  .content{margin:0.6rem 0 1.2rem 0}
+  pre{white-space:pre-wrap;background:#f7f7f7;padding:10px;border-radius:6px;overflow:auto}
+  img{max-width:100%;height:auto}
+  table{border-collapse:collapse;width:100%}
+  table, th, td{border:1px solid #ccc;padding:6px}
+</style>
+</head>
+<body>
+<h1>Notes: MySQL- Indexing  data in RDBMS</h1>
+
+<div class="courseware content"><div class="courseware subtopic">Concept of indexes<hr></div><div class="courseware content">A database index is a data structure implemented to improve the speed of operations in a table. Indexes can be created using one or more columns, providing the basis for both rapid random lookups and efficient ordering of access to records. Index is used to retrieve data from the database more quickly . The users cannot see the indexes, they are just used to speed up searches/queries.<br>Updating a table with indexes takes more time than updating a table without (because the indexes also need an update). Hence , indexes are created on columns that are&nbsp; frequently searched. Practically, indexes are also a type of tables, which keep primary key or index field and a pointer to each record into the actual table. The users cannot see the indexes, they are just used to speed up queries and will be used by the Database Search Engine to locate records very fast. Indexes on primary key ,unique constraint are automatically created.<br>The CREATE INDEX statement is used to create indexes in tables.<br><br><strong>Advantages of indexes</strong><br>1. Faster search<br>2. It also helps to retrieve data from related table i.e from other table<br><strong>Disadvantages of indexes</strong><br>1. Extra space is needed<br>2. It reduces speed of execution of DML (insert,delete, update)&nbsp; &nbsp; &nbsp; &nbsp;<br><div class="courseware subtopic">&nbsp; &nbsp;​​​​T<span style="color: rgb(62, 62, 151); font-size: 20px; font-weight: 600;">ypes of indexes</span></div><div class="courseware subtopic"><hr></div><div class="courseware content">Indexes in mysql are primarily of two types.<br>1. Clustered index<br>&nbsp;&nbsp;&nbsp; clustered index is only one, it doesnot require extra space, and table data is arranged in&nbsp; sorted order<br>&nbsp;&nbsp;&nbsp; on field of clustered index.<br>2. Non clusterd index<br>&nbsp;&nbsp;&nbsp; non clustered indexes can be&nbsp; many.&nbsp; We can generate it.&nbsp; It needs extra space, all indexes are arranged in sorted oreder either ascending or descending order.<br>Apart from above mentioned indexes following are some other indexes.<br>1. fulltext index<br>&nbsp; &nbsp;&nbsp; applied on keywords, and not on entire string.<br>2. descending index<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; it stores data in descending order.<br>3. mulicolumn or composit index<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; these indexes are created on multiple column&nbsp; &nbsp;<br><br><div class="courseware subtopic">Creating indexes<hr></div><div class="courseware content">The CREATE INDEX statement is used to create indexes in tables.<br><strong>create index</strong> deptno_idx<br><strong>on</strong> emp(deptno);<br><br>&gt; create descending index based on salary<br><strong>create index</strong> sal_idx<br><strong>on </strong>emp(sal desc);<br><br>&gt;create descending index based on salary and search on ename if sal is same.<br><strong>create index</strong> sal_idx<br><strong>on</strong> emp(sal desc,ename);<br><br>&gt;to create unique index<br><strong>create unique index</strong> passport_idx<br><strong>on</strong> emp(passportno);<br><br>&gt;to create fulltext index<br><strong>create fulltext index</strong> description_idx<br><strong>on</strong> product(description);<br><br>&gt;to see the list of indexes<br>show index<br>from &lt;table name&gt;<strong> from</strong> &lt;databsename&gt;;<br><strong>show index<br>from </strong>emp<br><strong>from</strong> knowit2111;<br><br><strong>Deleting the index ::<br>&nbsp;</strong> To delete the index, drop statementis used.<br><strong>drop index</strong> sal_idx <strong>on</strong> emp;&nbsp; &nbsp; &nbsp; &nbsp;</div></div></div></div>
+
+
+</body>
+</html>

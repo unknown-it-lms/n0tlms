@@ -1,0 +1,1686 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Which exception is thrown by dynamic_cast?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "bad_cast"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "bad_typeid"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "bad_exception"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "bad_alloc"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 64154,
+      "Explanation": "<span id=\"explanation64154\">The bad_cast&nbsp;exception is thrown&nbsp;by the&nbsp;dynamic_cast&nbsp;operator as the result of a failed cast to a reference type. </span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of this program?<br>&nbsp;&nbsp; #include &lt;iostream&gt;<br>&nbsp;&nbsp; using namespace std;<br>&nbsp;&nbsp; namespace Box1<br>&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp; int a = 4;<br>&nbsp;&nbsp; }<br>&nbsp;&nbsp; namespace Box2<br>&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp; int a = 13;<br>&nbsp;&nbsp; }<br>&nbsp;&nbsp; int main ()<br>&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;int a = 16;<br>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Box1::a;<br>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Box2::a;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; a;<div style=\"margin-left: 40px;\">return 0;</div>&nbsp;&nbsp; }",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "13"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "16"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "compile time error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 63887,
+      "Explanation": "<span id=\"explanation63887\">In above code a is available at three places. But compiler consider only local most. a is printed as 16.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator is used to signify the namespace?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "conditional operator"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ternary operator"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "scope resolution operator"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 63876,
+      "Explanation": "A&nbsp;namespace&nbsp;is a declarative region that provides a scope to the identifiers (names of the types, function, variables etc) and to use elements available in namespace we can use scope resolution operator",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Dynamic cast is possible only with",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Static Classes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Structures"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Polymorphic Classes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All the Classes"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 64256,
+      "Explanation": "<span id=\"explanation64256\">Dynamic cast is runtime casting and it is possible only with polymorphic classes .</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To which type of class, We can apply RTTI?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Encapsulation ."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Polymorphic."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Derived."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 64318,
+      "Explanation": "<span id=\"explanation64318\">RTTI is feature of the&nbsp; CPP programming language that exposes information about an object&apos;s data type at runtime. </span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include&lt;iostream&gt;<br>using namespace std;<br>namespace N1<br>{<div style=\"margin-left: 40px;\">int f(int n)<br>{</div><div style=\"margin-left: 80px;\">return n*2;</div><div style=\"margin-left: 40px;\">}</div>}<br>namespace N2<br>{<div style=\"margin-left: 40px;\">int f(double n)<br>{</div><div style=\"margin-left: 80px;\">return n*3;</div><div style=\"margin-left: 40px;\">}</div>}<br>void main()<br>{<div style=\"margin-left: 40px;\">using N1::f;</div><div style=\"margin-left: 40px;\">int i1=f(1.0);</div><div style=\"margin-left: 40px;\">using N2::f;</div><div style=\"margin-left: 40px;\">int i2=f(1.0);</div>}<br>In the above code what would be the values of i1 and i2",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "i1=2 i2=2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "i1=2 i2=3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "i1=3 i2=2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 64310,
+      "Explanation": "<span id=\"explanation64310\">In above code i1 is holding return value from coming from f fucntion belongs to N1 namespace.And i2 is holding value coming from fuccntion f belongs to N2 namespace .</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What will be the output of the following program?</div><div>#include &lt;iostream&gt;<br>using namespace std;</div><div>namespace first&nbsp;{</div><div style=\"margin-left: 40px;\">int x = 9;</div><div>}</div><div>namespace second&nbsp;{</div><div style=\"margin-left: 40px;\">double x = 3.1416;</div><div>}</div><div>int main ()&nbsp;{</div><div style=\"margin-left: 40px;\">{</div><div style=\"margin-left: 80px;\">using namespace first;</div><div style=\"margin-left: 80px;\">cout &lt;&lt; x;</div><div style=\"margin-left: 40px;\">}</div><div style=\"margin-left: 40px;\">{&nbsp;</div><div style=\"margin-left: 80px;\">using namespace second;</div><div style=\"margin-left: 80px;\">cout &lt;&lt; x;</div><div style=\"margin-left: 40px;\">}</div><div style=\"margin-left: 40px;\">return 0;</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "9 3.1416"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "9 9"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3.1416 3.1416"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compile Time Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 64210,
+      "Explanation": "<span id=\"explanation64210\">In above code first x is printed fom namespace first, and second time x is printed from second namespace. so answer is A option.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is meant by template parameter?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It can be used to pass any type as argument"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It can be used to evaluate a type"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It can not have return type"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 64236,
+      "Explanation": "<div style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; font-size: 12px; vertical-align: baseline; list-style-type: none; min-height: 1em; background: none;\" class=\"L0\">\u200b\u200b\u200b\u200b\u200b\u200b\u200b<span style=\"font-size: medium;\">template &lt;typename T&gt;</span></div><span id=\"explanation64236\">void Swap (T a,T b)<br>{<br>}<br>Here is a sample fucntion template where template parameter T does not appear in the function&apos;s parameter list.In this case&nbsp; the&nbsp; compiler deduce the template type when the function is calles.</span><br><br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operators are part of RTTI",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "dynamic_cast"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "typeid"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both A and B"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 71163,
+      "Explanation": "<span id=\"explanation71163\">The dynamic_cast&lt;&gt; operation and typeid operator in C++ are part of RTTI.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;iostream&gt;<br>#include &lt;exception&gt;<br>using namespace std;<br>class base {<br>&nbsp; &nbsp; &nbsp;virtual void dummy ()<br>&nbsp; &nbsp;&nbsp; {<br>&nbsp; &nbsp; &nbsp;}<br>};<br>class derived:public base&nbsp;{<div style=\"margin-left: 40px;\">&nbsp; int a;</div>};<br>int main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; try<br>&nbsp; {</div><div style=\"margin-left: 80px;\">&nbsp;&nbsp;&nbsp; base *pba = new derived;<br>&nbsp;&nbsp;&nbsp; base *pbb = new base;<br>&nbsp;&nbsp;&nbsp; derived *pd;<br>&nbsp;&nbsp;&nbsp; pd = dynamic_cast &lt; derived * &gt;(pba);<br>&nbsp;&nbsp;&nbsp; if (pd == 0)</div><div style=\"margin-left: 120px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; \"Null pointer on first type-cast\" &lt;&lt; endl;</div><div style=\"margin-left: 80px;\">&nbsp;&nbsp;&nbsp;&nbsp;pd = dynamic_cast &lt; derived * &gt;(pbb);<br>&nbsp; &nbsp; if (pd == 0)<br>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; cout &lt;&lt; \"Null pointer on second type-cast\" &lt;&lt; endl;</div><div style=\"margin-left: 40px;\">&nbsp; }<br>&nbsp; catch (exception &amp; e)<br>&nbsp; {</div><div style=\"margin-left: 80px;\">&nbsp;&nbsp;&nbsp; cout &lt;&lt; \"Exception: \" &lt;&lt; e.what ();</div><div style=\"margin-left: 40px;\">&nbsp; }</div>&nbsp; return 0;<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Null pointer on first type-cast"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Null pointer on second type-cast"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Exception"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Null pointer on third type-cast"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 71164,
+      "Explanation": "<span id=\"explanation71164\">Dynamic_cast successfully casts the base class pointer to the derived class pointer. However, since casting a derived class pointer to a base class pointer, and then casting this base class pointer into some other derived class pointer is invalid.<br>We apply the dynamic cast to pd. Based on the value in the pd, it produces the output.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "At which time does the static_cast can be applied?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compile-time construct"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Runtime construct"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both Compile-time &amp; Runtime construct"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Runtime deconstruct"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 71166,
+      "Explanation": "<span id=\"explanation71166\">Static_cast is a compile time cast.It does things like implicit conversions between types (such as int to float, or pointer to void*), and it can also call explicit conversion functions (or implicit ones).&nbsp;<br>Static_cast can be applied to only compile-time construct and not during run time construct.static_cast is use for&nbsp; convertion at compile time only&nbsp;</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;typeinfo&gt;<br>#include&lt;iostream&gt;<br>&nbsp;using namespace std;<br>&nbsp;int main ()<br>&nbsp; {&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int * a;<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; int b;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a = 0;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b = 0;<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; if (typeid(a) != typeid(b))&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; typeid(a).name();<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout &lt;&lt; typeid(b).name();<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br>&nbsp;&nbsp; }",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int*"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int* int"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0 0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "4 4"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 71159,
+      "Explanation": "<span id=\"explanation71159\">typeid is operator which is use to check data type of variable at runtime&nbsp; here we are checking data type of a and b which is respectively int* and int . Given condition is true so both statements are executed.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is RTTI",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Run-Time Type Identification (RTTI) is a technique that is used to know the type of any object at run time"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "RTTI is a technique that is used to know the type of any object at compile time."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "RTTI reserve memory of function at run time."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 71160,
+      "Explanation": "<span id=\"explanation71160\">Run-Time Type Identification (RTTI) is a technique that is used to know the type of any object at run time.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Identify the correct statement.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Namespace is used to group class, objects and functions."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Namespace is used to mark the beginning of the program."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Namespace is used to seperate the class, objects."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 64363,
+      "Explanation": "<span id=\"explanation64363\">When multiple classes, variables,functions are available then to resolve&nbsp; nameing conflict namespace is unsed. Namespace is collection of group class ,object and function. </span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the use of Namespace?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To encapsulate the data"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To structure a program into logical units."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both a and b"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 64364,
+      "Explanation": "<span id=\"explanation64364\">Namespaces are collection of grouped data. It is collection of related classes,variables,functions. </span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the general syntax for accessing the namespace variable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "namespacename::operator"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "namespace:operator"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "namespace.operator"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 64365,
+      "Explanation": "<span id=\"explanation64365\">Syntax for accessing data from namespace is namespace::operator. </span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What is the output of this program?</div><div>&nbsp;&nbsp; #include &lt;iostream&gt;</div><div>&nbsp;&nbsp; using namespace std;</div><div>&nbsp;&nbsp; namespace first&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; int var = 5;</div><div>&nbsp;&nbsp; }</div><div>&nbsp;&nbsp; namespace second&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; double var = 3.1416;</div><div>&nbsp;&nbsp; }</div><div>&nbsp;&nbsp; int main ()&nbsp;&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; int a;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; a = first::var + second::var;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; a;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; return 0;</div><div>&nbsp;&nbsp;}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "8.31416"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "8"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "9"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "compile time error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 64366,
+      "Explanation": "<span id=\"explanation64366\">a=first::var+second::var is addition of two numbers, And a variable is integer varibale so result is 8.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What is the output of these program?</div><div>&nbsp;&nbsp; #include &lt;iostream&gt;</div><div>&nbsp;&nbsp; using namespace std;</div><div>&nbsp;&nbsp; namespace first&nbsp;&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; int x = 5;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; int y = 10;</div><div>&nbsp;&nbsp; }</div><div>&nbsp;&nbsp; namespace second&nbsp;&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; double x = 3.1416;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; double y = 2.7183;</div><div>&nbsp;&nbsp; }</div><div>&nbsp;&nbsp; int main ()&nbsp;&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; using first::x;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; using second::y;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; bool a, b;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; a = x &gt; y;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; b = first::y &lt; second::x;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; a &lt;&lt; b;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; return 0;</div><div>&nbsp;&nbsp; }</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "11"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "01"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "00"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 64367,
+      "Explanation": "<span id=\"explanation64367\">The value of x from first namespace and value of y from second namespace are compared, which returns true so 1 will get printed. Next value of y from first namespace and x from second namespace is compared, which returns false so 0 will get printed. </span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What is the output of this program?</div><div>&nbsp;&nbsp; #include &lt;iostream&gt;</div><div>&nbsp;&nbsp; using namespace std</div><div>&nbsp;&nbsp; namespace space</div><div>&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; int x = 10;</div><div>&nbsp;&nbsp; }</div><div>&nbsp;&nbsp; namespace space</div><div>&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; int y = 15;</div><div>&nbsp;&nbsp; }</div><div>&nbsp;&nbsp; int main(int argc, char * argv[])</div><div>&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; space::x = space::y =5;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; space::x &lt;&lt; space::y;</div><div>&nbsp;&nbsp; }</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1015"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1510"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "55"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<div>compile time error</div>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 64369,
+      "Explanation": "<span id=\"explanation64369\">--</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What is the output of this program?</div><div>&nbsp;&nbsp; #include &lt;iostream&gt;</div><div>&nbsp;&nbsp; using namespace std;</div><div>&nbsp;&nbsp; namespace extra&nbsp;&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; int i;</div><div>&nbsp;&nbsp; }</div><div>&nbsp;&nbsp; void i()&nbsp;&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; using namespace extra;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; int i;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; i = 9;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; i;</div><div>&nbsp;&nbsp; }</div><div>&nbsp;&nbsp; int main()&nbsp;&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; enum &nbsp;letter { i, j};</div><div>&nbsp;&nbsp;&nbsp;&nbsp; class i { letter j; };</div><div>&nbsp;&nbsp;&nbsp;&nbsp; ::i();</div><div>&nbsp;&nbsp;&nbsp;&nbsp; return 0;</div><div>&nbsp;&nbsp; }</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "9"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "compile time error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the these"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 64370,
+      "Explanation": "In the main() function:<br>The enumeration and class declarations do not affect the global function i() or the namespace extra.<br>The call ::i(); invokes the global function i().<br>Inside the global function i():<br>The local variable int i is declared and initialized to 9.<br>The cout &lt;&lt; i; statement prints the value of the local variable i.<br>Thus, the output of the program is 9.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to access the variable in namespace?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "using"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "dynamic"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "const"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "static"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 64371,
+      "Explanation": "using is keyword which is use for namespace.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;iostream&gt;<br>using namespace std;<br>class X&nbsp;{<div style=\"margin-left: 40px;\">public:</div><div style=\"margin-left: 80px;\">int a;</div><div style=\"margin-left: 80px;\">void f(int b)&nbsp;{</div><div style=\"margin-left: 120px;\">cout&lt;&lt; b &lt;&lt; endl;</div><div style=\"margin-left: 80px;\">}</div>};<br>int main()<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int X :: *ptiptr = &amp;X :: a;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void (X :: * ptfptr) (int) = &amp;X :: f;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X xobject;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xobject.*ptiptr = 10;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; xobject.*ptiptr &lt;&lt; endl;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (xobject.*ptfptr) (20);<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10<br>20"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "20<br>10"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "20"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "10"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 64335,
+      "Explanation": "<span id=\"explanation64335\">In above code priptr is integer pointer and ptfptr in function pointer. So xobject is object of X class , so ptiptr is going to print 10 and ptfptr is going print 20.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;typeinfo&gt;<br>#include &lt;iostream&gt;<br>using namespace std;<br>class A<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; virtual ~A(){}<br>};<br>int main()<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A* a = NULL;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; try<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; typeid(*a).name() &lt;&lt; endl;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; catch (bad_typeid)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; \"Object is NULL\" &lt;&lt; endl;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "float"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "double"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "object is NULL"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 64331,
+      "Explanation": "<span id=\"explanation64331\">In above code \"a \" is pointer which is holding NULL value. so null pointer exception raised and it is handle by bad_typid ahd it is going to print object is NULL.</span><br><br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What is meant by type_info?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Used to hold the type information returned by the typeid operator"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Used to hold the type information returned by the dynamic_cast"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Used to hold the type information returned by the static cast"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 64333,
+      "Explanation": "<span id=\"explanation64333\"></span><span>The typeid operator in C++ is used to obtain the type information of an expression at runtime. The result of applying typeid to an expression is an object of the type_info class, which is defined in the &lt;typeinfo&gt; header. This type_info object contains information about the type of the expression.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of the 'static_cast' operator in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To safely downcast pointers in polymorphism"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To convert any type to void*"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To perform explicit type conversions between compatible types"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To perform runtime checks during casting"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93915,
+      "Explanation": "&apos;static_cast&apos; is used to perform explicit type conversions between compatible types in C++. It doesn&apos;t check type safety at runtime.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following conversions cannot be performed by 'static_cast'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "From int to float"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "From base class pointer to derived class pointer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "From void* to any type pointer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "From derived class pointer to base class pointer"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93916,
+      "Explanation": "&apos;static_cast&apos; cannot cast from void* to other pointer types. This type of cast requires &apos;reinterpret_cast&apos;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using 'static_cast' to convert a derived class pointer to a base class pointer, what must be true of the relationship between the classes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The base class must be a polymorphic base"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "There must be a valid inheritance relationship"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The derived class must contain only primitive data members"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both classes must have a virtual destructor"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93917,
+      "Explanation": "&apos;static_cast&apos; requires a valid inheritance relationship to convert a derived class pointer to a base class pointer.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about 'static_cast' is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "'static_cast' provides runtime type checking."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "'static_cast' is equivalent to a C-style cast."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "'static_cast' can cast a pointer type to and from an integer type."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "'static_cast' is used for conversions between related types only."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93918,
+      "Explanation": "&apos;static_cast&apos; is used for conversions between related types, such as different fundamental types or class hierarchies. It does not provide runtime type checking and is safer compared to C-style casts.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can 'static_cast' be used to cast away the constness of an object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, it can be used to remove 'const'."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes, but only when using pointers."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No, 'const_cast' should be used instead."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only when both the source and destination types are pointers."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93919,
+      "Explanation": "&apos;static_cast&apos; cannot cast away the constness of an object. For this purpose, &apos;const_cast&apos; should be used.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of the 'dynamic_cast' operator in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To perform implicit conversions between different data types."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To safely cast pointers or references of base classes to derived classes."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To convert primitive data types explicitly."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To cast pointers between different unrelated classes."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93920,
+      "Explanation": "The &apos;dynamic_cast&apos; operator is mainly used for safe downcasting in class hierarchies to convert pointers or references of base class types to derived class types.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which condition must be satisfied for a 'dynamic_cast' to a pointer to succeed?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The base class must have a virtual function."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Both classes must be templates."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The base class must be a templated class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "There must be an overloaded operator in the base class."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93921,
+      "Explanation": "&apos;dynamic_cast&apos; requires that the base class has at least one virtual function, making the type polymorphic.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What value does 'dynamic_cast' return if the cast fails when casting pointers?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "NULL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An exception"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A default constructed object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A reference to the base class"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93922,
+      "Explanation": "If &apos;dynamic_cast&apos; fails when casting pointers (not references), it returns a NULL pointer to indicate the failure.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if a 'dynamic_cast' fails when attempting to cast a reference?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Returns NULL."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Throws a std::bad_cast exception."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Returns a default reference."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Returns the original reference."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93923,
+      "Explanation": "If &apos;dynamic_cast&apos; fails when casting a reference, it throws a &apos;std::bad_cast&apos; exception, as references cannot be null.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which C++ feature makes 'dynamic_cast' a safe option for downcasting?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Templates"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Static typing"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Runtime type identification (RTTI)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Operator overloading"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93924,
+      "Explanation": "&apos;dynamic_cast&apos; relies on Runtime Type Identification (RTTI) to ensure that the type conversion is valid at runtime.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "For which type of classes is 'dynamic_cast' NOT suitable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Polymorphic classes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Non-polymorphic classes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Abstract base classes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Derived classes"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93925,
+      "Explanation": "&apos;dynamic_cast&apos; requires polymorphic classes (classes with virtual functions) to operate because it uses RTTI.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is necessary to use 'dynamic_cast' for casting a base class pointer to a derived class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Both classes must be final."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The derived class must override virtual functions."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The base class must have a virtual destructor."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The base class must be linked statically."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93926,
+      "Explanation": "While it&apos;s not strictly required to have a virtual destructor to use &apos;dynamic_cast&apos;, the base class must be polymorphic, which is often achieved by adding a virtual destructor.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can 'dynamic_cast' be used to cast up the hierarchy from a derived class to a base class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, but only with pointers."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, 'dynamic_cast' is not used for upcasting."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, 'dynamic_cast' can be used for both upcasting and downcasting."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Yes, but it requires explicit type casting operators."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93927,
+      "Explanation": "&apos;dynamic_cast&apos; is primarily used for downcasting. Upcasting can be safely performed using implicit conversion or static_cast.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a requirement for using 'dynamic_cast'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The base class must have virtual functions."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The source type must be a polymorphic type."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both source and target must be related."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The derived class must have non-static data members."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93928,
+      "Explanation": "&apos;dynamic_cast&apos; does not require the derived class to have non-static data members; it requires polymorphic relations between types.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which scenario is using 'dynamic_cast' recommended over other casting methods like 'static_cast'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When performance is a critical concern."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When the type conversion is guaranteed to be safe."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When the code needs to downcast polymorphic types safely."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When casting between unrelated class hierarchies."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93929,
+      "Explanation": "&apos;dynamic_cast&apos; is used when the program needs to ensure safe downcasting at runtime in a polymorphic class hierarchy.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of using const_cast in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To change a constant value at runtime"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To cast away the const-ness of variables"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To convert a pointer to a base class to a pointer to a derived class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To perform implicit type conversion"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93930,
+      "Explanation": "const_cast is used to cast away the const-ness of variables, allowing modification of an originally constant object.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following scenarios is an appropriate use of const_cast?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Changing the type of a variable from int to float"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Modifying a member variable in a const method"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Overriding a private member in a derived class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Cross-casting between unrelated classes"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93931,
+      "Explanation": "const_cast can be used to cast away const in order to modify a member variable in a const method if you are sure that it&apos;s safe.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which situation should you not use const_cast?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When passing a constant variable to a function that requires a non-const parameter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When altering a non-const member within a const method"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When casting to remove the volatile qualifier"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When attempting to modify the content of a const variable"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93932,
+      "Explanation": "Using const_cast on a const variable to modify its content leads to undefined behavior and should be avoided.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct syntax to use const_cast for a pointer in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "const_cast<Type>(pointer)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "const_cast<Type*>(pointer)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "castconst<Type*>(pointer)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "static_cast<Type*>(pointer)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93933,
+      "Explanation": "The correct syntax for const_cast involves specifying the type and using a pointer notation, such as const_cast<Type*>(pointer).",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is true about const_cast?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "const_cast can be used between any two types"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It is safe to use const_cast on imaginary class types"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "const_cast should not be used for converting between unrelated classes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "const_cast can be used to implicitly convert pointer to reference"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93934,
+      "Explanation": "const_cast should not be used for conversions between unrelated classes as it is specifically meant for modifying const and volatile qualifiers.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of cast is reinterpret_cast primarily considered as?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Safe casting"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Static type checking"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Unsafe and low-level casting"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Runtime type identification"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93935,
+      "Explanation": "reinterpret_cast is a C++ operator used for type conversions that are generally low-level and unsafe, as it allows any pointer type to be converted to any other pointer type.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which C++ cast can be used to convert a pointer to an integer type?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "dynamic_cast"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "static_cast"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "const_cast"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "reinterpret_cast"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93936,
+      "Explanation": "reinterpret_cast can be used to convert any pointer type to an integer type, making it suitable for low-level operations such as converting pointers to integers.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When is it appropriate to use reinterpret_cast in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When performing polymorphic casting"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only for converting between unrelated types"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When converting constness of an object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When numeric limit needs to be enforced"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93937,
+      "Explanation": "reinterpret_cast should be used when you need to convert between types that are unrelated in a direct manner, often for system-level or low-level operations.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What kind of type safety does reinterpret_cast offer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compile-time safety"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Run-time safety"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No type safety"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Type-safe compatibility"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93938,
+      "Explanation": "reinterpret_cast offers no type safety; it is a low-level cast that does not check if the operation is safe, which can lead to undefined behavior if used improperly.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following conversions cannot be performed using reinterpret_cast?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "From pointer to integer"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "From float to int"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "From integer to pointer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "From one pointer type to another"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93939,
+      "Explanation": "reinterpret_cast cannot perform conversions between built-in arithmetic types like float to int, which are better handled with static_cast.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of upcasting in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To convert a derived class pointer to a base class pointer."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To convert a base class pointer to a derived class pointer."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To enhance performance by reducing the object size."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To allow access to all functions of the derived class."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93940,
+      "Explanation": "Upcasting is used to treat a derived class object as if it were a base class object. This is done by converting a derived class pointer to a base class pointer, allowing for more general code.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true when performing downcasting in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Downcasting is always safe and does not require checks."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Downcasting requires the use of dynamic_cast and must be checked for success."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Downcasting can only be performed with private inheritance."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Downcasting automatically adds new fields to the object."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93941,
+      "Explanation": "In C++, downcasting (converting a base class pointer to a derived class pointer) should be performed with dynamic_cast, which checks the validity of the conversion at runtime.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why might upcasting be used in a program that utilizes polymorphism?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To access the unique properties of the derived class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To ensure that overloaded operators in the derived class are used."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To allow derived class objects to be stored together in a base class pointer container."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To prevent access to base class methods."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93942,
+      "Explanation": "Upcasting enables polymorphic behavior by allowing derived class objects to be used interchangeably with base class pointers, facilitating the storage and handling of heterogeneous collections.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which scenario is downcasting particularly risky in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When using it with private members of the base class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When the base class pointer actually points to an object of a different derived class."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When the base class method is virtual."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When downcasting between unrelated classes."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93943,
+      "Explanation": "Downcasting is risky when the base class pointer points to an object that is not of the derived type being cast to. If the cast is invalid, accessing members of the derived class could lead to undefined behavior.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which type of casting should you use to ensure that a downcast is safe in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "static_cast"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "reinterpret_cast"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "dynamic_cast"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "const_cast"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 93944,
+      "Explanation": "dynamic_cast is used for downcasting to ensure type safety at runtime. It performs a runtime check and returns a null pointer if the cast is not possible.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operators are part of RTTI? <br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Static_cast<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "dynamic_cast()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "both dynamic_cast&lt;&gt; &amp; typeid"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "dynamic_cast[]"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 87457,
+      "Explanation": "Explanation: With the help of RTTI, We can get the information about the data type at the runtime. The dynamic_cast&lt;&gt; operation and typeid operator in C++ are part of RTTI.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "class student<br>{<br>&nbsp;&nbsp; public : int marks;<br>&nbsp;&nbsp; virtual int calc_grade()=0;<br>};<br>class topper:public student<br>{<br>&nbsp;&nbsp;&nbsp; public : <br>int calc_grade()<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return 10;<br>&nbsp;&nbsp;&nbsp; }<br>};<br>class average:public student<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp; public : <br>int calc_grade()<br>&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return 20;<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>};<br>class failed{ int marks; };",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only class student can show polymorphism"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only class student and topper together can show polymorphism"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "All class student, topper and average together can show polymorphism"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Class failed should also inherit class student for this code to work for polymorphism"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1276,
+      "QuestionTypeId": 0,
+      "QuestionId": 87470,
+      "Explanation": "Since Student class is abstract class and class topper and average are inheriting student, class topper and average must define the function named calc_grade(); in abstract class. Since both the definition are different in those classes, calc_grade() will work in different way for same input from different objects. Hence it shows polymorphism.",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

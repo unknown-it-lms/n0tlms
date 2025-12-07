@@ -1,0 +1,306 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is the primary purpose of creating an index in MongoDB?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To store data permanently"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To increase write operation speed"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To improve query performance by reducing the scan time"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To automatically back up data"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 7161,
+      "QuestionTypeId": 0,
+      "QuestionId": 94468,
+      "Explanation": "Indexes are primarily used to improve query performance by reducing the time it takes to scan through the collection.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about MongoDB's indexing behavior?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "MongoDB automatically creates indexes on all fields by default"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "MongoDB requires manual index creation of any kind"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "MongoDB automatically creates an index on the _id field"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MongoDB does not support compound indexes"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 7161,
+      "QuestionTypeId": 0,
+      "QuestionId": 94469,
+      "Explanation": "MongoDB automatically creates an index on the _id field of every collection to ensure quick retrieval of data by document ID.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a compound index in MongoDB?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An index that is stored in a compressed form"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An index on the _id field"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An index created using hashed values of a field"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An index on multiple fields in a collection"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 7161,
+      "QuestionTypeId": 0,
+      "QuestionId": 94470,
+      "Explanation": "A compound index is an index on multiple fields in a collection, allowing for efficient queries on those fields collectively.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In MongoDB, what is a sparse index?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An index that provides additional query predicates"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An index that includes only documents that have the indexed field"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An index that uses a less amount of storage"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An index that is automatically maintained by MongoDB"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 7161,
+      "QuestionTypeId": 0,
+      "QuestionId": 94471,
+      "Explanation": "A sparse index only includes documents that have the indexed field present, reducing the index size for fields that are not common across documents.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What limits the number of index keys that can be stored for a document in a single index in MongoDB?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The index key size limit"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The collection size limit"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The maximum BSON document size"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The total size of the index entries"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 7161,
+      "QuestionTypeId": 0,
+      "QuestionId": 94472,
+      "Explanation": "The index key size limit constrains how many index keys can be stored for a given document in a single index.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command can be used to create an index in MongoDB?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "db.createIndex()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "db.addIndex()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "db.insertIndex()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "db.buildIndex()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 7161,
+      "QuestionTypeId": 0,
+      "QuestionId": 94473,
+      "Explanation": "The &apos;db.createIndex()&apos; method is used in MongoDB to create indexes on collections.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the ensureIndex() method do in MongoDB?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Drops an existing index"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Creates an index if it does not already exist"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Forces a rebuild of an index"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Deletes documents based on an index"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 7161,
+      "QuestionTypeId": 0,
+      "QuestionId": 94474,
+      "Explanation": "The ensureIndex() method ensures that an index exists on the specified field(s), creating it if necessary. However, starting from MongoDB 3.0, use createIndex() instead.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does a unique index differ from a regular index in MongoDB?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It allows duplicate values within the collection"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It is faster than a regular index"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It ensures that the indexed fields have unique values across the collection"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It supports multikey capabilities"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 7161,
+      "QuestionTypeId": 0,
+      "QuestionId": 94475,
+      "Explanation": "A unique index ensures that all values of the indexed field(s) are unique across the documents of a collection, preventing duplicate values.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens when you create a multikey index on an array field in a MongoDB document?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The array is converted into a set"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An index entry is created for each element of the array"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The index is only created on the first element"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It results in an error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 7161,
+      "QuestionTypeId": 0,
+      "QuestionId": 94476,
+      "Explanation": "When you create a multikey index on an array field, each element of the array is indexed separately, allowing for efficient querying of array contents.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following options is used to drop an index in MongoDB?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "db.collection.remove()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "db.collection.dropIndex()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "db.collection.deleteIndex()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "db.collection.destroyIndex()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 7161,
+      "QuestionTypeId": 0,
+      "QuestionId": 94477,
+      "Explanation": "The &apos;db.collection.dropIndex()&apos; method is used to drop a specified index from a MongoDB collection.",
+      "Answer": "B",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

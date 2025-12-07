@@ -1,0 +1,2526 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Which function is commonly used to utilize the HTTP module in Node.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "startServer()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "initServer()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "createServer()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "handleHTTP()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 88072,
+      "Explanation": "<span id=\"explanation88072\">createServer(): This function is used to create an HTTP server instance in Node.js. It takes a callback function as an argument, which is executed whenever a request is received by the server.<br>startServer(), initServer(), and handleHTTP() are not standard functions in the Node.js HTTP module. </span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "While not built into Express, what is the primary purpose of using the fs.stat function in the context of an Express application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To define routes for handling different URL paths."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To validate user input for security purposes."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To gather information about a file before performing operations like reading or writing."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To manage user sessions and authentication data."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 88845,
+      "Explanation": "<span id=\"explanation88845\">The fs.stat function takes a file path as an argument and returns a Stats object containing information about the file. In an Express application, you might use fs.stat for various purposes related to files</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is most accurate regarding module.exports in Node.js modules?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It's a deprecated method for exporting values from a module."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It's a reference to a global object that holds all exported values."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It's the primary mechanism for defining what can be accessed from outside the module file."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It allows exporting multiple functions and variables simultaneously."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 88846,
+      "Explanation": "<span id=\"explanation88846\">In Node.js, module.exports is the central concept for controlling what elements (functions, variables, objects) are made available for use in other modules. You assign values to module.exports to determine what gets exported.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you correctly import and use the functionalities defined in a module named testfile.js within your Node.js application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "require('testfile.js')"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "render('./testfile.js')"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "include('./testfile.js')"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "require('./testfile.js')"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 88847,
+      "Explanation": "<span id=\"explanation88847\">In Node.js, the require() function is the cornerstone for importing modules.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What are the types of callback functions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Blocking"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Non blocking"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Semi-blocking"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both a and b"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 85535,
+      "Explanation": "<span id=\"explanation85535\">Callback functions may be blocking in nature or non-blocking. There is nothing like semi-blocking. </span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method appends specified content to a file.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "fs.appendFile()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "fs.open()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "fs.writeFile()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 85536,
+      "Explanation": "<span id=\"explanation85536\">The fs.appendFile() method appends specified content to a file. If the file does not exist, the file will be created</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "var fs = require('fs');<br>fs.readFile(\"readme.txt\", \"utf8\", function(err, content) {<br>if (err) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return console.log(err);<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp; console.log(content.to);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; });<br>console.log('Reading file...');<br>What is the output of running above code if the file content is<br>This is simple file content",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Reading file...<br>This is simple file content"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "This is simple file content<br>Reading file..."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "different in different execution"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "can not say"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 85549,
+      "Explanation": "<span id=\"explanation85549\">--</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is used for exposing a Node.js module for use in other files?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "module"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "module.exports"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "expose"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "exports, expose"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 88069,
+      "Explanation": "<span id=\"explanation88069\">require(): This function is used to import modules in Node.js. It is used in the consuming file to bring in functionality from other modules.<br>module.exports: This property is used to expose functionality from a Node.js module for use in other files. Anything assigned to module.exports becomes the output of the module when it is required elsewhere. </span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a default module in Node.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "fs (File System)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "http (HTTP)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "os (Operating System)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "request (HTTP client)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 87952,
+      "Explanation": "<span id=\"explanation87952\">The request module is not a default module in Node.js. It is a popular third-party module used for making HTTP requests. The default modules in Node.js include fs for file system operations, http for creating HTTP servers and clients, and os for operating system-related functionality.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Third-party packages can be install/update/delete using ________.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Node Package Manager"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Node.exe"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Module.exports"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "REPL"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 77668,
+      "Explanation": "<span id=\"explanation77668\">Node Package Manager can be used to install,update ir delete third-party packages.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about EventEmitter.emit property in node JS application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "emit property is used to locate an event handler."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": ". emit property is used to bind a function with the event."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "emit property is used to fire an event."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 70944,
+      "Explanation": "<span id=\"explanation70944\">emit is used to fire an event explicitly</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "NPM installs any dependency in the local mode which refers to the package installation in ____________ directory lying in the folder where Node application is present.&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "system"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "node_modules"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "users"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "node_packages"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 64651,
+      "Explanation": "<span id=\"explanation64651\">NPM installs any dependency in the local mode which refers to the package installation in&nbsp; node_modules directory lying in the folder where Node application is present.&nbsp; </span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>The Node.js modules can be exposed using _________.</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "module.expose"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "module"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "module.exports"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 64616,
+      "Explanation": "<span id=\"explanation64616\">To expose modules in Node.js we need to use module.exports</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does this code output?<br>// greet.js<br>module.exports = {<br>&nbsp; hello: () =&gt; 'Hi there!',<br>&nbsp; bye: () =&gt; 'Goodbye!'<br>};<br><br>// app.js<br>const greet = require('./greet');<br>console.log(greet.hello());<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "undefined"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hi there!"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Goodbye!"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 64628,
+      "Explanation": "greet.hello() calls the exported hello function, which returns &apos;Hi there!&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Simple or complex functionality organized in a single or multiple JavaScript files which can be reused throughout your Node.js application is called ________",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Module"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Library"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Package"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Function"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 64595,
+      "Explanation": "<span id=\"explanation64595\">Simple or complex functionality organized in a single or multiple JavaScript files which can be reused throughout your Node.js application is called Module.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following core module is used to create a web server in Node.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "fs"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "url"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "connect"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<div>http</div>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 64596,
+      "Explanation": "<span id=\"explanation64596\">http core module is used to create a web server in Node.js</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following class is used to create and consume custom events in Node.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "EventEmitter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Events"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "NodeEvent"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<div>None of the above</div>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 64597,
+      "Explanation": "<span id=\"explanation64597\">EventEmitter&nbsp; class is used to create and consume custom events in Node.js</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following correctly describes Node.js modules?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Modules in Node.js import code but do not export any functionalities."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Node.js modules are independent pieces of code, each with its own context."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Node.js modules share a global namespace, allowing variables to be accessed everywhere."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A Node.js module can only be used once in a project."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97232,
+      "Explanation": "Node.js modules are self-contained chunks of code with their own context. They export specific functionalities and do not interfere with each other\u2019s namespaces, promoting modularity.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you include a Node.js module in your application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using the &#39;import&#39; statement with the module name directly."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using &#39;require()&#39; to load the module."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Simply including the module file in the HTML head tag."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By assigning the module to a DOM element in the JavaScript."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97233,
+      "Explanation": "In Node.js, modules are included using the &#39;require()&#39; function, which loads and returns the module&#39;s exports.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the &#39;exports&#39; object used for in a Node.js module?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It sets an entry point for the Node.js application."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It allows private variables to be accessed globally."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is used to define the API of a module, exposing parts of the module to other files."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It duplicates the module&#39;s functionality."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97234,
+      "Explanation": "The &#39;exports&#39; object is used to define what parts of a module are accessible to other modules or files in a Node.js application.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about npm is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "npm is a JavaScript module bundler for Node.js."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "npm is only used for publishing private modules."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "npm is a package manager that allows users to install and manage Node.js dependencies."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "npm stands for &#39;Node Python Manager&#39;."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97235,
+      "Explanation": "npm, or Node Package Manager, is a tool used to install and manage dependencies for Node.js applications.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the &#39;package.json&#39; file in a Node.js project?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is used to describe the project&#39;s CSS styling."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It holds the project&#39;s configuration for database connections."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It provides metadata about the project, including dependencies and scripts."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It automatically compiles the project&#39;s JavaScript code."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97236,
+      "Explanation": "The &#39;package.json&#39; file contains information about the Node.js project such as the project&#39;s metadata, scripts, and dependencies required for the application.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of &#39;module.exports&#39; in a Node.js module?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To run the module in isolation and prevent it from being imported"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To define what a module should expose to other files"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To specify the version of the Node.js runtime that the module supports"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To handle asynchronous errors within the module"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97237,
+      "Explanation": "&#39;module.exports&#39; is used to determine what parts of a module&#39;s code can be accessed from outside the module when it is required by another file.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you import functions or data from another module in Node.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using the &#39;import&#39; keyword followed by the module name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using the &#39;require()&#39; function with the module name as an argument"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using the &#39;include&#39; keyword with the module path"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using the &#39;fetch()&#39; function with the module URL"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97238,
+      "Explanation": "In Node.js, the &#39;require()&#39; function is used to load modules by passing the path or name of the module that you want to import.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a correct syntax for exporting a single function from a module?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "exports = function() { /*...*/ };"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "module.function = exports() { /*...*/ };"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "module.exports = function() { /*...*/ };"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "exports.function() = { /*...*/ };"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97239,
+      "Explanation": "To export a single function, it is set directly on &#39;module.exports&#39;, allowing other modules to require and use the function.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What value does the &#39;require()&#39; function return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An array containing the module&#39;s exports"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The path to the required module"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An object containing the module&#39;s properties and methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The definition of the module&#39;s dependencies"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97240,
+      "Explanation": "The &#39;require()&#39; function returns the object exported by the module, which includes all properties and methods defined in &#39;module.exports&#39;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement correctly describes the &#39;exports&#39; object in Node.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&#39;exports&#39; is a global object available in all Node.js modules"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&#39;exports&#39; is a reference to &#39;module.exports&#39; and can be used to add properties to it"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&#39;exports&#39; is used to manage the lifecycle of a module"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&#39;exports&#39; allows conditional module loading based on environment variables"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97241,
+      "Explanation": "In Node.js, &#39;exports&#39; is an alias of &#39;module.exports&#39; at the start, allowing properties to be added to it. However, assigning a new value directly to &#39;exports&#39; does not affect &#39;module.exports&#39;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does &#39;npm&#39; stand for in the context of web programming?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Node Package Manager"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Network Protocol Manager"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Native Programming Model"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Node Protection Module"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97242,
+      "Explanation": "npm stands for &#39;Node Package Manager&#39;, a tool used to manage packages or libraries for Node.js applications.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command is used to initialize a new npm project?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "npm init"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "npm start"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "npm create"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "npm new"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97243,
+      "Explanation": "<span id=\"explanation97243\" style=\"color:blue\">The &apos;npm init&apos; command is used to initialize a new project with a package.json file.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the package.json file in an npm project?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To store the project&#39;s source code"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To configure the network settings for npm"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To list the details about the project and its dependencies"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To maintain version control for the project"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97244,
+      "Explanation": "The package.json file contains the project&#39;s metadata such as name, version, dependencies, and scripts.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which npm command is used to install all dependencies listed in a package.json file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "npm install-all"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "npm load"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "npm fetch"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "npm install"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97245,
+      "Explanation": "Using &#39;npm install&#39; will install all dependencies specified in the package.json file.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you specify a development-only dependency in npm?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "npm install --global"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "npm install --save"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "npm install --save-dev"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "npm install --local"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97246,
+      "Explanation": "&#39;npm install --save-dev&#39; is used to specify that a dependency is needed only for development and not in production.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Where are the local npm packages installed by default?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "In the root directory"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "In the /node_modules folder"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "In the system&#39;s temporary directory"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "In the user&#39;s home directory"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97247,
+      "Explanation": "By default, local npm packages are installed in the /node_modules folder within the project directory.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What flag would you use with npm to update a package to the latest version?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "--upgrade"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "--latest"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "--save-latest"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "--update"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97248,
+      "Explanation": "Using &#39;npm install package-name@latest&#39; or &#39;npm update package-name&#39; with the --latest flag updates to the latest available version.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command shows you the active configuration of npm?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "npm view"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "npm config"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "npm config list"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "npm show"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97249,
+      "Explanation": "The &#39;npm config list&#39; command displays the current configuration settings of npm.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of the &#39;package.json&#39; file in a Node.js project?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To execute JavaScript files"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To provide metadata about the project"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To compile TypeScript into JavaScript"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To manage environment variables"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97250,
+      "Explanation": "The &#39;package.json&#39; file provides metadata about the Node.js project, including information about dependencies, scripts, and other project settings.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which field in &#39;package.json&#39; specifies the starting point of a Node.js application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "dependencies"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "main"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "scripts"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "start"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97251,
+      "Explanation": "The &#39;main&#39; field in &#39;package.json&#39; specifies the entry point of the Node.js application, typically the starting JavaScript file.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you install all dependencies listed in &#39;package.json&#39;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "node install"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "npm update"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "npm install"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "node_modules install"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97252,
+      "Explanation": "Running &#39;npm install&#39; in the terminal installs all dependencies listed under the &#39;dependencies&#39; and &#39;devDependencies&#39; sections of &#39;package.json&#39;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What field in &#39;package.json&#39; specifies npm packages required only for development?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "devModules"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "development"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "devDeps"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "devDependencies"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97253,
+      "Explanation": "The &#39;devDependencies&#39; field lists packages that are only necessary for development and should not be included in the production build.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which field in &#39;package.json&#39; can be used to define custom commands?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "commands"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "scripts"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "operations"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "tasks"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97254,
+      "Explanation": "The &#39;scripts&#39; field in &#39;package.json&#39; defines custom npm commands that can be run with &#39;npm run &lt;script-name&gt;&#39;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In &#39;package.json&#39;, how would you specify that your module requires Node.js version 12 or higher?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&quot;engines&quot;: { &quot;node&quot;: &quot;&gt;12&quot; }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&quot;nodeVersion&quot;: &quot;&gt;=12&quot;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&quot;requirements&quot;: { &quot;node&quot;: &quot;^12.0.0&quot; }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&quot;engine&quot;: { &quot;node&quot;: &quot;12+&quot; }"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97255,
+      "Explanation": "The &#39;engines&#39; field is used to specify which versions of Node.js are compatible with your module. The correct format to specify version 12 or higher is &quot;&gt;12&quot;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What tool uses the &#39;package.json&#39; to determine and install the package dependencies?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Bower"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Grunt"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "npm"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Webpack"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97256,
+      "Explanation": "npm (Node Package Manager) uses &#39;package.json&#39; to manage and install package dependencies specified within the file.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a valid field in the &#39;package.json&#39; file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "contributors"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "license"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "authors"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "keywords"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97257,
+      "Explanation": "The &#39;authors&#39; field is not a standard or common field in &#39;package.json&#39;. Contributors are typically listed under the &#39;contributors&#39; field, making &#39;authors&#39; invalid.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What field in &#39;package.json&#39; specifies the license for the project?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "license"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "type"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "permissions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "agreement"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97258,
+      "Explanation": "The &#39;license&#39; field specifies the software license of the project, indicating how it can be used or distributed.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a package is installed as a development dependency, under which field does it appear in &#39;package.json&#39;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "dependencies"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "peerDependencies"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "devDependencies"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "optionalDependencies"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97259,
+      "Explanation": "A package installed as a development dependency appears under the &#39;devDependencies&#39; field in &#39;package.json&#39;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of the package-lock.json file in a Node.js project?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To lock the package manager version"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To specify the metadata for packages"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To record the exact versions of installed dependencies"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To define environment configurations"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97260,
+      "Explanation": "The package-lock.json file is automatically generated for any operations where npm modifies either the node_modules tree or package.json. It records the exact versions of installed packages and their dependencies, ensuring that installs are consistent across different setups.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When is the package-lock.json file automatically updated?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Every time a script is run"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When changes are made to package.json"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Every time a developer logs in"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only during a Node.js version upgrade"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97261,
+      "Explanation": "The package-lock.json file is automatically updated whenever operations that affect the dependencies (such as npm install, npm update) are performed, especially when changes are made to package.json.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does package-lock.json affect the npm install command?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It prevents all installations"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It ensures the most recent versions are installed"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It enforces the installation of exact versions recorded"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It allows installation of older versions only"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97262,
+      "Explanation": "During an npm install, npm will respect the versions listed in package-lock.json to reproduce the exact dependency tree described, ensuring a consistent setup across different machines.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you delete the package-lock.json file and run npm install?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Npm will fail to install any dependencies"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Npm will generate a new package-lock.json with potentially different versions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Npm will uninstall all packages"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Npm will ignore the node_modules directory"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97263,
+      "Explanation": "If the package-lock.json file is removed, running npm install will regenerate it by resolving dependencies based on the version ranges specified in package.json, which might lead to different versions being installed.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true about maintaining package-lock.json in version control systems?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It should never be committed to version control"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It should be committed to ensure consistent dependency versions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It only needs to be committed if using npm 7 or higher"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It should be manually edited for important changes"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97264,
+      "Explanation": "The package-lock.json file should be committed to version control systems to ensure that the same dependency versions are installed whenever someone runs npm install, providing consistency in collaborative environments.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What file is primarily used to manage package dependencies in a Node.js project?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "package.json"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "index.js"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "server.js"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "node_modules.json"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97265,
+      "Explanation": "<span id=\"explanation97265\">The package.json file is used to manage package dependencies and other metadata in a Node.js project.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command is used to install all dependencies listed in the package.json?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "npm run"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "npm install"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "npm build"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "npm start"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97266,
+      "Explanation": "<span id=\"explanation97266\">The npm install command installs all the dependencies listed in the package.json file.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What section of the package.json file lists both the production and development dependencies?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "scripts"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "main"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "dependencies"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "versions"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97267,
+      "Explanation": "<span id=\"explanation97267\">The dependencies section of package.json lists packages required for the project, regardless of environment.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What command would you use to install a package as a development dependency?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "npm install &lt;package&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "npm install &lt;package&gt; --optional"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "npm install &lt;package&gt; --save-dev"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "npm install &lt;package&gt; --save-prod"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97268,
+      "Explanation": "<span id=\"explanation97268\">Using --save-dev installs a package as a development dependency in the node_modules directory.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a token used in version numbers to indicate compatibility in semver?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "#"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "^"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "+"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97269,
+      "Explanation": "<span id=\"explanation97269\">The ^ token is used in semver to specify that updates are allowed for minor releases (e.g., ^1.0.0 allows 1.x.x).</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you update a package to the latest version, according to the package.json file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "npm upgrade &lt;package&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "npm update &lt;package&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "npm latest &lt;package&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "npm version &lt;package&gt;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97270,
+      "Explanation": "<span id=\"explanation97270\">The npm update &lt;package&gt; command updates the specified package to the latest version that satisfies the specified semantic versioning range in the package.json file.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which package manager is NOT directly associated with Node.js by default?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "npm"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "yarn"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "bower"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "npx"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97271,
+      "Explanation": "<span id=\"explanation97271\">Bower is not directly associated with Node.js; it is a separate package manager primarily used for managing front-end dependencies.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the 'peerDependencies' field in package.json?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To list packages needed for testing"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To specify compatible package versions for the project"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To ensure that a compatible version of a package is installed at the root"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To log previous versions of dependencies"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97272,
+      "Explanation": "<span id=\"explanation97272\">peerDependencies are used to declare the package version for plugins that need to be installed at the project root.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What command can be used to create a new package.json file interactively?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "npm init"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "npm create"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "npm setup"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "npm new"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97273,
+      "Explanation": "<span id=\"explanation97273\">The npm init command is used to interactively create a new package.json file by prompting the user for input.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a package is listed under 'optionalDependencies', what happens if its installation fails?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The npm install command fails."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The installation continues, skipping the package."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A warning is logged, and installation continues."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All installations are stopped."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97274,
+      "Explanation": "<span id=\"explanation97274\">Packages listed under &apos;optionalDependencies&apos; can fail to install without stopping the overall npm install process; npm will log a warning.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a key difference between local and global npm packages?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Local packages affect the entire system, while global packages affect only a specific project."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Global packages are installed in a project&#39;s local directory, while local packages are installed system-wide."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Local packages are specified in the &#39;dependencies&#39; section of package.json, while global packages are not."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Local packages cannot be executed from the command line, while global packages can."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97275,
+      "Explanation": "Local packages are installed within a project and typically listed in the &#39;dependencies&#39; section of package.json, whereas global packages are installed system-wide and not listed in any specific project&#39;s package.json.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which npm command installs a package locally?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "npm install -g &lt;package-name&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "npm local &lt;package-name&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "npm install &lt;package-name&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "npm local-install &lt;package-name&gt;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97276,
+      "Explanation": "The command &#39;npm install &lt;package-name&gt;&#39; is used to install a package locally within the current project directory.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When would you typically use a globally installed npm package?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When you need to manage versions of a package across different projects."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When you need to use a package as a command-line tool across your system."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When your package.json requires a global dependency."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When a package is too large to install locally."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97277,
+      "Explanation": "Globally installed npm packages are typically used when the package provides a command-line tool that you want to be accessible from anywhere on your system.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which directory is commonly used to store globally installed npm packages?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "/node_modules/global"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "/usr/local/lib/node_modules"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "/global_node_modules"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "/usr/global/node_modules"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97278,
+      "Explanation": "Globally installed npm packages are commonly stored in the &#39;/usr/local/lib/node_modules&#39; directory on Unix-based systems.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you list all globally installed npm packages on your system?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "npm list -g"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "npm ls local"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "npm global list"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "npm show -g"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97279,
+      "Explanation": "The command &#39;npm list -g&#39; (or &#39;npm ls -g&#39;) is used to list all globally installed npm packages on your system.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to read the contents of a file in a non-blocking way using the Node.js File System module?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "fs.readFileSync"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "fs.readFile"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "fs.read"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "fs.readSync"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97280,
+      "Explanation": "The method &#39;fs.readFile&#39; is used for non-blocking asynchronous file reading in Node.js, whereas &#39;fs.readFileSync&#39; is used for blocking operations.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Node.js, which method from the File System module is used to rename a file asynchronously?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "fs.renameFile"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "fs.renameSync"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "fs.renameAsync"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "fs.rename"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97281,
+      "Explanation": "In Node.js, &#39;fs.rename&#39; is used to rename a file asynchronously, while &#39;fs.renameSync&#39; would be the synchronous, blocking equivalent.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the &#39;fs.unlink&#39; method do in the Node.js File System module?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It locks a file for editing"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It reads the contents of a file"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It deletes a file"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It copies a file"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97282,
+      "Explanation": "The &#39;fs.unlink&#39; method is used to delete a file in a non-blocking manner in Node.js.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following Node.js File System methods can be used to monitor a file for changes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "fs.watch"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "fs.monitor"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "fs.observe"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "fs.track"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97283,
+      "Explanation": "The &#39;fs.watch&#39; method is used to watch for changes in a file or directory in Node.js, allowing you to execute a callback function when changes occur.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What argument does the &#39;fs.writeFile&#39; method NOT require when writing data to a file in Node.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Data"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "File Path"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "File Descriptor"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Callback Function"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97284,
+      "Explanation": "The &#39;fs.writeFile&#39; method requires a file path, data to write, and a callback function but does not require a file descriptor.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Node.js file system module, which method would you use to read a file asynchronously?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "fs.readFileSync()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "fs.readFileAsync()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "fs.readFile()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "fs.readSync()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97285,
+      "Explanation": "The fs.readFile() method is used to read files asynchronously in Node.js, while fs.readFileSync() is used for synchronous file reading.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary advantage of using asynchronous file methods in Node.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They are faster than synchronous methods."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They don&#39;t rely on callback functions."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They prevent blocking the main thread."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They are easier to debug."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97286,
+      "Explanation": "Asynchronous methods in Node.js do not block the main event loop, which allows other operations to continue executing without waiting for the file system operations to complete.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods would you use for deleting a file synchronously in Node.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "fs.removeFile()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "fs.unlinkSync()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "fs.deleteFileSync()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "fs.unlink()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97287,
+      "Explanation": "The fs.unlinkSync() method is used to delete files synchronously in Node.js, as opposed to fs.unlink() which is used for asynchronous deletion.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does Node.js handle errors in asynchronous file operations?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Errors are returned directly as function results."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Errors are ignored by the system."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Errors are passed to callbacks or promises."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Errors are logged automatically to the console."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97288,
+      "Explanation": "In Node.js, errors from asynchronous file operations are typically passed as the first argument to callbacks or rejected promises, allowing developers to handle them appropriately.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method would you use to append data to a file without blocking the execution in Node.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "fs.writeFile()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "fs.appendFileSync()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "fs.writeSync()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "fs.appendFile()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97289,
+      "Explanation": "The fs.appendFile() method is designed to append data to a file asynchronously, allowing other operations to continue without waiting for the append action to complete.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which object is used to handle HTTP requests in Node.js HTTP module?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "http.Server"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "http.Client"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "http.Request"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "http.IncomingMessage"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97290,
+      "Explanation": "The http.IncomingMessage object is an instance of Readable Stream used to handle HTTP requests in Node.js.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What method is used to create an HTTP server with the Node.js HTTP module?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "http.openServer"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "http.createServer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "http.startServer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "http.initServer"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97291,
+      "Explanation": "http.createServer method is used to create a new HTTP server instance in Node.js.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When an HTTP server is created using Node.js HTTP module, which event is emitted each time a connection is made?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "open"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "connect"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "request"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "start"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97292,
+      "Explanation": "The &#39;request&#39; event is emitted by the server each time a request is made.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in the Node.js HTTP module once called will not allow to write more data on the response?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "res.send"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "res.respond"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "res.end"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "res.write"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97293,
+      "Explanation": "Once res.end() is called, you cannot write more data.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What status code is typically set to indicate a successful HTTP request in Node.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "100"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "200"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "300"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "400"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97294,
+      "Explanation": "HTTP status code 200 is a standard response for successful HTTP requests.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in the Node.js HTTP module completes the HTTP response?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "res.send"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "res.close"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "res.end"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "res.finish"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97295,
+      "Explanation": "The res.end method signals that the response has been completed and closes the connection.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the conventional listening port though not default for an HTTP server created with the Node.js HTTP module?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "80"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3000"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "8080"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "443"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97296,
+      "Explanation": "<span id=\"explanation97296\" style=\"color:blue\">Although a server can be set to listen on any port, 8080 is commonly used as a default for development purposes.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which module is commonly used with the HTTP module for parsing incoming request bodies?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "url"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "querystring"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "express"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "body-parser"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 97297,
+      "Explanation": "The body-parser module is often used in conjunction with the HTTP module to parse incoming request bodies in various formats.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method parses a URL string into an object?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "url.stringify()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "url.format()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "url.resolve()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "url.parse()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 717,
+      "QuestionTypeId": 0,
+      "QuestionId": 102402,
+      "Explanation": "url.parse() breaks a URL string into its components like protocol, host, pathname, etc..",
+      "Answer": "D",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

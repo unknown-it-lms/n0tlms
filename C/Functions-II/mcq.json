@@ -1,0 +1,2290 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "void display() {<br>&nbsp; &nbsp; &nbsp; &nbsp; printf(\"C \");<br>}<br>int main() {<br>&nbsp; &nbsp; display();<br>&nbsp; &nbsp; display();<br>&nbsp; &nbsp; return 0;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "No output"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "C"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C C"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102772,
+      "Explanation": "<span id=\"explanation102772\" style=\"color:blue\"><span id=\"explanation102772\" style=\"color:blue\"><span id=\"explanation102772\" style=\"color:blue\">Display function called twice with space after letter C</span></span></span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens when a function calls itself recursively too many times?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RAM increases"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "CPU speed increases"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Stack overflow"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Nothing happens"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102773,
+      "Explanation": "Each recursive call uses stack memory. Too many calls \u2192 stack overflow.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which is true for formal parameters?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They are global variables"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They exist only inside the function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They are passed by reference"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They must be pointers"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102764,
+      "Explanation": "<span id=\"explanation102764\" style=\"color:blue\">Write the explanation here</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct syntax to declare a function in C?<br>Answer: A",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": " return_type function_name(parameters);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "function_name return_type(parameters);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "declare function(return_type) parameters;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "function(return_type, parameters);<br>"
+        },
+        {
+          "OptionId": "E",
+          "OptionText": "Option E"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102765,
+      "Explanation": "<span id=\"explanation102765\" style=\"color:blue\">Write the explanation here</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;stdio.h&gt;<br>int fun() {<br>&nbsp; &nbsp; static int x = 5;<br>&nbsp; &nbsp; x++;<br>&nbsp; &nbsp; return x;<br>}<br>int main() {<br>&nbsp; &nbsp; printf(\"%d \", fun());<br>&nbsp; &nbsp; printf(\"%d \", fun());<br>&nbsp; &nbsp; return 0;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "6 6"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "6 7"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "5 5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "7 7"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102766,
+      "Explanation": "<span id=\"explanation102766\" style=\"color:blue\">static variable retain the&nbsp; values.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about call-by-value in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Actual values can be modified by function"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only copies of values are passed to the function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Address of variable is passed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102767,
+      "Explanation": "<font color=\"#0000ff\">Call by value will never change the actual value present in the memory of a variable since copy of a variable is used and not the actual variable</font>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A function prototype is used to:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Allocate memory"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Declare variables"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Inform compiler about function name, return type, and parameters"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Execute a function"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102768,
+      "Explanation": "<p data-start=\"430\" data-end=\"696\"><span id=\"explanation102768\" style=\"color:blue\">A proper function prototype must include the <strong data-start=\"512\" data-end=\"527\">return type</strong>, <strong data-start=\"529\" data-end=\"546\">function name</strong>, and <strong data-start=\"552\" data-end=\"575\">types of parameters</strong>.</span></p>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the following code snippet?<br/>#include &lt;stdio.h&gt;<br/>int factorial(int n) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;if (n &lt;= 1) return 1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return n * factorial(n - 1);<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d&quot;, factorial(4));<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "24"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "12"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "16"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102939,
+      "Explanation": "The function calculates the factorial of 4, which is 4 * 3 * 2 * 1 = 24.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider the following code snippet. What will be the output?<br/>#include &lt;stdio.h&gt;<br/>void recurse(int n) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;if (n &gt; 0) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d &quot;, n);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;recurse(n - 1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;recurse(3);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "3 2 1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1 2 3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3 2 1 0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "0 1 2 3"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102940,
+      "Explanation": "The recurse function prints the value of n and then calls itself with n-1 until n is not greater than 0.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output for the below code?<br/>#include &lt;stdio.h&gt;<br/>int fibonacci(int n) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;if (n &lt;= 1) return n;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return fibonacci(n - 1) + fibonacci(n - 2);<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d&quot;, fibonacci(5));<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "8"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102941,
+      "Explanation": "fibonacci(5) returns 5 (the sequence is 0, 1, 1, 2, 3, 5).",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the following function compute?<br/>#include &lt;stdio.h&gt;<br/>int recurse(int n) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;if (n &lt;= 0)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return n + recurse(n - 1);<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d&quot;, recurse(5));<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Sum of numbers from 1 to n"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Factorial of n"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Fibonacci of n"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Product from 1 to n"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102942,
+      "Explanation": "The function recurse computes the sum of numbers from 1 to 5: 1 + 2 + 3 + 4 + 5 = 15.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the following code snippet, what is the base case for the recursion?<br/>#include &lt;stdio.h&gt;<br/>void printNumbers(int n) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;if (n == 0)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>&nbsp;&nbsp;&nbsp;&nbsp;printNumbers(n - 1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d &quot;, n);<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;printNumbers(4);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "n == 0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "n &lt; 0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "n &gt; 1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "n != 0"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102943,
+      "Explanation": "The base case is when n == 0, at which point the recursion stops.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the time complexity of the Fibonacci function using recursion?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "O(n)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "O(log n)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "O(2^n)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "O(n^2)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102944,
+      "Explanation": "The time complexity of the recursive Fibonacci function is O(2^n) due to overlapping subproblems.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does the recursion depth influence a program using recursion?<br/>#include &lt;stdio.h&gt;<br/>void recurse(int n) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;if (n &gt; 0) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;recurse(n-1);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d &quot;, n);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;recurse(10000);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "May cause a stack overflow"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Has no effect"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Improves performance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Complicates base cases"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102945,
+      "Explanation": "Exceeding a certain recursion depth can lead to a stack overflow, especially with deep recursion.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following tasks is not suitable for recursion?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Computing factorial"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Calculating Fibonacci"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Binary Search"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Counting array elements iteratively"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102946,
+      "Explanation": "Counting array elements does not naturally lend itself to recursion when an iterative approach is simple and efficient.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output for the code snippet below?<br/>#include &lt;stdio.h&gt;<br/>void recurse(int n) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;if (n &gt; 0) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d &quot;, n);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;recurse(n / 2);<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;recurse(8);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "8 4 2 1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4 2 1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "8 4 2 1 0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102947,
+      "Explanation": "The function prints the number and calls itself with n/2 until n is not greater than 0.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the concept depicted by the direct calling of a function from within its own definition?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Tail Recursion"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Head Recursion"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Direct Recursion"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Indirect Recursion"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102948,
+      "Explanation": "Direct recursion occurs when a function calls itself directly.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the concept of recursion where the recursive call is the last statement executed by the function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Tail Recursion"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Head Recursion"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Body Recursion"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Base Recursion"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102949,
+      "Explanation": "Tail recursion occurs when the recursive call is the last executed operation in the function.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C Programming, which problem could arise due to excessive recursion?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Memory Leak"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Stack Overflow"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Segmentation Fault"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Buffer Overflow"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102950,
+      "Explanation": "Excessive recursion can result in stack overflow due to consuming excessive stack space.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a recursive function, where are local variables stored?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Heap"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Static"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Program Code Segment"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Stack"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102951,
+      "Explanation": "Local variables in recursive functions are stored in the stack, each call has its own set of local variables.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When you have mutual recursion between functions, what is it referred to as?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Chain Recursion"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Indirect Recursion"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Direct Recursion"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Tail Recursion"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102952,
+      "Explanation": "Mutual or indirect recursion occurs when two or more functions call each other recursively.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of problem is better suited for recursive solutions than iterative ones?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Fibonacci"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Binary Search"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Tower of Hanoi"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Counting array elements"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102953,
+      "Explanation": "Problems like Tower of Hanoi are inherently recursive and are better solved using recursive solutions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following C programming concepts does recursion heavily depend upon?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Conditional Statements"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Pointers"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Loops"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Stack"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102954,
+      "Explanation": "Recursion depends upon the call stack for managing function calls and returns.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Identify the error in the recursive Fibonacci function below:<br/>#include &lt;stdio.h&gt;<br/>int fibonacci(int n) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;if (n &lt;= 0) return 0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;if (n == 1) return 1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return fibonacci(n - 1) + fibonacci(n - 2);<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d&quot;, fibonacci(-5));<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Incorrect base case"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Infinite Recursion"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Incorrect output for negative numbers"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "There is no error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102955,
+      "Explanation": "There is no handling in the fibonacci function for negative inputs, leading to logical error, returning 0.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What major advantage does recursion provide in solving complex problems?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Increases execution speed"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Easier to implement than loops"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Simplifies the coding of nested structures"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Reduces the program&#39;s memory footprint"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102956,
+      "Explanation": "Recursion simplifies the coding of nested structures such as traversing trees or graphs where iterative solutions are convoluted.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the scope of a local variable declared inside a function in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Throughout the program"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Throughout the file"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only within the function"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Within the function and its called sub-functions"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102957,
+      "Explanation": "Local variables have a scope that is limited to the function where they are declared.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider the following code snippet: <br/> void fun() {<br/>&nbsp;&nbsp;&nbsp;&nbsp; int x = 10;<br/> }<br/> int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp; fun();<br/>&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;%d&quot;, x);<br/> }<br/> What will be the output?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Garbage value"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compile-time error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "0"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102958,
+      "Explanation": "The variable &#39;x&#39; is local to the function &#39;fun&#39; and cannot be accessed in &#39;main&#39;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if a local variable in a C function is not initialized?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is automatically set to zero"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Causes a compile-time error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Contains an indeterminate value (garbage)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It assumes a random value from the memory"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102959,
+      "Explanation": "Local variables are not initialized by default and will have indeterminate values.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given the code snippet: <br/> void demo() {<br/>&nbsp;&nbsp;&nbsp;&nbsp; int count = 0;<br/>&nbsp;&nbsp;&nbsp;&nbsp; count++;<br/>&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;Count: %d<br/>&quot;, count);<br/> }<br/> <br/> What will be printed if demo() is called twice consecutively?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Count: 0 Count: 0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Count: 1 Count: 1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Count: 0 Count: 1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Count: 1 Count: 2"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102960,
+      "Explanation": "Each call to demo() initializes &#39;count&#39; to 0, so it prints 1 every time it is called.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What keyword is used to declare a variable local to a block inside a function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "register"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "auto"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "extern"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102961,
+      "Explanation": "The &#39;auto&#39; keyword is used by default for local variables within a block, though it is rarely explicitly mentioned.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can local variables in a function maintain their values across function calls in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By declaring them as global"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using the static keyword"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using the const keyword"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By using the extern keyword"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102962,
+      "Explanation": "&#39;static&#39; local variables retain their value between successive calls.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the context of local variables, what does the term &#39;stack memory&#39; refer to?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Memory allocated during compile time"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Memory allocated for global variables"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Memory dynamically allocated using malloc()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Memory allocated for function call management"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102963,
+      "Explanation": "Local variables are stored in the stack memory which is managed during function calls.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default initial value of an uninitialized local variable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The memory location value"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "NULL"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Depends on the compiler"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102964,
+      "Explanation": "Uninitialized local variables contain garbage data, i.e., whatever is in the memory location.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the result of the following code snippet? <br/> void example() {<br/>&nbsp;&nbsp;&nbsp;&nbsp; int num = 5;<br/>&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;%d &quot;, num);<br/> }<br/> <br/> int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp; example();<br/>&nbsp;&nbsp;&nbsp;&nbsp; example();<br/>&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br/> }<br/>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5 5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "5 10"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "10 10"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "5 0"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102965,
+      "Explanation": "Each call to &#39;example()&#39; re-declares and initializes &#39;num&#39; to 5.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider the function: <br/> void increment() {<br/>&nbsp;&nbsp;&nbsp;&nbsp; int x = 0;<br/>&nbsp;&nbsp;&nbsp;&nbsp; x++;<br/>&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;%d &quot;, x);<br/> }<br/> <br/> If increment() is called three times, what will be the output?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1 2 3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1 1 1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0 1 2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Undefined behavior"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102966,
+      "Explanation": "Each function call initializes &#39;x&#39; to 0 and then increments it to 1.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C, which of the following can be used to declare a local variable efficiently for use within a loop?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "dynamic"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "global"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "register"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "static"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102967,
+      "Explanation": "&#39;register&#39; is a hint to the compiler to store the variable in a CPU register for efficient access during a loop.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why should local variables be preferred over global variables?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They are easier to understand with smaller scope"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They are automatically more efficient."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Global variables can never be used in functions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Local variables can be reused across different functions."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102968,
+      "Explanation": "Local variables limit the scope and potential for unwanted side effects, enhancing understandability.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following code? <br/> int global = 10;<br/> void function() {<br/>&nbsp;&nbsp;&nbsp;&nbsp; int global = 20;<br/>&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;%d &quot;, global);<br/> }<br/> int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp; function();<br/>&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;%d&quot;, global);<br/>&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br/> }<br/>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "20 10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10 20"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "20 20"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "10 10"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102969,
+      "Explanation": "The local &#39;global&#39; variable in &#39;function()&#39; shadows the global variable.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given the following code snippet, what will be the output? <br/> void foo() {<br/>&nbsp;&nbsp;&nbsp;&nbsp; int a = 10;<br/>&nbsp;&nbsp;&nbsp;&nbsp; static int b = 20;<br/>&nbsp;&nbsp;&nbsp;&nbsp; a += 5;<br/>&nbsp;&nbsp;&nbsp;&nbsp; b += 5;<br/>&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;%d %d\\n&quot;, a, b);<br/> }<br/> int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp; foo();<br/>&nbsp;&nbsp;&nbsp;&nbsp; foo();<br/>&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br/> }<br/>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "15 25<br/>15 25"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "15 25<br/>15 30"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "15 25<br/>15 25<br/>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "15 30<br/>15 35"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102970,
+      "Explanation": "&#39;a&#39; is reinitialized on every call, while &#39;b&#39; retains its value and gets incremented on each call.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which memory segment are local variables typically stored?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Heap"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Stack"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Code"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102971,
+      "Explanation": "Local variables are stored in the stack memory segment.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What ensures that a local variable retains its value between function calls?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "extern keyword"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "register keyword"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "volatile keyword"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "static keyword"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102972,
+      "Explanation": "A static variable retains its last modified value between function calls.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How many times is a local variable initialized in a C function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Once during the first call"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Every time the function is called"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only if declared static"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only if declared with const"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102973,
+      "Explanation": "Local variables are initialized each time the function is called.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will the following code output if function() is called twice?<br/> void function() {<br/>&nbsp;&nbsp;&nbsp;&nbsp; int sum = 0;<br/>&nbsp;&nbsp;&nbsp;&nbsp; sum += 10;<br/>&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;%d &quot;, sum);<br/> }<br/>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0 10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10 10"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "10 20"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "0 0"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102974,
+      "Explanation": "The local variable &#39;sum&#39; is initialized to 0 each time the function is called.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider the code: <br/> void test() {<br/>&nbsp;&nbsp;&nbsp;&nbsp; int i = 0;<br/>&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;%d &quot;, ++i);<br/> }<br/> What will typically be the output of calling test() three times?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0 0 0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1 1 1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1 2 3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compiler dependent"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102975,
+      "Explanation": "&#39;i&#39; is initialized to 0 each time, and then incremented to 1.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which type of local variable modifier reduces the memory access time?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "register"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "auto"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "volatile"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102976,
+      "Explanation": "&#39;register&#39; tells the compiler to store the variable in CPU registers if possible to optimize access speed.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given the following code: <br/> int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp; int i = 5;<br/>&nbsp;&nbsp;&nbsp;&nbsp; {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int i = 10;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;%d &quot;, i);<br/>&nbsp;&nbsp;&nbsp;&nbsp; }<br/>&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;%d&quot;, i);<br/>&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br/> }<br/> What will be the output?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5 5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10 10"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "10 5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "5 10"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102977,
+      "Explanation": "The inner block&#39;s &#39;i&#39; shadows the outer block&#39;s &#39;i&#39; within its scope.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a global variable in C programming?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A variable that is defined inside a function."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A variable that retains its value between function calls."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A variable that is accessible throughout the entire program."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A variable that can only be used within the file it is declared."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102978,
+      "Explanation": "Global variables are defined outside of any function and are accessible throughout the entire program.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Where is a global variable typically declared in a C program?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Inside a function."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "At the beginning of a block."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Outside all functions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Inside a loop."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102979,
+      "Explanation": "Global variables are declared outside all functions, usually at the top of the program.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about global variables is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They are initialized to random values by default."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They are initialized to zero by default."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They cannot be accessed inside main() function."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They cause a compilation error if accessed in multiple functions."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102980,
+      "Explanation": "Global variables are initialized to zero by default in C.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if you define a local variable with the same name as a global variable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The program won&#39;t compile."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The local variable will be overridden by the global variable."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The global variable will be shadowed/hidden by the local variable."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It will lead to unpredictable results."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102981,
+      "Explanation": "In C, if a local variable has the same name as a global variable, the local variable will shadow the global variable within its scope.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a global variable is defined as &#39;int count;&#39;, what will be the value of &#39;count&#39; at the start of the program?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will have a garbage value."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It will be zero."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will have random data from memory."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It will cause an error due to uninitialized variable."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102982,
+      "Explanation": "Global variables in C are automatically initialized to zero if not explicitly initialized.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword can be used to restrict access to a global variable to its own file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "const"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "extern"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "volatile"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102983,
+      "Explanation": "The &#39;static&#39; keyword limits the scope of a global variable to the file in which it is declared.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you access a global variable in another file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using &#39;static&#39; keyword."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using &#39;extern&#39; keyword."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By declaring the variable in every file."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using &#39;auto&#39; keyword."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102984,
+      "Explanation": "&#39;extern&#39; is used to declare a global variable in another file for access.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the storage class of a global variable by default?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "register"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "auto"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "extern"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102985,
+      "Explanation": "Global variables have &#39;extern&#39; storage class by default, meaning they are visible throughout the entire program.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In what section of program memory are global variables stored?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Stack"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Heap"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Data segment"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Code segment"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102986,
+      "Explanation": "Global variables are stored in the data segment of the memory.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens to a global variable when the program terminates?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is deallocated automatically."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It remains allocated until explicitly freed."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It stays in memory unnecessarily."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It causes a memory leak."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102987,
+      "Explanation": "Global variables are deallocated automatically when the program terminates.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you explicitly initialize a global variable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By assigning a value during declaration."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using an &#39;init&#39; function."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using &#39;auto&#39; keyword."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By using &#39;initialize&#39; keyword."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102988,
+      "Explanation": "Global variables can be initialized explicitly by assigning a value during their declaration.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the lifetime of a global variable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Until the end of the function."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Until it goes out of scope."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Until the program ends."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Until its value is changed."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102989,
+      "Explanation": "The lifetime of a global variable lasts until the program ends.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In terms of variable scope, what is the opposite of a global variable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Static variable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Local variable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Extern variable"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Dynamic variable"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102990,
+      "Explanation": "A local variable is the opposite of a global variable in terms of scope, as it is limited to the function or block where it is defined.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a characteristic of global variables?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They can be accessed by any function in the program."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They consume memory for the entire runtime of the program."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They must be declared using the &#39;global&#39; keyword."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Their scope extends across multiple files using &#39;extern&#39;."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102991,
+      "Explanation": "There is no &#39;global&#39; keyword in C to declare global variables; they are implicitly global if declared outside functions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to declare a global variable that can be shared across multiple files?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "volatile"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "register"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "extern"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102992,
+      "Explanation": "&#39;extern&#39; is used to declare global variables that are shared across files.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the &#39;extern&#39; keyword for global variables?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To indicate external linkage."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To mark a variable as static."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To restrict access to a variable."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To initialize the variable."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102993,
+      "Explanation": "&#39;extern&#39; keyword indicates that the variable has external linkage, meaning it is defined in another file.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the standard convention for naming global variables in C to avoid conflicts?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using lowercase letters"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using uppercase letters"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Prefixing them with &#39;g_&#39; or &#39;global_&#39;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Prefixing them with &#39;_tmp&#39;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102994,
+      "Explanation": "A common convention is to prefix global variables with &#39;g_&#39; or &#39;global_&#39; to signify their purpose and avoid conflicts.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following scenarios might suggest that a global variable should be used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A variable used in one specific function only."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A variable needed across multiple functions for shared data."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A constant value used in a single loop."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A variable whose value changes frequently within one function."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102995,
+      "Explanation": "Global variables are useful for data that need to be shared or accessed across multiple functions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does the use of global variables affect the modularity of a program?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Improves modularity significantly."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Has no impact on modularity."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Reduces modularity as it creates dependencies."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only affects performance, not modularity."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102996,
+      "Explanation": "Global variables can reduce modularity because they create dependencies between functions, making the code harder to manage and test.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following code snippet?<br/>int a = 5;<br/>void foo() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;a = 10;<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d&quot;, a);<br/>&nbsp;&nbsp;&nbsp;&nbsp;foo();<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d&quot;, a);<br/>}<br/>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "55"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "510"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1010"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "51010"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102997,
+      "Explanation": "The initial value of &#39;a&#39; is 5, which is printed first. The function &#39;foo()&#39; changes &#39;a&#39; to 10, and then 10 is printed.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What advantage does using a global variable present compared to passing variables as function arguments?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Improves security of the program."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Simplifies function signatures."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Increases readability."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Reduces the overall memory usage."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102998,
+      "Explanation": "Global variables can simplify function signatures since the variables don\u2019t have to be passed explicitly to functions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A function that calls itself is called as a ______________ .",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Inline function"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Recursive function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Friend function"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Member function"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 102762,
+      "Explanation": "<span id=\"explanation102762\" style=\"color:blue\"><span id=\"explanation102762\" style=\"color:blue\">When a function calls itself, it is called as recursion.</span></span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The value returned by f(1) in following program<br><br>int f(int n)<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp; &nbsp;static int i=1;<br><br>&nbsp;&nbsp; &nbsp;if(n&gt;=5)<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;return n;<br><br>&nbsp;&nbsp; &nbsp;n=n+i;<br>&nbsp;&nbsp; &nbsp;i++;<br><br>&nbsp;&nbsp; &nbsp;return f(n);<br></div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "7"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "8"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 70903,
+      "Explanation": "Here we are having recurcive call of function f. <br>we start with f(1) and in f function we are gaving condition n&gt;=5 hence recursion will be till n is &gt;= 5.&nbsp; <br>initially n =1 and i is 1 then we are doing n=n+i , i is static variable and we are incrementing i . hence<br>1st step n=n+1 is 2 <br>2 nd step&nbsp; n = 2+2 is 4 <br>and 3rd step n = 4+3 is 7. hence out put is 7. &nbsp; &nbsp;<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void myFunc (int x)<br>{<div style=\"margin-left: 40px;\">&nbsp; if (x &gt; 0)</div><div style=\"margin-left: 80px;\">&nbsp;&nbsp;&nbsp; myFunc (--x);</div><div style=\"margin-left: 40px;\">&nbsp; printf (\"%d, \", x);</div>}<br>int main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; myFunc (5);<br>&nbsp; return 0;</div>}<br>What will the above sample code produce when executed?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1, 2, 3, 4, 5, 5,"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4, 3, 2, 1, 0, 0,"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "5, 4, 3, 2, 1, 0,"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "0, 0, 1, 2, 3, 4,"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 64067,
+      "Explanation": "<span id=\"explanation64067\" style=\"color:blue\">This is recursive call to MyFunc, hence value get printed as 0,0,1,2,3,4<br>MyFunc(5) then till x&gt; 0&nbsp; and here we have --x i.e. pre decremen of x.<br>MyFunc(5)&nbsp; print 4<br>MyFunc(4) print 3<br>MyFunc(3) print 2<br>MyFunc(2) print 1<br>MyFunc(1)&nbsp; print 0<br>MyFunc(0) print 0</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Trace the output of following program.<br>int show (int a)<br>{<div style=\"margin-left: 40px;\">&nbsp; int f;<br>&nbsp; if (a == 1)</div><div style=\"margin-left: 80px;\">&nbsp;&nbsp;&nbsp; return 1;</div><div style=\"margin-left: 40px;\">&nbsp; else</div><div style=\"margin-left: 80px;\">&nbsp;&nbsp;&nbsp; f = a * show (a - 1);</div><div style=\"margin-left: 40px;\">&nbsp; return (f);</div>}<br><br>void main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; int x = 3, f = 2;<br>&nbsp; f = show (x--);<br>&nbsp; printf (\"%d\", f);</div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Grabage"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 63919,
+      "Explanation": "<span id=\"explanation63919\" style=\"color:blue\">Function show finds factorial of given value using recursion.<br>f=show(x--) : since it is post decrementation of x, value of x is sent to function show and not decremented value.<br>from main call will be show(3)<br>then else part get executed in which we have recursive call&nbsp;<br>3* show(2) returns 3*2<br>2 * show(1) returns 2*1<br>show(1)&nbsp; returns 1<br><br>Hence final output will be 6</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Consider the following C-program:</div><div>void foo (int n, int sum)<br>{</div><div style=\"margin-left: 40px;\">&nbsp; int k = 0, j = 0;<br>&nbsp; if (n == 0)</div><div style=\"margin-left: 80px;\">&nbsp;&nbsp;&nbsp; return;</div><div style=\"margin-left: 40px;\">&nbsp; k = n % 10;<br>sum = sum + k;<br><br>&nbsp; foo (j, sum);<br><br>&nbsp; printf (\"%d,\", k);<br></div><div>}<br><br>int main ()<br>{</div><div style=\"margin-left: 40px;\">&nbsp; int a = 2048, sum = 0;<br>&nbsp; foo (a, sum);<br>&nbsp; printf (\"%d \", sum);<br><br>&nbsp; getchar ();</div><div>}<br>What does the above program print?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "8, 4, 0, 2, 14"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "8, 4, 0, 2, 0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2, 0, 4, 8, 14"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "2, 0, 4, 8, 0"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 63992,
+      "Explanation": "Here from main the foo function is called with 2048 and 0 value<br>foo(2048,0)<br>then in foo function we are storing last digit&nbsp; in k&nbsp; and &nbsp; j = n / 10; and then we have recursive call to foo function with (num/10 i.e j, sum of digits)<br>i.e<br>k is 8&nbsp; and j is 204 hence foo(204,8)<br>k is 4&nbsp; and j is 20 hence foo(20,12)<br>k is 0&nbsp; and j is 2 hence foo(2,12)<br>k is 2&nbsp; and j is 0 hence foo(0,14)<br><br>After calling this recursive function we are printing k<br>Hence output is&nbsp; 2 0 4 8 and after that sum is printed in main. We are not returning sum from foo function hence sum is printed 0.<br>hence output is 2 0 4 8 0",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which one of the following provides conceptual support for function calls?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The system stack."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The data segment."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "RAM"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The text segment."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 63797,
+      "Explanation": "<span id=\"explanation63797\" style=\"color:blue\">The function call is stored in stack,best example is recursion.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What error would the following function give on compilation?<br>int f( int a, int b)<br>{<div style=\"margin-left: 40px;\">int a;<br>a=20;<br>return a;</div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Missing Parentheses in return statement"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The function should be declare firstas int f(int , int );"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Redeclaration of a."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 63614,
+      "Explanation": "<span id=\"explanation63614\" style=\"color:blue\">error: \u2018a\u2019 redeclared as different kind of symbol</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>int Num(int no)</div><div>&nbsp;&nbsp;&nbsp; {</div><div style=\"margin-left:40px\">return ( no/2= =0) ?1 : Num(no/2)*10 + no%2;</div><div>&nbsp;&nbsp;&nbsp;&nbsp;}</div><div>&nbsp;&nbsp;&nbsp;&nbsp;If we call Num(11) ; what will it return?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "11"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "101"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1011"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1110"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 63287,
+      "Explanation": "Recursion<br>No =11;<br>Num(11/2)*10+(11%2) returns 1011<br>Num(5/2)*10+(5%2) returns 101<br>Num(2/2)*10+(2%2) returns 10<br>Num(1) returns 1 <br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>How many times the program will print 'Know-IT' ?</div><div>#include&lt;stdio.h&gt;</div><div>int main()<br>{</div><div style=\"margin-left: 40px;\">printf(\"Know-IT\");<br>main();<br>return 0;<br></div><div>}<br><br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "32767 times"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "65535 times"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Till stack overflows"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1218,
+      "QuestionTypeId": 0,
+      "QuestionId": 63289,
+      "Explanation": "We are calling main() from main() function itself. This will lead to recursion, till the stack overflows i.e. infinite loop.<br>",
+      "Answer": "D",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

@@ -1,0 +1,846 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Which of the following Python modules is most commonly used to connect to a MySQL database?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "sqlite3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "mysql.connector"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "psycopg2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "cx_Oracle"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 93242,
+      "Explanation": "The mysql.connector module is the official MySQL driver for Python.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the function used to create a new cursor in a Python database connection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "connection.open()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "connection.query()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "connection.cursor()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "connection.execute()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 93243,
+      "Explanation": "connection.cursor() is used to create a new cursor object using the connection object in Python.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to execute a SQL query through a cursor object in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "query.execute()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "cursor.send()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "connection.query()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "cursor.execute()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 93244,
+      "Explanation": "cursor.execute() is utilized to run a provided SQL query using a cursor object.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you fetch the first row of a query result in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "cursor.fetchone()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "cursor.fetchrow()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "cursor.first()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "cursor.getrow()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 93245,
+      "Explanation": "cursor.fetchone() returns the next row of a query result set, returning a single sequence, or None when no more data is available.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Python module can be used to connect to a SQLite database?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "psycopg2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "mysql.connector"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "pyodbc"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "sqlite3"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 93246,
+      "Explanation": "The sqlite3 module is included in the Python Standard Library and facilitates connecting and interacting with SQLite databases.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Before executing a query, which method do you use to add parameters in SQL queries using placeholders with MySQL in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "cursor.format()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "f-string"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "cursor.execute() with placeholders"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "cursor.parametrize()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 93247,
+      "Explanation": "Using cursor.execute() with placeholders like %s allows for parameterized queries, reducing SQL injection risk.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary benefit of using a context manager (with statement) for database connections in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Improves query performance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Ensures automatic cleanup of resources"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Enables connection pooling"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Simplifies syntax"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 93248,
+      "Explanation": "Using a context manager ensures that resources like database connections are automatically released after use.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is a library to connect to PostgreSQL databases in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "PyMySQL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "pg_connect"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "psycopg2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "pg_sql"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 93249,
+      "Explanation": "psycopg2 is a popular and widely used library for connecting to PostgreSQL databases in Python.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the method cursor.commit() do in a database connection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Executes a SQL command"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Saves all changes made since the last commit"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Begins a new transaction"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Closes the database connection"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 93250,
+      "Explanation": "cursor.commit() is incorrect as the commit action should be applied on the connection level, but this reflects the intention to save all changes in a transaction.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the result of executing cursor.fetchall() when there are no more rows to retrieve?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Returns None"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Returns an empty list"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Raises an exception"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Returns False"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 93251,
+      "Explanation": "cursor.fetchall() returns an empty list when there are no more rows to fetch in the result set.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method would you use to close a cursor object in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "cursor.end()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "cursor.terminate()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "cursor.finish()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "cursor.close()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 93252,
+      "Explanation": "cursor.close() is used to close the cursor object, releasing any resources it holds.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the 'autocommit' mode in database connections?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Automatically commits each SQL command"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Automatically rolls back failed transactions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Allows nested transactions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Disables transaction management"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 93253,
+      "Explanation": "Autocommit mode automatically commits each database operation, eliminating the need for manual commit calls after each statement.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function is used to handle errors in a database operation in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "try-except block"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "error_handle()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "cursor.error()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "db.catchError()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 93254,
+      "Explanation": "A try-except block allows catching and handling exceptions, which is used for error handling in database operations in Python.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Python library provides a lightweight database that is included with Python installations?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "PyODBC"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SQLAlchemy"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SQLite"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MySQLdb"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 93255,
+      "Explanation": "SQLite is a C library that provides a lightweight and disk-based database, which doesn&apos;t require a separate server process. Its Python module is part of the standard library.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which library would you most likely use for ORM (Object Relational Mapping) in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "pymongo"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SQLAlchemy"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "psycopg2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "redis-py"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 93256,
+      "Explanation": "<span id=\"explanation93256\" style=\"color:blue\">SQLAlchemy is a comprehensive and popular library that provides high-level ORM capabilities for working with relational databases in Python.&nbsp;</span><span style=\"color:blue\">SQLAlchemy is the most commonly used ORM (Object Relational Mapping) library in Python. It lets you work with databases using Python classes and objects instead of writing raw SQL statements\u2014essentially turning tables into Pythonic data models.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When dealing with PostgreSQL using psycopg2, which placeholder is used in parameterized queries?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "%s"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "?"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": ":param"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "$symbol"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 93257,
+      "Explanation": "psycopg2 follows the Python DB API specification where parameters in SQL queries are denoted using the %s placeholder.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What exception is raised when a database connection fails in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "FailError"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DatabaseException"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ConnectionError"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "OperationalError"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 93258,
+      "Explanation": "OperationalError is a built-in exception class used by various database libraries in Python to indicate issues with the database connection or operations.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a Python extension for connecting to Oracle databases?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "cx_Oracle"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "pyOracle"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "oracle.connect"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "OracleDB"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 93259,
+      "Explanation": "cx_Oracle is a popular extension module that enables Python applications to connect and interact with Oracle databases.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you correctly execute a query that prevents SQL injection using Python's sqlite3?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "cursor.execute('SELECT * FROM users WHERE id=' + user_id)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "cursor.execute('SELECT * FROM users WHERE id=?', user_id)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "cursor.execute('SELECT * FROM users WHERE id=?', (user_id,))"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "cursor.execute(f'SELECT * FROM users WHERE id={user_id}')"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 93260,
+      "Explanation": "Using the parameterized query syntax with a tuple prevents SQL injection, ensuring safe parameter substitution.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in Python is used to retrieve a database connection from a URL using SQLAlchemy?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "sqlalchemy.connect(url)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "create_engine(url)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "engine.connect(url)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "db.connect(url)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 93261,
+      "Explanation": "create_engine(url) is a SQLAlchemy function that establishes a new Engine instance for database interaction by connecting to the specified database URL.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Python's pymysql module, which function is used to instantiate a connection object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "pymysql.create_connection()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "pymysql.start()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "pymysql.connect()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "pymysql.open_connection()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 93262,
+      "Explanation": "pymysql.connect() initiates a connection to a PyMySQL database, setting up a new connection instance.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these can NOT be used as an ORM tool for databases in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Django ORM"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SQLAlchemy"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "pandas"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Peewee"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 93263,
+      "Explanation": "pandas is primarily used for data manipulation and analysis rather than being a tool for Object Relational Mapping.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT an attribute of a connection object in SQLite using Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "apsw_version"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "total_changes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "in_transaction"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "autocommit"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 93264,
+      "Explanation": "The autocommit attribute is not built-in in the SQLite connection object within Python, whereas apsw_version, total_changes, and in_transaction are associated with database transaction status and version info.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which SQLAlchemy exception class is raised for database operational errors?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SQLAlchemyOperationalError"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DatabaseException"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "OperationalError"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "InvalidRequestError"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 93265,
+      "Explanation": "OperationalError is an exception subclass in SQLAlchemy, raised for database-related issues such as a disconnection, connection failure, or query failure.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Python, which module allows for interacting with various ODBC databases?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "pyodbc"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "dbi"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "odbcpython"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "pyConnect"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 93266,
+      "Explanation": "<span id=\"explanation93266\" style=\"color:blue\">pyodbc is an open-source Python module that provides a bridge to connect and interact with databases using ODBC connections.&nbsp;</span><span style=\"color:blue\">pyodbc is a popular Python module that provides access to databases through ODBC (Open Database Connectivity)\u2014a standardized API for interacting with different database systems like SQL Server, MySQL, PostgreSQL, Oracle, and more.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Looking at the code below, what would this line do to the table Cats?<br>cur.execute('DROP TABLE IF EXISTS Cats ')",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will remove the row \"Cats\"."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It will move \"Cats\" to the end of the database."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will remove the column \"Cats\"."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It will remove the table \"Cats\"."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 84025,
+      "Explanation": "The above code will drop the Cats table.<br>execute() method will Executes the SQL query in a string parameter.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you delete all of the rows where the \u201cname\u201d is \u201cRuby\u201d in the Cats Table?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DELETE FROM Cats WHERE name = 'Ruby'"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DELETE name='Ruby' FROM Cats"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DELETE ROW name='Ruby' FROM Cats"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DELETE FROM Cats WHERE name == 'Ruby'"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 84026,
+      "Explanation": "The syntax of Delete query is same in python. You have to pass query to cursor.execute() method. In D oprion == is given hence it is invalid option.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The character * is used in ________.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT query"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Insert Query"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Delete query"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 4795,
+      "QuestionTypeId": 0,
+      "QuestionId": 84027,
+      "Explanation": "The asterisk * symbol acts as wild card stands for selecting all columns in a table when used in the SELECT query.",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

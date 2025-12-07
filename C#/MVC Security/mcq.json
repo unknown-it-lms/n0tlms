@@ -1,0 +1,1416 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is the primary purpose of the Authorize attribute in MVC security?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To restrict access to certain controllers or actions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To encrypt data within the application"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To handle routing for HTTP requests"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To log all user activities"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96209,
+      "Explanation": "The Authorize attribute is used in MVC applications to restrict access to specific controllers or actions to authenticated users or those with specified roles.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true regarding the Authorize attribute?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Authorize filters are only applicable at the controller level."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "You can apply the Authorize attribute at both the controller and action levels."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The Authorize attribute automatically manages session state for the user."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Authorize filters cannot be customized."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96210,
+      "Explanation": "The Authorize attribute can be applied at both the controller and action levels to control user access at different granularities within an MVC application.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does the Authorize attribute work with roles in an MVC application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It redirects unauthenticated users to a login page."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It restricts access based on HTTP request methods."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It checks if the user belongs to a specified role before allowing access."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It encrypts user credentials before processing."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96211,
+      "Explanation": "The Authorize attribute can be configured to check if a user belongs to a specified role before granting access to a controller or action.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if a user does not meet the criteria specified by the Authorize attribute?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The user is shown a 404 error page."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The user is redirected to the error controller by default."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The user is redirected to the login page or denied access view."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The user's session is terminated immediately."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96212,
+      "Explanation": "If a user does not meet the authentication or authorization requirements specified by the Authorize attribute, they are typically redirected to the login page or shown an access denied view.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you provide custom behavior when a user is unauthorized in an MVC application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By modifying the global.asax file."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By configuring the web.config file."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By creating a custom authorization filter derived from AuthorizeAttribute."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By editing the layout view to include error handling."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96213,
+      "Explanation": "To provide custom behavior when a user is unauthorized, you can create a custom authorization filter by deriving from AuthorizeAttribute and overriding methods to suit your requirements.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the context of MVC security in .NET, what is the primary purpose of using the AllowAnonymous attribute?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To allow all actions in a controller to bypass authorization."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To disable SSL for specific actions in a controller."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To allow certain actions to override global authentication settings."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To encrypt data sent from the client to the server."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96214,
+      "Explanation": "The AllowAnonymous attribute is used to override any authentication policies applied to the controller, allowing certain actions to be accessible without requiring authentication.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Where should the AllowAnonymous attribute be applied in an MVC application to bypass authorization for specific actions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "On the controller level for all actions to be anonymous."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "On the method level for specific actions to be anonymous."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "In the web.config file to allow access to all users."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "In the RouteConfig.cs file to enable routing without authentication."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96215,
+      "Explanation": "The AllowAnonymous attribute is applied at the method level within a controller to make specific actions anonymous, bypassing authentication requirements for that action only.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following scenarios would best describe when to use the AllowAnonymous attribute in an MVC application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When you want to prevent certain user roles from accessing an action."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When you need to audit all unsuccessful login attempts."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When specific actions should be available to unauthenticated users."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When enforcing strict compliance with a security audit."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96216,
+      "Explanation": "The AllowAnonymous attribute is used when specific actions in a controller should be accessible to users who are not authenticated, such as public pages or resources.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does the AllowAnonymous attribute interact with the Authorize attribute in an MVC application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "AllowAnonymous strengthens the requirements of the Authorize attribute."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "AllowAnonymous weakens the Authorize attribute globally."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "AllowAnonymous overrides the Authorize attribute for specific actions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "AllowAnonymous encrypts data passed to actions protected by the Authorize attribute."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96217,
+      "Explanation": "In cases where the Authorize attribute is applied at the controller or global level, the AllowAnonymous attribute can be applied to specific actions to exempt them from the authentication requirements imposed by the Authorize attribute.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a possible security risk of incorrectly using the AllowAnonymous attribute in an MVC application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Exposing sensitive information in publicly accessible actions."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Disabling HTTPS for the entire application."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Inadvertently logging users out of the application."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Breaking the functionality of route constraints."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96218,
+      "Explanation": "Incorrectly using the AllowAnonymous attribute can lead to security risks by inadvertently exposing actions that handle sensitive information to unauthenticated users, making these endpoints publicly accessible.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of forms-based authentication in the ASP.NET MVC security model?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To authorize a user to access a Windows application."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To authenticate users against an external service."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To determine user roles in an enterprise environment."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To authenticate and manage users using a web form interface."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96219,
+      "Explanation": "Forms-based authentication in ASP.NET MVC is used to authenticate and manage users using a web interface where users can enter their credentials, which are then validated against stored credentials.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods is commonly overridden to customize authentication logic in forms-based authentication?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Initialize"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "OnResultExecuted"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "OnAuthorization"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ValidateIdentity"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96220,
+      "Explanation": "The &apos;OnAuthorization&apos; method is commonly overridden in a custom authorization attribute to implement custom authentication logic for forms-based authentication in an MVC application.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the context of forms authentication in MVC, what is the function of the 'FormsAuthentication.SetAuthCookie' method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Logs out the user by clearing the authentication cookie."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Creates an authentication ticket and attaches it to the response cookie."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Encrypts user credentials before storing them."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Sets the session timeout for the authentication cookie."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96221,
+      "Explanation": "&apos;FormsAuthentication.SetAuthCookie&apos; creates an authentication ticket for the specified user name and attaches it to the response cookie to manage user sessions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which configuration file is forms-based authentication typically configured in an ASP.NET MVC application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "appsettings.json"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "web.config"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "global.asax"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "startup.cs"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96222,
+      "Explanation": "Forms-based authentication is typically configured in the &apos;web.config&apos; file under the &apos;system.web&apos; section in an ASP.NET MVC application.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the 'LoginUrl' attribute in the forms authentication configuration in an ASP.NET MVC application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It specifies the relative URL for redirecting unauthorized requests."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It sets the encryption method for the authentication cookie."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It configures the timeout duration for sessions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It determines the redirect URL after successful logout."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96223,
+      "Explanation": "The &apos;LoginUrl&apos; attribute in the forms authentication configuration specifies the relative URL to which unauthorized or unauthenticated requests will be redirected.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of the AntiForgeryToken in MVC applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To encrypt data before sending it to the client"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To protect against SQL injection attacks"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To prevent cross-site scripting (XSS) attacks"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To prevent cross-site request forgery (CSRF) attacks"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96224,
+      "Explanation": "The AntiForgeryToken is used to prevent CSRF attacks by ensuring that a malicious site cannot perform unauthorized actions on behalf of a logged-in user.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which HTML helper is used in an MVC view to generate a hidden form field containing an AntiForgeryToken?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Html.GenerateAntiForgeryToken()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Html.AntiForgeryToken()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Html.SecurityToken()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Html.CreateToken()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96225,
+      "Explanation": "The Html.AntiForgeryToken() method is used in an MVC view to generate a hidden form field, which contains a unique token to prevent CSRF attacks.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In an MVC controller, which attribute is typically used to validate the AntiForgeryToken?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[ValidateToken]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[Authorize]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[ValidateAntiForgeryToken]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "[CheckForgeryToken]"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96226,
+      "Explanation": "The [ValidateAntiForgeryToken] attribute is used to ensure that the AntiForgeryToken sent with an HTTP request matches the expected value, offering protection against CSRF attacks.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does the AntiForgeryToken mechanism protect against CSRF attacks?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By generating and validating a unique token per session"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By encrypting the data being transmitted"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By ensuring that requests come from the same server"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By checking the user agent of the request"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96227,
+      "Explanation": "The AntiForgeryToken mechanism works by generating a unique token for each session or request and verifying it during submission to ensure the source of the request is legitimate.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a form in an ASP.NET MVC application does not include an AntiForgeryToken, what type of attack is it susceptible to?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Man-in-the-middle attack"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SQL injection attack"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Cross-site request forgery (CSRF)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Cross-site scripting (XSS)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96228,
+      "Explanation": "Without an AntiForgeryToken, a form is vulnerable to CSRF attacks, where malicious sites can perform actions on behalf of authenticated users without their knowledge.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary method to prevent Cross Site Scripting (XSS) attacks in .NET MVC applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using SQL parameters"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Implement input validation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Encoding output using Razor"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Disabling request validation"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96229,
+      "Explanation": "In .NET MVC, Razor view engine automatically encodes output, which helps prevent XSS attacks by ensuring that HTML and other scripts cannot be injected into web pages.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which .NET MVC feature automatically protects against XSS attacks when using server-rendered views?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ViewBag"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Html.Encode"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Razor Syntax"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Web.config file settings"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96230,
+      "Explanation": "The Razor Syntax in .NET MVC automatically encodes output to prevent XSS attacks, making it a key component for securing applications against such vulnerabilities.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which security header can be used to mitigate XSS attacks by specifying whether a browser should execute scripts?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Content-Security-Policy"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Authorization-Header"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Strict-Transport-Security"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "X-Content-Type-Options"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96231,
+      "Explanation": "Content-Security-Policy (CSP) is a security header used to specify approved sources of content that browsers may execute, thereby helping to mitigate XSS and other script-based attacks.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the impact of setting ValidateInput(false) within a controller action in an MVC application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Disables client-side validation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Allows potentially dangerous requests"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Improves performance by ignoring input"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Enables automatic output encoding"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96232,
+      "Explanation": "Setting ValidateInput(false) disables ASP.NET&apos;s request validation, which means the application will allow potentially dangerous inputs like script tags, increasing exposure to XSS vulnerabilities.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a recommended approach to handle dynamic content in .NET MVC to avoid XSS?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using JSON.stringify() before rendering"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Always write scripts directly in the view"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using AntiXss encoding library"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Disabling JavaScript on the client side"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96233,
+      "Explanation": "The AntiXss library provides additional encoding routines that can be used to handle dynamic content securely and avoid XSS when rendering data that originates from user input.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of AntiForgeryToken in MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To prevent server-side errors"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To prevent XSRF/CSRF attacks"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To encrypt user data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To manage user sessions"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96234,
+      "Explanation": "AntiForgeryToken is used to prevent Cross-Site Request Forgery (CSRF) attacks by generating a token that must match with the server-side version.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In MVC, where is the Authorize attribute typically applied?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "In the database context class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "In the model class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "In the controller or action methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "In the view pages"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96235,
+      "Explanation": "The Authorize attribute is applied in the controller or action methods to enforce security and ensure only authorized users can access them.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the ValidateAntiForgeryToken attribute do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Hashes user passwords"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Validates encrypted view data"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Verifies the AntiForgeryToken during POST requests"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Secures database queries"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96236,
+      "Explanation": "The ValidateAntiForgeryToken attribute is used to ensure the AntiForgeryToken sent with a form submission matches the one established for the user session, reducing CSRF risks.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does ASP.NET MVC prevent HTML injection attacks?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using SQLCommand"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By deploying strict firewalls"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using Html.Encode or @Html.Raw in views"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By implementing custom view engines"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96237,
+      "Explanation": "ASP.NET MVC prevents HTML injection by encoding the output, thus treating it as text instead of executable code.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of Cross-Site Scripting (XSS) protection in MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To optimize memory usage"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To protect users from malicious scripts injected into webpages"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To optimize code execution time"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To minimize network latency"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96238,
+      "Explanation": "Cross-Site Scripting (XSS) protection in MVC ensures that any scripts executed on the user&apos;s browser are benign, preventing malicious code from executing.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a method to secure MVC applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using AntiForgery tokens"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Encrypting sensitive data"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Disabling view state"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Implementing authentication and authorization"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96239,
+      "Explanation": "View state is not used in MVC; it&apos;s a concept from Web Forms. MVC applications secure data primarily through other means like AntiForgery tokens and encryption.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What MVC feature controls which users can access specific actions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RouteConfig"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ViewBag"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Authorize attribute"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Session State"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96240,
+      "Explanation": "The Authorize attribute in MVC is used to control user access to specific actions, enforcing authentication and access control rules.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What role does Identity play in MVC security?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It provides options for routing"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It offers tools for user identity and access management"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It optimizes application performance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It helps in creating views"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96241,
+      "Explanation": "ASP.NET Identity is a system for managing user identities, including authentication and authorization in MVC applications.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which protocol is recommended for securing data in MVC applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "HTTP"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "HTTPS"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "FTP"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SMTP"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96242,
+      "Explanation": "HTTPS is recommended to secure data in transit between the client and server, ensuring a secure connection with encryption.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a potential risk if request validation is disabled in MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Improved performance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Increased exposure to SQL injection"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Increased exposure to XSS attacks"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Better user experience"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96243,
+      "Explanation": "Disabling request validation can lead to Cross-Site Scripting (XSS) vulnerabilities, as potentially dangerous input is not checked for malicious scripts.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to validate models in MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Html.DisplayFor()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ModelState.IsValid"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "RedirectToAction()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ViewData.Model"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96244,
+      "Explanation": "ModelState.IsValid checks if all model validations have passed, ensuring the data is correct before proceeding further in the application flow.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How is sensitive data usually protected in MVC applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using Url.Action()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By employing a CDN service"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By implementing data encryption"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Through session variables"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96245,
+      "Explanation": "Sensitive data is secured by applying encryption methods to safeguard it from unauthorized access and exposure.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the function of the RequireHttps attribute in MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It manages session state"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It caches HTTP requests"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It forces an HTTPS connection for requests"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It logs HTTP errors"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96246,
+      "Explanation": "The RequireHttps attribute in MVC forces the application to use HTTPS protocol, thus securing the data transmitted between the browser and server.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the Attribute Routing in MVC allow you to do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Configure server ports"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Define routes with attributes directly on actions and controllers"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Connect to a database"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Manage frontend templates"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96247,
+      "Explanation": "Attribute Routing in MVC allows developers to define routes by placing routing attributes directly on controllers and actions, giving more control over the routing configuration.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a common security mistake when dealing with user input in MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Logging user sessions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Directly storing user input without validation or encoding"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Caching static assets"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Optimizing SQL queries"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 96248,
+      "Explanation": "A common mistake is to take user input directly without performing validation or encoding, which can lead to security vulnerabilities like SQL Injection or XSS attacks.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the recommended way to secure a password in ASP.NET MVC Core?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Store the password in clear text"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Encrypt the password using a symmetric encryption algorithm <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Hash the password using a cryptographic hashing algorithm"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Encode the password using a Base64 encoding algorithm"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 70536,
+      "Explanation": "The recommended way to secure a password in ASP.NET MVC Core is to hash the password using a cryptographic hashing algorithm. This involves converting the password into a fixed-length, non-readable string of characters using a hash function. The resulting hash value can be stored in the database and compared to the hash of the password entered by the user during login to verify their identity. Additionally, it is recommended to use a salt when hashing passwords to make the hashes of identical passwords unique, and to use a slow hash function such as bcrypt or Argon2 to make it more difficult for an attacker to crack the hashes.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Which of the following authentication mode is best suited for a corporate network?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Windows"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Forms"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Passport"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 70533,
+      "Explanation": "<strong>Windows Authentication</strong>: This authentication mode leverages Windows user accounts for authentication. It is well-suited for corporate networks because it integrates seamlessly with Active Directory (AD), allowing users to authenticate using their Windows credentials. This mode provides centralized management of user accounts, security policies, and authentication protocols within the corporate network environment.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which security modes are available in asp.net ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Passport"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Windows"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Forms"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 70501,
+      "Explanation": "<p>In ASP.NET, you can configure different security modes or authentication mechanisms depending on your application&apos;s requirements. The available security modes include:</p><ul><li><p><strong>Forms Authentication</strong>: This mode allows users to authenticate with credentials provided through a web form. It&apos;s commonly used for web applications that manage their own user accounts and authentication process.</p></li><li><p><strong>Windows Authentication</strong>: This mode leverages Windows user accounts for authentication. It&apos;s suitable for intranet or corporate network applications where users are already authenticated through their Windows credentials.</p></li><li><p><strong>Passport Authentication</strong>: This was an older authentication service provided by Microsoft (now largely deprecated) that allowed users to authenticate using a single login across multiple websites.</p></li><li><p><strong>Custom Authentication</strong>: ASP.NET also allows developers to implement custom authentication mechanisms suited to specific application requirements, integrating with external identity providers or implementing unique authentication logic.</p></li></ul><br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "which is the default authentication mode in asp.net ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Forms"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Windows"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Custom"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Passport"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 70498,
+      "Explanation": "<strong>Forms Authentication</strong>: This is the default authentication mode in ASP.NET for web applications. It allows you to authenticate users based on credentials collected in a web form. Users typically enter their credentials (username and password) into a form provided by the application, which are then validated against a user store (such as a database or Active Directory).<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is used to write error message in event Log File?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "System.Data"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "System.EnterpriseServices"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "System.Diagnostics"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the Above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 70387,
+      "Explanation": "<strong>System.Diagnostics</strong>: This namespace in .NET provides classes that allow you to interact with system processes, event logs, performance counters, and trace logs. Specifically, the <code>EventLog</code> class within this namespace is used to write messages to the Windows event logs.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the [Authorize] attribute in ASP.Net MVC Core?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To restrict access to the specified resource based on the user's authentication status"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To provide user authentication functionality"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To manage user authorization rules"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 70413,
+      "Explanation": "To restrict access to the specified resource based on the user&apos;s authentication status <br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is default authentication in Internet Information Services (IIS)?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Standard User"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Administrator"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Anonymous"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5567,
+      "QuestionTypeId": 0,
+      "QuestionId": 81635,
+      "Explanation": "<strong>Anonymous Authentication</strong>: This is the default authentication method in Internet Information Services (IIS). When enabled, IIS allows users to access the web server resources without prompting for a username or password. Instead, the server uses a built-in or configured identity (such as IUSR account) to handle requests anonymously.<br>",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

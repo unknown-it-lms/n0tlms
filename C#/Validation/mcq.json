@@ -1,0 +1,1236 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is the purpose of validation in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To prevent unauthorized access to web applications."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To ensure that all incoming requests are authenticated."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To validate user input and ensure data integrity and accuracy."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To encrypt sensitive data transmitted over the network."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 86694,
+      "Explanation": "The purpose of validation in ASP.NET Core MVC is to validate user input and ensure data integrity and accuracy. It helps to prevent incorrect or malicious data from being processed by the application.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of server-side validation in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To improve page load times"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To ensure data integrity and security"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To prevent styling issues"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To enhance the user interface"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95752,
+      "Explanation": "Server-side validation is crucial for data integrity and security, as it verifies the data on the server, ensuring it meets all necessary validation rules and is safe to process.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which attribute is commonly used for server-side validation of required fields in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[StringLength]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[Range]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[Required]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "[RegularExpression]"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95753,
+      "Explanation": "[Required] attribute ensures that a data field is not null or empty, making it a fundamental aspect of server-side validation in ASP.NET MVC Core.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When an invalid data model is posted to an ASP.NET MVC Core controller, which method automatically validates the model?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Model.TryValidate()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ModelState.IsValid"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Model.Validate()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ValidateModel()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95754,
+      "Explanation": "ModelState.IsValid is a property of the controller that checks whether the model posted to the server passes all server-side validation checks.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In ASP.NET MVC Core, which of the following built-in attributes verifies that a field value matches a regular expression pattern?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[PatternMatch]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[Range]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[RegularExpression]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "[ValidatePattern]"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95755,
+      "Explanation": "[RegularExpression] attribute is used to specify a regular expression that the value of a data field must match for the server-side validation.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which service must be added to the Startup class to enable server-side validation in an ASP.NET Core MVC application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "AddValidation()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "AddMvc()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "AddDataAnnotations()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "AddMvcCore()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95756,
+      "Explanation": "AddMvc() is used to add MVC services to the application, which includes setting up data annotations for server-side validation.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement about custom server-side validation in ASP.NET MVC Core is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Custom validation can only be done using JavaScript."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Custom validation attributes cannot be created."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Custom validation can be done by implementing IValidatableObject interface."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Custom validation is not supported in MVC Core."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95757,
+      "Explanation": "In ASP.NET MVC Core, you can implement the IValidatableObject interface to create custom server-side validation logic for complex scenarios.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you ensure server-side model validation occurs before using the model in an action in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Manually call Validate() method on the model."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Check ModelState.IsValid in the controller action."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use client-side validation scripts."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use asynchronous validation libraries."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95758,
+      "Explanation": "By checking ModelState.IsValid, you ensure that the model has passed all server-side validations before processing it in your controller action.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if server-side validation fails in an ASP.NET MVC Core application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The application redirects to the error page."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The model is automatically corrected."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The model is rejected, and the current view is returned with validation messages."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The server crashes with an error."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95759,
+      "Explanation": "If server-side validation fails, the model is rejected, and typically the current view is returned with validation messages to correct the input.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which server-side validation attribute ensures a numeric field falls within a specified range in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[Range]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[Between]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[NumericRange]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "[WithinRange]"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95760,
+      "Explanation": "[Range] attribute is used for server-side validation to ensure that a numeric field value falls within a specified range.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the role of the ErrorMessage property in data annotation attributes in ASP.NET MVC Core server-side validation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It logs errors on the server"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It provides a custom error message if validation fails"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It hides the error details"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It redirects users on validation failure"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95761,
+      "Explanation": "The ErrorMessage property provides a custom error message to be displayed when server-side validation fails, helping users understand what is wrong.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following data annotation attributes would you use to require a user to enter a value for a specific field?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "StringLength"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Required"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Range"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "RegularExpression"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95762,
+      "Explanation": "The Required attribute ensures that a field cannot be empty. It forces the user to provide a value for the marked property.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you specify a minimum and maximum allowable length for a string field using data annotations?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "MinMaxLength"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "StringLength"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Range"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Length"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95763,
+      "Explanation": "The StringLength attribute specifies the minimum and maximum length of characters that are allowed for the data field.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which data annotation attribute is used to enforce a pattern on the entered string?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Pattern"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Format"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "RegularExpression"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DataType"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95764,
+      "Explanation": "RegularExpression is used to specify that a value for a field must match a specific pattern defined with a regular expression.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If you want to ensure an integer property in a model always falls between two specified numbers, which data annotation would you use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Range"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Bound"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Interval"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DataType"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95765,
+      "Explanation": "The Range attribute is used to constrain a value to defined minimum and maximum values.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which attribute would you use to make sure an email address has the appropriate email format?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Format"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "RegularExpression"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DataType"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "EmailAddress"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95766,
+      "Explanation": "The EmailAddress data annotation attribute is used to specify that a data field is formatted as an email address.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What attribute would you apply to display a custom name instead of the property name in the user interface?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "StringLength"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Display"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Label"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95767,
+      "Explanation": "The Display attribute allows you to set the displayed name for a model property different from its field name.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How would you annotate a field to ensure that it should not be processed for the SQL INSERT and UPDATE statements?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "NonEditable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Exclude"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Ignored"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "NotMapped"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95768,
+      "Explanation": "The NotMapped attribute is used to tell Entity Framework that a particular property should not be mapped to a database column.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which attribute should you use to set a custom validation error message for a required field?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ErrorMessage"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "CustomError"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ValidationMessage"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "RequiredMessage"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95769,
+      "Explanation": "ErrorMessage is a property of validation attributes like Required, which allows you to specify a custom error message.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What data annotation attribute would you use to ensure a date of birth field is validated as a date?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DateType"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Date"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DataType"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "BirthDate"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95770,
+      "Explanation": "DataType attribute can be used to specify the type of data a field will hold, such as Date for date fields. It provides semantic meaning to the field.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To specify that a particular string property should have a fixed length, which attribute would you use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "FixedLength"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "StringLength"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ExactLength"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MaxLength"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95771,
+      "Explanation": "The StringLength attribute can be used to specify an exact length by setting both its MinimumLength and MaximumLength properties to the desired length.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of client-side validation in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To ensure the data is securely stored"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To reduce server load by catching errors early"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To prevent data duplication"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To enhance data encryption"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95772,
+      "Explanation": "Client-side validation is used to quickly identify errors before they are sent to the server, thereby reducing the server&apos;s workload.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which JavaScript library is typically used in ASP.NET MVC Core for client-side validation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "jQuery"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "React"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Angular"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Vue.js"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95773,
+      "Explanation": "jQuery is commonly used with ASP.NET MVC Core to implement client-side validation rules.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which attribute can be used to enable client-side validation for a model property in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ValidateAntiForgeryToken"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Display"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DataType"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Required"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95774,
+      "Explanation": "The &apos;Required&apos; attribute enforces validation on the client side when applied to a model property.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you include validation scripts necessary for client-side validation in your ASP.NET Core MVC layout?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Manually include each script"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use '@RenderValidationScripts()'"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Implement in Global.asax"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use '@Html.Partial('_ValidationScripts')'"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95775,
+      "Explanation": "&apos;@RenderValidationScripts()&apos; includes the necessary validation scripts in your layout.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What directive assists in generating client-side validation HTML5 data attributes in ASP.NET Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@Html.EditorFor"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@Html.DropDownList"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@Html.ValidationSummary"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@Html.Hidden"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95776,
+      "Explanation": "@Html.EditorFor automatically generates input elements with validation data attributes required for client-side validation.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which namespace provides validation attributes in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "System.Web.Validation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Microsoft.AspNetCore.Mvc.Rendering"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "System.ComponentModel.DataAnnotations"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Microsoft.AspNetCore.Identity"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95777,
+      "Explanation": "The System.ComponentModel.DataAnnotations namespace includes attributes like Required, Range, and StringLength for validation.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What datatype attribute forces browsers to validate that an input value matches a specified pattern?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DataType.EmailAddress"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "StringLength(100)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "RegularExpression"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Key"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95778,
+      "Explanation": "RegularExpression attribute specifies a pattern that the input value must match, enabling client-side validation.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a validation error occurs on the client-side, what color do the associated input fields typically change to?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Blue"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Red"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Green"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Yellow"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95779,
+      "Explanation": "Input fields change to red to visually indicate an error.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default validation behavior when both client-side and server-side validations are defined for a model property?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Server-side only"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Client-side only"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both client-side and server-side"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No validation is performed"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95780,
+      "Explanation": "Both client-side and server-side validations are executed, enhancing the robustness by handling validation at both ends.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which tag helper is primarily used to generate attribute-based validation messages in ASP.NET Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "TextAreaTagHelper"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ValidationSummaryTagHelper"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ValidationMessageTagHelper"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SelectTagHelper"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95781,
+      "Explanation": "ValidationMessageTagHelper is used to display the validation messages tied to specific model properties.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary benefit of using self-validated models in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It reduces the need for separate database connections."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It centralizes validation logic within the model itself."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It eliminates the use of data annotations for validation."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It improves application performance by caching."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95782,
+      "Explanation": "Self-validated models centralize validation logic, thereby maintaining consistency and separation of concerns within the MVC framework.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which interface must be implemented in a model class to perform self-validation in ASP.NET Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IValidatableObject"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "IValidationModel"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "IModelValidator"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ISelfValidating"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95783,
+      "Explanation": "The IValidatableObject interface should be implemented for self-validation, allowing manual validation logic inside the model classes.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does the method Validate work in the context of implementing IValidatableObject?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By returning a string of error messages."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By overriding default model binder behavior."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By returning IEnumerable<ValidationResult> containing error messages."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By modifying model state directly."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95784,
+      "Explanation": "The Validate method returns IEnumerable<ValidationResult> indicating validation errors if any, which ASP.NET Core MVC uses to populate the ModelState.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Where do you typically implement the self-validation logic within a model class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "In controller actions."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Directly within the model's properties."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Inside the Validate method when implementing IValidatableObject."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "In a service injected into the model."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95785,
+      "Explanation": "The self-validation logic is implemented inside the Validate method which is part of the IValidatableObject interface.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How is the validation result communicated back to the controller in ASP.NET Core MVC when using self-validated models?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Through error codes returned from the database."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By throwing exceptions that are caught in action methods."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By adding errors directly to the ModelState inside the controller."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Via ValidationResult objects returned by the Validate method."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95786,
+      "Explanation": "ValidationResult objects returned by the Validate method are used to communicate validation errors to the controller through ModelState.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if there are validation errors returned by the self-validated model in an ASP.NET Core MVC application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The controller will skip executing the action method."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The ModelState will be updated with the errors."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The application automatically redirects to an error page."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An exception is thrown immediately by the framework."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95787,
+      "Explanation": "Validation errors returned by self-validated models are used to populate the ModelState object, which the framework uses to decide how to handle the response.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which namespace typically contains the IValidatableObject interface?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Microsoft.AspNetCore.Mvc"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "System.ComponentModel.DataAnnotations"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "System.Linq.Expressions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Microsoft.Extensions.DependencyInjection"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95788,
+      "Explanation": "IValidatableObject is part of the System.ComponentModel.DataAnnotations namespace, which contains classes for validation services.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the context of self-validated models, what is the purpose of the ValidationContext parameter in the Validate method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To provide contextual information about the validation operation including service providers."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To configure the validation logic initally."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To store the results of the validation."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To determine the type of database connection."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95789,
+      "Explanation": "ValidationContext provides additional information to the Validate method, such as the object being validated and a service provider for dependency injection.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can self-validated models coexist with attribute-based validation in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, they can complement each other."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, only one method can be used at a time."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, but attribute-based validation will be ignored."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No, self-validation overrides attribute-based validation."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95790,
+      "Explanation": "Self-validated models can be used together with attribute-based validation, offering flexibility to developers in managing validation logic.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true regarding self-validation in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Self-validation is only applicable to models that are used in POST requests."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Self-validation logic must not interact with any external services."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Self-validation provides a way to apply complex validation rules that are not possible with data annotations alone."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Self-validation is an outdated technique originally from ASP.NET Web Forms."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5879,
+      "QuestionTypeId": 0,
+      "QuestionId": 95791,
+      "Explanation": "Self-validation allows developers to implement complex business rules and validation logic, which might not be feasible with basic data annotations.",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

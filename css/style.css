@@ -1,0 +1,280 @@
+body { font-family: Arial, sans-serif; margin: 20px; }
+h1 { color: #333; }
+a { display: inline-block; margin: 5px 0; }
+.question { border: 1px solid #ccc; padding: 10px; margin: 10px 0; }
+.explanation { margin-top: 5px; font-style: italic; color: #555; }
+.question {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+.optionLabel {
+  padding: 5px;
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.explanation {
+  margin-top: 10px;
+  background: #fff8c9;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.page {
+  max-width: 650px;
+  margin: auto;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url("fonts/SF-Pro-Display-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url("fonts/SF-Pro-Display-Bold.otf") format("opentype");
+  font-weight: bold;
+}
+
+:root {
+  --bg: #f5f5f7;
+  --card-bg: #ffffff;
+  --accent: #007aff;    /* Apple blue */
+  --text: #1d1d1f;
+  --subtext: #6e6e73;
+  --radius: 14px;
+  --shadow: 0 4px 20px rgba(0,0,0,0.07);
+}
+
+/* Global Reset */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Button — iOS style */
+button {
+  background: var(--accent);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  margin-bottom: 20px;
+}
+
+/* Card List (Subjects / Subtopics) */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: var(--card-bg);
+  padding: 15px 20px;
+  margin: 10px 0;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.15s ease;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+/* Resource Links */
+#resources a {
+  display: block;
+  padding: 12px 15px;
+  margin: 8px 0;
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform .18s ease;
+}
+
+#resources a:hover {
+  transform: translateX(6px);
+}
+
+/* ------------------------------------------------------
+   MCQ Styling — iOS Card Quiz
+------------------------------------------------------ */
+
+.question {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.optionLabel {
+  display: block;
+  padding: 12px 14px;
+  background: #f0f0f5;
+  margin-top: 8px;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+
+.optionLabel input {
+  margin-right: 10px;
+}
+
+.optionLabel.correct {
+  background: #d4edda !important;
+}
+
+.optionLabel.wrong {
+  background: #f8d7da !important;
+}
+
+.explanation {
+  margin-top: 15px;
+  background: #fff8c9;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  li, #resources a {
+    font-size: 16px;
+    padding: 14px;
+  }
+
+  .question {
+    padding: 16px;
+  }
+}
+
+
+
+
+.question {
+  overflow: hidden;   /* prevents children from visually spilling out */
+  padding: 20px 16px; /* tighter padding for contained look */
+}
+
+.optionLabel {
+  margin: 10px 0;
+  background: #f5f5f7;     /* Apple grey */
+  border-radius: 12px;     /* squircle radius */
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;  /* ensures padding stays inside card */
+  width: 100%;             /* take full width inside parent */
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url("fonts/SF-Pro-Display-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+.explanation {
+  margin-top: 15px;
+  background: #fff8c9;
+  padding: 12px;
+  border-radius: 12px;
+  font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.squircle {
+  clip-path: path("M0.5 0C0.224 0 0 0.224 0 0.5v0.5c0 0.276 0.224 0.5 0.5 0.5h0.5c0.276 0 0.5-0.224 0.5-0.5V0.5C1 0.224 0.776 0 0.5 0H0.5z");
+}
+
+:root {
+  --bg: #f9f9fb;         /* ultra-light gray */
+  --card-bg: #ffffff;     /* white cards */
+  --text: #1c1c1e;       /* slightly softer black */
+  --subtext: #6c6c72;    /* subtle gray for subtitles */
+  --accent: #007aff;      /* Apple blue */
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1c1c1e;
+    --card-bg: #2c2c2e;
+    --text: #f5f5f7;
+    --subtext: #9a9a9c;
+    --accent: #0a84ff; /* Apple blue for dark mode */
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+  }
+
+  li,
+  #resources a,
+  .question,
+  .optionLabel,
+  .explanation {
+    background: var(--card-bg);
+    color: var(--text);
+    box-shadow: none; /* Apple removes shadows in dark mode */
+  }
+
+  button {
+    background: var(--accent);
+    color: white;
+  }
+
+  .optionLabel.correct {
+    background: #264d33 !important;
+  }
+
+  .optionLabel.wrong {
+    background: #4d2626 !important;
+  }
+
+  .explanation {
+    background: #3a3a3c;
+    color: var(--text);
+  }
+}
+
+* {
+  transition: background 0.3s ease, color 0.3s ease;
+}

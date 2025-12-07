@@ -1,0 +1,1146 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "In hibernate, _______ object holds the first level cache data and _______ object holds the second level cache data.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SessionFactory, Session"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Session, SessionFactory"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Session, Transaction"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Transaction, Session"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 82943,
+      "Explanation": "<span id=\"explanation82943\">Session object holds the first level cache data. It is enabled by default. The first level cache data will not be available to entire application. An application can use many session object.<br>SessionFactory object holds the second level cache data. The data stored in the second level cache will be available to entire application. But we need to enable it explicitely.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "_________ and ___________ hibernate entity states have corresponding representation in the database.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Persistent, Updated"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Persistent, Detached"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Persistent, Merged"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Persistent, Refreshed"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 83664,
+      "Explanation": "<span id=\"explanation83664\">Both Persistent and Detached objects have corresponding representation in the database.&nbsp; Similarly, the detached object is also not associated with the session, but a Persistent object is associated with the session.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The Single Table strategy creates one table for each class hierarchy. Since the records for all entities will be in the same table, Hibernate needs a way to differentiate between them. By default, this is done through a ________________",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "discriminator column"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "id column"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "foreign key column"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 83665,
+      "Explanation": "<span id=\"explanation83665\">Write explaination here..</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default state of an entity once it is created and before it is saved using Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Persistent"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Detached"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Transient"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Managed"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 101789,
+      "Explanation": "<span id=\"explanation101789\" style=\"color:blue\">Before an entity is saved to the database, it is considered as transient, meaning it is not associated with any persistence context and is not yet stored in the database.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which state represents an entity that is associated with a persistence context in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Persistent"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Transient"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Detached"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Removed"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 101790,
+      "Explanation": "<span id=\"explanation101790\" style=\"color:blue\">An entity is in the persistent state when it is associated with a persistence context, meaning any changes to the entity&apos;s state will be tracked and synchronized with the database.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens to a persistent entity when the associated session is closed in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It remains persistent"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It becomes transient"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It becomes detached"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is deleted"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 101791,
+      "Explanation": "<span id=\"explanation101791\" style=\"color:blue\">When the session associated with a persistent entity is closed, the entity becomes detached, meaning it is no longer tracked by the persistence context.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Hibernate, what is the state of an object that existed in the database but is not currently associated with any session?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Detached"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Persistent"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Transient"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Removed"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 101792,
+      "Explanation": "An entity is in a detached state if it was previously persistent but is no longer connected to a persistence context or session.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Hibernate method is typically used to transition a transient entity into a persistent state?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "update()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "merge()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "save()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "delete()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 101793,
+      "Explanation": "<span id=\"explanation101793\" style=\"color:blue\">The save() method is used to persist a transient instance and make it a persistent one by adding it to the session and database.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you transition a detached entity back to a persistent state in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "remove()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "persist()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "update()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "load()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 101794,
+      "Explanation": "The update() method is used to bring a detached entity back into a persistent state by associating it with a session.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What term describes the process of converting a persistent entity into a transient one by removing it from the session without deleting it from the database?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Detachment"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Eviction"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Isolation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Deletion"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 101795,
+      "Explanation": "Eviction is the process of removing a persistent entity from the session, making it transient while it still exists in the database.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Hibernate, which method is used to start a transaction?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "session.beginTransaction()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "session.startTransaction()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "session.openTransaction()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "session.commitTransaction()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 101796,
+      "Explanation": "The method session.beginTransaction() is used to start a new transaction in Hibernate.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if a transaction fails in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "All operations are committed"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The session is closed immediately"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "All operations are rolled back"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The transaction is ignored and operations continue"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 101797,
+      "Explanation": "If a transaction fails, Hibernate rolls back all operations to ensure data integrity.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following actions must be taken after a transaction is completed in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Call session.close() only"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Call commit() or rollback(), but session.close() is optional"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Always call both session.close() and commit() or rollback()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Close the database connection manually"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 101798,
+      "Explanation": "<span id=\"explanation101798\" style=\"color:blue\">After a transaction, it&apos;s crucial to call commit() or rollback() and close the session to release resources.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Hibernate exception is typically thrown when there is an issue with transaction synchronization?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "JDBCException"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "TransactionException"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SessionException"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SynchronizationException"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 101799,
+      "Explanation": "TransactionException is thrown by Hibernate to indicate issues with transaction management, such as synchronization failures.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of using second-level caching in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To store SQL query execution plans."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To reduce the time complexity of database schema creation."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To minimize time spent on network calls for database operations."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To improve CPU performance by multithreading."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 101800,
+      "Explanation": "<span id=\"explanation101800\" style=\"color:blue\">Second-level caching in Hibernate is used to reduce the load on the database by storing objects in memory, minimizing the need for repeated network calls to fetch the same data multiple times.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following cache strategies does not directly involve Hibernate&#39;s second-level cache?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Read-write"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Non-strict read-write"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Write-through"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Transactional"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 101801,
+      "Explanation": "Write-through caching is a strategy that manages how data is written to memory and the database simultaneously. It is not directly related to Hibernate&#39;s second-level cache strategies like Read-write, Non-strict read-write, or Transactional.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a valid Hibernate property to enable the second-level cache?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "hibernate.enable_second_level_cache"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "hibernate.use_second_level_cache"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "hibernate.cache.use_second_level_cache"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "hibernate.activate_second_level_cache"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 101802,
+      "Explanation": "The correct property to enable second-level caching in Hibernate is &#39;hibernate.cache.use_second_level_cache&#39;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Hibernate, which cache concurrency strategy is optimally used for data that rarely changes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Read-only"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Read-write"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Non-strict read-write"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Transactional"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 101803,
+      "Explanation": "The Read-only cache concurrency strategy is ideal for data that does not change, as it offers optimal performance for such immutable data.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following components can be used as a second-level cache provider in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "EclipseLink"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Ehcache"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "JSR 107"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Spring Cache"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 101804,
+      "Explanation": "Ehcache is a widely used open-source cache provider that can be integrated with Hibernate to serve as a second-level cache, helping to improve application performance.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a feature of Hibernate that enhances the performance of database operations by caching objects in memory?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Annotations"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "First-level cache"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Schema generation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Association mapping"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 101722,
+      "Explanation": "<span id=\"explanation101722\" style=\"color:blue\">Hibernate&apos;s first-level cache is associated with the Session and helps in caching objects to reduce database interactions and improve performance.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Hibernate, which of the following states does an object not belong to?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Detached"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Transient"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Persistent"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Immutable"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 101728,
+      "Explanation": "<span id=\"explanation101728\" style=\"color:blue\">In Hibernate, objects exist in transient, persistent, and detached states. An &apos;immutable&apos; state is not defined in Hibernate states.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Hibernate, which of the following states does NOT belong to an entity life cycle?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Transient"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Persistent"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Detached"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Serialized"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 91375,
+      "Explanation": "Serialized is not a state in Hibernate. Hibernate entity states include Transient, Persistent, and Detached.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Hibernate method is used to remove an object from the persistent state to the detached state?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "persist()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "merge()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "evict()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "detach()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 91376,
+      "Explanation": "The evict() method is used to remove an object from the session cache, thereby detaching it from the session.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What property should be set in a Hibernate configuration file to enable second-level caching?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "hibernate.cache.use_query_cache"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "hibernate.cache.use_second_level_cache"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "hibernate.cache.provider_class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "hibernate.cache.region.factory_class"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 91377,
+      "Explanation": "Setting hibernate.cache.use_second_level_cache to true in the configuration file enables second-level caching in Hibernate.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which transaction management type is provided by Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Container-managed"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Programmatic"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Declarative"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Automatic"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 91378,
+      "Explanation": "Hibernate supports programmatic transaction management using its Transaction API.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in Hibernate is used to begin a database transaction?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "session.beginTransaction()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "session.startTransaction()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "session.initTransaction()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "session.transactionBegin()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 91379,
+      "Explanation": "The session.beginTransaction() method is used to initiate a database transaction in Hibernate.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Hibernate, which caching strategy is helpful for entities with read-mostly data?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Read-Write"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Read-Only"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Transactional"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Non-strict Read-Write"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 91380,
+      "Explanation": "Read-Only caching strategy is suited for entities that are mostly read and rarely modified.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of second-level cache in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To reduce database access by caching query results"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To store transaction details temporarily"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To cache session object data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To maintain a shared cache of entity data across sessions"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 91381,
+      "Explanation": "The second-level cache is used by Hibernate to maintain a shared, process-level cache of entity data, thereby reducing the number of database hits.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in transaction management is used to roll back a transaction in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "rollback()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "abort()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "undo()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "cancel()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 91382,
+      "Explanation": "The rollback() method is used to roll back the current transaction in Hibernate.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does Hibernate's first-level cache differ from the second-level cache?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "First-level cache is shared among sessions, second-level cache is per session."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "First-level cache is per session, second-level cache can be shared across sessions."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "First-level cache stores persistent objects, second-level cache stores detached objects."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "There is no difference."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 91383,
+      "Explanation": "<span id=\"explanation91383\" style=\"color:blue\">In Hibernate, the first-level cache is session-specific, while the second-level cache can be shared across sessions.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following would cause an entity to enter the 'detached' state in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Session is closed while the entity is still attached."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Entity is explicitly persisted."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Entity is removed from the database."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Session is cleared."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 91384,
+      "Explanation": "When a session is closed, any associated entities become detached since they&apos;re no longer associated with any persistence context.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which interface in Hibernate is responsible for transaction management?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SessionFactory"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Transaction"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Session"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Configuration"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 91385,
+      "Explanation": "The Transaction interface is used in Hibernate for handling transactions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Hibernate, the method load() differs from get() in which of the following ways?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "load() returns a proxy, get() returns a real object."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "load() is faster than get() because it doesn't access the database."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "get() returns a proxy, load() returns a real object."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "get() is faster than load() because it doesn't access the database."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 91386,
+      "Explanation": "The load() method returns a proxy object and only accesses the database when any property is accessed, while get() returns the actual object from the database.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Hibernate caching implementation is typically used for large-scale enterprise applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Ehcache"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "OSCache"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Hazelcast"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "JCache"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 91387,
+      "Explanation": "Ehcache is a widely used, robust caching implementation suitable for large-scale enterprise applications.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Hibernate configuration, what is the primary purpose of setting hbm2ddl.auto?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To configure query caching"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To manage transaction isolation levels"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To control schema creation and dropping"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To enable logging of SQL statements"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 91388,
+      "Explanation": "The hbm2ddl.auto setting in Hibernate controls the behavior for schema generation, like creating and dropping tables.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following cache differences is noted between Hibernate's 1st level and 2nd level caches?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1st level is slow, 2nd level is fast"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1st level is faster than 2nd level"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1st level is automatic, 2nd level requires explicit setup"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1st level is shared across sessions, 2nd level is not"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 91389,
+      "Explanation": "Hibernate&apos;s 1st level cache is enabled by default at the session level, while the 2nd level cache requires explicit configuration to be enabled.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if a transaction is not committed in Hibernate?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Data is automatically saved"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Data is rolled back"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Session is closed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Entity becomes detached"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 102542,
+      "Explanation": "<span style=\"color:#0000ff;\">If a transaction is not committed, Hibernate rolls back the changes to maintain data integrity.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which level of caching is enabled by default in Hibernate?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "First-level cache"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Second-level cache"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Query cache"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No cache"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4822,
+      "QuestionTypeId": 0,
+      "QuestionId": 102543,
+      "Explanation": "<span style=\"color:#0000ff;\">First-level cache is session-scoped and enabled by default in Hibernate.</span>",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

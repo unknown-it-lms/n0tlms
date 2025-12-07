@@ -1,0 +1,1116 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What keyword is used to start the definition of a stored procedure in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "BEGIN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "PROCEDURE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CREATE PROCEDURE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "START"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 92467,
+      "Explanation": "In MySQL, a stored procedure begins with the &apos;CREATE PROCEDURE&apos; keyword followed by the procedure name and parameter list.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a valid characteristic of a MySQL stored procedure?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DETERMINISTIC"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "READS SQL DATA"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "WITH EXECUTE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MODIFIES SQL DATA"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 92468,
+      "Explanation": "In MySQL, &apos;WITH EXECUTE&apos; is not a valid characteristic. The correct characteristics include &apos;DETERMINISTIC&apos;, &apos;READS SQL DATA&apos;, and &apos;MODIFIES SQL DATA&apos;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default delimiter used in MySQL when writing stored procedures?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": ";"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "//"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "|"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "$$"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 92469,
+      "Explanation": "The default delimiter in MySQL is &apos;;&apos;. However, when defining a stored procedure, you often change the delimiter temporarily to avoid confusion with statement terminators.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In MySQL, how can you call a stored procedure?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "EXECUTE procedure_name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "RUN procedure_name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CALL procedure_name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "PERFORM procedure_name"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 92470,
+      "Explanation": "To execute a stored procedure in MySQL, you use the &apos;CALL&apos; statement followed by the procedure name and its parameters.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is TRUE about MySQL stored procedures regarding performance?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They are always slower than executing raw SQL queries."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Stored procedures can be precompiled, potentially increasing speed."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Stored procedures cannot handle complex logic efficiently."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They always lower server load regardless of the operation."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 92471,
+      "Explanation": "Stored procedures can be precompiled, allowing them to potentially run faster than raw SQL queries because parsing and optimization are done beforehand.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What statement is used to declare a variable in a MySQL stored procedure?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "LET"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DECLARE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "VAR"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DEFINE"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 92472,
+      "Explanation": "In MySQL, the &apos;DECLARE&apos; statement is used to declare variables within a stored procedure.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is used to handle exceptions in MySQL stored procedures?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "TRY...CATCH"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "BEGIN...RESCUE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DECLARE...EXCEPTION"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DECLARE...HANDLER"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 92473,
+      "Explanation": "In MySQL, you use &apos;DECLARE ... HANDLER&apos; to handle exceptions or specific conditions within a stored procedure.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What keyword is used to end a stored procedure definition in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "END;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FINISH;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CLOSE;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "COMMIT;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 92474,
+      "Explanation": "The &apos;END;&apos; keyword is used to close a block of statements in a MySQL stored procedure.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the 'DETERMINISTIC' characteristic indicate about a MySQL stored procedure?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The procedure is only executed once."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Given the same inputs, the procedure will reproduce the same outputs."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The procedure modifies SQL data."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The procedure reads only SQL data."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 92475,
+      "Explanation": "&apos;DETERMINISTIC&apos; indicates that a stored procedure always produces the same result when given the same input parameters.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you set a stored procedure to return multiple values in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use multiple RETURN statements."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use OUT parameters."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use SET and GET commands."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Directly return a result set."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 92476,
+      "Explanation": "To return multiple values from a stored procedure, you use OUT parameters, which allow the procedure to pass values back to the caller.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command is used to remove an existing stored procedure in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DELETE PROCEDURE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "REMOVE PROCEDURE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DROP PROCEDURE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DESTROY PROCEDURE"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 92477,
+      "Explanation": "The &apos;DROP PROCEDURE&apos; command is used to delete an existing stored procedure from the database.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is TRUE about stored procedures and transactions in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Stored procedures automatically commit transactions."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Stored procedures cannot run inside a transaction."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "You can control transaction flow within a stored procedure using 'COMMIT' and 'ROLLBACK'."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Stored procedures automatically rollback transactions in case of error."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 92478,
+      "Explanation": "In MySQL, you can control transaction flow within a stored procedure using &apos;COMMIT&apos; to save changes and &apos;ROLLBACK&apos; to revert changes.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following correctly describes an INOUT parameter in a MySQL stored procedure?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "INOUT parameters can only receive data into the procedure."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "INOUT parameters can only send data out from the procedure."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "INOUT parameters can both receive data into and send data out from the procedure."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "INOUT parameters are a deprecated feature."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 92479,
+      "Explanation": "INOUT parameters allow a stored procedure to both receive data from the caller and return data back to the caller.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which of the following situations would you typically NOT use a MySQL stored procedure?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To execute a complex transaction processing."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To simplify repetitive tasks with encapsulated logic."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To perform client-side data validation."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To enhance performance by reducing network traffic."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 92480,
+      "Explanation": "Stored procedures in MySQL are used for server-side processing. Client-side data validation typically does not fall within the purpose of a stored procedure.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is TRUE about the security context in which a MySQL stored procedure executes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It runs with the invoker's privileges by default."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It can only run with the database admin privileges."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It must run with no security context."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It runs with the definer's privileges by default."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 92481,
+      "Explanation": "By default, stored procedures run with the definer&apos;s privileges unless defined otherwise using the SQL SECURITY clause.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the maximum number of parameters a MySQL stored procedure can accept?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "256"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1024"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "100"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No explicit limit, depends on server configuration."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 92482,
+      "Explanation": "MySQL does not impose an explicit limit on the number of procedure parameters, but it is bounded by server capabilities and configuration.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following tools is commonly used to create and manage stored procedures in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "MySQL Workbench"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Oracle SQL Developer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "pgAdmin"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SQL Server Management Studio"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 92483,
+      "Explanation": "MySQL Workbench is a visual SQL tool used to design, develop, and manage MySQL databases, including stored procedures.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the DELIMITER command in MySQL when creating a stored procedure?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To set the database to accept stored procedure syntax."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To define the end of the stored procedure."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To allow the use of semicolons within the procedure body."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To ensure proper transaction control."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 92484,
+      "Explanation": "The DELIMITER command allows the use of semicolons within the procedure body by temporarily changing the delimiter. This prevents confusion with the end of the statement.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following identifies a potential disadvantage of using stored procedures?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Increased performance and efficiency."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Reduction in network traffic."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Limited portability across different RDBMS."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Encapsulation of business logic."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 92485,
+      "Explanation": "Stored procedures may limit portability because they contain SQL code specific to the database system (e.g., MySQL), which may not be compatible with other RDBMS systems.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct syntax for creating a stored procedure with one input parameter in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CREATE PROCEDURE proc_name (input_name VARCHAR(20))"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "CREATE PROCEDURE proc_name IN input_name VARCHAR(20)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CREATE PROCEDURE proc_name (IN input_name VARCHAR(20))"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CREATE PROCEDURE proc_name [input_name] VARCHAR(20)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 92486,
+      "Explanation": "The correct syntax uses &apos;CREATE PROCEDURE&apos; followed by the procedure name and parameter definition, with &apos;IN&apos; specifying the input parameter.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is used within a MySQL stored procedure to iterate over a block of statements?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "REPEAT ... END REPEAT"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LOOP ... END LOOP"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ITERATE ... END ITERATE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CYCLE ... END CYCLE"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 92487,
+      "Explanation": "In MySQL stored procedures, &apos;LOOP ... END LOOP&apos; is used to create a loop to iterate over a block of statements repeatedly.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you prevent SQL injection in stored procedures in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Allow direct user inputs."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use dynamic SQL generation."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Validate and sanitize all inputs."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Disable all error messages."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 92488,
+      "Explanation": "To prevent SQL injection, it is crucial to validate and sanitize all input data before using it in SQL statements within stored procedures.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you provide information about errors that occurred during stored procedure execution in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Directly return error codes."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use the GET_ERRORS command."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Access the built-in 'SHOW ERRORS' function."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Access the 'INFORMATION_SCHEMA.ERRORS' table."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 92489,
+      "Explanation": "MySQL provides a built-in function &apos;SHOW ERRORS&apos; that displays detailed information on errors that occurred during procedure execution.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which clause can be used to control how a stored procedure's privileges are checked in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SQL SECURITY"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ACCESS MODE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "PERMISSION"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "GRANT LEVEL"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 92490,
+      "Explanation": "The &apos;SQL SECURITY&apos; clause is used to specify whether the stored procedure should execute with the privileges of the definer or the invoker.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When defining a stored procedure, how can you specify that it contains one or more statements to be executed?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "BEGIN ... END"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "EXECUTE ... FINISH"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "START ... STOP"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DO ... DONE"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 92491,
+      "Explanation": "To group multiple statements within a stored procedure in MySQL, you use the &apos;BEGIN ... END&apos; block.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement lets you create stand alone functions that are stored in an MySQL database?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CREATE PROCEDURE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "CREATE FUNCTION"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both A &amp; B"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 65249,
+      "Explanation": "<span id=\"explanation65249\">Create Function can store in Oracle Database. You can access it through select clause as well.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The parameter having mode _________&nbsp; acts like a constant inside the subprogram.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "OUT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both A &amp; B"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 65250,
+      "Explanation": "IN - Read Only<br>OUT - Write<br>IN OUT - Read and Write",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is true about stored procedures?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A stored procedure uses the DELCLARE keyword in the procedure specification to declare formal parameters."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A stored procedure is named PL/SQL block with at least one parameter declaration in the procedure specification."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A stored procedure must have at least one executable statement in the procedure body."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A stored procedure uses the DECLARE keyword in the procedure body to declare formal parameters."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 74353,
+      "Explanation": "One need to write the store procedure must have at least one executable statement in the procedure body.<br><br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following PL/SQL program construct must return a value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Anonymous Block"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Stored Function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Stored Procedure"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Database Triggers"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 65094,
+      "Explanation": "Strored function must return a value.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "John has created a procedure named SALARY_CALC. Which SQL query allows him to view the text of the procedure?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SHOW PROCEDURE CODE SALARY_CALC;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SHOW PROCEDURE CODE where PROCEDURE='SALARY_CAL';"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT SALARY_CALC<br>FROM user_table<br>where procedure_name='SALARY_CAL';"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 65122,
+      "Explanation": "show procedure code will display code of the specifid procedure.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Under which situation do you create a server side procedure?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When the procedure contains no SQL statements."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When the procedure contains no PL/SQL commands."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When the procedure needs to be used by many client applications accessing several remote databases."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When the procedure needs to be used by many users accessing the same schema objects on a local database."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 65120,
+      "Explanation": "When the procedure needs to be used by many users accessing the same schema objects on a local database.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The following are the type of parameters_______.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Read, Write, Append"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "IN, OUT, INOUT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "IN, OUT, IN AND OUT"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "IN, OUT, IN_OUT"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 65060,
+      "Explanation": "<span id=\"explanation65060\">PL/SQL procedure parameters can have one of three possible modes: IN, OUT, or IN OUT. PL/SQL function parameters can only be IN. An IN formal parameter is initialized to the actual parameter with which it is called, unless it is explicitly initialized with a default value.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the command show list of all users in mysql",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "select user from mysql.user"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "select user"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "show users"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "select current_user()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 81227,
+      "Explanation": "select user from mysql.user command show lost of all users in mysql.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The default parameter type in stored procedures is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "OUT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "INOUT"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "There is no default type"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 86254,
+      "Explanation": "<span id=\"explanation86254\">&nbsp;</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "NOT FOUND handler is declared in MySQL cursor&nbsp; ....<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Because it generates an error if table is not found in the connected Database."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Because it handles the situation when cursor dose not find any row."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Because it generates an error if condision in where clause fails to fetch any single row."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Because it generetes an error if select clause contains unknown column."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 86311,
+      "Explanation": "It also handles the situation when the cursor reaches the end of the row because every time we call FETCH statement the cursor finds to attempt the next row in the result set",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which mode dose a formal parameter act&nbsp; like an&nbsp; initialized variable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "OUT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "INOUT"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Global"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 86633,
+      "Explanation": "<span id=\"explanation86633\"></span><span>In the INOUT mode, a formal parameter acts like an initialized variable. This is because INOUT parameters are both used to receive input and return output from a subprogram. They are initialized with the value of the actual parameter when the subprogram is called, and any changes made to the formal parameter inside the subprogram are reflected in the actual parameter.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is mandatory part in procedure?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Declarative Part"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Exception-handling"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Executable Part"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6543,
+      "QuestionTypeId": 0,
+      "QuestionId": 86654,
+      "Explanation": "Executable Part : This is a mandatory part and contains statements that perform the designated action.",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

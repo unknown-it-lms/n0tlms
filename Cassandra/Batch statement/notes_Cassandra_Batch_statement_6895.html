@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Notes - Cassandra_Batch statement</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  body{font-family:system-ui,Segoe UI,Roboto,Arial;max-width:900px;margin:24px auto;padding:18px;line-height:1.6;color:#111}
+  h1{font-size:1.4rem;margin-bottom:0.6rem}
+  .topic{font-weight:700;margin-top:1rem}
+  .subtopic{font-weight:600;margin-top:0.8rem}
+  .content{margin:0.6rem 0 1.2rem 0}
+  pre{white-space:pre-wrap;background:#f7f7f7;padding:10px;border-radius:6px;overflow:auto}
+  img{max-width:100%;height:auto}
+  table{border-collapse:collapse;width:100%}
+  table, th, td{border:1px solid #ccc;padding:6px}
+</style>
+</head>
+<body>
+<h1>Notes: Cassandra- Batch statement</h1>
+
+<div class="courseware topic">Batch statement</div><div class="courseware content"><hr><p>Batch statement is used to combine multiple DML statements to achieve atomicity and isolation when targeting a single partition or only atomicity when targeting multiple partitions. <strong>A <span style="color:#2980b9;"><span style="background-color:#ffffff;">batch applies all DMLs within a single partition before the data is available, ensuring atomicity and isolation</span></span></strong><span style="background-color:#ffffff;">.&nbsp;&nbsp;</span></p><p>A well constructed batch targeting a single partition can <span style="color:#2980b9;"><strong>reduce client-server traffic and more efficiently update a table with a single row mutation</strong></span>. A batch&nbsp;can&nbsp;also target multiple partitions, when atomicity and isolation is required. Multi-partition batches may decrease the&nbsp; throughput and increase the latency.&nbsp; &nbsp; &nbsp;</p>&nbsp;<strong>Syntax</strong><br><strong><span style="color:#f1c40f;">BEGIN BATCH</span></strong><br>&nbsp; &nbsp; &nbsp; dml statements;<br><strong><span style="color:#f1c40f;">APPLY BATCH;</span></strong><br>eg&nbsp; &nbsp;<br>begin batch<br>&nbsp; &nbsp; &nbsp; insert into students(roll,name,per)<br>&nbsp; &nbsp; &nbsp; values(101,'Sujay',89.00);<br>&nbsp; &nbsp; &nbsp; delete&nbsp;<br>&nbsp; &nbsp; &nbsp; from students<br>&nbsp; &nbsp; &nbsp; where roll=20;<br>&nbsp; &nbsp; &nbsp; update students<br>&nbsp; &nbsp; &nbsp; set per=67<br>&nbsp; &nbsp; &nbsp; where&nbsp; roll =23;<br>apply batch;<br>&nbsp; &nbsp; &nbsp; &nbsp;<br><br><br><br><br></div>
+
+
+</body>
+</html>

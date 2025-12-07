@@ -1,0 +1,3246 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is an anonymous type in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A type declared with a 'var' keyword"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A way to define data classes without declaring a named class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A type that is used when the type is known at runtime"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A type that can have multiple inheritance"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95141,
+      "Explanation": "Anonymous types allow you to create a new and simple class with public read-only properties without explicitly defining a class.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which of the following scenarios are anonymous types most commonly used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Complex data transformation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Database schema definition"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Temporary data structure for a method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Defining public APIs"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95142,
+      "Explanation": "Anonymous types are typically used for temporary data structures, especially when the scope is limited to a method.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about properties of an anonymous type?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They are mutable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They are read-only"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They can be indexed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They support inheritance"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95143,
+      "Explanation": "Properties of an anonymous type are read-only, meaning once they are set during initialization, they cannot be changed.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you access properties of an anonymous type in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using reflection only"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Directly by the property name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Properties cannot be accessed once set"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using a special accessor method"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95144,
+      "Explanation": "Properties of anonymous types can be accessed directly by their name, similar to named types.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a limitation of anonymous types?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They can have only one property"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They must implement the IDisposable interface"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They cannot be passed as method parameters"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They cannot be returned from a method without 'var'"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95145,
+      "Explanation": "<span id=\"explanation95145\" style=\"color:blue\">Anonymous types do not have a named type and are best used within the back-end of a method, often causing issues when returned or passed without using &apos;var&apos;.<br></span><table border=\"1\" cellspacing=\"1\" cellpadding=\"1\" style=\"width: 100%;\"><tbody><tr><td><table data-start=\"974\" data-end=\"1418\" class=\" cke_show_border\"><thead data-start=\"974\" data-end=\"1007\"><tr data-start=\"974\" data-end=\"1007\"><th data-start=\"974\" data-end=\"983\" data-col-size=\"sm\">Option</th><th data-start=\"983\" data-end=\"992\" data-col-size=\"sm\">Valid?</th><th data-start=\"992\" data-end=\"1007\" data-col-size=\"lg\">Explanation</th></tr></thead><tbody data-start=\"1042\" data-end=\"1418\"><tr data-start=\"1042\" data-end=\"1128\"><td data-start=\"1042\" data-end=\"1069\" data-col-size=\"sm\"><strong data-start=\"1044\" data-end=\"1068\">A. Only one property</strong></td><td data-col-size=\"sm\" data-start=\"1069\" data-end=\"1076\">\u274c No</td><td data-col-size=\"lg\" data-start=\"1076\" data-end=\"1128\">Anonymous types can have <strong data-start=\"1103\" data-end=\"1115\">multiple</strong> properties</td></tr><tr data-start=\"1129\" data-end=\"1219\"><td data-start=\"1129\" data-end=\"1165\" data-col-size=\"sm\"><strong data-start=\"1131\" data-end=\"1164\">B. Must implement IDisposable</strong></td><td data-col-size=\"sm\" data-start=\"1165\" data-end=\"1172\">\u274c No</td><td data-col-size=\"lg\" data-start=\"1172\" data-end=\"1219\">They <strong data-start=\"1179\" data-end=\"1189\">do not</strong> and are <strong data-start=\"1198\" data-end=\"1214\">not required</strong> to</td></tr><tr data-start=\"1220\" data-end=\"1418\"><td data-start=\"1220\" data-end=\"1267\" data-col-size=\"sm\"><strong data-start=\"1222\" data-end=\"1266\">C. Cannot be passed as method parameters</strong></td><td data-col-size=\"sm\" data-start=\"1267\" data-end=\"1289\">\u274c Not entirely true</td><td data-col-size=\"lg\" data-start=\"1289\" data-end=\"1418\">They <strong data-start=\"1296\" data-end=\"1306\">can be</strong>, but only if the method is in the same method or context (via generics or <code data-start=\"1381\" data-end=\"1389\">object</code>) \u2014 limited, not impossible</td></tr></tbody></table><br></td></tr></tbody></table><br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of using extension methods in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To modify existing classes directly."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To add new functionality to existing types without modifying their source code."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To create new instances of a class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To inherit from sealed classes."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95146,
+      "Explanation": "Extension methods allow you to add new methods to existing types without altering their original code. This is especially useful when working with classes you cannot modify.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following keywords is used to declare an extension method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "abstract"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "virtual"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "dynamic"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95147,
+      "Explanation": "Extension methods are always static methods in a static class. The keyword &apos;static&apos; is used to declare them.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Where must an extension method be defined to be accessible in other classes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Within any class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Within a static class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Within the method where it is used"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Within an instance of a class"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95148,
+      "Explanation": "Extension methods must be defined within a static class for accessibility from other classes.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How is 'this' used in the context of an extension method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "As a reference to the extension method's defining class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To indicate the method is static"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To specify which type the method extends"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To create an instance of the extended type"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95149,
+      "Explanation": "&apos;this&apos; is used as the first parameter in an extension method to specify the type it extends.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which access modifier can be used with extension methods?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public only"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "private"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "protected"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "internal or public"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95150,
+      "Explanation": "Extension methods can either be internal or public, depending on the desired visibility within the solution.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if multiple extension methods with the same name are available for a type?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It causes a compilation error."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The method with the higher precedence namespace is chosen. (The <em data-start=\"1674\" data-end=\"1699\">closest using directive</em> or <em data-start=\"1703\" data-end=\"1718\">explicit call</em> is chosen). If ambiguity remains, compiler error results."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C# randomly picks one of them."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only compile-time errors about ambiguity are shown."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95151,
+      "Explanation": "<span id=\"explanation95151\" style=\"color:blue\">If extension methods have the same name, the one in the namespace with higher precedence is chosen, usually guided by the using directives order.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can extension methods be used to override existing methods in a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, always."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, they cannot override existing methods."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, if the method is sealed."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Yes, but only in derived classes."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95152,
+      "Explanation": "Extension methods cannot override existing methods. They only extend the type&apos;s interface externally.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which scenario would an extension method be preferable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When you need to add a required method to a built-in type."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When creating a new feature for your own classes."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When avoiding the use of interfaces."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When you must modify the base class code."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95153,
+      "Explanation": "Extension methods are especially suitable for adding additional functionality to built-in or third-party types that cannot be modified directly.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How are extension methods called when used in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By directly calling them like a static method (using class Name)."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using reflection."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "As if they are instance methods of the type they extend."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "With a special extension keyword."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95154,
+      "Explanation": "<span id=\"explanation95154\" style=\"color:blue\">Extension methods are called as if they were instance methods of the type being extended, making them seamless to use.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What limitation is inherent when using extension methods?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They can only be defined in non-nested classes."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They cannot access private members of the extended type."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They may only extend classes, not interfaces."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They require override modifiers."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95155,
+      "Explanation": "<span id=\"explanation95155\" style=\"color:blue\">Extension methods cannot access private members of the type they extend because they do not actually alter the type structure.<br></span><p data-start=\"387\" data-end=\"423\"><span style=\"color:#0000ff;\">Extension methods cannot access:</span></p><ul data-start=\"424\" data-end=\"562\"><li data-start=\"424\" data-end=\"445\"><p data-start=\"426\" data-end=\"445\"><span style=\"color:#0000ff;\">Private members</span></p></li><li data-start=\"446\" data-end=\"469\"><p data-start=\"448\" data-end=\"469\"><span style=\"color:#0000ff;\">Protected members</span></p></li><li data-start=\"470\" data-end=\"562\"><p data-start=\"472\" data-end=\"562\"><span style=\"color:#0000ff;\">Or internal members (unless in the same assembly and marked with InternalsVisibleTo)</span></p></li></ul><p data-start=\"564\" data-end=\"572\"><span style=\"color:#0000ff;\">Because:</span></p><blockquote data-start=\"573\" data-end=\"698\"><p data-start=\"575\" data-end=\"698\"><span style=\"color:#0000ff;\">Extension methods are just syntactic sugar \u2014 they do not modify the internal structure of the class being extended.</span></p></blockquote>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a partial class in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A class that has multiple definitions in the same file."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A class defined in multiple files with different namespaces."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A class that is used only partially in a program."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A class that can span across multiple files for easier management."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95156,
+      "Explanation": "A partial class is a feature in C# that allows the class definition to be split across multiple files for better organization and management of large projects.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why would a developer use partial classes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To have multiple constructors in a class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To split the functionality of a class into multiple development teams."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To enable version control of different parts of a class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To serialize objects automatically."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95157,
+      "Explanation": "Partial classes let developers split the code and logic of a class into different files, which can be useful when multiple teams are working on different parts of the same class simultaneously.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to define a partial class in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "partial"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "interface"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "override"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95158,
+      "Explanation": "<span id=\"explanation95158\" style=\"color:blue\">The &apos;partial&apos; keyword is used to indicate that the class, method, or other construct can be split into multiple parts across different files.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can members of partial classes be spread across different assemblies?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, they can be spread across different assemblies."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, they must be in the same assembly."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They can be in different namespaces within the same assembly."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They can be spread across different assemblies if they use the same namespace."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95159,
+      "Explanation": "All parts of a partial class must be in the same assembly. This is necessary to ensure that the compiler can combine the different parts into a single class.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about partial classes is correct?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Partial classes allow multiple inheritance in C#."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Attributes applied to partial classes apply only to the file they are declared in."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The definition of a partial method must be present in at least one part of a partial class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Partial classes can only be used with complex types."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95160,
+      "Explanation": "Partial methods are declared in one part of a partial class and can be optionally implemented in another part of the partial class. However, the definition must be present.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens when a partial method is not implemented in any part of a partial class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The class cannot compile."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The class will throw a runtime exception."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The partial method will be ignored by the compiler."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The compiler automatically generates a default implementation."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95161,
+      "Explanation": "If a partial method is not implemented, it is ignored by the compiler and does not form part of the final compiled class. This allows developers to declare methods that may or may not be necessary.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can a partial method have an access modifier?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, it can have public or private access."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes, but only internal access is allowed."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No, partial methods cannot have any access modifiers."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Yes, they can have any access modifiers just like normal methods."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95162,
+      "Explanation": "Partial methods cannot have access modifiers. They are implicitly private and must be void.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does the use of partial classes affect encapsulation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It breaks encapsulation as all parts must be open internally."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It strengthens encapsulation by allowing smaller code parts."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It has no effect on encapsulation."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It weakens encapsulation by spreading the class across files."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95163,
+      "Explanation": "Partial classes do not affect the encapsulation rules of C#. They follow the same encapsulation principles regardless of being defined in multiple files.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Do partial classes support abstract methods?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, they can only define abstract methods."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, partial classes cannot define abstract methods."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, partial classes support both abstract and non-abstract methods."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Partial classes must be declared as abstract to define abstract methods."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95164,
+      "Explanation": "Partial classes can include both abstract and non-abstract methods, just like any regular class.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which one of the following is a disadvantage of using partial classes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Leads to tighter coupling."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Can complicate debugging efforts."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Increases compilation time."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Limits the use of object-oriented principles."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95165,
+      "Explanation": "While partial classes help organize code across files, they can complicate debugging efforts since the logical order of code might be split across multiple files.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a defining characteristic of partial methods in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They can only have public access modifier."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They must have both defining and implementing parts."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They must be declared with the 'virtual' keyword."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They can exist without an implementation."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95166,
+      "Explanation": "Partial methods in C# can be defined without an implementation. If not implemented, the compiler removes the definition entirely.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which context can partial methods be used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only in static classes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Inside partial classes or partial structs"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only in sealed classes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Within abstract methods"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95167,
+      "Explanation": "Partial methods can only be used within partial classes or structs, which allows parts of the class or struct to be in separate files.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is TRUE about the signature of a partial method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It must always include parameters."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It can have any return type."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It must return void."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It must return a bool."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95168,
+      "Explanation": "Partial methods must return void, meaning they cannot have any return type other than void.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given a partial method declaration, what happens if it's not implemented?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The compiler will throw an error."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The method will be automatically implemented with a default body."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The method declaration will be removed during compilation."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Runtime exceptions will occur."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95169,
+      "Explanation": "If a partial method is declared but not implemented, the compiler removes the declaration, resulting in no method calls at runtime.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following keywords is NOT allowed in the declaration of a partial method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "private"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "public"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "unsafe"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95170,
+      "Explanation": "Partial methods cannot include access modifiers like &apos;public&apos;. They are implicitly private.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why might you use partial methods in C# development?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To ensure thread safety in concurrent programming"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To handle events in GUI applications"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To provide hooks for generated code"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To enforce security patterns"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95171,
+      "Explanation": "Partial methods are often used to provide hooks in generated code where developers can inject custom logic without modifying the generated file.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is FALSE about partial methods in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They can be generic."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They can have 'out' parameters."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They are implicitly private."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They can be overloaded."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95172,
+      "Explanation": "Partial methods cannot have &apos;out&apos; parameters but can have &apos;ref&apos; parameters. They also cannot be generic or overloaded.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you define a partial method in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using the keyword 'partial' only."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "With 'partial' keyword, followed by 'abstract'."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using 'partial' along with 'static'."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using 'partial' keyword and a method signature without a body."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95173,
+      "Explanation": "A partial method is defined using the &apos;partial&apos; keyword followed by a method signature with no body. It may or may not have an implementation.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if a partial method is implemented in a file other than where it was defined?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The program will not compile."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The method will be ignored by the compiler."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The method works as if it was implemented in the same file."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It's not possible; implementations must be in the same file."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95174,
+      "Explanation": "Partial methods can be implemented in any part file of the partial class or struct, and the compiler seamlessly integrates them.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can a partial method be called outside its partial class or struct?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, if it's explicitly made public."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, partial methods are implicitly private."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, they behave like normal methods."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No, unless they are declared static."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95175,
+      "Explanation": "Partial methods are implicitly private and cannot be called outside the partial class or struct they are part of.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does LINQ stand for in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Language Integrated Query"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Language Internal Query"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "List Integrated Query"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Logic Integrated Query"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95176,
+      "Explanation": "LINQ stands for Language Integrated Query, which is a feature in C# used for querying collections in a syntactic way similar to SQL.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in LINQ is used to filter a sequence of values based on a predicate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Select()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Filter()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Where()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "OrderBy()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95177,
+      "Explanation": "The Where() method in LINQ is used to filter a sequence based on a predicate, returning only elements that satisfy the condition specified.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods would you use to sort a collection in ascending order in LINQ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Sort()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Order()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SortBy()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "OrderBy()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95178,
+      "Explanation": "The OrderBy() method is the correct method to sort a collection in ascending order using LINQ.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the Select() method in LINQ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To filter data"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To transform elements"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To sort data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To group data"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95179,
+      "Explanation": "The Select() method is used in LINQ to transform elements in a collection, allowing projection of each element into a new form.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following LINQ methods aggregates the values in a collection by computing a sum?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Sum()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Aggregate()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Fold()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Combine()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95180,
+      "Explanation": "The Sum() method is used in LINQ to compute the sum of numeric elements in a collection.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the Take() method in LINQ do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Selects a range of elements within a collection."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Returns a specified number of contiguous elements from the start of a collection."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Removes a range of elements from a collection."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Splits a collection into two parts."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95181,
+      "Explanation": "The Take() method in LINQ is used to return a specified number of contiguous elements from the start of a collection.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which LINQ method would you use to return distinct elements from a collection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Unique()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Except()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Distinct()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Diverse()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95182,
+      "Explanation": "The Distinct() method is used in LINQ to return distinct elements from a collection, essentially removing any duplicate values.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the role of the GroupBy() method in LINQ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To filter elements based on a group key."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To join multiple collections."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To partition elements into groups based on a specified key."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To sort elements within a group."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95183,
+      "Explanation": "The GroupBy() method is used in LINQ to partition elements of a collection into groups based on a specified key selector function.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you concatenate two collections in LINQ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Merge()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Union()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Concat()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Join()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95184,
+      "Explanation": "The Concat() method in LINQ is used to concatenate two collections, combining their elements into a single collection.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which LINQ method is used to determine if any elements of a collection satisfy a condition?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "All()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Any()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Exists()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Contains()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95185,
+      "Explanation": "The Any() method is used to determine if any elements in a collection satisfy a specified condition in LINQ.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does LINQ stand for in .NET technologies?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Language Integrated Query"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Logical Interfaced Network Query"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Linear Interdependent Query"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Linked Integrated Network Query"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95186,
+      "Explanation": "LINQ stands for Language Integrated Query, a feature that adds query capabilities to .NET languages like C#.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a valid LINQ query syntax in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT * FROM list WHERE item > 1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "from item in list where item > 1 select item"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "LINQ list WHERE item > 1 SELECT item"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "query list SELECT item WHERE item > 1"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95187,
+      "Explanation": "The correct LINQ syntax in C# uses the structure &apos;from&apos;, &apos;where&apos;, and &apos;select&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What kind of data sources can LINQ query?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only SQL databases"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "XML, Databases, and Objects"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only JSON data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only in-memory collections"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95188,
+      "Explanation": "LINQ can query various data sources, including in-memory collections, XML, and SQL databases.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In LINQ, what does the keyword 'select' do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Filters records based on a condition"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Groups elements"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Projects (or transforms) data into a specified structure"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Joins two collections"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95189,
+      "Explanation": "The &apos;select&apos; keyword in LINQ is used to project each element of a sequence into a new form.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which LINQ operator is used to filter data based on a Boolean condition?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Select"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "GroupBy"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "OrderBy"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Where"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95190,
+      "Explanation": "The &apos;Where&apos; operator is used to filter data in LINQ based on a Boolean condition.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the 'orderby' clause in a LINQ query do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Sorts elements in ascending or descending order"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Groups elements"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Projects elements"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Filters elements"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95191,
+      "Explanation": "The &apos;orderby&apos; clause in LINQ is used to sort the elements in a sequence in either ascending or descending order.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method provides a deferred execution in LINQ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ToList()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "First()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Select()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Any()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95192,
+      "Explanation": "Deferred execution in LINQ means that the query is not executed until the query variable is iterated over, such as with a &apos;foreach&apos; loop. &apos;Select()&apos; supports deferred execution.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the 'GroupBy' keyword in a LINQ query?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Filters elements"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Sorts elements"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Projects elements"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Groups elements based on a specified key"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95193,
+      "Explanation": "&apos;GroupBy&apos; is used to group elements in a sequence based on a specified key.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is an example of a query operator method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SortBy()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Aggregate()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Switch()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Distribute()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95194,
+      "Explanation": "Aggregate is a query operator method used in LINQ to apply an accumulator function over a sequence.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you convert a query result into a list in LINQ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ConvertToList()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ToList()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "AsList()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MakeList()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95195,
+      "Explanation": "The ToList() method is used to convert a query result into a List in LINQ.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the 'join' keyword in LINQ do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Merges two sequences into one"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Combines elements from different sequences based on matching keys"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Groups elements in a sequence"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Filters elements in a sequence"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95196,
+      "Explanation": "The &apos;join&apos; keyword in LINQ combines elements from different sequences based on matching keys.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which clause is used to remove duplicate elements from a sequence in LINQ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Distinct"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Unique"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Except"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Filter"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95197,
+      "Explanation": "The &apos;Distinct&apos; clause is used to remove duplicate elements from a sequence in LINQ.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the 'First' method in LINQ return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The first element of the sequence"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "All elements of the sequence"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The last element of the sequence"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The count of elements in the sequence"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95198,
+      "Explanation": "The &apos;First&apos; method returns the first element of the sequence that satisfies a condition.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which LINQ clause is used to combine two sequences and return one sequence?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Union"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Join"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Group"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Append"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95199,
+      "Explanation": "The &apos;Union&apos; clause is used to combine two sequences and return a single sequence containing unique elements.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the 'let' keyword in a LINQ query?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To define a new variable in the query"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To lock a variable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To define a constant"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To end a query"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95200,
+      "Explanation": "The &apos;let&apos; keyword is used in LINQ to define a new variable and store intermediate computations in the query.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output type when a LINQ query uses the 'Select' operator?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Boolean"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Same as input type"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Enumerable of the projected type"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Single Integer"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95201,
+      "Explanation": "The &apos;Select&apos; operator projects the input data into a new form, thus the output is an IEnumerable of the projected type.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the 'TakeWhile' method do in a LINQ query?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Takes all elements"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Takes elements until a condition is met"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Takes every alternate element"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Takes elements after a condition is met"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95202,
+      "Explanation": "The &apos;TakeWhile&apos; method returns elements from a sequence as long as a specified condition is true.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator in LINQ is used for set difference operations?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Except"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Intersect"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Where"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Distinct"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95203,
+      "Explanation": "The &apos;Except&apos; operator is used to find the set difference, returning elements that appear only in the first sequence and not in the second.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is returned by the LINQ 'Count' method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The last element"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The total number of elements"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Half of the elements"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A Boolean value"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95204,
+      "Explanation": "The &apos;Count&apos; method returns the total number of elements in a sequence.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In LINQ, which method immediately executes and forces query execution?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ToDictionary()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Select()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Where()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Query()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95205,
+      "Explanation": "ToDictionary() is a method that, upon execution, immediately forces evaluation and materialization of the query results into a dictionary.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is deferred execution in LINQ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Execution of a query expression immediately"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Execution of a query expression when iterated over"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Execution of a query expression once compiled"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Execution of a query expression when compiled"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95206,
+      "Explanation": "Deferred execution means that the execution of a LINQ query is delayed until its result is actually iterated over.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which LINQ method enforces immediate execution of the query?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Where"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Select"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ToList"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "OrderBy"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95207,
+      "Explanation": "Methods like ToList materialize the query result immediately and force the query to execute.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does deferred execution enhance performance?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By loading data into memory upfront"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By executing queries only when needed"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By discarding unnecessary data silently"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By converting data to a required format early"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95208,
+      "Explanation": "Deferred execution improves performance by only executing queries when necessary and thus avoiding unnecessary computation.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is an effect of deferred execution?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Query can be reused multiple times"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Query runs faster every time it is called"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Query can potentially throw exceptions late"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Query gets optimized during execution"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95209,
+      "Explanation": "Deferred execution can lead to late exceptions as queries are evaluated when they are actually enumerated.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement about LINQ deferred execution is correct?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Deferred execution does not support complex queries"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Deferred execution requires manual invocation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Deferred execution applies only to SQL-based queries"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Deferred execution can delay costly operations"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95210,
+      "Explanation": "Deferred execution helps in delaying computations like data retrieval until the results are actually needed.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the LINQ concept of deferred execution, when is a query actually executed?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When the query is defined"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When the data source is modified"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When the query result is iterated over"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When the query syntax is parsed"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95211,
+      "Explanation": "A query with deferred execution runs when its result is accessed, generally through iteration.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods would NOT cause a deferred LINQ query to execute immediately?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ToArray"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Count"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "FirstOrDefault"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Select"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95212,
+      "Explanation": "Methods like Select are part of query construction and do not execute the query, unlike methods like ToArray, Count, or FirstOrDefault.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if a data source changes after a deferred execution query is defined but before it is executed?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The original state of the data source is used"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The query results reflect the current state of the data source"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The query fails to execute"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The query results are inconsistent and unpredictable"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95213,
+      "Explanation": "Since deferred execution queries run when iterated, they capture the current state of the data source at that time.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you ensure a deferred execution LINQ query captures a snapshot of data at a specific time?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using a variable to store the query"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using methods like ToList or ToArray"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By iterating over the query elements multiple times"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By constructing the query using only Select"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95214,
+      "Explanation": "Methods like ToList or ToArray force the query to execute immediately, thereby capturing the data at that point in time.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which benefit does deferred execution provide in terms of memory usage?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Ensures data is loaded repeatedly"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Minimizes memory usage until results are needed"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Caches data in memory for future use"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Allocates maximum memory at once for processing"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95215,
+      "Explanation": "Deferred execution defers memory usage by postponing data retrieval and execution until the results are actually required.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which LINQ method is used to sort elements of a sequence in ascending order?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "OrderByDescending()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "OrderBy()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "GroupBy()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ThenBy()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95216,
+      "Explanation": "OrderBy() is used to sort the elements of a sequence in ascending order based on a specified key.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the LINQ method 'First()' do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Returns the first element of a sequence, or a default value if the sequence is empty."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Returns the first element of a sequence."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Returns the first element of a sequence that satisfies a specified condition."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Returns the last element of a sequence."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95217,
+      "Explanation": "The First() method returns the first element of a sequence. If no element is found, it throws an exception.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method would you use to determine if a sequence contains a specified element?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Count()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Contains()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Exists()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Find()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95218,
+      "Explanation": "Contains() is used to determine whether a sequence contains a particular element.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the LINQ method 'SelectMany()'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Flatten a collection of collections into a single collection."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Project each element of a sequence into a new form."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Transform each element of a sequence and its index into a new form."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Filter elements of a sequence based on a condition."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95219,
+      "Explanation": "SelectMany() is used to flatten a collection of collections into a single collection, essentially reducing a hierarchical structure to a single level.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which LINQ method will return true if any elements in a sequence satisfy a condition?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "All()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Contains()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Any()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Where()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95220,
+      "Explanation": "The Any() method returns true if any elements in a sequence satisfy a specified condition.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you concatenate two sequences in LINQ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Union()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Concat()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Join()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Aggregate()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95221,
+      "Explanation": "Concat() is used to concatenate two sequences. It appends the second sequence to the first.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which LINQ method eliminates duplicate values from a collection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Distinct()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Single()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Except()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Skip()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95222,
+      "Explanation": "Distinct() returns a new collection that contains no duplicate values from the original collection.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to partition a sequence into two sequences based on a predicate function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Split()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "GroupBy()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Partition()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "PartitionBy()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95223,
+      "Explanation": "GroupBy() partitions elements into groups (sequences) based on a predicate function.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the 'Aggregate()' method do in LINQ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Filters elements of a sequence based on a specified type."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Applies an accumulator function over a sequence."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Returns distinct elements from two sequences."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Calculates the sum of numeric values in a sequence."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95224,
+      "Explanation": "Aggregate() applies an accumulator function over a sequence, performing a cumulative operation such as summation or multiplication.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about the 'Skip()' method in LINQ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It bypasses elements in a sequence as long as a specified condition is true."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It returns elements from a sequence only after the specified condition becomes false."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It returns a specified number of contiguous elements from the start of a sequence."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It bypasses a specified number of elements and then returns the remaining elements."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95225,
+      "Explanation": "Skip() bypasses a specified number of elements in a sequence and then returns the remaining elements.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does PLINQ stand for in .NET Technologies?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Principal Language Integrated Query"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Parallel Language Integrated Query"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Popular Language Integrated Query"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Primary Language Integrated Query"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95226,
+      "Explanation": "PLINQ stands for Parallel Language Integrated Query, which allows LINQ queries to be parallelized automatically for execution.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method do you use to convert a LINQ query to a parallel query?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ToArray()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ToList()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "AsParallel()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "AsQueryable()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95227,
+      "Explanation": "The AsParallel() method is used to convert a LINQ query into a PLINQ query, allowing the query to be processed in parallel.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a common use case for PLINQ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Processing sequential operations."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Improving performance of CPU-bound operations."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Simplifying code syntax."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Ensuring thread safety."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95228,
+      "Explanation": "PLINQ is typically used to improve the performance of queries by parallelizing CPU-bound operations that can be processed independently.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a potential downside of using PLINQ for data queries?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Increased simplicity."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Consistent ordering of results."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Overhead of managing parallel tasks."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Reduced memory consumption."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95229,
+      "Explanation": "While PLINQ can improve performance, it may also introduce overhead from managing multiple threads and tasks, making it less efficient for simple queries.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you ensure that a PLINQ query processes the elements in order?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using the Sequential() method."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using the OrderPreserved() method."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using the SequentialOnly() method."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By using the AsOrdered() method."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 95230,
+      "Explanation": "The AsOrdered() method can be used in PLINQ to ensure that the query maintains the original order of elements during the processing.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a LINQ operator?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Select"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "OrderBy"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Reverse"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Copy"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 85524,
+      "Explanation": "Copy is not a LINQ operator.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a LINQ query clause?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "From"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Select"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Where"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Replace"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 85525,
+      "Explanation": "Replace is NOT a LINQ query clause.<p>In LINQ (Language Integrated Query), a query clause is a part of a LINQ query that specifies what data to select or transform and how to do it. There are several types of query clauses in LINQ:</p><ol><li>From: specifies the data source for the query.</li><li>Select: specifies the properties or elements to be selected from the data source.</li><li>Where: specifies a condition for filtering the data source.</li><li>OrderBy: specifies the property or element to be used for sorting the data source.</li><li>GroupBy: specifies the property or element to be used for grouping the data source.</li><li>Join: specifies how to join two data sources based on a common key.</li><li>Let: defines a range variable that can be used to store the results of a sub-expression.</li><li>Into: creates a temporary range variable that can be used in a subsequent query.</li></ol>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the wrong statement.<br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compared to SQL, LINQ is complex, tidier, and lower-level"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LINQ supports ad hoc join"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Another benefit of LINQ is that you can query across relationships without having join"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 77763,
+      "Explanation": "LINQ is simpler, tidier, and higher-level",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What types of Objects can you query using LINQ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DataTables and DataSets"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Any .NET Framework collection that implements IEnumerable(T)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Collections that implement interfaces that inherit from IEnumerable(T)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 77764,
+      "Explanation": "In the above question all the options are correct. Any .NET Framework collection that implements IEnumerable(T) or that inherit from IEnumerable(T) can be queried using LINQ.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to select a single element from a sequence in LINQ, or return a default value if<br>no such element exists?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Select"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Where"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "FirstOrDefault"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SingleOrDefault"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 86011,
+      "Explanation": "The FirstOrDefault method is used to select the first element from a sequence that satisfies a specified condition, or return a default value if no such element exists.<br><br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator is used to find the difference between two sequences in LINQ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Union"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Concat"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Intersect"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Except"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 86012,
+      "Explanation": "The Except operator is used to find the difference between two sequences in LINQ.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to create a sequence of numbers in LINQ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Repeat"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Range"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Empty"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DefaultIfEmpty"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 86013,
+      "Explanation": "<span id=\"explanation86013\"></span>To create a sequence of numbers in LINQ, you use the Range method.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to partition a sequence into a sequence of smaller sequences in LINQ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Partition"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Split<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Chunk"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "GroupBy"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 86014,
+      "Explanation": "The Chunk method is used to partition a sequence into a sequence of smaller sequences in LINQ.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to sort a sequence in descending order in LINQ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "OrderBy"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "OrderByDescending"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Sort"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Reverse"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 86015,
+      "Explanation": "The OrderByDescending method is used to sort a sequence in descending order in LINQ.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to skip a specified number of elements in a sequence in LINQ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Take"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Skip"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SubSequence"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Subset"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 86016,
+      "Explanation": "The Skip method is used to skip a specified number of elements in a sequence in LINQ.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to return a specified number of contiguous elements from a sequence in LINQ?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Take"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Skip"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SubSequence"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Subset"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 86017,
+      "Explanation": "The SubSequence method is used to return a specified number of contiguous elements from a sequence in LINQ.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to return a specified number of non-contiguous elements from a sequence in LINQ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Take"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Skip"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SubSequence"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Subset"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 86018,
+      "Explanation": "The Subset method is used to return a specified number of non-contiguous elements from a sequence in LINQ.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Assume 2 columns named as Product and Category how can be both sorted out based on first by category and then by product name?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "var sortedProds = _db.Products.Orderby(c =&gt; c.Category)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "var sortedProds = _db.Products.Orderby(c =&gt; c.Category) + ThenBy(n =&gt; n.Name)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "var sortedProds = _db.Products.Orderby(c =&gt; c.Category) . ThenBy(n =&gt; n.Name)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 86019,
+      "Explanation": "var sortedProds = _db.Products.Orderby(c =&gt; c.Category) . ThenBy(n =&gt; n.Name).",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Choose the wrong statement about the LINQ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The main concept behind the linq is query<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "linq makes use of foreach loop to execute the query"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is not required that linq should make use of IEnumerable interface"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 86020,
+      "Explanation": "LINQ at core is the query. A query specifies what data will be obtained from a data source. Query in linq is executed using foreach loop. In order for a source of data to be used by LINQ,it must implement the IEnumerable interface.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Choose the namespace in which the interface IEnumerable is declared?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "System.Collections"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "System.Collections.Generic"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both System.Collections &amp; System.Collections.Generic"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 86021,
+      "Explanation": "System.Collections<br>\u200b\u200b\u200b\u200b\u200b\u200b\u200bThis namespace contains the fundamental interfaces and classes for collections and data structures in .NET Framework. IEnumerable defines the GetEnumerator() method, which allows iterating over a collection of objects.<br>System.Collections.Generic namespace, on the other hand, provides interfaces and classes for generic collections like List&lt;T&gt;, Dictionary&lt;TKey, TValue&gt;, etc., which also implement IEnumerable&lt;T&gt; for type-safe iteration.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following C# code snippet?<br>class Program<br>&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp; static void Main(string[] args)<br>&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int[] nums = { 1, -2, 3, 0, -4, 5};<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var posNums = from n in nums<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; where n &gt;= 0<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; select n;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; foreach (int i in posNums)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.Write(i + \" \");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.ReadLine();<br>&nbsp;&nbsp;&nbsp; }<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0, 1, -2, -4, 5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1, 3, 0, 5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1, 3, 5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Run time error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 86022,
+      "Explanation": "A simple linq query generated program to show a query is implemented using linq.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following C# code snippet?<br>class Program<br>{<br>&nbsp;&nbsp;&nbsp; static void Main(string[] args)<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int[] nums = { 1, -2, 3, 0, -4, 5 };<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var posNums = from n in nums<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; where n &gt; -5 &amp;&amp; n &lt; 6<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; orderby n descending<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; select n;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.Write(\"The positive values in nums: \");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; foreach (int i in posNums)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.Write(i + \" \");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.ReadLine();<br>&nbsp;&nbsp;&nbsp; }<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Prints nothing code runs successfully"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Run time error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The positive values in nums: 5 3 1 0 -2 -4"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compile time error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 86023,
+      "Explanation": "<span id=\"explanation86023\">Explanation:<br><br>The nums array contains the integers: { 1, -2, 3, 0, -4, 5 }.<br><br>The LINQ query is used to select the positive values from the nums array that are greater than -5 and less than 6. This is achieved with the where clause: where n &gt; -5 &amp;&amp; n &lt; 6.<br><br>The orderby clause is used to sort the selected values in descending order. The query will result in { 5, 3, 1, 0,-2 ,-4 }.<br><br>The foreach loop is used to iterate over the posNums collection (the result of the LINQ query) and print the values in descending order.<br><br>The output shows the values from the nums array in descending order: 5 3 1 0. Note that -2 and -4 are included from the result because they&nbsp; satisfy the condition n &gt; -5 &amp;&amp; n &lt; 6.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of using the =&gt; (lambda operator) in a Lambda expression?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To declare a new variable."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To perform a comparison."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To define a method body."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To separate input parameters from the expression body."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2375,
+      "QuestionTypeId": 0,
+      "QuestionId": 86610,
+      "Explanation": "<span id=\"explanation86610\">The =&gt; operator separates the input parameters from the expression body in a Lambda expression. It is used to define a Lambda expression in C#.</span>",
+      "Answer": "D",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

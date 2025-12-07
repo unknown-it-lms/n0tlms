@@ -1,0 +1,2886 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Which of these method&nbsp; of String class&nbsp; can&nbsp; be used to test&nbsp; the strings&nbsp;&nbsp; for equality?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "isequal()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "isequals()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "equal()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "equals()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 70816,
+      "Explanation": "<span id=\"explanation70816\">equals() method is used for checking equality for any object.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What is the output of this program?</div><div>&nbsp; public class MyClass {<br>&nbsp;&nbsp;&nbsp;&nbsp; public static void main(String args[]) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Integer i = new Integer(257); &nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; byte x = i.byteValue();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.print(x);<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp; }</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "256"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "257"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 72215,
+      "Explanation": "<span id=\"explanation72215\">The java.lang.Byte.byteValue() returns the value of this Byte as a byte.<br><br>Declaration :Following is the declaration for java.lang.Byte.byteValue() method<br>public byte byteValue()<br><br>Overrides:byteValue in class Number</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given the following code,<br>public class Test<br>{<br>String str=\"hello\";<br>}<br>1. Test t=new Test();<br>2. System.out.println(t.str);<br>3. t.str=null;<br>4. t=null;<br>5. System.out.println(\"done\");<br>At which line the object created at 1 will be marked for garbage collection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Line 3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Line 4"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Can\u2019t say exactly when"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "both Line3 and Line4"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 81523,
+      "Explanation": "Write explaination here..<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given following code, what will happen to it ?<br>&nbsp;&nbsp;&nbsp;&nbsp;String str1=\"hello\";<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String str2=\"hel\";<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String str3=str2+\"lo\";<br>&nbsp; &nbsp; &nbsp; &nbsp;if(str1==str3)&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"str1 and str3 are==\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"str1 and str3 are not ==\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(str1.equals(str3))&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"str1 and str3 are equals\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"str1 and str3 are not equals\");<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "str1 and str3 are ==, str1 and str3 are equals"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "str1 and str3 are not ==, str1 and str3 are equals"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "str1 and str3 are ==, str1 and str3 are not equals"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "compilation error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 81527,
+      "Explanation": "str1 is assigned the string literal \"hello\", which goes into the string pool.<br>str2 is assigned the string literal \"hel\", which goes into the string pool.<br>str3 is assigned the result of str2 + \"lo\", which creates a new String object at runtime.<br>The if (str1 == str3) check evaluates to false because str1 and str3 do not refer to the same object.<br>The if (str1.equals(str3)) check evaluates to true because str1 and str3 contain the same sequence of characters.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which data type value is returned by all transcendental math functions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "float"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "double"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "long"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 82776,
+      "Explanation": "<span id=\"explanation82776\">Trascendental math functions reurn double value e.g. Math.random() returns double value.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of Math.floor(4.7)?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "4.0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4.7"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "5.0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "4"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91607,
+      "Explanation": "Math.floor() returns the largest integer less than or equal to the argument, so Math.floor(4.7) returns 4.0.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in the Math class returns the value of the first argument raised to the power of the second argument?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Math.pow()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Math.exp()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Math.power()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Math.sqrt()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91608,
+      "Explanation": "Math.pow() takes two arguments, the base and the exponent, and returns the value of the base raised to the power of the exponent.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does Math.abs(-9) return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "-9"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "9"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91609,
+      "Explanation": "Math.abs() returns the absolute value of its argument, so Math.abs(-9) returns 9.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following Math methods returns a double value between 0.0 and 1.0?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Math.random()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Math.rint()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Math.ceil()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Math.round()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91610,
+      "Explanation": "Math.random() generates a pseudorandom double greater than or equal to 0.0 and less than 1.0.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method would you use to find the smallest integer greater than or equal to a given number?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Math.floor()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Math.ceil()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Math.min()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Math.abs()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91611,
+      "Explanation": "Math.ceil() returns the smallest integer greater than or equal to the given argument.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will Math.max(1.5, 2.5) return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1.5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2.5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3.5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "0.0"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91612,
+      "Explanation": "Math.max() returns the greater of two values; in this case, it will return 2.5.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to return the correctly rounded positive square root of a double value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Math.sqrt()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Math.exp()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Math.sqr()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Math.pow()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91613,
+      "Explanation": "Math.sqrt() takes a double value and returns the correctly rounded positive square root of that value.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a method in the Math class is used to convert an angle measured in degrees to an approximately equivalent angle measured in radians, what is this method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Math.toRadians()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Math.toDegrees()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Math.radians()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Math.angle()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91614,
+      "Explanation": "Math.toRadians() is used to convert an angle measured in degrees to an angle measured in radians.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method will find the trigonometric tangent of an angle?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Math.cos()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Math.tan()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Math.sin()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Math.atan()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91615,
+      "Explanation": "Math.tan() returns the trigonometric tangent of an angle.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the Math.signum() method return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The square of a number"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The sine of a number"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The sign of a number"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The square root of a number"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91616,
+      "Explanation": "Math.signum() returns the sign of a number: 1.0 if the number is positive, -1.0 if the number is negative, and 0.0 for zero.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the Arrays.binarySearch method return if the element is not found in the array?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "-1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Null"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An index greater than the array length"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A negative value indicating the insertion point"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91618,
+      "Explanation": "The binarySearch method returns a negative value that represents the insertion point at which the element would be inserted to maintain sorted order.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about the Arrays.sort method when used on an unsorted integer array?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It permanently sorts the original array."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It returns a new sorted array."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It discards duplicates."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It cannot be used on an integer array."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91619,
+      "Explanation": "The Arrays.sort method sorts the array in place, modifying the original array.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "For which type of array will the Arrays.equals method return true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Arrays with the same length regardless of content"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Arrays with the same elements in any order"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Arrays with identical elements in the same order"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Arrays of different types with the same content"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91620,
+      "Explanation": "The Arrays.equals method returns true if the two arrays have the same length and corresponding elements are equal.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method can be used to convert an array to a fixed-size list in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Arrays.toList"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Arrays.asList"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Arrays.ofList"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Arrays.convertList"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91621,
+      "Explanation": "The Arrays.asList method converts an array into a fixed-size list backed by the original array.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will the Arrays.copyOf method do if given a new length longer than the original array?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Throws an ArrayIndexOutOfBoundsException"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Creates a new array with null for the extra elements"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Fills the new array's extra elements with the default value for the type"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Reuses the original array"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91622,
+      "Explanation": "The Arrays.copyOf method creates a new array with the specified length, filling new slots with the default value for the array&apos;s type (e.g., 0 for int, null for objects).",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to create a hash code for the contents of an array?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Arrays.hashContents"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Arrays.createHash"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Arrays.hashCode"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Arrays.generateHash"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91623,
+      "Explanation": "The Arrays.hashCode method returns a hash code based on the elements within the array.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of exception does the Arrays.sort method throw if trying to sort an unsorted array of objects that don't implement Comparable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ClassCastException"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "IllegalArgumentException"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ArrayStoreException"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "NullPointerException"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91624,
+      "Explanation": "The Arrays.sort method will throw a ClassCastException if it attempts to compare elements not implementing Comparable.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does Arrays.deepEquals differ from Arrays.equals when comparing arrays?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "deepEquals checks for reference equality only."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "deepEquals can compare nested array structures."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "deepEquals compares element types only."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "deepEquals uses a different hash code algorithm."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91625,
+      "Explanation": "The Arrays.deepEquals method is capable of comparing nested arrays by calling Arrays.equals for each sub-array, handling multidimensional structures.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is most appropriate for printing all elements of an array in a human-readable form?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Arrays.show"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Arrays.format"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Arrays.printAll"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Arrays.toString"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91626,
+      "Explanation": "The Arrays.toString method creates a string representation of the contents of the specified array.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods would you use if you want to replace all occurrences of a specified value in a list with another value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "replaceAll()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "fill()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "swap()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "nCopies()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91628,
+      "Explanation": "The replaceAll() method is used to replace all occurrences of a specified value in a list with another specified value.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Collections class method can be used to generate a Comparator for reversed natural order?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "naturalOrder()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "reverseOrder()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "comparator()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "synchronizedList()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91629,
+      "Explanation": "The reverseOrder() method returns a comparator that imposes the reversed natural ordering on a collection of objects that implement the Comparable interface.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the java.util.Collections.min() method return when passed a List?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A list with the smallest element removed"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The smallest element in the list according to natural ordering"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The list sorted in descending order"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The largest element in the list"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91630,
+      "Explanation": "The min() method returns the smallest element stored in the collection according to the natural ordering of the elements.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in the java.util.Collections class can be used to obtain a synchronized (thread-safe) list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "synchronizedList()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "synchronizedCollection()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "threadSafeList()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "safeList()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91631,
+      "Explanation": "The synchronizedList() method returns a synchronized (thread-safe) list backed by the specified list.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does the java.util.Collections.singletonList() method affect a collection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Creates a list with a single element"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Converts a list to a single element"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Removes duplicates from a list"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Creates an empty list"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91632,
+      "Explanation": "The singletonList() method returns an immutable list containing only the specified object.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of calling java.util.Collections.frequency() with a collection and an element?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The number of times the element was accessed"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The frequency of occurrence of the element in the collection"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The index of the element in the collection"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The number of different elements in the collection"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91633,
+      "Explanation": "The frequency() method returns the number of times the specified element occurs in the provided collection.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in the java.util.Collections class returns an empty set?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "emptySet()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "emptyCollection()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "emptyList()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "clear()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91634,
+      "Explanation": "The emptySet() method returns the empty set (immutable).",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method would you use to fill a list with a specified element?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "replaceAll()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "fill()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "nCopies()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "copy()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91635,
+      "Explanation": "The fill() method replaces all elements of the specified list with the specified element.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the effect of calling the java.util.Collections.reverse() method on a List?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The list is sorted in ascending order"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The order of elements in the list is reversed"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "All elements of the list are set to null"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The list is converted to a set"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91636,
+      "Explanation": "The reverse() method reverses the order of elements in the specified list.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the String 'charAt(int index)' method return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The ASCII value of the character at the specified index."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The Unicode value of the character at the specified index."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The character at the specified index."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A substring starting from the specified index."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91637,
+      "Explanation": "The &apos;charAt()&apos; method returns the character located at the specified index of the String.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to compare two strings for equality, ignoring case differences?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "equals()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "compareToIgnoreCase()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "equalsIgnoreCase()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "compareTo()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91638,
+      "Explanation": "The &apos;equalsIgnoreCase()&apos; method compares two strings, ignoring the case considerations.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you create a new String object in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "String s = 'example';"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "String s = new String('example');"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "String s = example;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "String s = str('example');"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91639,
+      "Explanation": "To create a new String object, you use the &apos;new&apos; keyword followed by the String constructor.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method can be used to split a String into an array of substrings?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "divide()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "split()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "substring()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "cut()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91640,
+      "Explanation": "The &apos;split()&apos; method divides a string into an array of substrings based on a specified delimiter.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of '\"Hello\".concat(\" World\")'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Hello World"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "HelloWorld"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "WorldHello"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "World Hello"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91641,
+      "Explanation": "The &apos;concat()&apos; method appends the specified string to the end of this string.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is returned by the 'length()' method of a string?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The number of characters in the string excluding spaces."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The number of characters in the string including spaces."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The Unicode value of the last character in the string."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The index of the last character in the string."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91642,
+      "Explanation": "The &apos;length()&apos; method returns the number of 16-bit Unicode characters in the string, including spaces.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method converts all the characters in this String to lower case?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "toLowerCase()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "toCaseLower()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "toLowerString()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "changeToLower()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91643,
+      "Explanation": "The &apos;toLowerCase()&apos; method converts all characters in the string to lower case using the default locale.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of '\"Java\".indexOf('a')'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "3"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91644,
+      "Explanation": "The &apos;indexOf()&apos; method returns the index of the first occurrence of the specified character, which is 1 for &apos;a&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods can be used to replace characters in a string?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "replaceChars()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "replace()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "change()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "substitute()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91645,
+      "Explanation": "The &apos;replace()&apos; method replaces each substring of this string that matches the literal target sequence with the specified literal replacement sequence.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How are two String objects compared to check which one is lexicographically greater?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using '==' operator"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using 'equals()' method"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using 'compareLex()' method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using 'compareTo()' method"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91646,
+      "Explanation": "The &apos;compareTo()&apos; method compares two strings lexicographically.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the 'substring(int beginIndex, int endIndex)' method do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Returns a new string starting from 'beginIndex' to the end of the string."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Returns a new string starting from 'beginIndex' to 'endIndex - 1'."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Returns a new string excluding the range between 'beginIndex' and 'endIndex'."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Deletes the string content from 'beginIndex' to 'endIndex'."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91647,
+      "Explanation": "The &apos;substring()&apos; method returns a new string that is a substring of this string, starting from &apos;beginIndex&apos; and extending to the end of the string or to &apos;endIndex - 1&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of the following code: '\"Java\".lastIndexOf('a')'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91648,
+      "Explanation": "The &apos;lastIndexOf()&apos; method returns the index within this string of the last occurrence of the specified character, which is 3 for &apos;a&apos;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method checks if a string starts with a specified prefix?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "starts()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "beginsWith()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "startsWith()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "hasPrefix()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91649,
+      "Explanation": "The &apos;startsWith()&apos; method tests if this string starts with the specified prefix.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the return type of the 'String.format()' method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "String"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "char[]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "StringBuilder"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91650,
+      "Explanation": "The &apos;format()&apos; method returns a formatted string using the specified format string and arguments.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods returns the string representation of the specified data type?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "toString()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "stringify()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "convert()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "valueOf()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91651,
+      "Explanation": "The &apos;valueOf()&apos; method returns the string representation of the specified argument, which can be of any data type.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following constructors is used to create a Date object representing the current date and time?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Date()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Date(long date)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Date(String dateString)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Date(int year, int month, int day)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91652,
+      "Explanation": "The no-argument constructor Date() is used to create a Date object that represents the current date and time.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method of the Date class is deprecated and should be avoided when handling dates in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "getTime()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "toString()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "getYear()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "before(Date when)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91653,
+      "Explanation": "The getYear() method is deprecated, along with several other methods in the Date class, and should be avoided in favor of the Calendar or java.time APIs.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the getTime() method of the Date class return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A formatted date string"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Time in milliseconds since January 1, 1970, 00:00:00 GMT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Current time in hours, minutes, and seconds"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A Date object representing the system time"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91654,
+      "Explanation": "The getTime() method returns the number of milliseconds since the &apos;epoch&apos;, which is January 1, 1970, 00:00:00 GMT.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is true about Date class in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It has been enhanced in Java 8 for better date manipulation."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It can only represent dates starting from the year 2000."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is part of the java.time package introduced in Java 8."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is considered mutable and not thread safe."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91655,
+      "Explanation": "The Date class is mutable and not thread safe, which can lead to complications in multithreaded environments.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about the Date class is incorrect?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It implements the Comparable interface."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It can be compared using before() and after() methods."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It provides a large number of formatting options."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Its default string representation can be obtained with the toString() method."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91656,
+      "Explanation": "The Date class does not provide formatting options; SimpleDateFormat or DateTimeFormatter are used for formatting dates.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which package does the java.util.Date class belong to?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "java.lang"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "java.util"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "java.sql"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "java.date"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91657,
+      "Explanation": "The Date class is part of the java.util package, which contains other utility classes as well.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is one of the primary reasons for deprecating many methods in the Date class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Limited support for internationalization"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Inaccuracy in time calculations"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Complexity in representing leap years"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Insecure in performance-intensive applications"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91658,
+      "Explanation": "Many methods in the Date class were deprecated due to lack of internationalization support and localization capabilities.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "By using which method can you convert a Date object to the number of milliseconds since the epoch?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "parse(String s)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "UTC(int year, int month, int date, int hrs, int min, int sec)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "hashCode()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "getTime()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91659,
+      "Explanation": "getTime() returns the number of milliseconds since January 1, 1970, 00:00:00 GMT represented by this Date object.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which deprecated method in the Date class is used for setting the year, offset from 1900?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "setTime(long time)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "setYear(int year)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "setDate(int date)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "setMonth(int month)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91660,
+      "Explanation": "The setYear(int year) method is deprecated and uses a year offset from 1900, which can be confusing.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you determine if one Date object comes before another Date object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "compare(Date d)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "isBefore(Date when)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "before(Date when)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "isPrevious(Date d)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91661,
+      "Explanation": "The before(Date when) method in the Date class returns true if this Date object is strictly earlier than the specified Date.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of wrapper classes in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To provide mutable objects for primitive types"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To allow primitive types to be used in collections that require objects"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To improve the performance of the Java Virtual Machine"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To enable primitive types to be converted to strings"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91662,
+      "Explanation": "<span id=\"explanation91662\" style=\"color:blue\">Wrapper classes provide a way to use primitive data types (like int, char, etc.) as objects. Collections in Java, such as ArrayList, store only objects, and wrapper classes allow primitives to be converted into objects.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a correct way to create an Integer object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Integer intValue = new Integer(10);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int intValue = new int(10);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Integer intValue = Integer.valueOf(10);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Integer intValue = 10; // uses auto-boxing"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91663,
+      "Explanation": "Option A is the traditional way of creating an Integer object. Options C and D are also valid but are not included in this question.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Suppose you have an Integer object. Which of the following methods is used to obtain its int value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "intValue()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "parseInt()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "toString()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "valueOf()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91664,
+      "Explanation": "The intValue() method of the Integer wrapper class is used to return the primitive int value of the Integer object.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which package contains the wrapper classes in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "java.lang"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "java.util"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "java.io"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "java.math"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91665,
+      "Explanation": "The java.lang package contains the fundamental classes, including those for primitive types and their associated wrapper classes.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does auto-boxing refer to in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Converting a string to a primitive type"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Automatically converting a primitive type into its corresponding wrapper class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Converting an object to a primitive type"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Manually creating wrapper classes for custom objects"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91666,
+      "Explanation": "<span id=\"explanation91666\" style=\"color:blue\">Auto-boxing is the automatic conversion that the Java compiler makes between the primitive types and their corresponding object wrapper classes.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method would you use to convert a Double object into a double primitive?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "doubleValue()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "parseDouble()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "toDouble()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "convert()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91667,
+      "Explanation": "The doubleValue() method in the Double wrapper class is used to convert a Double object into a primitive double type.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these statements correctly compares two Integer objects for equality?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "intValue1.equals(intValue2)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "intValue1 == intValue2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "intValue1.compareTo(intValue2)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "intValue1.compare(intValue2)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91668,
+      "Explanation": "Using equals() is the correct way to compare two Integer objects for equality in Java.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Select the true statement about wrapper classes in Java.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Wrapper classes provide no methods besides basic arithmetic operations."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Wrapper classes extend the Object class."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Wrapper classes allow direct operation with strings."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Wrapper classes are mutable."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91669,
+      "Explanation": "Wrapper classes are object representations of primitive types and extend the Object class, so they inherit its methods.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the difference between parseInt() and valueOf() in Integer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "parseInt() returns Integer objects, while valueOf() returns int primitives."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "parseInt() returns int primitives, while valueOf() returns Integer objects."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both parseInt() and valueOf() return int primitives."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both parseInt() and valueOf() return Integer objects."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91670,
+      "Explanation": "<span id=\"explanation91670\" style=\"color:blue\">parseInt() converts a string into an int primitive, while valueOf() converts a string into an Integer object.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to obtain the byte value from a Byte wrapper object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "byteValue()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "parseByte()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "toByte()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "getByte()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91671,
+      "Explanation": "The byteValue() method returns the value associated with a Byte object as a byte primitive.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Java 5 and later, which feature allows you to assign an int value directly to an Integer type?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Type Casting"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Reflection"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Auto-boxing"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Serialization"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91672,
+      "Explanation": "Auto-boxing is a feature introduced in Java 5 that allows for the automatic conversion between primitive types and their respective wrapper classes.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which two primitive types do not have corresponding wrapper classes in the exact form of their names?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int and char"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "boolean and byte"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "short and long"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "boolean and char"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91673,
+      "Explanation": "The wrapper class for &apos;char&apos; is Character and for &apos;boolean&apos; is Boolean, as opposed to byte, short, int, long, float, and double, which share names with their wrapper classes.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the return type of the valueOf(char c) method in the Character wrapper class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "char"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Character"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "String"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91674,
+      "Explanation": "The valueOf(char c) method in the Character class returns a Character object.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these methods is NOT found in the Integer wrapper class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "parseInt()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "toHexString()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "compareTo()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "toCharArray()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91675,
+      "Explanation": "The toCharArray() method is from the String class, not the Integer class.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which wrapper class method will convert a string to a Double object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Double.toString()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Double.parseDouble()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Double.valueOf()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Double.doubleValue()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91676,
+      "Explanation": "The Double.valueOf(String s) method converts a string to a Double object.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the superclass of all classes in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "java.lang.Class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "java.lang.Object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "java.lang.Super"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "java.lang.Base"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91677,
+      "Explanation": "java.lang.Object is the root of the class hierarchy and every class in Java inherits from it either directly or indirectly.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in java.lang.Object class is used to create a copy of an object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "copy()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "clone()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "duplicate()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "newInstance()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91678,
+      "Explanation": "The clone() method is used to create and return a copy (clone) of the object.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the equals() method in java.lang.Object class do by default?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compares the memory addresses of objects"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compares the data members of the objects"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Checks if the two objects are of the same class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Checks if two objects are strings"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91679,
+      "Explanation": "By default, the equals() method in the Object class compares if the references to the objects are identical.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why is it important to override hashCode() when equals() is overridden?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To ensure that a class can be used in hash-based collections"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It is not necessary to override hashCode() when equals() is overridden"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To improve the performance of equals() method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To make instances thread-safe"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91680,
+      "Explanation": "Overriding hashCode() together with equals() ensures that the hash-based collections like HashMap and HashSet function properly.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in Object class provides the 'string representation' of an object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "toString()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "describe()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "stringify()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "format()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91682,
+      "Explanation": "The toString() method returns a string that &apos;textually represents&apos; the object.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method must be called for proper functioning of wait(), notify(), and notifyAll()?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "lock()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "notify()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "synchronize()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "start()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91683,
+      "Explanation": "The methods must be called from within a synchronized context, hence synchronize() is necessary.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which class provides method implementations for all the methods in the Object class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "java.lang.System"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "java.util.Base"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "java.lang.ClassLoader"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "There is no such class"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91684,
+      "Explanation": "Object class itself provides the basic method implementations and there is no separate class providing them.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What commonly happens when you override the toString() method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Improves object field accessibility"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Provides a custom string representation of the object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Generates XML of the object's state"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Improves class performance"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91685,
+      "Explanation": "Overriding toString() typically allows you to provide a custom string representation that can be more informative than the default.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is returned by default when toString() is not overridden?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The object's values"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The class name with the object's hashcode"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A random string"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An exception is thrown"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91686,
+      "Explanation": "By default, toString() in the Object class returns a string consisting of the class name and the &apos;at&apos; symbol followed by the unsigned hexadecimal representation of the hash code of the object.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of the StringBuilder class in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To create immutable sequence of characters."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To reverse a string automatically."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To create mutable sequence of characters."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To handle multiple threads safely."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91687,
+      "Explanation": "<span id=\"explanation91687\" style=\"color:blue\">StringBuilder is designed to create mutable sequences of characters, allowing modifications such as appending, inserting, or deleting characters without creating new objects.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in the StringBuilder class appends a specified string to the sequence?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "append()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "insert()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "concat()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "add()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91688,
+      "Explanation": "The append() method in the StringBuilder class is used to add a specified string to the end of the current sequence.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you convert a StringBuilder object into a String?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "toString()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "getString()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "convertToString()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "valueOf()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91689,
+      "Explanation": "The toString() method of the StringBuilder class converts the characters of the StringBuilder object into a String object.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following code? \nStringBuilder sb = new StringBuilder('Java'); \nsb.insert(1, 'ee'); \nSystem.out.println(sb);",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Jeava"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Javea"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Java"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Jeava"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91690,
+      "Explanation": "The insert() method inserts the specified characters at the given index. Thus, &apos;ee&apos; is inserted at index 1 in the original string &apos;Java&apos;, resulting in &apos;Jeava&apos;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used in StringBuilder to replace a sequence of characters with another sequence?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "modify()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "alter()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "replace()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "substitute()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91691,
+      "Explanation": "The replace() method in StringBuilder allows replacing a sequence of characters between specified start and end indices with another sequence.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If sb is a StringBuilder object, what does the sb.delete(1, 3) method do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Deletes the character at index 1."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Deletes the character at index 3."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Deletes characters from index 1 to 3 (exclusive)."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Deletes the entire StringBuilder content."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91692,
+      "Explanation": "The delete(int start, int end) method removes characters from the start index to just before the end index in the StringBuilder.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is an advantage of using StringBuilder over String when performing many modifications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "StringBuilder takes more memory than String."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "StringBuilder operations are slower than String."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "StringBuilder is immutable, enhancing security."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "StringBuilder avoids creating new objects for each modification."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91693,
+      "Explanation": "StringBuilder is mutable, meaning changes made do not create new objects and save memory, unlike String where each modification results in a new object.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following correctly describes the capacity of a StringBuilder?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is the fixed size of the StringBuilder object."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It is the maximum number of characters it can hold without resizing."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is always equal to the length of the string the StringBuilder holds."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It cannot be changed once the StringBuilder is created."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91694,
+      "Explanation": "The capacity of a StringBuilder is the size which it can grow to internally without resizing. It differs from length, which is the current size of character content.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method from the StringBuilder class is used to reverse the characters in its sequence?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "back()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "invert()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "reverse()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "flip()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91695,
+      "Explanation": "The reverse() method reverses the characters in the StringBuilder sequence efficiently.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which constructor initializes a StringBuilder with a specific capacity?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "StringBuilder(int initialCapacity)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "StringBuilder(char[] chars)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "StringBuilder(String str)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "StringBuilder()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 91696,
+      "Explanation": "The StringBuilder(int initialCapacity) constructor initializes the builder with specified capacity, determining memory allocation before resizing is needed.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of this code?<br>String s1 = \"Java\";<br>String s2 = \"Ja\";<br>String s3 = s2 + \"va\";<br>System.out.println(s1 == s3);<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "true"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "false"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Runtime error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 102325,
+      "Explanation": "s3 is computed at runtime, so it&apos;s a new object, and == returns false.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you ensure two strings refer to the same object in memory?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use new String()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use .equals()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use .intern()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use .toString()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 102326,
+      "Explanation": "<span id=\"explanation102326\" style=\"color:blue\">.intern() returns the string from the string pool, ensuring reference equality.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which class is recommended for modern date-time handling in Java 8+?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "java.util.Date"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "java.util.Calendar"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "java.time.LocalDate"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "java.sql.Date"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 102327,
+      "Explanation": "java.time.LocalDate is part of the Java 8+ Date-Time API, preferred over legacy classes",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about java.util.Date?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is immutable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It includes both date and time"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It supports time zones"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is part of java.time"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6789,
+      "QuestionTypeId": 0,
+      "QuestionId": 102328,
+      "Explanation": "Date includes both date and time, but does not handle time zones well.",
+      "Answer": "B",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

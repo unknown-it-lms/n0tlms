@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Notes - R_Programming_Iterative Statements</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  body{font-family:system-ui,Segoe UI,Roboto,Arial;max-width:900px;margin:24px auto;padding:18px;line-height:1.6;color:#111}
+  h1{font-size:1.4rem;margin-bottom:0.6rem}
+  .topic{font-weight:700;margin-top:1rem}
+  .subtopic{font-weight:600;margin-top:0.8rem}
+  .content{margin:0.6rem 0 1.2rem 0}
+  pre{white-space:pre-wrap;background:#f7f7f7;padding:10px;border-radius:6px;overflow:auto}
+  img{max-width:100%;height:auto}
+  table{border-collapse:collapse;width:100%}
+  table, th, td{border:1px solid #ccc;padding:6px}
+</style>
+</head>
+<body>
+<h1>Notes: R_Programming- Iterative Statements</h1>
+
+<div class="courseware topic">Iterative Statements</div><div class="courseware content"><hr>​​​​​​​In R, iterative statements allow you to repeat a block of code multiple times. There are several types of iterative statements in R, including for loops, while loops, and the repeat loop.</div>
+<div class="courseware subtopic">for loop</div><div class="courseware content"><hr><p>It is a type of loop or sequence of statements executed repeatedly until exit condition is reached.<br><br><strong>Syntax</strong>:</p><div class="courseware code">for (variable in sequence) {<br>&nbsp; &nbsp; # code to be executed for each value in the sequence<br>}</div><p><strong>Example</strong>:</p><div class="courseware code">x &lt;- letters[4:10]<br>for(i in x){<br>&nbsp; print(i)<br>}</div><p><strong>Output</strong>:<br>[1] "d"<br>[1] "e"<br>[1] "f"<br>[1] "g"<br>[1] "h"<br>[1] "i"<br>[1] "j"<br><br><br>​​​​​​​<br><br>​​​​​​​<br><br></p></div>
+<div class="courseware subtopic">while loop</div><div class="courseware content"><hr><p>While loop is another kind of loop iterated until a condition is satisfied. The testing expression is checked first before executing the body of loop.The <code>while</code> loop is used to repeat a set of statements as long as a condition is <code>TRUE</code>. ​​​​​​​<br><br><strong>Syntax:</strong></p><div class="courseware code">while(expression){<br>&nbsp;&nbsp;&nbsp; statement<br>&nbsp;&nbsp;&nbsp; ....<br>&nbsp;&nbsp;&nbsp; ....<br>}</div><p><strong>Example</strong>:</p><div class="courseware code">x = 1<br># Print 1 to 5<br>while(x &lt;= 5){<br>&nbsp; print(x)<br>&nbsp; x = x + 1<br>}</div><p><strong>Output</strong>:<br>[1] 1<br>[1] 2<br>[1] 3<br>[1] 4<br>[1] 5</p></div>
+<div class="courseware subtopic">repeat</div><div class="courseware content"><hr><p><strong>repeat loop and break statement</strong><br>The <code>repeat</code> loop is used to repeat a set of statements an indefinite number of times. The loop can be stopped using the <code>break</code> statement.<br><br><strong>Syntax</strong>:</p><div class="courseware code">repeat {<br>&nbsp;&nbsp; statements<br>&nbsp;&nbsp; ....<br>&nbsp;&nbsp; ....<br>&nbsp;&nbsp; if(expression) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break<br>&nbsp;&nbsp; }<br>}</div><p><br><strong>Example</strong>:</p><div class="courseware code">x = 1<br># Print 1 to 5<br>repeat{<br>&nbsp; print(x)<br>&nbsp; x = x + 1<br>&nbsp; if(x &gt; 5){<br>&nbsp;&nbsp;&nbsp; break<br>&nbsp;&nbsp; }<br>​​​​​​​}</div><p><strong>Output</strong>:<br>[1] 1<br>[1] 2<br>[1] 3<br>[1] 4<br>[1] 5<br><br><strong>Example1</strong>:</p><div class="courseware code">no&lt;-0<br>repeat{<br>&nbsp; no &lt;- no+1<br>&nbsp; if(no ==30)<br>&nbsp; &nbsp; break<br>&nbsp; if(no%%3 == 0)<br>&nbsp; &nbsp; next<br>&nbsp; print(no)<br>}</div><p><strong>Output:</strong></p><pre tabindex="0" aria-label="Console Output" role="document" id="rstudio_console_output">[1] 1
+[1] 2
+[1] 4
+[1] 5
+[1] 7
+[1] 8
+[1] 10
+[1] 11
+[1] 13
+[1] 14
+[1] 16
+[1] 17
+[1] 19
+[1] 20
+[1] 22
+[1] 23
+[1] 25
+[1] 26
+[1] 28
+[1] 29</pre></div>
+<div class="courseware subtopic">nested loops</div><div class="courseware content"><hr><p>Nested loops are similar to simple loops. Nested means loops inside loop. Moreover, nested loops are used to manipulate the matrix.<br><br><strong>Example:</strong></p><div class="courseware code"># Defining matrix<br>m &lt;- matrix(2:15, 2)<br>&nbsp;<br>for (r in seq(nrow(m))) {<br>&nbsp; for (c in seq(ncol(m))) {<br>&nbsp;&nbsp;&nbsp; print(m[r, c])<br>&nbsp; }<br>}</div><p>&nbsp;<strong>Output</strong>:<br>[1] 2<br>[1] 4<br>[1] 6<br>[1] 8<br>[1] 10<br>[1] 12<br>[1] 14<br>[1] 3<br>[1] 5<br>[1] 7<br>[1] 9<br>[1] 11<br>[1] 13<br>[1] 15</p></div>
+<div class="courseware subtopic">Loop Control Statements</div><div class="courseware content"><hr><p>Loop control statements are used to control the flow of execution in iterative statements such as <code>for</code> loops and <code>while</code> loops. The two main loop control statements in R are <code>break</code> and <code>next</code>.</p><ol><li>The <code>break</code> statement is used to exit a loop early. When a <code>break</code> statement is encountered within a loop, the loop is terminated immediately, and the program continues with the next statement after the loop.<p><strong>For example:</strong></p><div class="courseware code">for (i in 1:10) {<br>&nbsp; &nbsp; if (i &gt;= 5) {<br>&nbsp; &nbsp; &nbsp; &nbsp; break<br>&nbsp; &nbsp; }<br>&nbsp; &nbsp; print(i)<br>}</div>​​​​​​​In this example, the <code>for</code> loop is supposed to iterate 10 times, but the <code>break</code> statement causes the loop to exit early when <code>i &gt;= 5</code>. So, only the numbers 1 to 4 are printed.</li><li><p>The <code>next</code> statement is used to skip the current iteration of a loop and move on to the next iteration. When a <code>next</code> statement is encountered within a loop, the current iteration is skipped, and the program continues with the next iteration of the loop.<br>For example:</p><div class="courseware code">for (i in 1:10) {<br>&nbsp; &nbsp; if (i %% 2 == 0) {<br>&nbsp; &nbsp; &nbsp; &nbsp; next<br>&nbsp; &nbsp; }<br>&nbsp; &nbsp; print(i)<br>}</div><strong>Output</strong>:<br>[1] 1<br>[1] 3<br>[1] 5<br>[1] 7<br>[1] 9<br>In this example, the <code>next</code> statement causes the program to skip all even numbers, so only the odd numbers from 1 to 10 are printed.</li></ol></div>
+
+
+</body>
+</html>

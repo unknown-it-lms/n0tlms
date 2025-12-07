@@ -1,0 +1,426 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Find the prefix form of following expression&nbsp; A-B/ (C * D ^ E) is,<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "-/*^ACBDE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "-ABCD*^DE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "-A/B*C^DE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "-A/BC*^DE"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1317,
+      "QuestionTypeId": 0,
+      "QuestionId": 64461,
+      "Explanation": "&nbsp; Infix Expression is (A-B)/(C*D^E)<br>(-A/B)(C*D^E)<br>-A/B*C^DE. Thus prefix expression is -A/B*C^DE",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The postfix form of A*B+C/D is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "*AB/CD+"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "AB*CD/+"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A*BC+/D"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ABCD+/*"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1317,
+      "QuestionTypeId": 0,
+      "QuestionId": 64441,
+      "Explanation": "\n\t\t\t<table cellspacing=\"0\" style=\"border-collapse:collapse; border:medium none; height:258px; width:394px\">\n\t\t\t\t<tbody>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:97px\"><span style=\"color:#000000\">Read Infix<br>\n\t\t\t\t\t\tstring haracter by<br>\n\t\t\t\t\t\t<br>\n\t\t\t\t\t\tA</span></td>\n\t\t\t\t\t\t<td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:87px\">&nbsp;</td>\n\t\t\t\t\t\t<td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap; width:48.00pt\">&nbsp;</td>\n\t\t\t\t\t\t<td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap; width:48.00pt\"><span style=\"color:#000000\">A</span></td>\n\t\t\t\t\t\t<td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap; width:93.75pt\"><span style=\"color:#000000\">Add in postfix String</span></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:97px\"><span style=\"color:#000000\">*</span></td>\n\t\t\t\t\t\t<td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:87px\"><span style=\"color:#000000\">(*)</span></td>\n\t\t\t\t\t\t<td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\">&nbsp;</td>\n\t\t\t\t\t\t<td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\">&nbsp;</td>\n\t\t\t\t\t\t<td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">Push on stack</span></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:97px\"><span style=\"color:#000000\">B</span></td>\n\t\t\t\t\t\t<td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:87px\">&nbsp;</td>\n\t\t\t\t\t\t<td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\">&nbsp;</td>\n\t\t\t\t\t\t<td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">AB</span></td>\n\t\t\t\t\t\t<td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">Add in postfix String</span></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"height:45pt; vertical-align:middle; white-space:nowrap; width:97px\"><span style=\"color:#000000\">+</span></td>\n\t\t\t\t\t\t<td style=\"height:45pt; vertical-align:middle; white-space:nowrap; width:87px\"><span style=\"color:#000000\">(+)</span></td>\n\t\t\t\t\t\t<td style=\"height:45.00pt; vertical-align:middle; white-space:nowrap\">&nbsp;</td>\n\t\t\t\t\t\t<td style=\"height:45.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">AB*&nbsp;</span></td>\n\t\t\t\t\t\t<td style=\"height:45.00pt; vertical-align:middle; white-space:normal; width:93.75pt\"><span style=\"color:#000000\">Priority of + is less then * so&nbsp; Pop * and then push +</span></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:97px\"><span style=\"color:#000000\">C</span></td>\n\t\t\t\t\t\t<td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:87px\">&nbsp;</td>\n\t\t\t\t\t\t<td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\">&nbsp;</td>\n\t\t\t\t\t\t<td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">AB*C</span></td>\n\t\t\t\t\t\t<td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">Add in postfix String</span></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:97px\"><span style=\"color:#000000\">/</span></td>\n\t\t\t\t\t\t<td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:87px\"><span style=\"color:#000000\">(/+)</span></td>\n\t\t\t\t\t\t<td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\">&nbsp;</td>\n\t\t\t\t\t\t<td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\">&nbsp;</td>\n\t\t\t\t\t\t<td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">Push it on stack</span></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:97px\"><span style=\"color:#000000\">D</span></td>\n\t\t\t\t\t\t<td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:87px\">&nbsp;</td>\n\t\t\t\t\t\t<td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\">&nbsp;</td>\n\t\t\t\t\t\t<td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">AB*CD</span></td>\n\t\t\t\t\t\t<td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">Add in postfix String</span></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"height:30pt; vertical-align:middle; white-space:nowrap; width:97px\">&nbsp;</td>\n\t\t\t\t\t\t<td style=\"height:30pt; vertical-align:middle; white-space:nowrap; width:87px\">&nbsp;</td>\n\t\t\t\t\t\t<td style=\"height:30.00pt; vertical-align:middle; white-space:nowrap\">&nbsp;</td>\n\t\t\t\t\t\t<td style=\"height:30.00pt; vertical-align:middle; white-space:nowrap\">&nbsp;</td>\n\t\t\t\t\t\t<td style=\"height:30.00pt; vertical-align:middle; white-space:normal; width:93.75pt\"><span style=\"color:#000000\">Pop All operators from stack</span></td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:97px\">&nbsp;</td>\n\t\t\t\t\t\t<td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:87px\">&nbsp;</td>\n\t\t\t\t\t\t<td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\">&nbsp;</td>\n\t\t\t\t\t\t<td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">AB*CD/+</span></td>\n\t\t\t\t\t\t<td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\">&nbsp;</td>\n\t\t\t\t\t</tr>\n\t\t\t\t</tbody>\n\t\t\t</table>\n\t\t\t",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the postfix form of the following prefix expression -A/B*C$DE<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ABC/DE$*-<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A-BCDE$*/-"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ABC$ED*/-"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A-BCDE$*/"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1317,
+      "QuestionTypeId": 0,
+      "QuestionId": 64413,
+      "Explanation": "<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The postfix form of the expression (A + B)\u2217(C\u2217D \u2212 E)\u2217F / G is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "AB + CD\u2217E \u2212 *F*G/"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "AB + CD \u2217 E \u2212 F \u2217\u2217G/"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "/ AB + CD \u2217 E \u2212\u2217F \u2217 G"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "AB + CDE \u2217\u2212\u2217 F \u2217 /G"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1317,
+      "QuestionTypeId": 0,
+      "QuestionId": 64404,
+      "Explanation": "Get character by character data from infix expression and&nbsp; check implementation with stack<br>&nbsp;ch &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; stack&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;postfix<br>(&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (<br>A&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A<br>+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A<br>B&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB<br>)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(+)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+<br>*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+<br>(&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *(&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB+<br>C&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*(&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB+C<br>*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*(*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB+C<br>D&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*(*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB+CD<br>-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *(*-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+CD<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*(-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+CD*<br>E&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*(-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+CD*E<br>)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *(-)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+CD*E<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+CD*E-<br>*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;**&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB+CD*E-<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+CD*E-*<br>F&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB+CD*E-*F<br>/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB+CD*E-*F<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+CD*E-*F*<br>G&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB+CD*E-*F*G<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+CD*E-*F*G/&nbsp; &nbsp;<br><br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The postfix equivalent of the prefix * + ab - cd is ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ab + cd - *"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&nbsp;abcd + - *"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ab + cd * -"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ab + - cd *"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1317,
+      "QuestionTypeId": 0,
+      "QuestionId": 64494,
+      "Explanation": "* + ab - cd = (a+b) *(c-d) = ab+cd-*&nbsp;",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The prefix form of an infix expression (p + q) &minus; (r * t) is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "+ pq &minus; rt* ."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&minus; +pqr t* ."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "-+pq*rt"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "pqrt &minus; + * ."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1317,
+      "QuestionTypeId": 0,
+      "QuestionId": 64470,
+      "Explanation": "&nbsp;Infix Expression is ((p+q)-(r*t))<br>\n\t\t\t(+pq)-(r*t)<br>\n\t\t\t(-+pq)(r*t)<br>\n\t\t\t-+pq*rt. Thus prefix expression is -+pq*rt.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following data structure is linear data structure?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Trees"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Graphs"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Arrays"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above.<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1317,
+      "QuestionTypeId": 0,
+      "QuestionId": 64515,
+      "Explanation": "Tree &amp; graph are non linear &amp; array is linear data structure.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Convert the following infix expression to postfix:&nbsp; (A+B)*(C/D)-E/F",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "AB*+CD/-EF/"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "AB+CD/*EF-/"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "AB+CD/*EF/-"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "AB+*CD/EF/-"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1317,
+      "QuestionTypeId": 0,
+      "QuestionId": 64538,
+      "Explanation": "<table style=\"border-collapse:collapse; border:0.5pt solid #000000; height:420px; width:324.02pt\" border=\"1\" cellspacing=\"0\"><tbody><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:55.50pt\"><div class=\"summary\"><span style=\"color:#000000\">Character</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:80.25pt\"><div class=\"summary\"><span style=\"color:#000000\">Stack</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:118.50pt\"><div class=\"summary\"><span style=\"color:#000000\">Operation</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:69.75pt\"><div class=\"summary\"><span style=\"color:#000000\">Output</span></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">(</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">(&nbsp; (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">Push &apos;(&apos; into Stack</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">A</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">Add in postfix String</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">A</span></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">+</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">(&nbsp; +(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">Push &apos;+&apos; on stack</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">)</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:118.50pt\"><div class=\"summary\"><span style=\"color:#000000\">Pop All Entries till &apos;(&apos; and add into postfix String</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">AB+</span></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">*</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">(&nbsp; *&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:normal; width:118.50pt\"><div class=\"summary\"><span style=\"color:#000000\">Push &apos;*&apos; into Stack</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">(</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">Push &apos;(&apos; into Stack</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">C</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">(&nbsp;&nbsp; * (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">Add in postfix String</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">AB+C</span></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">/</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">(&nbsp;&nbsp; *( /&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">Push &apos;/&apos; into Stack</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">D</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:normal; width:118.50pt\"><div class=\"summary\"><span style=\"color:#000000\">Add in postfix String</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">AB+CD</span></div></td></tr><tr><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">)</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:118.50pt\"><div class=\"summary\"><span style=\"color:#000000\">Pop All Entries till &apos;(&apos; and add into postfix String</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">AB+CD/</span></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">(&nbsp;&nbsp; *(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">&nbsp;-&nbsp;</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">(&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:118.50pt\"><div class=\"summary\"><span style=\"color:#000000\">Pop * fron Stack because priority of - is less then *</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">AB+CD/*</span></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">E</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">AB+CD/*E</span></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">/</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">&nbsp;(&nbsp;&nbsp; / -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">Push &apos;/&apos; into Stack</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">F</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">Add in postfix String</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">AB+CD/*EF</span></div></td></tr><tr><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:118.50pt\"><div class=\"summary\"><span style=\"color:#000000\">Pop All entries till stack is not empty</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">AB+CD/*EF/-</span><br></div></td></tr></tbody></table>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The result of evaluating the postfix expression&nbsp; 546 +* 493/ + *&nbsp;&nbsp;&nbsp; is<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "600."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "350."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "650."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "588."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1317,
+      "QuestionTypeId": 0,
+      "QuestionId": 64525,
+      "Explanation": "infix expression for above postfix expression is<br>(5*(4+6))*(4+(9/3)) =350<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The postfix expression: 5&nbsp;&nbsp;6&nbsp;&nbsp;2&nbsp; +&nbsp; * 12&nbsp;&nbsp;4 /- when evaluated gives the following result:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "37"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "-37"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "40"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "3"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1317,
+      "QuestionTypeId": 0,
+      "QuestionId": 64556,
+      "Explanation": "\n\t\t\t<table border=\"1\" cellspacing=\"0\" style=\"border-collapse:collapse; border:0.5pt solid #000000; height:490px; width:231.03pt\">\n\t\t\t\t<tbody>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:48.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Read String charcter by character&nbsp;</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:87.00pt\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:48.00pt\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:48.00pt\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\">character</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\">Operation</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\">Reuslt</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Stack</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:22.50pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">5</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:22.50pt; vertical-align:middle; white-space:normal; width:87.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">convert it into integer and push on stack</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:22.50pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:22.50pt; text-align:left; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">5</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:22.50pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">6</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:22.50pt; vertical-align:middle; white-space:normal; width:87.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">convert it into integer and push on stack</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:22.50pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:22.50pt; vertical-align:middle; white-space:normal; width:48.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">2</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:87.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">convert it into integer and push on stack</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:48.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">+</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:87.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Pop First two entries and Perform + Operatation and Push Result</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">6+2=8</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:48.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">8</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">*</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:87.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Pop First two entries and Perform * Operatation and Push Result</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">8*5=40</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; text-align:left; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">40</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">12</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:87.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Convert it into integer and push on stack</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:48.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 40</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:22.50pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">4</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:22.50pt; vertical-align:middle; white-space:normal; width:87.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Convert it into integer and push on stack</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:22.50pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:22.50pt; vertical-align:middle; white-space:normal; width:48.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 40</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">/</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:87.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Pop First two entries and Perform / Operatation and Push Result</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">12/4=3</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; text-align:left; vertical-align:middle; white-space:normal; width:48.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 40</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">-</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:87.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Pop First two entries and Perform - Operatation and Push Result</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">40-3=37</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">37</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t</tbody>\n\t\t\t</table>\n\t\t\t",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Convert the following infix expressions into its equivalent postfix expressions<br>\n\t\t\t(A + B /D)/(E &ndash; F)+G",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A B D / + E F &ndash; / G +"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A B D +/ E F &ndash; / G +"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A B D / + E F/- G +"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1317,
+      "QuestionTypeId": 0,
+      "QuestionId": 64559,
+      "Explanation": "\n\t\t\t<table border=\"1\" cellspacing=\"0\" style=\"border-collapse:collapse; border:0.5pt solid #000000; height:820px; width:263.27pt\">\n\t\t\t\t<tbody>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:48.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Character</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:48.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Stack</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:87.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Operation</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:80.25pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Output</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">(</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:48.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><br>\n\t\t\t\t\t\t<span style=\"color:#000000\">&nbsp;&nbsp; (</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Push &#39;(&#39; into Stack</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">A</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Add in postfix String</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">A</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">+</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:48.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">&nbsp; +<br>\n\t\t\t\t\t\t&nbsp;&nbsp; (</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Push &#39;+&#39; on stack</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">B</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:48.00pt\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:87.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Add b In Postfix String</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">AB</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">/</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:normal; width:48.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +<br>\n\t\t\t\t\t\t&nbsp;&nbsp; (</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:normal; width:87.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Push / In Stack</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">D</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:87.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Add in postfix String</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">ABD</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">)</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:87.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Pop All Entries till &#39;(&#39; and add into postfix String</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">ABD/+</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">/</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">/</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Push &#39;/&#39; into Stack</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">(</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:48.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">&nbsp;&nbsp;<br>\n\t\t\t\t\t\t&nbsp;&nbsp; (<br>\n\t\t\t\t\t\t&nbsp;/</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:87.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Push &#39;(&#39; into Stack</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">E</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:87.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Add E In Postfix String</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">ABD/+E</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">&nbsp;-&nbsp;</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:48.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">&nbsp;&nbsp; -<br>\n\t\t\t\t\t\t&nbsp;&nbsp; (<br>\n\t\t\t\t\t\t&nbsp;/</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Push &#39;-&#39; into Stack</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">F</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:87.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Add F In Postfix String</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">ABD/+EF</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">)</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:48.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">&nbsp;<br>\n\t\t\t\t\t\t&nbsp;/</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:87.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Pop All Entries till &#39;(&#39; and add into postfix String</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">ABD/+EF-</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">+</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:normal; width:87.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Pop / and push + because priority of + is less the priority of /</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">ABD/+EF-/</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">G</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:87.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Add G in postfix String</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">ABD/+EF-/G</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\">&nbsp;</div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:87.00pt\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">Pop All entries till stack is not empty</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\">\n\t\t\t\t\t\t<div class=\"summary\"><span style=\"color:#000000\">ABD/+EF-/G+</span></div>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t</tbody>\n\t\t\t</table>\n\t\t\t",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The infix form of AB*CD/+ is?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A+B*C/D"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A*B+C/D"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A*B/C+D"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A*B/C+D"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1317,
+      "QuestionTypeId": 0,
+      "QuestionId": 64562,
+      "Explanation": "<pre style=\"color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\">  \n      +\t\t\t     \n     / \\\t\t    \n    /   \\\t\t   \n   *     /\t\t  \n  / \\   / \\\t\t  \n A   B C   D\t\t  \n\n((A*B)+(C/D))\t\t</pre> <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Data structure in which element inserted first is deleted last is _________.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Stack.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Queue.<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Linked list.<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Array.<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1317,
+      "QuestionTypeId": 0,
+      "QuestionId": 82800,
+      "Explanation": "Stack where element inserted last is deleted first. Hence element inserted first will be deleted last.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "___ operation removes element from stack.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "push"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "pop"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "isfull()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1317,
+      "QuestionTypeId": 0,
+      "QuestionId": 82801,
+      "Explanation": "Removing element from stack is called as pop.<br>",
+      "Answer": "B",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

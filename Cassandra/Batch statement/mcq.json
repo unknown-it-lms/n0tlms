@@ -1,0 +1,456 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "In Cassandra, what is the primary purpose of using a batch statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To insert multiple rows at once"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To execute a series of read queries"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To perform data backup"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To improve query performance by parallel execution"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6895,
+      "QuestionTypeId": 0,
+      "QuestionId": 94286,
+      "Explanation": "Batch statements are used to group multiple modification statements (INSERT, UPDATE, DELETE) for a single execution.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about Cassandra's batch statements in terms of atomicity?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Batch statements are always atomic"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Batch statements are only atomic for an individual partition key"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Batch statements ensure global atomicity across data centers"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Batch statements do not provide atomicity"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6895,
+      "QuestionTypeId": 0,
+      "QuestionId": 94287,
+      "Explanation": "Cassandra&apos;s batch statements ensure atomicity within a single partition; they don&apos;t provide global atomicity across partitions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement about the performance of batch statements in Cassandra is accurate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using batch statements always improves performance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Batch statements are optimized for parallel processing"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Overusing batch statements can lead to performance bottlenecks"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Batch statements avoid network round trips"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6895,
+      "QuestionTypeId": 0,
+      "QuestionId": 94288,
+      "Explanation": "Overusing batch statements, especially for unrelated partitions, can create performance bottlenecks in Cassandra.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the maximum size limit for a batch statement in Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1 MB"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "5 MB"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "10 KB"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "50 KB"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6895,
+      "QuestionTypeId": 0,
+      "QuestionId": 94289,
+      "Explanation": "Cassandra has a configurable limit of approximately 5 MB for batch statement size to prevent abuse and ensure stability.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does Cassandra handle batch statements spanning multiple partitions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It divides them into mini-batches for parallel processing"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It treats them as a single atomic operation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It executes them sequentially"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It adds latency due to varying replica placement"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6895,
+      "QuestionTypeId": 0,
+      "QuestionId": 94290,
+      "Explanation": "Running batch statements that span multiple partitions can introduce latency due to different replica placements.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In terms of triggering both read and write operations, what is a batch statement generally NOT designed for?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Triggering multiple read operations"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Bundling multiple writes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Ensuring atomic updates within a partition"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Coordinating updates across tables"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6895,
+      "QuestionTypeId": 0,
+      "QuestionId": 94291,
+      "Explanation": "Batch statements in Cassandra are primarily intended for batch writes and updates, not for batching read operations.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which scenario is it recommended to use batch statements in Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Updating a static table"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Performing isolated writes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Updating denormalized data within a single partition"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Large-scale data migration"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6895,
+      "QuestionTypeId": 0,
+      "QuestionId": 94292,
+      "Explanation": "Use batch statements for co-ordinated, atomic updates within a single partition key, such as updating denormalized data.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the keyword 'UNLOGGED' describe in the context of Cassandra batch statements?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The batch is logged but not indexed"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It affects only local data center"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No atomicity is guaranteed in the batch"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The batch does not use the commit log for durability"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6895,
+      "QuestionTypeId": 0,
+      "QuestionId": 94293,
+      "Explanation": "An &apos;UNLOGGED&apos; batch does not use the commit log, so it doesn&apos;t guarantee durability across node failures.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the best practice for batch statements affecting multiple partitions in Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Always use for better performance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Limit the size and frequency of such batches"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Execute them during peak hours"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Avoid them as they violate ACID principles"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6895,
+      "QuestionTypeId": 0,
+      "QuestionId": 94294,
+      "Explanation": "For batch statements affecting multiple partitions, it&apos;s best to limit size and frequency to prevent performance issues.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is an essential consideration when creating batch statements in Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Including only read queries for efficiency"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Ensuring all statements update the same column"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Grouping statements with the same partition key for efficiency"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Avoiding binding variables to prevent overhead"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6895,
+      "QuestionTypeId": 0,
+      "QuestionId": 94295,
+      "Explanation": "Batch statements should ideally be grouped by the same partition key to optimize the transaction and minimize overhead.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Cassandra, what type of command is a batch statement NOT primarily used for?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Insert operations"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Select queries"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Update operations"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Delete operations"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6895,
+      "QuestionTypeId": 0,
+      "QuestionId": 94296,
+      "Explanation": "Batch statements in Cassandra are intended for write operations such as insert, update, and delete, not read/select queries.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Cassandra feature allows multiple DML statements in a single round trip?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Triggers"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Batch statements"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Materialized views"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Indexes"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6895,
+      "QuestionTypeId": 0,
+      "QuestionId": 94297,
+      "Explanation": "Batch statements in Cassandra allow multiple DML (Data Manipulation Language) operations to be sent in a single request.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What potential consequence should be considered when using large batch statements across multiple partitions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Increased read latency"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Node failures"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Inefficient repairs"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Strain on secondary indexes"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6895,
+      "QuestionTypeId": 0,
+      "QuestionId": 94298,
+      "Explanation": "Large batch statements that span multiple partitions can lead to inefficient repairs due to inconsistencies in distributed writes.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How would you ensure that a batch statement in Cassandra will execute atomically?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using 'IF EXISTS' clause"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Ensuring all mutations affect a single partition key"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Turning on 'ALLOW FILTERING'"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Wrapping batch in a lightweight transaction"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6895,
+      "QuestionTypeId": 0,
+      "QuestionId": 94299,
+      "Explanation": "Cassandra guarantees atomicity within a batch only if all operations affect a single partition key.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What keyword can be used to exclude certain operations from being logged in Cassandra batch statements?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "LOGGED"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "BYPASS"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "EXCLUDE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "UNLOGGED"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6895,
+      "QuestionTypeId": 0,
+      "QuestionId": 94300,
+      "Explanation": "The &apos;UNLOGGED&apos; keyword is used to create a batch statement that does not log operations in the write-ahead commit log.",
+      "Answer": "D",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

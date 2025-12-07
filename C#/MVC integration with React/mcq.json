@@ -1,0 +1,1476 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "When integrating MVC architecture with a React front-end in a .NET application, which of the following statements is true about how data is typically passed between the server and the client?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Data is passed directly from the Razor views to React components without any intermediary services."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Data exchange is typically handled through RESTful APIs or controllers that provide JSON data to React components."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "React components directly access the database to fetch the necessary data."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MVC controllers are replaced by React components, eliminating the need for traditional server-side routing."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 90981,
+      "Explanation": "In a typical integration of MVC with a React front-end in a .NET application, data is exchanged via RESTful APIs or controllers that return JSON data. The server-side MVC framework is responsible for handling data processing and business logic, while React components retrieve this data through HTTP requests, allowing dynamic updates on the client side.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the context of integrating an ASP.NET MVC application with a React frontend, which of the following approaches is commonly used to manage the interaction between these technologies?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use Razor views to directly embed React components into .cshtml files."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Set up a Web API in the ASP.NET MVC application to handle HTTP requests from the React frontend."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Utilize AJAX calls in Razor views to communicate with React components."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Rely on server-side rendering exclusively for all React components within MVC."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 90982,
+      "Explanation": "A common approach to integrating a React frontend with an ASP.NET MVC application is to set up a Web API. The API handles HTTP requests initiated from the React app, allowing for smooth interaction and data exchange between the frontend and backend. This decouples the frontend and backend, enabling them to be developed and scaled independently.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In an ASP.NET Core MVC application that integrates a React front-end, which of the following accurately describes a common method for serving the React application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The React application is bundled and served using WebPack and included in a 'Scripts' folder within the MVC project."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The React application is compiled to a set of Razor pages automatically managed by ASP.NET Core."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The React application is served from a Node.js server running alongside the ASP.NET Core server."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The React application is compiled to static files and served from the wwwroot folder within the MVC project."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 90983,
+      "Explanation": "In an ASP.NET Core MVC project, a common pattern for integrating a React front-end involves compiling the React application into static files (like HTML, CSS, and JS) using a tool like WebPack, and placing these compiled files in the wwwroot folder. This way, ASP.NET Core serves the static files directly to clients, making integration with React seamless and efficient.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following approaches can be used for integrating the Model-View-Controller (MVC) pattern with a React front-end in a .NET application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using Razor views to directly render React components with server-side bindings."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Employing a RESTful API to separate concerns and handle data between React and the .NET backend."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Incorporating React components in the MVC ViewBag property for dynamic rendering."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Embedding React scripts directly in the controller actions for real-time updates."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 90984,
+      "Explanation": "The recommended approach for integrating MVC with React in a .NET application is to use a RESTful API. This allows separation of concerns by letting the .NET backend handle data processing and business logic while React takes care of the client-side rendering. This integration promotes scalability, maintainability, and clean separation of the client and server sides. Options A, C, and D suggest tightly coupling the front-end and back-end, which can lead to challenges in maintaining and scaling the application.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In an ASP.NET MVC application integrated with a React frontend, which of the following approaches is the most efficient way to use data from the server-side in your React components?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Perform AJAX requests in each React component as they mount."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Pass the server-side data to React as JSON during server-side rendering."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use SignalR to constantly push data updates from the server."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Deploy the React application separately and use static files for data."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 90985,
+      "Explanation": "Passing the server-side data as JSON during server-side rendering is the most efficient approach in this context. It allows for a seamless integration between ASP.NET MVC and React by delivering the initial data required for rendering React components without the need for additional network requests, thereby reducing latency and improving performance. Options A and C involve unnecessary network overhead, while option D can lead to outdated or less dynamic data.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which file in an ASP.NET MVC project is commonly used to render the React root component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Startup.cs"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "HomeController.cs"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "_Layout.cshtml"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "web.config"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 90986,
+      "Explanation": "_Layout.cshtml is the shared layout view where the root HTML structure is defined, making it the ideal place to render the React root component (e.g., using a div with an id).",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary role of the 'aspnet-webpack' middleware when integrating React in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To route API requests"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To enable browser caching"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To serve and hot reload React components"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To compile C# code on the client"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 90987,
+      "Explanation": "The &apos;aspnet-webpack&apos; middleware is used in development to serve React apps and enable hot module replacement, making the development process smoother.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a typical React-MVC integration, which ASP.NET component serves React with initial data?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ReactDOM"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Action Method in Controller"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ViewComponent"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Startup class"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 90988,
+      "Explanation": "In MVC, the controller&apos;s action method is responsible for preparing and sending the initial data to the React component via the view.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which component in an MVC pattern is responsible for handling user input?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Model"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "View"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Controller"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Database"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96069,
+      "Explanation": "The controller handles user input and interacts with the model and the view to render the final output.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary role of the 'Model' in the MVC pattern?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To manage database schema"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To design user interfaces"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To handle business logic and data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To style the web pages"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96070,
+      "Explanation": "The model is responsible for managing the data, business logic, and rules of the application.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In an ASP.NET MVC application, which file extension is typically used for view files?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": ".cshtml"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": ".mvc"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": ".aspx"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": ".html"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96071,
+      "Explanation": ".cshtml files are used for views in ASP.NET MVC applications, where C# is used with HTML.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does React use to improve performance when rendering UI components?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Virtual DOM"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Real DOM"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DOM Caching"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Partial DOM"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96072,
+      "Explanation": "React uses a virtual DOM to compare with the real DOM, updating only the differences to improve performance.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to handle component state in React?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "this.setState()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "this.bindState()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "this.updateState()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "this.refreshState()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96073,
+      "Explanation": "React uses this.setState() method to update the state of a component, triggering a re-render with the new state.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you pass data from a parent component to a child component in React?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using state"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using props"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using services"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using context"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96074,
+      "Explanation": "Props are used to pass data from a parent component to a child component in React.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which lifecycle method is invoked immediately after a component is added to the DOM in React?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "componentDidUpdate"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "componentWillUnmount"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "componentDidMount"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "render"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96075,
+      "Explanation": "The componentDidMount lifecycle method is called immediately after the component is added to the DOM, ideal for AJAX requests or DOM manipulations.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In MVC, which statement best describes the 'View' component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It directly interacts with the model"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It handles user validation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It renders the UI elements"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It communicates with the controller"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96076,
+      "Explanation": "The &apos;View&apos; in MVC is responsible for rendering UI elements based on the model data and provided by the controller.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In React, which hook can be used to mimic class component lifecycle methods?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "useState"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "useEffect"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "useContext"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "useReducer"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96077,
+      "Explanation": "The useEffect hook in React is used to run side effects similar to component lifecycle methods in class components.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a significant benefit of using the MVC pattern when developing web applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Easier development of monolithic applications"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Tight coupling between components"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Enhanced separation of concerns"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Simplified database management"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96078,
+      "Explanation": "The MVC pattern enhances separation of concerns by dividing an application into three interconnected components: Model, View, and Controller.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In an MVC application using React as the front-end, which component is primarily responsible for managing the flow of data between the client and the server?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Controller"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Model"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "View"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "React Component"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96079,
+      "Explanation": "In an MVC architecture, the Controller is responsible for handling the request and response cycle, facilitating communication between the client and the server.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which data format is most commonly used to exchange data between a React front-end and an MVC back-end in a .NET application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "XML"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "JSON"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "YAML"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CSV"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96080,
+      "Explanation": "JSON (JavaScript Object Notation) is the most popular data exchange format when working with web applications involving React and .NET MVC due to its lightweight nature and compatibility.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you secure data when using MVC with React in .NET to ensure that sensitive information is not exposed to the client?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use HTTPS for data transfer"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Store sensitive data in session state"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Encode all data in Base64"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use cookies to store data"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96081,
+      "Explanation": "Using HTTPS encrypts the data in transit between the client and server, aiding in preventing the exposure of sensitive data.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When implementing state management in React for a .NET MVC project, which library is commonly used to manage global state?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Redux"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Flux"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "RxJS"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MobX"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96082,
+      "Explanation": "Redux is a popular library for managing application state in large, complex applications. It provides a single source of truth and works well with React.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a .NET MVC application, what is the primary role of the Model in the MVC architecture concerning data handling when integrated with a React front-end?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Rendering the UI components"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Managing the application state"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Handling business logic and data access"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Routing HTTP requests"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96083,
+      "Explanation": "In the MVC architecture, the Model is responsible for handling business logic and data access, serving as the bridge between the database and the application.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary role of the Controller in the MVC pattern when integrating with React?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To handle database operations directly."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To manage the state in a React component."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To control the flow of data between the model and the view."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To handle asynchronous requests from the client-side."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96084,
+      "Explanation": "In the MVC pattern, the Controller acts as an intermediary between the Model and the View, handling data flow and user input to update the Model or the View as required.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is commonly used in React components to retrieve data from an MVC Controller using AJAX?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "POST"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "PUT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "GET"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DELETE"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96085,
+      "Explanation": "The GET method is typically used to retrieve data from a server. In a React component, an AJAX call with a GET request is used to fetch data from an MVC Controller.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you manage state in a React component that receives initial state from a .NET MVC View using Razor?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using componentDidMount to fetch data."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By passing JSON data through the ViewData dictionary."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By directly binding the Model to the component."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By using session state variables."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96086,
+      "Explanation": "In a .NET MVC View using Razor, initial state can be passed to a React component by encoding it as JSON and storing it in a ViewData dictionary, which can be accessed when rendering the component.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a method to update state synchronously in a React component when integrated with an MVC application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using setTimeout to delay state updates."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using Object.assign to manually update state."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using ReactDOM.render to re-render the component."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using React setState method."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96087,
+      "Explanation": "The setState method in React is the standard way to update the state of a component. It schedules an update to the component&apos;s state object and tells React to re-render the component with the updated state.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a common practice to ensure data consistency in a React component state when dealing with form submissions in an MVC application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using localStorage to store form data."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using Redux for state management."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Sending all form data to the server before setting component state."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using component's constructor to handle form submissions."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96088,
+      "Explanation": "Redux is a predictable state container for JavaScript apps, which helps in managing the state of an application consistently, making it a common choice for ensuring data consistency when handling form submissions in React components.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What attribute in ASP.NET MVC is commonly used to enforce authentication on a controller or action method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "AuthorizeAttribute"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "AuthenticateAttribute"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ValidateAntiForgeryToken"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "RequireHttpsAttribute"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96089,
+      "Explanation": "The AuthorizeAttribute is used in ASP.NET MVC to restrict access to a controller or action method to only authenticated users.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which library in React is often used for managing authentication state in a .NET MVC integrated application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Redux"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "useState"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Context API"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "React Router"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96090,
+      "Explanation": "Redux is commonly used in React applications to manage global state, including authentication state, especially when integrating with .NET MVC.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you pass authentication tokens securely from a .NET MVC backend to a React frontend?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Query strings"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "JSON Web Tokens (JWT) in HTTP headers"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Cookies without Secure flag"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "HTML local storage"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96091,
+      "Explanation": "Using JSON Web Tokens (JWT) in HTTP headers is a secure method to pass authentication data between the .NET backend and React frontend.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in ASP.NET Core is used to configure authentication services in a project?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ConfigureServices"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Configure"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "UseMvc"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "UseStaticFiles"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96092,
+      "Explanation": "The ConfigureServices method in the Startup class is where you add and configure services, including authentication services, in an ASP.NET Core project.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a best practice for handling authentication in a React and .NET MVC integrated application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Store authentication tokens in plain local storage"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use server-side session management"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Store authentication tokens in HTTP-only cookies"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Passing tokens directly in the URL"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96093,
+      "Explanation": "Storing authentication tokens in HTTP-only cookies prevents client-side scripts from accessing them, thus enhancing security.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following attribute is used to specify the authorization requirement in an ASP.NET MVC controller action when integrating with React?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RolesAttribute"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "AuthorizeAttribute"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "AllowAnonymousAttribute"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "HttpGetAttribute"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96094,
+      "Explanation": "The AuthorizeAttribute is used in ASP.NET MVC to enforce authorization policies on controllers or actions, ensuring that only authenticated users can access particular resources or operations.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the context of MVC and React integration, what is the primary role of a JWT (JSON Web Token)?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To load CSS asynchronously in React components"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To store user preferences locally in the browser"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To secure HTTP requests by encoding data and verifying the user identity"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To manage server-side sessions"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96095,
+      "Explanation": "JWTs are commonly used to securely transmit information between a client and a server, enabling authentication and information exchange in a stateless manner.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What method is typically used in React to attach the JWT token stored in local storage to outgoing API requests for authorization purposes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "addTokenHeader()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "configureToken()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "interceptRequest()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "attachAuthorizationHeader()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96096,
+      "Explanation": "In React, the configureToken() method is often used to retrieve a JWT token from local storage and set it in the headers of outgoing API requests to ensure that they include proper authorization credentials.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When building an MVC application with React, which of the following is NOT a recommended practice for handling authorization?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Storing JWT tokens in local storage"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using server-side sessions to manage user state"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Directly embedding sensitive authorization logic in JavaScript visible on the client-side"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Implementing server-side checks for authorized access to resources"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96097,
+      "Explanation": "Embedding sensitive authorization logic in client-side JavaScript is not recommended due to security risks, as this logic can be visible and potentially manipulated by clients.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which ASP.NET Core service is typically used to check user roles based on claims in the context of MVC and React integration?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RoleValidator"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ClaimManager"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "UserManager"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ClaimsPrincipal"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96098,
+      "Explanation": "The ClaimsPrincipal class in ASP.NET Core is used to represent the user and provides methods like IsInRole() that can verify if the user possesses a certain role based on their claims, supporting role-based authorization.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In an ASP.NET MVC project that integrates React, when defining routes, which method is commonly used to map a controller route in the 'RouteConfig.cs' file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "MapUrl"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "MapRoute"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DefineRoute"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CreateRoute"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96099,
+      "Explanation": "&apos;MapRoute&apos; is a method provided by ASP.NET MVC used in the &apos;RouteConfig.cs&apos; file to define routes for controllers and actions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When integrating React with MVC, where should you place the React components to ensure they are rendered correctly in a layout?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "In the Controller"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "In the View using script tags"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "In the Model"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "In the RouteConfig.cs"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96100,
+      "Explanation": "React components should be placed in views (e.g., .cshtml files) using script tags to ensure they are rendered correctly by the browser.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a .NET MVC project using React, which technique can be utilized to pass data from the server-side to a React component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using cookies"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Embedding data as JSON in the View"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Direct method invocation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Database storage"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96101,
+      "Explanation": "Data can be embedded in the View as a JSON object, which the React component can then access and utilize for rendering.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a benefit of using React in an ASP.NET MVC application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Enhanced client-side interactivity"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Server-side rendering only"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Component-based architecture"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Faster UI updates"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96102,
+      "Explanation": "React offers enhanced client-side interactivity and a component-based architecture, but it is not limited to server-side rendering; it primarily focuses on the client-side.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When configuring route parameters in ASP.NET MVC with React, which token is used to denote variables within route patterns?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "$"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": ":"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "{}()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96103,
+      "Explanation": "Route parameters in ASP.NET MVC are denoted using curly braces &apos;{}&apos;. For example, &apos;{controller}/{action}/{id}&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does the Model in MVC typically interact with React components in a .NET MVC application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By directly embedding React components in the Model."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By passing data to React components through the Controller, which then renders it."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By converting React components to a model representation."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By using the Model to fetch data directly inside React components."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96104,
+      "Explanation": "In an MVC integration with React, the Model holds the data structure, which is accessed through the Controller. The Controller then passes this data to the View, where React components are used to render the user interface.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which part of the MVC structure is responsible for handling business logic when integrating React components?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Model"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "View"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Controller"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "React Component"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96105,
+      "Explanation": "The Controller in an MVC architecture handles business logic, processes incoming requests, interacts with the Model to fetch or update data, and uses the View for rendering, including using React components.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can React components maintain state effectively when integrated with MVC in .NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By storing all state in the Model."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using Redux or React Context for state management."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using the View to manage state directly."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By relying solely on static methods in React components."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96106,
+      "Explanation": "While integrating React with MVC, using state management libraries like Redux or React Context is effective for maintaining state across components, benefiting from its well-structured state management capabilities.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a .NET MVC application integrating React, where should AJAX calls be ideally placed?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Directly in the Model to immediately update it."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Within the React componentDidMount lifecycle method or hooks like useEffect."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only in the Controller to keep React components stateless."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Exclusively in the View to fetch data."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96107,
+      "Explanation": "AJAX calls are typically made inside React components using lifecycle methods such as componentDidMount or hooks like useEffect to fetch data asynchronously, ensuring components have the necessary data to render.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary role of the View in MVC when working with React components?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To store application data used by React components."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To render the user interface using React components, based on the data from the Controller."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To handle backend operations and data processing."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To encapsulate business logic directly in React components."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 96108,
+      "Explanation": "In MVC, the View is responsible for rendering the user interface. When integrating with React, the View utilizes React components to render the UI based on data passed from the Controller.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of integrating React with ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To enhance server-side rendering performance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To enable single-page application (SPA) capabilities"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To replace the Model-View-Controller (MVC) pattern"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To remove the need for APIs"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 7032,
+      "QuestionTypeId": 0,
+      "QuestionId": 89413,
+      "Explanation": "<span id=\"explanation89413\"><span>To enable single-page application (SPA) capabilities</span></span>",
+      "Answer": "B",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

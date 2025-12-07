@@ -1,0 +1,1326 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Referring to the below code, why is the keyword virtual added before the destructor \u2018computer\u2019?<br>class computer {<br>&nbsp;&nbsp;&nbsp; public:<div style=\"margin-left: 40px;\">computer(){ }</div><div style=\"margin-left: 40px;\">virtual ~computer() { }</div>};<br>class memory: public computer&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp; public:<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp; memory() { }</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp; ~memory() { }</div>};<br>void main()<br>{<br>&nbsp; &nbsp;computer *p=new memory();<br>&nbsp; delete p;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To make it an abstract class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To make inheritance possible. ( at least one function in the base class must be virtual)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To indicate that this destructor cannot be overloaded"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To ensure that the proper destructor is invoked if any other class is derived from the base class computer"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 64152,
+      "Explanation": "<span id=\"explanation64152\">The reason is because destructors (unlike other functions) are not actually \u2018overridden\u2019, rather they are always called in the reverse order of the class derivation. This means that a derived class\u2019 destructor will be invoked first, then base class destructor will be called. </span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A class cannot be&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Virtual"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Generic"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Inline"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Friend"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 63899,
+      "Explanation": "A class can be generic,inline,friend. But can not be Virtual.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which one of the following is the correct way to declare a pure virtual function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "virtual void Display(void){0};"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "virtual void Display = 0;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "virtual void Display(void) = 0;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "void Display(void) = 0;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 64235,
+      "Explanation": "<span id=\"explanation64235\">virtual keyowrd and then fucntion declaration with =0; specifier is syntax of pure virtual function.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;iostream&gt;<br>&nbsp;&nbsp;&nbsp; using namespace std;<br>&nbsp;&nbsp;&nbsp; class bowl<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int apples;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int oranges;<br>&nbsp;&nbsp;&nbsp; };<br>&nbsp;&nbsp;&nbsp; int count_fruit(bowl * begin, bowl * end, int bowl :: *fruit)<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int count = 0;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (bowl * iterator = begin; iterator != end; ++ iterator)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; count += iterator -&gt;* fruit;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return count;<br>&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp; int main()<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bowl bowls[2] = {{ 1, 2 },{ 3, 5 }};<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; \"I have \" &lt;&lt; count_fruit(bowls, bowls + 2, &amp; bowl :: apples) &lt;&lt; \" apples \";<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; \"I have \" &lt;&lt; count_fruit(bowls, bowls + 2, &amp; bowl :: oranges) &lt;&lt; \"oranges \";<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br>&nbsp;&nbsp;&nbsp; }",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "I have 4 apples<br>I have 7 oranges"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "I have 3 apples<br>I have 5 oranges"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "I have 1 apples<br>I have 5 oranges"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 64336,
+      "Explanation": "<span id=\"explanation64336\"><span>For the bowls array:<br>First bowl has apples = 1 and oranges = 2.<br>Second bowl has apples = 3 and oranges = 5.<br>count_fruit(bowls, bowls + 2, &amp;bowl::apples) counts the total apples:<br>1 + 3 = 4<br>count_fruit(bowls, bowls + 2, &amp;bowl::oranges) counts the total oranges:<br>2 + 5 = 7<br>Therefore, the program correctly computes and outputs the total number of apples and oranges stored in the bowls array using pointer-to-member syntax and function count_fruit.</span></span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What is the output of this program?</div><div>&nbsp;&nbsp; #include &lt;iostream&gt;</div><div>&nbsp;&nbsp; using namespace std;</div><div>&nbsp;&nbsp; class MyInterface&nbsp;&nbsp;{</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp; virtual void Display() = 0;</div><div>&nbsp;&nbsp; };</div><div>&nbsp;&nbsp; class Class1 : public MyInterface&nbsp;{</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp; void Display()&nbsp;{</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int &nbsp;a = 5;</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; a;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; }</div><div>&nbsp;&nbsp; };</div><div>class Class2 : public MyInterface&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp; void Display()&nbsp;{</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt;\" 5 \" &lt;&lt; endl;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; }</div><div>&nbsp;&nbsp; };</div><div>&nbsp;&nbsp; int main()</div><div>&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; Class1 obj1;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; obj1.Display();</div><div>&nbsp;&nbsp;&nbsp;&nbsp; Class2 obj2;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; obj2.Display();</div><div>&nbsp;&nbsp;&nbsp;&nbsp; return 0;</div><div>&nbsp;&nbsp; }</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "5 5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 64387,
+      "Explanation": "<span id=\"explanation64387\">--</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>&nbsp;What is the output of this program?</div><div>&nbsp;&nbsp; #include &lt;iostream&gt;</div><div>&nbsp;&nbsp; using namespace std;</div><div>&nbsp;&nbsp; class sample&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp; virtual void example() = 0;&nbsp;</div><div>&nbsp;&nbsp; };</div><div>&nbsp;&nbsp; class Ex1:public sample&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp; void example()&nbsp;&nbsp;&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; \"CPP\";</div><div>&nbsp;&nbsp;&nbsp;&nbsp; }</div><div>&nbsp;&nbsp; };</div><div>&nbsp;&nbsp; class Ex2:public sample&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp; void example()&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; \"is awesome\";</div><div>&nbsp;&nbsp;&nbsp;&nbsp; }</div><div>&nbsp;&nbsp; };</div><div>&nbsp;&nbsp; int main()</div><div>&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; sample* arra[2];</div><div>&nbsp;&nbsp;&nbsp;&nbsp; Ex1 e1;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; Ex2 e2;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; arra[0]=&amp;e1;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; arra[1]=&amp;e2;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; arra[0]-&gt;example();</div><div>&nbsp;&nbsp;&nbsp;&nbsp; arra[1]-&gt;example();</div><div>&nbsp;&nbsp; }</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CPP"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "is awesome"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CPP is awesome"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 64388,
+      "Explanation": "sample is an abstract base class with a pure virtual function example().<br>Ex1 and Ex2 are derived classes from sample, each implementing the example() function.<br>Main Function:<ol><li>An array arra of sample* pointers is declared.</li><li>Objects e1 of type Ex1 and e2 of type Ex2 are created.</li><li>Pointers to these objects are stored in the arra array.</li></ol>Execution Flow:<br>arra[0] points to e1, which is an object of type Ex1.<br>arra[1] points to e2, which is an object of type Ex2.<br>arra[0]-&gt;example() calls the example() function of Ex1, printing \"CPP\".<br>arra[1]-&gt;example() calls the example() function of Ex2, printing \"is awesome\".<br>Therefore, the program outputs \"CPP\" followed by \"is awesome\" consecutively. This demonstrates polymorphism in action where the correct example() function corresponding to each object&apos;s type (Ex1 or Ex2) is called through pointers to the base class (sample).<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What is the output of this program?</div><div>&nbsp;&nbsp; #include &lt;iostream&gt;</div><div>&nbsp;&nbsp; using namespace std;</div><div>&nbsp;&nbsp; class Base&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp; virtual void print() const = 0;</div><div>&nbsp;&nbsp; };</div><div>&nbsp;&nbsp; class DerivedOne : virtual public Base&nbsp;{</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp; void print() const&nbsp;&nbsp;&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; \"1\";</div><div>&nbsp;&nbsp;&nbsp;&nbsp; }</div><div>&nbsp;&nbsp; };</div><div>&nbsp;&nbsp; class DerivedTwo : virtual public Base&nbsp;&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp; void print() const&nbsp; &nbsp;{</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; \"2\";</div><div>&nbsp;&nbsp;&nbsp;&nbsp; }</div><div>&nbsp;&nbsp; };</div><div>&nbsp;&nbsp; class Multiple : public DerivedOne, DerivedTwo&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp; void print() const&nbsp;&nbsp;&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DerivedTwo::print();</div><div>&nbsp;&nbsp;&nbsp;&nbsp; }</div><div>&nbsp;&nbsp; };</div><div>&nbsp;&nbsp; int main()&nbsp;&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; Multiple both;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; DerivedOne one;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; DerivedTwo two;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; Base *array[ 3 ];</div><div>&nbsp;&nbsp;&nbsp;&nbsp; array[ 0 ] = &amp;both;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; array[ 1 ] = &amp;one;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; array[ 2 ] = &amp;two;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; for ( int i = 0; i &lt; 3; i++ )</div><div>&nbsp;&nbsp;&nbsp;&nbsp; array[ i ] -&gt; print();</div><div>&nbsp;&nbsp;&nbsp;&nbsp; return 0;</div><div>&nbsp;&nbsp; }</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "221"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "212"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "121"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 64389,
+      "Explanation": "In the loop for (int i = 0; i &lt; 3; i++), array[i]-&gt;print() is called:<br>array[0] points to both, which is of type Multiple. Since Multiple::print() calls DerivedTwo::print(), it prints \"2\".<br>array[1] points to one, which is of type DerivedOne. DerivedOne::print() prints \"1\".<br>array[2] points to two, which is of type DerivedTwo. DerivedTwo::print() prints \"2\".<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which class is used to design the base class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "abstract class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "derived class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "base class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "derived &amp; base class"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 64390,
+      "Explanation": "<span id=\"explanation64390\">Abstract class is used to design base class because functions of abstract class can be overridden in derived class hence derived class from same base class can have common method with different implementation, hence forcing encapsulation.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Find the output of the following program&nbsp;</div><div>class base&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void baseFun(){ cout&lt;&lt;\"from base\"&lt;&lt;endl;}</div><div>&nbsp;&nbsp;&nbsp;&nbsp; };</div><div>&nbsp;class deri:public base&nbsp;{</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public:</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void baseFun(){ cout&lt;&lt; \"from derived\"&lt;&lt;endl;}</div><div>&nbsp;&nbsp;&nbsp;&nbsp; };</div><div>void SomeFunc(base *baseObj) {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; baseObj-&gt;baseFun();</div><div>}</div><div>int main()&nbsp;{</div><div>&nbsp;&nbsp;&nbsp; base baseObject;</div><div>&nbsp;&nbsp;&nbsp; SomeFunc(&amp;baseObject);</div><div>&nbsp;&nbsp;&nbsp; deri deriObject;</div><div>&nbsp;&nbsp;&nbsp; SomeFunc(&amp;deriObject);</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "from base from derived"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "from derived from base"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "from base from base"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "from derived from base"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 73657,
+      "Explanation": "<span id=\"explanation73657\">Function is not declare as virual so it both the time it will call function from base.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output?<br>class d<br>{<br>&nbsp;&nbsp;&nbsp; int day, mon;<br>&nbsp;&nbsp;&nbsp; public:<br>&nbsp;&nbsp;&nbsp; d() {&nbsp; cout &lt;&lt; \u201c const\u201d;&nbsp; }<br>&nbsp; ~d() { cout &lt;&lt; \u201c dest\u201d; }<br>};<br>void main()<br>{<br>&nbsp;&nbsp; d *d1 = new d;<br>&nbsp;&nbsp; cout &lt;&lt; \u201cProcess\u201d;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "const process dest"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "process const dest"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "const process"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 73872,
+      "Explanation": "<span id=\"explanation73872\">my explaination 1</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Not using virtual destructor feature in a C++ object oriented programing can cause",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Memory leak"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An Issue in creating object of the class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An issue in calling base class destructor"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Nothing"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 87448,
+      "Explanation": "Virtual destructor in C++ is mainly responsible for resolving the problem of memory leaks. When we use a virtual destructor inside the base class, it will call the destructor of the child class, ensuring that the child class&apos;s object should be deleted so there might be no memory leakage.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Virtual functions are used to achieve _________<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Overloading<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Overriding<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Runtime Binding<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Static Binding<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 87453,
+      "Explanation": "Virtual Functions are used for runtime binding.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is wrong in the following code?<br>#include&lt;iostream.h&gt;<br>class Base {<br>&nbsp;&nbsp;&nbsp;&nbsp;public :<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Base(){};<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;virtual ~Base(){};<br>};<br>class Derived : protected Base<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;public:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;virtual ~Derived(){};<br>};<br>int main()<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;Base *pb = new Derived();<br>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "There is nothing wrong"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "cannot have a \u2018Base\u2019 pointer to \u2018Derived\u2019 since it is not derived publicly"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "need a derived class pointer to point to a derived class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "required constructor for Derived."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 73748,
+      "Explanation": "<span id=\"explanation73748\">Derive class is inherited as protected. so can not create object of Derive class.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include&lt;iostream&gt;<br>\u200b\u200b\u200b\u200b\u200b\u200b\u200busing namespace std;<br>class Base<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;int static i;<br>public:<br>&nbsp;&nbsp;&nbsp;&nbsp;Base(){}<br>};<br>class Sub1: public virtual Base{};<br>class Sub2: public Base{};<br>class Multi: public Sub1, public Sub2 {};<br>void main()<br>{<br>Multi m;<br>}<br>In the above program, how many times Base\u2019s constructor will be called?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 73756,
+      "Explanation": "<span id=\"explanation73756\">Two times Base class constructor is called . This is Example of Multiple inheritance.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp; We can't place ________&nbsp; followed by the non-default arguments?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "trailing arguments"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "default arguments for all veriables"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "both a &amp; b"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 73768,
+      "Explanation": "<span id=\"explanation73768\">&nbsp;To avoid the ambiguity in arguments.<br>eg. if func(int a=3, int b);<br>so if we call func(5), here will 5 will be value of a or b, because 5 is first parameter so a should be 5 but as only one argument is given b should be 5. So to remove such ambiguity default parameters are kept at the end or rightmost side.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A virtual function that has no definition within the base class is called____________.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "const Fucntion"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "virtual Function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "abstract Function"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none Of Above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 71174,
+      "Explanation": "<span id=\"explanation71174\">virtual fucntion without execute code is known as pure virtual fucntion</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A pure virtual function is a virtual function that",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "has no body"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "returns nothing"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "is used in base class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A and c"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 71175,
+      "Explanation": "<span id=\"explanation71175\">pure virtual fucntion has no body or executable code, It must be implemented by derive classes. pure virtual function can return a value.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;_______________ is a member function that is declared within a base class and redefined by derived class.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "pure virtual function"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Static Fucntion"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "virtual Fucntion"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "const member fucntion"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 71177,
+      "Explanation": "<span id=\"explanation71177\">A virtual function is a member function that you expect to be redefined in derived classes.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Not using virtual destructor feature in a C++ object oriented programing can cause",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An Issue in creating object of the class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Memory leak"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An issue in calling base class destructor"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 71179,
+      "Explanation": "<span id=\"explanation71179\">Virtual destructor is used to maintain the hierarchy of destructor calls for polymorphic classes in inheritance. If we don\u2019t use it then it may cause resource leak or memory leak.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "C++ abstract class can contain",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Atleast one Pure virtual function"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Non-virtual function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only pure virtual function"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both pure virtual and non-virtual function"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 71172,
+      "Explanation": "<span id=\"explanation71172\">If class contains atleast one pure virtual function it is called as abstract class</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How \"late binding\" is implemented in C++",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "using C++ tables"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "using indexedmvirtual tables"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "using polymorphic tables"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "using virtual tables"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 71168,
+      "Explanation": "for every polymorphic class one pointer is added that is vptr(virtual pointer ). and thi vptr pointing to vtable , virtual table which is static data member of class and because of this virtual table late binding works properlly.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "which of the following concepts means waiting until runtime to determine which function to call",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "data hiding"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "dynamic loading"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "dynamic casting"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "dynamic binding<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 71169,
+      "Explanation": "function call binding occurs at static time in CPP . But for some cases which function has to call it should be decided at runtime means waiting until runtime to determine which function to call and this concept call as&nbsp; dynamic binding.<br><br>Dynamic binding, also known as late binding, is a mechanism by which a computer program waits until runtime to bind the name of a method being called to an actual subroutine.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a pure virtual function in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A function with no return type."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A function with both definition and implementation."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A function without a prototype."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A virtual function with no implementation in the base class."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 93895,
+      "Explanation": "A pure virtual function is declared by assigning 0 in its declaration, indicating the derived class must override it.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following syntax correctly declares a pure virtual function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "virtual void functionName() = 0;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "pure virtual void functionName();"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "void functionName() = 0;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "virtual void functionName{};"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 93896,
+      "Explanation": "A pure virtual function is declared by using the virtual keyword and assigning 0 to the function declaration.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "An abstract class in C++ is:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A class that contains only pure virtual functions."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A class that can contain at least one pure virtual function."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A class with no members."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A class that doesn't allow inheritance."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 93897,
+      "Explanation": "An abstract class is one that has at least one pure virtual function.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about pure virtual functions in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They can have an implementation in the base class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They cannot be called from the base class constructor."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They can have default arguments."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They must be non-static."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 93898,
+      "Explanation": "Pure virtual functions can have default arguments, despite having no implementation in the base class.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement about abstract classes is false?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Abstract classes can be instantiated."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Abstract classes can contain implemented methods."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Abstract classes can have constructors."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Abstract classes can act as interfaces."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 93899,
+      "Explanation": "Abstract classes cannot be instantiated directly. They are meant to be inherited by other classes.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why do we use abstract classes in C++ programming?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To create concrete objects."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To restrict inheritance."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To provide a common interface for derived classes."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To define global variables."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 93900,
+      "Explanation": "Abstract classes provide a standard interface for derived classes, ensuring consistency across different implementations.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When does a class become abstract?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When it inherits another class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When it overrides a base method."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When it contains a pure virtual function."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When it is defined inside another class."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 93901,
+      "Explanation": "A class becomes abstract if it includes at least one pure virtual function.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you enforce a class to implement any pure virtual function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By defining the function in the derived class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By inheriting multiple classes."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By making the derived class abstract."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By declaring it as a static method."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 93902,
+      "Explanation": "Pure virtual functions must be defined in any derived class for it to become a concrete class.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about pure virtual functions is correct?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A pure virtual function cannot be called through a reference of an abstract base class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A pure virtual function must not be defined outside the class body."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Pure virtual functions must always be defined within derived classes."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A class with a pure virtual function can still provide a definition for it."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 93903,
+      "Explanation": "A class can provide a definition for a pure virtual function. However, it remains a pure virtual function without a body in the base class definition.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following about abstract classes is true in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Abstract classes can have instances created directly."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Abstract classes must include at least one virtual destructor."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Abstract classes encourage multiple inheritance."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Abstract classes may have member variables and defined member functions."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 93904,
+      "Explanation": "While abstract classes have at least one pure virtual function, they can also contain member variables and defined member functions.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if a class derived from an abstract class does not implement all pure virtual functions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The derived class becomes a concrete class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The derived class itself becomes an abstract class."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The derived class throws a compile-time error."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The program will not link successfully."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 93905,
+      "Explanation": "If a derived class does not implement all pure virtual functions of its base class, it too becomes an abstract class.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can an abstract class have a constructor?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, abstract classes can have constructors."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, they cannot have constructors."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, but only if all pure virtual functions are implemented."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No, constructors are not allowed in abstract classes."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 93906,
+      "Explanation": "Abstract classes in C++ can have constructors, which can be used to initialize data members of the class.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the effect of having a pure virtual destructor in a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The class becomes concrete."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Derived classes can avoid defining the destructor."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The class becomes abstract."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It creates a memory leak."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 93907,
+      "Explanation": "A class with a pure virtual destructor is abstract, as with any pure virtual function.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of a pure virtual function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To prevent a function from being overridden."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To make sure derived classes implement the function."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To provide default behavior for derived classes."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To make the base class a singleton."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 93908,
+      "Explanation": "A pure virtual function requires derived classes to implement the function, enforcing a common interface.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is a correct explanation of an abstract class with a pure virtual function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It cannot contain any data members."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Its functions are only placeholders without any behavior."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It can define other normal functions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It does not participate in inheritance."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 93909,
+      "Explanation": "An abstract class can define regular member functions along with having one or more pure virtual functions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of a V-table in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To store all the member functions of a class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To optimize compilation time"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To store pointers to virtual functions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To manage memory allocation for objects"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 93910,
+      "Explanation": "A V-table, or virtual table, is used to store pointers to the virtual functions of a class. This allows dynamic dispatch of virtual functions during runtime.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about V-pointers is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Every class has a V-pointer, whether it has virtual functions or not."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "V-pointers are used to point to private member variables."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "V-pointers are automatically added by the compiler when a class contains virtual functions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "V-pointers are manually defined by the programmer."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 93911,
+      "Explanation": "V-pointers are automatically added by the compiler to each instance of a class that contains virtual functions. They are used to point to the V-table of the class.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does a V-table support polymorphism in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By allowing static linking of function calls at compile time."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Through overloading functions with different signatures."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By enabling dynamic binding of virtual function calls at runtime."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By encapsulating both data members and member functions."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 93912,
+      "Explanation": "A V-table supports polymorphism by allowing dynamic binding of virtual function calls at runtime. This ensures the correct function implementation is called for a given object, enabling polymorphic behavior.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which scenario is a V-table typically created?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When a class contains only static member functions."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When a class contains at least one virtual function."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When a class is instantiated, regardless of its content."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When a class uses multiple inheritance."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 93913,
+      "Explanation": "A V-table is created when a class contains at least one virtual function. This allows for dynamic dispatch of functions within polymorphic hierarchies.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which class of objects does the V-pointer primarily affect on memory layout?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Classes with no inheritance."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Classes with only static data members."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Classes with virtual functions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Classes with overloaded operators."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 93914,
+      "Explanation": "The V-pointer primarily affects the memory layout of classes with virtual functions, as it needs to store a pointer to the V-table for dynamic dispatch during runtime.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;iostream&gt;<br>#include &lt;string&gt;<br>using namespace std;<br>class Mammal<br>{<br>&nbsp;&nbsp; public:<br>&nbsp;&nbsp; &nbsp;virtual void Define(){<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;cout&lt;&lt;\"I'm a Mammal\\n\";<br>&nbsp;&nbsp; &nbsp;}<br>}; <br>class Human: public Mammal<br>{<br>&nbsp;&nbsp; private:<br>&nbsp;&nbsp; &nbsp;void Define(){<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;cout&lt;&lt;\"I'm a Human\\n\";<br>&nbsp;&nbsp; &nbsp;}<br>}; <br>int main(int argc, char const *argv[])<br>{<br>&nbsp;&nbsp; &nbsp;Mammal *M = new Mammal();<br>&nbsp;&nbsp; &nbsp;Human H;<br>&nbsp;&nbsp; &nbsp;M = &amp;H;<br>&nbsp;&nbsp; &nbsp;M-&gt;Define();<br>&nbsp;&nbsp; &nbsp;return 0;<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Error <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Segmnetation fault <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "I\u2019m a Human <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Garbage Value <br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 87462,
+      "Explanation": "Using base class pointer we can call private functions of derived by using virtual keyword because virtual function asks compiler performs late binding i.e. bind function at run-time and at run-time there is no checking of access specifiers. Hence it can access private members.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;iostream&gt;<br>using namespace std;<br>&nbsp;class A<br>{<br>public:<br>&nbsp;&nbsp;&nbsp; virtual void fun() { cout &lt;&lt; \"A::fun() \"; }<br>};<br>&nbsp; &nbsp;<br>class B: public A<br>{<br>public:<br>&nbsp;&nbsp; void fun() { cout &lt;&lt; \"B::fun() \"; }<br>};<br>&nbsp; &nbsp;<br>class C: public B<br>{<br>public:<br>&nbsp;&nbsp; void fun() { cout &lt;&lt; \"C::fun() \"; }<br>};<br>&nbsp; &nbsp;<br>int main()<br>{<br>&nbsp;&nbsp;&nbsp; B *bp = new C;<br>&nbsp;&nbsp;&nbsp; bp-&gt;fun();<br>&nbsp;&nbsp;&nbsp; return 0;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A::fun()<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "B::fun()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C::fun()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ERROR<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 200,
+      "QuestionTypeId": 0,
+      "QuestionId": 87502,
+      "Explanation": "When a class has a virtual function, functions with same signature in all descendant classes automatically become virtual. We don\u2019t need to use virtual keyword in declaration of fun() in B and C. They are anyways virtual.<br>",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

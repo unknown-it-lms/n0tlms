@@ -1,0 +1,1416 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is a third-party middleware in Express?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A built-in Express function"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A user-defined function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A middleware installed via npm"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A database connector"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 102409,
+      "Explanation": "<span id=\"explanation102409\" style=\"color:blue\">Third-party middleware is an external package installed via npm to extend Express functionality.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you apply multiple third-party middlewares?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Chain them with app.route()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use app.use() multiple times"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use app.listen()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use app.get()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 102410,
+      "Explanation": "<span id=\"explanation102410\" style=\"color:blue\">You can apply multiple middlewares by calling app.use() for each one.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you don\u2019t use a body-parsing middleware?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "req.body will be undefined"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The server crashes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The request is rejected"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The response is automatically sent"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 102411,
+      "Explanation": "<span id=\"explanation102411\" style=\"color:blue\">Without a body parser, req.body remains undefined for POST/PUT requests with payloads.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a key benefit of using third-party middleware in Express?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Reduces server performance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": " Avoids using npm"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Adds reusable functionality"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Requires manual coding for every feature"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 102412,
+      "Explanation": "Third-party middleware provides reusable features like logging, parsing, and security without reinventing the wheel.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To handle JSON data and URL-encoded data in an Express.js application, which middleware setup is preferred?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "app.use(express.json()); app.use(express.raw());"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "app.use(express.urlencoded({ extended: true })); app.use(express.json());"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "app.use(express.raw()); app.use(express.text());"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "app.use(express.decoder()); app.use(express.parser());"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97373,
+      "Explanation": "The combination of &#39;express.urlencoded({ extended: true })&#39; and &#39;express.json()&#39; is the preferred and common setup to handle both URL-encoded and JSON data in modern Express.js applications.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which third-party middleware is commonly used in Express.js for handling cookies?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "express-session"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "cookie-parser"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "body-parser"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "express-json"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97374,
+      "Explanation": "The &#39;cookie-parser&#39; middleware is widely used in Express.js applications for parsing and handling cookies.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of the cookie-parser middleware in Express.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To log HTTP requests and errors"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To handle session data on the server"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To parse the Cookie header and populate req.cookies with an object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To handle JSON payloads in HTTP requests"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97375,
+      "Explanation": "cookie-parser parses the Cookie header from the HTTP request, enabling easy access to cookies via req.cookies.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using cookie-parser, how are signed cookies accessed in an Express.js application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using req.signedCookies"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using req.secureCookies"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using res.cookies"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using process.env.cookies"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97376,
+      "Explanation": "The cookie-parser middleware provides a req.signedCookies object, which contains signed cookies sent by the client.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method from the cookie-parser middleware is used to configure a secret for signing cookies?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "cookieParser.config()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "cookieParser.setup()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "cookieParser.secure()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "cookieParser(secret)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97377,
+      "Explanation": "To configure a secret for signing cookies with cookie-parser, you simply pass the secret string to the middleware setup as cookieParser(secret).",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which scenario is the usage of the cookie-parser middleware most appropriate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To handle file uploads in a multi-part form"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To parse JSON request bodies for REST APIs"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To store session data on the client-side using cookies"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To analyze URL query strings in Express.js routes"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97378,
+      "Explanation": "The cookie-parser middleware is best used for parsing cookies, which can include handling client-side storage of session data if necessary.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which third-party middleware is commonly used for session management in Express.js applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "express-session"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "cookie-parser"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "body-parser"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "express-validator"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97379,
+      "Explanation": "The &#39;express-session&#39; middleware is widely used for session management in Express.js applications because it provides a simple way to create and manage sessions, allowing you to store data across requests.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In an Express.js application, which option in &#39;express-session&#39; middleware specifies how long a session should be valid?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "store"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "secret"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "cookie"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "resave"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97380,
+      "Explanation": "In &#39;express-session&#39;, the &#39;cookie&#39; option is used to specify cookie settings, including the &#39;maxAge&#39; property which determines how long a session should be valid.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which configuration option in &#39;express-session&#39; middleware is essential for signing the session ID cookie?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "cookie"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "secret"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "rolling"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "unset"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97381,
+      "Explanation": "The &#39;secret&#39; option is required in &#39;express-session&#39; middleware to sign the session ID cookie, providing added security by preventing tampering of session IDs.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using &#39;express-session&#39;, which option should be set to save uninitialized sessions to the store?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "resave"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "saveUninitialized"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "proxy"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97382,
+      "Explanation": "The &#39;saveUninitialized&#39; option indicates whether the session should be saved to the store even when it is new and not modified, which might be useful for implementing login sessions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a common use case for &#39;express-session&#39; middleware in an Express.js application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Routing static files"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Data validation in forms"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Authentication to persist user login state"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Handling JSON requests"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97383,
+      "Explanation": "&#39;express-session&#39; is commonly used for maintaining stateful sessions in an Express.js application, making it ideal for implementing authentication systems where users need to remain logged in across requests.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which third-party middleware is commonly used in Express.js for handling authentication processes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Helmet"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Passport"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CORS"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Multer"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97384,
+      "Explanation": "Passport is a popular middleware in Express.js that provides a simple, unobtrusive authentication technique. It supports a variety of strategies for authentication, including local authentication and OAuth.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the &#39;passport.initialize()&#39; middleware in an Express.js application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To define routes for authentication"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To serialize user data"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To initialize Passport for use"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To load environment variables"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97385,
+      "Explanation": "&#39;passport.initialize()&#39; is used to initialize Passport in an Express.js application so that Passport can be ready to handle incoming requests for authentication.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which middleware is used in conjunction with Passport to manage sessions in Express.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "express-session"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "csurf"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "body-parser"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "morgan"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97386,
+      "Explanation": "The &#39;express-session&#39; middleware is used to handle session management in an Express.js application, often in conjunction with Passport for storing user credentials and managing login sessions.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a feature provided by Passport in Express.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Authentication using various strategies"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Persistent login sessions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Data encryption"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Single sign-on"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97387,
+      "Explanation": "While Passport provides functionality for authentication and managing login sessions through various strategies, it does not inherently provide data encryption; encryption must be handled through other methods or libraries.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which third-party middleware can be used with Passport.js to support JWT-based authentication in Express.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "passport-local"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "passport-jwt"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "passport-google-oauth"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "cookie-parser"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97388,
+      "Explanation": "&#39;passport-jwt&#39; is used with Passport.js to support JSON Web Token (JWT) based authentication, allowing for token-based authentication in Express.js applications.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following third-party middleware can be used for logging HTTP requests in Express.js applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Mongoose"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Morgan"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Helmet"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Axios"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97389,
+      "Explanation": "Morgan is a popular third-party middleware in Express.js used for logging HTTP requests. It provides several pre-defined logging formats and is easily configurable.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of using third-party middleware like Morgan in an Express.js application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To enhance database interactions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To secure HTTP headers"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To log HTTP request details"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To manage cookies"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97390,
+      "Explanation": "Morgan is used in Express.js to log details of HTTP requests and responses, which is useful for debugging and analyzing application traffic.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following commands correctly adds Morgan as a dependency in an Express.js project?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "npm install mongoose"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "npm install morgan"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "npm install express"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "npm install helmet"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97391,
+      "Explanation": "The command &#39;npm install morgan&#39; is used to add the Morgan middleware as a dependency for logging HTTP requests in an Express.js application.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you integrate Morgan middleware into an Express.js app to log requests using the &#39;combined&#39; predefined format?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "app.use(morgan(&#39;compact&#39;))"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "app.use(morgan(&#39;minimal&#39;))"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "app.use(morgan(&#39;common&#39;))"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "app.use(morgan(&#39;combined&#39;))"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97392,
+      "Explanation": "To integrate Morgan middleware in an Express app using the &#39;combined&#39; predefined format, you use the command &#39;app.use(morgan(&#39;combined&#39;))&#39;. This format provides comprehensive logging of requests.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which package manager is typically used to install third-party middleware like Morgan in a Node.js project?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Pip"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yarn"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "npm"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "RubyGems"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97393,
+      "Explanation": "npm (Node Package Manager) is the default package manager for Node.js, used to install third-party middleware like Morgan in a Node.js project.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which third-party middleware is commonly used in Express.js to handle authentication through cookies?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "express-validator"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "cookie-parser"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "express-session"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "passport"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97394,
+      "Explanation": "Passport is a popular Express.js middleware used for authentication, supporting various strategies like cookies, OAuth, etc.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which middleware would you choose to sanitize user input to prevent XSS attacks in an Express.js application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "express-rate-limit"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "helmet"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "xss-clean"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "compression"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97395,
+      "Explanation": "xss-clean is a middleware specifically designed to sanitize user input and protect against XSS (Cross-site Scripting) attacks.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To protect an Express.js application from common web vulnerabilities, which middleware is frequently implemented?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "cors"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "csurf"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "helmet"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "morgan"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97396,
+      "Explanation": "Helmet helps secure Express.js apps by setting various HTTP headers to protect against well-known web vulnerabilities.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of &#39;express-rate-limit&#39; middleware in an Express.js application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To handle CORS"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To prevent denial-of-service attacks"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To log HTTP requests"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To compress response bodies"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97397,
+      "Explanation": "express-rate-limit is used to limit repeated requests to public APIs and/or endpoints to protect the application from denial-of-service (DoS) attacks.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which middleware is used to ensure that an Express.js application does not expose sensitive error details to users?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "express-debug"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "errorhandler"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "express-async-errors"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "express-status-monitor"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97398,
+      "Explanation": "errorhandler is a middleware that provides error handling options in Express.js, preventing sensitive error details from being exposed to the user in production environments.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of using third-party middleware such as &#39;cors&#39; in an Express.js application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To handle cookie sessions securely"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To enable CORS and manage cross-origin requests"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To manage static files in the Express.js server"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To provide a template engine for rendering HTML files"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97399,
+      "Explanation": "The &#39;cors&#39; middleware in Express.js is specifically designed to handle Cross-Origin Resource Sharing (CORS), allowing your application to specify which domains are permitted to make requests.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following npm packages is commonly used as middleware for CORS handling in Express?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "express-session"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "mongoose"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "body-parser"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "cors"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97400,
+      "Explanation": "The &#39;cors&#39; package is a popular npm package used as middleware in Express to enable and configure CORS, allowing you to manage cross-origin resource sharing effectively.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using the &#39;cors&#39; middleware in an Express.js application, which default setting is used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Origins are allowed from &#39;localhost&#39; only"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "All domains are allowed access by default"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Pre-flight requests are disabled"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Headers are restricted to &#39;Content-Type&#39; only"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97401,
+      "Explanation": "By default, the &#39;cors&#39; middleware in Express allows all domains to access resources, unless specifically configured otherwise.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you restrict access to specific domains using the &#39;cors&#39; package in an Express application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By setting the &#39;credentials&#39; option to &#39;false&#39;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By specifying allowed domains in the &#39;origin&#39; option"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using the &#39;helmet&#39; package"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By setting CORS headers manually in every route"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97402,
+      "Explanation": "The &#39;origin&#39; option in the &#39;cors&#39; middleware allows you to specify which domains are permitted to access resources in your application, thereby restricting access to specified origins.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to include the &#39;cors&#39; middleware in an Express.js application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "app.get()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "app.use()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "app.listen()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "app.start()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97403,
+      "Explanation": "The &#39;app.use()&#39; method is used to integrate middleware, such as &#39;cors&#39;, into an Express.js application, ensuring it processes incoming requests appropriately.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following third-party middleware is commonly used in Express.js to parse form data?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "express-payload"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "body-parser"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "express-decoder"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "form-reader"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97369,
+      "Explanation": "body-parser is a popular third-party middleware used in Express.js to parse incoming request bodies, including form data.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of data can &#39;body-parser.urlencoded()&#39; function parse in an Express.js application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "JSON data"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Raw binary data"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "URL-encoded data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Multipart form data"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97370,
+      "Explanation": "&#39;body-parser.urlencoded()&#39; is used to parse incoming requests with URL-encoded payloads, typically from HTML form submissions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which configuration option is used with &#39;body-parser.json()&#39; to limit the size of the request body in Express.js?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "limit"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "maxSize"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "payloadSize"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "bodyLimit"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97371,
+      "Explanation": "The &#39;limit&#39; option in &#39;body-parser.json()&#39; can be used to specify the maximum size of the request body that the middleware will accept.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which object in Express.js contains the data sent in the request&#39;s body when using the .post() method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "req.params"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "req.query"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "req.body"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "req.headers"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 97367,
+      "Explanation": "The req.body object contains data that is sent in the body of a request. In Express.js, the body-parser middleware is used to parse this data so it can be accessed as req.body.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "MongoDB stores data in a document-oriented format,________________.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SQL<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "XML"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Binary JSON (BSON)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 77651,
+      "Explanation": "Internally, MongoDB uses BSON to represent these documents. BSON is a binary extension of JSON that allows for a wider range of data types compared to JSON, including dates, binary data, and more complex data structures. <br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "MongoDB is a _________ database that provides high performance, high availability, and easy scalability.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "graph<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "key value"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "document<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 77652,
+      "Explanation": "Documents (objects) map nicely to programming language data types.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Dynamic schema in MongoDB makes ____________ easier for applications.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "inheritance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "polymorphism"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "encapsulation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 77653,
+      "Explanation": "<span id=\"explanation77653\">Relational databases require that schemas be defined before you can add data.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The MongoDB process listens on port _________ by default",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "27017"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "27170"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "27107"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "26017"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 77654,
+      "Explanation": "<span id=\"explanation77654\">Clients connect to the MongoDB process, optionally authenticate themselves if security is turned on, and perform a sequence of actions, such as inserts, queries and updates.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "what is MongoDB?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "column oriented database<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "document database"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "vector database<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "structured database<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 82706,
+      "Explanation": "<span id=\"explanation82706\">MongoDB is a document oriented databse.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a common third-party middleware used in Express.js?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Body-parser"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Express-session"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Express.Router"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Helmet"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 88807,
+      "Explanation": "Express.Router is a built-in feature of Express.js used for modular routing.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of the Body-parser middleware?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Enable user authentication"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Parse incoming request body data (like form data or JSON)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Secure communication channels"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Implement rate limiting for API requests"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 88808,
+      "Explanation": "Body-parser parses the request body and makes the parsed data accessible on the req.body object in your routes.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Cors (Cross-Origin Resource Sharing) is a middleware that is typically used for:<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Enforcing access control restrictions within the same domain"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Enabling communication between web pages from different origins (domains, ports, protocols)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Parsing data sent in the request URL"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Logging HTTP requests and responses"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 729,
+      "QuestionTypeId": 0,
+      "QuestionId": 88809,
+      "Explanation": "Cors allows controlled access to your API from web pages on different domains by configuring appropriate headers.",
+      "Answer": "B",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

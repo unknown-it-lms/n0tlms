@@ -1,0 +1,636 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "The keyword used to transfer control from a function back to the calling function is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Switch"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Goto"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Go Back"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Return"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6545,
+      "QuestionTypeId": 0,
+      "QuestionId": 65295,
+      "Explanation": "Function should return a value.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a stored function in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A precompiled SQL statement to improve performance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A function that returns multiple values"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A stored set of SQL statements that returns a single value"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A type of view that performs calculations"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6545,
+      "QuestionTypeId": 0,
+      "QuestionId": 92512,
+      "Explanation": "A stored function is a set of SQL statements stored on the server that performs calculations and returns a single value.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to indicate the start of a stored function definition?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "START"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DEFINE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "BEGIN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CREATE FUNCTION"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6545,
+      "QuestionTypeId": 0,
+      "QuestionId": 92513,
+      "Explanation": "In MySQL, a stored function definition starts with the &apos;CREATE FUNCTION&apos; statement.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What character is used to delimit blocks of code within a stored function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": ";"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "//"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "#"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "$$"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6545,
+      "QuestionTypeId": 0,
+      "QuestionId": 92514,
+      "Explanation": "The semicolon &apos;;&apos; is used as the default delimiter to separate individual statements in MySQL stored functions.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you specify the return type for a MySQL stored function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RETURN TYPE <data_type>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "RETURNS <data_type>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "OUTPUT <data_type>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "RETURN <data_type>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6545,
+      "QuestionTypeId": 0,
+      "QuestionId": 92515,
+      "Explanation": "The &apos;RETURNS&apos; keyword is followed by the data type of the value the function will return.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can a stored function modify data in the database in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, always"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, never"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, if the INOUT parameter is used"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only under specific conditions"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6545,
+      "QuestionTypeId": 0,
+      "QuestionId": 92516,
+      "Explanation": "Stored functions can modify data, but they are generally used for computation and must follow certain restrictions.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In MySQL, what does the 'DETERMINISTIC' keyword imply about a stored function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will return different outputs given the same inputs"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It guarantees the function will be compiled in advance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It always produces the same result given the same input"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It can run with elevated privileges"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6545,
+      "QuestionTypeId": 0,
+      "QuestionId": 92517,
+      "Explanation": "&apos;DETERMINISTIC&apos; indicates that the function will always return the same result anytime it is called with a specific set of input parameters.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which privilege is needed to create a stored function in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CREATE ROUTINE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "EXECUTE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CREATE FUNCTION"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "FUNCTION"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6545,
+      "QuestionTypeId": 0,
+      "QuestionId": 92518,
+      "Explanation": "The &apos;CREATE ROUTINE&apos; privilege allows a user to create both stored procedures and stored functions.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which MySQL keyword is used to change the current delimiter?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DELIMITER"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SEPARATOR"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CHANGE DELIMITER"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ALTER DELIMITER"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6545,
+      "QuestionTypeId": 0,
+      "QuestionId": 92519,
+      "Explanation": "The &apos;DELIMITER&apos; keyword is used to change the statement separator from the default semicolon.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default behavior of a stored function with respect to repeatable reads in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "REPEATABLE READ"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "READ COMMITTED"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SERIALIZABLE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "READ UNCOMMITTED"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6545,
+      "QuestionTypeId": 0,
+      "QuestionId": 92520,
+      "Explanation": "The default transaction isolation level in MySQL is &apos;REPEATABLE READ&apos;, which affects how stored functions access data.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a stored function is defined with the 'NO SQL' attribute, what does it imply?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It does not execute SQL statements that read data"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It does not contain any SQL statements"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It can execute SQL statements for writing data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It can only execute SELECT SQL statements"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6545,
+      "QuestionTypeId": 0,
+      "QuestionId": 92521,
+      "Explanation": "The &apos;NO SQL&apos; attribute indicates that the function does not contain SQL statements that read or modify data.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the consequence of not specifying 'DETERMINISTIC' or 'NOT DETERMINISTIC' when creating a stored function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It defaults to 'NOT DETERMINISTIC'"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The function cannot be created"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It defaults to 'DETERMINISTIC'"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It generates a warning but continues to create the function"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6545,
+      "QuestionTypeId": 0,
+      "QuestionId": 92522,
+      "Explanation": "If neither &apos;DETERMINISTIC&apos; nor &apos;NOT DETERMINISTIC&apos; is specified, MySQL assumes &apos;NOT DETERMINISTIC&apos;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which clause allows you to specify what happens if a unique constraint violation occurs in a stored function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IGNORE CONSTRAINT"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ON CONSTRAINT VIOLATION"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ERROR ANOMALY"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "On Duplicate Key Update"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6545,
+      "QuestionTypeId": 0,
+      "QuestionId": 92523,
+      "Explanation": "&apos;ON DUPLICATE KEY UPDATE&apos; is used in SQL to specify alternate actions when a unique constraint violation occurs.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is TRUE for a stored function that is defined with the 'READS SQL DATA' characteristic?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It cannot read nor modify data"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It can only read but not modify data"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It can read and modify data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It cannot read but can modify data"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6545,
+      "QuestionTypeId": 0,
+      "QuestionId": 92524,
+      "Explanation": "&apos;READS SQL DATA&apos; indicates that the stored function can read data but cannot modify it.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What MySQL construct would you use to directly terminate a stored function's execution?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "EXIT"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "END"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "RETURN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "HALT"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6545,
+      "QuestionTypeId": 0,
+      "QuestionId": 92525,
+      "Explanation": "The &apos;RETURN&apos; statement is used to terminate a stored function&apos;s execution and return a value.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why is it important to reset the delimiter when creating a stored function in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To prevent SQL commands from executing immediately"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To enable nested stored functions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To allow the usage of special characters"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To switch back to the default delimiter"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6545,
+      "QuestionTypeId": 0,
+      "QuestionId": 92526,
+      "Explanation": "Changing the delimiter helps to ensure that the function body is interpreted as a block and not executed immediately at the semicolon.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which option CANNOT be specified directly in a function creation statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "COMMENT"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LANGUAGE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SQL SECURITY"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DETERMINISTIC/NOT DETERMINISTIC"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6545,
+      "QuestionTypeId": 0,
+      "QuestionId": 92527,
+      "Explanation": "MySQL functions use SQL, so there is no LANGUAGE clause for specifying scripting languages.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a valid return data type for a MySQL stored function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ENUM"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ARRAY"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "JSON"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "BLOB"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6545,
+      "QuestionTypeId": 0,
+      "QuestionId": 92528,
+      "Explanation": "In MySQL, valid return types for functions include those like BLOB, VARCHAR, INT, etc.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would make a stored function in MySQL return a NULL result?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A syntax error in SQL query"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Returning a variable that has been set to NULL"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Absence of a RETURN statement"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using a deprecated feature"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6545,
+      "QuestionTypeId": 0,
+      "QuestionId": 92529,
+      "Explanation": "If the function returns a variable that has NULL value, the function result will be NULL.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which option provides information on the stored function's creation time?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SHOW FUNCTIONS"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SHOW CREATE FUNCTION"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "INFORMATION_SCHEMA ROUTINES"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SHOW FUNCTION STATUS"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6545,
+      "QuestionTypeId": 0,
+      "QuestionId": 92530,
+      "Explanation": "&apos;SHOW FUNCTION STATUS&apos; provides details including the creation time of the stored function.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you execute a stored function from a SQL statement in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CALL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "EXEC"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "PERFORM"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6545,
+      "QuestionTypeId": 0,
+      "QuestionId": 92531,
+      "Explanation": "To execute a stored function in a SQL statement, use &apos;SELECT function_name(arguments)&apos;.",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

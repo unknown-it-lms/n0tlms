@@ -1,0 +1,546 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Which is true about the usage of ORDER BY with PARTITION BY?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ORDER BY is mandatory for PARTITION BY to function."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ORDER BY defines the sequence of rows over which functions operate within each partition."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ORDER BY combines all partitions into one."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ORDER BY has no effect on partitioned data."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6537,
+      "QuestionTypeId": 0,
+      "QuestionId": 92324,
+      "Explanation": "ORDER BY determines the ordering of rows within each partition before functions like ROW_NUMBER() and RANK() are applied.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true about PARTITION BY in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It combines all rows into a single group."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It is only used with aggregate functions."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It can be used with window functions to provide calculations across sets of rows."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It duplicates data across several partitions."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6537,
+      "QuestionTypeId": 0,
+      "QuestionId": 92316,
+      "Explanation": "PARTITION BY is used with window functions in MySQL to compute calculations over sets of rows related to the current row.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which MySQL version was the PARTITION BY functionality introduced?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "MySQL 5.0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "MySQL 5.5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "MySQL 8.0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MySQL 6.0"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6537,
+      "QuestionTypeId": 0,
+      "QuestionId": 92317,
+      "Explanation": "The PARTITION BY clause for window functions was introduced in MySQL 8.0, allowing users to perform analytical calculations.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does PARTITION BY affect the computation of the SUM() function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It sums all rows in the table regardless of partition."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It computes the sum over each defined partition separately."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It only considers even rows in a partition."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It filters out null values before computing the sum."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6537,
+      "QuestionTypeId": 0,
+      "QuestionId": 92319,
+      "Explanation": "When using PARTITION BY with SUM(), MySQL will compute the sum for each partition separately.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "PARTITION BY in MySQL is most similar to which of the following SQL concepts?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "GROUP BY for aggregate functions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "WHERE for filtering"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ORDER BY for sorting"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "JOIN for combining tables"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6537,
+      "QuestionTypeId": 0,
+      "QuestionId": 92320,
+      "Explanation": "PARTITION BY is similar to GROUP BY but it is used with window functions to operate on partitions rather than aggregating results.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which scenario fully leverages the PARTITION BY clause in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Calculating the average salary for all employees."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Finding the maximum age of employees in a department."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Calculating the running total of sales in each department."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Listing all departments alphabetically."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6537,
+      "QuestionTypeId": 0,
+      "QuestionId": 92321,
+      "Explanation": "Calculating the running total of sales in each department uses PARTITION BY to partition the data by department before computing a cumulative total.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why would you use PARTITION BY when calculating the average value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To ensure that every partition is averaged separately."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To average all rows in the database."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "PARTITION BY is irrelevant when calculating averages."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To exclude outliers from the calculation."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6537,
+      "QuestionTypeId": 0,
+      "QuestionId": 92326,
+      "Explanation": "Using PARTITION BY calculates averages separately for each partition, allowing for isolated computations across designated row groups.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of the PARTITION BY clause in MySQL window functions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To aggregate rows into a summary table."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To divide results into logical groups for calculations."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To filter data prior to aggregation."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To display only distinct values."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6537,
+      "QuestionTypeId": 0,
+      "QuestionId": 92327,
+      "Explanation": "PARTITION BY is intended to divide query results into groups, enabling window functions to perform calculations on each group independently.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which situation is PARTITION BY most beneficial?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When creating indexes for query optimization."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When generating monthly reports grouped by employees."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When deleting duplicate records."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When filtering records based on a date range."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6537,
+      "QuestionTypeId": 0,
+      "QuestionId": 92328,
+      "Explanation": "PARTITION BY is beneficial here to calculate metrics or perform calculations per employee in reporting, effectively organizing data by logical groups.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword would you pair with PARTITION BY for cumulative total calculation per category?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "LEAD()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "OVER()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "RANK()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "FOLLOW()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6537,
+      "QuestionTypeId": 0,
+      "QuestionId": 92329,
+      "Explanation": "The OVER() keyword is part of the syntax for using window functions with PARTITION BY to calculate cumulative totals for particular categories.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What kind of output does PARTITION BY generate when used properly?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Divides data into multiple tables."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Generates a unique output for each database entry."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Understanding of grouped data without aggregating results to a single row per group."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Does not affect the output."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6537,
+      "QuestionTypeId": 0,
+      "QuestionId": 92330,
+      "Explanation": "PARTITION BY divides the data into result-set partitions to maintain grouped data logic without collating them to a single entry.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Using PARTITION BY 'year', which conclusion can be drawn from the data?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Each partition will contain all data from the same year."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Partitions will exclude leap years."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Data will be divided across alternate years."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It exclusively filters out oldest years of data."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6537,
+      "QuestionTypeId": 0,
+      "QuestionId": 92331,
+      "Explanation": "PARTITION BY &apos;year&apos; means data is divided into partitions where each partition holds data entries from individual years.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about the PARTITION BY clause in MySQL is false?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It organizes data into logical partitions for processing."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It can be combined with ORDER BY for more detailed data analysis."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It summarizes data into a single value per partition."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It functions without modifying the base dataset."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6537,
+      "QuestionTypeId": 0,
+      "QuestionId": 92332,
+      "Explanation": "PARTITION BY does not summarize data into a single value per partition; instead, it maintains the data rows for functions to operate over them.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a key advantage of using PARTITION BY in MySQL queries?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Improved memory allocation for large datasets."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Efficient batch processing of grouped data."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Enhanced readability for complex joins."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Simplified error handling in queries."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6537,
+      "QuestionTypeId": 0,
+      "QuestionId": 92333,
+      "Explanation": "PARTITION BY allows for efficient handling and processing of data by grouping into partitions for targeted analytical functions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In MySQL, which of the following is a valid use case for using the PARTITION BY clause?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To distribute data across different tables."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To organize query results into categories."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To perform row-wise calculations."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To create virtual columns."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6537,
+      "QuestionTypeId": 0,
+      "QuestionId": 92311,
+      "Explanation": "The PARTITION BY clause is used in analytical functions to divide the result set into partitions over which an aggregate function is applied independently.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which MySQL function is commonly used with PARTITION BY to perform cumulative calculations?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SUM()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "AVG()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ROW_NUMBER()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "RANK()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6537,
+      "QuestionTypeId": 0,
+      "QuestionId": 92312,
+      "Explanation": "The SUM() function can be used in conjunction with PARTITION BY to calculate cumulative sums within each partition of data.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following best describes the behavior of the PARTITION BY clause?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "PARTITION BY divides the data into columns."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "PARTITION BY aggregates data into a single value."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "PARTITION BY groups rows and allows functions to compute results across these groups."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "PARTITION BY filters rows based on a condition."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6537,
+      "QuestionTypeId": 0,
+      "QuestionId": 92313,
+      "Explanation": "PARTITION BY divides results into groups of rows and allows analytical functions to compute results within those groups.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if you use PARTITION BY without an ORDER BY clause?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The database will produce an error."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The results will be unpredictable."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The analytical function will apply over the entire partition without specific order."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "PARTITION BY will be ignored."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6537,
+      "QuestionTypeId": 0,
+      "QuestionId": 92314,
+      "Explanation": "PARTITION BY divides data into partitions. If no ORDER BY clause is specified, the analytical function applies over the partition without a specific order.",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

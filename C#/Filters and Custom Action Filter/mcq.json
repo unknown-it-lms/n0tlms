@@ -1,0 +1,1206 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Which filter will be execute at last using ASP.Net MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Action filters"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Authorization filters"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Response filters"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Exception filters"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 81692,
+      "Explanation": "In ASP.NET MVC, filters are executed in the following order:<br>Authorization filters<br>Action filters<br>Response filters<br>Exception filters<br>Among these filters, exception filters are executed last. Exception filters are used to handle exceptions that are thrown during the execution of an action or a controller. They are implemented using the IExceptionFilter interface and are executed when an exception is thrown and not caught within the action or the controller.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is FilterConfig.cs in ASP.Net MVC ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "FilterConfig.cs is used to register global MVC filters, HandleErrorAttribute is registered by default filter.<br>We can also register other filters."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FilterConfig.cs is used to register global MVC bundles."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "None"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 81673,
+      "Explanation": "<p>FilterConfig.cs is used to register global MVC filters, such as HandleErrorAttribute and other filters.</p><p>Explanation:</p><ul><li><p>FilterConfig.cs: In ASP.NET MVC, FilterConfig.cs is a class file typically found in the App_Start folder of an MVC project. Its primary purpose is to register global filters for the MVC application. Global filters are applied to all controllers and actions unless overridden at the controller or action level.</p></li></ul>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is action filters?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Action filter executes before and after action method executes.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Action filter executes before action method executes."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Action filter executes after action method executes."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Action filter executes parallel to action method."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 81619,
+      "Explanation": "Action filter executes before and after action method executes. <br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What are the various types of filters in an ASP.NET MVC Core application?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Authorization filters"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Action filters"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Result filters"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of these"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 77773,
+      "Explanation": "The ASP.NET MVC Core framework supports four different types of filters:<ol><li>Authorization filters are run first and are used to determine whether the current user is authorized for the current request. They can short-circuit the pipeline if a request is unauthorized.<br></li><li>Resource filters come right after the authorization. We can use it to implement caching or short-circuit the filter pipeline for performance reasons.</li><li>Action filters can run code immediately before and after an individual action method is called. We can use it to manipulate the arguments passed into action and the result returned from the action. Razor Pages do not support Action filters.</li><li>Exception filters are used to globally handle all unhandled exceptions that occur in the application.</li><li>Result filters can run code immediately before and after the execution of individual action results. They run only when the action method has executed successfully. </li></ol>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "FilterConfig.cs file is under in which App folder?<br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "App_Data"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "App_Start"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Content"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Filters"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 77768,
+      "Explanation": "The App_Start folder of MVC application is used to contain the class files which are needed to be executed at the time the application starts. The classes like BundleConfig, FilterConfig, IdentityConfig, RouteConfig, and Startup. Auth etc. are stored within this folder.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which filter in ASP.NET MVC Core is used to run code before and after each action method in a controller?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Authentication Filter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Action Filter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Result Filter"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Exception Filter"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96109,
+      "Explanation": "Action Filters in ASP.NET MVC Core allow you to run logic before and after an action method executes, making them suitable for tasks such as logging or error handling.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following filters is NOT part of the built-in filter types in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Result Filter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Service Filter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Model Validation Filter"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Resource Filter"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96110,
+      "Explanation": "ASP.NET MVC Core includes filters like Authentication, Authorization, Action, Result, and Exception filters. Model Validation Filter is not a built-in filter type.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which filter type would you use in ASP.NET MVC Core to implement caching for an action method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Authorization Filter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Resource Filter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Result Filter"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Exception Filter"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96111,
+      "Explanation": "Resource filters are ideal for implementing caching or other resource manipulation before and after an entire action execution.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main purpose of the Exception Filter in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To handle exceptions thrown during the execution of an action method or its result execution."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To validate the model data before it reaches an action method."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To perform operations like authorization checks before an action method runs."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To manipulate the HTTP response after an action method has executed."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96112,
+      "Explanation": "Exception Filters in ASP.NET MVC Core are designed to catch exceptions that occur during the execution of controller action methods or during the processing of action results.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which order do filters run in ASP.NET MVC Core's filter pipeline?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Authentication -&gt; Authorization -&gt; Action -&gt; Exception -&gt; Result -&gt; Resource"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Resource -&gt; Authorization -&gt; Authentication -&gt; Action -&gt; Result -&gt; Exception"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Resource -&gt; Authorization -&gt; Action -&gt; Exception -&gt; Result"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Authorization -&gt; Resource -&gt; Action -&gt; Exception -&gt; Result"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96113,
+      "Explanation": "<span id=\"explanation96113\" style=\"color:blue\"><span id=\"explanation96113\" style=\"color:blue\">ASP.NET MVC Core follows a specific filter pipeline order: </span><span style=\"color:blue\">According to Microsoft docs, in ASP.NET Core MVC the order is Authorization \u2192 Resource \u2192 Action \u2192 Exception \u2192 Result&nbsp;</span></span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following attributes would you apply to an action method to restrict access to only authenticated users?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[ActionFilter]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[Authorize]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[ExceptionFilter]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "[ResourceFilter]"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96114,
+      "Explanation": "The [Authorize] attribute in ASP.NET MVC Core restricts access to controllers and action methods to authenticated users only.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which filter would be most appropriate for logging the execution time of an action method in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Resource Filter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Action Filter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Result Filter"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Exception Filter"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96115,
+      "Explanation": "Action filters can be used to execute custom action logic before and after action methods, making them suitable for logging execution times.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the key difference between Action Filters and Result Filters in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Action filters are applied after the action result is executed, while result filters are applied before."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Action filters can be used for exception handling; result filters cannot."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Action filters are executed before the action method runs; result filters run after the action method completes."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "There is no difference; both are interchangeable in use."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96116,
+      "Explanation": "Action filters are executed before and after the action method, whereas result filters execute code just before and just after the result of an action method is processed.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which filter in ASP.NET MVC Core allows you to run custom code before any other filter in the pipeline?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Action Filter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Result Filter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Resource Filter"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Authorization Filter"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96117,
+      "Explanation": "<span style=\"color:#0000ff;\">Authorization </span><span style=\"color:blue\">filters run early in the request pipeline, making them ideal for running code before any other filter types.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you create a custom attribute in ASP.NET MVC Core to implement a custom action filter?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By inheriting from ExceptionFilterAttribute"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By inheriting from ActionFilterAttribute"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By implementing the IFilterMetadata interface"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By inheriting from ResultFilterAttribute"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96118,
+      "Explanation": "To create a custom action filter in ASP.NET MVC Core, you can inherit from the ActionFilterAttribute class and override its methods.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a custom action filter in ASP.NET MVC Core used for?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To create custom HTML elements"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To manipulate HTTP responses"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To execute reusable code before or after controller actions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To manage session state explicitly"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96119,
+      "Explanation": "Custom action filters in ASP.NET MVC Core allow you to run specific code before or after controller actions, providing a way to handle cross-cutting concerns independently of action logic.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which interface should a class implement to create a synchronous custom action filter in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IActionFilter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "IAsyncActionFilter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "IResultFilter"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "IAuthorizationFilter"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96120,
+      "Explanation": "To create a synchronous custom action filter, the class should implement the IActionFilter interface, which provides methods for executing code before and after a controller action is executed.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in the IActionFilter interface is executed after the action method has been invoked?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "OnActionExecuting"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "OnResultExecuted"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "OnActionExecuted"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "OnAuthorization"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96121,
+      "Explanation": "The OnActionExecuted method of the IActionFilter interface is invoked after the action method execution, allowing inspection or modification of the action result or execution flow.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the first step to apply a custom action filter globally in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Add the filter attribute to every controller"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Register the filter in the ConfigureServices method of Startup.cs"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Add the filter to the controller action"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Implement the filter in a custom middleware"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96122,
+      "Explanation": "To apply a custom action filter globally, you need to register the filter within the ConfigureServices method in Startup.cs file using the AddMvc method to configure MVC services.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you access the HTTP context inside an action filter in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using the Accessor property"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Via the Web.HttpContext object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Through the context parameter in the filter method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using Dependency Injection"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96123,
+      "Explanation": "Inside an action filter, the HTTP context can be accessed via the context parameter provided in the filter methods like OnActionExecuting or OnActionExecuted.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of an authorization filter in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To handle exceptions thrown by the application"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To perform caching for response data"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To determine whether a user is authorized to access a specific resource"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To log every HTTP request and response"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96124,
+      "Explanation": "Authorization filters in ASP.NET MVC Core are used to determine whether a user is authorized to access a given resource, ensuring that only permitted users can access certain areas of an application.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a built-in authorization filter in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ExceptionFilter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "AuthorizeAttribute"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ResponseCacheFilter"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ValidateAntiForgeryTokenAttribute"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96125,
+      "Explanation": "The &apos;AuthorizeAttribute&apos; is a built-in authorization filter in ASP.NET MVC Core that helps to restrict access to controllers or actions to only those users who meet certain criteria.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does ASP.NET MVC Core determine the execution order of multiple authorization filters?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Alphabetically by filter name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By the order in which they are added to the action"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By the 'Order' property set on the filter"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Randomly at runtime"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96126,
+      "Explanation": "ASP.NET MVC Core uses the &apos;Order&apos; property on filters to determine their execution sequence. Lower order values result in earlier execution.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is true about how ASP.NET MVC Core processes authorization filters and allows anonymous access?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "AuthorizeAttribute always takes precedence over AllowAnonymous attribute"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "AllowAnonymous can override AuthorizeAttribute, allowing anonymous access to specific actions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Anonymous access is allowed by default and cannot be altered"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "You must declare both AuthorizeAttribute and AllowAnonymous for anonymous access"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96127,
+      "Explanation": "The AllowAnonymous attribute can be applied to an action to override the AuthorizeAttribute, thus allowing anonymous access to specific actions or controllers when needed.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a common use case for a custom authorization filter in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To optimize database queries"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To apply global exception handling"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To implement custom logic for access control based on business rules"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To validate user input in forms"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96128,
+      "Explanation": "Custom authorization filters are often used in ASP.NET MVC Core to create access control mechanisms that rely on custom business logic, beyond what is provided by default filters like AuthorizeAttribute.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of action filters in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To handle exceptions that occur during the execution of an action."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To modify the result of the action before it is sent to the client."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To run custom pre- and post-processing logic on action methods."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To perform URL routing and mapping to controllers."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96129,
+      "Explanation": "Action filters in ASP.NET MVC Core are used to execute custom logic before and after the action method is called. This allows for pre- and post-processing logic, like logging, authentication, or input validation.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which interface would you implement to create a custom action filter in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IActionFilter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "IFilterMetadata"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "IResultFilter"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "IControllerFilter"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96130,
+      "Explanation": "To create a custom action filter in ASP.NET MVC Core, you would implement the IActionFilter interface, which provides methods for executing code before and after an action method executes.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following method signatures are part of the IActionFilter interface?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void OnResultExecuting(ResultExecutingContext context)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "void OnActionExecuting(ActionExecutingContext context)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "void OnAuthorization(AuthorizationFilterContext context)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "void OnException(ExceptionContext context)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96131,
+      "Explanation": "The IActionFilter interface includes the OnActionExecuting and OnActionExecuted methods, which are used to perform tasks before and after the action method execution respectively.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you apply an action filter globally in an ASP.NET MVC Core application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By adding it to the Configure method in the Startup class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By registering it in the ConfigureServices method using services.AddMvc().AddMvcOptions."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By defining it in the Base Controller class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By applying it as an attribute directly to each controller and action method."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96132,
+      "Explanation": "To apply an action filter globally, you can register it in the ConfigureServices method using services.AddMvc().AddMvcOptions, ensuring that the filter is executed for every request.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a way to order the execution of multiple filters applied to an action or controller?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using the OrderBy attribute"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Setting the ExecutionOrder property"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Overriding the ExecuteOrder method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Specifying the Order property in the filter attribute"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96133,
+      "Explanation": "In ASP.NET MVC Core, you can set the Order property in the filter attribute to define the sequence in which filters are executed. Filters with a lower order value are executed earlier.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which interface is used to implement a Result Filter in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IActionFilter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "IResultFilter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "IExceptionFilter"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "IAuthorizationFilter"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96134,
+      "Explanation": "The IResultFilter interface is specifically designed to execute code before and after the execution of an action result in ASP.NET Core MVC.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When is the OnResultExecuting method called in an ASP.NET Core Result Filter?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Before an action method is called"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "After an action method is called"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Before an action result is processed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "After an action result has been executed"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96135,
+      "Explanation": "The OnResultExecuting method in a Result Filter is called just before the action result begins to process.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What can be achieved by using Result Filters in an ASP.NET Core application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Change the action method execution"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Modify the HTTP request"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Change the result before it is sent to the view"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Handle exceptions in the application"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96136,
+      "Explanation": "Result Filters are primarily used to run code before and after an action result is processed, thus allowing changes to be made to the result before it is sent to the client.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT processed by Result Filters in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "View result rendering"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Redirection result processing"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Model binding"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "JSON result execution"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96137,
+      "Explanation": "Model binding is a separate step that occurs before the execution of action methods, and it is not affected by Result Filters.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the ASP.NET Core MVC pipeline, where do Result Filters execute relative to Action Filters?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Before Action Filters"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "After Action Filters"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Simultaneously with Action Filters"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They do not interact with Action Filters"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96138,
+      "Explanation": "Result Filters execute after both the action method execution and Action Filters, as they work to manipulate the action result.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of exception filters in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To handle authentication and authorization"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To globally register routes for the application"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To catch and handle exceptions during webhook calls"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To handle exceptions thrown during an MVC action method execution"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96139,
+      "Explanation": "Exception filters in ASP.NET MVC Core are used to handle exceptions that occur during the execution of an MVC action method, providing a centralized way to manage error responses.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which interface must a custom exception filter implement in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IActionFilter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "IResultFilter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "IExceptionFilter"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "IAuthorizationFilter"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96140,
+      "Explanation": "In ASP.NET Core MVC, a custom exception filter must implement the IExceptionFilter interface to effectively intercept and handle exceptions within the application.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can exception filters in ASP.NET Core MVC be applied at the controller level?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By adding them to the global filter collection in Startup.cs"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By decorating the controller class with an attribute that derives from ExceptionFilterAttribute"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using Dependency Injection in the ConfigureServices method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By configuring the appsettings.json file"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96141,
+      "Explanation": "Exception filters can be applied at the controller level in ASP.NET Core MVC by decorating the controller class with an attribute derived from ExceptionFilterAttribute.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true about exception filters execution order in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Exception filters are executed after action result execution filters"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Exception filters are executed before authorization filters"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Exception filters run after resource filters"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Exception filters run only when explicitly invoked by the developer"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96142,
+      "Explanation": "In ASP.NET Core MVC, exception filters run after resource filters and are used to handle exceptions thrown during the processing of an action method.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a limitation of using exception filters in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They do not allow custom response creation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They can only be applied to specific actions and not globally"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They are not executed for exceptions thrown outside of controllers"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They cannot access controller or action arguments"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5558,
+      "QuestionTypeId": 0,
+      "QuestionId": 96143,
+      "Explanation": "Exception filters in ASP.NET Core MVC are designed to handle exceptions that occur within the controller&apos;s action method context; they do not handle exceptions that originate outside of this context.",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

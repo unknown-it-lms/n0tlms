@@ -1,0 +1,1446 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Which is used to keep the call by reference value as intact?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "const"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "absolute"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 64326,
+      "Explanation": "const keyword is use to keep value intact.when any varibale is declare with const keyword then value of that varible is regid throught the program.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which is referred by pointers to member?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "static members of class objects"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Non-static members of class, objects"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Refering to whole class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 64334,
+      "Explanation": "<span id=\"explanation64334\">Pointer is holding address of non-static member of class object.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of this program?<br> #include &lt;iostream&gt;<br>using namespace std;<br>&nbsp;void Values(int n1, int n2 = 10)&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp; cout &lt;&lt; \"1st value: '\"&lt;&lt; n1;<br>&nbsp;&nbsp;&nbsp; cout &lt;&lt; \"2nd value: \" &lt;&lt; n2;<br>}<br>&nbsp;&nbsp;&nbsp; int main()&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Values(1);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Values(3, 4);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1st value: 1<br>2nd value: 10<br>1st value: 3<br>2nd value: 4<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1st value: 1<br>2nd value: 10<br>1st value: 3<br>2nd value: 10<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "compile time error<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 64322,
+      "Explanation": "A&nbsp;default argument&nbsp;is a default value provided for a function parameter. If the user does not supply an explicit argument for a parameter with a default argument, the default value will be used. If the user does supply an argument for the parameter, the user-supplied argument is used.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Non-default arguments may have___________",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "trailing arguments"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "default arguments"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "both a &amp; b"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 64323,
+      "Explanation": "Default parameter fucntion is facility where you can call function without passing all it&apos;s&nbsp; parameter.If function has no default argument must have arguments to call function.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;iostream&gt;<br>using namespace std;<br>int func(int m = 10, int n) {&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int c;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c = m + n;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return c;<br>}<br>int main() &nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; func(5);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "15"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "compile time error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 64324,
+      "Explanation": "Default argument must be from righthand side. Trailing arguments.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What is the output of this program?<br>#include &lt;iostream&gt;</div><div>using namespace std;</div><div>void print(int i)&nbsp;&nbsp; {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; i;<br>}</div><div>&nbsp;void print(double &nbsp;f)&nbsp;{</div><div>&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; f;</div><div>}<br>int main(void)<br>{</div><div>&nbsp;&nbsp;&nbsp;&nbsp; print(5);</div><div>&nbsp;&nbsp;&nbsp;&nbsp; print(500.263);</div><div>&nbsp;&nbsp;&nbsp;&nbsp; return 0;</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5500.263"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "500.2635"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "500.263"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 64375,
+      "Explanation": "1.Function Overloading:<br>There are two overloaded functions print: one takes an int argument and the other takes a double argument.<br>2.Function Calls in main:<br>print(5); calls the print function with an int argument. This invokes void print(int i), which prints the integer 5.<br>print(500.263); calls the print function with a double argument. This invokes void print(double f), which prints the double 500.263.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What is the output of this program?</div><div>#include &lt;iostream&gt;<br></div><div>using namespace std;<br>int Add(int X, int Y, int Z) {<br></div><div>&nbsp;&nbsp;&nbsp; return X + Y;<br></div><div>}<br></div><div>double Add(double X, double Y, double Z)&nbsp; {<br></div><div>&nbsp;&nbsp;&nbsp; return X + Y;<br></div><div>}<br></div><div>int main() {<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; Add(5, 6);<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp; cout &lt;&lt; Add(5.5, 6.6);<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br></div><div>}<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "11 12.1<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "12.1 11<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "11 12<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "compile time error<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 64376,
+      "Explanation": "can not call function with two argument",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Whenever const objects try to invoke non-const member functions, the compiler \u2026\u2026\u2026\u2026\u2026\u2026\u2026",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "return zero value"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "return null"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "generate error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "return no value"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 71182,
+      "Explanation": "Const object can invoke only const member fucntion. If you try to invoke non-const fucntion with const object compiler&nbsp; gives compile time error.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp; Identify the incorrect statement.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Reference is the alternate name of the object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Rereference value once defined can be reassigned"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Rereference value once defined cannot be reassigned"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Reference is the alternate name of the variable"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 71121,
+      "Explanation": "<span id=\"explanation71121\">Once initialized, a reference can not be changed to reference another variable.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>#include&lt;iostream.h&gt;</div><div>void main()</div><div>{</div><div style=\"margin-left: 40px;\">char p[]=\"This is a test\";<br></div><div style=\"margin-left: 40px;\">cout&lt;&lt;sizeof(p)&lt;&lt;\",\"&lt;&lt;strlen(p);<br></div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "14, 14"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "15, 14"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "14, 15"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "15,15"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 64196,
+      "Explanation": "p is character array without size. But when we initilized array , size of array is optional. compiler count element and decide size, so size of array is 15 . Number of actual element and one more for&nbsp; &apos;\\0&apos;&nbsp; last character of string.and string length is actual elements from array that is 14. So answer is B.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>#include&lt;iostream&gt;<br>using namespace std;</div><div>void main()</div><div>{</div><div style=\"margin-left: 40px;\">char str1[]=\u201d India\u201d , str2[]=\u201d India\u201d ;</div><div style=\"margin-left: 40px;\">if(str1==str2)</div><div style=\"margin-left: 80px;\">cout&lt;&lt;\u201dBoth the string are same\u201d ;</div><div style=\"margin-left: 40px;\">else</div><div style=\"margin-left: 80px;\">cout&lt;&lt;\u201dBoth the string are not same\u201d ;</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Both the string are same"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Both the string are not same"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compile Time error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Runtime Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 64199,
+      "Explanation": "<span id=\"explanation64199\"></span><span>The condition str1 == str2 evaluates to false because str1 and str2 are different arrays stored at different memory locations.<br>Name of array is base address of array. So str1 and str2 these are addresses. We can not compare strings with addresses , strings can be compare with built in fucntion strcmp();</span><br><br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is true regarding function overloading ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Signature should be same, but return type should be different"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Signature should be same and return type also should be same"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Signature should be different and return type also should be different<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Signature should be different and return type does not matter"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 64220,
+      "Explanation": "With&nbsp;function overloading, multiple functions can have the same name with different parameters. <br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Default parameter can be placed by the user&nbsp; on _____________ .",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "leftmost arguments"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "rightmost arguments"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "both a &amp; b"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "anywhere in argument list"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 64230,
+      "Explanation": "<span id=\"explanation64230\">If multiple parameters are provided as default ,In this case default parameter is placed from rightmost side.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the following code?<br>#include&lt;iostream&gt;<br>using namespace std;<br>int main() {<div style=\"margin-left: 40px;\">for(int ii=0;ii&lt;3;++ii)</div><div style=\"margin-left: 40px;\">{</div><div style=\"margin-left: 80px;\">switch(ii)</div><div style=\"margin-left: 80px;\">{</div><div style=\"margin-left: 80px;\">case 0:cout&lt;&lt;\"zero \";</div><div style=\"margin-left: 80px;\">case 1:cout&lt;&lt;\"one \";continue;</div><div style=\"margin-left: 80px;\">case 2:cout&lt;&lt;\"two \";break;</div><div style=\"margin-left: 80px;\">}</div><div style=\"margin-left: 40px;\">}</div>return 0;<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "zero one one two"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "zero one two"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "zero two"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 64307,
+      "Explanation": "Continue keyword is use here in switch case but because switch is inside fop loop&nbsp; so it execute as follows .<br>When ii is 0 it will print <u><em><strong>Zero </strong></em></u>and because break is not used it will print <u><em><strong>one </strong></em></u><br>When ii is 1 it goes to case 1 and print <u><em><strong>one</strong></em></u><br>When ii is 2 it goes to case 2 and print <u><em><strong>two</strong></em></u><br><br><br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Which operation is supported by pointer variable in C++?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Addition"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Subtraction"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Assignment"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 64247,
+      "Explanation": "pointer arithamic allows us to add ,subtract and to assign value of one pointer to another pointer pointer .<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "C++ was originally called",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "C with objects"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "C with classes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C with functions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "C with loops<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 64179,
+      "Explanation": "C++ was initially known as \u201cC with classes, \u201d and was renamed C++ in 1983. ++ is shorthand for adding one to variety in programming; therefore C++ roughly means that \u201cone higher than C.\u201d <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which C++ oops feature is related to re-usability?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Encapsulation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Inheritance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Abstraction"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Polymorphism<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 64169,
+      "Explanation": "Inheritance id &apos;is a&apos; relationship which leads to re-usability.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following permits function overloading on c++ ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Data Type"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Number Of Arguments"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both of the above"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 63879,
+      "Explanation": "Function overloading&nbsp;is a feature in&nbsp;C++&nbsp;where two or more&nbsp;functions&nbsp;can have the same name but different signiture.Signiture cantains data type ,number of argument and sequence of argumant.<br><br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is function overloading in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using the same function name with different return types"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using the same function name with different parameter types"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using the same function name in different classes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using different function names with the same parameters"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93582,
+      "Explanation": "Function overloading in C++ allows the same function name to be used for different functions with different parameter types or numbers.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is an example of valid function overloading?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void func(int); int func(double);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "void func(int); void func();"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "void func(int, double); void func(double, int);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93583,
+      "Explanation": "Function overloading allows the use of the same function name with different parameters (number or types), hence all the given options are valid examples of function overloading.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if two functions differ only in return type can be overloaded in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is allowed and functions are overloaded"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It causes a compilation error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It causes a runtime error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It results in undefined behavior"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93584,
+      "Explanation": "In C++, functions cannot be overloaded by return type alone. The parameter list must differ in order to overload functions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword can be used in C++ to distinguish overloaded functions in a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "virtual"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "explicit"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "inline"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93585,
+      "Explanation": "No special keyword is needed to distinguish overloaded functions in a class. Overloading is resolved based on function signatures.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider two overloaded functions: foo(int a, double b) and foo(double a, int b). Which of the following calls is ambiguous?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "foo(10, 20.0);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "foo(10.0, 20);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "foo(10, 20);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both A and B"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93586,
+      "Explanation": "Calling foo(10, 20) results in ambiguity because both function signatures can be matched by converting either of the parameters.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about function overloading and default arguments is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Default arguments can be used to resolve overloaded functions."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Overloaded functions cannot have default arguments."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Default arguments do not affect function overloading."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "If two functions differ only by default arguments, they cannot be overloaded."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93587,
+      "Explanation": "If two functions differ only by their default arguments, they cannot be considered overloaded, as default arguments do not contribute to function signatures for overloading.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given three functions: foo(int), foo(double), and foo(float), which function is called with foo(5.0)?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "foo(int)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "foo(double)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "foo(float)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It causes a compile-time error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93588,
+      "Explanation": "The function foo(double) is called because 5.0 is a double literal. C++ will select the best match based on the type of the argument.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Overloading can be applied to which of the following?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only member functions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only non-member functions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "All functions, including member and non-member functions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only constructors"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93589,
+      "Explanation": "Overloading can be applied to any function, whether it is a member or non-member function, including particular overloading for constructors.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator cannot be overloaded in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "+"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "="
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "?:"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "*"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93590,
+      "Explanation": "The conditional operator (?:) cannot be overloaded in C++. Operators like +, =, and * can be overloaded.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What distinguishes overloaded functions in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They must have different return types"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They must belong to the same class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They must have different numbers or types of parameters"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They must have different exception specifications"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93591,
+      "Explanation": "Overloaded functions in C++ are distinguished by having a different number or types of parameters.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about a const variable in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Its value can be changed after initialization."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It must be initialized at the time of declaration."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It can be assigned a value later in the program."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It can be initialized in a function body."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93592,
+      "Explanation": "A const variable in C++ must be initialized at the time of declaration. Once initialized, its value cannot be changed.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of attempting to modify a const variable in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The program will crash at runtime."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The value will change without any error."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A compile-time error will occur."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The operation will be ignored silently."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93593,
+      "Explanation": "Attempting to modify a const variable in C++ will result in a compile-time error as its value is immutable.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to define a constant member function in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "constant"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "final"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "immutable"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "const"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93594,
+      "Explanation": "The keyword &apos;const&apos; is used to define a constant member function in C++. This indicates that the function will not modify any class members.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C++, what does a constant member function ensure?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It can modify the object it is called on."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It cannot be called by non-const objects."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It does not modify any member variables."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It returns a constant reference."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93595,
+      "Explanation": "A constant member function in C++ ensures that it does not modify any member variables or call any non-const member functions of the class.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Where can the 'const' qualifier be applied in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only to variables"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only to functions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To both variables and functions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To operators only"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93596,
+      "Explanation": "The &apos;const&apos; qualifier can be applied to both variables and functions in C++. It makes variables immutable and ensures that functions do not modify class members.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if a non-const member function is called on a const object in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The program will crash at runtime."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The call will succeed without errors."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A compiler warning will be generated."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A compile-time error will occur."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93597,
+      "Explanation": "If a non-const member function is called on a const object, a compile-time error will occur because the function might modify that object.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true when passing a parameter as a const reference in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The parameter cannot be initialized."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The parameter can be modified within the function."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A new copy of the parameter is made."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The parameter cannot be modified within the function."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93598,
+      "Explanation": "Passing a parameter as a const reference in C++ means that the function can read but not modify the parameter.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the 'mutable' keyword in C++ in the context of 'const'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It makes a class member constant."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It allows a const member function to modify a member variable."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It prevents a variable from being overridden."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is used to prevent inheritance."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93599,
+      "Explanation": "The &apos;mutable&apos; keyword allows a specific member variable to be modified even in a const member function, bypassing the const constraint.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which code correctly declares a constant pointer to an int in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int* const ptr;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "const int ptr*;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int const* ptr;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "const int* const ptr;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93600,
+      "Explanation": "&apos;int* const ptr;&apos; declares a constant pointer to an int, meaning the address stored in the pointer cannot change, but the value at that address can.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does 'const_cast' allow you to do in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Cast away the constness of variables."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Cast between incompatible types."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Modify constant variables permanently."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Ensure variables remain constant."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93601,
+      "Explanation": "The &apos;const_cast&apos; allows you to cast away the constness of variables in C++. It is used to remove or add the const modifier.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main advantage of using an inline function in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It reduces compilation time."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It increases the execution time."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It reduces the size of the binary."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It avoids the function call overhead."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93602,
+      "Explanation": "Inline functions are used to eliminate the overhead of a function call by inserting the function&apos;s code at the point where the function is called.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following scenarios is a suitable candidate for an inline function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Functions with recursive logic."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Large functions with complex logic."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Small, frequently called functions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "I/O handling functions."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93603,
+      "Explanation": "Inline functions are best suited for small functions that are frequently called, to optimize execution speed by reducing call overhead.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does the `inline` keyword affect the compiler?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It mandates that the function be inlined."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It suggests to the compiler to attempt inlining."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It increases function priority."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It restricts the function from being duplicated."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93604,
+      "Explanation": "The `inline` keyword acts as a request to the compiler to inline the function, though the compiler may choose to ignore it.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Where should an inline function ideally be defined?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "In a .cpp file"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "In a header file"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "In a separate inline file"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Inside the main() function"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93605,
+      "Explanation": "Inline functions should be defined in header files so that their code can be included wherever they are called, ensuring inlining is possible.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a potential drawback of using too many inline functions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Increased execution time."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Decreased code readability."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Increased compile time and code bloat."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Decreased function call efficiency."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93606,
+      "Explanation": "Excessive use of inline functions can lead to increased binary size and longer compile times, often referred to as code bloat.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if an inline function definition is larger than what the compiler considers appropriate for inlining?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The program will not compile."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The compiler will still inline it."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The compiler will ignore the inline request."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The function becomes recursive."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93607,
+      "Explanation": "If the function is too large, the compiler may choose to ignore the inline suggestion and treat the function as a regular function, leaving inlining out.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When is it guaranteed that a function is an inline function during execution?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When it is defined in the same file."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When it uses the inline attribute."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is never guaranteed due to compiler discretion."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When it only contains a return statement."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93608,
+      "Explanation": "Inlining is not guaranteed because it ultimately depends on the compiler&apos;s optimization processes and heuristics.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of functions can explicitly not be made inline in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Constructor functions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Destructor functions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Virtual functions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Friend functions"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93609,
+      "Explanation": "Virtual functions are resolved through a virtual table at runtime, thus they cannot be inlined.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if an inline function is defined in multiple source files?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The linker will issue a duplicate symbol error."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Each file will have its own copy of the function."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will cause undefined behavior."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The program will not compile."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93610,
+      "Explanation": "Each source file that includes the inline function will have its own copy, as inline functions have external linkage.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is true about inline functions and macros?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Inline functions can cause side effects."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Macros are type safe while inline functions are not."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Inline functions provide type safety."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both inline functions and macros are expanded by the preprocessor."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 655,
+      "QuestionTypeId": 0,
+      "QuestionId": 93611,
+      "Explanation": "Inline functions ensure type safety, whereas macros do not perform type checking and can easily cause side effects.",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

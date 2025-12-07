@@ -1,0 +1,906 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is the main advantage of using Stream API in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To increase the verbosity of code."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To parallelize the execution of streams for enhanced performance."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To simplify the implementation of data structures."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To enhance security in Java applications."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91942,
+      "Explanation": "The Stream API provides a powerful way to perform operations on sequences of elements, with the ability to process them in parallel to improve performance.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method converts a list to a stream in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "list.stream()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "list.toStream()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "stream(list)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "list.toCollection()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91943,
+      "Explanation": "The method &apos;stream()&apos; on a collection is used to convert it into a stream.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the context of Java Streams, what does the 'filter' method do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It reduces the number of elements by applying a function."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It sorts the elements of the stream."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It filters the elements based on a given predicate."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It collects the elements into a new list."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91944,
+      "Explanation": "The &apos;filter&apos; method is used in a stream to keep only the elements that satisfy a given predicate.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How would you sum all elements in a numeric stream in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "stream.sum()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "stream.reduce(0, Integer::sum)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "stream.collect(Collectors.summingInt(Integer::intValue))"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "stream.forEach(Integer::sum)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91945,
+      "Explanation": "The &apos;reduce&apos; method with the accumulator function &apos;Integer::sum&apos; allows you to sum all elements of a numeric stream.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a valid stream source in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Arrays"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Files"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Databases"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Optional"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91946,
+      "Explanation": "Streams can be created from Arrays, Files, and Optional, but not directly from databases.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which stream operation is known as a terminal operation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "map"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "filter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "collect"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "peek"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91947,
+      "Explanation": "The &apos;collect&apos; operation is a terminal operation that processes the stream and returns a result, ending the stream.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What distinguishes parallel streams from sequential streams in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Parallel streams are faster for small data volumes."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Parallel streams use multiple threads for their operations."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Parallel streams are always more efficient than sequential ones."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Parallel streams can only be used with primitive types."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91948,
+      "Explanation": "Parallel streams divide the content for processing and use multiple threads to do so, which is suitable for large volumes of data.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of the 'map' function in Java streams?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To combine elements based on a condition."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To collect elements into a list."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To transform elements into another form."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To eliminate duplicate elements."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91949,
+      "Explanation": "The &apos;map&apos; function applies a given function to the elements of a stream and transforms them into another form.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to check if any element of a stream matches a predicate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "anyMatch"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "allMatch"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "noneMatch"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "filterMatch"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91950,
+      "Explanation": "The &apos;anyMatch&apos; method returns true if any of the stream elements match the given predicate.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you create an empty stream of Strings in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Stream.empty()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Stream.of()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Stream.of(\"\")"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "new Stream<String>()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91951,
+      "Explanation": "The &apos;Stream.empty()&apos; method returns an empty sequential stream.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function is often used with Stream.collect to accumulate elements into a list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Collectors.list()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Collectors.toList()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Collectors.intoList()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Collectors.listOf()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91952,
+      "Explanation": "The &apos;Collectors.toList()&apos; collector accumulates elements into a new list.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To find the maximum element in a stream, which of the following is the correct approach?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "stream.max(Comparator.naturalOrder())"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "stream.max()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "stream.reduce(Integer::max)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "stream.collect(Collectors.max())"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91953,
+      "Explanation": "The &apos;max&apos; method with &apos;Comparator.naturalOrder()&apos; finds the maximum element by natural order comparison.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the distinct() method do in a stream?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Duplicates all elements in a stream."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Removes duplicate elements from a stream."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Sorts the stream elements by natural order."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Splits the stream into distinct sub-streams."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91954,
+      "Explanation": "The &apos;distinct()&apos; method removes duplicate elements from the stream.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if you perform an intermediate operation after a terminal operation on a stream?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will work fine as stream operations can be combined in any order."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The program will throw a runtime exception."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The intermediate operation will have no effect."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The stream pipeline will reset, and operations can be applied again."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91955,
+      "Explanation": "Once a terminal operation is performed on a stream, the stream is considered consumed, and any further operations will result in an exception.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which interface is implemented by Java Streams?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Streamable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "StreamableObject"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "BaseStream"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "StreamInterface"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91956,
+      "Explanation": "The Stream interface is a part of the BaseStream interface which serves as the base interface for all streams.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the 'skip' method do in a stream?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It removes all the elements of a stream."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It skips the first n elements of a stream."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It skips processing the entire stream."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It duplicates the stream elements after skipping."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91957,
+      "Explanation": "The &apos;skip&apos; method discards the first specified number of elements in the stream.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method will convert a stream of strings into an array of strings?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "stream.toArray(String[]::new)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "stream.toStringArray()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "stream.intoArray()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "stream.collect(Collectors.toArray())"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91958,
+      "Explanation": "The &apos;toArray&apos; method with a generator function like &apos;String[]::new&apos; converts a stream into an array.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operation on a stream is lazy and doesn't perform until required?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "forEach"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "collect"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "map"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "reduce"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91959,
+      "Explanation": "The &apos;map&apos; operation is an intermediate operation that is lazy and only executed when a terminal operation is performed.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you get the first element of a stream?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "stream.findFirst().get()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "stream.first()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "stream.get()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "stream.findFirst()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91960,
+      "Explanation": "You can use the &apos;findFirst&apos; method to get an Optional, and call &apos;get()&apos; on it to retrieve the first element.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is returned by the 'sorted' method when used on a stream?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A new stream of unsorted elements"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A formatted list of strings"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A stream with sorted elements"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A map of sorted values"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91961,
+      "Explanation": "The &apos;sorted&apos; method returns a new stream with its elements sorted according to their natural order or by a comparator.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of results does a collect operation have in the Stream API?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Always returns a String"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Returns a list of collected elements"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Produces a result of the chosen type or data structure"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It does not produce a result as a terminal operation"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91962,
+      "Explanation": "The &apos;collect&apos; method can produce a variety of results such as lists, sets, maps, and other data structures based on the Collector used.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which option is used for terminal operation that reduces the elements of the stream to a single value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "mapTo"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "reduce"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "peek"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "filter"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91963,
+      "Explanation": "The &apos;reduce&apos; method is a terminal operation that reduces the elements of the stream to a single result.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of operation is `forEach` considered as?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Intermediate"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Terminal"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Reducing Operation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Combining Operation"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91964,
+      "Explanation": "&apos;forEach&apos; is a terminal operation as it performs an action for each element of the stream and finalizes the pipeline.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these steps marks the start of a Stream Pipeline?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Collect"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Iteration"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Source"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Terminal Operation"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91965,
+      "Explanation": "A Stream Pipeline starts with a source such as a collection, array, or a generator function.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To examine each element of a stream without modifying it, which method can be used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "filter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "forEachOrdered"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "peek"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "map"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91966,
+      "Explanation": "The &apos;peek&apos; method allows you to perform an action on each element of a stream without altering it.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the Stream 'limit' operation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It skips all elements in the Stream."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It restricts the Stream to a certain length."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It doubles the elements in the Stream."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It removes the first element."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91967,
+      "Explanation": "The &apos;limit&apos; operation truncates the stream to a specified number of elements.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true for Java Streams?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They mutate the original source."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They are always parallel streams."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They do not mutate the original data structure."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They require explicit iteration by developers."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91968,
+      "Explanation": "Streams do not alter the original data structure, but instead, work with their contents without mutation.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "While working with Stream API, which operation is required to convert a stream back to a list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "collect(Collectors.toCollection())"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "collect(Collectors.toList())"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "list()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "accumulate()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91969,
+      "Explanation": "To convert a stream back to a list, we use the &apos;collect&apos; method with &apos;Collectors.toList()&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the 'flatMap' method in streams?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To flatten the stream and reduce the numbers of levels"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To eliminate duplicates"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To map each element to a single value"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To split the stream into multiple parts"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91970,
+      "Explanation": "The &apos;flatMap&apos; method is used to transform each element of the stream into a stream of multiple elements and flatten the resultant streams into a single one.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement about Java Streams is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Streams can be reused after a terminal operation."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Streams are data structures."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Streams support primitive data types."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Streams are intended for infinite data sources."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 7148,
+      "QuestionTypeId": 0,
+      "QuestionId": 91971,
+      "Explanation": "Streams can tolerate infinite data sources as they are lazily evaluated and operate incrementally.",
+      "Answer": "D",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

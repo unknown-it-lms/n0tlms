@@ -1,0 +1,2616 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is the default route template used in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "{controller=Home}/{action=Index}/{id?}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{controller}/{id}/{action=Index}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "{area=Home}/{controller}/{action}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "{controller}/{action}/{id}/{area=Home}"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95924,
+      "Explanation": "The default route template in ASP.NET MVC Core is &apos;{controller=Home}/{action=Index}/{id?}&apos;, which specifies that the &apos;Home&apos; controller and &apos;Index&apos; action are used by default, with &apos;id&apos; being optional.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to add routing middleware to the ASP.NET Core pipeline?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "UseMvc()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "AddRouting()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "MapRoute()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "UseEndpoints()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95925,
+      "Explanation": "In ASP.NET Core, &apos;UseEndpoints()&apos; is used to add routing middleware to the pipeline, allowing you to define endpoints with routing.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you configure attribute routing in an ASP.NET Core controller?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using the [Route] attribute on methods only"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By setting routes in the Startup.ConfigureServices method"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using the [Route] attribute on controllers and methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By adding route configurations in appsettings.json"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95926,
+      "Explanation": "Attribute routing can be configured by using the [Route] attribute on both the controller and action methods in ASP.NET Core.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is an example of a custom route constraint in ASP.NET Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Define a route with [Route('custom')]."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Implement an interface 'IRouteConstraint'."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Create a pattern with '{controller=custom}'."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Add a route in 'ConfigureServices()'."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95927,
+      "Explanation": "In ASP.NET Core, a custom route constraint can be created by implementing the &apos;IRouteConstraint&apos; interface, allowing custom logic to determine if a route matches.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What functionality does the 'MapControllerRoute' method provide in ASP.NET Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It maps HTTP requests to Razor Pages."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It is used to add custom middleware."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It defines routing patterns for controller actions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It sets up CORS policy for the application."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95928,
+      "Explanation": "&apos;MapControllerRoute&apos; is used to define routing patterns that direct requests to specific controller actions in ASP.NET Core applications.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary role of the routing table in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To authenticate users"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To map HTTP requests to controller actions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To manage database connectivity"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To generate JavaScript code dynamically"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95929,
+      "Explanation": "The routing table in ASP.NET MVC Core is primarily used to map incoming HTTP requests to corresponding controller actions based on defined routes.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In ASP.NET Core MVC, which method is commonly used to define routes in the Startup class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ConfigureDatabase"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SetUserRoles"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "UseRouting"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ConfigureLogging"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95930,
+      "Explanation": "The &apos;UseRouting&apos; method is used in the Startup class to configure routing in ASP.NET Core MVC applications.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following routing components in ASP.NET MVC Core matches the most specific route defined?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RoutingMiddleware"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "EndpointRoutingMiddleware"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "RouteCollection"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "RouteFinder"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95931,
+      "Explanation": "In ASP.NET Core MVC, the &apos;EndpointRoutingMiddleware&apos; is responsible for matching the most specific route defined.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you define a parameterized route in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using the '@' symbol"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using '{parameterName}' in the route template"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using square brackets '[]'"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By defining parameters in the URL query string"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95932,
+      "Explanation": "Parameterized routes in ASP.NET MVC Core are defined by including a parameter name enclosed in curly braces &apos;{parameterName}&apos; in the route template.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to add custom route constraints in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SetCustomConstraints"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "AddRoute"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "MapRoute"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "AddDefaultConstraints"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95933,
+      "Explanation": "The &apos;MapRoute&apos; method can be used to add custom route constraints in ASP.NET MVC Core by specifying constraints in the route template.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main purpose of configuring routing patterns in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To define the server's DNS settings."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To map URL requests to specific controller actions."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To set up database connections."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To configure application state management."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95934,
+      "Explanation": "Routing in ASP.NET MVC Core is used to define how URL requests map to specific controller actions, facilitating request handling and response generation in the application.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is typically used to configure routing patterns in an ASP.NET Core application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ConfigureMiddleware"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ConfigureRoutes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "UseEndpoints"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MapControllerRoute"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95935,
+      "Explanation": "MapControllerRoute is a method used within the Configure method in the Startup.cs file to define and configure routing patterns for controller-based routing.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the default route pattern \"{controller=Home}/{action=Index}/{id?}\", what does \"{id?}\" signify?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A strict requirement for an 'id' parameter."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An optional parameter that may or may not be provided."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A request for authentication."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A wildcard path segment."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95936,
+      "Explanation": "The \"{id?}\" segment in the route pattern indicates that &apos;id&apos; is an optional parameter, meaning the route can match URLs that include or exclude the &apos;id&apos; segment.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What result will occur if two routes are configured that match the same URL pattern in ASP.NET Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An exception will be thrown at runtime."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The first matching route in the order defined will be used."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The second matching route will override the first."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both routes will handle the request simultaneously."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95937,
+      "Explanation": "In ASP.NET Core, if multiple routes match the same URL pattern, the routing system selects the first route it finds in the order they are defined, adhering to a first-match rule.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How would you configure a route for an action method with a parameter in ASP.NET Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "MapControllerRoute(name: 'default', pattern: '{controller}/{action}/{id:int}');"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "AddRouteMapping(pattern: '{controller}/{action}/{id:int}');"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DefineRoute(name: 'api', template: '{controller=Action}/{method}/{id?}');"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "UseMvcRoute(name: 'default', route: '{controller}/{action}/{id=0}');"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95938,
+      "Explanation": "MapControllerRoute method allows configuring routes where &apos;{id:int}&apos; specifies a constraint, indicating the &apos;id&apos; is an integer parameter for the route.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does a 404 error indicate in an ASP.NET MVC Core application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The server is down."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The requested resource is not found."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The server encountered an internal error."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The client does not have permission to access the resource."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95939,
+      "Explanation": "A 404 error signifies that the server could not find the requested resource. In an ASP.NET MVC Core application, this often means that the routing configurations do not match any existing controllers or actions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a possible cause for a 404 error in an ASP.NET MVC Core application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Incorrect routing configuration."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Database connection timeout."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compilation error in a model class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Misconfigured dependency injection."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95940,
+      "Explanation": "A 404 error can occur if routing is improperly configured, resulting in the application being unable to locate the appropriate controller and action for the requested resource.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you customize the 404 error response in an ASP.NET MVC Core application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By modifying the Startup.cs to catch 404 errors."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By creating a custom middleware to handle 404 errors."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By setting a custom static HTML file in the wwwroot folder."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By overriding the default error page in index.js."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95941,
+      "Explanation": "In ASP.NET MVC Core, creating a custom middleware to handle 404 errors is a common approach to provide a customized 404 error response.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What change in routing configuration can help prevent 404 errors in an ASP.NET MVC Core application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Ensuring all controller names are in lowercase."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using route attributes on all action methods."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Specifying a default controller and action in the UseEndpoints method."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Disabling case sensitivity in the URL."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95942,
+      "Explanation": "Setting a default controller and action in the routing configuration helps handle requests that do not match any route patterns and can reduce the occurrence of 404 errors.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which built-in middleware can you configure in the middleware pipeline to handle 404 errors in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "StaticFileMiddleware."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DefaultFilesMiddleware."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "StatusCodePagesMiddleware."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "AuthorizationMiddleware."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95943,
+      "Explanation": "StatusCodePagesMiddleware is used to handle HTTP status codes, including 404 errors, allowing you to provide custom responses or display error-specific pages.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of attribute routing in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To manage application settings"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To define routes directly on actions and controllers"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To configure database connections"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To enhance security of web applications"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95944,
+      "Explanation": "Attribute routing allows developers to define routes directly on actions and controllers in ASP.NET MVC Core, providing more flexible routing capabilities.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a valid way to define a route using attribute routing in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[Route(\"/product/list\")]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[Router(\"/product/list\")]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[Path(\"/product/list\")]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "[Mapping(\"/product/list\")]"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95945,
+      "Explanation": "The correct way to define a route using attribute routing in ASP.NET MVC Core is by using the [Route] attribute.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you specify a parameter in attribute routing for an action method in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[Route(\"/product/{id}\")]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[Route(\"/product/[id]\")]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[Route(\"/product/<id>\")]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "[Route(\"/product/&id;\")]"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95946,
+      "Explanation": "To specify a parameter in the route, curly braces are used; for example, [Route(\"/product/{id}\")] indicates that &apos;id&apos; is a placeholder for a route parameter.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you use both conventional routing and attribute routing in an ASP.NET MVC Core application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only conventional routing will be used"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only attribute routing will be used"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both can be used simultaneously and will be matched in the order they are registered"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The application will throw an error at runtime"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95947,
+      "Explanation": "Both conventional and attribute routing can coexist in an ASP.NET MVC Core application. When looking for a route, the framework matches designated attribute routes first, followed by conventional routes.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT an advantage of using attribute routing in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It allows for clearer and more readable route definitions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It enables defining routes directly on controllers and actions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It provides support for RESTful APIs"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It eliminates the need for middleware in handling requests"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95948,
+      "Explanation": "Attribute routing does not eliminate the need for middleware in handling requests. Middleware is still necessary for various tasks such as authentication, logging, etc., regardless of the routing approach.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the first step in the ASP.NET Core MVC request life cycle when a request is received by the application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Routing"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Middleware execution"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Controller instantiation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Action method execution"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95949,
+      "Explanation": "When an HTTP request is received in an ASP.NET Core application, the first step is the execution of middlewares configured in the request pipeline.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the ASP.NET Core request life cycle, which component is responsible for selecting an appropriate action method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Routing middleware"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Model Binder"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Controller"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Action Invoker"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95950,
+      "Explanation": "After the controller is instantiated, the Action Invoker is responsible for selecting and executing the appropriate action method defined in the controller.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What role does the 'Route' middleware play in the ASP.NET Core MVC request life cycle?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Handles error responses"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Authorizes the request"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Processes static files"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Maps the incoming request to a defined route"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95951,
+      "Explanation": "The route middleware in ASP.NET Core MVC matches the incoming HTTP request to a defined route in the routing table, determining which controller and action to invoke.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "At what stage in the ASP.NET Core MVC request life cycle is the Model Binding process involved?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Before middleware execution"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "After action method execution"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "During action method execution"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Before action method execution"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95952,
+      "Explanation": "Model Binding occurs before the action method execution stage, during which it maps incoming data from the request to the parameters of the action method.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following steps is responsible for creating the HTTP response that is sent back to the client in the Asp.Net Core request life cycle?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Middleware execution"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Model Binding"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Action Result Execution"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Routing"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95953,
+      "Explanation": "After the action method is executed, the Action Result Execution step formats the returned result into a HTTP response that is sent back to the client.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In ASP.NET MVC Core, what is the primary purpose of a layout?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To define the business logic of the application."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To provide a consistent look and feel across multiple views."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To handle data access and manipulation."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To perform client-side validation."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95954,
+      "Explanation": "Layouts in ASP.NET MVC Core are used to define a common structure for views, ensuring a consistent look and feel across different pages of an application.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is typically used to set a custom layout for a specific view in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ViewBag.Layout"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ViewData['Layout']"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Layout"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SetLayout"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95955,
+      "Explanation": "In a Razor view, you can set a custom layout by assigning the path of the layout file to the &apos;Layout&apos; property at the top of the view file.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Where are layout files usually stored in an ASP.NET MVC Core project?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "In the 'Models' folder."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "In the 'Controllers' folder."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "In the 'Shared' folder within the 'Views' directory."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "In the 'wwwroot' folder."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95956,
+      "Explanation": "Layout files are typically stored in the &apos;Shared&apos; folder within the &apos;Views&apos; directory to allow them to be accessible across all views in the application.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you reference the section content inside a layout in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@RenderSection()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@DisplaySection()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@Html.Partial()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@IncludeSection()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95957,
+      "Explanation": "The @RenderSection() method is used in a layout to define placeholders for content sections that can be filled by the views using this layout.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if a required section in a layout is not provided in a view in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The application will ignore the missing section and render the page normally."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The application will throw an error."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The application will replace the missing section with a default value."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The application will automatically create an empty section."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95958,
+      "Explanation": "If a section is marked as required using the second parameter of @RenderSection(&apos;sectionName&apos;, true), the application will throw an error if the view does not provide content for that section.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main purpose of using Bundles in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To run ASP.NET Core applications faster."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To combine and minify multiple CSS and JavaScript files."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To simplify database management."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To optimize server deployment."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95959,
+      "Explanation": "Bundles in ASP.NET MVC Core are primarily used to combine and minify multiple CSS and JavaScript files, which helps to reduce load times and improve performance.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to add a script bundle in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "UseScriptBundle()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "AddScript()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "AddJs()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "IncludeScript()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95960,
+      "Explanation": "The UseScriptBundle() method is employed to create and configure a script bundle in ASP.NET MVC Core.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you enable bundling and minification in the Development environment in ASP.NET Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By default, it is enabled in Development."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Set 'EnableBundlingInDev' to true in the configuration."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Call 'app.UseBundling()' in Startup.cs."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use the 'env.IsDevelopment()' method in Startup.cs to manually configure it."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95961,
+      "Explanation": "In ASP.NET Core, you can use &apos;env.IsDevelopment()&apos; in Startup.cs to conditionally enable bundling and minification during Development, by configuring the application accordingly.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which ASP.NET Core interface should be implemented to create a custom bundle?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ICustomBundleProvider"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "IBundleProvider"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "IBundleConfig"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "IBundler"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95962,
+      "Explanation": "Implementing the IBundleProvider interface allows for the creation of custom bundles that can be configured and used in the ASP.NET Core application.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What command is used to add the Bundler & Minifier tool to an ASP.NET Core project?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "dotnet add package BundlerMinifier"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "npm install aspnet-bundling"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "dotnet tool install --global dotnet-bundle"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "dotnet-aspnet-bundle install"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95963,
+      "Explanation": "The command &apos;dotnet add package BundlerMinifier&apos; is used to add the Bundler & Minifier tool to an ASP.NET Core project, enabling bundling and minification capabilities.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is minification in the context of ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The process of converting C# code into bytecode."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The process of making HTML content more readable."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The process of reducing the size of CSS and JavaScript files by removing unnecessary whitespace, comments, and other non-essential elements."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The process of compressing images in the application."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95964,
+      "Explanation": "Minification refers to the reduction of file sizes of CSS and JavaScript by stripping out all unnecessary characters without changing its functionality, which improves load times.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which tool is typically used for bundling and minification in an ASP.NET MVC Core project?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Webpack"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Visual Studio Profiler"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "NUnit"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Entity Framework"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95965,
+      "Explanation": "Webpack is a popular tool used for bundling and minifying in ASP.NET Core projects, allowing efficient management of scripts and styles.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which ASP.NET Core middleware is used primarily to serve compressed and minified CSS and JavaScript files?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Static File Middleware"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Authentication Middleware"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "MVC Middleware"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Exception Handling Middleware"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95966,
+      "Explanation": "The Static File Middleware in ASP.NET Core allows serving static files like CSS and JavaScript, often in their minified and compressed forms.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you perform minification of JavaScript files in ASP.NET Core projects?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using the project's Publish option."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using built-in C# methods."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By including third-party tools like Gulp or Webpack."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By writing minification code manually in each JavaScript file."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95967,
+      "Explanation": "Minification of JavaScript files is commonly achieved by using third-party tools such as Gulp or Webpack to automate and streamline the process.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In ASP.NET Core, what is the result of not using minification on CSS or JavaScript files?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The application will not load at all."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "There will be no impact on the application's performance or bandwidth."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Increased bandwidth usage and slower page load times."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The files will not be served correctly by the server."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95968,
+      "Explanation": "Not using minification leads to larger file sizes for CSS and JavaScript, resulting in increased bandwidth usage and slower load times, which can negatively affect user experience.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of using the BundleConfig file in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To configure routing for MVC applications"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To bundle and minify JavaScript and CSS files"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To manage dependency injection services"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To setup database connections"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95969,
+      "Explanation": "The BundleConfig file is used to bundle and minify JavaScript and CSS files, reducing the number of requests and improving website performance.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is commonly used to register bundles in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RegisterBundles"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ConfigureBundles"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "AddBundles"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "UseBundles"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95970,
+      "Explanation": "The RegisterBundles method is typically used to register script and style bundles in ASP.NET MVC.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In ASP.NET Core, where are the bundles typically configured?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "In the Startup.cs file"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "In the BundleConfig.cs file"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "In the Program.cs file"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "In the appsettings.json file"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95971,
+      "Explanation": "In ASP.NET Core, the bundling and minification are usually configured in the Startup.cs file, often using tools like &apos;Bundler & Minifier&apos;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which tool can be used for bundling and minification in ASP.NET Core, given that there is no direct use of BundleConfig as in older versions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Webpack"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "MSBuild"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "NuGet"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Grunt"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95972,
+      "Explanation": "In ASP.NET Core, developers often use third-party tools such as Webpack for bundling and minification instead of the traditional BundleConfig approach.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a benefit of bundling and minification in a web application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Increased server-side processing"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Faster client-side execution"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Improved application scalability"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Reduced load times due to fewer HTTP requests"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95973,
+      "Explanation": "Bundling and minification reduce the number of HTTP requests by combining files, and they decrease file sizes through minification, both of which help reduce load times.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of using bundling in ASP.NET Core applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To reduce the number of HTTP requests by combining files"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To increase server load for better performance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To separate CSS and JS files for better readability"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To prevent files from being compressed"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95974,
+      "Explanation": "Bundling combines multiple files into one to reduce the number of requests sent to the server, thereby improving load times.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in the Startup class is crucial for configuring bundling services in an ASP.NET Core application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ConfigureServices"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Configure"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Main"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "UseBundlingAndMinification"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95975,
+      "Explanation": "The &apos;Configure&apos; method in the Startup class is where middleware and services such as bundling and minification are typically configured.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which NuGet package is generally required for using bundling in ASP.NET Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Microsoft.AspNetCore.Bundling"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "BundleTransformer.Core"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Microsoft.AspNet.Web.Optimization"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "WebOptimizer.AspNetCore"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95976,
+      "Explanation": "WebOptimizer.AspNetCore is a popular package used for bundling and minification of CSS and JavaScript files in ASP.NET Core applications.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you include Bootstrap libraries in an ASP.NET Core project using bundling?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Add Bootstrap CSS and JS files directly to the wwwroot folder and bundle manually"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use a CDN for Bootstrap resources only"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Include Boostrap via NuGet and bundle automatically"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use the .Net Bootstrap package"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95977,
+      "Explanation": "To include Bootstrap via bundling, add the Bootstrap CSS and JS files to your wwwroot folder and create a bundle configuration for them.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the advantage of using minification in addition to bundling in ASP.NET Core applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Minification reduces the size of files by removing unnecessary whitespace and comments"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Minification increases file size to improve download speeds"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Minification adds additional features to JavaScript files"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Minification only applies to CSS files"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95978,
+      "Explanation": "Minification reduces file sizes by stripping out whitespace, comments, and other redundant characters, making the files faster to download.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In ASP.NET MVC Core, which method is used to specify a layout view for a specific view?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ViewBag.Layout"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ViewData.Layout"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "View.Layout"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ViewStart"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95979,
+      "Explanation": "In ASP.NET MVC Core, the _ViewStart.cshtml file is used to specify a layout view for a specific view using the `Layout` property.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the correct way to define a layout page in ASP.NET Core MVC view?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@Layout = \"_Layout.cshtml\";"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@{ Layout=\"_Layout\"; }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<layout view=\"_Layout.cshtml\"></layout>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@RenderLayout(\"_Layout.cshtml\")"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95980,
+      "Explanation": "In ASP.NET Core MVC, the layout page is set by defining the `Layout` property within a code block using `@{ Layout = \"_Layout\"; }`.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Where is the _ViewImports.cshtml file usually placed in an ASP.NET Core MVC project?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "In the Models folder"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "In the root folder"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "In the Views folder"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "In the Controllers folder"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95981,
+      "Explanation": "The _ViewImports.cshtml file is typically placed in the Views folder and is used to include namespaces and add common directives to all views.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main purpose of the _ViewStart.cshtml file in an ASP.NET Core MVC application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To configure routing"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To apply global using statements"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To specify a layout for multiple views"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To define view models"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95982,
+      "Explanation": "The _ViewStart.cshtml file is used to specify a common layout page that can be used by multiple views, ensuring consistent layout formatting.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which order are the files processed when rendering a view with layout in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "_ViewStart -> _ViewImports -> Layout -> View"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "_ViewImports -> _ViewStart -> Layout -> View"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "View -> _ViewStart -> Layout -> _ViewImports"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Layout -> _ViewStart -> View -> _ViewImports"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95983,
+      "Explanation": "In ASP.NET Core MVC, first the _ViewImports.cshtml file is processed, followed by the _ViewStart.cshtml file, then the Layout, and finally the View.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a custom helper function in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A function that extends the capabilities of C# classes."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A reusable method that can be called within a Razor view to perform a specific function."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A method designed to control HTML rendering in the controller."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A built-in method to prevent SQL injection."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95984,
+      "Explanation": "A custom helper function in ASP.NET MVC Core is a reusable method used in Razor views that helps with tasks like formatting data or creating HTML elements.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which namespace is typically associated with creating custom HTML helpers in ASP.NET Core MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "System.Web.Mvc"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Microsoft.AspNetCore.Html"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "System.Web.UI"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Microsoft.AspNetCore.Mvc.ViewFeatures"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95985,
+      "Explanation": "The ViewFeatures namespace is where helper functions related to views, like HTML helpers, are usually implemented.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the base class that custom tag helpers derive from in ASP.NET Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "TagHelperBase"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ViewComponent"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "TagHelper"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "HtmlHelper"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95986,
+      "Explanation": "In ASP.NET Core, custom tag helpers are created by deriving from the TagHelper class.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When creating a custom HTML helper in ASP.NET Core, what return type is generally used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "string"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "HtmlString"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "IActionResult"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95987,
+      "Explanation": "Custom HTML helpers usually return HtmlString to ensure that the output is not encoded when rendered to the client.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you include a custom helper method in your Razor view file in ASP.NET Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using the ViewBag property."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By defining the method inside the controller class."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By creating a static method in a public static class and including its namespace."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By writing the method directly inside the Razor view."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95988,
+      "Explanation": "By creating a custom helper method as a static method in a public static class, and then including its namespace in your Razor view, you can reuse the helper method across multiple views.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary advantage of using asynchronous actions in an ASP.NET MVC Core application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They simplify the code structure."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They enhance the UI rendering speed."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They improve application scalability and responsiveness."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They allow simultaneous execution of multiple threads."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95989,
+      "Explanation": "Asynchronous actions allow for non-blocking operations, making the application more scalable and responsive when handling multiple requests.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to define an asynchronous action method in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "async"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "await"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Task"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ContinueWith"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95990,
+      "Explanation": "The &apos;async&apos; keyword is used to declare an asynchronous action method, allowing the use of &apos;await&apos; within the method.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In an asynchronous action method, what is the return type used to represent a task that does not return a value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Task"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ActionResult"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "IAsyncResult"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95991,
+      "Explanation": "In C#, &apos;Task&apos; is the return type used for an asynchronous method that does not return a value. It represents ongoing work.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the role of the 'await' keyword in an asynchronous action method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is used to pause the execution of a thread."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It releases resources after an operation completes."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It signals that some asynchronous operation should be completed before proceeding."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It converts an asynchronous task to a synchronous one."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95992,
+      "Explanation": "The &apos;await&apos; keyword is used to asynchronously wait for an operation to complete and resumes the method after the awaited task is completed.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When defining an asynchronous action in ASP.NET MVC Core, which method signature is correct?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public ActionResult Index() async"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "public async Task<ActionResult> Index()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "public Task ActionResult Index() async"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "public IAsyncResult Index()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95993,
+      "Explanation": "The correct method signature for an asynchronous action in ASP.NET MVC Core includes the &apos;async&apos; keyword and returns a &apos;Task<ActionResult>&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of the Exception Filter in ASP.NET MVC Core?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To execute code after an exception is caught"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To execute code before an exception occurs"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To log errors only in the database"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To handle exceptions globally and execute custom error handling logic"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95994,
+      "Explanation": "Exception Filters in ASP.NET MVC Core are mainly used to handle exceptions occurring during the execution of controller actions. They provide a way to execute custom error handling logic globally across the application.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in ASP.NET Core MVC is commonly used to log an exception to a logging framework?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IExceptionLog.Record()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ILogger.LogError()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Log.Exception()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "IErrorReport.Write()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95995,
+      "Explanation": "The ILogger interface in ASP.NET Core provides the LogError() method, which is commonly used to log error messages, including exceptions, to a logging framework.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In an ASP.NET MVC Core application, where is the best place to configure error handling globally?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "In the ConfigureServices method of Startup.cs"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "In the Main method of Program.cs"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "In the Configure method of Startup.cs"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "In each controller individually"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95996,
+      "Explanation": "Global error handling is typically configured in the Configure method of Startup.cs, where middleware such as UseExceptionHandler or UseDeveloperExceptionPage can be added to handle errors throughout the application.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a common practice for ensuring sensitive information is not exposed in error messages in an ASP.NET MVC Core application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using detailed error pages only in production environment"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Storing the error messages in XML files"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Logging errors and showing generic error messages to users"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Displaying the stack trace only to authenticated users"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95997,
+      "Explanation": "A common practice is to log detailed error information for troubleshooting purposes while displaying a generic error message to users to avoid exposing sensitive information.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you configure a custom error handling middleware in an ASP.NET Core MVC application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By implementing the HandleErrorAttribute"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By adding UseMiddleware<CustomErrorMiddleware>() in the Configure method"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By configuring it in the appsettings.json file"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By overriding the OnException method in every controller"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 95998,
+      "Explanation": "Custom error handling middleware can be configured by adding UseMiddleware<CustomErrorMiddleware>() in the Configure method of Startup.cs, allowing custom handling of exceptions throughout the application.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In ASP.NET Core MVC 6.0, where is the default routing configuration specified?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "In the Startup.cs file's ConfigureServices method."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "In the appsettings.json file."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "In the Views folder."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "In the Program.cs file."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 86676,
+      "Explanation": "In ASP.NET Core MVC 6.0 the default routing configuration specified in Program.cs file.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the correct syntax for defining a route in ASP.NET MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "routes.MapRoute(name, url, defaults)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "routes.DefineRoute(name, url, defaults)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "routes.AddRoute(name, url, defaults)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "routes.ConfigureRoute(name, url, defaults)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 85929,
+      "Explanation": "The correct syntax for defining a route in ASP.NET MVC is routes.MapRoute(name, url, defaults).",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How are the bundles referenced in the Razor views in ASP.NET MVC Core?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By the \"Bundle.Render\" HTML helper"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By the \"Scripts.Render\" or \"Styles.Render\" HTML helpers <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By the \"bundle.css\" or \"bundle.js\" files"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By the \"@bundle\" Razor directive"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 70522,
+      "Explanation": "The @Scripts.Render method is an HTML helper in ASP.NET MVC Core that is used to render a reference to a JavaScript bundle in a Razor view. This method generates the HTML markup that includes the reference to the specified bundle, which is a collection of JavaScript files that have been combined and minified for performance.<br><br>The @Styles.Render method is an HTML helper in ASP.NET MVC Core that is used to render a reference to a CSS bundle in a Razor view. This method generates the HTML markup that includes the reference to the specified bundle, which is a collection of CSS files that have been combined and minified for performance.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>public class HomeController : Controller&nbsp;</div><div>{</div><div>&nbsp;&nbsp; public ActionResult Index() {</div><div>&nbsp;&nbsp;&nbsp;&nbsp; ViewBag.Message = \u201cWelcome to ASP.NET MVC!\u201d;</div><div>&nbsp;&nbsp;&nbsp;&nbsp; return View();</div><div>&nbsp;&nbsp; }</div><div>}</div><div><br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "the return will result in an error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "/Views/Home/Index.cshtml is selected"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "/Views/Home/Home.cshtml is selected"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "/Views/Home/Default.cshtml is selected"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 70545,
+      "Explanation": "The Index method in controller simply ran the statement return View(), which specified that the method should use a view template file to render a response to the browser. Because you didn&apos;t explicitly specify the name of the view template file to use, ASP.NET MVC defaulted to using the Index.cshtml view file in the ViewsHome folder.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>&nbsp;__________ is responsible for interpreting request, manipulating the model if required and selecting a view to send back to user as a response.</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Model"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "View"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Controller"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 70546,
+      "Explanation": "<p>Controller in the MVC (Model-View-Controller) architecture is responsible for interpreting incoming requests from the user, handling user input, manipulating the model (if required, for example, updating data), and selecting an appropriate view to render and send back to the user as a response.<br></p>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "RedirectToActionPermanent() Method for which Status code represents?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "304"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "302"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "301"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "300"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 71117,
+      "Explanation": "<ul><li><p>RedirectToActionPermanent() method in ASP.NET MVC is used to perform a permanent redirection to another action or controller within the application. This method returns an HTTP status code of 301, which signifies a permanent redirect.</p></li><li><p>301 status code indicates to the client (browser) that the resource has permanently moved to a new location, and the client should update its bookmarks or links to the new URL.</p></li><li><p>302 status code is used for temporary redirections.</p></li><li><p>304 status code represents \"Not Modified,\" indicating that the client&apos;s cached copy of the resource is still valid.</p></li><li><p>300 status code is not directly related to redirection but rather represents multiple choices.</p></li></ul>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "RedirectToAction() Method for which Status code represents?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "304"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "302"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "301"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "300"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 71118,
+      "Explanation": "RedirectToAction() method in ASP.NET MVC is used to perform a temporary redirection to another action or controller within the application. This method returns an HTTP status code of 302, which signifies a temporary redirect.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Bundling allows __________.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Loading of multiple images in single request"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Loading of multiple view files in single request."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Loading of caching of multiple script files"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Loading of multiple script files in single request."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 81620,
+      "Explanation": "Bundling in ASP.NET MVC refers to the process of combining multiple JavaScript (or CSS) files into a single file for optimized delivery to the client&apos;s browser. This helps in reducing the number of HTTP requests made by the client, thereby improving page load performance.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a default route pattern in ASP.Net MVC Core?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "\u201d/{action}/{controller}/{id}\u201d"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "\u201d{controller}/{id}\u201d"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "\u201d{controller}/{action}/{id}\u201d"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "\u201d{controller}/{action}\u201d"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 81621,
+      "Explanation": "The default route pattern in ASP.NET MVC Core is \" {controller}/{action}/{id?}\". This route pattern maps the URL of an incoming request to a specific controller and action method in the application. The \"{controller}\" placeholder represents the name of the controller to be invoked, the \"{action}\" placeholder represents the name of the action method to be executed, and the \"{id?}\" placeholder represents an optional parameter that can be passed to the action method.<br><br>For example, a URL of \"https://example.com/home/index\" would be mapped to the \"Index\" action method in the \"Home\" controller. If an \"id\" parameter is included in the URL, it would also be passed to the action method.<br><br>This default route pattern can be modified or additional routes can be added to the application&apos;s route table to handle more complex URL patterns and routing requirements.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the \"bundleconfig.json\" file in ASP.NET MVC Core?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To define the dependencies of the application <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To define the bundles of CSS and JavaScript files"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To configure the database connection <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To set the application settings"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 81687,
+      "Explanation": "The  bundleconfig.json&nbsp;file is the file that is used for doing the bundling operation in  ASP.NET MVC Core .<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the difference between MapRoute and MapRouteAsync methods in ASP.Net MVC Core?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "MapRoute is synchronous and MapRouteAsync is asynchronous <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "MapRoute is for GET requests and MapRouteAsync is for POST requests"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "MapRoute is for custom routes and MapRouteAsync is for default routes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 81689,
+      "Explanation": "The difference between the MapRoute and MapRouteAsync methods in ASP.Net MVC Core is that MapRoute is a synchronous method while MapRouteAsync is an asynchronous method.<br><br>The MapRoute method is used to define a custom synchronous route in the routing configuration of an ASP.Net MVC Core application. It takes a string pattern that defines the URL pattern to match, and an anonymous object that specifies the default values for the route parameters.<br><br>The MapRouteAsync method is used to define a custom asynchronous route in the routing configuration of an ASP.Net MVC Core application. It is similar to the MapRoute method, but it allows you to perform asynchronous operations as part of the routing process.<br><br>In general, it is recommended to use the synchronous MapRoute method for simple routing scenarios, and the asynchronous MapRouteAsync method for more complex scenarios that require asynchronous operations to be performed as part of the routing process.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>How can we navigate from one view to other view using hyperlink?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "TransferLink"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "RedirectLink"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ActionLink"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<div>ExecuteLink</div>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 5538,
+      "QuestionTypeId": 0,
+      "QuestionId": 85590,
+      "Explanation": "ActionLink is used to generate hyperlink in MVC using HTML Helper Class.<br>Syntax of ActionLink<br>@Html.ActionLink(\"Login\",\"Welcome\")",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

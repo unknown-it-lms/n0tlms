@@ -1,0 +1,3486 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is the purpose of the Main method in a C# console application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To initialize all user-defined variables."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To execute as the starting point of a console application."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To declare global constants for the application."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To compile and link the program."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94482,
+      "Explanation": "In a C# console application, the Main method is the entry point of the program. It is where the program begins execution.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which namespace must be included to use the Console class in a C# console application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "System.Threading"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "System.IO"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "System.Console"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "System"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94483,
+      "Explanation": "The Console class belongs to the System namespace, so you need to use &apos;using System;&apos; to use Console class functionalities.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you read input from the user in a C# console application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Console.WriteInput()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Console.Input()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Console.ReadLine()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Console.GetInput()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94484,
+      "Explanation": "<span id=\"explanation94484\" style=\"color:blue\">You can use Console.ReadLine() to read input from the user as a string in a C# console application.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the 'using' keyword in C# when working with resources?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To define a namespace alias"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To import a namespace into a program"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To ensure that IDisposable resources are released"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To declare a constant value"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94485,
+      "Explanation": "The &apos;using&apos; keyword can be used to define a scope at the end of which an IDisposable object will be disposed. This is particularly useful for managing resources such as file handles or database connections.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements best describes a correct use of 'using' keyword outside of resource management?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To create a single-instance object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To reference an external library or namespace"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To manage application configuration settings"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To convert data types implicitly"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94486,
+      "Explanation": "Outside of resource management, &apos;using&apos; is commonly used to include namespaces in a C# file, thereby allowing the programmer to use the types defined in those namespaces without needing to provide fully qualified names.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which scenario is the 'using' statement optional, even when dealing with resources?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When using unmanaged resources explicitly"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When dealing with threads"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When creating singleton objects"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When the object allocation and deallocation happen within the same method"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94487,
+      "Explanation": "The &apos;using&apos; statement is optional when the allocation and deallocation of resources happen within the same method scope, allowing you to perform manual resource management if you prefer.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a value type in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "string"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Array"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94488,
+      "Explanation": "Value types in C# are directly stored in the stack. &apos;int&apos; is a value type, whereas &apos;string&apos;, &apos;object&apos; and &apos;Array&apos; are reference types.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default value of a boolean type in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "false"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "true"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94489,
+      "Explanation": "In C#, the default value for boolean types is &apos;false&apos;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is an immutable type in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "StringBuilder"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "String"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Integer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "List"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94490,
+      "Explanation": "&apos;String&apos; in C# is an immutable type, meaning that once it is created, it cannot be changed.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which type of data type can store NULL values in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Nullable<int>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "float"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "char"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94491,
+      "Explanation": "The &apos;Nullable<T>&apos; type allows a value type to be assigned &apos;null&apos; in C#. It is used to represent undefined values in value types.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not a primitive data type in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "char"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "double"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "string"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "float"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94492,
+      "Explanation": "Although &apos;string&apos; is used like a primitive type in C#, it is actually a reference type and not a primitive data type.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What keyword is used to define a constant variable in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "readonly"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "const"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "fixed"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94493,
+      "Explanation": "To define a constant variable in C#, &apos;const&apos; keyword is used. Constant variables must be initialized at the time of declaration and cannot be changed later.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which data type in C# is a reference type?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ushort"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "double"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "decimal"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "object"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94494,
+      "Explanation": "The &apos;object&apos; type is a reference type in C#. It is the base type from which all value types and reference types derive.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the maximum value of an int data type in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2,147,483,647"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "32,767"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "4,294,967,295"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "9,223,372,036,854,775,807"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94495,
+      "Explanation": "The &apos;int&apos; data type in C# is a 32-bit signed integer with a maximum value of 2,147,483,647.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator is used to check the compatibility of an object with a given type in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "is"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "as"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "typeof"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "sizeof"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94496,
+      "Explanation": "The &apos;is&apos; operator in C# is used to check the runtime compatibility of an object with a given type.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the size of the decimal data type in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "8 bytes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4 bytes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "16 bytes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "10 bytes"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94497,
+      "Explanation": "In C#, the &apos;decimal&apos; data type is a 128-bit precise decimal value with 28-29 significant digits. Its size is 16 bytes.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does CTS stand for in .NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Common Type Selection"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Common Type System"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Central Type System"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Core Type Standard"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94498,
+      "Explanation": "CTS stands for Common Type System, which defines how types are declared, used, and managed in the runtime, enabling cross-language integration.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a direct benefit of CTS in .NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Enables cross-language interoperability"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Defines a standard for data types"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Improves runtime performance drastically"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Facilitates code reuse across different languages"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94499,
+      "Explanation": "CTS is primarily a system for ensuring language interoperability, standardizing data types, and facilitating code reuse but does not directly improve runtime performance.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a benefit of having a Common Type System in .NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Enables garbage collection"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Ensures type safety and memory isolation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Promotes language-specific data types"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Reduces compilation time"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94500,
+      "Explanation": "CTS ensures type safety by defining rules that languages need to follow, leading to safer memory use and isolation among applications.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following types is a value type in the CTS?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "System.Object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "System.String"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "System.Int32"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "System.Array"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94501,
+      "Explanation": "System.Int32 is a value type in the Common Type System. It represents a 32-bit signed integer.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does CTS facilitate cross-language integration?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By compiling all languages into Java bytecode"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By providing a single language runtime"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By defining a standard data type framework"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By enforcing all languages to use the C# syntax"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94502,
+      "Explanation": "CTS defines a standard framework for data types, which ensures different languages can interact smoothly by conforming to the same data type rules.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a reference type in the CTS?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "System.ValueType"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "System.Decimal"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "System.Boolean"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "System.Delegate"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94503,
+      "Explanation": "System.Delegate is a reference type in the CTS, representing a reference to a method with a specific parameter list and return type.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What kind of CTS type is used to represent a sequence of characters?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "System.Char"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "System.String"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "System.Text"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "System.Collections"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94504,
+      "Explanation": "System.String is a reference type used in the CTS to represent a sequence of characters or a string of text.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why are languages like C# and VB.NET able to work seamlessly together in .NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Because they have similar syntax"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Due to the .NET Compiler"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Because both compile to the same intermediate language"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Because .NET enforces a single programming model"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94505,
+      "Explanation": "Both languages compile to the same intermediate language (IL) that runs on the .NET runtime, allowing them to work together seamlessly.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is true about boxing in .NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Boxing is the process of converting a reference type to a value type."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Boxing is creating a copy of a string object."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Boxing copies the contents of a value type to a reference type."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Boxing is achieved through converting int to double."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94506,
+      "Explanation": "Boxing is the process where a value type is wrapped inside an object and stored on the heap, effectively converting it into a reference type.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is an effect of using CTS in .NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Ability to write code in assembly language"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Support for multiple inheritance in C#"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Standardization of exception handling across languages"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Direct execution of source code"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94507,
+      "Explanation": "CTS contributes to the standardization of language features like exception handling, making them consistent across different .NET languages.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following C# code?<br><br>int x = 5;<br>int y = 10;<br>if (x &gt; y) {<br>&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(\"x is greater\");<br>} else if (x &lt; y) {<br>&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(\"x is lesser\");<br>} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(\"x is equal to y\");<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "x is greater"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "x is lesser"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "x is equal to y"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94508,
+      "Explanation": "<span id=\"explanation94508\" style=\"color:blue\">The variable x is 5 and y is 10, hence x &lt; y evaluates to true, so \"x is lesser\" will be printed.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following operators can be used to concatenate multiple conditions in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&amp;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&amp;&amp;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "||"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "^^"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94509,
+      "Explanation": "<span id=\"explanation94509\" style=\"color:blue\">The logical AND operator (&amp;&amp;) is used to combine multiple conditions that must all be true.<br></span><span style=\"color:blue\">\"Concatenate\" here doesn&apos;t mean \"combine like strings\" \u2014 it means evaluating multiple conditions together in a logical expression, such as in an if statement.<br><br>Why &amp;&amp; is the best answer:<br>&amp;&amp; (logical AND) is commonly used when you want all conditions to be true.<br>The term \"concatenate\" often refers to joining things in sequence. In logic, &amp;&amp; joins conditions that must all be true.<br><br>Why || is also a logical operator, but not the best answer here:<br>|| (logical OR) is used when any one condition being true is enough.<br><br>It does combine conditions, but not in the sense of requiring all conditions to be true, which is usually implied by the word \"concatenate\" in logic-based questions.</span><br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will the following C# code print?<br><br>int a = 15;<br>int b = 25;<br>if (a &lt; 10 || b &gt; 20) {<br>&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(\"Condition met\");<br>} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(\"Condition not met\");<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Condition met"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Condition not met"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94510,
+      "Explanation": "<span id=\"explanation94510\" style=\"color:blue\">The condition a &lt; 10 || b &gt; 20 evaluates to true because b &gt; 20 is true, so \"Condition met\" will be printed.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the drawback of a nested 'if' statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Reduced readability"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Inefficient performance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No error handling"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Limited to integer comparisons only"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94511,
+      "Explanation": "Nested &apos;if&apos; statements can make the code harder to read and maintain, thus reducing readability.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a valid conditional statement in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "if"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "elif"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "else"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "switch"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94512,
+      "Explanation": "C# uses &apos;else if&apos; for additional condition checks, not &apos;elif&apos;, which is used in languages like Python.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to terminate a switch statement in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "continue"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "exit"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "stop"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "break"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94513,
+      "Explanation": "The &apos;break&apos; keyword is used to terminate the switch statement and exit the current case block.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How many of the following conditional statements are valid in C#? 'if', 'else', 'switch', 'when'",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94514,
+      "Explanation": "&apos;if&apos;, &apos;else&apos;, and &apos;switch&apos; are valid conditional statements. &apos;when&apos; is used in pattern matching, not as an independent conditional statement.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the switch statement, which expression type is NOT supported in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "string"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "bool"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "char"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94515,
+      "Explanation": "<span id=\"explanation94515\" style=\"color:blue\">Switch statements in C# do not support boolean expressions.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the default case in a switch statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It sets the default value for cases."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It executes when no case matches the expression."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is mandatory in every switch statement."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It exits the switch structure."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94516,
+      "Explanation": "The default case executes when none of the specified case labels match the switch expression.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the C# code below?<br><br>int n = 3;<br>switch (n) {<br>&nbsp;&nbsp;&nbsp;&nbsp;case 1:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(\"One\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>&nbsp;&nbsp;&nbsp;&nbsp;case 2:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(\"Two\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>&nbsp;&nbsp;&nbsp;&nbsp;default:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(\"Other\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "One"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Two"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Other"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No output"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94517,
+      "Explanation": "<span id=\"explanation94517\" style=\"color:blue\">The value of n is 3, which does not match any case, so the &apos;default&apos; case is executed, printing \"Other\".</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following code snippet?<br><br>int i = 0;<br>do {<br>&nbsp;&nbsp;&nbsp;&nbsp;Console.Write(i);<br>&nbsp;&nbsp;&nbsp;&nbsp;i++;<br>} while (i &lt; 3);",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "012"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "123"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "01"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1234"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94518,
+      "Explanation": "<span id=\"explanation94518\" style=\"color:blue\">The do-while loop runs the loop body at least once and then checks the condition. Numbers 0, 1, 2 are printed before i reaches 3.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements correctly describes the 'for' loop syntax in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "for(initialization; condition; increment)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "for(inti; cond; inc)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "for{initialization condition increment}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "for-loop(condition)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94519,
+      "Explanation": "The correct syntax of a for loop in C# is: for(initialization; condition; increment).",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to prematurely exit a loop in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "terminate"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "break"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "halt"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "stop"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94520,
+      "Explanation": "In C#, the &apos;break&apos; statement is used to exit a loop before the loop condition is met.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How many times will the loop execute in the following code?\n\nfor (int i = 0; i < 5; i++)\n{\n  if (i == 3) break;\n}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "5"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94521,
+      "Explanation": "The loop will break when i equals 3, thus executing the loop body 3 times (for i = 0, 1, 2).",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C#, which loop is most appropriate when you want to ensure that the loop executes at least once?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "while loop"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "do-while loop"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "for loop"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "foreach loop"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94522,
+      "Explanation": "A do-while loop guarantees that the loop will execute at least once as the condition is checked after the loop body.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is NOT a valid way to loop through an array in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "foreach loop"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "while loop"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "repeat loop"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "for loop"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94523,
+      "Explanation": "There is no &apos;repeat&apos; loop in C#. valid loop statements for arrays are &apos;foreach&apos;, &apos;while&apos;, and &apos;for&apos;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default behavior of the 'continue' statement in a loop?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Exits the loop immediately"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Skips current iteration and continues with next"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Stops the program execution"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Exits the loop and continues with the next portion of the code"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94524,
+      "Explanation": "The &apos;continue&apos; statement skips the current iteration and proceeds to the next iteration of the loop.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which scenario are you most likely to use a 'foreach' loop in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When iterating over elements in a list"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When calculating a factorial"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When implementing a binary search"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When counting numbers from 1 to 100"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94525,
+      "Explanation": "&apos;foreach&apos; is particularly useful for iterating over elements of a collection, like lists or arrays, without the need for an index counter.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following will correctly create an infinite loop in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "for(; ;)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "for(int i = 0; i &lt; 10;)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "while(true)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A and C"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94526,
+      "Explanation": "<p data-start=\"117\" data-end=\"142\"><span style=\"color:#0000ff;\">for(; ;)&nbsp;This is a valid infinite for loop.<br data-start=\"179\" data-end=\"182\">All three parts of the for statement are optional.&nbsp;<br></span><span style=\"color: blue;\">The while(true) statement will create an infinite loop as its condition always evaluates to true. So both A and C are correct option</span></p>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the effect of the 'return' statement in a loop in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It skips current iteration and continues the loop"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It terminates the entire method execution"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It pauses the loop and waits for user input"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It causes an error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94527,
+      "Explanation": "The &apos;return&apos; statement exits the current method and stops its execution entirely, not just the loop.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default value of an int array in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "null"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "undefined"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94528,
+      "Explanation": "In C#, an int array is initialized with the default value of 0 for its elements.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you determine the number of dimensions of an array in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "array.Length"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "array.Rank"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "array.GetLength(0)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "array.Count"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94529,
+      "Explanation": "The Rank property of an array gives the number of dimensions in the array.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to copy elements between two arrays in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Array.Copy()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Array.Clone()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Array.CreateInstance()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Array.Equals()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94530,
+      "Explanation": "Array.Copy() is used to copy elements from one array to another.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods would you use to reverse the elements of an array in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Array.Reverse()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Array.Sort()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Array.Clear()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Array.Resize()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94531,
+      "Explanation": "Array.Reverse() is used to reverse the elements in a one-dimensional array.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if you try to access an array element with an index that is out of bounds in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IndexOutOfRangeException is thrown"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Returns null"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Returns the last element"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Returns -1"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94532,
+      "Explanation": "In C#, accessing an array element with an invalid index throws an IndexOutOfRangeException.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following can be used to initialize an array in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int[] arr = {1, 2, 3};"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int[] arr = new int(3);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int[] arr = new int[];"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int arr[3] = {1, 2, 3};"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94533,
+      "Explanation": "The syntax int[] arr = {1, 2, 3}; initializes an int array with the specified elements.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the following code snippet?<br><br>int[] arr = new int[4];<br>Console.WriteLine(arr.Length);",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Undefined"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94534,
+      "Explanation": "<span id=\"explanation94534\" style=\"color:blue\">The length of the array, which is the number of elements it can hold, is 4.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these operations will sort an array in descending order in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Array.Sort(arr); Array.Reverse(arr);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Array.Reverse(arr);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Array.DescendingSort(arr);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Array.SortDescending(arr);"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94535,
+      "Explanation": "To sort an array in descending order, first sort it in ascending order using Array.Sort() and then reverse it using Array.Reverse().",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C#, how do you declare a two-dimensional array?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int[,] arr = new int[2, 3];"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int[2, 3] arr;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int[2][3] arr;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int{2, 3} arr;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94536,
+      "Explanation": "The declaration int[,] arr = new int[2, 3]; creates a two-dimensional array with 2 rows and 3 columns.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method would you use to clear all elements in an array in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Array.Clear(arr, 0, arr.Length);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Array.Remove(arr);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Array.Delete(arr);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Array.Empty(arr);"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94537,
+      "Explanation": "Array.Clear(arr, 0, arr.Length); sets all elements in the specified array to their default values.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the 'args' parameter in the Main method in a C# application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To define the number of times the application can be executed."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To enable applications to perform multithreading tasks."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To allow passing command line arguments to the application."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To specify a default configuration file for the application."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94538,
+      "Explanation": "The &apos;args&apos; parameter is an array of strings used to collect the command line arguments passed to the application when it is started. These arguments can be used to adjust application behavior based on user input.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method signature is correct for accessing command line arguments in a C# console application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public static void Main()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "public static char Main(string[] args)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "public static void Main(string[] args)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "public static void Main(string args)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94539,
+      "Explanation": "<span id=\"explanation94539\" style=\"color:blue\">The correct method signature for accessing command line arguments in a C# application is &apos;public static void Main(string[] args)&apos;. Here, &apos;args&apos; is an array of strings representing the arguments.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When executing a C# console application using command line parameters, which environment method can be used to retrieve the command line arguments if the Main method does not directly use the 'args' parameter?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Environment.GetCommandLineArgs()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Console.ReadLine()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "File.GetCommandLineArgs()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "System.GetCommandArgs()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 94540,
+      "Explanation": "<span id=\"explanation94540\" style=\"color:blue\">The method &apos;Environment.GetCommandLineArgs()&apos; is used to retrieve the command-line arguments for the current process as an array of strings, even if they are not directly accessed through the Main method&apos;s &apos;args&apos; parameter.<br></span><span style=\"color:blue\">using System;<br><br>class Program<br>{<br>&nbsp; &nbsp; static void Main()<br>&nbsp; &nbsp; {<br>&nbsp; &nbsp; &nbsp; &nbsp; string[] args = Environment.GetCommandLineArgs();<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br>&nbsp; &nbsp; &nbsp; &nbsp; for (int i = 0; i &lt; args.Length; i++)<br>&nbsp; &nbsp; &nbsp; &nbsp; {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Console.WriteLine($\"Arg {i}: {args[i]}\");<br>&nbsp; &nbsp; &nbsp; &nbsp; }<br>&nbsp; &nbsp; }<br>}</span><br><span style=\"color:blue\"></span><br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is output of following code?<br>public void A()<br>{<br>&nbsp;&nbsp;&nbsp; int x;<br>&nbsp;&nbsp;&nbsp; x=8;<br>&nbsp;&nbsp;&nbsp; x *= 4 + 8 / 2;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "20"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "30"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "48"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "64"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 70401,
+      "Explanation": "<span id=\"explanation70401\" style=\"color:blue\">Evaluates&nbsp; x&nbsp; = x(4+8/2)&nbsp; i.e x = 8(8)&nbsp; is&nbsp; </span><span style=\"color:#0000ff;\">64</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main advantage of using StringBuilder over String for string manipulation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "StringBuilder is faster for small strings."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "StringBuilder provides more methods for string manipulation."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "StringBuilder is immutable."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "StringBuilder is more efficient for repeated modifications of strings."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 70405,
+      "Explanation": "<span id=\"explanation70405\" style=\"color:blue\">&nbsp;StringBuilder is mutable. <strong>The StringBuilder is the optimal way to write code when multiple string manipulation operations take place in code .</strong></span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "System.Char represents a",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "8 bit Unicode character."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "16 bit Unicode character."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "32 bit Unicode character."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "64 bit Unicode character."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 70472,
+      "Explanation": "<span id=\"explanation70472\" style=\"color:blue\"><strong>System.Char represents a Unicode character in C#.</strong> It is a value type and holds a single 16-bit Unicode character. </span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which among the following is true about System.Byte ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Signed 8-bit integer ( its range is from -128 to +127 )."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Signed 8-bit integer ( its range is from -127 to +128 )."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Unsigned 8-bit integer ( its range is from 1 to 256 )."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Unsigned 8-bit integer ( its range is from 0 to 255 )."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 70477,
+      "Explanation": "<strong><span id=\"explanation70477\" style=\"color:blue\">System.Byte represents an 8-bit unsigned integer. It ranges from 0 to 255.</span></strong>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What is the output of following C# code ?<br>&nbsp;&nbsp;&nbsp;class MainClass<br>&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;static int Main()<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.Console.WriteLine(1 + 2 + \" Strings \" + false + '!');<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Syntax Error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3 Strings False!"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "12 Strings False!"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Strings False"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 70481,
+      "Explanation": "<strong><span id=\"explanation70481\" style=\"color:blue\">3 Strings False!&nbsp; is output.</span></strong>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of following C# code ?<br>&nbsp;&nbsp; using System;<br>&nbsp;&nbsp;&nbsp;class MainClass<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;static void Main( )<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string str = null ;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if( str == \"\" )<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine( \"True\" ) ;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine( \"False\" ) ;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Syntax error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "NullReferenceException"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 70482,
+      "Explanation": "<span id=\"explanation70482\" style=\"color:blue\"><strong>The output of the following C# code will be \"False\"</strong>. This is because the string variable \"str\" is assigned the value of \"null\" and not an empty string. The \"null\" value indicates that the string variable does not reference any object, whereas an empty string is a string with no characters in it. Therefore, the if condition \"str == &apos;&apos;\" evaluates to false and the else block is executed, resulting in \"False\" being printed to the console.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Look at the statement below. What can be the data type of the variable names?<br>foreach (string name in names)<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;strNames+=name;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An one-dimensional array of strings"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ArrayList of strings"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "string."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both a and b are true."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 70483,
+      "Explanation": "<span id=\"explanation70483\" style=\"color:blue\">Both a and b options are correct. names may be a <strong>one dimentional array of strings or ArrayList.</strong></span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Datatype of a variable declared using <strong>var </strong>will be assigned at",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Runtime"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compile time"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CLR time"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Application initialize time"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 70530,
+      "Explanation": "<span id=\"explanation70530\" style=\"color:blue\"><span id=\"explanation70530\">The \u201cvar\u201d keyword is used to declare a var type variable. The var type variable can be used to store a simple .NET data type, a complex type, an anonymous type, or a user-defined type. <strong>Var is an implicitly typed variable because it is assigned at compile-time, based on type defined on the right-hand side.</strong> var must be initialized at the time of declaration.</span></span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>How to declare array in c#.net?</div><div>i. int[] arr = {45,3,4,5,64};</div><div>ii. String[] names=new string[3] {\u201csam\u201d, \u201cjohn\u201d, \u201cmike\u201d};</div><div>iii. double[] nos = new double[3]{345.5, 215, 524.5};</div><div>iv. int[] score = new int[] {76,57,65,72,78};</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "i and ii only"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ii and iii only"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "i and iii only"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<div>all (i, ii, iii, iv)</div>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 70541,
+      "Explanation": "<span id=\"explanation70541\" style=\"color:blue\">You can declare array in C# by following ways:<br>// Declare a single-dimensional array of 5 integers.<br><strong>int[] array1 = new int[5];</strong><br><br>// Declare and set array element values.<br><strong>&nbsp;int[] array2 = new int[] { 1, 3, 5, 7, 9 };<br>&nbsp;int[] array4 = new int[5] { 1, 3, 5, 7, 9 };</strong><br><br>// Alternative syntax.<br><strong>int[] array3 = { 1, 2, 3, 4, 5, 6 };</strong></span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following array declarations will produce a compiler error?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int[] Integers = new int[] {1,2,3,4,5,6,7,8,9,0};"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int[] Integers = new int[42];"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int[] Integers = {1,2,3,4,5,6,7,8,9,0};"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int I = 4; int[] Integers = new int[I] {1,2,3,4};"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 70586,
+      "Explanation": "while declaring a array of variable size , A constant value is expected. hence you can not create array with int I variable.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The___________keyword is new to C# 4.0, and is used to tell the compiler that a variable\u2019s type can change or that it is not known until runtime.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Covariance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "dynamic"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Contravariance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Object"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 77758,
+      "Explanation": "The dynamic keyword is used to declare dynamic types. The dynamic types tell the compiler that the object is defined as dynamic and skip type-checking at compiler time; delay type-checking until runtime. All syntaxes are checked and errors are thrown at runtime.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How many Bytes are stored by \u2018Long\u2019 Datatype in C# .net?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "8"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 81268,
+      "Explanation": "<span id=\"explanation81268\"><span id=\"explanation81268\">The <code>long</code> datatype in C# (also known as <code>System.Int64</code>) stores 8 bytes (64 bits) of data. This allows it to represent integer values in the range from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.</span></span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Correct Declaration of Values to variables \u2018a\u2019 and \u2018b\u2019?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int a = 32, b = 40.6;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int a = 42; b = 40;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int a = 32; int b = 40;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int a = b = 42;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 81269,
+      "Explanation": "Option 1: int a = 32, b = 40.6; is incorrect because 40.6 is a floating-point number and cannot be assigned to an int variable without explicit casting.<br>Option 2: int a = 42; b = 40; is incorrect because b is not declared with a type.<br>Option 3: int a = 32; int b = 40; is correct because it declares both a and b as integers and assigns them valid integer values.<br>Option 4: int a = b = 42; is incorrect because b is used before it is declared. To use this form, b needs to be declared beforehand (e.g., int b; int a = b = 42;).<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Arrange the following datatype in order of increasing magnitude sbyte, short, long, int.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "long &lt; short &lt; int &lt; sbyte"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "sbyte &lt; short &lt; int &lt; long"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Short &lt; sbyte &lt; int &lt; long"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "short &lt; int &lt; sbyte &lt; long"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 81270,
+      "Explanation": "<span id=\"explanation81270\">Here&apos;s the order from smallest to largest:<br>sbyte (8-bit signed integer)<br>Range: -128 to 127<br>Size: 1 byte<br><br>short (16-bit signed integer)<br>Range: -32,768 to 32,767<br>Size: 2 bytes<br><br>int (32-bit signed integer)<br>Range: -2,147,483,648 to 2,147,483,647<br>Size: 4 bytes<br><br>long (64-bit signed integer)<br>Range: -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807<br>Size: 8 bytes</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which datatype should be more preferred for storing a simple number like 35 to improve execution speed<br>of a program?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "sbyte"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "short"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "long"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 81271,
+      "Explanation": "<p><span id=\"explanation81271\">For a simple number like 35, <code>int</code> is typically the best choice. It offers optimal performance and is well-supported by both the compiler and modern CPU architectures. So, the preferred datatype is: </span>int</p>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Conversion function of 'Convert.ToInt32()' and 'Int32.Parse()' is efficient?<br>i) Int32.Parse() is only used for strings and throws argument exception for null string.<br>ii) Convert.Int32() used for data types and returns directly '0' for null string.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ii"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Both i, ii"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "i"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 81272,
+      "Explanation": "<span id=\"explanation81272\">If you are certain that the input will always be a valid non-null string, you can use Int32.Parse().<br>If you need to handle potential null values gracefully or if the input might be of various types, Convert.ToInt32() is the better choice.<br>So, to summarize the points:<br>i) True: Int32.Parse() is only used for strings and throws an ArgumentNullException for null strings.<br>ii) True: Convert.ToInt32() is used for various data types and returns 0 for null strings.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method would you use to append a string to an existing StringBuilder object?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Add()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Insert()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Append()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Concat()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 81273,
+      "Explanation": "Append()  method is use to append a string to an existing StringBuilder object.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Select output for the following set of code.<br>1. static void Main(string[] args)<br>2. {<br>3. int a = 5;<br>4. int b = 10;<br>5. int c;<br>6. Console.WriteLine(c = ++ a + b ++);<br>7. Console.WriteLine(b);<br>8. Console.ReadLine();<br>9. }<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "11<br>10<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "16<br> 10<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "16<br> 11<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "15<br> 11<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 81274,
+      "Explanation": "Console.WriteLine(c = ++a + b++);<br>++a increments a before its value is used. So, a becomes 6.<br>b++ uses the current value of b (which is 10) and then increments b after its value is used. So, b will be incremented to 11 after the expression.<br>The expression ++a + b++ is evaluated as 6 + 10 = 16.<br><br>c is assigned the value 16.<br>Console.WriteLine(c = 16); prints 16.<br><br>Console.WriteLine(b);<br>b was incremented to 11 in the previous step.<br>Console.WriteLine(b); prints 11.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following C# code?<br><br>&nbsp;static void Main(string[] args)<br>&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp; String obj = \"hello\";<br>&nbsp;&nbsp;&nbsp;&nbsp; String obj1 = \"world\";&nbsp; &nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp; String obj2 = obj;<br>&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine (obj.Equals(obj2) + \"&nbsp; \" + obj2.CompareTo(obj) );<br>&nbsp;&nbsp;&nbsp;&nbsp; Console.ReadLine();<br>&nbsp;}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "True 0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "False 1"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 80252,
+      "Explanation": "CompareTo() tells you which, and if, one is greater/less than the other, while Equals() simply tells you if they are equivalent values.<br>If you want to know is \"are they the same values\", you can use Equals(). Equals method return True or false . If you want to know how they compare, use CompareTo(). CompareTo method returns int value. It returns 0 if both values are equal.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following C# code?<br>static void Main(string[] args)<br>&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp; char A = 'K';<br>&nbsp;&nbsp;&nbsp;&nbsp; char B = Convert.ToChar(76);<br>&nbsp;&nbsp;&nbsp;&nbsp; A++;<br>&nbsp;&nbsp;&nbsp;&nbsp; B++;<br>&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine(A+ \"&nbsp; \" +B);<br>&nbsp;&nbsp;&nbsp;&nbsp; Console.ReadLine();<br>&nbsp;}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "M L"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "U L"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "L M"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A B"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 80325,
+      "Explanation": "\u201c++\u201d increments the value of character by 1. A and B are given values K and 76, when we use increment operator their values increments by 1, A and B becomes L and M.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Select the correct statement among the given statements?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "One class could implement only one interface"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Properties could be declared inside an interface"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Interfaces cannot be inherited"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 81731,
+      "Explanation": "One class could implement multiple interface. Interfaces can be Inherited hence the correct statement is Properties could be declared inside an interface .",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the correct way of implementing an interface IAddition by class maths?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "class maths : IAddition {}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "class maths implements IAddition"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "class maths imports IAddition {}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 81732,
+      "Explanation": "class maths : IAddition {}<br>This is the syntax used in C# to indicate that the class maths implements the interface IAddition. The other options provided are not valid in C#.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you convert a StringBuilder object to a String?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ToStringBuilder()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "GetString()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ToString()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Convert()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 81708,
+      "Explanation": "ToString() is used to  convert a StringBuilder object to a String.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the Console.WriteLine method return?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The number of characters written."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A boolean indicating success."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The method does not return a value."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A string with the written text.<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 81762,
+      "Explanation": "The method does not return a value.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is used to replace multiple if statement in code?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "select \u2013 case<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "switch \u2013 case<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both 1 and 2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 81770,
+      "Explanation": "To replace multiple <code>if</code> statements in code, especially when dealing with a series of conditional checks or when branching logic becomes complex, you can often use a <code>switch</code> statement in C#. <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the o/p ?<br>class Test<br>{<br>&nbsp;static void Main(string[] args)<br>&nbsp;{<div style=\"margin-left: 40px;\">int a; a = 1;<br>if(a)</div><div style=\"margin-left: 80px;\">&nbsp;System.Console.WriteLine(\"I can use c# wrongly\");</div><div style=\"margin-left: 40px;\">else</div><div style=\"margin-left: 80px;\">&nbsp;System.Console.WriteLine(\"I can take chances\");</div>}<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "I can use c# wrongly"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "I can take chances"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Runtime Error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compile Time Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 81772,
+      "Explanation": "The code&nbsp; will not compile, because the condition in the if statement is a boolean expression and the value of a is an integer. In C#, a non-zero integer value is considered true in a boolean context, but the compiler will not allow you to use an integer value directly in an if statement like this.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "using System;<br>&nbsp;class Program<br>&nbsp;{<br>&nbsp;static void Main(string[] args)<br>&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EnterLogData(\"Error\", \"Programmer\", DateTime.Now);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.ReadLine();<br>&nbsp;}<br>&nbsp;<br>static void EnterLogData(string message,string owner ,&nbsp; DateTime timeStamp )<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(\"{0}\", message);<br>&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(\"{0}\", owner);<br>&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(\"{0}\", timeStamp);<br>}<br>}<br>Hint: Consider DateTime.Now as 01/06/2023 18:29:30<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Error<br>Programmer<br>01/06/2023 18:29:30<br><br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Error, Programmer, 02/06/2015"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "None"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Programmer, Error, 01/06/2023 18:29:30"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 81787,
+      "Explanation": "<p>EnterLogData Method (EnterLogData(string message, string owner, DateTime timeStamp)):</p><ul><li>This method takes three parameters: message, owner, and timeStamp.</li><li>It prints each parameter using Console.WriteLine():<ul><li>Console.WriteLine(\"{0}\", message); prints the message (\"Error\").</li><li>Console.WriteLine(\"{0}\", owner); prints the owner (\"Programmer\").</li><li>Console.WriteLine(\"{0}\", timeStamp); prints the timeStamp (which is the current date and time).</li></ul></li></ul>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following data types is NOT a part of C#'s integral data types?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "long"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "char"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "string"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91079,
+      "Explanation": "The &apos;string&apos; type represents a sequence of characters and is not considered an integral type in C#.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C#, which keyword is used to define a method that does not return a value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "null"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "empty"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91080,
+      "Explanation": "The &apos;void&apos; keyword is used to specify that a method does not return any value.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the correct way to declare an array in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int[] arr = new int[5];"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int arr[5];"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "new int arr[5];"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int(5) arr;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91081,
+      "Explanation": "Arrays in C# are declared using the &apos;new&apos; keyword, specifying the type and size in square brackets.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword in C# is used to inherit a class from another class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "inherit"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "base"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "extends"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": ":"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91082,
+      "Explanation": "In C#, the colon (:) symbol is used to indicate inheritance from a base class.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What kind of loop is 'foreach' primarily used for in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Counting iterations"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Iterating over collections"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Conditional looping"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Infinite loops"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91083,
+      "Explanation": "The &apos;foreach&apos; loop in C# is used to iterate over items in a collection or an array.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default value of a boolean variable in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "true"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "false"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91084,
+      "Explanation": "In C#, the default value of a boolean variable is &apos;false&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is used to prevent the inheritance of a class in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "private"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "protected"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "sealed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "internal"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91085,
+      "Explanation": "The &apos;sealed&apos; keyword in C# is used to prevent other classes from inheriting from it.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C#, which of the following operators is used to access a member of a namespace or type?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "::"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "->"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "=>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91086,
+      "Explanation": "The dot operator (.) in C# is used to access members of a namespace or type.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following collections is NOT an interface in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IList"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "IDictionary"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ICollection"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ArrayList"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91087,
+      "Explanation": "&apos;ArrayList&apos; is a concrete class, not an interface, in the System.Collections namespace.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following C# features provides a convenient syntax for accessing properties and fields within objects?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Generic"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Lambda expressions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Auto-implemented properties"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Extension methods"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91088,
+      "Explanation": "Auto-implemented properties in C# provide a shorthand syntax for defining properties without having to define a backing field. ",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword in C# is used to define an abstract class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "virtual"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "interface"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "abstract"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "base"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91089,
+      "Explanation": "The &apos;abstract&apos; keyword is used to define an abstract class in C#, which cannot be instantiated directly.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the 'using' statement in C# help manage?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Namespace imports"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Memory allocation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Type casting"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Resource disposal"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91090,
+      "Explanation": "The &apos;using&apos; statement in C# is used to ensure the correct use and disposal of resources like file streams.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default access modifier for class members in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "protected"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "internal"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "private"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91091,
+      "Explanation": "The default access modifier for class members in C# is &apos;private&apos;.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a value type in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "decimal"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "bool"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "string"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91092,
+      "Explanation": "&apos;string&apos; is a reference type in C#, while &apos;int&apos;, &apos;decimal&apos;, and &apos;bool&apos; are value types.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C#, which data type should be used for decimal values with high precision?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "float"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "double"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "decimal"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "long"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91093,
+      "Explanation": "The &apos;decimal&apos; data type in C# is used for high-precision decimal numbers, such as monetary amounts.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method would you call to start a thread in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Begin()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Run()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Init()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Start()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91094,
+      "Explanation": "The &apos;Start()&apos; method is used to begin execution of a thread in C#.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the 'readonly' modifier do to a field in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Makes it constant during compilation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Allows modifications only inside constructors"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Prevents any modifications"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Shares it between all instances"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91095,
+      "Explanation": "A &apos;readonly&apos; field can be assigned a value only during its declaration or in a constructor in C#.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How would you describe polymorphism in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Binding data and functions together"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Ability of different types to be treated as the same type"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Creating user-defined data types"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Hiding internal implementation details"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91096,
+      "Explanation": "Polymorphism allows objects of different types to be treated as objects of a common base type.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement about static constructors in C# is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They can have parameters."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They are called automatically before any static members are accessed."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They must be explicitly invoked."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They are only used with derived classes."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91097,
+      "Explanation": "Static constructors are automatically called before any static members are accessed or any instance of a class is created.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following describes a 'delegate' in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A type-safe callback method pointer"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A type of exception handling mechanism"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A global variable accessible to all classes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A way to inherit class behavior"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91098,
+      "Explanation": "A &apos;delegate&apos; in C# is a type-safe object that can hold a reference to a method.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C#, what is boxing?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Converting a value type to a reference type"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "New instance of a class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Encapsulation of data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Creating a multidimensional array"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91099,
+      "Explanation": "Boxing is the process of converting a value type to a reference type by wrapping it in an object.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which C# feature allows for iteration over custom collections?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "LINQ"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "IEnumerator interface"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Collection interface"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "IEnumerable interface"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91100,
+      "Explanation": "The &apos;IEnumerable&apos; interface allows an object to be iterated over, typically using a &apos;foreach&apos; loop.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is NOT an access modifier in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "internal"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "public"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "extern"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "protected"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91101,
+      "Explanation": "&apos;extern&apos; is not an access modifier; it is used to declare a method that is implemented externally.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C#, what does the 'params' keyword allow?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Define a fixed-size parameter array"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Pass arbitrary number of arguments"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use of a parameter globally"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Access a parameter privately"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91102,
+      "Explanation": "The &apos;params&apos; keyword allows a method to accept a variable number of arguments as an array.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which loop is executed least number of times if the condition is false in the first iteration in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "for"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "foreach"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "while"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "do-while"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91103,
+      "Explanation": "The &apos;do-while&apos; loop executes at least once, even if the condition is false on the first iteration, unlike other loops.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of encapsulation in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Encapsulation provides runtime type identification"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It restricts direct access to some of an object's components"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It openly shares class properties and fields"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It speeds up code execution"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91104,
+      "Explanation": "Encapsulation involves restricting access to certain components of an object to enforce a controlled interaction.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C#, what is the result of attempting to divide an integer by zero?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Throws a 'DivideByZeroException'"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Returns zero"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Undefined behavior"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Program compiles successfully but crashes at run time"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91105,
+      "Explanation": "In C#, attempting to divide an integer by zero results in a &apos;DivideByZeroException&apos;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword in C# is used to declare a constant?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "readonly"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "immutable"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "const"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91106,
+      "Explanation": "The &apos;const&apos; keyword is used to declare a constant value that cannot be modified.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does 'LINQ' stand for in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Language-Integrated Query"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Local Integrated Queries"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Library for Integrated Query"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Language Information Query"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91107,
+      "Explanation": "&apos;LINQ&apos; stands for Language-Integrated Query, which is a feature in C# that allows querying in a consistent manner across various data sources.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the 'is' operator in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To execute a task asynchronously"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To check if two objects refer to the same instance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To check compatibility of an object with a given type"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To cast a type"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2365,
+      "QuestionTypeId": 0,
+      "QuestionId": 91108,
+      "Explanation": "The &apos;is&apos; operator is used to check if an object is compatible with a given type, returning true or false.",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

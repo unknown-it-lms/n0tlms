@@ -1,0 +1,1746 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is suppoerted by Spring ORM?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Hibernate"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "JPA"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both of above."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 82212,
+      "Explanation": "<span id=\"explanation82212\"><span id=\"explanation82212\">Spring supports hibernate(for advanced features) as well as JPA(portable and standardized). Toplink is not actively supported in spring new versions.</span></span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What methods does Hibernate Template offer for retrieving entities by ID?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "get(Class&lt;?&gt; entityClass, Object id) and load(Class&lt;?&gt; entityClass, Object id)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "findById(Class&lt;?&gt; entityClass, Object id) and find(Class&lt;?&gt; entityClass, Object id)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "getById(Class&lt;?&gt; entityClass, Object id) and fetch(Class&lt;?&gt; entityClass, Object id)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "There's no dedicated method for ID-based retrieval in Hibernate Template."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 88826,
+      "Explanation": "<span id=\"explanation88826\"><span id=\"explanation88826\">get(Class&lt;?&gt; entityClass, Object id) and load(Class&lt;?&gt; entityClass, Object id) are common methods for ID-based retrieval.</span></span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What are the benefits of using lazy loading in a JPA (Java Persistence API) entity relationship?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It improves performance by fetching related entities only when needed."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It simplifies the development process by automatically loading all related entities."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It reduces memory consumption by keeping related entities in separate sessions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It enforces data integrity by ensuring all related entities are always loaded"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 88818,
+      "Explanation": "<span id=\"explanation88818\">Lazy loading improves performance by fetching related entities only when accessed through getter methods, reducing unnecessary database calls.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What are some potential drawbacks of using eager loading in JPA?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It improves performance by pre-fetching all related entities, reducing database calls."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It simplifies development but can lead to performance issues with large result sets."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It's more secure as all related data is readily available."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It requires manual configuration for each relationship."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 88819,
+      "Explanation": "<span id=\"explanation88819\">Eager loading can lead to performance issues, especially with large result sets, as all related entities are fetched even if not needed.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the benefit of using Spring JDBC's JdbcTemplate class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It eliminates the need for manual JDBC connection management."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It automatically translates SQL statements to platform-specific dialects."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It provides functionalities for complex object mapping tasks."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It enforces strict type safety for database interactions."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 88820,
+      "Explanation": "<span id=\"explanation88820\">JdbcTemplate simplifies JDBC by handling connection management, reducing boilerplate code.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What annotation is used in JPA entities to define the table name it maps to?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@Entity"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@Table"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@Persistence"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@Repository"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 88821,
+      "Explanation": "<span id=\"explanation88821\">The @Table annotation specifies the table name an entity maps to in the database.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main difference between Spring JDBC and Spring ORM?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Spring JDBC provides a higher-level abstraction for database access compared to Spring ORM."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Spring ORM offers a lower-level, more granular approach to database interaction compared to Spring JDBC."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Spring JDBC is for relational databases, while Spring ORM is for NoSQL databases."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Spring JDBC is deprecated; Spring ORM is the preferred approach."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 88822,
+      "Explanation": "Spring ORM (Object Relational Mapping) provides higher-level abstraction using frameworks like: Hibernate<br>It works with entities / objects instead of writing SQL. It Automatically handles SQL generation, Object\u2013table mapping<br><br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Spring supports web controller testing by providing Servlet API:-",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "MockHttpServletRequest"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "MockHttpServletResponse"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "MockHttpSession"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 85557,
+      "Explanation": "<span id=\"explanation85557\">Spring supports web controller testing by providing a set of mock objects for the Servlet API (including MockHttpServletRequest, MockHttpServletResponse, and MockHttpSession).</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "_______________ needs to be carried out that tests the integration between our controller code and the components spring provides for HTTP support.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Unit test"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Integration test"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "System test"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Any tests from above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 85558,
+      "Explanation": "<span id=\"explanation85558\"></span><span>Integration tests aim to verify how different modules or components within an application work together. In this case, you&apos;d be testing how your controllers interact with Spring MVC components like DispatcherServlet, HandlerMapping, and ViewResolver.</span><br><span></span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "We can send HTTP requests to the system under test without writing duplicate code by using a ______________ class.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "MockMvcTest"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "MvcTester"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "MockMvcRequestBuilder"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MvcRequestBuilder"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 85559,
+      "Explanation": "MockMvcRequestBuilders class provides various methods for constructing these simulated requests.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Spring module is commonly used for integrating with ORM frameworks like Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Spring AOP"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Spring ORM"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Spring Boot"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Spring Data JPA"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 91405,
+      "Explanation": "Spring ORM provides support for using Object Relational Mapping frameworks like Hibernate.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the role of the DispatcherServlet in a Spring MVC application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To handle database transactions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To act as the controller of the application"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To initialize the Spring context"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To dispatch requests to the appropriate handler"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 91452,
+      "Explanation": "The DispatcherServlet is the front controller in Spring MVC that dispatches requests to the appropriate handler components, such as controllers.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following annotations is used to map a HTTP GET request in a Spring MVC controller?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@PostMapping"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@DeleteMapping"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@GetMapping"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@RequestMapping"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 91453,
+      "Explanation": "@GetMapping is a composed annotation that acts as a shortcut for @RequestMapping(method = RequestMethod.GET).",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How would you retrieve a JDBC DataSource from an application context in Spring MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use @Autowired annotation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use ApplicationContext.getBean()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use JdbcTemplate directly"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use ContextDataSource.getConnection()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 91454,
+      "Explanation": "To retrieve a JDBC DataSource bean from the application context, you can use the getBean() method of the ApplicationContext.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the @Repository annotation in Spring?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To define data models in the application"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To indicate that a class provides CRUD operations"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To handle exceptions in database operations"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To provide transaction management"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 91455,
+      "Explanation": "The @Repository annotation is used to indicate that a class is a repository, providing CRUD operations typically involving database interactions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which ORM framework is commonly used with Spring MVC for database interaction?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "JPA"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hibernate"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "EclipseLink"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "TopLink"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 91456,
+      "Explanation": "Hibernate is a popular ORM framework that integrates well with Spring MVC for efficient database interactions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the function of JdbcTemplate in Spring MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To manage database connections"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To simplify JDBC interactions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To load database drivers"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To handle database transactions"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 91457,
+      "Explanation": "JdbcTemplate is a Spring utility that simplifies the use of JDBC by handling boilerplate code and exception handling.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which annotation is used to ensure that a Spring MVC form model is validated?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@Valid"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@Validated"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@Data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@Validate"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 91459,
+      "Explanation": "@Validated is the Spring-specific annotation used to ensure a model object is validated during form submissions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a correct way to define a bean in a Spring application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using XML configuration"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using Java-based configuration with @Bean"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using @Component with component scanning"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using command-line interface"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 91460,
+      "Explanation": "Beans in Spring can be defined using XML, Java-based configurations, and component scanning, but not directly via a command-line interface.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Spring MVC with JDBC, what is the main purpose of the JdbcTemplate class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To manage the MVC lifecycle"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To simplify handling of ResultSet"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To map HTTP requests"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To perform JDBC operations without verbose exception handling"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101872,
+      "Explanation": "<span id=\"explanation101872\" style=\"color:blue\">JdbcTemplate is a central class in the JDBC core package. It simplifies the use of JDBC and helps avoid common errors. It handles creating and closing database resources, executes SQL queries, updates, calls stored procedures, and catches JDBC exceptions.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following annotations is typically used to inject JdbcTemplate into a Spring MVC controller?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@Autowired"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@Inject"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@Resource"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@Qualifier"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101873,
+      "Explanation": "@Autowired is the Spring Framework&#39;s way to automatically inject dependencies into a bean, like JdbcTemplate into a Spring MVC controller.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you configure a DataSource in a Spring XML configuration file for use with Spring's JdbcTemplate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using &lt;jdbc:template&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using &lt;bean&gt; with class 'org.springframework.jdbc.datasource.DriverManagerDataSource'"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using &lt;datasource&gt; element"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using &lt;mvc:datasource&gt;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101874,
+      "Explanation": "<span id=\"explanation101874\" style=\"color:blue\">A DataSource can be configured in Spring using a &lt;bean&gt; tag in an XML configuration file. The &apos;org.springframework.jdbc.datasource.DriverManagerDataSource&apos; class is commonly used for this purpose in simple scenarios.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary advantage of using Spring&#39;s JdbcTemplate over traditional JDBC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It eliminates the need for a database"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It enhances security"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It handles resource management and exceptions automatically"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It increases the speed of database queries"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101875,
+      "Explanation": "Spring&#39;s JdbcTemplate simplifies database code by handling resource management and exception handling automatically, which reduces boilerplate code.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method of JdbcTemplate would you use to execute a query that returns a single object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "queryForObject"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "query"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "execute"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "update"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101876,
+      "Explanation": "The queryForObject method of JdbcTemplate is used to execute a query that expects to return a single object. It takes a SQL query, an array of arguments, and a RowMapper.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a Spring MVC application, how can you handle exceptions thrown by methods using JdbcTemplate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using a try-catch block around each JdbcTemplate method"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By implementing a custom error page"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using @ExceptionHandler annotation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By using JdbcTemplateExceptionHandler interface"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101877,
+      "Explanation": "In Spring MVC, you can handle exceptions by using the @ExceptionHandler annotation on methods that deal with specific exception types. This approach can be applied to exceptions thrown by JdbcTemplate methods.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the function of RowMapper in Spring's JdbcTemplate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To handle HTTP responses"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To map column names to database schemas"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To map SQL rows to Java objects"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To execute stored procedures"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101878,
+      "Explanation": "<span id=\"explanation101878\" style=\"color:blue\">RowMapper in Spring&apos;s JdbcTemplate interface is used to map each row of a ResultSet to a Java object, typically by implementing the mapRow method for custom mapping logic.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary role of JdbcTemplate in Spring framework?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To manage transaction isolation levels"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To simplify database access"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To perform XML parsing"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To handle REST API requests"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101879,
+      "Explanation": "JdbcTemplate is a central class in the JDBC core package that simplifies the use of JDBC and helps in performing complex database operations easily without writing cumbersome boilerplate code.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in JdbcTemplate would you use to execute a custom SQL query and map the results to a list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "execute"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "queryForObject"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "query"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "batchUpdate"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101880,
+      "Explanation": "The &#39;query&#39; method is used to execute a provided SQL query and map each row of the ResultSet using a RowMapper.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does JdbcTemplate handle SQLExceptions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It throws them directly."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It converts them into DataAccessExceptions."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It logs them and continues processing."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It ignores them completely."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101881,
+      "Explanation": "JdbcTemplate converts SQLException to a more generic DataAccessException, which is a RuntimeException, so that applications can handle errors in a consistent way.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a feature provided by JdbcTemplate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Connection pooling"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Automatic closing of ResultSet"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Automatic exception translation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Simplified transaction management"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101882,
+      "Explanation": "JdbcTemplate itself does not provide connection pooling; it relies on the DataSource configuration to handle connection pooling.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "For executing a batch update using JdbcTemplate, which method would you use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "update"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "batchUpdate"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "executeBatch"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "updateBatch"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101883,
+      "Explanation": "The &#39;batchUpdate&#39; method is specifically designed in JdbcTemplate to execute multiple update operations in a single batch.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the typical usage pattern of JdbcTemplate for querying a single row?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Call execute() with a SQL query string"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use queryForObject() with SQL and a RowMapper"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use queryForMap() with a SQL string"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use queryForList() with a SQL string"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101884,
+      "Explanation": "queryForObject() is used for querying a single row, mapping the result with a provided RowMapper.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using JdbcTemplate, which of the following interfaces is commonly implemented to map rows of a ResultSet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RowMapper"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ResultSetHandler"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "RowCallbackHandler"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "RowTransformer"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101885,
+      "Explanation": "RowMapper is an interface in Spring&#39;s JDBC extension that maps each row of the ResultSet to a result object.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following annotations is used in Spring MVC to map HTTP requests to handler methods?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@RequestMapping"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@Entity"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@Component"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@Service"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101886,
+      "Explanation": "@RequestMapping is used in Spring MVC to map web requests to specific handler classes or methods.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Spring ORM, which interface do you implement to handle custom behaviors before executing a query?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SessionFactory"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Interceptor"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Executor"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "QueryBuilder"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101887,
+      "Explanation": "The Interceptor interface in Spring ORM can be implemented to perform custom actions before executing a query or performing any other operation on an entity.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the @Transactional annotation in Spring ORM signify?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Every method in the class performs read-only operations"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "All methods in the class should be executed asynchronously"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Methods within a transaction boundary will be executed within a database transaction"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All the operations inside the annotated class will be logged automatically"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101888,
+      "Explanation": "@Transactional indicates that a method or class should execute within a database transaction context, ensuring consistency and rollback capabilities.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which ORM framework integrates seamlessly with Spring to manage relational data in applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Apache Kafka"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hibernate"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "RabbitMQ"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Apache Spark"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101889,
+      "Explanation": "Hibernate is a widely used ORM framework that integrates seamlessly with Spring to manage and map Java objects to relational database tables.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of HibernateTemplate in a Spring application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To manage transactions more effectively."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To simplify data access by providing a simplified and streamlined API for Hibernate."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To enhance security in database handling."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To increase the speed of Hibernate sessions."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101890,
+      "Explanation": "<span id=\"explanation101890\" style=\"color:blue\">HibernateTemplate is used in Spring applications to provide a simplified and streamlined API for accessing data through Hibernate.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in HibernateTemplate is used for saving an entity to the database?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "create()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "save()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "persist()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "store()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101891,
+      "Explanation": "The save() method in HibernateTemplate is used to save or persist an entity to the database.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does HibernateTemplate handle exceptions thrown by Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It simply logs the exceptions with no further action."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It converts them to runtime exceptions."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It ignores them and allows the program to continue."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It supports checked exceptions and requires all of them to be handled explicitly."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101892,
+      "Explanation": "HibernateTemplate converts Hibernate exceptions to unchecked exceptions, based on Spring&#39;s data access exception hierarchy.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a benefit of using HibernateTemplate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Managed session handling."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Automatic transaction management."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Streamlined exception handling."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Increase in data retrieval speed."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101893,
+      "Explanation": "While HibernateTemplate provides simplified session handling and exception management, it does not inherently increase the speed of data retrieval.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method would you use with HibernateTemplate to fetch a list of entities?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "loadAll()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "fetchList()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "retrieveAll()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "getList()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101894,
+      "Explanation": "The loadAll() method in HibernateTemplate can be used to fetch a list of entities of a specific type from the database.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of object is typically passed to the execute method of a HibernateTemplate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A string representing an HQL query."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A HibernateCallback interface to define custom operations."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A SessionFactory object."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A TransactionManager object."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101895,
+      "Explanation": "A HibernateCallback object is passed to the execute method to define custom database operations in a reusable manner.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What mechanism does HibernateTemplate use to customize its behavior for different operations?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Aspect-Oriented Programming."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hibernate Interceptors."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Lambda expressions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "HibernateCallback interface."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101896,
+      "Explanation": "HibernateTemplate uses the HibernateCallback interface to allow the customization of its behaviour for different database operations.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What benefit does Spring&#39;s transaction management provide to developers?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It requires extensive XML configuration for each transaction."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It forces developers to use Java&#39;s native transaction management classes exclusively."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It simplifies transaction management and works seamlessly across different transaction APIs."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It restricts transactions to local JDBC connections only."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101814,
+      "Explanation": "Spring&#39;s transaction management abstracts complexities and allows developers to manage transactions consistently, whether they use JDBC, JPA, or other transaction APIs.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Spring module is primarily used for transaction management in Spring applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Spring AOP"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Spring DAO"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Spring ORM"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Spring TX"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101822,
+      "Explanation": "The Spring TX module (Spring Transaction) provides comprehensive transaction support across various transaction management APIs such as JDBC, JPA, Hibernate, and others.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following Spring modules is responsible for providing integration with JDBC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Spring IOC"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Spring WEB"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Spring JDBC"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Spring ORM"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 101823,
+      "Explanation": "The Spring JDBC module helps in simplifying the use of JDBC by reducing the boilerplate code required, and it provides an abstract layer to access the relational databases.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary role of the DispatcherServlet in a Spring MVC application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Managing database connections"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Handling HTTP requests and routing them to appropriate controllers"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Rendering views from model data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Interfacing with external RESTful services"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 102100,
+      "Explanation": "The DispatcherServlet is the core component in Spring MVC, responsible for intercepting incoming HTTP requests and dispatching them to the appropriate controllers for processing.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which annotation is used to map web requests to specific handler methods in Spring MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@Controller"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@Service"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@RequestMapping"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@Autowired"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 102101,
+      "Explanation": "@RequestMapping is used to map web requests to specific handler methods in Spring MVC controllers.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the advantage of using @RestController over @Controller in Spring MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@RestController automatically includes transaction management"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@RestController simplifies exception handling"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@RestController combines @Controller and @ResponseBody, simplifying the development of RESTful services"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@RestController provides built-in security features"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 102102,
+      "Explanation": "@RestController is a convenience annotation that combines @Controller and @ResponseBody, streamlining the creation of RESTful services by automatically serializing return objects to JSON.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Spring MVC, which object holds model attributes and can be accessed by the view layer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "HttpSession"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Model"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "HttpServletRequest"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "WebApplicationContext"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 102103,
+      "Explanation": "The Model object in Spring MVC holds model attributes that can be accessed by the view layer to render the content.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which component in Spring MVC is responsible for converting a model object to the view format (e.g., HTML, JSON)?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ModelAndView"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ViewResolver"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Controller"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ResourceBundle"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 102104,
+      "Explanation": "The ViewResolver in Spring MVC is responsible for resolving the logical view names returned by a controller into actual view objects.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How are exceptions handled in a centralized manner in Spring MVC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using exception translation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using @ExceptionHandler methods in controllers"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Globally using @ControllerAdvice"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By configuring error pages in web.xml"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 102105,
+      "Explanation": "@ControllerAdvice is a Spring annotation that provides global exception handling for the entire application, applying exception handling logic across multiple controllers.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What role does the @Valid annotation play in Spring MVC applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It automatically logs all incoming requests"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It validates method parameters and model attributes against defined constraints"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It provides caching for method results"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It encrypts sensitive data in model objects"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 102106,
+      "Explanation": "The @Valid annotation in Spring MVC is used to validate method parameters and model attributes against the constraints defined by JSR-303/JSR-380 (Bean Validation).",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the benefit of using Spring ORM over plain Hibernate?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Eliminates the need for database configuration"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Simplifies transaction management"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Removes need for SQL completely"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Allows only one-to-one mapping"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 102749,
+      "Explanation": "Spring manages Hibernate transactions declaratively using @Transactional.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Spring ORM, what does @Transactional primarily manage?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Object creation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Database transactions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Session creation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": " Connection pooling"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 102750,
+      "Explanation": "@Transactional ensures that a method executes within a database transaction.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the role of LocalSessionFactoryBean in Spring ORM?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To configure Hibernate session factory in Spring"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To create JDBC connections"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To map HTTP requests"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To execute SQL queries directly"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 102751,
+      "Explanation": "LocalSessionFactoryBean is used to configure Hibernate\u2019s SessionFactory as a Spring bean.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which component in Spring ORM acts as a bridge between Spring and Hibernate?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "HibernateTemplate"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "EntityManagerFactory"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "XmlBeanFactory"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DataSource"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4877,
+      "QuestionTypeId": 0,
+      "QuestionId": 102752,
+      "Explanation": "HibernateTemplate simplifies Hibernate data access and integrates Hibernate with Spring (older approach, now mostly replaced by JPA).",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

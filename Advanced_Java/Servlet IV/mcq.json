@@ -1,0 +1,2136 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Which method is used to obtain the current session associated with a request in a servlet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "request.getSession()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "request.createSession()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "session.getCurrentSession()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "session.create()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 102075,
+      "Explanation": "The method request.getSession() is used to retrieve the current session associated with a request, or create one if it doesn&#39;t exist.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In servlets, what is the default time interval set for a session to remain active?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5 minutes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "15 minutes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "30 minutes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "60 minutes"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 102076,
+      "Explanation": "By default, a session in servlets is set to timeout after 30 minutes of inactivity.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods will remove a session attribute in a servlet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "session.removeAttribute(&#39;key&#39;)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "session.deleteAttribute(&#39;key&#39;)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "session.clearAttribute(&#39;key&#39;)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "session.discardAttribute(&#39;key&#39;)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 102077,
+      "Explanation": "The method session.removeAttribute(&#39;key&#39;) is used to remove an attribute from the session.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you disable the creation of session in a servlet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "session.disable()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "request.getSession(false)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "session.invalidate()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "request.disableSession()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 102078,
+      "Explanation": "By using request.getSession(false), you can prevent the creation of a new session if one doesn&#39;t already exist.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which object can be used to store session-specific data in a servlet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SessionData object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "HttpSession object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ServletRequest object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ServerContext object"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 102079,
+      "Explanation": "The HttpSession object is used to store session-specific data in a servlet.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To change the session timeout period explicitly, which method should be used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "session.setMaxInactiveInterval(int interval)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "session.setInactiveInterval(int interval)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "session.setTimeout(int interval)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "session.setExpiration(int interval)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 102080,
+      "Explanation": "session.setMaxInactiveInterval(int interval) is used to set the time interval in seconds after which a session is considered inactive and will be invalidated.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which method of the HttpSession can you find the unique identifier for the session?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "getCreationTime()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "getId()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "getSessionId()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "getUniqueId()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 102081,
+      "Explanation": "getId() returns a string containing the unique identifier assigned to the session.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the following code do?<br>session.setMaxInactiveInterval(600);<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Sets session timeout to 600 milliseconds"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Sets session timeout to 600 minutes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Sets session timeout to 600 seconds"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Sets session timeout to 600 hours"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 102497,
+      "Explanation": "The value is in seconds, so this sets the session to expire after 600 seconds i.e.10 minutes of inactivity.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "String username = (String) session.getAttribute(\"username\");<br>What happens if \"username\" doesn\u2019t exist in the session.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An exception is thrown"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A new attribute is created"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Returns null"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Returns an empty string"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 102498,
+      "Explanation": "<span id=\"explanation102498\" style=\"color:blue\">getAttribute() returns the value if it exists.&nbsp;If not found, it returns null, not an exception.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is TRUE about HTTP sessions?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Sessions are stored on the client side"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Sessions are stateless by design C."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Sessions can store complex Java objects"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Sessions expire only when the browser is closed"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 102499,
+      "Explanation": "Sessions can store complex Java objects. Unlike cookies, sessions are stored on the server and can hold any Java object, making them ideal for storing user-specific data securely.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Sessions are created and maintained by web server per ________",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "servlet"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "request"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "application"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "client(user)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 102500,
+      "Explanation": "In Java Servlets and most web technologies, a session is a server-side mechanism used to maintain state across multiple HTTP requests from the same client.&nbsp;<br>Each client (browser) gets a unique session ID, typically stored in a cookie or passed via URL rewriting.<br>The server uses this ID to associate requests with the correct session object.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If cookies are disabled in the browser, what mechanism is used by the server to maintain session tracking?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Hidden Form Fields"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "URL Rewriting"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Request Headers<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Local Storage"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 102501,
+      "Explanation": "If cookies are disabled, servers can use URL rewriting to append the session ID to every URL.<br>Example: http://example.com/home;jsessionid=123ABC",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method invalidates an HTTP session to free up resources in a servlet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "terminate()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "finalize()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "invalidate()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "close()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 102067,
+      "Explanation": "The invalidate() method is called on a session object to destroy it and release its resources, effectively logging the user out.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to retrieve a value from a user&#39;s session in a servlet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "getParameter()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "getAttribute()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "getSessionValue()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "getSessionAttribute()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 102062,
+      "Explanation": "The getAttribute() method is used to retrieve objects bound to the session in a servlet.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following method is used to retrieve an attribute from a session in Servlet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "getSessionAttribute()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "setAttribute()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "getAttribute()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "getSession()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 101636,
+      "Explanation": "The getAttribute() method is used to retrieve objects stored as attributes in the session object within a Servlet.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When dealing with sessions in Servlets, which method is used to invalidate a session explicitly?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "invalidateSession()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "destroy()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "invalidate()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "endSession()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 101637,
+      "Explanation": "The invalidate() method is part of the HttpSession interface and is used to invalidate the session object, effectively ending the session.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default session timeout interval in Servlet if not configured otherwise?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5 minutes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "15 minutes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "30 minutes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "60 minutes"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 101638,
+      "Explanation": "The default session timeout interval is 30 minutes. It can be configured in the web.xml file or programmatically set using the setMaxInactiveInterval() method.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to ensure that the current session is associated with the request in Servlet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "request.getSession(true)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "request.ensureSession()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "request.fetchSession()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "request.retrieveSession()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 101639,
+      "Explanation": "The request.getSession(true) method checks for an existing session and returns it. If no session exists, it creates a new one.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a Servlet, how can session tracking be achieved?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only through cookies"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only through URL rewriting"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only through SSL"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Through cookies, URL rewriting, SSL, or hidden form fields"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 101640,
+      "Explanation": "Session tracking in servlets can be achieved using cookies, URL rewriting, hidden form fields, and SSL, each with its method of maintaining session continuity.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of a Servlet Filter in a Java web application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To generate dynamic web content"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To handle HTTP requests directly"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To perform filtering tasks on request and response objects"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To store user session data"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 101641,
+      "Explanation": "Servlet Filters are mainly used to perform tasks such as logging, authentication, and input validation by manipulating request and response objects before they reach a servlet.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in a Servlet Filter is used to perform filtering tasks?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "doGet"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "doFilter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "init"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "destroy"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 101642,
+      "Explanation": "The doFilter method is called by the web container each time a request/response pair is passed through the filter chain due to a client request for a resource.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can multiple Servlet Filters be applied to a single resource in Java EE?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By defining them in the web.xml with a filter-mapping element"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By placing them as attributes in the HttpServletRequest"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By including filter annotations in the source code"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By using a FilterChain object within the servlet"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 101643,
+      "Explanation": "Multiple filters can be applied by defining them in the web.xml file using individual filter and filter-mapping elements, specifying the order of execution.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which life-cycle method of a Servlet Filter is called only once by the container during the filter&#39;s lifetime?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "doFilter()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "destroy()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "init()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "service()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 101644,
+      "Explanation": "The init() method is called by the web container to indicate to a filter that it is being placed into service. This method is called only once.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of tasks can Servlet Filters NOT perform?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Request logging"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Response compression"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Direct database interaction"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Authentication checks"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 101645,
+      "Explanation": "Servlet Filters do not directly interact with databases. They are designed to manipulate request and response objects for tasks such as logging, compression, or security checks.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the role of a filter in Java servlets?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To modify the request and response objects before or after processing by a servlet."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To directly handle client requests and generate responses."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To store user session data across multiple requests."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To manage database connections efficiently."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 101646,
+      "Explanation": "Filters in Java servlets are used to inspect and possibly modify request and response objects before or after processing by a servlet. They are not directly responsible for handling requests or generating responses.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method must be overridden to implement a servlet filter?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "doFilter()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "init()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "destroy()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "service()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 101647,
+      "Explanation": "The doFilter() method must be overridden to implement the filtering tasks in a servlet filter. The init() and destroy() methods are available for initialization and cleanup but are not used for filtering logic.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you specify the order of execution for multiple filters in a servlet application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By the declarative sequence in web.xml configuration file."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using annotations in the servlet code."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By defining the order in a properties file."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By specifying it in the servlet source code comments."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 101648,
+      "Explanation": "The order of execution for multiple filters is specified in the web.xml configuration file where filters are declared in a sequence.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which configuration file do you typically map a servlet filter in a web application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "web.xml"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "application.properties"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "config.xml"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "filter-config.xml"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 101649,
+      "Explanation": "Servlet filters are typically mapped in the web.xml configuration file, where you can specify filter mappings to define which requests are intercepted by the filter.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When creating a filter using annotations, which annotation is used in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@WebFilter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@FilterConfig"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@RequestFilter"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@WebServlet"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 101650,
+      "Explanation": "The @WebFilter annotation in Java is used to declare a filter without needing to configure it in the web.xml file. It can be applied directly to a filter class.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of using the HttpSession object in servlets?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To handle HTTP requests"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To store user-specific information across multiple requests"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To manage database connections"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To parse client requests"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 101622,
+      "Explanation": "The HttpSession object is used to store user-specific data across multiple HTTP requests, allowing the servlet to maintain state information about a user&#39;s session.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to set an attribute in a session in servlets?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "session.addAttribute()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "session.setAttribute()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "session.putAttribute()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "session.updateAttribute()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 101623,
+      "Explanation": "The setAttribute() method of the HttpSession object is used to store an attribute in the user&#39;s session.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you invalidate a user session in a servlet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "session.remove()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "session.invalidate()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "session.end()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "session.discard()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 101624,
+      "Explanation": "The session.invalidate() method is used to invalidate a session, effectively clearing any data stored in the session.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of a Servlet filter in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To manage HTTP sessions."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To intercept and manipulate request and response objects."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To handle database connections."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To deploy servlets on different servers."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 91205,
+      "Explanation": "Servlet filters are primarily used to intercept and assess the request and response objects in a web application, allowing for preprocessing and postprocessing of requests.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in the Filter interface is used to perform initialization tasks?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "init()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "doFilter()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "configure()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "setup()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 91206,
+      "Explanation": "The init() method is used for initializing filter objects, setting up resources, or configuration necessary before the filter is put into service.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which file do you configure a filter in a Java web application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "web.xml"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "filters.conf"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "app.config"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "context.xml"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 91207,
+      "Explanation": "Filters are typically configured in the web.xml descriptor file where you map filters to specific URL patterns or servlet names.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct order of Filter interface methods during the lifecycle of a filter?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "configure(), doFilter(), destroy()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "init(), doFilter(), destroy()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "doFilter(), init(), destroy()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "init(), destroy(), doFilter()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 91208,
+      "Explanation": "The lifecycle of a filter involves the init() method being called first for initialization, followed by doFilter() for request and response processing, and finally destroy() when the filter is taken out of service.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a valid use case for a Servlet filter?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Authentication and authorization."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Logging request information."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compiling Java classes."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Data compression."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 91209,
+      "Explanation": "Servlet filters are designed to manipulate request and response data; compiling Java classes is not related to their function.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What kind of design pattern do Servlet filters resemble?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Builder pattern"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Decorator pattern"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Adapter pattern"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Visitor pattern"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 91210,
+      "Explanation": "Servlet filters are akin to the Decorator pattern because they allow for incremental processing of requests and responses, enabling pre- and post-processing of client-server interaction.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in the Filter interface is responsible for request processing?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "service()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "doFilter()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "intercept()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "handleRequest()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 91211,
+      "Explanation": "The doFilter() method is crucial for the actual processing of request and response objects in a filter during each request.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you ensure a filter processes requests only for specific URL patterns?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Specify filter URL patterns in the server.xml file."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Specify filters to be executed within the servlet mapping."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Configure the URL patterns for the filter in web.xml."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Define URL patterns in the application's main method."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 91212,
+      "Explanation": "<span id=\"explanation91212\" style=\"color:blue\">In web.xml, you specify the URL patterns that a filter should apply to, thereby controlling which requests it will process.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If multiple filters are configured in a web application, how does the container decide their order of execution?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Based on the filter class names alphabetically."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "According to the order they are defined in web.xml."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "In a random manner chosen by the server."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Based on the priority attribute of filters."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 91213,
+      "Explanation": "The order of filter execution is determined by their declaration order in the web.xml file; filters declared earlier are executed first.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if a filter does not invoke the doFilter method on the FilterChain object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The request is passed to the next filter or servlet without issue."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The filter chain is broken, and the request cannot proceed further."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The server automatically invokes the next filter in the chain."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An exception is thrown by the server."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 91214,
+      "Explanation": "If a filter doesn&apos;t call the doFilter method on the FilterChain object, the processing stops, and the request doesn&apos;t proceed to the next filter or endpoint.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Java interface is used to create a session between an HTTP client and an HTTP server in servlets?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "HttpSession"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SessionFactory"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ServletContext"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SessionEvent"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 91196,
+      "Explanation": "The HttpSession interface provides a way to identify a user across more than one page request or visit to a website and store information about that user.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What method is used to retrieve a session associated with the user in a servlet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "request.getSession()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "response.getSession()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "request.retrieveSession()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "session.getCurrent()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 91197,
+      "Explanation": "The HttpServletRequest&apos;s method getSession() is used to retrieve or create a session for the user.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following can be used to ensure a session ID is passed in the URL if cookies are disabled?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "URL fetching"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "URL Rewriting"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "URL Includes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "URL Session"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 91198,
+      "Explanation": "URL Rewriting involves appending information to the URL of the page requests and can be used to store session IDs when cookies are disabled.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to invalidate a session in a servlet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "session.close()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "session.terminate()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "session.invalidate()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "session.end()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 91199,
+      "Explanation": "The session.invalidate() method is used to invalidate the session object and remove all the created session objects from memory.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In servlets, where should you call setMaxInactiveInterval() to define session timeout?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "On the request object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "On the session object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "On the response object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "On the servlet context"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 91200,
+      "Explanation": "The setMaxInactiveInterval() method is called on the session object to specify the interval after which the session should be considered inactive and can be invalidated.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a potential drawback of using URL rewriting for session tracking in servlets?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "URL can be manually edited by the user"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Requires server configuration changes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Slower performance than cookies"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Cannot be used with HTTPS"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 91201,
+      "Explanation": "A major drawback of URL rewriting is that the session identifier can be edited manually within the URL by users, creating potential security implications.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which out of the following is used for deleting attibute associated with session?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "deleteAttribute(\"attr_name\")"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "unsetAttribute(\"attr_name\")"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "removeAttribute(\"attr_name\")"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "attributes can not be deleted from session once added"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 83635,
+      "Explanation": "<span id=\"explanation83635\">removeAttribute(attr_name)&nbsp; method is useful for deleting the attibute added in the session object</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about filters?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Servlet Filters are Java classes that can be used to intercept requests from a client before they access a resource at back end."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Servlet Filters are Java classes that can be used to manipulate responses from server before they are sent back to the client."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both of the above."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 82279,
+      "Explanation": "<span id=\"explanation82279\">Servlet Filters are Java classes that can be used to intercept requests from a client before they access a resource at back end and to manipulate responses from server before they are sent back to the client. </span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which of the following code is used to get an attribute in a HTTP Session object in servlets?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "session.getAttribute(String name)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "session.alterAttribute(String name)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "session.updateAttribute(String name)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<div>session.setAttribute(String name)</div>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 82249,
+      "Explanation": "<span id=\"explanation82249\">public Object getAttribute(String name):<br>Returns the String object specified in the parameter, from the session object. If no object is found for the specified attribute, then the getAttribute() method returns null.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to store data in a session?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "session.add()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "session.store()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "session.setAttribute()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "session.put()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 82257,
+      "Explanation": "<code data-start=\"51\" data-end=\"75\">session.setAttribute()</code> is used to store data in the session as a key\u2013value pair, so the data can be accessed across multiple requests.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods will be invoked when the session is invalidated?&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "sessionDestroyed of HttpSessionListener"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "attributeRemoved of HttpSessionAttributeListener"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "valueUnbound of HttpSessionBindingListener"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "sessionWillPassivate of HttpSessionActivationListener"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 82242,
+      "Explanation": "<span id=\"explanation82242\">sessionDestroyed of HttpSessionListener </span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The users of your web application do not accept cookies. Which of the following statements are correct?&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "You cannot maintain client state"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "URLs displayed by static HTML pages may not work properly."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "You cannot use URL rewriting"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "You cannot set session timeout explicitly."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 82243,
+      "Explanation": "<span id=\"explanation82243\"><span id=\"explanation82243\">&nbsp;</span></span><span><span>the URLs from static HTML pages (or external links) might not work properly if the target page depends on a pre-existing session maintained via URL rewriting. </span></span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is required for using the URL rewriting mechanism of implementing session support?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "HttpServletRequest.encodeURL()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "HttpServletRequest.rewriteURL()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "HttpServletResponse.encodeURL()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "HttpServletResponse.rewriteURL()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 82244,
+      "Explanation": "<span id=\"explanation82244\">HttpServletResponse.encodeURL() </span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is stored at client side?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "URL rewriting"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hidden form fields"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SSL sessions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Cookies"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 82261,
+      "Explanation": "<span id=\"explanation82261\">Cookies are stored at client side. Hence, it is advantageous in some cases where clients disable cookies.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which of the following is true about session?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "All users connect to the same session"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "All users have same session variable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Default timeout value for session variable is 20 minutes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "New session cannot be created for a new user"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 82262,
+      "Explanation": "<span id=\"explanation82262\">&nbsp;Default timeout value for session variable is 20 minutes. This can be changed as per requirement.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;SessionIDs are stored in cookies.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "depends on browser"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "depends on server"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 82263,
+      "Explanation": "<div><span id=\"explanation82263\">SessionIDs are stored in cookies, URLs and hidden form fields.</span><br></div>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What is the maximum size of cookie?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "4 KB"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4 MB"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "4 bytes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "40 KB"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 82264,
+      "Explanation": "<span id=\"explanation82264\">The 4K is the maximum size for the entire cookie, including name, value, expiry date etc. To support most browsers, it is suggested to keep the name under 4000 bytes, and the overall cookie size under 4093 bytes.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a client will not accept a cookie, which session management mechanism could the web container employ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Either cookies or URL rewriting"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Cookies and URL rewriting must be used together"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Cookies but not URL rewriting"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "URL rewriting but not cookies"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 82185,
+      "Explanation": "<span id=\"explanation82185\">If the client has disabled cookies in the browser then session management using cookie won&apos;t work. In that case <b>URL Rewriting</b> can be used as a backup. <b>URL rewriting</b> will always work.<br>When the User clicks on the URL having parameters, the request goes to the <b>Web Container</b> with extra bit of information at the end of URL. The <b>Web Container</b> will fetch the extra part of the requested URL and use it for session management. The <code>getParameter()</code> method is used to get the parameter value at the server side.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following code delete a cookie in servlet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "response.deleteCookie(cookie);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "cookie.setMaxAge(0);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "request.deleteCookie(cookie);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 82189,
+      "Explanation": "<div class=\"container\"><div class=\"row\"><div class=\"col-md-6\" id=\"contentdiv\"><p><span id=\"explanation82189\">setMaxAge() method sets the age of the cookie that how long it will be live. In other word we can say when a cookie will be expired.<br><strong>Syntax :</strong><br>void setMaxAge(int expiry)<br>In the parameter of this method an integer value is passed. This value denotes the expiration time of a cookie in seconds.</span><br></p></div></div></div>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following code is used to set the session timeout in servlets?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "request.getSession().setMaxInactiveInterval(interval)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "response.setMaxInactiveInterval(interval)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "request.setMaxInactiveInterval(interval)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "session.setMaxAge(0)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 82190,
+      "Explanation": "<span id=\"explanation82190\">Setting the session max inactive interval using session setMaxInactiveInterval() will set it for the whole session and not for a single page. Suppose you use:<br>HttpSession session = request.getSession(true);<br>session.setMaxInactiveInterval(100);<br>Then your session will timeout after 100 seconds till you validate the session again.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What\u2019s the difference between servlets and applets?<div>1. Servlets executes on Servers, where as Applets executes on Browser</div><div>2. Servlets have no GUI, where as an Applets has GUI</div><div>3. Servlets creates static web pages, where as Applets creates dynamic web pages</div><div>4. Servlets can handle only a single request, where as Applet can handle multiple requests</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1, 2, 3 are correct"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1, 2 are correct"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1, 3 are correct"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1, 2, 3, 4 are correct"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 82131,
+      "Explanation": "<span id=\"explanation82131\">A java program that can be embedded in a HTML page and viewed using a Java enabled browser is called an applet, while a Java program that is used to improve/ extend the functionalities of a server is called a servlet. Actually, a servlet can be seen as an applet running on the server. An applet is downloaded in to the client\u2019s machine and run on the client\u2019s browser, whereas a servlet runs on the server and transfers the results back to the client when it is done. When using applets, the entire code of the applet has to be transferred to the client. Therefore it consumes more network bandwidth than servlets, which transfers only the results to the client</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Indicates a result set that cannot be updated programmatically in concurrency ?&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CONCUR_UPDATABLE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "CONCUR_READ_ONLY"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "All of the above"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 82152,
+      "Explanation": "<span id=\"explanation82152\">CONCUR_READ_ONLY resultset can not be updated programmatically</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Interface involved for JDBC connection is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DriverManager"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Connection"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "OracleDriver"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ODBCDriver"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 82143,
+      "Explanation": "<span id=\"explanation82143\">The JDBC <em>Connection</em> class, <code>java.sql.Connection</code>, represents a database connection to a relational database. Before you can read or write data from and to a database via JDBC, you need to open a connection to the database.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In order to get existing session only we need to use _______.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "getSession()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "getSession(true)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "getExistingSession()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "getSession(false)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 81095,
+      "Explanation": "<span id=\"explanation81095\">In order to get existing session only we need to use getSession(false) . </span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "HttpSession session = request.getSession()",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Can create a new session only"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "can retrieve an existing session only"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Can either create a new or retrieve an existing session , depends upon session availability."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 81045,
+      "Explanation": "<span id=\"explanation81045\">creates a new or retrieve an existing session , depends upon session availability.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What is the packaging unit preferred for deploying web application in j2ee?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "zip"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ear"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "war"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "rar"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 81031,
+      "Explanation": "<span id=\"explanation81031\">To package and deploy web application in j2ee use war file.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Technique for maintaining anonymous user transaction on web",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "cookies"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "local storage"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "session"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 81029,
+      "Explanation": "<span id=\"explanation81029\"><span id=\"explanation81029\">To maintain anonymous user transaction on web techniques are cookie,URL Rewriting and Session.</span></span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In order to retrieve existing session only [not to create new] which function should be used ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "getSession(true)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "getSession()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "getSession(false)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 81023,
+      "Explanation": "<span id=\"explanation81023\">getSession(false) used to retrive existing session only.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is an approach for state maintenance in Web applications ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Hidden Form Field"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "URL Rewriting"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Cookies"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "HTTP Session"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2149,
+      "QuestionTypeId": 0,
+      "QuestionId": 67793,
+      "Explanation": "E",
+      "Answer": "E",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

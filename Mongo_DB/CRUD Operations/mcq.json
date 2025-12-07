@@ -1,0 +1,1386 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "MongoDB does not ___________ modifications made before the timeout interval expired.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "commit"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "rollback"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "save"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 76298,
+      "Explanation": "Answer to be reviewed<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;MongoDB uses a ____________ lock that allows concurrent read access to a database but exclusive write access to a single write operation.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "readers"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "readers-writer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "writer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 76366,
+      "Explanation": "&nbsp;Before version 2.2, this lock was implemented on a per-mongod basis. Since version 2.2, the lock has been implemented at the database level.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Command to check existence of collection is _______",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&gt;show collection"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&gt;show collections"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&gt;show collect"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 76402,
+      "Explanation": "The mongo shell will return the list of the collections in the current database.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When you query a collection, MongoDB returns a ________ object that contains the results of the query.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "row"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "cursor"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "colums"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 76407,
+      "Explanation": "The mongo shell then iterates over the cursor to display the results.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which of the following method is used to query documents in collections ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "find()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "move()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "sort()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "skip().limit()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 76228,
+      "Explanation": "find() method id used.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Select the correct query to display user age in the descending order.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "db.users.find().sort({age:1})"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "db.users.find().limit()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "db.users.find()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "db.users.find().sort({age:-1})"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 74118,
+      "Explanation": "-1 for descending and 1 for ascending order.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which MongoDB command is used to insert a single document into a collection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "db.collection.insert()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "db.collection.insertOne()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "db.collection.add()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "db.collection.insertDocument()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94333,
+      "Explanation": "The insertOne() method is used to insert a single document into a MongoDB collection.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you update a field of one document in a MongoDB collection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "db.collection.modifyOne()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "db.collection.alterOne()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "db.collection.updateOne()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "db.collection.changeOne()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94334,
+      "Explanation": "The updateOne() method modifies the first document that matches the selection criteria.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What method is used to remove all documents that match a condition?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "db.collection.delete()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "db.collection.removeAll()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "db.collection.deleteMany()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "db.collection.clear()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94335,
+      "Explanation": "The deleteMany() method is used to delete all documents that match a specified filter.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following commands returns a cursor for querying the documents in a collection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "db.collection.query()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "db.collection.find()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "db.collection.search()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "db.collection.lookup()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94336,
+      "Explanation": "The find() method returns a cursor to the documents that match the query criteria.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator is used in MongoDB to ensure a field is not equal to a certain value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "$ne"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "$neq"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "$noeq"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "$notequal"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94337,
+      "Explanation": "The $ne operator is used to select the documents where the value of the field is not equal to the specified value.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you replace a document in a collection with a new one entirely?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "db.collection.replace()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "db.collection.update()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "db.collection.replaceOne()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "db.collection.modifyDocument()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94338,
+      "Explanation": "The replaceOne() method is used to replace a document entirely with a new document in a collection.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you specify that a query should only return documents that have a field with a particular type?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using $type"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using $class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using $format"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By using $kind"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94339,
+      "Explanation": "The $type query operator is used to match documents with fields of a specific BSON type.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command is used to insert multiple documents in a MongoDB collection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "db.collection.insertMany()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "db.collection.batchInsert()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "db.collection.insertMultiple()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "db.collection.addMany()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94340,
+      "Explanation": "The insertMany() method is used to insert multiple documents into a MongoDB collection at once.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the update() operation return by default?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An array of updated documents"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The number of documents affected"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A status message"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An error code"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94341,
+      "Explanation": "By default, update() operations return information about the number of documents affected.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you ensure a MongoDB insert operation fails if a duplicate key error occurs?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use { ignoreDuplicate: false }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Set { errorOnDupKey: true }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Configure { writeConcern: 'strict' }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Utilize { ordered: false }"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94342,
+      "Explanation": "Inserting documents and ensuring failure on duplicate keys requires handling write conflicts, typically leading to duplicate key errors.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the db.collection.findOne() method return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An array of documents"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The first matching document"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The last document by insertion"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A cursor to the document"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94343,
+      "Explanation": "The findOne() method returns the first document that matches the query criteria or null if no document matches.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command is used to update multiple documents in a MongoDB collection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "db.collection.updateMany()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "db.collection.modifyMany()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "db.collection.updateAll()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "db.collection.changeMany()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94344,
+      "Explanation": "The updateMany() method is used to modify all documents that meet the filter criteria.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following MongoDB commands will delete only one document that matches a query?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "db.collection.deleteOne()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "db.collection.removeOne()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "db.collection.eraseOne()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "db.collection.dropOne()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94345,
+      "Explanation": "The deleteOne() method deletes the first document that matches the filter from the collection.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator is used in MongoDB to select documents where a field exists and its value is equal to a specified value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "$exists"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "$eq"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "$match"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "$contains"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94346,
+      "Explanation": "The $eq operator is used to match documents where a field equals a specified value.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you increment a numeric field's value in a MongoDB document?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using $inc"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using $add"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using $increment"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By using $increase"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94347,
+      "Explanation": "The $inc operator increments the value of a field by a specified amount.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a MongoDB query, what does the $or operator do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Combines query clauses with a logical OR"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Excludes specific fields from documents"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Matches fields with null values only"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Performs a join-based query operation"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94348,
+      "Explanation": "The $or operator is used to combine multiple query clauses with a logical OR operation.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of write concern in MongoDB acknowledges the write operation only when it is written to the journal?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Write Concern: 1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Write Concern: majority"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Write Concern: journal"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Write Concern: 0"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94349,
+      "Explanation": "Specifying writeConcern as &apos;journal&apos; ensures that the write operation is acknowledged only when it is written to the journal.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operation reads the most recently committed available document version?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Snapshot read"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Majority read"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Available read"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Read committed"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94350,
+      "Explanation": "Majority read returns results that reflect the most recent majority-committed version of a document.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using the find() method, how do you exclude the '_id' field from the result set in MongoDB?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Specify { _id: false }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Set { _id: 0 } in projection"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Write { exclude: '_id' }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use { remove: '_id' } in options"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94351,
+      "Explanation": "The find() method supports a projection parameter, where { _id: 0 } is used to exclude the &apos;_id&apos; field.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator in MongoDB is used to check if a field contains an array with a specific number of elements?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "$size"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "$len"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "$count"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "$elements"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94352,
+      "Explanation": "The $size operator checks if the field contains an array with the specified number of elements.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you modify an array in a document by adding a new element while ensuring no duplicates?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using $push"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using $addToSet"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using $append"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using $unshift"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94353,
+      "Explanation": "The $addToSet operator adds an element to an array only if it doesn&apos;t already exist in the array.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method allows you to find and update a document in one operation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "db.collection.findAndUpdate()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "db.collection.updateAndReturn()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "db.collection.findAndModify()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "db.collection.getAndUpdate()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94354,
+      "Explanation": "The findAndModify() method finds a document and modifies it, returning either the original or the new document.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In MongoDB, which query operator can be used for pattern matching with regular expressions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "$regex"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "$pattern"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "$match"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "$like"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94355,
+      "Explanation": "The $regex operator is used for pattern matching using regular expressions in MongoDB queries.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct way to rename a field in a collection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using $changeField"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using $rename"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using $alter"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using $updateField"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94356,
+      "Explanation": "The $rename operator is used to change the name of a field in a MongoDB collection document.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command is used to view the entire content of a collection in MongoDB?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "db.collection.expose()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "db.collection.list()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "db.collection.readAll()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "db.collection.find()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94357,
+      "Explanation": "Using the find() method without parameters retrieves all documents from a collection in MongoDB.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following queries would you use to find all documents in a collection where the 'age' field is greater than 25?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "{ age: { $lt: 25 } }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{ age: { $gt: 25 } }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "{ age: { $eq: 25 } }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "{ age: { $ne: 25 } }"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94358,
+      "Explanation": "The $gt operator is used to select documents where the age field is greater than 25.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In MongoDB, what does the $in operator do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Matches a field to any value in an array."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Returns documents without specified fields."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Sorts documents in descending order."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Counts the number of documents."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94359,
+      "Explanation": "The $in operator selects documents where the field value is in the specified array.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you limit the number of documents returned by a query in MongoDB?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using the $skip operator"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using the $project operator"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using the limit() method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using the $gte operator"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94360,
+      "Explanation": "The limit() method is used to restrict the number of documents returned by a query.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command is used to delete a single document from a collection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "deleteOne()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "removeAll()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "drop()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "excludeOne()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94361,
+      "Explanation": "The deleteOne() method deletes the first document that matches the filter.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the $or operator in a MongoDB query?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To filter documents containing at least one of the specified fields."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To perform a logical AND operation."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To perform a logical OR operation on multiple conditions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To negate a condition in the query."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94362,
+      "Explanation": "The $or operator is used to execute an OR operation over two or more conditions in a query.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which MongoDB operator is used to check if a field value is less than or equal to a certain value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "$gte"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "$eq"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "$lte"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "$ne"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94363,
+      "Explanation": "The $lte operator is used to match field values that are less than or equal to the specified value.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method would you use to find a single document in a collection based on a filter?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "findOne()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "findAll()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "findSingle()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "get()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94364,
+      "Explanation": "The findOne() method returns the first document that matches the specified filter criteria.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you update multiple documents that match a certain filter in MongoDB?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "update()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "updateOne()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "updateMany()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "updateAll()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94365,
+      "Explanation": "The updateMany() method is used to update all documents that match a specified filter.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator would you use to check if a field does not exist in a document?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "$exists: false"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "$type: null"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "$ne: true"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "$not: null"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94366,
+      "Explanation": "The $exists operator with a value of false checks that a field does not exist in the document.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the $set operator do in an update statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Removes fields from documents."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Adds new documents to a collection."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Replaces the entire document with a new document."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Modifies the value of a field or fields in a document."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94367,
+      "Explanation": "The $set operator is used to update the value of a field or add a new field if it does not exist.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If you want to query documents that do not contain a specific field, which operator combination would you use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "{$exists: false}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{$in: []}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "{$nin: []}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "{$type: 'undefined'}"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94368,
+      "Explanation": "Using {$exists: false} in a query will return documents where the specified field is absent.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which MongoDB feature allows you to perform full-text searches against string content stored in your documents?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "textSearch"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "createIndex"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "fullText"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "textIndex"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94369,
+      "Explanation": "A text index enables text search queries on string content by creating an index on text fields.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you retrieve distinct values for a specified field across a single collection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "distinct()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "values()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "aggregate()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "group()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94370,
+      "Explanation": "The distinct() method retrieves a list of distinct values for the specified field within a collection.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which clause would you use to determine the order of documents returned in the results set?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "filter()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "order()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "sort()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "sequence()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94371,
+      "Explanation": "The sort() method specifies the order in which the query returns matching documents.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When you need to aggregate the data from your collection based on certain fields, which MongoDB feature should you use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "operations()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "aggregate()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "accumulate()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "reduce()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5640,
+      "QuestionTypeId": 0,
+      "QuestionId": 94372,
+      "Explanation": "The aggregate() method is used to perform aggregation operations, processing data records and returning computed results.",
+      "Answer": "B",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

@@ -1,0 +1,2976 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "It is necessary to use hibernate.cfg .xml&nbsp; for configuration in hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "depends on the version"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "--"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 82231,
+      "Explanation": "<span id=\"explanation82231\">hibernate.cfg.xml is a popular option, it&apos;s not strictly necessary. You can choose a properties file or even a combination of both</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Which of the following is not a Session method?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<div>persist()</div>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<div>saveorupdate()</div>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<div>remove()</div>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<div>save()</div>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 82209,
+      "Explanation": "<span id=\"explanation82209\">remove() is not a Session method.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What are responsibilities included for bean factory do?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Instantiating or sourcing application objects"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<div>configuring such objects</div>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<div>Assembling the dependencies between these objects</div>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 82210,
+      "Explanation": "<span id=\"explanation82210\"><span id=\"explanation82210\">&nbsp;Bean factory instantiates, configures and assembles the dependencies between these objects .</span></span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A bean must have id attribute in beans configuration file.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "--"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "--"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 82214,
+      "Explanation": "<span id=\"explanation82214\">Id is not a mandatory attribute in beans configuration file.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which out of the following is not true about Entity class as per JPA requirements ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The Entity class must be annotated with the javax.persistence.Entity annotation."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The Entity class must implement the Serializable interface if it needs to be transferred over the wire or store in http session"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Entities should not extend from either another Entity class or a Non-Entity class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The Entity class, it's methods and persistent variables should not be declared final."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 82949,
+      "Explanation": "<span id=\"explanation82949\">Entity classes may extend from another Entity class or Non-Entity class</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What are the possible values of hibernate.hbm2ddl.auto in hibernate configuration XML file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "validate-update, create, create-drop, update"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "delete, update, create, drop"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "validate, create, create-drop, update"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "create, drop, match, validate"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 82944,
+      "Explanation": "<span id=\"explanation82944\">Possible values are :<br>validate: validate the schema, makes no changes to the database.<br>update: update the schema.<br>create: creates the schema, destroying previous data.<br>create-drop: drop the schema when the SessionFactory is closed explicitly, typically when the application is stopped.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which out of the following is false about SessionFactory in hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "One SessionFactory implementation can be created per database in any application."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The SessionFactory is a heavyweight object; it is usually created during application start up and kept for later use."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SessionFactory is a factory for Session objects."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The SessionFactory is not a thread safe object<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 83666,
+      "Explanation": "<span id=\"explanation83666\">SessionFactory can be created by providing Configuration object, which will contain all DB related property details pulled from either hibernate.cfg.xml file or hibernate.properties file. The SessionFactory is a thread safe object and used by all the threads of an application.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which among the following exactly specifies difference between the save() and persist() method in hibernate session?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "session.save() for a detached object will create a new row in the table whereas session.persist() for a detached object will update the row in the database"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "session.save() returns generated Id after saving and session.persist() returns void"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "session.save() is supported by JPA and session.persist() is not supported by JPA"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 83668,
+      "Explanation": "save and persist differ in following ascpects :<br>1) return type : save returns the identifier whereas persist returns void<br>2) working with existing gobject: save updates if object is already persistent and persist throws exception.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Hibernate, which of the following is used to map Java objects to database tables?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Configuration Object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Session Factory"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Dialect"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ORM (Object-Relational Mapping)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 91265,
+      "Explanation": "Hibernate uses ORM (Object-Relational Mapping) to map Java objects to database tables.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following interfaces in Hibernate is responsible for updating and selecting objects?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Transaction"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Query"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Session"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Criteria"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 91266,
+      "Explanation": "The Session interface is responsible for saving, updating, and retrieving objects in the database.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which annotation is used to indicate that a class is a Hibernate entity?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@Table"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@Entity"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@Id"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@JoinColumn"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 91267,
+      "Explanation": "The @Entity annotation is used to specify that a class is an entity and is mapped to a database table.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which object represents a cached collection of persistent instances in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Transaction"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "PersistentCollection"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Session"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Query"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 91269,
+      "Explanation": "<span id=\"explanation91269\" style=\"color:blue\"></span><span style=\"color:blue\">Session object itself effectively is the first-level cache, holding a collection of persistent instances that it manages.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following best describes a SessionFactory in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A factory to create Transaction objects"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A factory to create Session objects"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A database connection pool manager"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A class to execute SQL queries"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 91271,
+      "Explanation": "SessionFactory in Hibernate is used to create Session objects, encapsulating the configuration details.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Hibernate, which method is used to retrieve an object by its identifier?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "bind()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "get()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "fetch()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "retrieve()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 91272,
+      "Explanation": "<span id=\"explanation91272\" style=\"color:blue\">The get() method is used to fetch the data from the database according to the identifier.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which annotation is used to specify the primary key of an entity in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@Id"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@PrimaryKey"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@Key"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@Primary"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 91273,
+      "Explanation": "The @Id annotation is used in Hibernate to specify the primary key of an entity.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the role of the Configuration class in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To generate SQL script"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To configure and bootstrap Hibernate"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To handle transactions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To log SQL statements"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 91274,
+      "Explanation": "<span id=\"explanation91274\" style=\"color:blue\">The Configuration class is used to configure Hibernate and bootstrap the creation of a SessionFactory.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true regarding lazy loading in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Objects are always loaded eagerly"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Related data is loaded when it's explicitly accessed"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "All data is cached immediately"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Lazy loading cannot be configured"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 91276,
+      "Explanation": "Lazy loading in Hibernate loads related data only when it is explicitly accessed, making it efficient in handling large data sets.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Hibernate entity can be",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "transient"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "detached"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "persistent"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80785,
+      "Explanation": "<span id=\"explanation80785\">Hibernate entity may be transient, detached and persistent.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When transaction completes, all the associated persistent objects still exists in memory but they lose their association with the session on encountering one of the following method",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "session.flush() <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "trasaction.close()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "session.close()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80786,
+      "Explanation": "<span id=\"explanation80786\">session.close() method will close the session means all persistent objects lost their association with session.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In hibernate, If the developer is not certain about the existence of the object.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "load() method should be used"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "get() method should be used"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "retrieve() method should be used"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all the above methods are same with not much difference."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80787,
+      "Explanation": "<span id=\"explanation80787\">get() method will return null if record deoes not exist. When load() method is used, for non-existing ids, it will throw exception.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "One of the following is not an interface from Hibernate core interfaces.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SessionFactory"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Session"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ConnectionFactory"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Transaction"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80829,
+      "Explanation": "<span id=\"explanation80829\">ConnectionFactory&nbsp; is not an interface from Hibernate core interfaces.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Session interface in hibernate does",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "JDBC connection"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "gets Transaction"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "holds cache of persistent objects"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80830,
+      "Explanation": "<span id=\"explanation80830\"><span id=\"explanation80830\">Session interface holds cache of persistent objects</span></span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which collection type in Hibernate has a persistent element index?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;bag&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;list&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;set&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of these"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80831,
+      "Explanation": "<span id=\"explanation80831\"></span><span>None of the listed collection types (List, Set, Bag, Map) have a built-in persistent element index in Hibernate itself.&nbsp;Hibernate doesn&apos;t natively maintain an index or order for elements within these collections when persisting entities. The order in which elements are added to the collection in your code typically doesn&apos;t reflect their order in the database table.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is wrong?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "HQL is case insensitive for class names and properties"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SQL operates on relations, HQL operates on objects."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "HQL is ultimately generated into underlying SQL."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "HQL supports polymorphic queries."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80832,
+      "Explanation": "<span id=\"explanation80832\">HQL is case sensitive for class names and properties. So option A is wrong.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;A join which combines result of both left and right outer join is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Left Right Join"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Right Outer Join"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Full Join"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Left Join"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80833,
+      "Explanation": "<span id=\"explanation80833\">Full Join is a join which combines result of both left and right outer join.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which class is used to create EntityManagerFactory ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Persistence"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "EntityManager"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "EntityTranscation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "EntityFactory"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80834,
+      "Explanation": "<span id=\"explanation80834\">Persistence class is used to create EntityManagerFactory .</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "One of the following is ORM implementation",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "struts"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "JSF"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "hibernate"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "spring"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80835,
+      "Explanation": "<span id=\"explanation80835\">Hibernate is one of the ORM implementation.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "After EntityManager is closed, entity is in a __________ state.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "dead"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "detached"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "managed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "persistent"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80836,
+      "Explanation": "<span id=\"explanation80836\">After EntityManager is closed, entity is in a detached&nbsp; state. </span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the root tag element in the hibernate configuration file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;hibernate-cfg&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;hibernate-conf&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;hibemate-configuration&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;hibemate&gt;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80837,
+      "Explanation": "<span id=\"explanation80837\">&lt;hibemate-configuration&gt;&nbsp; is a root tag element in the hibernate configuration file.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Once the hibernate session is closed, in which state the object remains?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "detached"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "transient"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "pesistent"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "garbage collector"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80838,
+      "Explanation": "<span id=\"explanation80838\">Once the hibernate session is closed,the object remains&nbsp; in detached state .</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What does &lt;generator-class=\u201dnative\u201d/&gt; means?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Generate primary key"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Generate tables based on configuration"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Generate sql statements on configuration"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80840,
+      "Explanation": "<span id=\"explanation80840\">&lt;generator-class=\u201dnative\u201d/&gt; means Generate primary key .</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does hibernate.hbm2ddl.auto.create this means?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Create tables automatically"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Create session object automatically"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Create session factory object automatically"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80841,
+      "Explanation": "<span id=\"explanation80841\">hibernate.hbm2ddl.auto.create this means Create tables automatically based on mapping information.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is correct about Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The CacheMode controls how a particular session interacts with the second-level cache."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The CacheMode doesn\u2019t control session interaction with the second-level cache."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both the above"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80842,
+      "Explanation": "<span id=\"explanation80842\">The CacheMode is a enum which controls how a particular session interacts with the second-level cache which has values like IGNORE, GET, PUT, ALL. </span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When we integrate Hibernate via spring we don\u2018t need to take care of.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SessionFactory"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Session"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both a and b. (since there is something called as \u201cHibernateTemplate\u201d in spring)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80843,
+      "Explanation": "<span id=\"explanation80843\">When we integrate Hibernate via spring we don\u2018t need to take care of session factory and session.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is dirty checking in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "object state changes in order to synchronize the updated state with the database"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Remove the dirty data from data base."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Check the data when insert into data base."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80844,
+      "Explanation": "<span id=\"explanation80844\"></span><span>Dirty checking is a mechanism used to determine if an entity object (representing a database record) has been modified since it was loaded from the database. This information is crucial for persisting changes to the database efficiently.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does session.evict() method do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "remove the object and its collections from the first level cache"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "remove the object and its collections from the second level cache"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "remove the object and its collections from the data base"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80846,
+      "Explanation": "<span id=\"explanation80846\">session.evict() method remove the object and its collections from the first level cache .</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Is Hibernate Session threadsafe?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "yes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "no"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "no relation with thread"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "depends on database"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80848,
+      "Explanation": "<span id=\"explanation80848\">No. Hibernate session is not threadsafe.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which 2nd level cache is better in hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "EHCache"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "GumoCache"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DASCache"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "TestCache"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80849,
+      "Explanation": "<span id=\"explanation80849\">EHCache is better in hibernate.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is correct about session.load()?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "load() will return null if there is no matching database row."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "load() will throw an unrecoverable exception if there is no matching database row."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "load() always hits the database"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80850,
+      "Explanation": "<span id=\"explanation80850\">load() will throw an unrecoverable exception if there is no matching database row. </span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is tag of hibernate.cfg.xml?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Database dialect"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Size of the database"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "All of the above"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80851,
+      "Explanation": "<span id=\"explanation80851\">This is useful to specify the type of the database.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do we get a session object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SessionFactory.get();"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "(session)SessionFactory.getObject();"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SessionFactory.getSession();"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SessionFactory.openSession();"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80852,
+      "Explanation": "<span id=\"explanation80852\">SessionFactory.openSession();&nbsp; method returns session object.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How to enable query cache in hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "hibernate.cache.query_cache with value as true"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "hibernate.cache.use_query_cache with value as true"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "hibernate.cache.query_cache with value as yes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80853,
+      "Explanation": "<span id=\"explanation80853\">To enable query cache in hibernate use hibernate.cache.use_query_cache true .</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What does session.delete() do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "remove from sessionFactory"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "remove data from in memory"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "remove from database."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80854,
+      "Explanation": "<span id=\"explanation80854\">session.delete() method remove data from database. </span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Load child object automatically when parent object is loaded?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "fetch strategy as lazy"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "fetch strategy as eager"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "fetch strategy as true"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "fetch strategy as false"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80856,
+      "Explanation": "Example :&nbsp;<br>@Entity<br>public class Parent {<br>&nbsp; @Id<br>&nbsp; private Long id;<br>&nbsp; @OneToMany(fetch = FetchType.EAGER)<br>&nbsp; private List&lt;Child&gt; children;<br>&nbsp; // Getters and setters<br>}<br><br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In order to create new session which function should be used ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "getSession(true)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "getSession()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "both A and B"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "getSession(false);"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80857,
+      "Explanation": "<span id=\"explanation80857\">To create new session either use getSession(true) or getSession() method.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Hibernate is a framework"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hibernate is an Object-Relational mapping (ORM) library for the java language."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Hibernate provides mapping for object-oriented domain model to a traditional relational database."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80858,
+      "Explanation": "<span id=\"explanation80858\">Hibernate is an Object-Relational mapping (ORM) library for the java language.<br>Hibernate is a framework<br>Hibernate provides mapping for object-oriented domain model to a traditional relational database. </span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "There are core interfaces that are used in just about every hibernate application. Using these<br>interfaces, you can store and retrieve persistent object and control transactions. Select all the interfaces<br>that you see.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Session interface"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Query and Criteria interfaces"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "All of the above"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80859,
+      "Explanation": "<span id=\"explanation80859\">Configuration interface , Query and Criteria interfaces&nbsp; are used in every hibernate application to store or retrive persistent object and control transactions.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not hibernate session method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "save()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "insert()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "persist()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "load()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 80860,
+      "Explanation": "<span id=\"explanation80860\">insert()&nbsp; is not a hibernate session method.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods will return null if the object can\u2019t be found?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "fetch()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "get()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "load()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "query()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 78566,
+      "Explanation": "<span id=\"explanation78566\">session. get()&nbsp; method will return null if the object can\u2019t be found .</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods can not update the object using an identifier in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "update()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "persist()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "saveorupdate ()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "save()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 78571,
+      "Explanation": "<span id=\"explanation78571\">persist() method can not update the object using an identifier in Hibernate </span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the correct file extension for a hibernate mapping file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "filename.hbm.ini"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "filename.hbn.xml"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "filename.hbm.xml"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "filename.xml"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 78572,
+      "Explanation": "<span id=\"explanation78572\">filename.hbm.xml&nbsp; is a correct file extension for a hibernate mapping file.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the full name of ORM?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Operational Risk Management"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Object Relational Mapping"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Object Risk Management"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Object Relational Management"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 78573,
+      "Explanation": "<span id=\"explanation78573\">ORM stands for Object Relational Mapping .</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not a core interface in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Session Interface"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Configuration Interface"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Store Interface"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Transaction Interface"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 78556,
+      "Explanation": "<span id=\"explanation78556\">Store Interface is not a core interface in Hibernate.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the full name of HQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Hibernate Query Language"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hibernate Query List"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Hiber Query Language"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Hibermedia Query List"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 78561,
+      "Explanation": "<span id=\"explanation78561\">HQL stand for Hibernate Query Language .</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods can store an object into the database in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "store()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "load()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "save()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "update()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 78562,
+      "Explanation": "<span id=\"explanation78562\">save() method can store an object into database in hibernate.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following collection types a Hibernate application doesn\u2019t use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Map"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Group"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Array"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "List"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 78563,
+      "Explanation": "<span id=\"explanation78563\">Hibernate Application uses map, array, list and set collection types.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a benefit of the ORM?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Productivity"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Application design"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Code Reuse &amp; Application Maintainability"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 78564,
+      "Explanation": "<span id=\"explanation78564\">Benefits of ORM :<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Productivity<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Application design<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Code Reuse &amp; Application Maintainability </span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following information is not mentioned in hibernate.cfg.xml?&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Mapping files"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "JDBC connection"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SQL variant to generate"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Size of the database"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 82139,
+      "Explanation": "<span id=\"explanation82139\">Database size is never expected to be written in the configuration file</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following retention policy and the element type that defines @override ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SOURCE,METHOD"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "CLASS,METHOD"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CLASS,TYPE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "TYPE,CLASS"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 82142,
+      "Explanation": "<div class=\"container\"><div class=\"snippet-hidden\" id=\"content\"><div itemtype=\"http://schema.org/Question\" itemscope=\"\" itemprop=\"mainEntity\"><div class=\"inner-content clearfix\"><div id=\"mainbar\" role=\"main\" aria-label=\"question and answers\"><div id=\"answers\"><div class=\"answer\" id=\"answer-5506412\" itemtype=\"http://schema.org/Answer\" itemscope=\"\" itemprop=\"suggestedAnswer\" data-answerid=\"5506412\"><div class=\"post-layout\"><div class=\"answercell post-layout--right\"><div class=\"post-text\" itemprop=\"text\"><p><br></p></div></div></div></div></div></div></div></div></div></div>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the disadvantage of Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Support for relational database"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Returns result as object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Support Polymorphic Queries"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 82134,
+      "Explanation": "<div id=\"b_content\"><main aria-label=\"Search Results\"><div class=\"b_sideBleed b_topBleed b_bottomBleed b_ans\"><div class=\"rqnaContainerwithfeedback\" data-fbhlsel=\".rqnaContainerwithfeedback\"><div id=\"df_listaa\"><div class=\"b_vPanel\"><div id=\"relatedQnAListDisplay\" data-priority=\"\"><div class=\"df_topAlAs df_sideColor df_alsoAsk \" data-iid=\"SERP.5445\" data-parentiid=\"SERP.5446\" data-query=\"What are disadvantages of hibernate?\" data-tag=\"RelatedQnA.Item\"><div class=\"b_module_expansion_control b_module_head\"><div class=\"b_expandable_inline_container\" id=\"wire1\" data-rinterval=\"-1\" data-errormessage=\"We can&apos;t find any more info about this page right now\"><div class=\"df_alsocon b_primtxt\" data-bm=\"53\" data-tag=\"RelatedQnA.ItemDetails\"><div class=\"rwrl rwrl_small rwrl_padref\">All mentioned are advantages.</div></div></div></div></div></div></div></div></div></div></main></div>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How many layers are available in Hibernate architecture?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "2"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 82136,
+      "Explanation": "There are 4 layers in the Hibernate architecture i.e. Java Application Layer, Hibernate Framework Layer, Backend API Layer, and the Database Layer",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not a Session method in hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Session.save()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Session.saveorupdate()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Session.persist()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Session.remove()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 82137,
+      "Explanation": "<span id=\"explanation82137\">delete() : Remove a persistent instance from the datastore . The argument may be an instance associated with with the receiving Session or a transient instance with an identifier associated with existing persistent state.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "______ property makes Hibernate generate the appropriate SQL for the chosen database",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "hibernate.dialect"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "hibernate.config"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "hibernate.sql"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 82125,
+      "Explanation": "<span id=\"explanation82125\">The dialect specifies the type of database used in hibernate so that hibernate generate appropriate type of SQL statements. For connecting any hibernate application with the database, it is required to provide the configuration of SQL dialect</span><div class=\"b_caption b_algo\"><p><span id=\"explanation82125\">S<strong>yntax</strong> :&nbsp; &lt;property name=\"dialect\"&gt;org.hibernate.dialect.Oracle9Dialect&lt;/property&gt;</span></p></div>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is/are advantages of Hibernate Framework",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Opensource and Lightweight"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Fast performance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Useful for small applications"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both A &amp; B"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 82147,
+      "Explanation": "A and B are valid advantages.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What ORM stands for?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Object Relation Map"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Object Relational Mapping"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Object Record Mapping"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 82186,
+      "Explanation": "<span id=\"explanation82186\">Object-relational mapping (ORM, O/RM, and O/R mapping tool) in computer science is a programming technique for converting data between incompatible type systems using object-oriented programming languages</span><div id=\"b_content\" data-bm=\"66\"><main aria-label=\"Search Results\"><div class=\"b_sideBleed b_topBleed b_bottomBleed b_ans\"><div class=\"rqnaContainerwithfeedback\" data-fbhlsel=\".rqnaContainerwithfeedback\"><div id=\"df_listaa\"><div class=\"b_vPanel\"><div><div id=\"relatedQnAListDisplay\" data-priority=\"\"><div class=\"df_topAlAs df_sideColor df_alsoAsk  df_ignore\" data-iid=\"SERP.5347\" data-tag=\"RelatedQnA.Item\" data-parentiid=\"SERP.5348\" data-query=\"What is an ORM programming?\"><div class=\"b_module_expansion_control b_module_head\"><div class=\"b_expandable_inline_container\" id=\"wire1\" data-rinterval=\"-1\" data-errormessage=\"We can&apos;t find any more info about this page right now\"><div class=\"df_alsocon b_primtxt\" data-bm=\"67\" data-tag=\"RelatedQnA.ItemDetails\"><div><div class=\"rwrl rwrl_small rwrl_padref\"><br></div></div></div></div></div></div></div></div></div></div></div></div></main></div>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following object is used to create SessionFactory object in hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "StandardServiceRegistryBuilder"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Session"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "HibernateTransaction"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MetaDataConfiguration"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 82194,
+      "Explanation": "StandardServiceRegistryBuilder<span>&nbsp; object is used to create SessionFactory object in hibernate .</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the root node of hbm.xml file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;mapping-info&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;hibernate-mapping&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;hibernate-configuration&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;class&gt;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 82195,
+      "Explanation": "<span id=\"explanation82195\">&lt;hibernate-mapping&gt;&nbsp; is the root node of hbm.xml file.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not an ORM framework?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Toplink"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hibernate"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Castor"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "NoSQL"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 82196,
+      "Explanation": "<span id=\"explanation82196\">NoSQL is not an ORM framework.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not a core component of Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Transaction"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Provider"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Criteria"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Query"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 82203,
+      "Explanation": "<span id=\"explanation82203\">Provider&nbsp; is not a core component of Hibernate.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following tasks are simplified by an Object Relational Mapping tool?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Data creation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Data access"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Data manipulation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All metioned above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 82199,
+      "Explanation": "<span id=\"explanation82199\">Data creation , Data access , Data manipulation&nbsp; are&nbsp; simplifies an Object Relational Mapping tool.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which file is modified for configuration in Hibernate environment?&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "hibernate.cfg.ini"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "hibernate.cf.xml"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "hibernate.cfg"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "hibernate.cfg.xml <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 82116,
+      "Explanation": "<div data-bm=\"57\" id=\"b_content\"><main aria-label=\"Search Results\"><div class=\"b_caption b_algo\">By default, it is placed under src/main/resource folder. hibernate.cfg.xml file contains database related configurations and session related configurations</div></main></div>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a benefit of using Hibernate over JDBC?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SQL injection protection"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Faster execution of queries"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Portability between databases"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Direct access to SQL syntax"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 91278,
+      "Explanation": "Hibernate provides portability between databases, meaning applications can be more easily adapted to different database systems.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Hibernate, which component is responsible for handling interactions with the database?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Session"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Transaction"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Query"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Criteria"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 91279,
+      "Explanation": "The Session component in Hibernate is responsible for interacting with the database.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What feature of Hibernate helps in reducing the amount of boilerplate code needed for data access operations?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "JDBC Wrapper"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Lazy Initialization"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Built-in APIs for entity manipulation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Connection Pooling"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 101723,
+      "Explanation": "Hibernate provides comprehensive APIs for manipulating entities, which abstracts and simplifies the code required for data access operations.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does Hibernate achieve database independence while interacting with different SQL dialects?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using native SQL only"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By abstracting SQL into HQL"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only supporting one type of database"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Database-specific code generation"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 101724,
+      "Explanation": "Hibernate abstracts SQL queries into HQL, allowing it to interact with various SQL dialects without being tied to a specific database.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which feature of Hibernate allows it to automatically update the database when an object is altered in the application code?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "First-level cache"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Configuration"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Automatic dirty checking"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Session management"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 101720,
+      "Explanation": "Automatic dirty checking ensures that Hibernate automatically detects field modifications on objects and updates the database accordingly during a transaction.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the function of the SessionFactory in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is used to manage sessions with the database."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It creates a one-time configuration file."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It manages collections of entities."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It controls the transaction management."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 101729,
+      "Explanation": "SessionFactory is a factory for managing Hibernate sessions to interact with the database and is a heavyweight object usually created once during an application lifecycle.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is one of the main advantages of using Hibernate over JDBC in Java applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Hibernate is faster than JDBC in all scenarios."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hibernate does not require a database connection to operate."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Hibernate can automatically generate SQL queries for database operations."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Hibernate can only handle specific types of databases."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 101714,
+      "Explanation": "Hibernate provides automatic generation of SQL queries for database operations, reducing the need for developers to write and maintain SQL manually, which is a significant advantage over raw JDBC.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does Hibernate aid in handling database schema evolution?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Hibernate does not handle schema evolution, it only manages data."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hibernate provides a Schema Evolution Association mapping tool."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Hibernate offers a built-in migration feature for all schema updates."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Hibernate supports automatic schema generation and updates through mappings."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 101715,
+      "Explanation": "Hibernate supports automatic schema generation and updates through its mapping configurations, which helps in managing changes to the database schema smoothly.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which feature of Hibernate helps in improving performance by minimizing database access?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Hibernate Annotator Tool"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "First-level cache"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Persistent Context Handler"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SQL Inheritance Mapping"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 101716,
+      "Explanation": "Hibernate uses a first-level cache associated with the session object, which stores entities so that they do not need to be re-fetched from the database, thus improving performance.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the context of Hibernate, what does the feature &#39;lazy loading&#39; refer to?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Immediate fetching of data without delay."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Loading associated data only when needed."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The reduction of memory usage by compressing entities."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Static import of classes to improve startup time."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 101717,
+      "Explanation": "Lazy loading refers to the strategy where associated data is fetched only when needed rather than retrieving all associated data up front, which helps in optimizing performance.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does Hibernate facilitate transaction management?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using proprietary transaction calls."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Through integrated transaction management support covering local and XA transactions."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By eliminating the need for transactions completely."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 101718,
+      "Explanation": "Hibernate facilitates transaction management by supporting both local and distributed transactions (XA transactions), leveraging Java Transaction API (JTA) or JDBC transactions as needed.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which attribute in the @Column annotation can be used to set the column name explicitly?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "column"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "value"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "id"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 91282,
+      "Explanation": "The &apos;name&apos; attribute in the @Column annotation is used to explicitly set the name of the column in the database.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does Hibernate handle SQL injection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By escaping special characters"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using prepared statements internally"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Through manual query checks"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Via external protection tools"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 91283,
+      "Explanation": "Hibernate internally uses prepared statements, which helps in preventing SQL injection attacks by treating inputs as data, not code.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not a benefit of using Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Automatic table creation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Built-in connection pool"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Object-level caching"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Support for HQL"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 91284,
+      "Explanation": "Hibernate does not provide a built-in connection pool; it relies on third-party connection pooling libraries or configurations.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about Hibernate?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Hibernate is a database"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hibernate is a Java-based ORM framework"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Hibernate is a web server"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Hibernate is a programming language"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 102522,
+      "Explanation": "Hibernate simplifies database operations by mapping Java classes to database tables using ORM principles.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is one major advantage of using Hibernate over JDBC?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Hibernate is slower than JDBC"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hibernate requires manual transaction management"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Hibernate supports automatic table creation and caching"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Hibernate does not support relational databases"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 102523,
+      "Explanation": "Hibernate provides features like automatic schema generation, caching, and lazy loading, which JDBC lacks.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which component of Hibernate is responsible for managing sessions?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Configuration "
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SessionFactory"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Transaction"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Query"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 102524,
+      "Explanation": "SessionFactory is a heavyweight object that creates Session instances, which are used to interact with the database.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What role does the Configuration object play in Hibernate?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It stores database records"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It manages transactions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It loads Hibernate settings and mappings"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It executes queries"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 102525,
+      "Explanation": "<span style=\"color:#0000ff;\">The Configuration object reads the configuration file (hibernate.cfg.xml) and sets up mappings and properties.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which feature is supported by Hibernate but not by JDBC?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Connection to relational databases"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Object caching"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SQL execution"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ResultSet navigation<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 102526,
+      "Explanation": "<span style=\"color:#0000ff;\">Hibernate supports first-level and second-level caching to improve performance, which JDBC lacks.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In JDBC, which of the following must be manually handled by the developer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Object mapping"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Connection pooling"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Transaction management"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 102527,
+      "Explanation": "<span id=\"explanation102527\" style=\"color:blue\"><span style=\"color:#0000ff;\">JDBC requires manual handling of connections, transactions, and mapping between objects and tables.</span></span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a feature of ORM?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Data abstraction"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Automatic SQL generation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Direct JDBC connection"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Object-table mapping"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 102528,
+      "Explanation": "<span style=\"color:#0000ff;\">ORM abstracts away the direct use of JDBC. You don\u2019t manually open JDBC connections or write SQL queries\u2014ORM tools like Hibernate handle that internally.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is Hibernate primarily used for?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Designing user interfaces"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Creating REST APIs"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Persisting Java objects to a database"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Managing application memory"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 102529,
+      "Explanation": "<span style=\"color:#0000ff;\">Hibernate is an ORM tool for Java that maps Java classes to database tables and helps persist Java objects by handling CRUD operations behind the scenes.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT an advantage of using Hibernate?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Reduces boilerplate code"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Automatic table normalization"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Database independence"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Caching for better performance"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 102530,
+      "Explanation": "<span style=\"color:#0000ff;\">Hibernate doesn&apos;t normalize your database schema. It maps objects to an already designed schema. The other options are true advantages of Hibernate.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which component in Hibernate is responsible for creating database connections?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Configuration"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Dialect"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SessionFactory"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ConnectionProvider"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 102531,
+      "Explanation": "<span style=\"color:#0000ff;\">The ConnectionProvider interface in Hibernate is used internally to manage and provide JDBC connections to the SessionFactory.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following best describes the Hibernate architecture layers?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "UI Layer \u2192 JDBC Layer \u2192 Cache"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Configuration \u2192 SessionFactory \u2192 Session \u2192 Database<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Cache \u2192 Mapping \u2192 HQL \u2192 Java"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Session \u2192 EntityManager \u2192 JDBC"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 102532,
+      "Explanation": "<span style=\"color:#0000ff;\">This is the typical flow in Hibernate:<br>Configuration sets up the environment<br>SessionFactory is created<br>Session is opened to interact with the DB<br>DB operations are performed</span><br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a core interface defined by Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SessionFactory"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "EntityManager"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SessionController"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "PersistenceContext"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 101744,
+      "Explanation": "SessionFactory is a core interface in Hibernate, responsible for creating Session objects.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of the Session interface in Hibernate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To create database connections"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To configure the Hibernate environment"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To handle transactions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To interact with the database for CRUD operations"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 101745,
+      "Explanation": "The Session interface is used to perform create, read, update, and delete (CRUD) operations with the database.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Hibernate component is used to load the configuration file and create the SessionFactory?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Configuration"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SessionBuilder"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "QueryParser"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CriteriaBuilder"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 4818,
+      "QuestionTypeId": 0,
+      "QuestionId": 101747,
+      "Explanation": "The Configuration class is used to configure and bootstrap Hibernate, building the SessionFactory.",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

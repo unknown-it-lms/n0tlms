@@ -1,0 +1,2200 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "In .NET, which of the following statements is TRUE about interfaces?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An interface can contain fields and constructors."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Interfaces in .NET can have method definitions and method implementations."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A class that implements an interface must implement all its members."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Interfaces can only be used in single inheritance scenarios."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 90979,
+      "Explanation": "In .NET, an interface can only contain method signatures, properties, events, or indexers, but not fields or constructors (hence option A is incorrect). Interfaces cannot have method implementations until C# 8.0 where default implementations in interfaces are allowed; however, traditionally, interfaces were not allowed to have any method implementation (making option B incorrect for older versions). When a class implements an interface, it must provide concrete implementations for all its members, thus making option C correct. Interfaces are not tied to inheritance scenarios, and in fact, enable multiple inheritance because a class can implement multiple interfaces, hence option D is incorrect.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C#, which of the following is TRUE about the use of interfaces?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Interfaces can contain fields."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Interfaces cannot be implemented by value types."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A class can implement multiple interfaces."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Interfaces can have constructors."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 90980,
+      "Explanation": "In C#, a class can implement multiple interfaces, allowing it to inherit behaviors from multiple sources. Options A and D are incorrect because interfaces cannot contain fields or constructors; they can only contain method signatures, properties, events, and indexers. Option B is incorrect because value types can implement interfaces in C#.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is true<br>A. when you implement interface and use abstract method you must use public access modifier.<br>B. when you implement interface and use abstract method you may use public access modifier.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "only A is true"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "both are true"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "only b is true"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 81790,
+      "Explanation": "In C#, when you implement an interface, the methods defined in the interface must be implemented with the public access modifier in the implementing class. This is because interface members are implicitly public, and their implementation in a class must match this visibility. <br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of an interface in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To provide a default implementation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To encapsulate data"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To define a contract or a set of methods and properties that a class must implement"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To provide thread safety"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94944,
+      "Explanation": "An interface in C# defines a contract that a class or a struct must adhere to by implementing its members.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you declare an interface in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "use 'interface' keyword"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "use 'abstract' keyword"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "use 'class' keyword"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "use 'virtual' keyword"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94945,
+      "Explanation": "The &apos;interface&apos; keyword is used in C# to declare an interface.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true about interfaces in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Interfaces can contain fields"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Interfaces cannot inherit from other interfaces"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A class can inherit multiple interfaces"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A class can instantiate an interface directly"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94946,
+      "Explanation": "In C#, a class can implement multiple interfaces, allowing it to inherit multiple behaviors.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What members can an interface contain in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only abstract methods"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Methods, properties, events, and indexers"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Constructors and methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Private fields and methods"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94947,
+      "Explanation": "<span id=\"explanation94947\" style=\"color:blue\">An interface can contain signatures of methods, properties, events, and indexers.<br></span><table border=\"1\" cellspacing=\"1\" cellpadding=\"1\" style=\"width: 100%;\"><tbody><tr><td><table class=\" cke_show_border\"><thead><tr><th>Member Type</th><th>Available Since</th><th>Notes</th></tr></thead><tbody><tr><td><strong>Methods</strong></td><td>C# 1.0</td><td>Abstract by default; no implementation allowed before C# 8.0</td></tr><tr><td><strong>Properties</strong></td><td>C# 1.0</td><td>Only getters/setters declarations</td></tr><tr><td><strong>Indexers</strong></td><td>C# 1.0</td><td>Allow object[index] access patterns</td></tr><tr><td><strong>Events</strong></td><td>C# 1.0</td><td>Can be declared with <code>event</code> keyword</td></tr><tr><td><strong>Static Methods</strong></td><td>C# 8.0 (limited), C# 11 full</td><td>Can have static members now!</td></tr><tr><td><strong>Default Implementations</strong></td><td>C# 8.0</td><td>Methods can provide body using <code>default</code> keyword</td></tr><tr><td><strong>Constants</strong></td><td>C# 8.0 (via static)</td><td>Can be declared as <code>static const</code></td></tr><tr><td><strong>Operators</strong></td><td>C# 11</td><td>Interfaces can define static operators</td></tr><tr><td><strong>Fields</strong></td><td>\u274c Not allowed</td><td>Interfaces cannot have instance fields</td></tr></tbody></table><br></td></tr></tbody></table><br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a valid example of interface declaration in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "interface IExample {}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Interface IExample { public int ExampleMethod(); }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "public class IExample {}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "public int interface IExample {}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94948,
+      "Explanation": "Interfaces in C# are declared using &apos;interface&apos; followed by the interface name. They contain only method signatures, not implementations.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a class implements an interface, what must it do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Override all virtual methods"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Implement all the members defined in the interface"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Inherit from another class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Define its constructors"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94949,
+      "Explanation": "When a class implements an interface, it must provide concrete implementations for all the members defined in that interface.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the characteristic of an explicit interface implementation in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It allows hiding the implemented method from the class's public interface."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It requires the use of the 'sealed' keyword."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It makes the interface method a 'static' method."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It must be defined in a derived class only."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94950,
+      "Explanation": "An explicit interface implementation allows a class to implement interface members in a way that they are not accessible through the class interface, but only via the interface.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which access modifier is typically used for interface members?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "private"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "protected"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "public"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Note that all members are implicitly public, so no modifier is needed or allowed."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94951,
+      "Explanation": "<span id=\"explanation94951\" style=\"color:blue\">Interface members do not use access modifiers, as all interface members are implicitly public.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if two interfaces in C# have a method with the same signature and a class implements both interfaces?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The compiler throws an error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The method must be defined as abstract"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The class must implement the method once"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The class must explicitly implement at least one of the methods"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94952,
+      "Explanation": "The method needs to be implemented once in the class, as both interfaces have the same method signature.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When implementing an interface in C#, how do you refer to a method of an interface if there is a naming conflict?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use the interface name followed by the method name like 'InterfaceName.MethodName'"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use only the method name directly"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use the 'base' keyword"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "There can never be naming conflicts in interfaces"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94953,
+      "Explanation": "In case of a naming conflict, you can implement the method explicitly using &apos;InterfaceName.MethodName&apos; format, distinguishing it from other methods.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a key characteristic of implicit implementation of interfaces in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It requires the use of explicit access modifiers."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It allows multiple inheritance of method implementations."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Interface members are implemented with the same name as in the interface."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It uses virtual methods to override interface methods."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94954,
+      "Explanation": "Implicit implementation requires that the methods in the class have the same signature as those defined in the interface, including the method name.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using implicit implementation, what must a class do with the method signatures defined in the interface?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Define new method signatures."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Implement the methods using different parameters."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Implement all the methods described by the interface."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Redirect the calls to another interface with explicit casting."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94955,
+      "Explanation": "Implicit implementation requires a class to implement all methods and properties defined in the interface with signatures matching those in the interface.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a class implements an interface implicitly, what can be said about the access levels of the interface's methods?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They must be private."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They must be public."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They can be protected."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They can be internal."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94956,
+      "Explanation": "When implementing interface methods implicitly in C#, the members must be public since interfaces are meant to provide public method contracts.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if a class only partially implements an interface implicitly?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The class is abstract and cannot be instantiated."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The remaining methods are automatically implemented as virtual methods."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The compiler throws an error if not all interface members are implemented."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The runtime provides default implementations for the missing methods."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94957,
+      "Explanation": "C# requires that a class implementing an interface provides implementations for all its members. If not, a compilation error will occur.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is one advantage of using implicit implementation for interfaces in a C# class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It allows for multiple contrasting implementations of the same interface within a single class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It offers flexibility by allowing specific member access to the implemented methods."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Code readability is improved because the implemented interface is directly tied to specific method names."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It ensures that all interface methods are private and secure."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94958,
+      "Explanation": "Implicit implementation binds interface methods directly with class methods by matching their names, which improves readability by providing a clear link between interface and implementation.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why might a developer choose to use explicit implementation of an interface in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To automatically implement all interface methods."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To provide the interface methods without making them accessible directly through the class instance."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To improve performance by removing interface methods from the final executable."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To ensure all implemented methods are public, even if they are not needed."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94959,
+      "Explanation": "Explicit implementation of an interface allows the class to implement interface members so that they are accessible only through an interface instance, not directly through the class instance.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does explicit implementation of an interface affect method visibility in a C# class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "All methods become public and are accessible through any object of the class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Methods remain private and are never accessible."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Methods are hidden from the class interface and can only be accessed via cast to the interface."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Methods become protected and are accessible only to derived classes."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94960,
+      "Explanation": "Explicitly implemented interface methods are not accessible through the class itself; they can only be accessed through an instance of the interface.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When explicitly implementing an interface in C#, how do you define a method signature?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using the 'partial' keyword."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By prepending the interface name before the method name."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using the 'override' keyword."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By using the base keyword with the method name."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94961,
+      "Explanation": "In C#, explicitly implemented interface methods are defined by prefixing the method with the interface name followed by a dot. For example, &apos;InterfaceName.MethodName&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary disadvantage of using explicit implementation of an interface in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It increases the class size significantly."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It makes the methods inaccessible directly through the class, leading to less intuitive code."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It forces the developer to use only a single interface."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It cannot be used with generic interfaces."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94962,
+      "Explanation": "While explicit implementation provides better encapsulation by hiding interface methods from the class&apos;s public interface, it can lead to code that is less intuitive for developers who expect to access methods directly on a class instance.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main purpose of explicit interface implementation in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To hide interface methods from being accessed directly on the implementing class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To make the methods public"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To allow interface methods to be inherited by subclasses"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To improve the performance of method calls"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94963,
+      "Explanation": "Explicit interface implementation is used to hide the interface methods so they cannot be accessed directly through the class instance, but only through an instance of the interface.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does one call a method implemented explicitly using an interface in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Directly on the object instance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Through a base class reference"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Through an interface referance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Through a delegate"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94964,
+      "Explanation": "<span id=\"explanation94964\" style=\"color:blue\">When a method is explicitly implemented, it can only be accessed through a reference of the interface type.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider you have an interface 'IMyInterface' with a method 'MyMethod'. How would you explicitly implement 'MyMethod' in a class 'MyClass\u2019?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public void IMyInterface.MyMethod() {}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "void MyMethod() {}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "void IMyInterface.MyMethod() {}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "public void MyMethod() {}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94965,
+      "Explanation": "Explicit implementation in C# is done using the syntax &apos;void InterfaceName.MethodName()&apos; without the &apos;public&apos; access modifier.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a key reason to use explicit interface implementation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To allow cleaner code by reducing interface method verbosity"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To implement multiple interfaces that have methods with the same name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To simplify the method's body of implementation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To automatically make the method non-virtual"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94966,
+      "Explanation": "Explicit interface implementation allows a class to implement members of multiple interfaces that have the same signature without causing ambiguity.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about explicitly implemented interface members?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They can be declared with any access modifier."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They must be listed in the class's interface declaration list."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They cannot be accessed through a class instance."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They can be accessed using a base class type reference."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94967,
+      "Explanation": "Explicitly implemented interface members are only accessible through a reference to the interface and not through a class instance.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of interfaces in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To allow multiple inheritance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To provide default method implementations"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To define a contract for classes without implementation details"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To implement sealed classes"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94968,
+      "Explanation": "Interfaces in C# are used to define a contract for classes, specifying what methods and properties must be implemented, without providing the implementation itself.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can an interface inherit from another interface in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "No, interfaces cannot support inheritance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes, an interface can only inherit from one other interface"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, an interface can inherit from multiple interfaces"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Yes, but it can only inherit from abstract classes"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94969,
+      "Explanation": "In C#, interfaces can inherit from multiple other interfaces, allowing a class to implement multiple behaviors defined by these interfaces.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about interface inheritance in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An interface can inherit from concrete classes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An interface can have fields and constructors"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An interface can inherit from more than one base interface"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An interface can be instantiated directly"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94970,
+      "Explanation": "Interfaces in C# can inherit from multiple base interfaces, which allows them to form a complex hierarchy of contracts without any implementation.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider two interfaces, I1 and I2. If interface I3 inherits both I1 and I2, what must be true of a class that implements I3?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The class must implement all members declared in I1, I2, and I3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The class only needs to implement members declared in I3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The class cannot implement additional interfaces"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "I3 cannot inherit from I1 and I2 simultaneously"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94971,
+      "Explanation": "A class implementing I3 must provide implementations for all members declared in I3 as well as those in I1 and I2 due to their inheritance chain.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if two interfaces declare the same method signature and a class implements both interfaces?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The class must provide two separate implementations for the method"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The class can provide a single implementation for the method that serves both interfaces"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The class cannot implement both interfaces simultaneously"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The class must use explicit interface implementation"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94972,
+      "Explanation": "If two interfaces declare the same method signature, the class can provide a single implementation that will satisfy both interface requirements as long as the signatures match.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following cannot be declared within an interface in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Method signatures"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Properties"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Static fields"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Events"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94973,
+      "Explanation": "Interfaces cannot contain static fields. They can only contain signatures of methods, properties, events, or indexers.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can a class provide different implementations for methods with the same signature from different interfaces?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using different namespaces"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Explicit interface implementation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Abstract class inheritance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using dynamic keyword"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94974,
+      "Explanation": "Explicit interface implementation allows a class to implement methods with the same signature from different interfaces distinctly by prefixing the method name with the interface name.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which feature of interfaces in C# 8.0 allows providing a body to a method within an interface?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Constructor implementation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Default interface methods"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Static methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Delegate declarations"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94975,
+      "Explanation": "C# 8.0 introduced default interface methods, which allow interfaces to include a method body directly, providing default implementation logic.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does interface inheritance affect a class implementing an interface with base interfaces?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The class can choose to implement any methods it desires"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The class inherits implementation details from the base interface"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The class must implement every member of the base interfaces as well"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The class is exempt from implementing any base interface members"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94976,
+      "Explanation": "When a class implements an interface that has base interfaces, it must implement all members declared in the interface as well as those in any inherited base interfaces.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What keyword is used in C# to implement an interface?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "inherits"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "implements"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "using"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": ":"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94977,
+      "Explanation": "<span id=\"explanation94977\" style=\"color:blue\">In C#, a class or struct implements an interface using the &apos;interface&apos; keyword followed by the interface name. However, when implementing, you just follow standard implementation (:) without a specific keyword like &apos;implements&apos;.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of default interface methods in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To allow multiple inheritance of state."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To enable interfaces to have method implementations."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To enforce stricter access control on interface methods."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To deprecate abstract classes."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94978,
+      "Explanation": "Default interface methods in C# allow interfaces to include method implementations, which helps to add new methods to interfaces without breaking existing implementations.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which version of C# introduced default interface methods?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "C# 6.0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "C# 7.0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C# 8.0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "C# 9.0"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94979,
+      "Explanation": "Default interface methods were introduced in C# 8.0, allowing interfaces to have implementations.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can a class override a default interface method provided in an interface?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, by simply providing its own implementation."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, default methods are always final."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, but only if they are marked with the 'virtual' keyword."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No, but it can hide it using the 'new' keyword."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94980,
+      "Explanation": "Classes implementing the interface can override the default method by providing their own implementation, similar to virtual method overriding.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does the presence of a default interface method affect binary compatibility?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It introduces breaking changes to all implementing classes."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It maintains backward compatibility, not requiring implementing classes to change."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It requires all classes to implement the default method."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It causes versioning issues with assemblies."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94981,
+      "Explanation": "Default interface methods maintain backward compatibility by allowing interface evolution without affecting implementing classes.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a limitation of default interface methods in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They cannot contain any C# code."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They do not support async methods."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They cannot access interface properties."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They cannot access instance state."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94982,
+      "Explanation": "Default interface methods cannot access instance state (fields or private members) of a class that implements the interface.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a scenario where both an interface and a class provide an implementation for the same method, which implementation is used when the method is called on a class instance?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The class's implementation is used."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The interface's implementation is used."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The compiler generates an error for ambiguous implementation."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The implementation is chosen based on runtime conditions."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94983,
+      "Explanation": "When a class provides its own implementation of a method, it overrides any default implementation provided by the interface.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can a default interface method be marked with the 'abstract' keyword?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, to force subclasses to provide an implementation."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, default interface methods cannot be abstract."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, but only in abstract classes."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Yes, if it is also marked with the 'sealed' keyword."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94984,
+      "Explanation": "Default interface methods cannot be abstract; they must have a concrete implementation.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What access modifier is allowed for default interface methods?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public,&nbsp;protected, private,&nbsp;internal"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "private protected"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "public only"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "private only"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94985,
+      "Explanation": "<span id=\"explanation94985\" style=\"color:blue\"></span><span style=\"color:blue\">Default interface methods in C# are allowed to use the public access modifier by default, but starting with C# 8.0, you can explicitly use other access modifiers too \u2014 such as private, protected, and internal. only private protected is not allowed in interfaces.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of the IDisposable interface in .NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To create custom iterators."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To manage and release unmanaged resources."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To serialize objects for data storage."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To handle events and delegates."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94986,
+      "Explanation": "The IDisposable interface is implemented to manage cleanup of unmanaged resources as part of the .NET garbage collection process.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is defined by the IDisposable interface?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Initialize()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Close()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Dispose()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Finalize()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94987,
+      "Explanation": "The IDisposable interface defines the Dispose() method, which is used for explicitly releasing unmanaged resources.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When implementing the IDisposable interface, which design pattern is typically followed to ensure proper resource management?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Singleton pattern"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Factory pattern"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Observer pattern"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Dispose pattern"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94988,
+      "Explanation": "The Dispose pattern is followed when implementing IDisposable to ensure that resources are released correctly and deterministically.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a .NET class that implements IDisposable, what typically happens if the Dispose method is called multiple times?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An exception is thrown."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Resources are freed only the first time."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Resources are repeatedly freed."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The behavior is undefined."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94989,
+      "Explanation": "The Dispose method should be designed to allow for multiple calls without throwing exceptions, ensuring resources are freed only once.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is TRUE about implementing the IDisposable interface?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Implementing IDisposable is mandatory for all .NET classes."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The Dispose method should call GC.SuppressFinalize to prevent automatic finalization."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "IDisposable ensures automatic memory management."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Dispose method must be private."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 94990,
+      "Explanation": "After resources are released in the Dispose method, calling GC.SuppressFinalize prevents the garbage collector from calling the object&apos;s finalizer.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Does C#.NET support partial implementation of interfaces?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Can\u2019t Say"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 81733,
+      "Explanation": "C#.NET does support partial implementation of interfaces. This means that a class can implement an interface partially, and other methods of the interface can be implemented in derived classes.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Access specifiers which can be used for an interface are?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Public"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Protected"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Private"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 81734,
+      "Explanation": "In C#.NET, interfaces can only have the public access specifier. Interfaces themselves are implicitly public, and they cannot have protected or private access specifiers. Therefore, the correct answer is: Public<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "using System;<br>interface I1 {<br>&nbsp; void A();<br>}<br>interface I2 {<br>&nbsp; void A();<br>}<br>class C: I1, I2 {<br>&nbsp; public void A() {<br>&nbsp;&nbsp;&nbsp; Console.WriteLine(\"C.A()\");<br>&nbsp; }<br>}<br><br>class entry {<br>&nbsp; static void Main() {<br>&nbsp;&nbsp;&nbsp; C c = new C();<br>&nbsp;&nbsp;&nbsp; I1 i1 = (I1) c;<br>&nbsp;&nbsp;&nbsp; I2 i2 = (I2) c;<br><br>&nbsp;&nbsp;&nbsp; c.A();<br>&nbsp;&nbsp;&nbsp; i1.A();<br>&nbsp;&nbsp;&nbsp; i2.A();<br>&nbsp; }<br>}<br>What will be the output of the program.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "C.A()<br>C.A()<br>C.A()<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "c.A(); i2.A(); i1.A();"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 81735,
+      "Explanation": "The provided code defines two interfaces, <code>I1</code> and <code>I2</code>, each with a method <code>A()</code>, and a class <code>C</code> that implements both interfaces with a single method <code>A()</code>. The <code>Main</code> method creates an instance of <code>C</code>, casts it to both interfaces, and calls the <code>A()</code> method from the class instance and both interface references, all of which print <code>C.A()</code> to the console. This demonstrates how a single implementation can satisfy multiple interface contracts in C#. <br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "using System;<br>interface I1 {<br>&nbsp; void A();<br>}<br>interface I2 {<br>&nbsp; void A();<br>}<br>class C: I1, I2 {<br>&nbsp; public void A() {<br>&nbsp;&nbsp;&nbsp; Console.WriteLine(\"C.A()\");<br>&nbsp; }<br>&nbsp; void I1.A() {<br>&nbsp;&nbsp;&nbsp; Console.WriteLine(\"I1.A()\");<br>&nbsp; }<br>}<br>class entry {<br>&nbsp; static void Main() {<br>&nbsp;&nbsp;&nbsp; C c = new C();<br>&nbsp;&nbsp;&nbsp; c.A();<br>&nbsp;&nbsp;&nbsp; I2 i2 = c;<br>&nbsp;&nbsp;&nbsp; i2.A();<br>&nbsp;&nbsp;&nbsp; I1 i1 = c;<br>&nbsp;&nbsp;&nbsp; i1.A();<br>&nbsp; }<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "C.A()<br>C.A()<br>I1.A()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "C.A(),<br>I1.A()<br> C.A() <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "I1.A(),<br>C.A()<br> C.A() <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 81736,
+      "Explanation": "The code implements two interfaces, I1 and I2, each with a method A(). Class C provides a public implementation of A() and an explicit implementation of I1.A(). In the Main method, A() is called from a class instance and interface references.<br> The outputs are:<br>c.A() prints \"C.A()\"<br>i2.A() (I2 reference) prints \"C.A()\"<br>i1.A() (I1 reference) prints \"I1.A()\"<br>This shows how explicit interface implementation can differentiate method behavior in C#.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "using System;<br>interface I1 {<br>&nbsp; void A();<br>}<br>interface I2 {<br>&nbsp; void A();<br>}<br>class C: I1, I2 {<br>&nbsp; void I2.A() {<br>&nbsp;&nbsp;&nbsp; Console.WriteLine(\"I2.A()\");<br>&nbsp; }<br>&nbsp; void I1.A() {<br>&nbsp;&nbsp;&nbsp; Console.WriteLine(\"I1.A()\");<br>&nbsp; }<br>&nbsp;void A() {<br>&nbsp;&nbsp;&nbsp; Console.WriteLine(\"C.A()\");<br>&nbsp; }<br>}<br>class entry {<br>&nbsp; static void Main() {<br>&nbsp;&nbsp;&nbsp; I1 x = new C();<br>&nbsp;&nbsp;&nbsp; I2 p = new C();<br>&nbsp;&nbsp;&nbsp; x.A();<br>&nbsp;&nbsp;&nbsp; p.A();<br>&nbsp; }<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "I1.A()<br>I2.A()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "C.A()<br>C.A();<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 81738,
+      "Explanation": "The code implements interfaces I1 and I2, each with a method A(), using explicit interface implementation in class C. In the Main method, A() is called from instances of C cast to I1 and I2.<br> The outputs are:<br>x.A() (I1 reference) prints \"I1.A()\"<br>p.A() (I2 reference) prints \"I2.A()\"<br>This demonstrates that explicit interface implementation allows different methods to be called depending on the interface type.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement correctly defines Interfaces in C#.NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Interfaces cannot be inherited"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Interfaces consists of data static in nature and static methods"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Interfaces consists of some method with only method declaration and some with Method body.<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 81729,
+      "Explanation": "Interface can have methods, properties, events, and indexers as its members. But interfaces will contain only the declaration of the members. The implementation of the interface\u2019s members will be given by class who implements the interface implicitly or explicitly.<br>By default all the members of Interface are public and abstract.<br>Multiple inheritance is possible with the help of Interfaces.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When should you consider using explicit interface implementation in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Always, to improve code readability."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only when hiding interface methods is necessary."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Whenever a class inherits from multiple interfaces."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When resolving naming conflicts and needing different implementations based on the interface."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 81730,
+      "Explanation": "Explicit interface implementation is most useful when dealing with method name conflicts or when you want to provide separate implementations for the same method inherited from different interfaces.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be output of following code ? <br>using System;<br>namespace ConsoleApplication7 {<br>&nbsp; abstract class shape {<br>&nbsp;&nbsp;&nbsp; public int H;<br>&nbsp;&nbsp;&nbsp; public int W;<br>&nbsp;&nbsp;&nbsp; public shape(int h, int w) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; H = h;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; W = w;<br>&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp; public virtual double area() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br>&nbsp;&nbsp;&nbsp; }<br>&nbsp; }<br>&nbsp; class rectangle: shape {<br>&nbsp;&nbsp;&nbsp; public rectangle(int p, int q): base(p, q) {}<br>&nbsp;&nbsp;&nbsp; public double area() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return H * W;<br>&nbsp;&nbsp;&nbsp; }<br>&nbsp; }<br>&nbsp; class triangle: shape {<br>&nbsp;&nbsp;&nbsp; public triangle(int p, int q): base(p, q) {}<br>&nbsp;&nbsp;&nbsp; public double area() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return (H * W) / 2.0;<br>&nbsp;&nbsp;&nbsp; }<br>&nbsp; }<br>&nbsp; class Program {<br>&nbsp;&nbsp;&nbsp; static void Main(string[] args) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; shape s1 = new rectangle(5, 5);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine(s1.area());<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; shape s2 = new triangle(6, 6);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine(s2.area());<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.ReadLine();<br>&nbsp;&nbsp;&nbsp; }<br>&nbsp; }<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0<br>0<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "25<br>1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "15<br>18.000000"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 81705,
+      "Explanation": "In tringle class and in rectangle class we have not used overrides keyword for area method so by default it is new&nbsp; i.e method hiding hence when we call area method it hides child method and call area method of Shape class.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "C# supports a technique known as________, which allows a method to specify explicitly the name of the interface it is implementing.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Method Implementaion"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Implicit Interface Implementation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Explicit Interface Implementation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Iterative Interface Implementation"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 77757,
+      "Explanation": "An explicit interface implementation is a class member that is only called through the specified interface. Name the class member by prefixing it with the name of the interface and a period.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To create an abstract class, type the&nbsp; ____________________ keyword to the left of its name.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "sealed<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "abstract<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "public<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 70465,
+      "Explanation": "To create an abstract class in C#, you need to use the <code>abstract</code> keyword before the class name. This keyword signifies that the class is abstract, meaning it cannot be instantiated directly and may contain abstract methods that must be implemented by derived classes.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which line causes a compile error in the following code?<br>interface Test2<br>{<br>&nbsp;&nbsp;&nbsp; int Int2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Line 3<br>&nbsp;&nbsp;&nbsp; void Method2A(int a);<br>&nbsp;&nbsp;&nbsp; string Method2B();<br>&nbsp;&nbsp;&nbsp; int Method2C(int a, int b);<br>&nbsp;&nbsp;&nbsp; int Method2A(char ch);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Line 7<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Line 3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Line 4"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Line 5<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Line 7"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 70379,
+      "Explanation": "error CS0525: Interfaces cannot contain instance fields<br>Interfaces in C# cannot have fields. The int Int2; line attempts to declare a field, which is not allowed in interfaces.<br> Interfaces can only declare methods, properties, events, and indexers. <br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is an interface in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A class that contains only abstract methods."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A blueprint for a class that defines a set of properties, methods, and events."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A type that defines a contract for other classes to implement."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A collection of static methods."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 88616,
+      "Explanation": "An interface in C# defines a contract that other classes must follow. It specifies methods, properties, events, or indexers that implementing classes must provide.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about interfaces is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Interfaces can have implementation details for their methods."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Interfaces can contain fields."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A class can implement multiple interfaces."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Interfaces can be instantiated directly with the new keyword."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 88617,
+      "Explanation": "C# allows a class to implement multiple interfaces, separated by commas in the class declaration.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which access modifiers can be used for methods in an class which are explic implemented using interface?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Public"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Protected"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Private"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No Access Modifier"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 88618,
+      "Explanation": "When explicitly implementing an interface method in a class, no access modifier is used. The method is implicitly private and cannot be accessed through an instance of the class, only through an interface reference.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When implementing an interface method in a class(implicitly), which access modifier must be used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Private"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Protected"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Internal"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Public"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 88619,
+      "Explanation": "When implementing an interface method in a class, the method must use the public access modifier because interface members are implicitly public.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of explicit interface implementation in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To hide the method from the class's public interface."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To provide multiple implementations of the same method for different interfaces."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To prevent the method from being inherited by derived classes."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both A and B"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 88620,
+      "Explanation": "To hide the method from the class&apos;s public interface: By explicitly implementing an interface method, the method is accessible only through an interface reference and not directly on the class instance. To provide multiple implementations of the same method for different interfaces: It allows a class to implement multiple interfaces that may contain methods with the same name and signature, providing distinct implementations for each interface. method from its public interface, making it accessible only through an interface reference.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true about static methods in interfaces?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Interfaces cannot contain static methods until C# 8.0."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Static methods in interfaces can be called using an instance of the implementing class."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Static methods in interfaces must have an implementation."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Static methods in interfaces can be called using an referance of interface and object of the implementing class."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 88621,
+      "Explanation": "Interfaces cannot contain static methods until C# 8.0. From C# 8.0 onwards, interfaces can contain static methods with a static keyword.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can an interface contain fields?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, but they must be readonly."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes, with any access modifier."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No, interfaces cannot contain fields."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Yes, only with the static keyword."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 88622,
+      "Explanation": "Interfaces cannot contain fields. They define a contract for properties, methods, events, or indexers, but not fields.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a correct way to implement multiple interfaces in a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "class MyClass : Interface1, Interface2 {}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "class MyClass : Interface1, Interface2;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "class MyClass implements Interface1, Interface2 {}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "class MyClass implements Interface1; implements Interface2 {}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 88623,
+      "Explanation": "In C#, multiple interfaces can be implemented by separating them with commas in the class declaration.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if a class implements multiple interfaces that each define a method with the same name and signature?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The class must provide an implementation that satisfies both interfaces."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It results in a compile-time error."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The class can choose to implement only one of the methods."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It results in a runtime error."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 88624,
+      "Explanation": "If multiple interfaces define a method with the same name and signature, the class implementing those interfaces must provide a single implementation that satisfies both interfaces.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to explicitly implement an interface member in a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "override"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "virtual"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "implement"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No keyword is necessary"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 88625,
+      "Explanation": "Explicit interface implementation in C# is done without any specific keyword like override or implement. The method is simply implemented using the interface&apos;s name followed by a dot.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "public abstract class Shape<br>{<br>&nbsp;&nbsp;&nbsp; public abstract double CalculateArea();<br><br>&nbsp;&nbsp;&nbsp; public void PrintShapeType()<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine(\"Shape\");<br>&nbsp;&nbsp;&nbsp; }<br>}<br>Consider Circle and Square classes are inherited from Shape Class.<br>Which of the following code snippets call  PrintShapeType method?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Shape shape = new Shape();<br>shape.PrintShapeType();<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Shape shape = new Circle(); //or new Square() <br>shape.PrintShapeType();<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Square square = new Square();<br>square.PrintShapeType();<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Circle circle = new Circle();<br>circle.  PrintShapeType();<br>"
+        },
+        {
+          "OptionId": "E",
+          "OptionText": "B, C and D<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 86598,
+      "Explanation": "B: Shape shape = new Circle(); shape.PrintShapeType(); (or new Square()) - This will call the PrintShapeType method inherited from the Shape class.<br>C: Square square = new Square(); square.PrintShapeType(); - This will call the PrintShapeType method inherited from the Shape class.<br>D: Circle circle = new Circle(); circle.PrintShapeType(); - This will call the PrintShapeType method inherited from the Shape class.<br>&nbsp; <br>The code Shape shape = new Shape(); is incorrect because Shape is an abstract class and cannot be instantiated.",
+      "Answer": "E",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "public interface IShape {<br>&nbsp;&nbsp;&nbsp; double CalculateArea();<br>}<br>public class Circle : IShape {<br>&nbsp;&nbsp;&nbsp; public double Radius { get; set; }<br><br>&nbsp;&nbsp;&nbsp; // Implementation of CalculateArea() method for Circle<br>&nbsp;&nbsp;&nbsp; public double CalculateArea() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return Math.PI * Radius * Radius;<br>&nbsp;&nbsp;&nbsp; }<br>}<br><br>public class Square : IShape {<br>&nbsp;&nbsp;&nbsp; public double SideLength { get; set; }<br>&nbsp;&nbsp;&nbsp; // Implementation of CalculateArea() method for Square<br>&nbsp;&nbsp;&nbsp; public double CalculateArea() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return SideLength * SideLength;<br>&nbsp;&nbsp;&nbsp; }<br>}<br>Which of the following code snippets will correctly calculate and print the area of a circle and a square?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Circle circle = new IShape();<br>circle.Radius = 5.0;<br>Console.WriteLine(\"Circle Area: \" + circle.CalculateArea());<br><br>Square square = new IShape();<br>square.SideLength = 4.0;<br>Console.WriteLine(\"Square Area: \" + square.CalculateArea());<br><br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "IShape circle = new Circle();<br>circle.Radius = 5.0;<br>Console.WriteLine(\"Circle Area: \" + circle.CalculateArea());<br><br>IShape square = new Square();<br>square.SideLength = 4.0;<br>Console.WriteLine(\"Square Area: \" + square.CalculateArea());<br><br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "IShape circle = new Circle();<br>((Circle)circle).Radius = 5.0;<br>Console.WriteLine(\"Circle Area: \" + ((Circle)circle).CalculateArea());<br><br>IShape square = new Square();<br>((Square)square).SideLength = 4.0;<br>Console.WriteLine(\"Square Area: \" +((Square) square).CalculateArea());"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "IShape circle = new Circle();<br>circle.Radius = 5.0;<br>Console.WriteLine(\"Circle Area: \" + ((Circle)circle).CalculateArea());<br><br>IShape square = new Square();<br>square.SideLength = 4.0;<br>Console.WriteLine(\"Square Area: \" + ((Square)square).CalculateArea());"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2371,
+      "QuestionTypeId": 0,
+      "QuestionId": 86600,
+      "Explanation": "Option A is wrong:<br>An interface cannot be instantiated directly. Interfaces are abstract contracts, and only concrete classes that implement the interface (e.g., Circle and Square) can be instantiated.<br><br>Option B is worng:<br><ul><li>This code will not compile, because IShape does not have a Radius or SideLength property. These properties are specific to the Circle and Square classes.</li><li>Assigning values directly to circle.Radius or square.SideLength causes a compile-time error.</li></ul>Option C is correct :<br><ul><li>The IShape interface is used to declare the objects, demonstrating polymorphism.</li><li>The Radius and SideLength properties are accessed using explicit casting to their respective concrete types (Circle and Square).</li><li>The CalculateArea() method is correctly invoked on the casted objects.</li></ul>Option D is wrong :<br>This code will not compile because the Radius and SideLength properties are not part of the IShape interface.<br>",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

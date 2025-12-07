@@ -1,0 +1,786 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is a common way to define an inline style in a React component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "As a string with CSS syntax"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "As an object with camelCased properties"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "As an object with kebab-case properties"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "As a JSON file imported into the component"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 97790,
+      "Explanation": "In React, inline styles are defined as objects with camelCased property names to match the JavaScript syntax.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you apply an inline style to a React component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using the style attribute with an array of strings"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using the setStyle method on a component"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using the style attribute with a JavaScript object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using the applyStyle function from React"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 97791,
+      "Explanation": "The style attribute in React accepts a JavaScript object where the key represents the CSS property in camelCase and the value represents the style value as a string.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a correct way to write a style for background color using inline styling in React?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "{ background-color: &#39;red&#39; }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{ backgroundColor: red }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "{ &#39;background-color&#39;: &#39;red&#39; }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "{ backgroundColor: &#39;red&#39; }"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 97792,
+      "Explanation": "In React, inline styles define CSS properties using camelCase, so &#39;background-color&#39; transforms to &#39;backgroundColor&#39;. The value should also be wrapped in quotes.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a significant advantage of using inline styles in React components?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They reduce the load on the server by not requesting CSS files"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They allow for easy application of media queries"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They help in dynamically computing styles within JavaScript logic"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They automatically optimize styles for different browsers"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 97793,
+      "Explanation": "Inline styles in React allow for dynamic computation and application of styles, making it easy to adjust styles based on component state or props.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why might inline styles be limited compared to CSS stylesheets in React?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They do not support CSS variables"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They cannot be used with conditionals"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They can&#39;t define pseudo-classes or pseudo-elements"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They are not supported outside of JSX"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 97794,
+      "Explanation": "Inline styles in React cannot define pseudo-classes or pseudo-elements, which are better handled by separate CSS stylesheets or CSS-in-JS libraries.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods allows you to conditionally apply CSS classes to a React component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using the ternary operator within the className attribute"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "inlineStyle prop"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CSS-in-JS"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using &lt;style&gt; tag directly in JSX"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 97795,
+      "Explanation": "The className attribute can take expressions. By using the ternary operator, you can conditionally apply CSS classes based on component state or props.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary way to scope CSS styles to a React component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Inline styles"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using CSS modules"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Appending component name to class selectors"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using global CSS stylesheets"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 97796,
+      "Explanation": "CSS modules allow you to scope styles locally to the component by automatically creating unique class names.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which package is commonly used for writing CSS-in-JS in React applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Bootstrap"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "styled-components"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SASS"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Tailwind CSS"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 97797,
+      "Explanation": "styled-components is a library for React that allows you to use ES6 and template literals to style components with CSS-in-JS.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you dynamically change inline styles based on component state in React?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using a conditional statement inside the render method"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By updating the style object directly"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using the setState function"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By passing a function to the style prop"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 97798,
+      "Explanation": "Passing a function to the style prop allows it to return different inline styles based on component state or props.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a benefit of using CSS modules with React components?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They eliminate the need for class names"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They allow styles to be implemented as plain JavaScript objects"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They prevent class name collisions by locally scoping the styles"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They automatically optimize styles for better performance"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 97799,
+      "Explanation": "By generating unique class names, CSS modules prevent conflicts and allow you to scope styles locally to components.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is one primary benefit of using CSS Modules in React applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They automatically convert CSS to JavaScript."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They allow CSS to be scoped only to the component they are used in."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They enable server-side rendering of CSS."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They eliminate the need for media queries."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 97800,
+      "Explanation": "CSS Modules help avoid global scope issues by ensuring styles are scoped locally to components, preventing styles from conflicting across different components.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using CSS Modules, how are the CSS class names typically transformed?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They remain unchanged."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They are converted to camelCase."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They are dynamically generated and often include a unique hash."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They are concatenated with a &#39;mod_&#39; prefix."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 97801,
+      "Explanation": "CSS Modules automatically create unique class names by appending a hash based on the file and class name, which prevents style collisions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How should you import a CSS Module file in a React component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "import styles from &#39;./Component.module.css&#39;;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "require(&#39;./Component.module.css&#39;);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "import CSS from &#39;./Component.css&#39;;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "link(&#39;./Component.module.css&#39;);"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 97802,
+      "Explanation": "In React, CSS Modules are typically imported using ES6 import syntax, where the styles are imported as an object, like &#39;styles&#39;, from the module CSS file.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true regarding naming conventions in CSS Modules?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Class names must be globally unique."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Classes can only use uppercase letters."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CSS Modules automatically handle name collisions by scoping the class names."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Class names must use the &#39;js-&#39; prefix."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 97803,
+      "Explanation": "CSS Modules automatically scope class names to their local component, reducing the risk of collisions even if the same class name is used in different modules.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do CSS Modules enhance the process of theming in large applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By allowing theme files converted directly to JavaScript."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By supporting dynamic CSS generation at runtime."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By making it easier to maintain style encapsulation and component modularization."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By automatically generating a single, centralized CSS file."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 97804,
+      "Explanation": "CSS Modules keep styles organized and encapsulated at the component level, which is beneficial for managing themes and ensures consistent style management across large applications.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a common method to include Bootstrap in a React application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Directly writing Bootstrap classes as inline styles."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Importing Bootstrap CSS in the React component."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using XML to embed Bootstrap into the component."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Manually converting Bootstrap classes to native JavaScript."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 97805,
+      "Explanation": "The easiest way to use Bootstrap with React is to import the Bootstrap CSS file into the project, which allows you to leverage its classes within your JSX.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you ensure Bootstrap styles do not conflict with custom styles in a React component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using Bootstrap themes."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By namespacing custom styles or using CSS Modules."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By avoiding the use of Bootstrap together with custom styles."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By creating custom Bootstrap classes with new names."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 97806,
+      "Explanation": "To prevent conflicts, you can namespace your custom styles or use CSS Modules which locally scope CSS by default.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Bootstrap feature is particularly useful for mobile-first design in React components?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Bootstrap Jumbotron"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Bootstrap Flexbox"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Bootstrap Grid System"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Bootstrap Spinner"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 97807,
+      "Explanation": "The Bootstrap Grid System facilitates mobile-first design by using a series of containers, rows, and columns to structure and align content responsively.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of React Bootstrap libraries such as &#39;react-bootstrap&#39;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To read and parse JSON data using Bootstrap."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To provide pre-written React components styled with Bootstrap."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To directly edit Bootstrap source files for better performance."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To convert Bootstrap JavaScript plugins to XML."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 97808,
+      "Explanation": "React Bootstrap libraries, like &#39;react-bootstrap&#39;, offer React components that are styled with Bootstrap, allowing developers to use Bootstrap-styled components in a React-friendly way.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does the &#39;react-bootstrap&#39; library handle JavaScript-based Bootstrap components?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It uses its own implementation of JavaScript components."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It directly imports JavaScript from the Bootstrap library."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It uses jQuery to handle JavaScript interactions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It disables JavaScript functionality in Bootstrap components."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 97809,
+      "Explanation": "&#39;react-bootstrap&#39; provides its own implementation of Bootstrap&#39;s JavaScript components using React, thereby eliminating the need for jQuery and allowing for more seamless integration in React applications.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a key advantage of using external CSS stylesheets in React?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They allow dynamic styling based on state"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They reduce component reusability"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They separate concerns and improve maintainability"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They are required for functional components"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 102442,
+      "Explanation": "External stylesheets promote separation of concerns, making styles easier to manage and reuse across components.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not true about inline styles in React?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They are scoped to the component<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They support pseudo-classes like :hover"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They are useful for dynamic styling"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They are written as JavaScript objects"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 102443,
+      "Explanation": "Inline styles in React do not support pseudo-classes like :hover or media queries directly.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you import an external CSS file into a React component?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "require('styles.css');<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;link href=\"styles.css\" /&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "useStyles('styles.css')<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "import './styles.css';"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 102444,
+      "Explanation": "External CSS files are imported using ES6 syntax like import &apos;./styles.css&apos;; at the top of the component file.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a valid way to use Bootstrap in a React component?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use setState() to apply Bootstrap"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Import Bootstrap as a JavaScript module"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use Bootstrap class names directly in JSX"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Convert Bootstrap to inline styles"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 102445,
+      "Explanation": "You can use Bootstrap class names like className=\"btn btn-primary\" directly in JSX to style components.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following option should be used to apply given style to the component?<br>function Title() {<br>&nbsp; const style = { color: 'green', fontSize: '20px' };<br>&nbsp; return &lt;h1 style=_________&gt;Welcome&lt;/h1&gt;;<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": " {{style}}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{style}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "\"{style}\""
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "\"{{style}}\""
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 102446,
+      "Explanation": "<span id=\"explanation102446\" style=\"color:blue\">style is defined as javascript object. So while applying it in style attribute need to follow the syntax of javascript expression</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the correct way to apply a Bootstrap class in JSX?<br>function Button() {<br>&nbsp; return &lt;button _______&gt;Click Me&lt;/button&gt;;<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "class=\"btn btn-primary\""
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "className=\"btn btn-primary\""
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "style=\"btn btn-primary\""
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "bootstrap=\"btn btn-primary\""
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 3137,
+      "QuestionTypeId": 0,
+      "QuestionId": 102447,
+      "Explanation": "In JSX, use className instead of class to apply CSS classes.",
+      "Answer": "B",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

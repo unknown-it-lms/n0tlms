@@ -1,0 +1,1686 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is the key difference between using a &lt;jsp:forward&gt; and HttpServletResponse.sendRedirect()?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "forward executes on the client while sendRedirect() executes on the server"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Forward executes on the server while sendRedirect() executes on the client."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The two methods perform identically."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 80956,
+      "Explanation": "<span id=\"explanation80956\">Differeence between &lt;jsp:forward&gt; and response.sendRedirect()&nbsp; are :<br>&nbsp;Forward executes on the server where client is not aware about it where while sendRedirect() executes on the client and browser autmatically generates another request for URL received from server side in the form of response.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not a standard method called as part of the JSP life cycle?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "jspInit()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "jspService()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "_jspService()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "jspDestroy()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 80953,
+      "Explanation": "<span id=\"explanation80953\"><span id=\"explanation80953\"></span></span><span><span>jspService() is part of the lifecycle interface, _jspService() is the internal generated method that implements it, and it&apos;s not a method you explicitly define or call yourself in JSP code</span></span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using a JavaBean to get all the parameters from a form, what must the property be set to (???<br>in the following code) for automatic initialization?<br>&lt;jsp:useBean id=\"fBean\" class=\"govi.FormBean\" scope=\"request\"/&gt;<br>&lt;jsp:setProperty name=\"fBean\" property=\"???\" /&gt;<br>&lt;jsp:forward page=\"/servlet/JSP2Servlet\" /&gt;<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "*"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "All"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "="
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 80946,
+      "Explanation": "<span id=\"explanation80946\">&lt;jsp:setProperty name=\"fBean\" property=\"???\" /&gt;&nbsp;&nbsp; question marks need to replace with * so it will set all the properties of bean with html form elements.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Two of the following are used to call bean class setter and getter methods.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "setAttribute and setAttribute"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "getProperty and setProperty"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "getAttribute and setproperty"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "getProperty and setAttribute"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 80962,
+      "Explanation": "<span id=\"explanation80962\">getProperty and setProperty are used to call bean class setter and getter methods.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "One of the following is not a jsp standard action",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "forward"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "include"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "page"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "param"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 80963,
+      "Explanation": "<span id=\"explanation80963\">page is a directive in jsp not a function.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "One of the following is responsible for responding to user input and perform interactions on the data<br>model objects.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "model"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "view"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "controller"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of them"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 80969,
+      "Explanation": "<span id=\"explanation80969\">controller is responsible for responding to user input and perform interactions on data model objects.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In MVC architecture model is _____________",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "jsp"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "javabean"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "servlet"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 80971,
+      "Explanation": "<span id=\"explanation80971\">In MVC architecture model is javabean.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given<br>&lt;jsp:useBean id=\u201da1\u201d scope=\u201drequest\u201d class=\u201dmypack.Customer\u201d/&gt;<br>What is the syntax to read Customer object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "${requestScope.a1}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;%=request.getAttribute(\u201ca1\u201d)%&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "${a1}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 80911,
+      "Explanation": "<span id=\"explanation80911\">To read customer object use either ${requestScope.a1}&nbsp;&nbsp; or&nbsp; &lt;%=&nbsp; request.getAttribute(\"a1\") %&gt;&nbsp;&nbsp;&nbsp;&nbsp; or<br>${a1}&nbsp; </span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which attribute cannot be used inside &lt;jsp:useBean&gt;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "id"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "scope"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 80908,
+      "Explanation": "<span id=\"explanation80908\">&lt;jsp:useBean&nbsp; id=\"beanInstance\"&nbsp; class = \"packageName.className\"&nbsp; scope=\"page | request&nbsp; | session&nbsp; | application \"&nbsp;&nbsp; type =\"packageName.className \"&nbsp; beanName=\"packageName.className\"&gt; &lt;/jsp:useBean&gt;</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If we want to include some dynamic page in JSP what is better to be used in JSP?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;jsp:include page=\u201d/somepage\u201d/&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;%@ include file=\u201d/somefile\u201d %&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "RequestDispatcher rd=request.getRequestDispatcher(\"/somepage\");<br>rd.include(request,response);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 80909,
+      "Explanation": "<span id=\"explanation80909\">&lt;jsp:include&gt; is used to include some dynamic page in JSP.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the effect of executing the following JSP statement, assuming a class with name Employee exists in classes package?<br>&lt;%@ page import = \"classes.Employee\" %&gt;<br>&lt;jsp:useBean id=\"employee\" class=\"classes.Employee\" scope=\"session\"/&gt;<br>&lt;jsp:setPropertv name=\"employee\" property=\"*\"/&gt;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The code does not compile as there is no properly attribute of setProperty tag."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The code does not compile as property attribute cannot take * as a value."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The code sets value of all properties of employee bean to \"*\"."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The code sets the values of all properties of employee bean to matching parameters in request object."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 80921,
+      "Explanation": "<span id=\"explanation80921\">&lt;jsp:setPropertv name=\"employee\" property=\"*\"/&gt;<br>The code sets the values of all properties of employee bean to matching parameters in request object. </span><br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To fill up all bean properties with HTML form elements which of the following statements can be used,",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;jsp:synchronize name=\"BeanName\" /&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;jsp:setProperty name=\"BeanName\" property=\"\" /&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;jsp:setProperty name=\"BeanName\" property=\"*\" /&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;jsp:setProperty name=\"BeanName\" property=\"All\" /&gt;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 80915,
+      "Explanation": "<span id=\"explanation80915\">To set values to all properties with the html form elements use property =\"*\" .<br>i.e. &lt;jsp:setProperty name=\"BeanName\" property=\"*\" /&gt; </span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements makes your compiled JSP page&nbsp;enforces thread-safety in the generated servlet?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;%@ page isThreadSafe=\"false\" %&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;%@ page isThreadSafe=\"true\" %&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;%@ page isThreadSafe=\"multiple\" %&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;%@ page isThreadSafe=\"single\" %&gt;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 80944,
+      "Explanation": "&lt;%@ page isThreadSafe=\"false\" %&gt; If you set the isThreadSafe option to false, the JSP engine makes sure that only one thread at a time is executing your JSP.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given a web application ShoopingCart with 2 files:<br>ShoppingCart/customer/addProductToCart.jsp<br>ShoppingCart/customer/showCart.jsp<br>which of the following code are valid in addProductToCart.jsp to dispatch request to the showCart.jsp?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RequestDispatcher nextView = request.getRequestDispatcher('/customer/showCart.jsp');"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "RequestDispatcher nextView = request.getRequestDispatcher('/showCart.jsp');"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "RequestDispatcher nextView = getServletContext().request.getRequestDispatcher('\\showCart.jsp');"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "RequestDispatcher nextView = getServletContext().request.getRequestDispatcher('../customer/showCart.jsp');"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 82148,
+      "Explanation": "<div id=\"b_content\" data-bm=\"59\"><main aria-label=\"Search Results\"><div class=\"b_caption b_algo\"><p><span id=\"explanation82148\">The <strong>RequestDispatcher</strong> interface provides the facility of dispatching the request to another resource it may be html, servlet or jsp. This interface can also be used to include the content of another resource also. It is one of the way of servlet Collaboration</span></p></div></main></div>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Name the interface that includes the getSession method that is used to get the HttpSession object.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "HttpServletRequest"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "HttpServletResponse"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SessionContext"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SessionConfig"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 82149,
+      "Explanation": "<span id=\"explanation82149\"><span>&nbsp;</span></span>HttpServletRequest interface provides method getSession().",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The getSession() method with 'false' as its parameter getSession(false) , will return the appropriate session object only when",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The session is completed"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The session object is passed to another method"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The session does not exists"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The session is existing"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 82161,
+      "Explanation": "<span id=\"explanation82161\">getSession (true) <strong>will check whether a session already exists for the user</strong>. If yes, it will return that session object else it will create a new session object and return it. getSession (false) will check existence of session. If session exists, then it returns the reference of that session object, if not, this methods will return null.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The ____________ &nbsp;action declares a JavaBean for use in a JSP.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "useBean"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "newBean"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "setBean"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "getBean"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 82181,
+      "Explanation": "<span id=\"explanation82181\">&lt;<strong>jsp</strong>:useBean&gt; tag is used to access the JavaBeans <strong>in a JSP</strong> page. This tag <strong>declares</strong> the <strong>JavaBean in a JSP</strong> page. Using the <strong>jsp</strong>:useBean you can access the property/properties of a JavaBeans. You can <strong>use</strong> the <strong>jsp</strong>:setProperty tag to set the property/properties value and <strong>jsp</strong>:getProperty tag to get the property/properties value.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The __________ method is the JSP equivalent of the destroy method for servlets.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "jspDestroy()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "jspDelete()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "jspUnset()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "jspDel()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 82183,
+      "Explanation": "<div class=\"middle\" style=\"height: auto !important;\"><div class=\"Calendar\"><span id=\"explanation82183\">JSP method jspDestroy() is automatically called by the Server when a JSP page is destroyed or unloaded. Like jspInit() method, jspDestroy() method also has a <b>public</b> access-modifier and it doesn&apos;t accept nor returns any value. We can add a clean-up code in jspDestroy() method.<br>For example ,we can add code in jspDestroy() method to make sure it all the open database connections are closed or can make unused objects point to <b>null</b> to save the memory.<br></span><span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">void</span> <span class=\"hljs-title\">jspDestroy</span><span class=\"hljs-params\">()<br></span>{<pre><span id=\"explanation82183\"><code class=\"hljs java\">}</code></span></pre></div></div>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following allows substitution of code to occur at the translation time in a JSP page ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;jsp:include&gt; Tag"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;@ include&gt; directive"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;@ page &gt; directive"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Declaration block"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 82105,
+      "Explanation": "E",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true for Java Bean ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It can not be a GUI component"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It never implements serializable interface"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It has zero-argument constructor"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is a distributed component"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 82106,
+      "Explanation": "<span style=\"color:#2980b9;\">Java Beans require a public no-arg constructor for instantiation through introspection. Other options are incorrect - beans can be GUI components, often implement Serializable, and aren&apos;t inherently distributed.</span><br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not true for &lt;jsp:useBean&gt; tag in JSP page ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Locates a bean instance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Stores object reference of the bean in a variable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Creates an instance if fails to locate the bean instance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Does not execute the body tag if any"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 82108,
+      "Explanation": "<div id=\"b_content\" data-bm=\"46\"><main aria-label=\"Search Results\"><div class=\"b_caption b_algo\"><p><span id=\"explanation82108\">The <strong>jsp</strong> useBean action <strong>tag</strong> is used to locate or instantiate a bean class. If bean object of the Bean class is already created, it doesn&apos;t create the bean depending on the scope. But if object of bean is not created, it instantiates the bean</span></p></div></main></div>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "__________ objects can be passed across layers all the way up to the presentation layer without having to use any DTOs (Data Transfer Objects). You can later re-attach them to another session",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "persistent"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "detached"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "attached"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "transient"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 82102,
+      "Explanation": "<span id=\"explanation82102\">&nbsp; <a id=\"objectstate-overview\" style=\"text-decoration: none; color: rgb(51, 51, 51); font-family: &quot;Lucida Grande&quot;, Geneva, Verdana, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;\">A detached instance is an object that has been persistent, but its<span>&nbsp;</span><code class=\"literal\" style=\"font-size: 0.9em; font-family: verdana, helvetica, sans-serif; white-space: nowrap;\">Session</code><span>&nbsp;</span>has been closed. The reference to the object is still valid, of course, and the detached instance might even be modified in this state.<span>&nbsp;</span></a> <a id=\"objectstate-overview\" style=\"text-decoration: none; color: rgb(51, 51, 51); font-family: &quot;Lucida Grande&quot;, Geneva, Verdana, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;\">A detached instance can be reattached to a new<span>&nbsp;</span><code class=\"literal\" style=\"font-size: 0.9em; font-family: verdana, helvetica, sans-serif; white-space: nowrap;\">Session</code><span>&nbsp;</span>at a later point in time, making it (and all the modifications) persistent again.</a> <a style=\"text-decoration: none; color: rgb(51, 51, 51); font-family: &quot;Lucida Grande&quot;, Geneva, Verdana, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;\"></a></span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not true about Java beans?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "can implement java.io.Serializable interface"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "provides full parameterised constructor."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Provides no argument constructor"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Provides setter and getter methods for its properties"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 82120,
+      "Explanation": "<span id=\"explanation82120\">JavaBeansare classes that encapsulates many objects into a single object(the bean).It is a java class that should follow following conventions.<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; may Implement Serializable.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It should have a public no-arg constructor. Any other constructor is optional.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; All properties in java bean must be private with public getters and setter methods.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The ................. element makes a JavaBean available to a JSP page.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;jsp:useBean&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;jsp:currentBean&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;jsp:Bean&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;jsp:BeanId&gt;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 82117,
+      "Explanation": "<div id=\"b_content\"><main aria-label=\"Search Results\"><span id=\"explanation82117\">The jsp:useBean action tag is used to <strong>locate or instantiate a bean class</strong>. If bean object of the Bean class is already created, it doesn&apos;t create the bean depending on the scope. But if object of bean is not created, it instantiates the bean</span></main></div>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following gets or sets the bean in the ServletContext container object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;jsp:useBean id=\"address\" class=\"AddressBean\" /&gt;<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;jsp:useBean id=\"address\" class=\"AddressBean\" scope=\"application\" /&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;jsp:useBean id=\"address\" class=\"AddressBean\" scope=\"servlet\" /&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;jsp:useBean id=\"address\" class=\"AddressBean\" scope=\"session\" /&gt;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 82245,
+      "Explanation": "<span id=\"explanation82245\">&lt;jsp:useBean id=\"address\" class=\"AddressBean\" scope=\"application\" /&gt;</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not an implicit object ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "date"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "request"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "out"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "pagecontext"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 82265,
+      "Explanation": "<span id=\"explanation82265\">date is not an implicit object.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which is mandatory in &lt;jsp:useBean /&gt; tag?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "id, class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "id, type"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "type, property"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "type,id"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 82247,
+      "Explanation": "<span id=\"explanation82247\">The jsp useBean action tag is used to locate or instantiate a bean class. If bean object of the Bean class is already created, it doesn\u2019t create the bean depending on the scope. But if object of bean is not created, it instantiates the bean.<br></span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which tag should be used to pass information from JSP to included JSP?&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using &lt;%jsp:page&gt; tag"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using &lt;%jsp:param&gt; tag"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using &lt;%jsp:import&gt; tag"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using &lt;%jsp:useBean&gt; tag"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 82268,
+      "Explanation": "<span id=\"explanation82268\"><span id=\"explanation82268\">&lt;%jsp:param&gt; tag is used to&nbsp; pass info from JSP to included JSP.</span></span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which option is true about session scope?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Objects are accessible only from the page in which they are created"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Objects are accessible only from the pages which are in same session"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Objects are accessible only from the pages which are processing the same request"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<div>Objects are accessible only from the pages which reside in same application<br></div>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 82270,
+      "Explanation": "<span id=\"explanation82270\">Object data is available till session is alive.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which attribute specifies a JSP page that should process any exceptions thrown but not caught in the current page?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The errorPage Attribute"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The IsErrorPage Attribute"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both A &amp; B"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 82271,
+      "Explanation": "<span id=\"explanation82271\">The ErrorPage Attribute&nbsp; specifies a JSP page that should process any exceptions thrown but not caught in the current page .</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What temporarily redirects response to the browser?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;jsp:forward&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;%@directive%&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "response.setRedirect(URL)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "response.sendRedirect(URL)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 82816,
+      "Explanation": "<span id=\"explanation82816\">response.sendRedirect(URL) directs response to the browser and creates a new request.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which out of the following is not true about Expression Language in JSP?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "JSP EL can be used for accessing nested properties"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "JSP EL provides many implicit objects that we can use to get attributes from different scopes and parameter values"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "JSP EL has more compact syntax than Standard JSP tag."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "JSP EL can be used to set the properties of bean"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 83640,
+      "Explanation": "<span id=\"explanation83640\">JSP EL simplify the process of accessing data from bean properties and from implicit objects. By using JSP Expression Language you can get data from javaBeans,maps,arrays and lists that have been stored as attributes of a web application.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In JSP Action tags which tags are used for bean development ?&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "jsp:useBean"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "jsp:setPoperty"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "jsp:getProperty"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All mentioned above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 82284,
+      "Explanation": "<span id=\"explanation82284\">Tags used for bean development are :<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; jsp:useBean<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; jsp:setPoperty<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; jsp:getProperty </span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following action variable is used to include a file in JSP?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "jsp:plugin"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "jsp:include"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "jsp:setProperty"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "jsp:getProperty"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 82808,
+      "Explanation": "<span id=\"explanation82808\">jsp:include action variable is used to include a file in JSP.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which tag(std action) should be used to pass information from JSP to included JSP?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using &lt;jsp:param&gt; tag"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using &lt;jsp:page&gt; tag"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using &lt;jsp:useBean&gt; tag"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using &lt;jsp:import&gt; tag"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 83637,
+      "Explanation": "<span id=\"explanation83637\">&lt;jsp:include page=\"header.jsp\" &gt;<br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;jsp:param name=\"language\" value=\"english\" /&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp; &lt;jsp:param name=\"country\" value=\"USA\" /&gt;<br>&nbsp;&lt;/jsp:include&gt;<br>This is how &lt;jsp:param&gt; can be used for sending data to included JSP</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main role of the Controller in the MVC architecture?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To store business logic"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To handle user input and update the model"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To display the data to the user"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To act as a data transfer object"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 91235,
+      "Explanation": "In MVC architecture, the Controller handles user input, updates the model based on user actions, and selects the appropriate view for the response.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do Servlets fit into the MVC architecture in Java applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They act as the Model"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They act as the View"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They handle additional repeatative task."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They primarily act as the Controller"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 91236,
+      "Explanation": "<span id=\"explanation91236\" style=\"color:blue\">Servlets in the MVC architecture typically act as the Controller, handling incoming requests and directing them to the appropriate Model and View components.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is typically used to implement the View component in an MVC web application using Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Servlet"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "JavaBean"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "JSP"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "JDBC"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 91237,
+      "Explanation": "JSP (JavaServer Pages) is usually used for creating the View in a Java MVC web application, as it helps in creating dynamic content and rendering the user interface.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In MVC, which part is responsible for updating the View when the Model changes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The Model"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The View"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The Controller"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The Database"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 91238,
+      "Explanation": "The Controller coordinates between the Model and the View. Once the Model has been updated, it is the Controller&apos;s responsibility to inform the View to update accordingly.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main advantage of using the MVC architecture in web applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Increased dependency among components"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Reduced need for server resources"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Separation of concerns"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Simplified database connectivity"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 91239,
+      "Explanation": "MVC architecture provides a clear separation of concerns, dividing the application into three interconnected components, which makes the application easier to manage and scale.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following components is least likely to contain database access logic in an MVC architecture?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Model"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "View"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Controller"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Service"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 91240,
+      "Explanation": "The View is responsible for presenting data to the user. It typically does not contain business logic or database access logic, which is part of the Model or Service.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a typical Java MVC servlet application, what is used to forward a request to the View component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "HttpSession"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "RequestDispatcher"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ActionListener"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "HttpServletResponse"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 91241,
+      "Explanation": "RequestDispatcher is used in a servlet to forward a request to another servlet or JSP, which acts as the View component in an MVC pattern.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a common approach to implement the Model component in a Java MVC web application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using JavaBeans"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using JSP"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using HTML"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using CSS"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 91242,
+      "Explanation": "JavaBeans are commonly used to implement the Model in a Java MVC application, encapsulating data and business logic that the application requires.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Java MVC, what technology is often used for managing the flow of data between the View and the Model?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SQL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "JSTL"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "JavaScript"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Servlets"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 91243,
+      "Explanation": "Servlets manage the flow of data between the View (typically JSPs) and the Model, acting as the Controller in the MVC architecture.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the &#39;include&#39; action in JSP?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To insert a session attribute"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To include dynamic content from another resource"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To define a Java function"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To set a response header"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 101680,
+      "Explanation": "The &#39;include&#39; action allows the current JSP page to include another resource, such as a HTML, JSP, or a servlet, which is dynamically evaluated. This is useful for reusing common components.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which standard JSP action is used to forward a request to another resource?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "jsp:params"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "jsp:setProperty"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "jsp:forward"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "jsp:plugin"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 101681,
+      "Explanation": "The &#39;jsp:forward&#39; action is used to forward the request to another resource like a web page, JSP, or servlet. The forward action terminates the current JSP page and transfers control to another web component.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In JSP, which standard action is used to create or use a JavaBean component?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "jsp:useBean"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "jsp:getProperty"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "jsp:setProperty"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "jsp:param"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 101682,
+      "Explanation": "The &#39;jsp:useBean&#39; action is used to declare a JavaBean for use in a JSP page. It finds or instantiates a bean, and associates it with a specified name.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which JSP standard action enables the setting of JavaBean properties by name?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "jsp:useBean"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "jsp:getProperty"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "jsp:setProperty"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "jsp:param"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 101683,
+      "Explanation": "The &#39;jsp:setProperty&#39; action is used to set the properties of a JavaBean component that has been previously instantiated using &#39;jsp:useBean&#39;. You can specify the property name and value to assign.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a primary purpose of the &#39;jsp:getProperty&#39; standard action in JSP?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To remove a bean"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To retrieve the value of a bean property"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To invoke a servlet method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To generate a dynamic include"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 101684,
+      "Explanation": "The &#39;jsp:getProperty&#39; action is used to retrieve the value of a bean property, which has been initialized via &#39;jsp:useBean&#39;, and display it in a JSP page.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the correct syntax to declare a JavaBean in a JSP page?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;jsp:useBean id=&quot;myBean&quot; class=&quot;com.example.MyBean&quot; /&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;jsp:setBean id=&quot;myBean&quot; class=&quot;com.example.MyBean&quot; /&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;jsp:declareBean id=&quot;myBean&quot; class=&quot;com.example.MyBean&quot; /&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;jsp:defineBean id=&quot;myBean&quot; class=&quot;com.example.MyBean&quot; /&gt;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 101685,
+      "Explanation": "The correct syntax to declare a JavaBean in JSP is by using the &lt;jsp:useBean&gt; action tag. It requires &#39;id&#39; and &#39;class&#39; attributes to create a bean instance.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following JSP standard actions is used to populate the properties of a bean?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;jsp:populateBean&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;jsp:setProperty&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;jsp:loadProperty&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;jsp:setField&gt;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 101686,
+      "Explanation": "&lt;jsp:setProperty&gt; is used to set the properties of a JavaBean in JSP. It can set properties for individual fields or all properties at once.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you specify that a bean should be shared by all users of an application in JSP?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using application scope"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using session scope"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using page scope"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using request scope"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 101687,
+      "Explanation": "To share a bean amongst all users of an application, &#39;application&#39; scope is used. It persists throughout the lifecycle of the application and is common across users.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default scope of a bean in JSP if none is specified?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "application"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "session"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "request"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "page"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 101688,
+      "Explanation": "If no scope is specified for a bean in JSP, it defaults to &#39;page&#39; scope, meaning it is available only in the JSP page where it is declared.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if a JavaBean class is not found in JSP when using &lt;jsp:useBean&gt;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A runtime error occurs"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A compile-time error occurs"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The class is ignored, and processing continues"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A new empty class is created"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 101689,
+      "Explanation": "If the JavaBean class specified in &lt;jsp:useBean&gt; is not found, a runtime error occurs because the class loader can&#39;t load the specified bean class.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does this code do?<br>&lt;jsp:setProperty name=\"user\" property=\"name\" /&gt;<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "setProperty needs atleast value or pararm attribute."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Sets the name property of the bean as like value of request parameter \"name\""
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Declares a new bean"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Sends a parameter to the client"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 102515,
+      "Explanation": "&lt;jsp:setProperty&gt; assigns a value to a bean property. It must match the bean ID and property name.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens when &lt;jsp:forward page=\"...\"/&gt; is executed?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The current response is discarded and control is transferred to another resource"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The current page continues execution after forwarding "
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The client is redirected to another URL"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The included page is compiled into the current servlet"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 9,
+      "UniqueNodeId": 2152,
+      "QuestionTypeId": 0,
+      "QuestionId": 102516,
+      "Explanation": "&lt;jsp:forward&gt; halts further processing of the current JSP and forwards the request to another resource on the server side.",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

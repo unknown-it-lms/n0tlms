@@ -1,0 +1,1956 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Which of the following statements is true about using delegates in C# for calling methods?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Delegates are value types that hold method references."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A delegate can reference multiple methods and invoke them in a list."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Delegates allow passing methods as parameters but cannot be used for asynchronous calls."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "You must specify return types when creating a delegate, but parameter types can vary."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95021,
+      "Explanation": "In C#, a delegate is a reference type that can hold a reference to a method with a specified signature and return type. Delegates can reference multiple methods (known as invocation list) and call them sequentially.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you invoke a method asynchronously using delegates in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By calling the BeginInvoke() and EndInvoke() methods."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By directly calling the synchronous Invoke() method."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Delegates do not support asynchronous method calls."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By using the ExecuteAsync() method of the delegate."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95022,
+      "Explanation": "Delegates in C# support asynchronous operations using the BeginInvoke() and EndInvoke() methods, which allow a method to be called asynchronously.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is required when defining a delegate in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Specifying the delegate as a sealed class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Providing a delegate signature that matches any method signature."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Defining the delegate with a matching parameter list and return type of the methods it references."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Initializing the delegate using a constructor that takes method names as strings."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95023,
+      "Explanation": "A delegate definition must specify a signature, including the parameter list and return type, which must match the methods it will reference.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the given code snippet, what does the 'Del' keyword represent?\n\n'public delegate void Del(string message);'",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "'Del' is a method name."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "'Del' is a predefined C# delegate type."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "'Del' is a custom delegate type definition."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "'Del' is a variable initialized to a method."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95024,
+      "Explanation": "&apos;Del&apos; in this context is a custom delegate type definition that can refer to any method taking a single string parameter and returning void.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you add a method to a delegate's invocation list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using the += operator with a method name."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using the Append() method of the delegate."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Delegates do not support adding additional methods."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By using the new keyword with the delegate name."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95025,
+      "Explanation": "To add a method to a delegate&apos;s invocation list, you use the += operator followed by the method&apos;s name. This allows the delegate to invoke multiple methods in order.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a primary use of delegates in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To store fixed-size collections of elements"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To perform type conversion"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To create function pointers for method encapsulation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To manage database connections"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95026,
+      "Explanation": "Delegates are primarily used to encapsulate methods and serve as function pointers, allowing methods to be passed as parameters.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which scenario best demonstrates the use of a delegate in event handling?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Storing raw data from user inputs"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Handling user interface clicks and actions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Enforcing access restrictions on classes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Establishing database schema"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95027,
+      "Explanation": "Delegates are essential in event handling, allowing specific methods to respond to user interface events like clicks and actions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What role do delegates play in implementing callbacks in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They restrict resource access to single threads"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They serve as a reference to be passed and invoked later"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They validate user credentials"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They compile regular expressions"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95028,
+      "Explanation": "Delegates allow methods to be passed as callbacks, where they can be invoked later after a certain condition or operation completes.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which of the following operations are delegates most likely to be used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Calculating tax on order transactions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Enabling parallel processing in tasks"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Sorting elements based on custom logic"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Transforming data models to JSON format"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95029,
+      "Explanation": "Delegates can be used to define custom sorting logic, where a delegate can point to a method encapsulating the comparison logic.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can delegates be utilized in designing extensible software components?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By pre-compiling components"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By locking down custom functionalities to specific users"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By allowing replacement and addition of methods at runtime"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By defining predetermined network protocols"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95030,
+      "Explanation": "Delegates allow for extensibility by enabling the addition or replacement of methods at runtime, fostering a design where behavior can be extended externally.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a multicast delegate in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A delegate that holds references to multiple methods"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A delegate that holds references to a single method"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A delegate that only references void methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A delegate that holds references to properties"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95031,
+      "Explanation": "Multicast delegates are delegates that can hold reference to more than one method. They are used to invoke multiple methods on a single event.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements correctly describes how multicast delegate invocation works?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "All methods are invoked in parallel."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Methods are invoked in sequence, and all receive the same parameters."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only the first method is invoked and the others are ignored."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Methods can be invoked in any random order."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95032,
+      "Explanation": "When a multicast delegate is invoked, its methods are called sequentially in the order they were added, and all methods share the same parameters.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator is used to combine two delegates to form a multicast delegate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "=="
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "-"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "+"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "*"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95033,
+      "Explanation": "The &apos;+&apos; operator is used to combine delegates, resulting in a multicast delegate that can call multiple methods.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the return type of a multicast delegate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Void"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A list of return values of all methods invoked"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The return value of the last method invoked"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An array of boolean values representing success of each method"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95034,
+      "Explanation": "When using a multicast delegate, only the return value of the last method in the invocation list is returned. Prior method return values are disregarded.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If an exception is thrown by one of the methods in a multicast delegate, what happens?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "All remaining methods are skipped and the exception is propagated to the caller."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The exception is ignored and the remaining methods are called."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A warning is shown, and the remaining methods are called."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The exception details are logged but do not affect other methods in the delegate."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95035,
+      "Explanation": "If a method in a multicast delegate throws an exception, the execution stops, none of the remaining methods are called, and the exception is propagated to the caller.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main purpose of the Action delegate in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To store a reference to a method that returns a value."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To store a reference to a method that takes no parameters."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To store a reference to a method that performs an operation but returns no value."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To store a reference to a method that returns a Boolean value."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95036,
+      "Explanation": "The Action delegate is used in C# to represent a method that performs some operation without returning a value. It can take parameters but does not return anything.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a key difference between Func and Action delegates in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Func delegates cannot take parameters."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Func delegates return a value, whereas Action delegates do not."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Action delegates can only have one parameter."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Func delegates cannot be used with lambda expressions."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95037,
+      "Explanation": "Func delegates are designed to return a value, while Action delegates are used for methods that do not return a value.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the context of Predicate delegates, which return type is expected?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Void"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Integer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Boolean"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "String"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95038,
+      "Explanation": "Predicate delegates are a special type of delegate that encapsulate a method with a single input parameter and returns a Boolean value.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How many parameters can a Predicate delegate take?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Zero"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Exactly one"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Two or more"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Any number of parameters"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95039,
+      "Explanation": "A Predicate delegate is defined to take exactly one parameter and return a Boolean value.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is a valid statement about lambda expressions in the context of Func delegates?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Lambda expressions cannot be used with Func delegates."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Lambda expressions allow you to assign a method to a Func delegate without explicitly defining a separate method."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Lambda expressions must always return void."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Lambda expressions are only used with Action delegates."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95040,
+      "Explanation": "Lambda expressions provide a concise way to pass a method as a delegate and are compatible with Func delegates, which require a return value.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the return type of a Func delegate that takes two integers as parameters?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Void"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "String"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A type specified as the last type parameter of Func"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95041,
+      "Explanation": "<span id=\"explanation95041\" style=\"color:blue\">The return type of a Func delegate is specified by the last type parameter in its declaration.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following delegate types in C# best suits a method that determines if a string has more than 5 characters?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Func<int, string=\"\"></int,>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Action<string></string>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Predicate<string></string>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Function<string, bool=\"\"></string,>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95042,
+      "Explanation": "<span id=\"explanation95042\" style=\"color:blue\">A Predicate delegate is ideal for methods that determine true/false conditions on a single input, in this case, checking the length of a string.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will the following Func delegate signature return:&nbsp;Func&lt;int, string, bool&gt;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "integer"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A string"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A boolean"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Void"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95043,
+      "Explanation": "<span id=\"explanation95043\" style=\"color:blue\">Func<int, string=\"\"> is a delegate that takes two parameters, int and string, and returns a boolean.</int,></span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which delegate type would you use to perform an operation on a list of integers without needing any return value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Func<int, int>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Predicate<int>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "List<int>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Action<int>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95044,
+      "Explanation": "Action<int> is used for methods that operate on integer values but do not return any result.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In .NET, which delegate type would you use to encapsulate a method that takes no parameters and returns a value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Function<void></void>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Action"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Func<tresult></tresult>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Predicate<bool></bool>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95045,
+      "Explanation": "<span id=\"explanation95045\" style=\"color:blue\">Func<tresult> is the correct delegate for methods returning a value without needing input parameters.</tresult></span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the keyword used in C# to declare an event within a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "trigger"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "event"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "delegate"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "notify"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95046,
+      "Explanation": "In C#, the &apos;event&apos; keyword is used to declare an event within a class.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "After defining an event in C#, how can it be raised?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By invoking a delegate directly"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using the 'raise' keyword"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By calling the event like a method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using the 'trigger' keyword"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95047,
+      "Explanation": "An event in C# is raised by invoking it like a method, optionally checking if the event is non-null.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is TRUE about events in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Events can be invoked from outside the class it was defined in"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Events are a special kind of multicast delegate"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Events do not require any delegate type declared"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All delegates are automatically events"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95048,
+      "Explanation": "Events are a special kind of multicast delegate that cannot be invoked directly outside the declaring class.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default access modifier for events declared in a class in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "internal"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "private"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "protected"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95049,
+      "Explanation": "By default, members of a class in C#, including events, are private unless specified otherwise.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is a common pattern for passing data to event handlers in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using a string parameter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using an integer parameter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using EventArgs or a subclass of EventArgs"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Passing a boolean value"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95050,
+      "Explanation": "The common pattern to pass data to event handlers in C# is by using EventArgs or a subclass of it to accommodate additional data.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which delegate is used for handling events in .NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "System.Action"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "System.Func"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "System.EventHandler"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "System.Delegate"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95051,
+      "Explanation": "System.EventHandler is the built-in delegate specifically designed for handling events in .NET.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the recommended signature of an event handler method for handling events in .NET?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void EventHandlerMethod(object sender, EventArgs e)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int EventHandlerMethod(object sender, EventArgs e)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "void EventHandlerMethod()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "bool EventHandlerMethod(object sender)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95052,
+      "Explanation": "The standard signature for an event handler in .NET is a method returning void, with two parameters: an object representing the sender and an EventArgs instance.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C#, which keyword is used to specify that a method subscribes to an event?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "add"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "subscribe"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "+= operator"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "bind"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95053,
+      "Explanation": "In C#, you use the += operator to associate or subscribe a method to an event for handling.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When multiple event handlers are subscribed to a single event, in what order are they invoked?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Random order"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Alphabetical order of method names"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Last subscribed, first invoked"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Order of subscription"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95054,
+      "Explanation": "When multiple handlers are subscribed to an event, they are invoked in the order they were added.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is incorrect regarding custom event accessors in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They allow you to customize the logic for adding and removing event handlers."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They are defined with the add and remove keywords."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Custom event accessors can directly expose fields."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They provide greater control over how event handlers are managed."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95055,
+      "Explanation": "Custom event accessors encapsulate the logic for adding and removing event handlers using add and remove keywords. They do not directly expose fields.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is an anonymous method in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A method without a return type."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A method defined without a name."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A method with a predefined name."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A method without parameters."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95056,
+      "Explanation": "An anonymous method is a method that is defined without a name, often used for short, one-off operations where defining a full method is unnecessary.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which delegate type can be used with an anonymous method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Any delegate type."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only Func delegates."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only Action delegates."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No delegate type."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95057,
+      "Explanation": "Anonymous methods can be used with any delegate type, as they are a shorthand for delegate instantiation.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How would you convert the following lambda expression to an anonymous method: (x, y) => x + y?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "(x, y) => { return x + y; };"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "delegate { return x + y; };"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "delegate (int x, int y) { return x + y; };"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "delegate { x + y; };"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95058,
+      "Explanation": "Lambda expressions can be expressed as anonymous methods; in this case, &apos;delegate (int x, int y) { return x + y; }&apos; is the anonymous method equivalent.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a primary use case for anonymous methods in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To create properties."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To handle events."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To define classes."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To manage memory."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95059,
+      "Explanation": "Anonymous methods are frequently used to handle events, providing a convenient way to create short, inline event handlers.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Anonymous methods in C# cannot access which of the following?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Local variables in the containing method."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Private fields of the containing class."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Parameters of the containing method."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of Above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95060,
+      "Explanation": "<span id=\"explanation95060\" style=\"color:blue\">Anonymous methods can access local variables and parameters of the containing method, as well as fields of the containing class. However, static context restrictions apply to static variables.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary benefit of using lambda expressions in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They allow for complex inheritance structures."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They enable concise declaration of anonymous methods."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They enforce strict type checking at compile time."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They facilitate direct memory manipulation."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95061,
+      "Explanation": "Lambda expressions provide a concise way to write anonymous methods, improving readability and reducing code verbosity.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How would you write a lambda expression to square a number in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "num =&gt; num * num"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "(num) =&gt; { num * num1; }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "(int num) =&gt; num1 * num1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "square =&gt; square1 * square1"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95062,
+      "Explanation": "<span id=\"explanation95062\" style=\"color:blue\">The expression &apos;num =&gt; num * num&apos; uses a lambda expression to represent a method that returns the square of a given number.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following lambda expressions correctly defines a method with no parameters, returning 'Hello World'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "() =&gt; { return \"Hello World\"; }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "=&gt; \"Hello World\";"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "() =&gt; \"Hello World\""
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "x =&gt; \"Hello World\""
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95063,
+      "Explanation": "<span id=\"explanation95063\" style=\"color:blue\">A lambda expression without parameters uses parentheses, and &apos;() =&gt; \"Hello World\" &apos; correctly defines such a lambda.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a lambda expression in C# has no parameters, how should it be formatted?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "=> {}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "=> ()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "() =>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "=> []"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95064,
+      "Explanation": "An empty set of parentheses &apos;()&apos; is used to indicate that the lambda takes no parameters.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the correct syntax for a single-parameter lambda expression in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "x -&gt; x + 1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "(x) =&gt; x + 1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "x =&gt; x, x + 1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "(x,y) -&gt; x + y"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95065,
+      "Explanation": "<span id=\"explanation95065\" style=\"color:blue\">&apos;(x) =&gt; x + 1&apos; is the correct syntax for representing a lambda expression that takes a single parameter &apos;x&apos; and returns &apos;x + 1&apos;.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C#, lambda expressions can be converted to:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Data structures"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Regex patterns"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Delegates and expression trees"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "XML documents"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95066,
+      "Explanation": "Lambda expressions can be converted into delegates and expression trees in C# for execution and analysis, respectively.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which delegate is suitable for a lambda expression that takes no arguments and returns nothing?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Action"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Func"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Predicate"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "EventHandler"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95067,
+      "Explanation": "The &apos;Action&apos; delegate is used for lambda expressions that do not return a value and can take zero or more input parameters.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of expression is a lambda expression in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Anonymous method"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Named function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Nested class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Interface"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95068,
+      "Explanation": "A lambda expression is a way to define an anonymous method in C# that can be used in place of a delegate or expression tree.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following can capture variables from the surrounding scope in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Anonymous types"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Lambda expressions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Static methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Interfaces"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95069,
+      "Explanation": "Lambda expressions in C# can capture variables from their surrounding scope, enabling them to maintain state between invocations.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword/operator is used to define an expression-bodied member in a C# class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "return"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "lambda"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "=&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "expr"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 95070,
+      "Explanation": "<span id=\"explanation95070\" style=\"color:blue\">The &apos;=&gt;&apos; operator is used in C# to define expression-bodied members, similar to lambda expressions in syntax.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What are delegates?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Value Pointer"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Function Pointer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Pass By Reference"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Pass By Value"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 81807,
+      "Explanation": "Function Pointer<br>Delegates in C# are function pointers that reference methods. They allow methods to be treated as entities that can be passed as parameters, stored in variables, and invoked dynamically. Delegates provide a way to encapsulate a method signature and allow methods to be passed around as objects. Thus, they act as function pointers in managed code.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "using System;<br><br>delegate int Addition();<br><br>class MyClass<br>{<br>&nbsp; &nbsp; int a, b;<br><br>&nbsp; &nbsp; public int Add()<br>&nbsp; &nbsp; {<br>&nbsp; &nbsp; &nbsp; &nbsp; return a + b;<br>&nbsp; &nbsp; }<br><br>&nbsp; &nbsp; public MyClass(int a, int b)<br>&nbsp; &nbsp; {<br>&nbsp; &nbsp; &nbsp; &nbsp; this.a = a;<br>&nbsp; &nbsp; &nbsp; &nbsp; this.b = b;<br>&nbsp; &nbsp; }<br>}<br><br>class Program<br>{<br>&nbsp; &nbsp; static void Main(string[] args)<br>&nbsp; &nbsp; {<br>&nbsp; &nbsp; &nbsp; &nbsp; MyClass m = new MyClass(6, 6);<br><br>&nbsp; &nbsp; &nbsp; &nbsp; Addition a = m.Add;<br>&nbsp; &nbsp; &nbsp; &nbsp; int r = a();<br>&nbsp; &nbsp; &nbsp; &nbsp; Console.WriteLine(r);<br>&nbsp; &nbsp; &nbsp; &nbsp; Console.ReadLine();<br>&nbsp; &nbsp; }<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "12"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "None"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "0"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 81793,
+      "Explanation": "A delegate Addition is defined to hold references to methods that return an int and take no parameters.<br>A class MyClass is defined with fields a and b, a method Add to add these fields, and a constructor to initialize them.<br>In the Main method, an instance of MyClass is created, the Add method is assigned to the delegate, and then the delegate is invoked to get the result and print it.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "deligate is derived from",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "System.MultiDeligat"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "System.MulticastDelegate"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "none"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "from both"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 81794,
+      "Explanation": "System.Object <br>&nbsp;&nbsp;&nbsp;&nbsp;\u2514\u2500\u2500 System.Delegate <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2514\u2500\u2500 System.MulticastDelegate<br><br>System.Delegate is the base class for delegates.<br>System.MulticastDelegate is derived from System.Delegate and provides support for invocation lists, meaning it can hold references to multiple methods.<br>All delegates in C# are instances of System.MulticastDelegate, which provides the ability to call multiple methods with a single delegate instance.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "int invocationCount = d1.GetInvocationList().GetLength(0); <br>the above code assume d1&nbsp;is variable of a type deligate",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "This method give length of method bind with deligate"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "This method give list of method"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "None"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "This method give list of parameter of method"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 81795,
+      "Explanation": "<p>d1 is a delegate. In C#, a delegate can hold references to multiple methods. The GetInvocationList method returns an array of delegates representing the methods that are currently bound to the delegate d1.</p><p>The GetLength(0) method returns the number of elements in the array returned by GetInvocationList. This gives us the number of methods that are bound to the delegate d1.</p>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A. An anonymous method cannot access ref or out parameters of the defining method.<br>B. An anonymous method cannot have a local variable with the same name as a local",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only B is true"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "only A is true"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "none"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "both statements are true"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 81775,
+      "Explanation": "Anonymous methods and lambda expressions cannot directly capture ref or out parameters from the containing method.<br>An anonymous method cannot declare a local variable with the same name as a local variable in the outer method because it would cause a name conflict.<br>Hence both&nbsp;statements are true<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "using System;<br>delegate int CountIt (int end);<br>class HelloWorld{<br>&nbsp; static void Main () {<br>&nbsp;&nbsp;&nbsp; int result;<br>&nbsp;&nbsp;&nbsp; CountIt count = delegate (int end) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int sum = 0;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (int i = 0; i &lt;= end; i++){<br>&nbsp;&nbsp; &nbsp;&nbsp; sum += i;<br>&nbsp;&nbsp; &nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return sum;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;// return a value from an anonymous method<br>&nbsp;&nbsp;&nbsp; };<br>&nbsp;&nbsp;&nbsp; result = count (3);<br>&nbsp;&nbsp;&nbsp; Console.WriteLine (result);<br>&nbsp; }<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 81776,
+      "Explanation": "<span id=\"explanation81776\">C# delegates are similar to pointers to functions, in C or C++. A delegate is a reference type variable that holds the reference to a method. The reference can be changed at runtime. Delegates are especially used for implementing events and the call-back methods.<br>Here CountIt is delegate which accept int value and return int value.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of following code?<br>using System;<br>delegate int CountIt(int end);<br>class AnonMethDemo3 {<br>static void Main() {<br>int result;<br>CountIt count = delegate (int end) {<br>int sum = 0;<br>for(int i=0; i &lt;= end; i++) {<br>Console.Write(i +\",\");<br>sum += i;<br>}<br>return sum; // return a value from an anonymous method<br>};<br>result = count(3);<br>Console.WriteLine( result);<br>}<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0,1,2,3,6"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "none"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1,2,3,"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1,5,6"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 81777,
+      "Explanation": "Here in for loop it will print 0 to 3 values as 3 is pass as end parameter and simultenously it is adding value of i in sum variable , hence sum is addition of 0 to 3 numbers which is 6.&nbsp; So output is 0,1,2,3,6 .",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "using System;<br>delegate int addition (int x, int y);<br>class myclass<br>{<br>&nbsp; public int add (int p, int q)<br>&nbsp; {<br>&nbsp;&nbsp;&nbsp; return p + q;<br>&nbsp; }<br>&nbsp; public int mul (int p, int q)<br>&nbsp; {<br>&nbsp;&nbsp;&nbsp; return p * q;<br>&nbsp; }<br>}<br><br>class Program<br>{<br>&nbsp; static void Main (string[]args)<br>&nbsp; {<br>&nbsp;&nbsp;&nbsp; myclass m = new myclass ();<br>&nbsp;&nbsp;&nbsp; addition a = delegate (int p, int q) { int r;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; r = p + q;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return r;<br>&nbsp;&nbsp;&nbsp; };<br>&nbsp;&nbsp;&nbsp; a += delegate (int p, int q)<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int r;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; r = p * q;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return r;<br>&nbsp;&nbsp;&nbsp; };<br>&nbsp;&nbsp;&nbsp; Console.WriteLine (a.GetInvocationList ().Length);<br>&nbsp;&nbsp;&nbsp; int invo = a (3, 5);<br>&nbsp;&nbsp;&nbsp; Console.WriteLine (invo);<br>&nbsp;&nbsp;&nbsp; Console.ReadLine ();<br>&nbsp; }<br>}<br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2, 15"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "15,8"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 81778,
+      "Explanation": "GetInvocationList method will return a total count of the methods assigned to the delegate. Hence first output is 2 and second output will be 15.<br>When you use multicast delegate with methods having return type, it will override the previous values.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "delegate int Incr(int v);<br>class SimpleLambdaDemo {<br>&nbsp;static void Main() {<br>&nbsp;Incr incr = count =&gt; count + 2;<br>&nbsp;&nbsp;&nbsp;&nbsp;int x = -5;<br>&nbsp;&nbsp;&nbsp;&nbsp;while(x&lt;= 0)<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.Write(x + \" \");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x = incr(x);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "-5,-3,-1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "None"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "5,3,1,"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 81779,
+      "Explanation": "<ul><li>Initially, x is -5.</li><li>The first iteration prints -5 and increments x to -3.</li><li>The second iteration prints -3 and increments x to -1.</li><li>The third iteration prints -1 and increments x to 1, which causes the loop to terminate as 1 is greater than 0.</li></ul><p>The correct output for the code is:-5 -3 -1</p>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "deligate for this lambda expression n =&gt; n % 2 ==",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "delegate true deli();"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "deligate bool deli(int n);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "deligate int deli();"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 81780,
+      "Explanation": "<p>This delegate takes an int as a parameter and returns a bool, which matches the lambda expression.<br>So the correct answer is:<br>B. delegate bool deli(int n);<br></p>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Data written before =&gt; is known as",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "input parameter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "output parameter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "represent return value"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 81781,
+      "Explanation": "input parameter<br>In a lambda expression, the data written before the =&gt; is known as the input parameter(s). These parameters are the inputs to the lambda function. For example, in the lambda expression n =&gt; n % 2 == 0, n is the input parameter.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator is used for connecting a event with a procedure in c#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "+="
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "="
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "both A and B"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 70485,
+      "Explanation": "In C#, the <code>+=</code> operator is used to subscribe (connect) an event with an event handler (procedure). This operator adds the specified event handler to the event&apos;s invocation list.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the difference between a delegate and an event in C#?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A delegate is a type that represents a method, while an event is a special type of delegate that is used to handle events."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A delegate can be invoked directly, while an event cannot."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A delegate can be used to invoke multiple methods, while an event can only be used to invoke one method."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 70420,
+      "Explanation": "A delegate is a type that represents a method, while an event is a special type of delegate that is used to handle events.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true about multicast delegates in C#?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Multicast delegates cannot hold references to multiple methods."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Multicast delegates are limited to holding references to static methods only."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Multicast delegates can hold references to multiple methods and invoke them sequentially."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Multicast delegates can hold references to multiple methods and invoke them concurrently."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 86607,
+      "Explanation": "Multicast delegates in C# can hold references to multiple methods and will invoke them sequentially, one after another, when the delegate is invoked.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A method that performs a task in response to an event is a(n)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "delegate"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "event"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "access modifier"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "event handler"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 10,
+      "UniqueNodeId": 2373,
+      "QuestionTypeId": 0,
+      "QuestionId": 85633,
+      "Explanation": "To react to an event, we attach an event handler to it. This is a block of code&nbsp; that runs when the event fires. When such a block of code is defined to run in response to an event, we say we are registering an event handler.",
+      "Answer": "D",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

@@ -1,0 +1,1146 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is the output of C Program.?<br><br><br>int main()<br>{<br>&nbsp;&nbsp;&nbsp; int a[] = {1,2,3,4};<br>&nbsp;&nbsp;&nbsp; int b[4] = {5,6,7,8};<br>&nbsp;&nbsp;&nbsp; printf(\"%d,%d\", a[0], b[0]);<br>}<br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1,5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2,6"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0 0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compiler error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 74933,
+      "Explanation": "It is perfectly allowed to skip array size if you are initializing at the same time. a[0] is first element.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of C program.?<br><br><br>int main()<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp; float marks[3] = {90.5, 92.5, 96.5};<br>&nbsp;&nbsp;&nbsp; int a=0;<br>&nbsp;&nbsp;&nbsp; while(a&lt;3)<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(\"%.2f,\", marks[a]);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a++;<br>&nbsp;&nbsp;&nbsp; }<br></div>}<br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "90.5 92.5 96.5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "90.50 92.50 96.50"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0.00 0.00 0.00"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compiler error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 74934,
+      "Explanation": "0.2%f prints only two decimal points. It is allowed to use float values with arrays.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of C Program.?<br><br><br>int main()<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp; int a[3] = {10,12,14};<br>&nbsp;&nbsp;&nbsp; a[1]=20;<br>&nbsp;&nbsp;&nbsp; int i=0;<br>&nbsp;&nbsp;&nbsp; while(i&lt;3)<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(\"%d \", a[i]);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i++;<br>&nbsp;&nbsp;&nbsp; }<br></div>}<br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "20 12 14"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10 20 14"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "10 12 20 <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compiler error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 74935,
+      "Explanation": "Here we are assigning a[1] = 20 that means 2nd element of array is override to 20. In while loop we are printing array elements&nbsp; so output is 10 20 14.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of C Program.?<br><br><br>int main()<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp; int a[3] = {20,30,40};<br>&nbsp;&nbsp;&nbsp; a[0]++;<br>&nbsp;&nbsp;&nbsp; int i=0;<br>&nbsp;&nbsp;&nbsp; while(i&lt;3)<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(\"%d \", i[a]);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i++;<br>&nbsp;&nbsp;&nbsp; }<br></div>}<br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "41 30 20"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "21 30 40"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 74936,
+      "Explanation": "You can use increment and decrement operators on array variables too. hence a[0]++ will be 21.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of C program with arrays.?<br><br><br>int main()<br>{<br>&nbsp;&nbsp;&nbsp; int a[3] = {20,30,40};<br>&nbsp;&nbsp;&nbsp; int b[3];<br>&nbsp;&nbsp;&nbsp; b=a;<br>&nbsp;&nbsp;&nbsp; printf(\"%d\", b[0]);<br>}<br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "20"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "30"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "address of 0th element."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compiler error<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 74937,
+      "Explanation": "You can not assign one array variable to other.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is an array Base Address in C language.?<br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Base address is the address of 0th index element."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An array b[] base address is &amp;b[0]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An array b[] base address can be printed with printf(\"%d\", b);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All the above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 74938,
+      "Explanation": "In c array name, address of 0th elment is nothing but base address of array.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of following program:<br>void&nbsp; main()<br>{<br>&nbsp;&nbsp; &nbsp;char c[] = \"ABCDEFG\";<br>&nbsp;&nbsp; &nbsp;char *p = c;<br>&nbsp;&nbsp; &nbsp;printf(\"%s\", p + p[2] - p[0]);<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "BCDEFG.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "CDEFG.<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Garbage value.<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compile time error.<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 70831,
+      "Explanation": "<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the program:<br>#include&lt;stdio.h&gt;<br><br>void main(){<br>&nbsp;&nbsp; &nbsp;int a[3]= {1,2,3};<br>&nbsp;&nbsp; &nbsp;int *p= a;<br>&nbsp;&nbsp; &nbsp;int **r= &amp;p;<br>&nbsp;&nbsp; &nbsp;printf(\"%d\",(**r));<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compile time error."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Address of a."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Junk value."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 70902,
+      "Explanation": "P is pointer pointing to a base address of array and r is pointer to pointer pointing to p hence r is indirectly poiniting to a array. Hence output is 1.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main()<br>{<br>&nbsp;&nbsp;&nbsp; int A[2]= {'1', '2'};<br>&nbsp;&nbsp; A['2'-'1']=50;<br>&nbsp;&nbsp;&nbsp; printf(\"%d\", 1[A] );<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "50"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63552,
+      "Explanation": "here A[&apos;2&apos;-&apos;1&apos;] will be ascii value of 50-49 hence output is 1 hence A[1] =50 and hence 1[A] will be 50.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "There can not be array of _________.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "pointer.<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "structure.<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of these.<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63575,
+      "Explanation": "void means nothing&nbsp; and void is not a data type hence there can not be array of void.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>change(int *b)<br>{<br>&nbsp;&nbsp; &nbsp;int i;<br>&nbsp;&nbsp; &nbsp;for (i = 0; i &lt; 4; i++)<br>&nbsp;&nbsp; &nbsp;{<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; *b = *b + 1;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;b++;<br>&nbsp;&nbsp; &nbsp;}<br>}<br><br>void main()<br>{<br>&nbsp;&nbsp; &nbsp;int a[5] = { 2, 3, 4, 5, 6&nbsp;&nbsp; &nbsp;}, i;<br>&nbsp;&nbsp; &nbsp;change(a);<br><br>&nbsp;&nbsp; &nbsp;for (i = 4; i &gt;= 0; i--)</div><div style=\"margin-left: 40px;\">printf(\"%d\", a[i]);</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2 3 4 5 6"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4 3 2 1 0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "7 6 5 4 3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "6 6 5 4 3"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63532,
+      "Explanation": "for loop in function \"change\" will execute only 4 times, thus incrementing first 4 elements of array \"a\" each by 1, except for the last element which will remain unchanged (a[4]=6).<br>In main(), array \"a\" is printed backwards.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The declaration \u201cint *&nbsp; Ptrcpy(char [ ] );\u201d indicates______.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Ptrcpy is pointer to integer.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Ptrcpy is pointer to function that returns an integer.<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Ptrcpy is function that returns an integer pointer.<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Illegal declaration of Ptrcpy.<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63557,
+      "Explanation": "Ptrcpy is a function name which return a integer pointer and takes char array as the argument.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>{<div style=\"margin-left: 40px;\">int a[ ]={20,30,40,50,60}, *j=a;<br>&nbsp;j+=2;<br>&nbsp;printf(\"%d\",*j);<br></div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "50"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "30"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "40"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63539,
+      "Explanation": "as we are assigning base address of array to j and then adding 2 in base address (base address+2*(size of int)), j will point to 2nd element of array. i.e. 40<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>&nbsp;{ <div style=\"margin-left: 40px;\">&nbsp; char p[5]={0,0,65,66};<br><br>&nbsp; printf(\u201c%d %d\u201d, p[1], p[4]);<br></div>&nbsp; }<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0 66"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0 0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0 garbage"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63540,
+      "Explanation": "P is array of 5 elements but it is initialised with only 4 elements, this is called as partial initialisation. in this case rest of the elements are initialised to 0. hence output is 0 0.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>{<br>int a[ ]={10,20,30,40,50}, j;<br><br>for(j=0; j&lt;5; j++)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(\"%d %d \",*a,*(a+j));<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10 10 10 10 10<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10 10 10 20 10 30 10 40 10 50 <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Garbage value printed 5 times"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error : L value required"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63541,
+      "Explanation": "a is base address of array, i.e. a is nothing but &amp;a[0] hence *a always print value of 1st element. as we are using for loop hence *a will print 10&nbsp; five times.&nbsp; and *(a+j) will print each element of the array hence output will be  <table class=\"inner1\" border=\"1\" width=\"100%\"><tbody><tr><td>10 10 10 20 10 30 10 40 10 50&nbsp;</td></tr></tbody></table> <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>{<div style=\"margin-left: 40px;\">char a[6*3/2]={'a', 'b', 'r', 'd', 'c'};<br>printf(\"%c\", a[2] );<br></div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "r"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "d"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "b<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63542,
+      "Explanation": "Array size must be a constant value hence 6*3/2 all are constants hence result 9 is also constant . it will print the value present at index 2 in the array i.e. &apos;r&apos;.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;stdio.h&gt;<br>#include&lt;string.h&gt;<br><br>char result[100] = \"Hello world\";<br>char* fun()<br>{<br>&nbsp;<div style=\"margin-left: 40px;\">&nbsp;strcpy (result, \"Anything is Good\");<br>&nbsp; return result;<br></div>}<br><br>void main()<br>{<div style=\"margin-left: 40px;\">&nbsp; char* j;<br>&nbsp; j = fun();<br>&nbsp; printf (\"%s\", j);<br></div>}<br><br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Anything is Good"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hello world"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Garbage"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63543,
+      "Explanation": "result is array of 100 element&nbsp; and strcpy function will copy \"Anything is Good \" in result array. Array name is by default a pointer variable . As we are returning a character pointer from function return result statement will return the base address of array . hence in main when we print j it will print \" Anything is Good \" as %s will print till it will get &apos;\\0&apos; characters.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>void main( )</div><div>{&nbsp;</div><div style=\"margin-left: 40px;\">int a[10]={2,1,3},j;</div><div style=\"margin-left: 40px;\">int b[5]={a[0],a[1],a[2],a[3],a[4]};<br><br></div><div style=\"margin-left: 40px;\">for(j=0;j&lt;5;j++)</div><div style=\"margin-left: 40px;\">{</div><div style=\"margin-left: 80px;\">printf(\"%d \",b[j]*a[j]);</div><div style=\"margin-left: 40px;\">}</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "4 1 9 0 0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2 1 3 Garbage Garbage"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2 1 3 0 0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ERROR"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63402,
+      "Explanation": "Array a is initialized in the statement int a[10]={2,1,3}. Note that only first 3 members get initialized. All other 7 members of this array are set to 0.<br>b is initiallised with array elements of a i.e. b = {2,1,3,0,0}<br>so in for loop the result will be 4 1 9 0 0",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Which of the following statements are correct about an array?&nbsp;<br><br></div><div>1.The array int num[26]; can store 26 elements.<br></div><div><br>2.The expression num[1] designates the very first element in the array.<br></div><div><br>3.It is necessary to initialize the array at the time of declaration.<br></div><div><br>4.The declaration int num[SIZE] is allowed if SIZE is a macro.<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1,4"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2,3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "2,4"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63391,
+      "Explanation": "Statement 2 is wrong because num[1]designates second element of the array. (Note that array indexing starts with zero, not 1). Statement 3 is also wrong because it is not necessary to initialize and array. You can simply declare it and assign values later on.&nbsp;",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>void main( )</div><div>{</div><div style=\"margin-left: 40px;\">int M[12]; &nbsp;M[0]=-12; &nbsp; M[11]=-12;<br><br></div><div style=\"margin-left: 40px;\">printf(\u201c%d %d %d\u201d, *(M+0), *(M+11), *M );</div><div>}<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "-12 12 -12"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "-12 -12 -12"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "-12 -12 12"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "0 11 garbage"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63382,
+      "Explanation": "The first (index 0) and last (index 11) elements of the array M are set to -12. The printf statement is accessing the first, last and again first element. Hence the output is -12 -12 -12",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>void main( )<br></div><div>{</div><div style=\"margin-left: 40px;\">char dac[ ];</div><div style=\"margin-left: 40px;\">dac[0]=65;<br></div><div style=\"margin-left: 40px;\">printf(\"%c\", dac[0] );<br></div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "65"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "a"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63383,
+      "Explanation": "Size of array must be specified during its declaration. Hence the code will give error in the declaration of variable dac<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>void main( )</div><div>{</div><div style=\"margin-left: 40px;\">char sun[1]={'2'};<br></div><div style=\"margin-left: 40px;\">sun++;<br></div><div style=\"margin-left: 40px;\">printf(\"%d\", sun );<br></div><div>}<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "51"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "GARBAGE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ERROR"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63384,
+      "Explanation": "The statement sun++ is equivalent to sun= sun+1 which is trying to change the value of sun. Value of base address of an array cannot be changed. Hence this will give error. array name is constant pointer which we can not modify.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>In 32 bit machine:<br><br>void main( )<br></div><div>{&nbsp;</div><div style=\"margin-left: 40px;\">float * p[10];<br><br></div><div style=\"margin-left: 40px;\">printf(\"Size of p=%d bytes\", sizeof(p));</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10*sizeof(float)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "40"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "20*sizeof(float*)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "160"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63385,
+      "Explanation": "<div>Variable p is declared as array of float* (Not as array of float). Hence its size of 10*size of each element of the array. Hence 10*sizeof(float*) . Here size of float pointer is 4 bytes.</div>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>void main( )<br></div><div>{</div><div style=\"margin-left: 40px;\">int &nbsp;a[50], *pa=a;<br><br></div><div style=\"margin-left: 40px;\">a[0]=31;a[1]=34;a[2]=43;a[3]=12;a[4]=75;a[5]=61;<br><br></div><div style=\"margin-left: 40px;\">printf(\"%d %d %d %d\", pa[5],*(5+a),5[pa],*pa+5);<br></div><div>}<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "61 61 61 61"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "61 61 61 Garbage"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "61 61 61 36"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63386,
+      "Explanation": "<div>Note that the base address of array a is stored in pointer pa. Hence we can access the elements using a as well as pa. &nbsp;</div><div>pa[5], *(5+a) and 5[pa] are all valid ways of accessing the 6th element of array whose value is 61. But *pa+5 will first get the starting element of pa, which is 31 and then add 5 to it, resulting to a value 36.<br></div>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>void main( )</div><div>{</div><div style=\"margin-left: 40px;\">float floats[ ]={ 13,24,1,5,1,5,5,4,3,5}, *w, *boat;<br></div><div style=\"margin-left: 40px;\">w=floats;</div><div style=\"margin-left: 40px;\">boat=floats+4;<br><br></div><div style=\"margin-left: 40px;\">w=w*2;</div><div style=\"margin-left: 40px;\">boat=boat/2;<br><br></div><div style=\"margin-left: 40px;\">printf(\"%f %f\", *w, *boat);<br></div><div>}<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "13.000000 1.500000"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "13.240000 1.500000"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "13.000000 1.000000"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63393,
+      "Explanation": "Note that w and boat are declared as float*, hence we can\u2019t use them in multiplication operation. The code will give error at line w=w*2 and boat= boat/2;",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the correct syntax to pass an array as a parameter to function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "func(array[size]);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "func(*array);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "func(&amp;array);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "func(array);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63611,
+      "Explanation": "Only name of the array is passed as a parameter for the function.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Give the output of the following program<br>#include&lt;stdio.h&gt;<br>int main()<br>{<br>int *p, A[5]={1,2,3,4,5};<br>p=&amp;A[0];<br>printf('%d',*(p+2));<br>return 0;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compilation error.<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Runtime error.<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63600,
+      "Explanation": "p is pointing to the base address of the array. i.e A[0].&nbsp; p+2=address of 3rd element.&nbsp; *(p+2) = content of 3rd element.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What will be output if you will compile and execute the following c code?</div><div><br></div><div>void main()<br>{<br></div><div style=\"margin-left: 40px;\">&nbsp;int array[]={10,20,30,40};<br><br></div><div style=\"margin-left: 40px;\">printf(\"%d\",-2[array]);&nbsp;<br></div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "-60"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "-30"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "60"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Garbage value"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63372,
+      "Explanation": "as [] has more priority the result will be 30 and then - sign get applied to result hence output will be -30.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int ary[2];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ary[-2]=2;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(\"%d\", ary[2-4] );<br></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2-4"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "garbage"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63314,
+      "Explanation": "array is nothing but base addrress of array. considering pointer arithmatic ary[-2] will access the memory location&nbsp; (ary-2) i.e. base memory address - 2*sizeof(int).<br>and same value will get printed.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; int a[5]={1,3,6,7,0}, *p=&amp;a[2];<br>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; printf(\u201c%d\u201d,p[-1]);<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "-6"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "7"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63315,
+      "Explanation": "p is inter pointer having address of&nbsp; 2nd element&nbsp; of array i.e. 6 so p[-1] will access the 1st element of array i.e. 3.( according to pointer arithmatic ). p[-1] is nothing but address stored in p - 1*sizeof(int) which is nothing but previous element.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void fun (int x, int *y)<br>{<div style=\"margin-left: 40px;\">&nbsp; x = *(y) -= 2;<br></div>}<br><br>void main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; int a[5] = { 2, 4, 6, 0 }, i, b = 5;<br>&nbsp; for (i = 0; i &lt; 3; i++)<br>&nbsp;&nbsp;&nbsp; {<br></div><div style=\"margin-left: 80px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fun (a[i], &amp;b);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf (\"%d\", b);<br></div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp; }<br></div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "3 1 1 <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3 1 -1<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "5 3 1<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "5 5 5"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63316,
+      "Explanation": "As&nbsp; b variable is passed by referance to a function and we are subtracting 2 from b hence output will be 3 1 -1 .<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "int size=5;<br>&nbsp;&nbsp;&nbsp; void main( )<br>&nbsp;&nbsp;&nbsp; {<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp; int Array[size+1];<br>&nbsp;&nbsp;&nbsp; printf(\"%d\", sizeof(Array) );<br></div>&nbsp;&nbsp;&nbsp; }<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "6<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63318,
+      "Explanation": "Array size must be defied with constant value.<br>note : in latest compiler it will allow to define the array with variable values. but ideally array size should be constant.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the program in Turbo-C ?<br>&nbsp;&nbsp;&nbsp;#include&lt;stdio.h&gt;<br>&nbsp;&nbsp;&nbsp;int main()<br>&nbsp;&nbsp;&nbsp;{<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int arr[5], i=-1, z;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while(i&lt;5)<br></div><div style=\"margin-left: 80px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arr[i]=++i;</div><div style=\"margin-left: 40px;\"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(i=0; i&lt;5; i++)<br></div><div style=\"margin-left: 80px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(\"%d, \", arr[i]);<br></div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;return 0;</div>&nbsp;&nbsp;&nbsp;}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1, 2, 3, 4, 5,"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "-1, 0, 1, 2, 3, 4"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0, 1, 2, 3, 4,"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "0, -1, -2, -3, -4,"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63321,
+      "Explanation": "in while loop as we are assining value to array element using&nbsp; ++i&nbsp; i.e nothing but pre increament so 0 to 4 will be stored in array . In next for loop we are&nbsp; printing array elements.so out put will be&nbsp; 0 1 2 3 4.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Array can be passed to function by passing its________.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Values."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Address."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both 1 &amp; 2."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of these."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63303,
+      "Explanation": "We can pass array to function by each element as a value or complete array as address of array.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>{<div style=\"margin-left: 40px;\">int a[ ]={10,20,30,40,50}, j;<br>for(j=0; j&lt;5; j++)&nbsp;</div><div style=\"margin-left: 80px;\">printf(\"%d\",*a);<br></div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10 10 10 10 10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10 20 30 40 50"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Garbage value printed 5 times"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error : L value required"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63306,
+      "Explanation": "a is nothing but base address of array which is same as &amp;a[0] so it will print 1st element 5 times in loop.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>{<div style=\"margin-left: 40px;\">int a[ ]={10,20,30,40,50}, i,*k;<br>&nbsp;k=&amp;a[3]-3;<br><br>&nbsp;for (i=0;i&lt;=4;i++)&nbsp;<br>{&nbsp;&nbsp;</div><div style=\"margin-left: 80px;\">&nbsp; printf(\"%d\", *k);&nbsp;&nbsp;&nbsp;k++;&nbsp;&nbsp;&nbsp;&nbsp;<br></div><div style=\"margin-left: 40px;\">&nbsp; }</div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10 20 30 40 50"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10 20 30 40"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "10 20 30"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63310,
+      "Explanation": "k= address of 3rd element - 3 * (size of int)<br>We are subtracting 3 from address of a[3] element hence K will point to base address of array.<br>we are printing base address to 4 elements and increasing value of K hence it will print 10 to 50 elements.&nbsp;",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Code:<br>void *ptr;<br>myStruct myArray[10];<br>ptr = myArray;<br>Which of the following is the correct way to increment the variable 'ptr'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ptr = ptr + sizeof(myStruct);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "++(int*)ptr;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ptr = ptr + sizeof(myArray);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ptr = ptr + sizeof(ptr);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63787,
+      "Explanation": "Pointer arithmatic will not work because pointer is of type void. If ptr needs to be incremented it has to move by size of myStruct.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statement is correct about an array?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The array int num[25]; can store 26 elements."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The expression num[1] designate the very first element in the array."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is necessary to initialize the array at the time of declaration."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The expression num[15] designate the 16th element in the array."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 19,
+      "QuestionTypeId": 0,
+      "QuestionId": 63930,
+      "Explanation": "The expression num[15] designate the 16th element in the array. As array index starts from 0 num[15] will give 16th element of array.<br>",
+      "Answer": "D",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

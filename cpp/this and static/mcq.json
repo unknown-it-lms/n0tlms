@@ -1,0 +1,1378 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is the 'this' pointer in C++ primarily used for?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To point to any random object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To point to the next object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To point to the current object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To point to the previous object"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93687,
+      "Explanation": "The &apos;this&apos; pointer is used to point to the current object within a class method.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about the 'this' pointer is false?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "'this' pointer is implicitly available within non-static member functions of a class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "'this' pointer can be used in static member functions of a class."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "'this' pointer is automatically passed to a non-static member function for the object call."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "'this' pointer cannot be modified."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93688,
+      "Explanation": "Static member functions do not have a &apos;this&apos; pointer because they are not bound to any specific object.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a method needs to return the current instance of the class, which of the following is the preferred way?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Return nullptr"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Return *this"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Return &this"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Return this"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93689,
+      "Explanation": "Returning *this will return the current object by reference, which is a common practice in method chaining.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of pointer is 'this' in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "const void*"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int*"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "const MyClass*"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MyClass*"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93690,
+      "Explanation": "The &apos;this&apos; pointer is a non-const pointer that points to the current instance of the class, allowing member functions to access non-static members.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider the code: class Sample { void func(); ... };. What is the type of 'this' pointer inside func()?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Sample"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Sample*"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "void*"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Sample const*"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93691,
+      "Explanation": "Inside a member function, &apos;this&apos; is a pointer of type (ClassName*), pointing to the current object.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why is the 'this' pointer not allowed in a static member function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Static functions are unrelated to objects."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Static functions have a different syntax."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Static functions cannot access member functions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Static functions are global."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93692,
+      "Explanation": "Static member functions do not have access to the &apos;this&apos; pointer because they are not invoked on any object instance.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a member function of class MyClass, what does the expression 'this == &obj' signify?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "'this' and 'obj' point to different objects"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "'this' and 'obj' point to the same object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "'obj' is a friend of the object pointed by 'this'"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both 'this' and 'obj' are invalid"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93693,
+      "Explanation": "The expression checks whether the &apos;this&apos; pointer and &apos;obj&apos; are pointing to the same memory location, meaning they refer to the same object.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can 'this' be used to solve the name conflict between member variable and parameter name?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using a different class name alias"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By declaring variables as global"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using 'this' to explicitly specify the member"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By using a namespace"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93694,
+      "Explanation": "&apos;this->&apos; can be used to distinguish between a class member variable and a parameter with the same name.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is correctly demonstrated use of the 'this' pointer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "return this*;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "return &this;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "return *this;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "return this->*;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93695,
+      "Explanation": "Returning &apos;*this&apos; is the correct way to return an instance by reference using the &apos;this&apos; pointer.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you try to modify 'this' inside a constant member function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It leads to undefined behavior"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The program crashes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compile-time error occurs"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It silently succeeds"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93696,
+      "Explanation": "In a constant member function, &apos;this&apos; is treated as a pointer to a constant object, hence modifying it causes a compile-time error.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which of the following scenarios is using 'this' pointer mandatory?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Accessing non-static variables"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Invoking non-static methods"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Overloading unary operators"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When member names are ambiguous"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93697,
+      "Explanation": "&apos;this&apos; pointer becomes necessary when there is ambiguity, such as when member variables and parameters share the same name.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the 'this' keyword point to in a class constructor?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "No valid address"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The address of the current object being constructed"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A temporary object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To the class itself"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93698,
+      "Explanation": "In a constructor, &apos;this&apos; points to the memory location of the object currently being constructed.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of 'this->member' code in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Accesses a static member"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compiles an error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Accesses the member of the current object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Executes a function independently"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93699,
+      "Explanation": "&apos;this->member&apos; is used to access the member of the object pointed by &apos;this&apos;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement about static data members in C++ is correct?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They maintain a separate copy for each object."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They are initialized automatically to zero."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They can only be accessed from static member functions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They are accessed using the -> operator."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93700,
+      "Explanation": "Static data members are initialized to zero by default if not explicitly initialized.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How many copies of a static member function exist in terms of instance objects?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Equal to the number of objects."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only one copy, shared across all instances."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "One per function call."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Depends on the compiler settings."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93701,
+      "Explanation": "Static member functions are shared across all instances and not tied to any specific object.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct way to define a static data member in a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Inside the class definition, similar to non-static members."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Outside the class definition using the scope resolution operator."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "In the main function."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using the extern keyword."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93702,
+      "Explanation": "Static data members are declared in the class but defined outside the class using the scope resolution operator.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you try to access a non-static member from within a static member function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compiles successfully and works as expected."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compiles but throws a runtime error."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Results in a compile-time error."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Hangs the program during execution."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93703,
+      "Explanation": "Static member functions do not have access to the &apos;this&apos; pointer, hence cannot access non-static members directly.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why might you use a static data member in a C++ class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To ensure every object has its own copy of the member."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To share a class-level data across all instances."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To achieve polymorphism with derived classes."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To prevent accessing out-of-bounds memory."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93704,
+      "Explanation": "Static data members are used to share data across all instances of a class.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can static member functions be virtual in C++?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, always."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes, but only in specific situations."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No, because static functions do not involve an object instance."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No, unless they are declared inline."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93705,
+      "Explanation": "Static member functions cannot be virtual because they don&apos;t operate on a specific instance of a class.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a reason to use a static member function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To compute class-wide operations that do not require instance-specific data."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To store data only relevant to one instance."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To enforce encapsulation."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To dynamically allocate memory for objects."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93706,
+      "Explanation": "Static member functions are used when the operation is related to the class as a whole rather than any specific instance.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When is a static data member constructed in a C++ class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When the first object of the class is created."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When the class is first referenced."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When the main function is executed."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "At compile-time."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93707,
+      "Explanation": "Static data members are created when they are first referenced in the program, not when an object is created.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Where in memory are static data members typically allocated?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "On the stack."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "On the heap."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "In the static segment."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "In CPU registers."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93708,
+      "Explanation": "Static data members are allocated in the static segment of memory.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can a static member function access static data members?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, it can access all members."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes, it can only access static data members."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No, it cannot access any data members."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No, unless they are passed as parameters."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93709,
+      "Explanation": "Static member functions can only access static data members since they are class-level.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to declare a static data member inside a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "const"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "extern"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "mutable"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93710,
+      "Explanation": "The &apos;static&apos; keyword is used to declare a static data member inside a class in C++.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is required to invoke a static member function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An object instance of the class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A pointer to an object instance."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Class name and scope resolution operator."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Object name and dot operator."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93711,
+      "Explanation": "Static member functions are invoked using the class name and the scope resolution operator.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When is a static data member initialized if not explicitly done?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "During dynamic memory allocation."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Before the main function executes."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The first time a class function is called."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When the first object is created."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93712,
+      "Explanation": "Static data members are initialized before the main function executes, provided they&apos;re used in the program.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Is it mandatory to define a static data member outside the class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, always."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, if it's never used."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, unless it's a const static member of integral type."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No, it's optional."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93713,
+      "Explanation": "A static data member must be defined outside the class unless it&apos;s a const static member of an integral type initialized in the class.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of a static member function in a utility class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To perform operations specific to a single instance."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To provide instance-specific functionality."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To perform tasks not associated with object state."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To initialize instance variables."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93714,
+      "Explanation": "Static member functions in a utility class perform tasks that do not depend on the state of individual class instances.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can you declare a static function inside a private section of a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "No, static functions must be public."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes, but it can only be accessed from friend classes."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, it behaves like any other private function."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No, static functions have to be globally accessible."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93715,
+      "Explanation": "Static functions can be declared in the private section of a class and behave like any other private member.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How is a static data member initialized in the class definition?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Simply by assigning a value in the class definition."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using the 'static' keyword outside the class with scope resolution."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It must be initialized within a constructor."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using a special static constructor."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93716,
+      "Explanation": "A static data member is declared within the class and initialized outside using the class scope and &apos;static&apos; keyword.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can static member functions be overloaded?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, they can be overloaded like any other functions."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, they cannot be overloaded."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, but with a different signature than non-static functions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No, unless they're defined as inline functions."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93717,
+      "Explanation": "Static member functions can be overloaded like other member functions based on their signatures.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the impact of static member functions on the size of instances of the class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It increases the size of each object."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It decreases the size of each object."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It does not affect the size of class instances."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It affects only when the function is called."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93718,
+      "Explanation": "Static member functions do not affect the size of class objects, as they are not tied to instances.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following declarations in a class is incorrect?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "static int count;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int static sum();"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "static void print();"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "void static update();"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 93719,
+      "Explanation": "&apos;void static update();&apos; is incorrect because it incorrectly places &apos;static&apos; after the return type instead of before the function name.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The implicit argument passed to a member function of a C++ class is called as",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "\u201cthis\u201d pointer"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "\u201csender\u201d object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "\u201cimplicit\u201d pointer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "\u201cme\u201d object"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 63900,
+      "Explanation": "In C++, The implicit argument passed to a member function of class is called as \"this\" pointer.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The fields in the class in c++ program are by default",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "protected"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "private"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "public"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 63896,
+      "Explanation": "<span id=\"explanation63896\">The fields of class are private by default in c++ program.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Identify the correct statement.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Namespace is used to group class, objects and functions."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Namespace is used to mark the beginning of the program."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Namespace is used to seperate the class, objects."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 63897,
+      "Explanation": "Namespace is used to group class, objects and functions.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "___________ member variable is initialized to zero when the first object of its class is created .",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "friend"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "public"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "private<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 64181,
+      "Explanation": "As the&nbsp;variables&nbsp;declared as&nbsp;static&nbsp;are initialized only once as they are allocated space in separate&nbsp;static&nbsp;storage so, the&nbsp;static variables&nbsp;in a class are shared by the objects. and its initial value is zero. <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A class can be&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Virtual"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Generic"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Friend"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of above."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 64225,
+      "Explanation": "Class can be vitual ,generic,inline so all of above opetions are true.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The implicit argument passed to a member function of a C++ class is called as",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "\u201cthis\u201d pointer"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "\u201csender\u201d object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "\u201cimplicit\u201d pointer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "\u201cme\u201d object"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 64227,
+      "Explanation": "<span id=\"explanation64227\">The&nbsp;this&nbsp;pointer holds the address of current object, in simple words you can say that this pointer&nbsp;points to the current object of the class. And it is passed to a class. </span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following concepts provides facility of using object of one class inside definition of another class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Encapsulation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Abstraction"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Composition"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Inheritance"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 64228,
+      "Explanation": "Composition is a design principle in object-oriented programming where one class is composed of one or more objects of other classes, implying a \"has-a\" relationship. This allows a class to reuse the functionality of other classes by containing instances of these classes as member variables.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which one of the following is not the property of constructor?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They should be declared in the public section.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They can be Overloaded<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They can be virtual<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They de not have return type.<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 87454,
+      "Explanation": "We can not create Virtual constructor<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If abstract class is inherited by derived class, then_______________ .",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Derived class should provide definition for all the pure virtual functions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Derived class also become abstract if fails to implement pure virtual functions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Objects of derived class can\u2019t be created if it fails to implement pure virtual functions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of these"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 71176,
+      "Explanation": "<span id=\"explanation71176\">If abstract class is inherited by derived class, then Derived class should provide definition for all the pure virtual functions otherwise derived class also become abstract if fails to implement pure virtual functions. If derived class is also become abstract then you cannot create object of derived class.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<p style=\"margin-left:0in; margin-right:0in\"><span style=\"color:#4c494c\">Which of the following &nbsp;type of class allows only one object of it to be created?</span></p>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Virtual class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Abstract class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Singelton class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Friend class"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 70853,
+      "Explanation": "A singleton class is a special type of class in object-oriented programming which can have only one object or instance at a time. In other words, we can instantiate only one instance of the singleton class.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be output of following code?<br>#include &lt;iostream&gt;<br>#include &lt;string&gt;<br>using namespace std;<br>class A<br>{<br>&nbsp;&nbsp; &nbsp;int a;<br>&nbsp;&nbsp; public:<br>&nbsp;&nbsp; &nbsp;A(){<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;a = 0;<br>&nbsp;&nbsp; &nbsp;}<br>&nbsp;&nbsp; &nbsp;static void show(){<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;a++;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;cout&lt;&lt;a;<br>&nbsp;&nbsp; &nbsp;}<br>};<br>class B: public A<br>{<br>&nbsp;&nbsp; public:<br>&nbsp;<br>};<br>int main(int argc, char const *argv[])<br>{<br>&nbsp;&nbsp; &nbsp;B b;<br>&nbsp;&nbsp; &nbsp;b.show();<br>&nbsp;&nbsp; &nbsp;return 0;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Segmentation fault"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 87460,
+      "Explanation": "Non-static members of class cannot be used inside a static functions of class.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be output of following program?<br>#include &lt;iostream&gt;<br>using namespace std;<br>class Program<br>{<br>&nbsp;&nbsp;&nbsp; int *p;<br>&nbsp;&nbsp;&nbsp; public:<br>&nbsp;&nbsp;&nbsp; Program(int xx, char ch)<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; p&nbsp; = new int();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *p = xx + int(ch);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout&lt;&lt; *p;<br>&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp; ~Program()<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; delete p;<br>&nbsp;&nbsp;&nbsp; }<br>};<br>int main()<br>{<br>&nbsp;&nbsp;&nbsp; Program obj(15, 'A');<br>&nbsp;&nbsp;&nbsp; return 0;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The program will print the output 80."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The program will print the output 112."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The program will print the output garbage value."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "he program will report compile time error."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 2,
+      "UniqueNodeId": 1257,
+      "QuestionTypeId": 0,
+      "QuestionId": 87715,
+      "Explanation": "&nbsp;Here the character is converted into int i.e. &apos;A&apos;=65 which is added to the xx value 15 and thus we get the output 80.",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [
+    {
+      "m_Item1": 93687,
+      "m_Item2": "B"
+    },
+    {
+      "m_Item1": 93688,
+      "m_Item2": "B"
+    },
+    {
+      "m_Item1": 93689,
+      "m_Item2": "C"
+    }
+  ],
+  "m_Item3": [
+    {
+      "m_Item1": 93687,
+      "m_Item2": 1
+    },
+    {
+      "m_Item1": 93688,
+      "m_Item2": 1
+    }
+  ]
+}

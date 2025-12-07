@@ -1,0 +1,216 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "To implement a stack using queue(with only enqueue and dequeue operations), how many queues will you need?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "4"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1318,
+      "QuestionTypeId": 0,
+      "QuestionId": 64561,
+      "Explanation": "This method makes sure that newly entered element is always at the front of \u2018q1\u2019, so that pop operation just dequeues from \u2018q1\u2019. \u2018q2\u2019 is used to put every new element at front of \u2018q1\u2019.<ol style=\"margin-left:0px; margin-right:0px\"><li style=\"text-align:left\"><strong>push(s, x)</strong>&nbsp;operation\u2019s step are described below:<ul style=\"margin-left:0px; margin-right:0px\"><li style=\"text-align:left\">Enqueue x to q2</li><li style=\"text-align:left\">One by one dequeue everything from q1 and enqueue to q2.</li><li style=\"text-align:left\">Swap the names of q1 and q2</li></ul></li><li style=\"text-align:left\"><strong>pop(s)</strong>&nbsp;operation\u2019s function are described below:<ul style=\"margin-left:0px; margin-right:0px\"><li style=\"text-align:left\">Dequeue an item from q1 and return it.</li></ul></li></ol>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The initial contents of a queue is a,b,c,d (a is the front end). To get the contents d,c,b,a one needs a minimum of ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2 deletions and 3 insertions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3 insertions and 2 deletions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3 deletions and 3 insertions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "3 deletions and 4 insertions"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1318,
+      "QuestionTypeId": 0,
+      "QuestionId": 64533,
+      "Explanation": "If 3 deletions performed it will delete a, b, c, so only d will present ic queue, &amp; after that if 3 insertions are performed like c, b, a it will be inserted after d, so we can get d, c, b, a as in queue.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Breadth First Search of Graph, which of the following data structure is used ?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Stack."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Queue."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Linked List."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above.<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1318,
+      "QuestionTypeId": 0,
+      "QuestionId": 64539,
+      "Explanation": "The Breadth First Search explores every node once and put that node in queue and then it takes out nodes from the queue and explores it\u2019s neighbors. <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "At any point of time, the number of elements in the queue is given by",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "rear - front + 1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "rear - front"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "rear-1(D)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of these"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1318,
+      "QuestionTypeId": 0,
+      "QuestionId": 64512,
+      "Explanation": "New element is inserted from one end called as Rear. And Front is always pointing to index where next element is going from queue.so if at any point we want to check number of element available in queue, we need to do rear-front.<br><br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A queue is implemented, without the involvement of movement of elements, by<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "One-dimensional array and a counter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "One-dimensional array and two counter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "One-dimensional array viewed as a circle"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of these"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1318,
+      "QuestionTypeId": 0,
+      "QuestionId": 64482,
+      "Explanation": "Queue is list having insertion from 1 end &amp; deletion from 1 end, so can be implemented using 1 single dimention array &amp; 2 counters two represent 2 different ends of queue.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A linear list of elements in which deletion can be done from Beginning and insertion can take place only from end&nbsp; is known as a<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Queue."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Stack"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Tree"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Linked List"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1318,
+      "QuestionTypeId": 0,
+      "QuestionId": 64412,
+      "Explanation": "<strong>Q</strong>ueue&nbsp;is a linear&nbsp;data structure&nbsp;where the first element is inserted from one end called REAR and deleted from the other end called as FRONT.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A queue is a _____________<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "FIFO (First In First Out) list."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LIFO (Last In First Out) list."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Ordered array."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Linear tree."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1318,
+      "QuestionTypeId": 0,
+      "QuestionId": 64457,
+      "Explanation": "<strong>Q</strong>ueue&nbsp;is a linear&nbsp;data structure&nbsp;where the first element is inserted from one end called REAR and deleted from the other end called as FRONT. So element which is inserted first is going out first so it works on FIFO principle.<br><br>",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

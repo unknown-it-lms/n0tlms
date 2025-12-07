@@ -1,0 +1,786 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Which of the following is not a memeory management technique?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Paging<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Segmentation<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Thrashing<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Virtual Memory<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 7,
+      "QuestionTypeId": 0,
+      "QuestionId": 85867,
+      "Explanation": "Thrashing is a process where the system brings in the page form local hardisk into the memory frequently.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include&lt;stdio.h&gt;<br>#include&lt;string.h&gt;<br>void main()<br>{<div style=\"margin-left: 40px;\">char str1[]=\"India\" , str2[]=\"India\" ;<br><br>if(strcmp(str1,str2))</div><div style=\"margin-left: 80px;\">printf(\"Both the string are same\") ;</div><div style=\"margin-left: 40px;\">else</div><div style=\"margin-left: 80px;\">printf(\"Both the string are not same\") ;</div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Both the string are same"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Both the string are not same<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compile Time error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Runtime Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 7,
+      "QuestionTypeId": 0,
+      "QuestionId": 73334,
+      "Explanation": "As strcmp returns 0 if bothe the strings are equal hence if condition returns false as 0 means false . hence output is &apos; Both the string are not same&apos;. <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>void main()<br></div><div>{</div><div>&nbsp;&nbsp;char *mess[]={\"Sun ITS\", \"Sun CET\", \"Sun BCS\" };</div><div>&nbsp;&nbsp;&nbsp;printf(\"%d %d\", sizeof(mess), sizeof(mess[1]));</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "8 2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "16  4"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "4  2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of these"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 7,
+      "QuestionTypeId": 0,
+      "QuestionId": 73356,
+      "Explanation": "sizeof(element on every index of array) is 8 bytes i.e. it will store upto white space, so size of array is 24. and mess[1] is having 7 char +one null char i.e. 8 bytes.<br>Answer is 24 8<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;string.h&gt;<br>char * copystring (char *t, char *s)<br>{<div style=\"margin-left: 40px;\">&nbsp; char *r = t;<br>&nbsp; while (*s != '\\\\0')<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *t = *s;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t++;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; s++;<br>&nbsp;&nbsp;&nbsp; }<br>&nbsp; *t = '\\\\0';<br>&nbsp; return r;</div>}<br><br>void main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; char *string;<br>&nbsp; char source[] = \"KNOW-IT, Pune\";<br>&nbsp; char target[15];<br>&nbsp; string = copystring (target, source);<br>&nbsp; printf (\"%s\", string);<br></div>}<br><br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "No output"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "KNOW-IT, Pune"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Garbage output"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 7,
+      "QuestionTypeId": 0,
+      "QuestionId": 73249,
+      "Explanation": "Pointer t points to string target.<br>Pointer s points to string source.<br>Pointer r points to string target.<br>In function copystring, String source is copied into string target, element by element, moving the pointers ahead.<br>Pointer r to target string is returned to main.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;string.h&gt;<br>char* fun ()<br>{<div style=\"margin-left: 40px;\">&nbsp; char result[100] = \"Hello world\";<br>&nbsp; strcpy (result, \"Anything is Good \");<br>&nbsp; return result;</div>}<br><br>void main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; char *j;<br>&nbsp; j = fun ();<br>&nbsp; printf (\"%s \", j);</div>}<br><br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Anything is Good"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hello world"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Garbage/Null"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 7,
+      "QuestionTypeId": 0,
+      "QuestionId": 73264,
+      "Explanation": "Array result is local to function fun(). Thus it will go out of scope in main(). Hence output will be Null/Garbage here.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>void main ( )</div><div>{&nbsp;</div><div style=\"margin-left: 40px;\">int str[4]= {'1', '2', '3','0'};<br></div><div style=\"margin-left: 40px;\">printf(\"%s\", str );</div><div>}<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "123<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1230"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1230garbage"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 7,
+      "QuestionTypeId": 0,
+      "QuestionId": 72900,
+      "Explanation": "<div>The array str is actually array of integers. Hence 4 bytes will be allocated for each element of this array. Value \u20181\u2019 (whose ASCII code is 31) will be written in the first byte and other 3 bytes will be 00. The printf statement reads from the base address till it reaches to (which is 00 value). Hence the output is only 1</div><div><br></div>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div class=\"container\"><div class=\"line number1 index0 alt2\">#include &lt;string.h&gt;<br><br>void main ()<br>{</div><div style=\"margin-left: 40px;\" class=\"line number1 index0 alt2\">&nbsp; char p[20];<br>&nbsp; char *s = \"string\";<br>&nbsp; int length = strlen (s);<br>&nbsp; int i;<br>&nbsp; for (i = 0; i &lt; length; i++)<br>&nbsp;&nbsp;&nbsp; p[i] = s[length - i];<br>&nbsp; printf (\"%s\", p);</div><div class=\"line number1 index0 alt2\"><br>}<br><br>What will be the output of above code?</div></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "gnirts"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "gnirt"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "string"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No output is printed."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 7,
+      "QuestionTypeId": 0,
+      "QuestionId": 75039,
+      "Explanation": "Let us consider below line inside the for loop p[i] = s[length -i]; For i = 0, p[i] will be s[6 -0] and s[6] is \u2018\\\\0\u2032 .<br>So p[0] becomes \u2018\\\\0\u2019. It doesn&apos;t matter what comes in p[1], p[2]\u2026.. as P[0] will not change for i &gt;0. Nothing is printed if we have a string with first character \u2018\\\\0\u2032 .",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "int main()<br>{int f=1,l;<br>&nbsp; char str1[10]=\"RADAR\",*p,*q;<br>&nbsp;&nbsp; l=strlen(str1);<br>&nbsp;&nbsp; p=str1;<br>&nbsp;&nbsp; q=&amp;str1[l-1];<br>&nbsp;&nbsp; while (___)<br>&nbsp;&nbsp;&nbsp;&nbsp; { if(*p==*q)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { p++;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; q--;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { f=0;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break; &nbsp; }<br>}<br>What will be the right condition in while loop so that the code checks for the string to be a palindrom?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "*p==*q"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "*p!=''"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "p!=q"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 7,
+      "QuestionTypeId": 0,
+      "QuestionId": 75040,
+      "Explanation": "Comparing the addresses till p and q dosnt point to same character.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of C program with array of pointers to strings.?<br>int main()<br>{<br>&nbsp;&nbsp;&nbsp; char *code[]={\"INDIA\",\"USA\",\"PAKISTAN\"};<br>&nbsp;&nbsp;&nbsp; printf(\"%s\", code[1]);<br>&nbsp;&nbsp;&nbsp; return 0;<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "INDIA"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "U"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "USA"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 7,
+      "QuestionTypeId": 0,
+      "QuestionId": 75041,
+      "Explanation": "It is&nbsp; array of pointers to strings. So code[0]=\"INDIA\" , code[1]=\"USA\" etc. Since different strings can have different lengths, using above type of declearation we can save the memory.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What is the output of C program with array of pointers to strings.?<br>#include &lt;string.h&gt;<br>int main()<br>{<br>&nbsp;&nbsp;&nbsp; char code[][20]={\"M.S.DHONI\",\"VIRAT KOHLI\",\"ROHIT SHARMA\"};<br>&nbsp;&nbsp;&nbsp; printf(\"%s\", code[2]+1);<br>&nbsp;&nbsp;&nbsp; return 0;<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "OHIT SHARMA."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "VIRAT KOHLI."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ROHIT SHARMA.<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation Error."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 7,
+      "QuestionTypeId": 0,
+      "QuestionId": 75042,
+      "Explanation": "Above array is 2D array , where 0th row contains \"M.S.DHONI\" and so on. code[2] will contain \"ROHIT SHARMA\". When we print  code[2]+1&nbsp; the address is increased by 1 byte hence code[2]+1 print OHIT SHARMA.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include&lt; stdio.h&gt;<br>int main()<br>{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int l;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;char str1[]=\"Know-IT,Pune\",&nbsp; *q;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;l = strlen(str1);<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;q = &amp;str1[l];<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;printf(\"%c\", *q);<br>}<br>What will be the output of above code?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "e"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No output."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "'\\\\0'<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 7,
+      "QuestionTypeId": 0,
+      "QuestionId": 75074,
+      "Explanation": "l will get value 12. Array str1 starts from 0. So the last letter in the array will have index 11. So letter &apos;e&apos; will be at str1[11] position . 12th position will contain &apos;\\\\0&apos;. But null is not displayed on screen with the above printf statement . Hence we don&apos;t see any output on the screen.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include&lt;stdio.h&gt;<br>int fun(const char *str1)<br>{<br>&nbsp;&nbsp; &nbsp;const char *str2 = str1;<br>&nbsp;&nbsp; &nbsp;while (*++str1);<br>&nbsp;&nbsp; &nbsp;return (str1 - str2);<br>}<br>int main()<br>{<br>&nbsp;&nbsp; &nbsp;const char *str = \"Know-IT\";<br>&nbsp;&nbsp; &nbsp;printf(\"%d\", fun(str));<br>&nbsp;&nbsp; &nbsp;return 0;<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "8"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "7"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 7,
+      "QuestionTypeId": 0,
+      "QuestionId": 75084,
+      "Explanation": "The function fun() basically counts number of characters in input string. Inside fun(), pointer str2 is initialized as str1. The statement while(*++str1); increments str1 till \u2018\\\\0\u2019 is reached. str1 is incremented by 7. Finally the difference between str2 and str1 is returned which is 7.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include&lt;stdio.h&gt;<br>&nbsp;&nbsp; &nbsp;int main()<br>&nbsp;&nbsp; &nbsp;{<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;char t;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; char *p1 = \"India\", *p2;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;p2 = p1;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;p1 = \"Bharat\";<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;printf(\"%s %s \", p1, p2);<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;return 0;<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "India Bharat"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Bharat India"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "India India"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Bharat Bharat"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 7,
+      "QuestionTypeId": 0,
+      "QuestionId": 75087,
+      "Explanation": "Current value in p1 is Bharat and in p2 is India. We can directly copy one string into another using pointer variable.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "int main()<br>{<br>&nbsp;&nbsp; &nbsp;char str[25] = \"Jai Hind!!!\";<br>&nbsp;&nbsp; &nbsp;printf(\"%s \", str + 2);<br>&nbsp;&nbsp; &nbsp;return 0;<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "i Hind!!!"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ai Hind!!!"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Hind!!!"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 7,
+      "QuestionTypeId": 0,
+      "QuestionId": 75088,
+      "Explanation": "str is the base address of array str. str+2 is same as str[2].<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int i=10;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; char ch='F', str[10]=\" Born Code\";<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sprintf(str,\"%d %c\",i, ch);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(\"%s\",str);<br></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }&nbsp;&nbsp;&nbsp;<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Born Code<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10 F BornToCode"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "10 F"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Born Code 10F<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 7,
+      "QuestionTypeId": 0,
+      "QuestionId": 64059,
+      "Explanation": "sprintf Composes a string with the same text that would be printed if format was used on printf, but instead of being printed, the content is stored as a C string in the buffer pointed by str.<br>hence when we print str the copyied content get printed i.e.10 F.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which one of the following will read a character from the keyboard and will store it in the variable c?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "getc( &amp;c );"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "c = getchar( stdin );"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "getchar( &amp;c )"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "c = getchar();"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 7,
+      "QuestionTypeId": 0,
+      "QuestionId": 63768,
+      "Explanation": "getchar() is a function which accepts a character from keyboard and returns the read character.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;string.h&gt;<br>&nbsp; int main()<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp; char s[25] = \"The cocaine man\";<br>&nbsp;&nbsp;&nbsp; int i = 0;<br>&nbsp;&nbsp;&nbsp; char ch;<br>&nbsp;&nbsp;&nbsp; ch = s[++i];<br>&nbsp;&nbsp;&nbsp; printf(\"%c\", ch);<br>&nbsp;&nbsp;&nbsp; ch = s[i++];<br>&nbsp;&nbsp;&nbsp; printf(\"%c\", ch);<br>&nbsp;&nbsp;&nbsp; ch = i++[s];<br>&nbsp;&nbsp;&nbsp; printf(\"%c\", ch);<br>&nbsp;&nbsp;&nbsp; ch = ++i[s];<br>&nbsp;&nbsp;&nbsp; printf(\"%c\", ch);<br>&nbsp;&nbsp;&nbsp; return 0;<br></div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "hhe!"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "he c"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The c"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Hhec"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 7,
+      "QuestionTypeId": 0,
+      "QuestionId": 63712,
+      "Explanation": "first of all i=0, now for s[++i], i=1 and s[1] will give h.<br><br>now for s[i++], it will give s[1] that is h and value of i is 2.<br><br>for i++[s], we must know that i[s]==s[i]. Now it will give s[2] that is e and value of i=3.<br><br>Now for the most important part ++i[s], we can think of it as ++(i[s]) because [ ] operator has greater precedence than ++. Since i[s] is a char value, ++ operator will work on its ASCII value that is ASCII value of s[3] i.e (Space) which is 32. 32 is incremented by 1 and becomes 33 which is ASCII value of !.<br><br>ch=h, i=0;<br>ch=e, i=2;<br>ch=e, i=3;<br>ch=\" \", i=4;<br>++(ch=\" \") = &nbsp;\"!\"<br><br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>&nbsp;&nbsp;&nbsp; {<div style=\"margin-left: 40px;\">&nbsp;&nbsp;char *new=\"LMNOPQ\";<br></div><div style=\"margin-left: 40px;\">&nbsp;&nbsp; printf(\"%d\", -*new);</div>&nbsp;&nbsp;&nbsp; }<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "-76"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "- Address of new<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "-L<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "-77"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 7,
+      "QuestionTypeId": 0,
+      "QuestionId": 63763,
+      "Explanation": "* new is pointer which will save the base address of \"LMNOPQ\" , when we use %d to print *new , it will print ascii value of character which is present at base address. Hence it will print 76 which is ascii value of L. with - sign hence output will be -76.&nbsp;<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Use of putchar() is to________________.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Point cursor position."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Display single character on screen."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Display multiple characters."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Take input from user."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63607,
+      "Explanation": "putchar() is o/p function used to display a character on screen.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the program ?<br>&nbsp;&nbsp;int main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; char str[] = \"Nagpur\";<br>&nbsp; str[0] = \"K\";<br>&nbsp; printf (\"%s, \", str);<br>&nbsp; str = \"Kanpur\";<br>&nbsp; printf (\"%s\", str + 1);<br>&nbsp; return 0;<br></div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Kagpur, Kanpur"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Nagpur, Kanpur"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Kagpur, anpur"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 7,
+      "QuestionTypeId": 0,
+      "QuestionId": 63554,
+      "Explanation": "You can not directly assign the characher array to a variable .<br>you have to use strcpy function to copy char array into a another char array.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div style=\"margin-left: 40px;\">#include &lt;string.h&gt;<br>void main( )<br>{<br>char A[]={'X','Y','Z','\\\\0'};<br>char *B;<br>strcpy(B,A);<br>printf(\"%c\",*(B+1));<br></div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "X"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Y"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Z"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Runtime error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 7,
+      "QuestionTypeId": 0,
+      "QuestionId": 63400,
+      "Explanation": "Note that B is just declared as a pointer. It is not initialized hence it points to a garbage location. The strcpy statements tries to copy the data from string A to this garbage location which is not allowed. A pointer must be pointing to a valid location before it is used.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>#include &lt;string.h&gt;<br>void main ()<br>{<br>&nbsp; char names[] = { \"Aditi\", \"Satish\", \"Dipti\", \"Sohan\", \"Mohan\" };<br>&nbsp; char *t;<br>&nbsp; int i;<br>&nbsp;&nbsp; t = names[3];<br>&nbsp; names[3] = names[4];<br>&nbsp; names[4] = t;<br>&nbsp;&nbsp; for (i = 0; i &lt;= 4; i++)<br>&nbsp;&nbsp;&nbsp; printf (\"%s\", names[i]);<br>}<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Aditi Satish Dipti Mohan Mohan."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Aditi Satish Dipti Mohan Sohan."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Aditi Satish Sohan Dipti Mohan."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 7,
+      "QuestionTypeId": 0,
+      "QuestionId": 63380,
+      "Explanation": "<div>The variable names is declared as a single dimensional array of characters,which is invalid. We nees 2D array to store multiple strings.It should actually be declared as array of character pointers like char *names[]. Even if we correct this mistake , there is another major error where string assignment is done. This is incorrect. We will need strcpy() function.</div><div><br></div>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;string.h&gt;<br>int main()<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp; static char str1[] = \"dills\";<br>&nbsp;&nbsp; static char str2[20];<br>&nbsp;&nbsp; static char str3[] = \"Daffo\";<br>&nbsp;&nbsp; int i;<br>&nbsp;&nbsp; i = strcmp(strcat(str3, strcpy(str2, str1)),\"Daffodills\");<br>&nbsp;&nbsp; printf(\"%d\",i);<br>&nbsp;&nbsp; return 0;<br></div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "4"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 7,
+      "QuestionTypeId": 0,
+      "QuestionId": 63347,
+      "Explanation": "We are copying str1 in str2 and then concatenating str2 with str3 which become Daffodills. When two strings are simmilar strcmp will return 0.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The library function used to find the last occurrence of a character in a string_____.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "strnstr()."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "laststr()."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "strrchr()."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "strstr()."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 7,
+      "QuestionTypeId": 0,
+      "QuestionId": 63349,
+      "Explanation": "The strrchr() function returns a pointer to the last occurrence of ch in string. If the given character is not found, a NULL pointer is returned.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>int main()<br></div><div>{</div><div>&nbsp;&nbsp; static char mess[6][30] = {\"Don't walk in front of me...\",&nbsp;</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \"I may not follow;\",&nbsp;</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \"Don't walk behind me...\",&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \"I may not lead...\",<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \"Just walk beside me...\",&nbsp;<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \"And be my friend.\"};<br></div><div><br></div><div>&nbsp;&nbsp; printf(\"%c, %c \", *(mess[2]+9), *(*(mess+2)+9));</div><div>&nbsp;&nbsp; return 0;<br></div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "t, t."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "k, k."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "n, k."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "m, f."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 7,
+      "QuestionTypeId": 0,
+      "QuestionId": 63350,
+      "Explanation": "mess is nothing but base address of array . mess[2] +9&nbsp; means address of mess[2] sting +9 characters hence this (*)will return the value present at&nbsp; mess[2] +9&nbsp; which is &apos;k&apos;. *(*(mess+2)+9) will return the same value as *(*(mess+2)+9)&nbsp; is same as mess[2]+9.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>#include &lt;string.h&gt;<br>int main()<br></div><div>{</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp; char str1[] = \"Hello\";<br></div><div style=\"margin-left: 40px;\">&nbsp;&nbsp; char str2[10];</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp; char *t, *s;<br><br></div><div style=\"margin-left: 40px;\">&nbsp;&nbsp; s = str1;</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp; t = str2;<br><br></div><div style=\"margin-left: 40px;\">&nbsp;&nbsp; while(*t=*s)</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp; *t++ = *s++;<br><br></div><div style=\"margin-left: 40px;\">&nbsp;&nbsp; printf(\"%s \", str2);<br><br></div><div style=\"margin-left: 40px;\">&nbsp;&nbsp; return 0;<br></div><div>}<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Hello."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "HelloHello."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No output."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Ello."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 7,
+      "QuestionTypeId": 0,
+      "QuestionId": 63351,
+      "Explanation": "In while loop we are assigning value of s pointer to t pointer and below that we are increasing the pointer value so that it will point to next character and assigning them again. so this will copy str1 to str2 using pointer.",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

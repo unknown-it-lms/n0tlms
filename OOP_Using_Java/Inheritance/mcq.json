@@ -1,0 +1,1986 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "<div>Given:</div><div>&nbsp;class ClassA {}</div><div>&nbsp;class ClassB extends ClassA {}</div><div>&nbsp;class ClassC extends ClassA {}</div><div>&nbsp;and</div><div>&nbsp;ClassA p0 = new ClassA();</div><div>&nbsp;ClassB p1 = new ClassB();</div><div>&nbsp;ClassC p2 = new ClassC();</div><div>&nbsp;ClassA p3 = new ClassB();</div><div>&nbsp;ClassA p4 = new ClassC();</div><div>Which is invalid?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "p0 = p1;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "p1 = p2;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "p1 = (ClassB)p3;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "p2 = (ClassC)p4;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 72660,
+      "Explanation": "A. p0 = p1;<br>p0 is of type ClassA and p1 is of type ClassB.<br>ClassB extends ClassA, so this assignment is valid (upcasting).<br>B. p1 = p2;<br>p1 is of type ClassB and p2 is of type ClassC.<br>Both ClassB and ClassC extend ClassA, but they are not directly related to each other (no inheritance relationship).<br>This assignment is invalid because ClassB and ClassC are not in an inheritance hierarchy.<br>C. p1 = (ClassB)p3;<br>p1 is of type ClassB and p3 is of type ClassA, referencing a ClassB object.<br>p3 is referencing a ClassB object, so this downcast is valid.<br>D. p2 = (ClassC)p4;<br>p2 is of type ClassC and p4 is of type ClassA, referencing a ClassC object.<br>p4 is referencing a ClassC object, so this downcast is valid.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>The following Syntax is used for?</div><div><br></div><div>class Subclass-name extends Superclass-name&nbsp;</div><div>{&nbsp;</div><div>//methods and fields&nbsp;</div><div>}&nbsp;</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Polymorphism"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Encapsulation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Inheritance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 72586,
+      "Explanation": "<span id=\"explanation72586\">Using extends keywork subclass can access the properties of super class.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Which of the following is true about inheritance in Java.<br></div><div>1) In Java all classes inherit from the Object class directly or indirectly. The Object class is root of all classes.<br></div><div>2) Multiple inheritance is not allowed in Java.<br></div><div>3) Unlike C++, there is nothing like type of inheritance in Java where we can specify whether the inheritance is protected, public or private.</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1,2 and 3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1 only"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2 and 3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "only 3"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 72587,
+      "Explanation": "<span id=\"explanation72587\">\u2022Inheritance is also known IS-A relationship.<br>\u2022It provides child class the ability to inherit non-private members of parent class.<br>\u2022In java, inheritance is achieved via extends keyword.<br>\u2022From Java 8 onward, you can use interfaces with default methods to achieve multiple inheritance.<br>\u2022Member fields are accessed from reference type class.<br>\u2022Member methods are accessed from actual instance types</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is not correct?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "You can extend an interface from another interface"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "You can define a variable inside an Interface"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "You can implement multiple interfaces for one class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Interface is pure abstract class"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 72596,
+      "Explanation": "<span id=\"explanation72596\">Interfaces can declare only final varibales</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Given:</div><div>class Programmer<br>{</div><div style=\"margin-left: 40px;\">Programmer debug()<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;return this;<br>}</div><div>}</div><div>class SCJP extends Programmer<br>{</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // insert code here</div><div>}</div><div>Which method inserted becomes example of method overriding?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SCJP debug() { return this; }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Object debug() { return this; }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int debug(int x) { return 1; }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Object debug(int x) { return this; }"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 72643,
+      "Explanation": "<span id=\"explanation72643\">When method is overridden in the sublcass, its return type can be changed only to subtype. This is called covarinat return type. In the above code, subclass overridden method can return subclass of Programmer i.e. SCJP.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What is the result of compiling and running the following code?</div><div>class Base&nbsp;{</div><div style=\"margin-left: 40px;\">private Base()&nbsp;{</div><div style=\"margin-left: 80px;\">System.out.println(\"Base\");</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>class Test extends Base {</div><div style=\"margin-left: 40px;\">public Test() {</div><div style=\"margin-left: 80px;\">System.out.println(\"Derived\");</div><div style=\"margin-left: 40px;\">}</div><div style=\"margin-left: 40px;\">public static void main(String[] args)&nbsp;{</div><div style=\"margin-left: 80px;\">new Test();</div><div style=\"margin-left: 40px;\">}</div><div>}<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "BaseDerived"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Derived"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Exception is thrown at runtime"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation fails"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 72620,
+      "Explanation": "<span id=\"explanation72620\">From the constructor of class Test, it needs default constructor of Base class which is visible as no other explicit constructor is called. In this case default constructor of Base class is decared as private. So it will generate compilation error.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true about the super keyword?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is used to call the constructor of the superclass."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It is used to access members of the superclass that are hidden by members of the subclass."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It can be used to call any method of the superclass, even private methods."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "only A and B"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 72612,
+      "Explanation": "super keyword can be used for calling super class constructors or to access members of super class. But private members are never accessible in subclass using super even.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Given the code below:</div><div>class A&nbsp;{</div><div style=\"margin-left: 40px;\">public void print()&nbsp;{</div><div style=\"margin-left: 80px;\">System.out.println(\"hi\");</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>class B extends A&nbsp;{</div><div style=\"margin-left: 40px;\">public void print()&nbsp;{ &nbsp;</div><div style=\"margin-left: 80px;\">System.out.println(\"bye\");</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>B b = new A();</div><div>b.print();</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Prints nothing"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Prints \u201chi\u201d"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Prints \u201cbye\u201d"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The code does not compile, the compiler returns a type error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 72405,
+      "Explanation": "E",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What is the output of this program ?</div><div>class A&nbsp;{</div><div style=\"margin-left: 40px;\">public&nbsp; int i;</div><div style=\"margin-left: 40px;\">protected int j;</div><div>}<br>class B extends A&nbsp;{</div><div style=\"margin-left: 40px;\">int j;</div><div style=\"margin-left: 40px;\">void display()<br>{</div><div style=\"margin-left: 80px;\">super.j=3;</div><div style=\"margin-left: 80px;\">System.out.println(i +\" \"+ j);</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>class Output&nbsp;{</div><div style=\"margin-left: 40px;\">public static void main(String args[])</div><div style=\"margin-left: 40px;\">{</div><div style=\"margin-left: 80px;\">B obj =new B();</div><div style=\"margin-left: 80px;\">obj.i=1;</div><div style=\"margin-left: 80px;\">obj.j=2;</div><div style=\"margin-left: 80px;\">obj.display();</div><div style=\"margin-left: 40px;\">}</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1 2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2 1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1 3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "3 1"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 72408,
+      "Explanation": "<span id=\"explanation72408\">Value of i and j has been assigned as 1 and 2 by main method. display() method modifies value of j from class A as it makes use of super keyword. so display() method displays i and j as \"1 2\".</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Which is the first line that will cause compilation to fail in the following program?</div><div>class MyClass&nbsp;{</div><div style=\"margin-left: 40px;\">public static void main(String[] args)&nbsp;{</div><div style=\"margin-left: 80px;\">MyClass a;</div><div style=\"margin-left: 80px;\">MySubclass b;</div><div style=\"margin-left: 80px;\">a = new MyClass(); &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //(1)</div><div style=\"margin-left: 80px;\">b = new MySubclass(); &nbsp;//(2)</div><div style=\"margin-left: 80px;\">a = b; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //(3)</div><div style=\"margin-left: 80px;\">b = a; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //(4)</div><div style=\"margin-left: 80px;\">a = new MySubclass(); &nbsp;//(5)</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>class MySubclass extends MyClass</div><div>{</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Line labeled (1)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Line labeled (2)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Line labeled (3)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Line labeled (4)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 72399,
+      "Explanation": "E",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Determine output of the following code.&nbsp;</div><div>interface A { }<br></div><div>class C { }<br></div><div>class D extends C { }</div><div>class B extends D implements A { }</div><div><br></div><div>public class Test extends Thread{</div><div>&nbsp;&nbsp;&nbsp;&nbsp; public static void main(String[] args){</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B b = new B();</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (b instanceof A)</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(\"b is an instance of A\");</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (b instanceof C)</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(\"b is an instance of C\");</div><div>&nbsp;&nbsp;&nbsp;&nbsp; }</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Nothing."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "b is instance of A"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "b is instance of C"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "b is an instance of A<br>b is an instance of C"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 72228,
+      "Explanation": "<span id=\"explanation72228\">Class B is derived class of Class C and Class D. So instance of B can access the properties of&nbsp; all above base classes.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following does not belong: If a class inherits from some other class, it should",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Make use of the parent class\u2019s capabilities"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Over-ride or add the minimum to accomplish the derived class\u2019 purpose"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Over-ride all the methods of its parent class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Make sure the result \u201cIS-A-KIND-OF\u201d its base class"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 72203,
+      "Explanation": "<span id=\"explanation72203\">Inherits from other class means not all the methods are overridden. If you require then override not all are overriden. Its not compulsary.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of this program?<br>class San&nbsp;{<div style=\"margin-left: 40px;\">San() throws IOException<br>{<br>}</div>}<br>class Foundry extends San&nbsp;{<div style=\"margin-left: 40px;\">Foundry()<br>{<br>}<br>public static void main(String[]args)<br>{<br>}</div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compile time error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Run time error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compile and run fine"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "unreported exception java.io.lOException in default constructor"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 70838,
+      "Explanation": "<span id=\"explanation70838\">When the super class default constructor throws exception, it should be declared in the throws clause by subclass default constructor.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "class Uber&nbsp;{<div style=\"margin-left: 40px;\">static int y = 2;<br>Uber(int x)&nbsp;{</div><div style=\"margin-left: 80px;\">this();<br>y = y * 2;</div><div style=\"margin-left: 40px;\">}<br>Uber()&nbsp;{</div><div style=\"margin-left: 80px;\">y++;</div><div style=\"margin-left: 40px;\">}</div>}<br>class Minor extends&nbsp; Uber&nbsp;{<div style=\"margin-left: 40px;\">Minor()&nbsp;{</div><div style=\"margin-left: 80px;\">super(y);<br>y = y + 3;</div><div style=\"margin-left: 40px;\">}<br>public static void main(String&nbsp; [] args)&nbsp;{</div><div style=\"margin-left: 80px;\">new Minor();<br>System.out.println(y);</div><div style=\"margin-left: 40px;\">}</div>}<br>What is the result?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "7"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "8"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "9"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 70799,
+      "Explanation": "Minor() constructor calls constructor Uber(int) which calls Uber(). In Uber() value of y becomes 3, the in Uber(int) constructor value of y becomes 6 and then in Minor() constructor value of y vecomes 9.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "class Dog&nbsp;{<div style=\"margin-left: 40px;\">public void bark()&nbsp;{</div><div style=\"margin-left: 80px;\">System.out.println(\"woof\")'</div><div style=\"margin-left: 40px;\">}</div>}<br>class&nbsp; Hound&nbsp;&nbsp; extends&nbsp; Dog&nbsp;{<div style=\"margin-left: 40px;\">public&nbsp; void sniff()&nbsp;{</div><div style=\"margin-left: 80px;\">System.out.println(\"sniff\");</div><div style=\"margin-left: 40px;\">}<br>public&nbsp; void&nbsp; bark()&nbsp;{</div><div style=\"margin-left: 80px;\">System.out.println(\"howl\");</div><div style=\"margin-left: 40px;\">}</div>}<br>public class DogShow&nbsp;{<div style=\"margin-left: 40px;\">public static void main(String[]&nbsp; args)&nbsp;{</div><div style=\"margin-left: 80px;\">new DogShow().go();</div><div style=\"margin-left: 40px;\">}<br>void go()&nbsp;{</div><div style=\"margin-left: 80px;\">new Hound().bark();<br>((Dog)new Hound()).bark();<br>((Dog)new Hound()).sniff();</div><div style=\"margin-left: 40px;\">}</div>}<br>what's&nbsp; the result?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "howl howl sniff"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "howl woof sniff"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "howl howl followed by an exception"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "compilation fails"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 70815,
+      "Explanation": "<span id=\"explanation70815\">Dog class does not have sniff() method. Type casting Hound object to Dog and calling method sniff() gives compilation error.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following are not access&nbsp; specifiers?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "package"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "protected"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "static"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 70851,
+      "Explanation": "<span id=\"explanation70851\">static is not access specifier.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Assume that class A extends class B, which extends class C. Also all the three classes implement the method test(). How can a method in a class A invoke the test() method defined in class C (without creating a new instance of class C). Select the one correct answer.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "test();"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "super.test();"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "super.super.test();"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "::test();"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 70777,
+      "Explanation": "super.test() will invoke super class&apos;s test method.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output for the below code?<br>public class A&nbsp;{<div style=\"margin-left: 40px;\">private void printName()&nbsp;{</div><div style=\"margin-left: 80px;\">System.out.println(\"Value-A\");</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>public class B extends A&nbsp;{</div><div style=\"margin-left: 40px;\">public void printName()&nbsp;{</div><div style=\"margin-left: 80px;\">System.out.println(\"Name-B\");</div><div style=\"margin-left: 40px;\">}</div><div>}</div> public class Test&nbsp;{<div style=\"margin-left: 40px;\">public static void main (String[] args)<br>{</div><div style=\"margin-left: 80px;\">B b = new B();<br>b.printName();</div><div style=\"margin-left: 40px;\">}</div> }",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Value-A"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Value-A Name-B"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Name-B"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation fails - private methods can't be overriden"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 70741,
+      "Explanation": "<span id=\"explanation70741\">printName() method from class B gets called which prints \"Name-B\".</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Suppose a class has public visibility.&nbsp; In this class we define a protected&nbsp; method.&nbsp; Which of the Following&nbsp; statement&nbsp; is correct?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "This method is accessible from inside the class itself and from inside all subclasses residing in any package. <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "In a class, you can not declare methods with a lower visibility than the visibility of the class in which it is defined."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "From within protected methods you do not have access to public methods."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "This method is accessible from within the class itself and from within all classes defined in the same package as the class itself."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 70738,
+      "Explanation": "<span id=\"explanation70738\">Protected members are accessible from the class and all subclasses in any package. Protected refers to inheritance.&nbsp;</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Inheritance represents an is-a relationship."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Inheritance represents a has-a relationship."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Interfaces must be used when creating a has-a relationship"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Instance variables can be used when creating a is-a relationship."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 70765,
+      "Explanation": "<span id=\"explanation70765\">Inheritance represents is-a relationship.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these class is superclass of all other classes ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Process"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "System"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Object"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 67594,
+      "Explanation": "<span id=\"explanation67594\">class Object is default super class for all java classes.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What will be the Output?&nbsp;</div><div>class Animal&nbsp;{</div><div style=\"margin-left: 40px;\">String name = \"animal\";</div><div style=\"margin-left: 40px;\">String makeNoise()&nbsp;{</div><div style=\"margin-left: 80px;\">return \"generic noise\";</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>class Dog extends Animal&nbsp;{</div><div style=\"margin-left: 40px;\">String name = \"dog\";</div><div style=\"margin-left: 40px;\">String makeNoise()&nbsp;{&nbsp;</div><div style=\"margin-left: 80px;\">return \"bark\";</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>public class Test&nbsp;&nbsp;{</div><div style=\"margin-left: 40px;\">public static void main(String[] args){&nbsp;</div><div style=\"margin-left: 80px;\">Animal an = new Dog();</div><div style=\"margin-left: 80px;\">System.out.println(an.name+\" \"+an.makeNoise());</div><div style=\"margin-left: 40px;\">}</div><div>}<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<div>animal generic noise</div>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "animal bark"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "dog bark"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "dog generic noise"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 67535,
+      "Explanation": "<span id=\"explanation67535\">Variable binding is static binding. So name gets displayed from Animal(type of reference) whereas method binding is dynamic binding so it gets called from type of instance ie. Dog</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>class Atom&nbsp;{</div><div style=\"margin-left: 40px;\">Atom()&nbsp;{</div><div style=\"margin-left: 80px;\">System.out.print(\"atom \");</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>class Rock extends Atom&nbsp;{</div><div style=\"margin-left: 40px;\">Rock(String type)&nbsp;{</div><div style=\"margin-left: 80px;\">System.out.print(type);</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>public class Mountain extends Rock&nbsp;{</div><div style=\"margin-left: 40px;\">Mountain() {</div><div style=\"margin-left: 80px;\">super(\"granite \");</div><div style=\"margin-left: 80px;\">new Rock(\"granite \");</div><div style=\"margin-left: 40px;\">}</div><div style=\"margin-left: 40px;\">public static void main(String[] a)&nbsp;{</div><div style=\"margin-left: 80px;\">new Mountain();</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>What is the result?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<div>Compilation fails.</div>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "atom granite"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "atom granite granite"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<div>atom granite atom granite</div>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 67522,
+      "Explanation": "<span id=\"explanation67522\">When Object of subclass is created then super class&apos;s construtcor is called. If no super() call is available in sub class constructor, it automatically calls super class default constructor.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What is the result?</div><div>11. public class Person {</div><div>12.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String name = \"No name\";</div><div>13.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public Person(String nm) { name = nm; }</div><div>14. }</div><div>15.</div><div>16. public class Employee extends Person {</div><div>17.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String empID = \"0000\";</div><div>18.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public Employee(String id) { empID = id; }</div><div>19. }</div><div>20.</div><div>21. public class EmployeeTest {</div><div>22.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public static void main(String[] args){</div><div>23.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Employee e = new Employee(\"4321\");</div><div>24.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(e.empID);</div><div>25.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</div><div>26. }</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<div>4321</div>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0000"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An exception is thrown at runtime."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation fails because of an error in line 18"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 67510,
+      "Explanation": "<span id=\"explanation67510\">In subclass constructor, super class constructor should be called implicitly or explicitly. If no explicit call is given, it calls super class default constructor which is not provided in super class. So it leads to compilation error.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>class SuperA&nbsp;&nbsp;{&nbsp; String s1=\"SuperA\";&nbsp;}</div><div>class SuperB&nbsp; { String s1=\"SuperB\";&nbsp;}</div><div>class A extends SuperA{</div><div style=\"margin-left: 40px;\">String s1=\"A\";</div><div style=\"margin-left: 40px;\">class B extends SuperB<br>{ &nbsp;// 1</div><div style=\"margin-left: 80px;\">String s1=\"B\";</div><div style=\"margin-left: 80px;\">void m1()<br>{</div><div style=\"margin-left: 120px;\">System.out.print(this.s1 + \",\"); &nbsp; // 2</div><div style=\"margin-left: 120px;\">System.out.print(super.s1 + \",\"); &nbsp;// 3</div><div style=\"margin-left: 120px;\">System.out.print(A.this.s1 + \",\"); // 4</div><div style=\"margin-left: 120px;\">System.out.print(A.super.s1); &nbsp;&nbsp;&nbsp;// 5</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</div><div style=\"margin-left: 40px;\">public static void main (String[] args)<br>{</div><div style=\"margin-left: 80px;\">new A().new B().m1(); &nbsp;// 6</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>What is the result of attempting to compile and run the program?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Prints: B,SuperB,B,SuperB"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Prints: B,SuperB,A,SuperA"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compile-time error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Run-time error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 67726,
+      "Explanation": "this.s1 is B,&nbsp;super.s1 is&nbsp;SuperB,&nbsp;A.this.s1 is&nbsp;A and&nbsp;A.super.s1 is&nbsp;SuperA<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of compiling and running the Second class? Consider the following example:<br>class First<br>{<div style=\"margin-left: 40px;\">public First (String s)<br>{</div><div style=\"margin-left: 80px;\">System.out.println(s);</div><div style=\"margin-left: 40px;\">}</div>}<br>public class Second extends First<br>{<div style=\"margin-left: 40px;\">public static void main(String args [])<br>{&nbsp;</div><div style=\"margin-left: 80px;\">new Second();</div><div style=\"margin-left: 40px;\">}</div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Nothing happens"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An instance of the class First is generated"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An exception is raised at runtime stating that there is no null parameter constructor in class First."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The class second will not compile as there is no default constructor in class First"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 67690,
+      "Explanation": "<span id=\"explanation67690\">At a time of creating object of subclass, super class default constructor will be invoked implicity if no constructor is explicitly called.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Given these class definitions:&nbsp;</div><div>class Superclass { }&nbsp;</div><div>class Subclass1 extends Superclass { }</div><div>and these objects:&nbsp;</div><div>Superclass a = new Superclass();&nbsp;</div><div>Subclass1 b = new Subclass1();&nbsp;</div><div>which of the following explains the result of the statement:&nbsp;</div><div>a = b;</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Illegal at compile time"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Legal at compile time but possibly illegal at runtime"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Definitely legal at compile time and runtime"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 67667,
+      "Explanation": "<span id=\"explanation67667\">Superclass reference can refer to subclass instance.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if a subclass defines a method with the same signature as in the superclass?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compilation error<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Method overloading<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Method overriding"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Method hiding"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 102267,
+      "Explanation": "When a subclass defines a method with the same signature, it overrides the superclass method.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is true about constructors in inheritance?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Constructors are inherited<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Constructors must be overridden<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Constructors are not inherited<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Constructors are private by default<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 102268,
+      "Explanation": "<span id=\"explanation102268\" style=\"color:blue\"></span><span style=\"color:blue\">Constructors are not inherited in Java, but a subclass can call them using super().</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<pre><span style=\"font-size: medium; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;\">class A { <br>&nbsp;   int x = 10; <br>}<br>class B extends A { <br>&nbsp;  int x = 20; <br>&nbsp;  void print() { <br>&nbsp;         System.out.println(super.x);<br>&nbsp;  } <br>}</span></pre>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "20"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Runtime error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 102269,
+      "Explanation": "<span id=\"explanation102269\" style=\"color:blue\"></span><span style=\"color:blue\">super.x refers to the x variable in the superclass A, which is 10.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why does Java not support multiple inheritance with classes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To reduce memory usage<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To simplify syntax"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To avoid ambiguity (Diamond Problem)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To improve performance Answer"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 102270,
+      "Explanation": "Java avoids multiple inheritance with classes to prevent ambiguity, especially in cases where two superclasses have methods with the same signature (Diamond Problem).",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if super() is not the first statement in a subclass constructor?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The superclass constructor is not called"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The code compiles but throws a runtime exception"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compilation error occurs"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The super() call is ignored"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 102271,
+      "Explanation": "In Java, if you use super() to call a superclass constructor, it must be the first statement in the subclass constructor. If it&apos;s placed elsewhere, the compiler throws an error: \"Constructor call must be the first statement in a constructor.\"",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of inheritance in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To achieve encapsulation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To reuse code"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To handle exceptions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To implement interfaces"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 91717,
+      "Explanation": "Inheritance allows a new class to use properties and methods of an existing class, promoting code reusability.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following about java inheritance is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A subclass can be a superclass of another subclass."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A class can inherit multiple classes directly."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Private methods are accessible in the subclass."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Constructors are inherited from the superclass."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 91718,
+      "Explanation": "A subclass can extend a superclass that is also the parent of another class, forming a hierarchy.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What keyword is used to restrict class inheritance in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "private"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "final"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "sealed"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 91719,
+      "Explanation": "The &apos;final&apos; keyword is used to prevent a class from being extended.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does Java handle multiple inheritance?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Java allows multiple inheritance through classes."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Java does not support multiple inheritance at all."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Java allows multiple inheritance through interfaces."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Java allows multiple inheritance using inheritance trees."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 91720,
+      "Explanation": "Java supports multiple inheritance through interfaces but does not allow classes to extend multiple other classes.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is a valid type of inheritance in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Singular Inheritance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hierarchical Inheritance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Cascading Inheritance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Vertical Inheritance"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 91721,
+      "Explanation": "In hierarchical inheritance, multiple subclasses inherit from a single superclass.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which concept allows new methods to override existing ones in inheritance?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Encapsulation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Abstraction"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Polymorphism"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Dynamic Dispatch"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 91722,
+      "Explanation": "Polymorphism allows methods to be overridden, providing different implementations for a method declared in a superclass.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is indicated by the 'super' keyword in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It denotes the superclass."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It changes access modifiers."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It finalizes a method."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It multiplies class methods."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 91723,
+      "Explanation": "The &apos;super&apos; keyword is used within a subclass to refer to a method or variable in its immediate superclass.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is required for a class to be inherited?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It must implement Cloneable."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It must be declared as static."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It must not be declared final."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It must have public methods only."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 91725,
+      "Explanation": "A &apos;final&apos; class cannot be extended; thus, it cannot be inherited.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which is not related to inheritance in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "super"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "extends"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "implements"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "import"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 91726,
+      "Explanation": "The &apos;import&apos; keyword is used for including external classes and packages, not related to inheritance.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In inheritance, what does the subclass inherit from the superclass?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Static methods only"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only private members"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Public and protected members"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Methods returning void only"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 91727,
+      "Explanation": "The subclass inherits all public and protected members (methods and variables) from its superclass.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How is method overriding related to inheritance?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It restricts access to data."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It hides overloaded methods."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It provides specific implementation to inherited methods."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It defines multiple method signatures."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 91728,
+      "Explanation": "Method overriding allows a subclass to provide a specific implementation for a method already defined in its superclass.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used for defining inheritance in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "extends"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "inherits"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "derives"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "implements"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 91729,
+      "Explanation": "The &apos;extends&apos; keyword is used when a class wants to inherit properties and methods from another class.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the 'super()' call do in a subclass constructor?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Invokes the object class constructor"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Calls constructor of superclass"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Generates a new object instance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Changes current class's constructor"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 91730,
+      "Explanation": "In Java, &apos;super()&apos; is used in a subclass constructor to call its closest superclass constructor.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following inheritance relationships is legal in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Multiple direct class to class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Interface to class inheritance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Class to class inheritance using 'extends'"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Cross-package default class inheritance"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 91731,
+      "Explanation": "Class-to-class inheritance is possible using the &apos;extends&apos; keyword in Java.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the context of inheritance, abstract classes are:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Instantiated directly"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Used to provide default methods"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Bases for concrete subclasses"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Finalized as complete classes"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 91733,
+      "Explanation": "Abstract classes provide a base for subclasses to implement its abstract methods.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which inheritance level is present when a class implements an interface?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Single-level inheritance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Interface inheritance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Implementation inheritance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Horizontal inheritance"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 91734,
+      "Explanation": "When a class implements an interface, it provides a concrete implementation for the interface&apos;s methods.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In what scenario will the constructor of a superclass be called automatically?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When a subclass is instantiated"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When a superclass method is invoked"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When super() is called outside a constructor"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When importing a superclass class"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 91735,
+      "Explanation": "When a subclass object is created, its superclass constructor is automatically called before executing subclass constructor code.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What scenario is NOT an example of inheritance?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A superclass with abstract methods being extended"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A child class implementing interface methods"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A superclass providing overridden methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A class declaring an interface"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 91736,
+      "Explanation": "Declaring an interface is not an example of inheritance; it&apos;s creating a contract for classes to implement.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In order to check \u201cis-a\u201d relationship, we use following operator",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Is-a"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Instanceof"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Is_relationship"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 81535,
+      "Explanation": "<span id=\"explanation81535\">Write explaination here..</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Java supports",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "single level inheritance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "multi-level inheritance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "hierarchical inheritance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 81528,
+      "Explanation": "<span id=\"explanation81528\">Write explaination here..</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Super must be on first line if we want to invoke base class constructor.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "This is only for containment"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 81529,
+      "Explanation": "<span id=\"explanation81529\">Write explaination here..</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "what is the result of following code ?<br>class base {<br>&nbsp; &nbsp; int i;&nbsp;<br>&nbsp; &nbsp; base() {<br>&nbsp; &nbsp; &nbsp; add(1);<br>&nbsp; &nbsp; }<br>&nbsp; &nbsp;void add(int v) {<br>&nbsp; &nbsp; &nbsp; i+=v;<br>&nbsp; &nbsp; }<br>&nbsp; &nbsp; void print() {<br>&nbsp; &nbsp; &nbsp; System.out.println(i);<br>&nbsp; &nbsp;}&nbsp;<br>}<br>class sub extends base {<br>&nbsp; &nbsp;sub() {<br>&nbsp; &nbsp; &nbsp; System.out.println(\u201cin sub def const\u201d);<br>&nbsp; &nbsp; &nbsp; super.add(2);<br>&nbsp; &nbsp; }<br>&nbsp; &nbsp; void add(int v) {<br>&nbsp; &nbsp; &nbsp; &nbsp;i+=v*2;<br>&nbsp; &nbsp; }<br>}<br>public class test11 {<br>&nbsp; &nbsp;public static void main(String args[]) {<br>&nbsp; &nbsp; &nbsp; &nbsp; base b;<br>&nbsp; &nbsp; &nbsp; &nbsp; b=new sub();<br>&nbsp; &nbsp; &nbsp; &nbsp; b.print();<br>&nbsp; &nbsp;}<br>}<br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "in sub def const<br>4"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Error: super.add(2) has to be on first line of constructor"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "2"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 81520,
+      "Explanation": "<span id=\"explanation81520\" style=\"color:blue\">When new sub() gets executed, it first calls base() default constructor which assigns value 2 to i varibale. Further in subclass onstructor, it first prints the message \"in sub def const\" and then calls super.add(2) which assigns value 4 to i.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "specify which of the following is true ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "protected members can not be accessed directly in the same package."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Protected member can be accessed with super class reference in different package."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Private member can be accessed by subclass using super keyword."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Constructors are not inherited."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 81348,
+      "Explanation": "<span id=\"explanation81348\">Write explaination here..</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of following code.<br>class a&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;static&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\" static a\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;class b extends a&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;static&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\" static b\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;class c extends b&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;static&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\" static c\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;public class myclass&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;static&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\" static&nbsp;myclass\");<br>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String args[])&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new c();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"in main\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "in main, static a,static b,static c, static myclass"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "static myclass, static a,static b,static c, in main"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "static myclass, in main ,static a,static b,static c"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "static a,static b,static c, static myclass, in main ,"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 81502,
+      "Explanation": "<ol><li>static myclass block executes.</li><li>new c() causes the class c to be loaded, which triggers the loading of its superclasses.</li><li>static a block executes (because a is the superclass of b and c).</li><li>static b block executes (because b is the superclass of c).</li><li>static c block executes.</li><li>System.out.println(\"in main\"); executes.</li></ol>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen to the following code ?<br>class Base {<br>&nbsp;&nbsp;&nbsp; public final void disp ()&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println (\u201cin disp\u201d);<br>&nbsp;&nbsp;&nbsp; }<br>}<br>public class Sub extends Base {<br>&nbsp;&nbsp;&nbsp;&nbsp; public static void main (String argv [] )&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Base b = new Base() ;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b.disp () ;<br>&nbsp;&nbsp;&nbsp; }<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "runtime error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "compiler error \u201cfinal method must be inside final class\u201d"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "compiler error \u201ca class having final method can not be inherited\u201d"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "neither compilation nor runtime error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 81503,
+      "Explanation": "<span id=\"explanation81503\">When super class has any method declared as final, it can not be overridden by subclass. In the above case disp() method is not overridden in the subclass.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "what will be the output ?<br>class base&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int i;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;base(){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(1);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;void add(int v)&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i+=v;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;void print() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(i);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>}<br>class sub extends base&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sub()&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add(2);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;void add(int v)&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i+=v*2;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;}<br>public class test&nbsp; &nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;static void disp(base b)&nbsp; &nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.add(8);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.print();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String args[])&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;disp(new sub());<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "9"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "18"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "22"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "21"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 81504,
+      "Explanation": "<span id=\"explanation81504\">Write explaination here..</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why multiple inheritance is not available in java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It leads to confusion for a Java program"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The programmer can achieve multiple inheritance by using interface"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The programmer can achieve multiple inheritance by repeatedly using single inheritance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 81508,
+      "Explanation": "<span id=\"explanation81508\">Write explaination here..</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "what is the output?<br>&nbsp;&nbsp;&nbsp;&nbsp;class base&nbsp;{&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;class sub1 extends base&nbsp;&nbsp;{&nbsp; &nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;class sub2 extends sub1&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;class sub3 extends sub2&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;public class test12&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String args[])&nbsp;&nbsp; &nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sub1 s=new sub2();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;base b=s;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(b instanceof base)&nbsp;&nbsp; &nbsp; &nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"base\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(b instanceof sub1)&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"sub1\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(b instanceof sub2)&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"sub2\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(b instanceof sub3)&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"sub3\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "base<br>sub1<br>sub2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "sub1<br>sub3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "sub1<br>sub2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "base<br>sub1<br>sub2<br>sub3"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 81509,
+      "Explanation": "<span id=\"explanation81509\">Object s is of type sub2 which has super classes as base and sub1. So instanceof operation will be true for base, sub1 and sub2 but not for sub3</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given the following code,what can be said about the statement s=(sub)b ?<br>class base&nbsp; {&nbsp; }<br>class sub extends base&nbsp;{&nbsp; }<br>public class test12&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String args[])&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;base b=new base();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sub s=new sub();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s=(sub)b;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "legal at compile time but illegal at runtime"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "illegal at compile time"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "legal at compile and runtime ,but (sub) cast is not needed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "legal at compile and runtime ,but (sub) cast is strictly needed."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 81510,
+      "Explanation": "In summary, s = (sub) b; attempts to cast a base reference b to a sub reference s, which is a downcasting operation. The success of this cast depends on whether b actually refers to an object of type sub or a subclass thereof.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen when you attempt to compile or run this code?<br>class Base&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;public final void amethod ()&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system.out.println (\u201camethod\u201d);<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}<br>public class Fin extends Base<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public static void main (String argv [] )&nbsp;&nbsp; &nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Base b = new Base() ;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.amethod () ;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compile time error indicating that a class with any final methods must be declared final<br>itself"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compile time error indicating that you inherit from a class with final methods."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Run time error indicating that Base is not defined as final."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Success in compilation and output of \u201camethod\u201d at run time"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 81511,
+      "Explanation": "<span id=\"explanation81511\">Write explaination here..</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "At the time of overriding function, if we change the argument :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It gives compiler error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It gives runtime error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compiler automatically removes the argument"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It becomes overloading."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 81537,
+      "Explanation": "<span id=\"explanation81537\">Write explaination here..</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Will following code work?<br>Class MyClass extends String<br>{}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Some times"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only in inheritance"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 81538,
+      "Explanation": "<p>No, the code will not work. In Java, the <code>String</code> class is <code>final</code>, which means it cannot be extended. The <code>final</code> keyword prevents a class from being subclassed.</p><p>Here is the reason why:</p><ul><li><strong>Final Classes</strong>: In Java, a class that is declared with the <code>final</code> keyword cannot be subclassed. This is used to prevent inheritance and to ensure that the class&apos;s behavior remains unchanged.</li><li><strong>String Class</strong>: The <code>String</code> class in Java is declared as <code>final</code>. T</li></ul>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If obj instanceof ClassName returns false, what does it mean?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "obj is null"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "obj is not an instance of that class or its subclasses"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The code has an error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The class does not exist"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 102732,
+      "Explanation": "<span id=\"explanation102732\" style=\"color:blue\"><span id=\"explanation102732\" style=\"color:blue\">instanceof operator helps in downcasting by checking whether given object is object of the specified classname or its subclass and whether casting is possible.</span></span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When a subclass inherits from a superclass, what does it gain?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "All private members directly"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "All methods and properties of the superclass (except private ones)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only variables, not methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A copy of the superclass constructor"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6803,
+      "QuestionTypeId": 0,
+      "QuestionId": 102733,
+      "Explanation": "<span id=\"explanation102733\" style=\"color:blue\"><span id=\"explanation102733\" style=\"color:blue\">Subclass inherits all the data members and member methods except private ones. Constructors are not inherited</span></span>",
+      "Answer": "B",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

@@ -1,0 +1,2166 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What happens when you run JSON.parse(null) in JavaScript?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Throws a SyntaxError"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Returns undefined"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Returns null"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Returns an empty object {}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 102414,
+      "Explanation": "When you pass a non-string value like null to JSON.parse(), JavaScript first coerces it to a string using ToString(null), which becomes \"null\". Then it parses that string as valid JSON",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of JSON.parse(undefined)?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Returns undefined"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Throws a SyntaxError"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Returns null"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Returns an empty object {}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 102415,
+      "Explanation": "JSON.parse(undefined) throws a SyntaxError because undefined is not a valid JSON string. Like null, it&apos;s not a string input.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does JSON.parse('') return?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An empty string"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "null"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Throws a SyntaxError"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An empty object {}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 102416,
+      "Explanation": "An empty string is not valid JSON, so JSON.parse(&apos;&apos;) throws a SyntaxError.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a key characteristic of JSON?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "JSON uses XML format."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "JSON supports multi-threaded operations."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "JSON is a lightweight data interchange format."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "JSON allows embedding of Python scripts."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97424,
+      "Explanation": "JSON, or JavaScript Object Notation, is a lightweight data interchange format that is easy for humans to read and write, and easy for machines to parse and generate.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How are arrays represented in JSON?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using angle brackets &lt;&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using curly braces {}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using square brackets []"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using double quotes &quot;&quot;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97425,
+      "Explanation": "In JSON, arrays are represented using square brackets []. Each value in the array is separated by a comma.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a valid way to represent a key-value pair where value is&nbsp; string type in JSON?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "{ 'name': 'John' }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{ \"name\": \"John\" }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "{ \"name\": 'John' }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "{ name: \"John\" }"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97427,
+      "Explanation": "<span id=\"explanation97427\" style=\"color:blue\">In JSON, strings must be enclosed in double quotes. Single quotes are not allowed, and keys must also be in double quotes.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct way to declare an array in JSON?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "{ &quot;numbers&quot;: [1, 2, 3] }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{ &#39;numbers&#39;: (1, 2, 3) }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[1, 2, 3]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "(1, 2, 3)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97428,
+      "Explanation": "JSON arrays are declared using square brackets. To include an array in an object, the key must be enclosed in double quotes. Option A correctly depicts an array as a value in a JSON object.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In JSON syntax, which of the following is incorrect?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "{\"name\": \"Doe\", \"age\": 25}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{\"name\": \"Doe\", \"age\": \"25\", \"alive\": true}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "{'name': 'Doe', 'age': 25}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "{\"name\": \"Doe\", \"address\": {\"city\": \"New York\"}}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97429,
+      "Explanation": "<span id=\"explanation97429\" style=\"color:blue\">JSON syntax requires keys and string values to be enclosed in double quotes. Single quotes are not allowed.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How are boolean values represented in JSON?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&quot;true&quot; or &quot;false&quot;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1 or 0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "true or false"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&#39;true&#39; or &#39;false&#39;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97430,
+      "Explanation": "In JSON, boolean values are represented by the literals true and false, without quotes.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following data types are allowed in a JSON structure?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "numbers, strings, objects, arrays, booleans, dates"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "numbers, strings, arrays, booleans, functions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "numbers, ntrings, objects, arrays, booleans, null"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "numbers, strings, arrays, booleans, undefined"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97431,
+      "Explanation": "<span id=\"explanation97431\" style=\"color:blue\">JSON supports Numbers, Strings, Objects, Arrays, Booleans, and Null. It does not support Dates, Functions, or Undefined directly.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which data type is valid in JSON for a primitive value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Date"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "String"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Function"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97432,
+      "Explanation": "In JSON, a primitive value can be a String, Number, Boolean, or Null. An Object or Array represents composite data.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following JSON data types can be used to store a collection of key/value pairs?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Array"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Boolean"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "String"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97433,
+      "Explanation": "A JSON Object is used to store key/value pairs, whereas an Array is used to store ordered lists of values.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which JSON data type would you use to represent decimal values?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "String"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Array"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Number"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Boolean"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97434,
+      "Explanation": "The JSON Number data type is used to represent numeric values, which includes integers and decimals.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the appropriate JSON data type for storing true or false values?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "String"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Number"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Boolean"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Null"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97435,
+      "Explanation": "The JSON Boolean data type is used to store true or false values.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following data types is not a valid JSON primitive type?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Null"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Number"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Boolean"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97436,
+      "Explanation": "JSON primitive types include Null, Number, String, and Boolean. An Object is a composite type that can contain multiple key/value pairs.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a &#39;type&#39; in a JSON Schema used for?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To specify the data format"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To define the default value"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To determine the data type of JSON values"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To enforce a minimum length restriction"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97437,
+      "Explanation": "The &#39;type&#39; keyword in JSON Schema is used to specify the type of data that is expected, such as a string, number, object, etc.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword in JSON Schema is used to specify that a property can be of multiple types?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "types"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "anyType"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "oneOf"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "type"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97438,
+      "Explanation": "The &#39;type&#39; keyword can accept an array to specify that a property can be of multiple types.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you define required properties in a JSON Schema?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By setting &#39;required&#39; to true on the property"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using the &#39;required&#39; keyword and listing the property names in an array"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By setting the &#39;mandatory&#39; attribute of the property"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By prefixing the property name with &#39;req_&#39;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97439,
+      "Explanation": "The &#39;required&#39; keyword in JSON Schema is used to specify which properties are required, and it takes an array of property names.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the &#39;$schema&#39; keyword in a JSON Schema?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To define a custom schema identifier"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To specify the version of the JSON Schema standard used"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To define a random schema seed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To specify the repetition of schema elements"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97440,
+      "Explanation": "The &#39;$schema&#39; keyword is used to declare which version of the JSON Schema standard is being used, for example, draft-07.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which JSON Schema keyword is used for string pattern validation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "regex"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "format"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "pattern"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "stringPattern"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97441,
+      "Explanation": "The &#39;pattern&#39; keyword is used in JSON Schema to specify a regular expression that a string must match.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the JSON.stringify() method do in JavaScript?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It converts a JavaScript object into a JSON string."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It parses a JSON string into a JavaScript object."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It validates the syntax of a JSON string."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It converts a JavaScript object into an XML string."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97442,
+      "Explanation": "The JSON.stringify() method is used to convert a JavaScript object or value to a JSON string.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following data types will NOT be included in the resulting JSON string when using JSON.stringify()?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Numbers"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Functions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Booleans"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Arrays"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97443,
+      "Explanation": "Functions are not valid JSON data types and will be excluded from the resulting JSON string.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the second parameter used for in the JSON.stringify() method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To filter out properties to be included in the JSON string."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To change the case of the keys in the JSON output."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To specify the maximum length of the JSON string."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To provide a custom sorting order for the properties."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97444,
+      "Explanation": "The second parameter of JSON.stringify() is the replacer, which can be used to filter out properties by including only those that match a specific criterion.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you pretty-print a JSON string with a 4-space tabulation using JSON.stringify()?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "JSON.stringify(obj, null, 2)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "JSON.stringify(obj, null, 4)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "JSON.stringify(obj, 4, null)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "JSON.stringify(obj, &#39; &#39;, 4)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97445,
+      "Explanation": "The third parameter of JSON.stringify() specifies the number of spaces used for indentation to pretty-print the JSON string.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using JSON.stringify(), how can you transform values before they are stringified?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using a custom toString() method in the object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Providing a function as the second parameter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using JSON.parse() and JSON.stringify() together"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By setting a global overwrite function for JSON.stringify()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97446,
+      "Explanation": "A replacer function provided as the second parameter is called for each property in the object being stringified, allowing you to transform the values.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which data type is NOT supported directly in a JSON object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "String"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Boolean"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Date"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Number"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97447,
+      "Explanation": "JSON does not have a built-in type for dates. Dates are typically represented as strings.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of JSON.stringify() in JavaScript?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To convert a string to a JSON object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To parse a JSON string into an object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To convert a Javascript object object into a JSON string"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To validate a JSON object"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97448,
+      "Explanation": "<span id=\"explanation97448\" style=\"color:blue\">JSON.stringify() method converts a JavaScript object or value to a JSON string.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following JSON expressions is invalid?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "{&quot;name&quot;: &quot;John&quot;, &quot;age&quot;: 30}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{&quot;colors&quot;: [&quot;red&quot;, &quot;green&quot;, &quot;blue&quot;]}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "{&quot;alive&quot;: true}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "{&quot;1key&quot;: &quot;value&quot;}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97449,
+      "Explanation": "JSON keys must be strings enclosed in double quotes and must not start with a number.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you access the value of the &#39;name&#39; property in a JSON object stored in a variable called &#39;user&#39;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "user.name()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "user[&quot;name&quot;]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "user-&gt;name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "user(name)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97450,
+      "Explanation": "In JavaScript, JSON object properties can be accessed using dot notation or bracket notation. Bracket notation requires the key to be a string.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to parse a JSON string into a JavaScript object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "JSON.parse()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "JSON.stringify()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "JSON.convert()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "JSON.init()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97451,
+      "Explanation": "JSON.parse() method is used to parse a JSON string and convert it into a JavaScript object.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct method to access the third element in a JSON array named &#39;data&#39;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "data[3]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "data[2]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "data.get(3)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "data.get(2)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97452,
+      "Explanation": "JSON arrays are zero-indexed, meaning the first element is at index 0. Therefore, the third element is at index 2.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given the JSON array &#39;[{&quot;name&quot;:&quot;Alice&quot;},{&quot;name&quot;:&quot;Bob&quot;},{&quot;name&quot;:&quot;Charlie&quot;}]&#39;, how would you access &#39;Bob&#39;s&#39; name?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "array[1].name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "array[0].name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "array[2].name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "array[1].get(&quot;name&quot;)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97453,
+      "Explanation": "In the JSON array, &#39;Bob&#39; is the second object, which is at index 1. Access the &#39;name&#39; property of this object using &#39;array[1].name&#39;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What data structure is used to store multiple values in a JSON array?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "String"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "List"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Array"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97454,
+      "Explanation": "A JSON array is a collection of ordered values stored in a structure similar to an array in many programming languages.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a valid JSON array?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[&quot;Red&quot;, true, 42, {&quot;key&quot;: &quot;value&quot;}]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{ &quot;name&quot;: &quot;John&quot;, &quot;age&quot;: 30 }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "(&quot;Red&quot;, true, 42)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "{ [&quot;Red&quot;, &quot;Blue&quot;, &quot;Green&quot;] }"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97455,
+      "Explanation": "A JSON array begins and ends with square brackets, and it can contain values of any JSON data type, including objects, as shown in option A.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement best describes a JSON array?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A JSON array is a key-value pair collection."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A JSON array must only contain strings."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A JSON array is an ordered collection of values."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A JSON array is accessed by name rather than index."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97456,
+      "Explanation": "A JSON array is an ordered sequence of values that can include multiple types, such as strings, numbers, objects, or other arrays.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does JSON stand for in web programming?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "JavaScript Oriented Notation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "JavaScript Object Notation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Java Standard Object Notation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "JavaScript Online Network"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97457,
+      "Explanation": "JSON stands for JavaScript Object Notation and is a lightweight data interchange format that is easy for humans to read and write and easy for machines to parse and generate.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following data types are NOT supported in JSON?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "String"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Date"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Number"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Boolean"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97458,
+      "Explanation": "JSON does not have a specific data type for Date. Dates can be represented as strings in a specifically formatted way, but JSON natively supports String, Number, Boolean, Array, Object, and null.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How is an array represented in JSON?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "As a series of key-value pairs enclosed in curly braces"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "As a comma-separated list of values enclosed in square brackets"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "As a comma-separated list of key-value pairs"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "As a series of key-value pairs enclosed in square brackets"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97459,
+      "Explanation": "In JSON, arrays are represented as a comma-separated list of values enclosed in square brackets [].",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following JSON structures is correctly formatted?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "{&quot;name&quot;: &quot;John&quot;, &quot;age&quot;: 30, &quot;city&quot;: &quot;New York&quot;}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{name: &quot;John&quot;, age: 30, city: &quot;New York&quot;}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[&#39;name&#39; =&gt; &#39;John&#39;, &#39;age&#39; =&gt; 30, &#39;city&#39; =&gt; &#39;New York&#39;]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "{&quot;name&quot; =&gt; &quot;John&quot;, &quot;age&quot; =&gt; 30, &quot;city&quot; =&gt; &quot;New York&quot;}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97460,
+      "Explanation": "Correct JSON format requires keys and string values to be enclosed in double quotes. Option A correctly follows this format.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the MIME type associated with JSON data?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "application/xml"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "application/html"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "application/json"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "text/json"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97461,
+      "Explanation": "The correct MIME type for JSON is &#39;application/json&#39;, which is used to indicate that the content is in JSON format.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is JSON primarily used for in web programming?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Styling web pages"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Formatting data for storage"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Exchanging data between client and server"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Defining markup for web content"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97462,
+      "Explanation": "JSON (JavaScript Object Notation) is a lightweight data interchange format primarily used for exchanging data between client and server in web applications.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which JavaScript method is used to parse a JSON string into a JavaScript object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "JSON.stringify()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "JSON.parse()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "JSON.decode()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "JSON.toObject()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97463,
+      "Explanation": "The JSON.parse() method is used to convert a JSON string into a JavaScript object.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if JSON.parse() is executed on a malformed JSON string?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It returns a null value"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It throws an error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It returns an empty object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It returns undefined"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97464,
+      "Explanation": "<span id=\"explanation97464\" style=\"color:blue\">JSON.parse() throws a SyntaxError exception if the string to be parsed contains invalid JSON.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following data types does JSON support?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Function"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Date"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "String"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Undefined"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97465,
+      "Explanation": "JSON supports string, number, object, array, true, false, and null data types. Functions, Dates, and Undefined types are not supported.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which tool is commonly used to validate JSON syntax for web development?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "WebPack"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Postman"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "JSLint"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "JSONLint"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97466,
+      "Explanation": "JSONLint is a popular tool used for validating the syntax and formatting of JSON data.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary use of the Axios library in JavaScript?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Data manipulation in arrays"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Handling date and time"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Making HTTP requests"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DOM manipulation"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97467,
+      "Explanation": "Axios is primarily used to make HTTP requests from web browsers or Node.js applications. It supports promises and is designed to simplify interactions with RESTful web services.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in Axios is used to send a GET request?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "axios.request()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "axios.get()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "axios.fetch()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "axios.retrieve()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97468,
+      "Explanation": "The axios.get() method is specifically used to send a GET request to a specified URL.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you intercept requests or responses in Axios?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using event listeners"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using promise chaining"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using interceptors"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using lifecycle callbacks"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97469,
+      "Explanation": "Axios provides the ability to intercept requests or responses before they are handled by then or catch through the use of interceptors.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following automatically happens when you make a request using Axios?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The request is canceled if it takes too long"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "JSON responses are automatically parsed"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The request retries three times if it fails"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The CORS policy is bypassed"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97470,
+      "Explanation": "Axios automatically transforms JSON data responses in the response to JavaScript objects, simplifying parsing and handling.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How would you configure a default base URL for all requests made through Axios?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By setting axios.defaults.baseURL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By setting axios.config.baseURL"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By modifying axios.request.baseURL"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By using axios.defaults.baseApi"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97471,
+      "Explanation": "You can set a default base URL for all Axios requests by configuring axios.defaults.baseURL, which then prefixes all request URLs automatically.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command is typically used to install Axios in a Node.js project?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "npm install axios"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "node install axios"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "npm fetch axios"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "axios start"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97472,
+      "Explanation": "The command &#39;npm install axios&#39; is commonly used to add the Axios library to a Node.js project.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Axios property is used to check the HTTP status code returned by a failed request?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "error.response.status"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "error.statusCode"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "catch.errorStatus"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "axios.errorCode"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97488,
+      "Explanation": "In Axios, &#39;error.response.status&#39; is used to access the HTTP status code of a failed request.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following correctly handles a network error in an Axios request?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "error.response.data.networkError"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "error.isNetworkError"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "error.message"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "error.request"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97489,
+      "Explanation": "The &#39;error.request&#39; property in Axios is undefined if the request was made but no response was received due to a network error.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the significance of &#39;error.config&#39; in an Axios error object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It contains the original request configuration."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It includes details of the server response error."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is used to log errors to an external server."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It automatically retries the failed request."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97490,
+      "Explanation": "&#39;error.config&#39; contains the original request configuration, allowing examination of request parameters when an error occurs.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which scenario would &#39;error.response&#39; be undefined in an Axios request?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When the server responds with a 404 error."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When there is a validation error in the request data."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When the client connects successfully to the server."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When there is no response due to a network error or timeout."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97491,
+      "Explanation": "The &#39;error.response&#39; property is undefined when there is no response received from the server, usually due to network errors or a timeout.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the correct way to make a simple GET request using the Fetch API?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "fetch(&#39;/data&#39;).then(response =&gt; response.json())"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "get(&#39;/data&#39;).then(response =&gt; response.json())"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "httpGet(&#39;/data&#39;).then(response =&gt; response.json())"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "request(&#39;/data&#39;).then(response =&gt; response.json())"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 97492,
+      "Explanation": "The Fetch API uses the fetch() method to initiate an HTTP request, and chaining a .then() with response.json() is a common way to process JSON responses.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "JSON name/value pair is written as",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Name:\u2019value\u2019"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Name=\u2019value\u2019"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Name=\u201dvalue\u201d"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "\u201cname\u201d:\u201dvalue\u201d"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 69288,
+      "Explanation": "<span id=\"explanation69288\">JSON name-value pair is written as&nbsp;&nbsp; \"name\":\"value\"&nbsp; if value is inthe form of string</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is a proper JSON array?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "{\u201cletters\u201d:[\u201ca\u201d,\u201db\u201d,\u201dc\u201d;]}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{\u2018letters\u2019:{\u201ca\u201d,\u201db\u201d,\u201dc\u201d}}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "{\u201cletters\u201d:[a,b,c]}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "{\"letters\u201d:[\u201ca\u201d,\u201db\u201d,\u201dc\u201d]}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 69289,
+      "Explanation": "<span id=\"explanation69289\">Correct JSON array is&nbsp;&nbsp; {\"name\":\"value\"}&nbsp;&nbsp; i.e.&nbsp; {\"letters\":[\"a\",\"b\",\"c\"]}.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not a JSON type?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "date"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "array"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "string"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 69293,
+      "Explanation": "<span id=\"explanation69293\">date is not supprted by JSON syntax as a data type.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What keywords are reserved in JSON and cannot be used as keys?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "value"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "There are none"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "key"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 69317,
+      "Explanation": "There are no reserved words in JSON.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following code will return a valid JSON object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "JSON.parse(\u2018({\u201cFirstName\u201d: \u201cJohn\u201d, \u201cLastName\u201d:\u201dDoe\u201d})\u2019);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "JSON.parse(\u201c{\u2018FirstName\u2019: \u2018John\u2019, \u2018LastName\u2019:\u2019Doe\u2019}\u201d);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "JSON.parse(\u201c({\u2018FirstName\u2019: \u2018John\u2019, \u2018LastName\u2019:\u2019Doe\u2019})\u201d);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "JSON.parse(\u2018{\u201cFirstName\u201d: \u201cJohn\u201d, \u201cLastName\u201d:\u201dDoe\u201d}\u2019);"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 77616,
+      "Explanation": "valid JSON object can be obtained by using JSON.parse(&apos;{\"FirstName\":\"John\",\"LastName\":\"Doe\"}&apos;);<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the common usage of Json on modern websites?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To send and receive bits of data"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To store information remotely"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To store information locally"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the Above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 77617,
+      "Explanation": "<span id=\"explanation77617\">Common use of JSON is to send and receive bits of data from server to client vice versa.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the below notation, Employee is of type { \u201cEmployee\u201d: [ \u201cAmy\u201d, \u201cBob\u201d, \u201cJohn\u201d ] }",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Not a valid JSON string"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Array"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Object"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 77618,
+      "Explanation": "<span id=\"explanation77618\">Syntax:&nbsp; {\"name\":[\"value1\",\"value2\",\"value3\"]}&nbsp;&nbsp;&nbsp; is&nbsp; nothing but name is of type array.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "_________is not a valid way to parse JSON string.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "JSON.parse()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "JSON.eval()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "jQuery.parseJSON()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 77619,
+      "Explanation": "<span id=\"explanation77619\">JSON.eval() is not a valid way to parse JSON string. </span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What function will convert a JavaScript object to a JSON string?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "JSON.text()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "JSON.serialize()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "JSON.toString()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "JSON.stringify()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 77620,
+      "Explanation": "<span id=\"explanation77620\">JSON.stringify() function will convert a JavaScript object to a JSON string .</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is correct MIME type for JSON ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "application/js"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "application/json"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "json/mime"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "application/xml"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 77621,
+      "Explanation": "<span id=\"explanation77621\">application/json is correct MIME type for JSON</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Json is used to",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Transfer data as key value pair"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Transfer data as image"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Transfer data as arraylist"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 80630,
+      "Explanation": "<span id=\"explanation80630\">JSON is mostly used to transfer data as key value pair.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "JSON is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "language and platform independent"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "language dependent and platform independent"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "language independent and platform dependent"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 80628,
+      "Explanation": "<span id=\"explanation80628\">JSON is language and platform independent.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "JSON stands for",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "java source object notes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "javascript object notation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "javascript orientation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 80626,
+      "Explanation": "<span id=\"explanation80626\">JSON stands for&nbsp; javascript object notation.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In JSON, data is separated by:<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Commas (,)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Semicolons (;)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Colons (:)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Periods (.)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 87957,
+      "Explanation": "In JSON, data elements are separated by commas (,). Commas are used to separate key-value pairs in objects, and also separate elements in arrays. Options B, C, and D represent punctuation marks that are not used for separating data in JSON.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following represents valid syntax for a JSON array of strings?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "{\"days\":[\"monday\", \"friday\", \"sunday\"]}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{\"days\":('monday', 'friday', 'sunday')}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "{\"days\":{\"monday\", \"friday\", \"sunday\"}}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "{\"days\":[\"monday\"; \"friday\"; \"sunday\"]}<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 87954,
+      "Explanation": "Option A represents the correct syntax for a JSON array of strings. In JSON, arrays are enclosed in square brackets [ ], and elements are separated by commas. Each element in this case is a string enclosed in double quotes \" \". Options B, C, and D do not represent valid JSON array syntax.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method can be used to convert a JSON object into a string in JavaScript?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "JSON.parse()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "JSON.stringify()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "JSON.toString()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "JSON.convert()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 36,
+      "UniqueNodeId": 634,
+      "QuestionTypeId": 0,
+      "QuestionId": 96651,
+      "Explanation": "The JSON.stringify() method converts a JavaScript object or value to a JSON string.",
+      "Answer": "B",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

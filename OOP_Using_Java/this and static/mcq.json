@@ -1,0 +1,1056 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "<div>What will happen when you compile and run the following code?</div><div>public class MyClass</div><div>{</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; static int i;<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public static void main(String argv[]){<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(i);<br></div><div>&nbsp; &nbsp; &nbsp; }<br></div><div>}<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Error Variable i may not have been initialized"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "null"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 72208,
+      "Explanation": "Static varibales are initialized before any first object gets created or before any static method gets called. Variable i will be initialized before main method is called iwth value zero.<br><br>Default values for static and non-static variables are same.<br>&nbsp;primitive integers(long, short etc): 0<br>&nbsp;primitive floating points(float, double): 0.0<br>&nbsp;boolean: false<br>&nbsp;object references: null<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of below code snippet?<br>enum Enums<br>{<br>&nbsp;&nbsp;&nbsp; A, B, C;<br>&nbsp;&nbsp;&nbsp;&nbsp; private Enums() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(10);<br>&nbsp;&nbsp;&nbsp; }<br>}<br>&nbsp;public class MainClass {<br>&nbsp;&nbsp;&nbsp; public static void main(String[] args) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Enum en = Enums.B;<br>&nbsp;&nbsp;&nbsp; }<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10 10 10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compilation Error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "10 10"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Runtime Exception"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 75024,
+      "Explanation": "<span id=\"explanation75024\">The constructor of Enums is called which prints 10.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output for the following program?<br>&nbsp;&nbsp;&nbsp;&nbsp;class A&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;static&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"in A static block\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp; &nbsp; &nbsp; }<br>&nbsp; &nbsp; &nbsp;public class Trial&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A ob=new A();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String args[])&nbsp;&nbsp; &nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"in main\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;static&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\"in Trial static block\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "in A\u2019s static block, in Trial static block, in main"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "in Trial static block, in main"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "in A\u2019s static block, ,in main ,in Trial static block"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "in Trial static block, in A\u2019s static block, in main"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 81526,
+      "Explanation": "The Trial class is loaded and its static block executes.<br>The main method is invoked, but since the object ob of class A is instantiated as part of the instance variable declaration in Trial, the static block of class A will execute when the class A is loaded.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In java we can apply static modifier for local variable.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "not always allowed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 81533,
+      "Explanation": "<span id=\"explanation81533\">Write explaination here..</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given the following class,which statements if inserted at position 1 will cause a compilation error?<br>public class test1 {<br>&nbsp;&nbsp;&nbsp;&nbsp; int a;<br>&nbsp;&nbsp;&nbsp;&nbsp; int b=0;<br>&nbsp;&nbsp;&nbsp;&nbsp; static int c;<br>&nbsp;&nbsp;&nbsp;&nbsp; public void disp() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int d;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int e=0;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Position 1<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "a++"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "b++"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "c++"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "d++"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 81442,
+      "Explanation": "<span id=\"explanation81442\">&nbsp;error: variable d might not have been initialized<br>d++;</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method can be called without creating an instance of its class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Non-static method"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Static method"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Abstract method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Private method"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 91583,
+      "Explanation": "Static methods can be called without creating an instance of their class since they belong to the class itself.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if you declare a static method as final?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The method cannot be overridden"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The method will execute twice"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The method will become abstract"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 91584,
+      "Explanation": "A static method can be declared as final, indicating that it cannot be overridden by subclass methods.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can a static method access 'this' keyword?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, always"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, Never"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, if it is declared in a subclass"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Yes, if it is synchronized"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 91585,
+      "Explanation": "Static methods cannot access the &apos;this&apos; keyword because &apos;this&apos; refers to a specific instance of the class, and static methods are not tied to any particular instance.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Where is the static member data shared?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Among instances of the class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only inside the class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Between package classes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Among all subclasses"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 91586,
+      "Explanation": "Static member data is shared among all instances of the class because it belongs to the class itself, not to any specific instance.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If you want a method to be accessed without creating an object, which keyword should you use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "private"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "protected"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 91587,
+      "Explanation": "The &apos;static&apos; keyword allows a method to be accessed without the need to instantiate the class, because it binds the method to the class itself.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can static fields in a class be initialized?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using constructors"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using static blocks"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Directly in methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using instance methods"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 91588,
+      "Explanation": "Static fields in a class can be initialized using static blocks, which execute when the class is first loaded.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can a static method in Java be overridden?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, always"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, never"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, if it's public"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Yes, if the subclass also declares it as static"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 91589,
+      "Explanation": "Static methods cannot be overridden because method overriding is based on instances, while static methods are class-level functions.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following cannot be declared as static?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Inner class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Local variable"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Method"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 91590,
+      "Explanation": "Local variables cannot be declared as static because they belong to a specific block of code and not to any scope or entity that persists beyond the method execution.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main purpose of using static methods and fields?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To reduce access control"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To bind data to object instances"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To save memory by sharing variables among instances"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To enhance code portability"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 91591,
+      "Explanation": "Static methods and fields save memory by sharing common data across all instances of the class, rather than existing for each instance separately.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary use of the 'this' reference in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To refer to the instance variable of the current object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To reference the superclass"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To call constructor of the superclass"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To import another package"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 91567,
+      "Explanation": "<span id=\"explanation91567\" style=\"color:blue\">&apos;this&apos; is used in Java to refer to the current object, helping to disambiguate instance variables from method parameters.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is correct about 'this' reference in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "'this' can be used in a static context"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "'this' is a keyword that refers to methods of the superclass"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "'this' can be used to invoke other constructors of the current class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "'this' is used to destroy objects"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 91568,
+      "Explanation": "<span id=\"explanation91568\" style=\"color:blue\">&apos;this&apos; can be used to call one constructor from another in the same class, known as constructor chaining.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you use 'this' reference to call a constructor with more parameters than a current constructor in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "this()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "super()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "this(parameters)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "new this()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 91569,
+      "Explanation": "<span id=\"explanation91569\" style=\"color:blue\">&apos;this(parameters)&apos; is used in constructor chaining to call another constructor from the same class with more parameters.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why would you use 'this' to resolve a naming conflict in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To modify the parent class variables"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To remove ambiguity between instance variables and parameters"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To override the superclass method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To define static variables"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 91570,
+      "Explanation": "<span id=\"explanation91570\" style=\"color:blue\">&apos;this&apos; helps distinguish between instance variables and method parameters when they have the same name.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a valid use of 'this' reference in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Accessing instance variables of the current object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Calling instance methods of the current object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Passing itself to another method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Modifying static variables"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 91571,
+      "Explanation": "<span id=\"explanation91571\" style=\"color:blue\">&apos;this&apos; cannot be used to modify static variables as &apos;this&apos; refers to the current instance, not a class itself.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which scenario is using 'this' especially necessary in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Creating a new object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Initializing static variables"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Resolving ambiguity between instance variables and constructor parameters"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using external libraries"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 91572,
+      "Explanation": "<span id=\"explanation91572\" style=\"color:blue\">&apos;this&apos; is particularly useful to resolve naming conflicts between instance variables and method or constructor parameters.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following correctly demonstrates using 'this' to chain constructors in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "this.constructor()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "this.method()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "this(parameter1, parameter2)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "super(parameters)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 91573,
+      "Explanation": "<span id=\"explanation91573\" style=\"color:blue\">Using &apos;this(parameters)&apos; in a constructor allows calling another constructor in the same class with specific parameters.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can the 'this' reference be used within a static method in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "No, because 'this' cannot refer to static context"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes, with explicit reference"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, via a workaround"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only if the method belongs to an instance of a class"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 91574,
+      "Explanation": "<span id=\"explanation91574\" style=\"color:blue\">Static methods belong to the class, not any particular instance, hence &apos;this&apos; cannot be used within a static method.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the effect of using 'this' in front of a method call within the same class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Calls a static method"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Invokes another constructor"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Calls an instance method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Changes the return type of the method"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 91575,
+      "Explanation": "<span id=\"explanation91575\" style=\"color:blue\">&apos;this&apos; can be used to call an instance method of the current object explicitly.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following scenarios can 'this' reference not be used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Within instance methods"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "In calling another constructor"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Inside static methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "As an argument in a method call"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 91576,
+      "Explanation": "<span id=\"explanation91576\" style=\"color:blue\">&apos;this&apos; cannot be used inside static methods because it requires an instance of the class, while static methods do not belong to any object.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following keywords is used to declare a static method in a Java class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "final"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "abstract"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "synchronized"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 91577,
+      "Explanation": "The keyword &apos;static&apos; is used to declare a static method in Java. It allows the method to be called without creating an instance of the class.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a key characteristic of static variables in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They store unique values for every instance."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They can only be accessed within their class."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They are shared across all instances of the class."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They can only be used in static methods."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 91578,
+      "Explanation": "Static variables are associated with the class itself rather than any object instance and are shared across all instances of the class.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the result of trying to access a static variable using a null reference?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "NullPointerException"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The variable is accessed successfully"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Runtime error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 91579,
+      "Explanation": "Static variables or methods can be accessed via null references without any issue, as they are class-level entities.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true about static methods?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They can only access static data members of the class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They can directly access instance variables."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They can override instance methods."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They are always synchronized."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 91580,
+      "Explanation": "<span id=\"explanation91580\" style=\"color:blue\">Static methods can only access static data members and other static methods of the class. They cannot access instance variables unless they have a reference to an instance.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How are static blocks used in a Java program?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To initialize instance variables"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To implement loop structures"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To initialize static variables before the main method is executed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To declare an array"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 91581,
+      "Explanation": "Static blocks in Java are used for static variable initialization and run when the class is loaded into memory, before any static method and main method execution.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of this code?<br>class Demo {<br>&nbsp; &nbsp; static int count = 0;<br>&nbsp; &nbsp; Demo() {<br>&nbsp; &nbsp; &nbsp; &nbsp; count++;<br>&nbsp; &nbsp; &nbsp; &nbsp; System.out.println(count);<br>&nbsp; &nbsp; }<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Always prints 1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Prints increasing numbers with each object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Prints 0"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 102281,
+      "Explanation": "<span id=\"explanation102281\" style=\"color:blue\">count is static, so it&apos;s shared across all instances. Each new object increments and prints the updated value.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of a static block in Java?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To initialize instance variables"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To execute code before any object is created"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To define abstract methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To override constructors"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 102282,
+      "Explanation": "A static block is used to initialize static variables or perform setup operations. It runs once when the class is loaded into memory, before any object is created or the main() method is called. This makes it ideal for configuration logic or loading resources.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a restriction of static methods in Java?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They can access instance variables directly"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They can use the this keyword"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They can only access static members of the class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They can override non-static methods<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 102283,
+      "Explanation": "&nbsp;Static methods belong to the class, not to any specific object. Therefore:<br>They cannot access instance variables directly.<br>They cannot use this or super because those refer to the current object, which static methods don\u2019t have.<br>They can only access other static members (variables or methods) directly.<br>They cannot override non-static methods, and vice versa.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "class Beta {<br>&nbsp; &nbsp; static int x = 5;<br>&nbsp; &nbsp; void update() {<br>&nbsp; &nbsp; &nbsp; &nbsp; x += 10;<br>&nbsp; &nbsp; }<br>&nbsp; &nbsp; static void print() {<br>&nbsp; &nbsp; &nbsp; &nbsp; System.out.println(x);<br>&nbsp; &nbsp; }<br>}<br>public class Test {<br>&nbsp; &nbsp; public static void main(String[] args) {<br>&nbsp; &nbsp; &nbsp; &nbsp; Beta b1 = new Beta();<br>&nbsp; &nbsp; &nbsp; &nbsp; Beta b2 = new Beta();<br>&nbsp; &nbsp; &nbsp; &nbsp; b1.update();<br>&nbsp; &nbsp; &nbsp; &nbsp; b2.update();<br>&nbsp; &nbsp; &nbsp; &nbsp; Beta.print();<br>&nbsp; &nbsp; }<br>}<br>What is the output?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "15"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "25"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 102284,
+      "Explanation": "x is static and shared. Each update() adds 10, so after two updates: 5 + 10 + 10 = 25.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "class Alpha {<br>&nbsp; &nbsp; int value;<br>&nbsp; &nbsp; Alpha(int value) {<br>&nbsp; &nbsp; &nbsp; &nbsp; this.value = value;<br>&nbsp; &nbsp; }<br>&nbsp; &nbsp; void print() {<br>&nbsp; &nbsp; &nbsp; &nbsp; System.out.println(this.value);<br>&nbsp; &nbsp; }<br>}<br>What does this.value = value; do?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Assigns constructor parameter to instance variable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Assigns instance variable to constructor parameter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Causes a compilation error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Refers to static variable"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 102285,
+      "Explanation": "this.value refers to the instance variable, and value is the constructor parameter. This line assigns the parameter to the instance variable.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "class Sample {<br>&nbsp; &nbsp; int x = 10;<br>&nbsp; &nbsp; static void show() {<br>&nbsp; &nbsp; &nbsp; &nbsp; // System.out.println(this.x); // Line A<br>&nbsp; &nbsp; }<br>}<br>What happens if Line A is uncommented?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Prints 10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Runtime error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Prints 0"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6769,
+      "QuestionTypeId": 0,
+      "QuestionId": 102286,
+      "Explanation": "<span id=\"explanation102286\" style=\"color:blue\">this cannot be used in a static method because static methods do not belong to any instance. Uncommenting Line A causes a compilation error.</span>",
+      "Answer": "B",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

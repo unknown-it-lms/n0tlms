@@ -1,0 +1,2046 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "How many stacks are needed to implement a queue. Consider the situation where no other data structure like arrays, linked list is available to you.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "4"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 86309,
+      "Explanation": "With two stacks we can imlement Queue.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If user Push one element on stack then pops one element after that push 2 elements remove one element, Push one after that remove two elements again and add one element. At the end of&nbsp; last operation , total number of elements present in stack are&nbsp; ___________<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "4"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 86310,
+      "Explanation": "Push(10)<br>Pop()&nbsp;&nbsp; // no element in stack now.<br>Push(10);<br>Push(20);&nbsp;<br>Pop(); &nbsp;&nbsp; so removed element is 20 stack contains 10 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>Push(20);<br>Pop();&nbsp; // remove 20 only 10 is in stack<br>Pop(); // stack is empty.<br>Push(10);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; So only one element available in stack now.<br><br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a real-life application of stack where undo operations are used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Text Editor"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Web Browser"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "File System"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Database Management"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100898,
+      "Explanation": "Text editors use stacks to keep track of changes for implementing the undo feature. When a user performs an action, it is pushed onto a stack. An undo operation pops the action from the stack and reverses it.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which of the following scenarios is a stack used to keep track of function calls?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Task Scheduling"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Page Replacement"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Recursive Programming"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CPU Scheduling"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100899,
+      "Explanation": "Stacks are used with recursive programming to keep track of active calls and the sequence of their execution. The system uses a call stack to push function calls and pop them after execution.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Stacks are often used in parsing expressions in which of the following applications?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Image Processing"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compiler Syntax Checking"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Network Routing"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Disk Management"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100900,
+      "Explanation": "Compilers use stacks to parse nested structures and expressions. It helps to check the syntax by handling nested constructs like braces and parenthesis.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a web browser, how is stack used for managing pages that the user visits?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Caching recently visited pages"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Implementing secure connections"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Tracking session data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Backtracking previously visited pages"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100901,
+      "Explanation": "Web browsers use stacks to implement the back button functionality. When a user navigates to a new page, the current page is pushed onto the stack, allowing the user to backtrack by popping the stack.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which data structure is primarily used during the conversion of infix expressions to postfix expressions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Queue"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Array"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Stack"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Linked List"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100902,
+      "Explanation": "Stacks are used to convert infix expressions to postfix expressions as they help in knowing the precedence of operators, thus allowing the correct order of operations.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What operation is used to add an element to the top of the stack when implemented using an array?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "append()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "push()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "add()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "insert()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100903,
+      "Explanation": "The push() operation is used to add an element to the top of the stack.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following operations will remove the top element from a stack in an array-based implementation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "remove()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "delete()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "pop()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "discard()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100904,
+      "Explanation": "The pop() operation removes the element from the top of the stack.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In an array-based stack implementation, which condition indicates that a stack is full?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "top == 0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "top == -1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "top == array.length - 1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "top == capacity / 2"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100905,
+      "Explanation": "In a stack implemented using an array, the stack is full when the top index is equal to array.length - 1.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method would you use to check the top element of a stack without removing it in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "lookTop()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "check()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "peek()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "top()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100906,
+      "Explanation": "The peek() method returns the top element of the stack without removing it.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the time complexity of the push operation in an array-based stack?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "O(n)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "O(log n)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "O(1)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "O(n^2)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100907,
+      "Explanation": "The time complexity of the push operation in an stack using array is O(1), as it involves adding an element at the end of the array.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operation would you perform to check if the stack is empty in a stack implemented with an array?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "top == -1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "top == 0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "top == array.length"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "top == array.length - 1"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100908,
+      "Explanation": "In an array-based stack, the stack is empty when the index top is -1.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens to the stack when the pop operation is called on an empty stack with an array implementation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Returns 0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Returns null"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Throws an exception"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Adds a default element at the top"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100909,
+      "Explanation": "Attempting to pop from an empty stack typically throws an exception, such as EmptyStackException.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which data structure is commonly used for implementing recursive function calls?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Queue"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Graph"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Stack"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Tree"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100910,
+      "Explanation": "Stacks are used to manage recursion and track function calls, storing return addresses and local variables.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a common problem with array-based stack implementations?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Limited capacity due to fixed size"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Excessive space utilization"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Inefficient access times to top element"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Inability to perform basic operations"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100911,
+      "Explanation": "In array-based stacks, a fixed size can lead to capacity limitations when the stack grows.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is an application of a stack?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Job scheduling"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Breadth-first search"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Expression evaluation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Priority queue implementation"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100912,
+      "Explanation": "Stacks are used in expression evaluation and syntax parsing to manage operators and operands.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider a stack implemented using an array initialized with a size of 5. After performing the following operations, what will be the top element of the stack? Operations: push(10), push(20), pop(), push(30), push(40).",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "20"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "30"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "40"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100913,
+      "Explanation": "Starting with an empty stack and a size of 5, we perform the following operations: push(10) =&gt; [10], push(20) =&gt; [10, 20], pop() =&gt; [10], push(30) =&gt; [10, 30], push(40) =&gt; [10, 30, 40]. The top element after these operations is 40.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a stack implemented using an array has a maximum size of N, what will be the result of trying to push an element onto the stack when the stack is already full?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The stack will expand to accommodate the new element."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An exception will be thrown."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The element will be added at the bottom of the stack."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The stack will replace the top element with the new element."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100914,
+      "Explanation": "In a stack implemented using an array with a fixed size, trying to push an element onto a full stack results in an overflow condition, which typically throws an exception.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following code if the stack is empty initially: stack.push(1); stack.push(2); stack.pop(); stack.push(3); stack.push(4); stack.pop(); stack.peek();?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "4"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100915,
+      "Explanation": "Starting with an empty stack: push(1) =&gt; [1], push(2) =&gt; [1, 2], pop() =&gt; [1], push(3) =&gt; [1, 3], push(4) =&gt; [1, 3, 4], pop() =&gt; [1, 3]. The peek operation returns 3.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the time complexity of the push operation in a stack implemented using a fixed-size array?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "O(1)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "O(log n)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "O(n)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "O(n^2)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100916,
+      "Explanation": "The push operation in a stack implemented using an array is O(1) since it involves updating the top pointer and adding an element at the end of the array.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a stack implemented using an array, what does the pop() method do when the stack is empty?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Returns -1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Throws an exception"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Returns null"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Returns 0"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100917,
+      "Explanation": "When pop() is called on an empty stack implemented using an array, it throws an underflow exception as there are no elements to pop.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given an array-based stack implementation, where is the &#39;top&#39; of the stack pointer initially set?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "N-1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "-1"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100918,
+      "Explanation": "Initially, the &#39;top&#39; of the stack pointer is often set to -1 to indicate that the stack is empty. When the first element is pushed, it moves to 0.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you check if a stack using an array is empty?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "top == 0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "top == array.length-1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "top == -1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "array[0] == null"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100919,
+      "Explanation": "A stack is considered empty when the top pointer is -1, as it indicates that no elements have been added to the stack.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens when you perform a &#39;peek&#39; operation on a stack that is not empty?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Returns the bottom element of the stack."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Removes the top element and returns it."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Returns the top element without removing it."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Reverses the stack and returns the last element."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100920,
+      "Explanation": "The &#39;peek&#39; operation returns the top element of the stack without removing it, allowing you to see the last added element.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Assume a stack is implemented using an array. What will be the outcome if you attempt to push a null value onto the stack?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Throws a NullPointerException"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Pushes null as a valid entry"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Ignores the operation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Overwrites the top element with null"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100921,
+      "Explanation": "In Java, it is allowed to push a null value onto a stack as a valid value in an array; it doesn\u2019t throw an exception unless specifically handled.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The postfix form of the expression (A + B)\u2217(C\u2217D \u2212 E)\u2217F / G is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "AB + CD\u2217E \u2212 *F*G/"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "AB + CD \u2217 E \u2212 F \u2217\u2217G/"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "/ AB + CD \u2217 E \u2212\u2217F \u2217 G"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "AB + CDE \u2217\u2212\u2217 F \u2217 /G"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 77871,
+      "Explanation": "Get character by character data from infix expression and&nbsp; check implementation with stack<br>&nbsp;ch &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; stack&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;postfix<br>(&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (<br>A&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A<br>+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A<br>B&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB<br>)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(+)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+<br>*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+<br>(&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *(&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB+<br>C&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*(&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB+C<br>*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*(*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB+C<br>D&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*(*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB+CD<br>-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *(*-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+CD<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*(-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+CD*<br>E&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*(-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+CD*E<br>)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *(-)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+CD*E<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+CD*E-<br>*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;**&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB+CD*E-<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+CD*E-*<br>F&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB+CD*E-*F<br>/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB+CD*E-*F<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+CD*E-*F*<br>G&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB+CD*E-*F*G<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+CD*E-*F*G/&nbsp; &nbsp;<br><br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The process of accessing data stored in a serial access memory is similar to manipulating data on a ___________<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "heap"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "queue"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "stack"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "binary tree"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 77901,
+      "Explanation": "Serial files are read by starting (at the beginning) and reading through every record until you find the one that you want. This is like Stack , where one side is closed and to find our desired element we have to pop out each element one after another until that particular element&nbsp; is found.<br>It is unlike queue as&nbsp; in the queue insertion and deletion both possible at the same time in different end points . But in serial access ,operation in memory&nbsp; can be performed at one end only and only one operation at a time , this removes the possibility of queue.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The postfix form of A*B+C/D is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "*AB/CD+"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "AB*CD/+"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A*BC+/D"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ABCD+/*"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 77905,
+      "Explanation": "<table data-cke-table-faked-selection-table=\"\" style=\"border-collapse: collapse; border: medium none;\" class=\" cke_show_border\" cellspacing=\"0\" height=\"400\" width=\"688\"><tbody><tr><td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:97px\"><span style=\"color:#000000\">Read Infix string haracter by<br>A</span><br></td><td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:87px\">Stack</td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap; width:48.00pt\"><span style=\"color:#000000\">A</span></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap; width:93.75pt\"><span style=\"color:#000000\">Add in postfix String</span></td></tr><tr><td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:97px\"><span style=\"color:#000000\">*</span></td><td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:87px\"><span style=\"color:#000000\">(*)</span></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><br></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">Push on stack</span></td></tr><tr><td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:97px\"><span style=\"color:#000000\">B</span></td><td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:87px\"><br></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">AB</span></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">Add in postfix String</span></td></tr><tr><td style=\"height:45pt; vertical-align:middle; white-space:nowrap; width:97px\"><span style=\"color:#000000\">+</span></td><td style=\"height:45pt; vertical-align:middle; white-space:nowrap; width:87px\"><span style=\"color:#000000\">(+)</span></td><td style=\"height:45.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">AB*&nbsp;</span></td><td style=\"height:45.00pt; vertical-align:middle; white-space:normal; width:93.75pt\"><span style=\"color:#000000\">Priority of + is less then * so&nbsp; Pop * and then push +</span></td></tr><tr><td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:97px\"><span style=\"color:#000000\">C</span></td><td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:87px\"><br></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">AB*C</span></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">Add in postfix String</span></td></tr><tr><td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:97px\"><span style=\"color:#000000\">/</span></td><td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:87px\"><span style=\"color:#000000\">(/+)</span></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><br></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">Push it on stack</span></td></tr><tr><td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:97px\"><span style=\"color:#000000\">D</span></td><td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:87px\"><br></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">AB*CD</span></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">Add in postfix String</span></td></tr><tr><td style=\"height:30pt; vertical-align:middle; white-space:nowrap; width:97px\"><br></td><td style=\"height:30pt; vertical-align:middle; white-space:nowrap; width:87px\"><br></td><td style=\"height:30.00pt; vertical-align:middle; white-space:nowrap\"><br></td><td style=\"height:30.00pt; vertical-align:middle; white-space:normal; width:93.75pt\"><span style=\"color:#000000\">Pop All operators from stack</span></td></tr><tr><td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:97px\"><br></td><td style=\"height:15pt; vertical-align:middle; white-space:nowrap; width:87px\"><br></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">AB*CD/+</span></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><br></td></tr></tbody></table>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The data structure required to evaluate a postfix expression is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Queue"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Stack"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Array"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Linked-list"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 77895,
+      "Explanation": "The Stack data structure is used to convert infix expression to postfix expression. The purpose of stack is to reverse the order of the operators in the expression. It also serves as a storage structure, as no operator can be printed until both of its operands have appeared.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The data structure required to check (in Infix conversion) whether an expression contains balanced parenthesis is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Stack"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Queue"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Tree"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Array"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 77896,
+      "Explanation": "<span style=\"background-color:#fdfdfd; color:#555555\">I</span>n Stack&nbsp; data structure in which elements are added and removed based on the LIFO principle. Open parenthesis is pushed into the stack and a closed parenthesis pops out elements till the top element of the stack is its corresponding open parenthesis. If the stack is empty, parenthesis is balanced otherwise it is unbalanced.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What data structure would you mostly likely see in a nonrecursive implementation of a recursive algorithm ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Stack"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Linked list"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Queue"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Trees"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 77899,
+      "Explanation": "&nbsp;In recursive algorithms, the order in which the recursive process comes back is the reverse of the order in which it goes forward during execution. The compiler uses the stack data structure to implement recursion. In the forwarding phase, the values of local variables, parameters and the return address are pushed into the stack at each recursion level. In the backing-out phase, the stacked address is popped and used to execute the rest of the code.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The prefix form of an infix expression (p + q) \u2212 (r * t) is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "+ pq \u2212 rt* ."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "\u2212 +pqr t* ."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "-+pq*rt"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "pqrt \u2212 + * ."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 77931,
+      "Explanation": "&nbsp;Infix Expression is ((p+q)-(r*t))<br>(+pq)-(r*t)<br>(-+pq)(r*t)<br>-+pq*rt. Thus prefix expression is -+pq*rt.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which is the topmost element in Stack if following operation is performed : Push (S),Push(X)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "X"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "null"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "S"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of these"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 77927,
+      "Explanation": "Stack works with LIFO principle so when we push s and after tant we push X then topmost element will be X .",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The prefix form of A-B/ (C * D ^ E) is,",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "-/*^ACBDE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "-ABCD*^DE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "-A/B*C^DE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "-A/BC*^DE"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 77924,
+      "Explanation": "&nbsp; Infix Expression is (A-B)/(C*D^E)<br>(-A/B)(C*D^E)<br>-A/B*C^DE. Thus prefix expression is -A/B*C^DE",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Stack is a an ordered collection of items forming a list that is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "First-in-first-out"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "One-end-first-out"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Last-in-first-out"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 77968,
+      "Explanation": "A stack is a conceptual structure consisting of a set of homogeneous elements and is based on the principle of last in first out (LIFO).&nbsp;",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Stack is not used in",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Recursion"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Quick Sort"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Postfix Notation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Simulation"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 77947,
+      "Explanation": "Stack will be used in recursion, quick sort, infix-postfix notations. And simulation&nbsp;is a powerful technique for optimizing processes and making confident, evidence-based decisions.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The result of evaluating the postfix expression&nbsp; 546 +* 493/ + *&nbsp;&nbsp;&nbsp; is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "600."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "350."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "650."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "588."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 77981,
+      "Explanation": "infix expression for above postfix expression is<br>(5*(4+6))*(4+(9/3)) =350",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider stack of size 5, and following operations are performed:<br>&nbsp;Push(2), Push(3), Pop(), Push(5), Push(8), Pop(), Pop(), Pop()<br>What will be the output sequence of elements?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2,3,8,5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3,8,5 2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3,2,8,5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "3,5,8,2"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 77993,
+      "Explanation": "<table style=\"border-collapse:collapse; border:0.5pt solid #000000; height:360px; width:177.78pt\" border=\"1\" cellspacing=\"0\"><tbody><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:81.75pt\"><span style=\"color:#000000\">Operation</span></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:48.00pt\"><span style=\"color:#000000\">Stack is&nbsp;</span></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:48.00pt\"><span style=\"color:#000000\">OutPut</span></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">Push(2)</span></td><td style=\"border-color:#000000; height:15.00pt; text-align:center; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">2</span></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><br></td></tr><tr><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">Push(3)</span></td><td style=\"border-color:#000000; height:45.00pt; text-align:center; vertical-align:middle; white-space:normal; width:48.00pt\"><span style=\"color:#000000\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>2</span></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><br></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">Pop()</span></td><td style=\"border-color:#000000; height:15.00pt; text-align:center; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">2</span></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">3</span></td></tr><tr><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">Push(5)</span></td><td style=\"border-color:#000000; height:45.00pt; text-align:center; vertical-align:middle; white-space:normal; width:48.00pt\"><span style=\"color:#000000\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>2</span></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><br></td></tr><tr><td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">Push(8)</span></td><td style=\"border-color:#000000; height:60.00pt; text-align:center; vertical-align:middle; white-space:normal; width:48.00pt\"><span style=\"color:#000000\">&nbsp;&nbsp; &nbsp;&nbsp; 8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><div style=\"margin-left: 40px;\"><span style=\"color:#000000\">&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div><span style=\"color:#000000\">2</span></td><td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:nowrap\"><br></td></tr><tr><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">Pop()</span></td><td style=\"border-color:#000000; height:45.00pt; text-align:center; vertical-align:middle; white-space:normal; width:48.00pt\"><div style=\"margin-left: 40px;\"><span style=\"color:#000000\">&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">3 8</span></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">Pop()</span></td><td style=\"border-color:#000000; height:15.00pt; text-align:center; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">2</span></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">3 8 5</span></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">Pop()</span></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><br></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><span style=\"color:#000000\">3 8 5 2</span></td></tr></tbody></table>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Convert the following infix expression to postfix:&nbsp; (A+B)*(C/D)-E/F",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "AB*+CD/-EF/"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "AB+CD/*EF-/"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "AB+CD/*EF/-"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "AB+*CD/EF/-"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 77994,
+      "Explanation": "<table style=\"border-collapse:collapse; border:0.5pt solid #000000; height:420px; width:324.02pt\" border=\"1\" cellspacing=\"0\"><tbody><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:55.50pt\"><div class=\"summary\"><span style=\"color:#000000\">Character</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:80.25pt\"><div class=\"summary\"><span style=\"color:#000000\">Stack</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:118.50pt\"><div class=\"summary\"><span style=\"color:#000000\">Operation</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:69.75pt\"><div class=\"summary\"><span style=\"color:#000000\">Output</span></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">(</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">(&nbsp; (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">Push &apos;(&apos; into Stack</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">A</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">Add in postfix String</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">A</span></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">+</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">(&nbsp; +(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">Push &apos;+&apos; on stack</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">)</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:118.50pt\"><div class=\"summary\"><span style=\"color:#000000\">Pop All Entries till &apos;(&apos; and add into postfix String</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">AB+</span></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">*</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">(&nbsp; *&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:normal; width:118.50pt\"><div class=\"summary\"><span style=\"color:#000000\">Push &apos;*&apos; into Stack</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">(</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">Push &apos;(&apos; into Stack</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">C</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">(&nbsp;&nbsp; * (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">Add in postfix String</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">AB+C</span></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">/</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">(&nbsp;&nbsp; *( /&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">Push &apos;/&apos; into Stack</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">D</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:normal; width:118.50pt\"><div class=\"summary\"><span style=\"color:#000000\">Add in postfix String</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">AB+CD</span></div></td></tr><tr><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">)</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:118.50pt\"><div class=\"summary\"><span style=\"color:#000000\">Pop All Entries till &apos;(&apos; and add into postfix String</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">AB+CD/</span></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">(&nbsp;&nbsp; *(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">&nbsp;-&nbsp;</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">(&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:118.50pt\"><div class=\"summary\"><span style=\"color:#000000\">Pop * fron Stack because priority of - is less then *</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">AB+CD/*</span></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">E</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">AB+CD/*E</span></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">/</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">&nbsp;(&nbsp;&nbsp; / -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">Push &apos;/&apos; into Stack</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">F</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">Add in postfix String</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">AB+CD/*EF</span></div></td></tr><tr><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:118.50pt\"><div class=\"summary\"><span style=\"color:#000000\">Pop All entries till stack is not empty</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">AB+CD/*EF/-</span></div></td></tr></tbody></table>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The following sequence of operation is performed on stack : push(1), push(2), pop, push(3), push(4), pop, pop, pop, push(5), pop. What is the sequence of popped out values?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2,4,3,2,5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4,3,2,1,5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2,4,3,1,5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "5,4,3,2,1"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 77990,
+      "Explanation": "Push will insert elements in stack , so after inserting 1 and 2 . Stack is (1, 2), so 2 will poped out first then elements are (1, 3, 4), so poped elements will be 4, 3, 1 &amp; at the end 5 is present in stack so 5 will be popped out at end.<br>So 2, 4, 3, 1, 5",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider the usual algorithm for determining whether a sequence of parentheses is balanced.<br>The maximum number of parentheses that appear on the stack AT ANY ONE TIME when the<br>algorithm analyzes: (()(())(())) are:<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "4<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 78133,
+      "Explanation": "Step 1: ( \u2192 Stack: [(], Max Size: 1<br>Step 2: ( \u2192 Stack: [(,(], Max Size: 2<br>Step 3: ) \u2192 Stack: [(], Max Size: 2<br>Step 4: ( \u2192 Stack: [(,(], Max Size: 2<br>Step 5: ( \u2192 Stack: [(,(,(], Max Size: 3<br>Step 6: ) \u2192 Stack: [(,(], Max Size: 3<br>Step 7: ) \u2192 Stack: [(], Max Size: 3<br>Step 8: ( \u2192 Stack: [(,(], Max Size: 3<br>Step 9: ( \u2192 Stack: [(,(,(], Max Size: 3<br>Step 10: ) \u2192 Stack: [(,(], Max Size: 3<br>Step 11: ) \u2192 Stack: [(], Max Size: 3<br>Step 12: ) \u2192 Stack: [], Max Size: 3<br>So, the maximum number of parentheses that appear on the stack at any one time is 3.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The postfix form of the expression (A + B)\u2217(C\u2217D \u2212 E)\u2217F / G is<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "AB + CD\u2217E \u2212 FG /\u2217\u2217<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "/ AB + CD \u2217 E \u2212 F \u2217\u2217G"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "/ AB + CD \u2217 E \u2212\u2217F \u2217 G"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "/ AB + CDE \u2217\u2212\u2217 F \u2217 G"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 78043,
+      "Explanation": "AB + CD\u2217E \u2212 FG /\u2217\u2217&nbsp; is answer.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Convert the following infix expressions into its equivalent postfix expressions<br>(A + B /D)/(E \u2013 F)+G",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A B D / + E F \u2013 / G +"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A B D +/ E F \u2013 / G +"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A B D / + E F/- G +"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 78012,
+      "Explanation": "<table style=\"border-collapse:collapse; border:0.5pt solid #000000; height:820px; width:263.27pt\" border=\"1\" cellspacing=\"0\"><tbody><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:48.00pt\"><div class=\"summary\"><span style=\"color:#000000\">Character</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:48.00pt\"><div class=\"summary\"><span style=\"color:#000000\">Stack</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:87.00pt\"><div class=\"summary\"><span style=\"color:#000000\">Operation</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:80.25pt\"><div class=\"summary\"><span style=\"color:#000000\">Output</span></div></td></tr><tr><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">(</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:48.00pt\"><div class=\"summary\"><br><span style=\"color:#000000\">&nbsp;&nbsp; (</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">Push &apos;(&apos; into Stack</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">A</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">Add in postfix String</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">A</span></div></td></tr><tr><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">+</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:48.00pt\"><div class=\"summary\"><span style=\"color:#000000\">&nbsp; +<br>&nbsp;&nbsp; (</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">Push &apos;+&apos; on stack</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">B</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:48.00pt\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span style=\"color:#000000\">Add b In Postfix String</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">AB</span></div></td></tr><tr><td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">/</span></div></td><td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:normal; width:48.00pt\"><div class=\"summary\"><span style=\"color:#000000\">&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +<br>&nbsp;&nbsp; (</span></div></td><td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span style=\"color:#000000\">Push / In Stack</span></div></td><td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">D</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span style=\"color:#000000\">Add in postfix String</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">ABD</span></div></td></tr><tr><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">)</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span style=\"color:#000000\">Pop All Entries till &apos;(&apos; and add into postfix String</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">ABD/+</span></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">/</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">/</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">Push &apos;/&apos; into Stack</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">(</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:48.00pt\"><div class=\"summary\"><span style=\"color:#000000\">&nbsp;&nbsp;<br>&nbsp;&nbsp; (<br>&nbsp;/</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span style=\"color:#000000\">Push &apos;(&apos; into Stack</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">E</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span style=\"color:#000000\">Add E In Postfix String</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">ABD/+E</span></div></td></tr><tr><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">&nbsp;-&nbsp;</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:48.00pt\"><div class=\"summary\"><span style=\"color:#000000\">&nbsp;&nbsp; -<br>&nbsp;&nbsp; (<br>&nbsp;/</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">Push &apos;-&apos; into Stack</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">F</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span style=\"color:#000000\">Add F In Postfix String</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">ABD/+EF</span></div></td></tr><tr><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">)</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:48.00pt\"><div class=\"summary\"><span style=\"color:#000000\">&nbsp;<br>&nbsp;/</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span style=\"color:#000000\">Pop All Entries till &apos;(&apos; and add into postfix String</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">ABD/+EF-</span></div></td></tr><tr><td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">+</span></div></td><td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span style=\"color:#000000\">Pop / and push + because priority of + is less the priority of /</span></div></td><td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">ABD/+EF-/</span></div></td></tr><tr><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">G</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span style=\"color:#000000\">Add G in postfix String</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">ABD/+EF-/G</span></div></td></tr><tr><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span style=\"color:#000000\">Pop All entries till stack is not empty</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">ABD/+EF-/G+</span></div></td></tr></tbody></table>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of the following operation<br>Top (Push (S, X))",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "X"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "null"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "S"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 78013,
+      "Explanation": "<span id=\"explanation78013\">Here we are inserting x element in stack, at the same time Top fucntion is used to get top most element from Stack and that is X element now.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The infix form of AB*CD/+ is?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A+B*C/D"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A*B+C/D"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A*B/C+D"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A*B/C+D"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 78015,
+      "Explanation": "<pre style=\"color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\">      +\t\t\t     \n     / \t\t    \n    /   \t\t   \n   *     /\t\t  \n  /    / \t\t  \n A   B C   D\t\t  \n\n((A*B)+(C/D))\t\t</pre>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The postfix expression: 5&nbsp;&nbsp;6&nbsp;&nbsp;2&nbsp; +&nbsp; * 12&nbsp;&nbsp;4 /- when evaluated gives the following result:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "37"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "-37"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "40"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "3"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 78009,
+      "Explanation": "<table style=\"border-collapse:collapse; border:0.5pt solid #000000; height:490px; width:231.03pt\" border=\"1\" cellspacing=\"0\"><tbody><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:48.00pt\"><div class=\"summary\"><span style=\"color:#000000\">Read String charcter by character&nbsp;</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:87.00pt\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:48.00pt\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:48.00pt\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\">character</div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\">Operation</div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\">Reuslt</td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">Stack</span></div></td></tr><tr><td style=\"border-color:#000000; height:22.50pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">5</span></div></td><td style=\"border-color:#000000; height:22.50pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span style=\"color:#000000\">convert it into integer and push on stack</span></div></td><td style=\"border-color:#000000; height:22.50pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:22.50pt; text-align:left; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">5</span></div></td></tr><tr><td style=\"border-color:#000000; height:22.50pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">6</span></div></td><td style=\"border-color:#000000; height:22.50pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span style=\"color:#000000\">convert it into integer and push on stack</span></div></td><td style=\"border-color:#000000; height:22.50pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:22.50pt; vertical-align:middle; white-space:normal; width:48.00pt\"><div class=\"summary\"><span style=\"color:#000000\">6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5</span></div></td></tr><tr><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">2</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span style=\"color:#000000\">convert it into integer and push on stack</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:48.00pt\"><div class=\"summary\"><span style=\"color:#000000\">2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5</span></div></td></tr><tr><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">+</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span style=\"color:#000000\">Pop First two entries and Perform + Operatation and Push Result</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">6+2=8</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:48.00pt\"><div class=\"summary\"><span style=\"color:#000000\">8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5</span></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">8</span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">*</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span style=\"color:#000000\">Pop First two entries and Perform * Operatation and Push Result</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">8*5=40</span></div></td><td style=\"border-color:#000000; height:45.00pt; text-align:left; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">40</span></div></td></tr><tr><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">12</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span style=\"color:#000000\">Convert it into integer and push on stack</span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:48.00pt\"><div class=\"summary\"><span style=\"color:#000000\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 40</span></div></td></tr><tr><td style=\"border-color:#000000; height:22.50pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">4</span></div></td><td style=\"border-color:#000000; height:22.50pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span style=\"color:#000000\">Convert it into integer and push on stack</span></div></td><td style=\"border-color:#000000; height:22.50pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:22.50pt; vertical-align:middle; white-space:normal; width:48.00pt\"><div class=\"summary\"><span style=\"color:#000000\">4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 40</span></div></td></tr><tr><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">/</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span style=\"color:#000000\">Pop First two entries and Perform / Operatation and Push Result</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">12/4=3</span></div></td><td style=\"border-color:#000000; height:45.00pt; text-align:left; vertical-align:middle; white-space:normal; width:48.00pt\"><div class=\"summary\"><span style=\"color:#000000\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 40</span></div></td></tr><tr><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">-</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span style=\"color:#000000\">Pop First two entries and Perform - Operatation and Push Result</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">40-3=37</span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span style=\"color:#000000\">37</span></div></td></tr></tbody></table>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The postfix form of the expression (A + B)\u2217(C\u2217D \u2212 E)\u2217F / G is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "AB + CD\u2217E \u2212 *F*G/"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "AB + CD \u2217 E \u2212 F \u2217\u2217G/"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "/ AB + CD \u2217 E \u2212\u2217F \u2217 G"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "AB + CDE \u2217\u2212\u2217 F \u2217 /G"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 83840,
+      "Explanation": "Get character by character data from infix expression and&nbsp; check implementation with stack<br>&nbsp;ch &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; stack&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;postfix<br>(&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (<br>A&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A<br>+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A<br>B&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB<br>)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(+)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+<br>*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+<br>(&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *(&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB+<br>C&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*(&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB+C<br>*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*(*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB+C<br>D&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*(*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB+CD<br>-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *(*-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+CD<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*(-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+CD*<br>E&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*(-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+CD*E<br>)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *(-)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+CD*E<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+CD*E-<br>*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;**&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB+CD*E-<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+CD*E-*<br>F&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB+CD*E-*F<br>/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB+CD*E-*F<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+CD*E-*F*<br>G&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AB+CD*E-*F*G<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AB+CD*E-*F*G/&nbsp; &nbsp;<br><br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the postfix form of the following prefix expression -A/B*C$DE",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ABCDE$*/-"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A-BCDE$*/-"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ABC$ED*/-"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A-BCDE$*/"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 83848,
+      "Explanation": "Algorithm To Convert Postfix to Prefix<br>1.Read the Prefix expression in reverse order (from right to left)<br>2.If the symbol is an operand, then push it onto the Stack<br>3.If the symbol is an operator, then pop two operands from the Stack<br>4.Create a string by concatenating the two operands and the operator after them.<br>5.string = operand1 + operand2 + operator<br>6.And push the resultant string back to Stack<br>7.Repeat the above steps until end of Prefix expression.<br>ED$c*B/A-<br>DE$<br>CDE$*<br>BCDE$*/<br>ABCDE$*/-",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The following sequence of operation is performed on stack : push(1), push(2), pop, push(3), push(4), pop, pop, pop, push(5), pop. What is the sequence of popped out values?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2,4,3,2,5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4,3,2,1,5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2,4,3,1,5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "5,4,3,2,1"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 83948,
+      "Explanation": "<span id=\"explanation83948\">Push will insert elements in stack , so after inserting 1 and 2 . Stack is (1, 2), so 2 will poped out first then elements are (1, 3, 4), so poped elements will be 4, 3, 1 &amp; at the end 5 is present in stack so 5 will be popped out at end.<br>So 2, 4, 3, 1, 5</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The result of evaluating the postfix expression&nbsp; 546 +* 493/ + *&nbsp;&nbsp;&nbsp; is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "600."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "350."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "650."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "588."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 83940,
+      "Explanation": "<span id=\"explanation83940\">infix expression for above postfix expression is<br>(5*(4+6))*(4+(9/3)) =350</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The postfix form of A*B+C/D is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "*AB/CD+"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "AB*CD/+"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A*BC+/D"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ABCD+/*"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 83872,
+      "Explanation": "<table style=\"border-collapse: collapse; border: medium none;\" class=\" cke_show_border\" cellspacing=\"0\" height=\"400\" width=\"688\"><tbody><tr><td style=\"height: 15pt; vertical-align: middle; white-space: nowrap; width: 202px;\"><span id=\"explanation83872\"><span style=\"color:#000000\">Read Infix string haracter by<br>A</span></span></td><td style=\"height: 15pt; vertical-align: middle; white-space: nowrap; width: 224px;\"><span id=\"explanation83872\">Stack</span></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap; width:48.00pt\"><span id=\"explanation83872\"><span style=\"color:#000000\">A</span></span></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap; width:93.75pt\"><span id=\"explanation83872\"><span style=\"color:#000000\">Add in postfix String</span></span></td></tr><tr><td style=\"height: 15pt; vertical-align: middle; white-space: nowrap; width: 202px;\"><span id=\"explanation83872\"><span style=\"color:#000000\">*</span></span></td><td style=\"height: 15pt; vertical-align: middle; white-space: nowrap; width: 224px;\"><span id=\"explanation83872\"><span style=\"color:#000000\">(*)</span></span></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><br></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span id=\"explanation83872\"><span style=\"color:#000000\">Push on stack</span></span></td></tr><tr><td style=\"height: 15pt; vertical-align: middle; white-space: nowrap; width: 202px;\"><span id=\"explanation83872\"><span style=\"color:#000000\">B</span></span></td><td style=\"height: 15pt; vertical-align: middle; white-space: nowrap; width: 224px;\"><br></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span id=\"explanation83872\"><span style=\"color:#000000\">AB</span></span></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span id=\"explanation83872\"><span style=\"color:#000000\">Add in postfix String</span></span></td></tr><tr><td style=\"height: 45pt; vertical-align: middle; white-space: nowrap; width: 202px;\"><span id=\"explanation83872\"><span style=\"color:#000000\">+</span></span></td><td style=\"height: 45pt; vertical-align: middle; white-space: nowrap; width: 224px;\"><span id=\"explanation83872\"><span style=\"color:#000000\">(+)</span></span></td><td style=\"height:45.00pt; vertical-align:middle; white-space:nowrap\"><span id=\"explanation83872\"><span style=\"color:#000000\">AB*&nbsp;</span></span></td><td style=\"height:45.00pt; vertical-align:middle; white-space:normal; width:93.75pt\"><span id=\"explanation83872\"><span style=\"color:#000000\">Priority of + is less then * so&nbsp; Pop * and then push +</span></span></td></tr><tr><td style=\"height: 15pt; vertical-align: middle; white-space: nowrap; width: 202px;\"><span id=\"explanation83872\"><span style=\"color:#000000\">C</span></span></td><td style=\"height: 15pt; vertical-align: middle; white-space: nowrap; width: 224px;\"><br></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span id=\"explanation83872\"><span style=\"color:#000000\">AB*C</span></span></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span id=\"explanation83872\"><span style=\"color:#000000\">Add in postfix String</span></span></td></tr><tr><td style=\"height: 15pt; vertical-align: middle; white-space: nowrap; width: 202px;\"><span id=\"explanation83872\"><span style=\"color:#000000\">/</span></span></td><td style=\"height: 15pt; vertical-align: middle; white-space: nowrap; width: 224px;\"><span id=\"explanation83872\"><span style=\"color:#000000\">(/+)</span></span></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><br></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span id=\"explanation83872\"><span style=\"color:#000000\">Push it on stack</span></span></td></tr><tr><td style=\"height: 15pt; vertical-align: middle; white-space: nowrap; width: 202px;\"><span id=\"explanation83872\"><span style=\"color:#000000\">D</span></span></td><td style=\"height: 15pt; vertical-align: middle; white-space: nowrap; width: 224px;\"><br></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span id=\"explanation83872\"><span style=\"color:#000000\">AB*CD</span></span></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span id=\"explanation83872\"><span style=\"color:#000000\">Add in postfix String</span></span></td></tr><tr><td style=\"height: 30pt; vertical-align: middle; white-space: nowrap; width: 202px;\"><br></td><td style=\"height: 30pt; vertical-align: middle; white-space: nowrap; width: 224px;\"><br></td><td style=\"height:30.00pt; vertical-align:middle; white-space:nowrap\"><br></td><td style=\"height:30.00pt; vertical-align:middle; white-space:normal; width:93.75pt\"><span id=\"explanation83872\"><span style=\"color:#000000\">Pop All operators from stack</span></span></td></tr><tr><td style=\"height: 15pt; vertical-align: middle; white-space: nowrap; width: 202px;\"><br></td><td style=\"height: 15pt; vertical-align: middle; white-space: nowrap; width: 224px;\"><br></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><span id=\"explanation83872\"><span style=\"color:#000000\">AB*CD/+</span></span></td><td style=\"height:15.00pt; vertical-align:middle; white-space:nowrap\"><br></td></tr></tbody></table>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The Time Complexity of Pop Operation in stack is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "O(1)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "O(0)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "O(n)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "O(n-1)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 84230,
+      "Explanation": "O(1) It will take constant time.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following are not related to stack?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Push"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Pop"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "LIFO"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "FIFO"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 84244,
+      "Explanation": "Push, Pop these are operations that can be perform using stack. LIFO is last in first out this is principle of stack.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Convert the following infix expressions into its equivalent postfix expressions<br>(A + B /D)/(E \u2013 F)+G",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A B D / + E F \u2013 / G +"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A B D +/ E F \u2013 / G +"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A B D / + E F/- G +"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 83970,
+      "Explanation": "<table style=\"border-collapse:collapse; border:0.5pt solid #000000; height:820px; width:263.27pt\" border=\"1\" cellspacing=\"0\"><tbody><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:48.00pt\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">Character</span></span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:48.00pt\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">Stack</span></span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:87.00pt\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">Operation</span></span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:80.25pt\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">Output</span></span></div></td></tr><tr><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">(</span></span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:48.00pt\"><div class=\"summary\"><br><span id=\"explanation83970\"><span style=\"color:#000000\">&nbsp;&nbsp; (</span></span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">Push &apos;(&apos; into Stack</span></span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">A</span></span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">Add in postfix String</span></span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">A</span></span></div></td></tr><tr><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">+</span></span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:48.00pt\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">&nbsp; +<br>&nbsp;&nbsp; (</span></span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">Push &apos;+&apos; on stack</span></span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">B</span></span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:48.00pt\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">Add b In Postfix String</span></span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">AB</span></span></div></td></tr><tr><td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">/</span></span></div></td><td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:normal; width:48.00pt\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +<br>&nbsp;&nbsp; (</span></span></div></td><td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">Push / In Stack</span></span></div></td><td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">D</span></span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">Add in postfix String</span></span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">ABD</span></span></div></td></tr><tr><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">)</span></span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">Pop All Entries till &apos;(&apos; and add into postfix String</span></span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">ABD/+</span></span></div></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">/</span></span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">/</span></span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">Push &apos;/&apos; into Stack</span></span></div></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">(</span></span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:48.00pt\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">&nbsp;&nbsp;<br>&nbsp;&nbsp; (<br>&nbsp;/</span></span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">Push &apos;(&apos; into Stack</span></span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">E</span></span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">Add E In Postfix String</span></span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">ABD/+E</span></span></div></td></tr><tr><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">&nbsp;-&nbsp;</span></span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:48.00pt\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">&nbsp;&nbsp; -<br>&nbsp;&nbsp; (<br>&nbsp;/</span></span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">Push &apos;-&apos; into Stack</span></span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td></tr><tr><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">F</span></span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">Add F In Postfix String</span></span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">ABD/+EF</span></span></div></td></tr><tr><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">)</span></span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:48.00pt\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">&nbsp;<br>&nbsp;/</span></span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">Pop All Entries till &apos;(&apos; and add into postfix String</span></span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">ABD/+EF-</span></span></div></td></tr><tr><td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">+</span></span></div></td><td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">Pop / and push + because priority of + is less the priority of /</span></span></div></td><td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">ABD/+EF-/</span></span></div></td></tr><tr><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">G</span></span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">Add G in postfix String</span></span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">ABD/+EF-/G</span></span></div></td></tr><tr><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><br></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:normal; width:87.00pt\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">Pop All entries till stack is not empty</span></span></div></td><td style=\"border-color:#000000; height:30.00pt; vertical-align:middle; white-space:nowrap\"><div class=\"summary\"><span id=\"explanation83970\"><span style=\"color:#000000\">ABD/+EF-/G+</span></span></div></td></tr></tbody></table>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The infix form of AB*CD/+ is?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A+B*C/D"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A*B+C/D"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A*B/C+D"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A*B/C+D"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 83972,
+      "Explanation": "<pre style=\"color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><span id=\"explanation83972\">  \n      +\t\t\t     \n     / \t\t    \n    /   \t\t   \n   *     /\t\t  \n  /    / \t\t  \n A   B C   D\t\t  \n\n((A*B)+(C/D))\t\t</span></pre>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider stack of size 5, and following operations are performed:<br>&nbsp;Push(2), Push(3), Pop(), Push(5), Push(8), Pop(), Pop(), Pop()<br>What will be the output sequence of elements?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2,3,8,5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3,8,5 2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3,2,8,5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "3,5,8,2"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 83951,
+      "Explanation": "<table style=\"border-collapse:collapse; border:0.5pt solid #000000; height:360px; width:177.78pt\" border=\"1\" cellspacing=\"0\"><tbody><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:81.75pt\"><span id=\"explanation83951\"><span style=\"color:#000000\">Operation</span></span></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:48.00pt\"><span id=\"explanation83951\"><span style=\"color:#000000\">Stack is&nbsp;</span></span></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap; width:48.00pt\"><span id=\"explanation83951\"><span style=\"color:#000000\">OutPut</span></span></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><span id=\"explanation83951\"><span style=\"color:#000000\">Push(2)</span></span></td><td style=\"border-color:#000000; height:15.00pt; text-align:center; vertical-align:middle; white-space:nowrap\"><span id=\"explanation83951\"><span style=\"color:#000000\">2</span></span></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><br></td></tr><tr><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><span id=\"explanation83951\"><span style=\"color:#000000\">Push(3)</span></span></td><td style=\"border-color:#000000; height:45.00pt; text-align:center; vertical-align:middle; white-space:normal; width:48.00pt\"><span id=\"explanation83951\"><span style=\"color:#000000\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>2</span></span></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><br></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><span id=\"explanation83951\"><span style=\"color:#000000\">Pop()</span></span></td><td style=\"border-color:#000000; height:15.00pt; text-align:center; vertical-align:middle; white-space:nowrap\"><span id=\"explanation83951\"><span style=\"color:#000000\">2</span></span></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><span id=\"explanation83951\"><span style=\"color:#000000\">3</span></span></td></tr><tr><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><span id=\"explanation83951\"><span style=\"color:#000000\">Push(5)</span></span></td><td style=\"border-color:#000000; height:45.00pt; text-align:center; vertical-align:middle; white-space:normal; width:48.00pt\"><span id=\"explanation83951\"><span style=\"color:#000000\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>2</span></span></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><br></td></tr><tr><td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:nowrap\"><span id=\"explanation83951\"><span style=\"color:#000000\">Push(8)</span></span></td><td style=\"border-color:#000000; height:60.00pt; text-align:center; vertical-align:middle; white-space:normal; width:48.00pt\"><span id=\"explanation83951\"><span style=\"color:#000000\">&nbsp;&nbsp; &nbsp;&nbsp; 8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><div style=\"margin-left: 40px;\"><span id=\"explanation83951\"><span style=\"color:#000000\">&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></div><span id=\"explanation83951\"><span style=\"color:#000000\">2</span></span></td><td style=\"border-color:#000000; height:60.00pt; vertical-align:middle; white-space:nowrap\"><br></td></tr><tr><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><span id=\"explanation83951\"><span style=\"color:#000000\">Pop()</span></span></td><td style=\"border-color:#000000; height:45.00pt; text-align:center; vertical-align:middle; white-space:normal; width:48.00pt\"><div style=\"margin-left: 40px;\"><span id=\"explanation83951\"><span style=\"color:#000000\">&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2</span></span></div></td><td style=\"border-color:#000000; height:45.00pt; vertical-align:middle; white-space:nowrap\"><span id=\"explanation83951\"><span style=\"color:#000000\">3 8</span></span></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><span id=\"explanation83951\"><span style=\"color:#000000\">Pop()</span></span></td><td style=\"border-color:#000000; height:15.00pt; text-align:center; vertical-align:middle; white-space:nowrap\"><span id=\"explanation83951\"><span style=\"color:#000000\">2</span></span></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><span id=\"explanation83951\"><span style=\"color:#000000\">3 8 5</span></span></td></tr><tr><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><span id=\"explanation83951\"><span style=\"color:#000000\">Pop()</span></span></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><br></td><td style=\"border-color:#000000; height:15.00pt; vertical-align:middle; white-space:nowrap\"><span id=\"explanation83951\"><span style=\"color:#000000\">3 8 5 2</span></span></td></tr></tbody></table>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods correctly implements the push operation in a stack using an array in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void push(int value) { if (top == stack.length - 1) throw new StackOverflowError(); stack[++top] = value; }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "void push(int value) { if (top == stack.length - 1) top = 0; stack[++top] = value; }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "void push(int value) { stack[++top] = value; }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "void push(int value) { stack[top++] = value; if (top == stack.length) top = 0; }"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100245,
+      "Explanation": "Option A checks for stack overflow with &#39;if (top == stack.length - 1)&#39; before pushing, ensuring the push operation is safe.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How would you correctly check if a stack implemented using an array is empty?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "boolean isEmpty() { return top == stack.length - 1; }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "boolean isEmpty() { return top == -1; }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "boolean isEmpty() { return stack[top] == null; }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "boolean isEmpty() { return top == 0; }"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100246,
+      "Explanation": "The stack is empty if &#39;top&#39; is -1, assuming &#39;top&#39; is initially set to -1.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given an array-based stack implementation, which method signature is appropriate for the pop operation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int pop() { if (top == -1) throw new EmptyStackException(); return stack[top--]; }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int pop() { if (top == stack.length) throw new EmptyStackException(); return stack[top--]; }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int pop() { if (stack[top] == null) throw new EmptyStackException(); return stack[top--]; }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int pop() { return stack[--top]; }"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100247,
+      "Explanation": "Option A checks for stack underflow with &#39;if (top == -1)&#39; ensuring safety before removing and returning the top element.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following describes the correct initialization of a stack using an array in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int[] stack; int top = 10; stack = new int[10];"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int top = -1; int[] stack = new int[10];"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int[] stack = new int[10]; int top = stack.length;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int top = 0; int[] stack = new int[10];"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100248,
+      "Explanation": "Option B correctly initializes the stack with the array size and sets &#39;top&#39; to -1, indicating the stack is initially empty.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using an array to implement a stack in Java, where is a new element added?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "At the beginning of the array."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "At the position specified by &#39;top&#39;."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "At the position one greater than &#39;top&#39;."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "At the end of the array."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100249,
+      "Explanation": "A new element is added at stack[++top], which is one position beyond the current top index, in a correctly implemented stack push operation.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the effect of the following pop method when the stack is empty?<br><br>public int pop() {<br>&nbsp;&nbsp;&nbsp;&nbsp;if(top &gt;= 0) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int value = stackArray[top];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top--;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return value;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;return -1; // Assuming -1 as an error code for empty stack<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A: It will return the topmost value before underflow occurs."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "B: It will cause a stack underflow error."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C: It will incorrectly return 0."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "D: It will correctly return -1 indicating the stack is empty."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100250,
+      "Explanation": "<span id=\"explanation100250\" style=\"color:blue\">The method checks if the stack is empty by verifying if &apos;top&apos; is at least 0, and returns -1 if it is not, thus handling the empty stack scenario without error.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the `top` variable in the implementation of a stack using an array?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A: It stores the current size of the array."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "B: It stores the number of elements currently in the stack."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C: It indicates the position of the topmost element in the stack."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "D: It is used to store the maximum size of the stack."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100251,
+      "Explanation": "The `top` variable is used to keep track of the index of the topmost element in the stack.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given the stack implementation below, what is the initial value of `top` and why?<br>class Stack {<br>&nbsp;&nbsp;&nbsp;&nbsp;private int maxSize;<br>&nbsp;&nbsp;&nbsp;&nbsp;private int[] stackArray;<br>&nbsp;&nbsp;&nbsp;&nbsp;private int top;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;public Stack(int size) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maxSize = size;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stackArray = new int[maxSize];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top = -1;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A: 0; because arrays are 0-indexed."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "B: -1; because it signifies that the stack is initially empty."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C: 1; because it signifies the first position available in the stack."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "D: maxSize; because it predefines the capacity of the stack."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100252,
+      "Explanation": "<span id=\"explanation100252\" style=\"color:blue\">The `top` is initialized to -1 to signify that the stack is empty as it does not contain any elements initially.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How would you modify the `peek` method to check whether the stack is empty before accessing any element?\n\npublic int peek() {\n    return stackArray[top];\n}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A: Add a check to see if `top` is -1 before accessing elements."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "B: Add a check to see if `top` is equal to `maxSize` before accessing elements."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "C: Add a loop to iterate through the stack before returning the top element."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "D: No modification needed, as reaching this method implies the stack is not empty."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100253,
+      "Explanation": "The peek method should check if `top` is -1 to confirm the stack is not empty before trying to access the top element, to prevent accessing an invalid index.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct way to implement the push operation in a stack using an array in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public void push(int data) { if(top == stack.length - 1) return; else stack[++top] = data; }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "public void push(int data) { if(top == -1) return; else stack[++top] = data; }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "public void push(int data) { stack[++top] = data; if(top == stack.length - 1) return; }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "public void push(int data) { if(top &gt;= stack.length) return; else stack[top++] = data; }"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100254,
+      "Explanation": "Option A correctly implements the push operation by first checking if the stack is full and then proceeds to increment the top index before inserting the new element. Option B returns if the stack is empty, which is not correct for a push operation. Option C increments the top index before checking for overflow, which can cause an out-of-bounds error. Option D checks with the wrong condition and increments the top index after insertion, causing misplacement of the element.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the code snippet given below, what is the condition checked to determine whether the stack is empty?<br>class Stack {<br>&nbsp;&nbsp;&nbsp;&nbsp;private int arr[];<br>&nbsp;&nbsp;&nbsp;&nbsp;private int top;<br>&nbsp;&nbsp;&nbsp;&nbsp;private int capacity;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;Stack(int size) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arr = new int[size];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;capacity = size;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top = -1;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp; &nbsp; public boolean isEmpty() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return top == -1;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp; &nbsp; public boolean isFull() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return top == capacity - 1;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp; &nbsp; // other methods omitted for clarity<br>}<br>What does the method 'isEmpty' return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Returns true if all elements in the array are null."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Returns true if the top is equal to the size minus one."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Returns true if the top is equal to zero."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Returns true if the top is equal to minus one."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 72,
+      "UniqueNodeId": 4270,
+      "QuestionTypeId": 0,
+      "QuestionId": 100255,
+      "Explanation": "<span id=\"explanation100255\" style=\"color:blue\">The isEmpty method returns true if the &apos;top&apos; variable is equal to -1, indicating that there are no elements in the stack.</span>",
+      "Answer": "D",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}
