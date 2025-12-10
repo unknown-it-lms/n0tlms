@@ -20,7 +20,7 @@
 
   document.getElementById("quiz-title").textContent = `${subject} - ${subtopicName}`;
 
-  const mcqPath = `/${subject}/${subtopicName}/mcq.json`;   // FIXED PATH
+  const mcqPath = `${subject}/${subtopicName}/mcq.json`;   // FIXED PATH
 
   async function loadMCQ() {
     const res = await fetch(mcqPath);
