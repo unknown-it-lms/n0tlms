@@ -292,15 +292,6 @@ const subjects = {
     },
     {
       "id": null,
-      "name": "Syllabus",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
       "name": "Using hibernate",
       "hasNotes": false,
       "notesFile": null,
@@ -746,57 +737,12 @@ const subjects = {
     },
     {
       "id": null,
-      "name": "Apache HBase",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Apache Hadoop",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Apache Hive",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Apache PIG",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
       "name": "Apache Spark",
       "hasNotes": false,
       "notesFile": null,
       "hasPPT": false,
       "pptFile": null,
       "hasMCQ": true
-    },
-    {
-      "id": null,
-      "name": "Apache kafka",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
     },
     {
       "id": null,
@@ -818,39 +764,12 @@ const subjects = {
     },
     {
       "id": null,
-      "name": "Introduction to Big Data Technologies",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
       "name": "Introduction to Data Science",
       "hasNotes": true,
       "notesFile": "notes_Big_Data_Technologies_Introduction_to_Data_Science_6291.html",
       "hasPPT": true,
       "pptFile": "ppts_Big_Data_Technologies__6291.pdf",
       "hasMCQ": true
-    },
-    {
-      "id": null,
-      "name": "Introduction to Hadoop",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Introduction to Neural Network",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
     },
     {
       "id": null,
@@ -863,15 +782,6 @@ const subjects = {
     },
     {
       "id": null,
-      "name": "Map Reduce",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
       "name": "Question dump-1",
       "hasNotes": false,
       "notesFile": null,
@@ -881,30 +791,176 @@ const subjects = {
     },
     {
       "id": null,
-      "name": "Spark SQL",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Spark Streaming",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
       "name": "Syllabus",
       "hasNotes": true,
       "notesFile": "notes_Big_Data_Technologies_Syllabus_2713.html",
       "hasPPT": false,
       "pptFile": null,
       "hasMCQ": false
+    }
+  ],
+  "cpp": [
+    {
+      "id": null,
+      "name": "Class and Object",
+      "hasNotes": false,
+      "notesFile": null,
+      "hasPPT": false,
+      "pptFile": null,
+      "hasMCQ": true
+    },
+    {
+      "id": null,
+      "name": "Class with Pointer",
+      "hasNotes": false,
+      "notesFile": null,
+      "hasPPT": false,
+      "pptFile": null,
+      "hasMCQ": true
+    },
+    {
+      "id": null,
+      "name": "Cpp as better C-I",
+      "hasNotes": false,
+      "notesFile": null,
+      "hasPPT": false,
+      "pptFile": null,
+      "hasMCQ": true
+    },
+    {
+      "id": null,
+      "name": "Cpp as better C-II",
+      "hasNotes": false,
+      "notesFile": null,
+      "hasPPT": false,
+      "pptFile": null,
+      "hasMCQ": true
+    },
+    {
+      "id": null,
+      "name": "Exception Handling",
+      "hasNotes": false,
+      "notesFile": null,
+      "hasPPT": false,
+      "pptFile": null,
+      "hasMCQ": true
+    },
+    {
+      "id": null,
+      "name": "Features of C++ 17",
+      "hasNotes": false,
+      "notesFile": null,
+      "hasPPT": false,
+      "pptFile": null,
+      "hasMCQ": true
+    },
+    {
+      "id": null,
+      "name": "File IO",
+      "hasNotes": false,
+      "notesFile": null,
+      "hasPPT": false,
+      "pptFile": null,
+      "hasMCQ": true
+    },
+    {
+      "id": null,
+      "name": "Fundamentals of OOP",
+      "hasNotes": false,
+      "notesFile": null,
+      "hasPPT": false,
+      "pptFile": null,
+      "hasMCQ": true
+    },
+    {
+      "id": null,
+      "name": "Inheritance",
+      "hasNotes": false,
+      "notesFile": null,
+      "hasPPT": false,
+      "pptFile": null,
+      "hasMCQ": true
+    },
+    {
+      "id": null,
+      "name": "Namespaces",
+      "hasNotes": false,
+      "notesFile": null,
+      "hasPPT": false,
+      "pptFile": null,
+      "hasMCQ": true
+    },
+    {
+      "id": null,
+      "name": "Operator overloading",
+      "hasNotes": false,
+      "notesFile": null,
+      "hasPPT": false,
+      "pptFile": null,
+      "hasMCQ": true
+    },
+    {
+      "id": null,
+      "name": "Polymorphism",
+      "hasNotes": false,
+      "notesFile": null,
+      "hasPPT": false,
+      "pptFile": null,
+      "hasMCQ": true
+    },
+    {
+      "id": null,
+      "name": "Polymorphism-II",
+      "hasNotes": false,
+      "notesFile": null,
+      "hasPPT": false,
+      "pptFile": null,
+      "hasMCQ": true
+    },
+    {
+      "id": null,
+      "name": "Reusing Classes",
+      "hasNotes": false,
+      "notesFile": null,
+      "hasPPT": false,
+      "pptFile": null,
+      "hasMCQ": true
+    },
+    {
+      "id": null,
+      "name": "Standard Template Library",
+      "hasNotes": false,
+      "notesFile": null,
+      "hasPPT": false,
+      "pptFile": null,
+      "hasMCQ": true
+    },
+    {
+      "id": null,
+      "name": "Templates",
+      "hasNotes": false,
+      "notesFile": null,
+      "hasPPT": false,
+      "pptFile": null,
+      "hasMCQ": true
+    },
+    {
+      "id": null,
+      "name": "TypeCasting",
+      "hasNotes": false,
+      "notesFile": null,
+      "hasPPT": false,
+      "pptFile": null,
+      "hasMCQ": true
+    },
+    {
+      "id": null,
+      "name": "this and static",
+      "hasNotes": false,
+      "notesFile": null,
+      "hasPPT": false,
+      "pptFile": null,
+      "hasMCQ": true
     }
   ],
   "C": [
@@ -1018,15 +1074,6 @@ const subjects = {
     },
     {
       "id": null,
-      "name": "Storage classes",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
       "name": "Strings",
       "hasNotes": true,
       "notesFile": "notes_C_Strings_7.html",
@@ -1134,51 +1181,6 @@ const subjects = {
       "hasPPT": false,
       "pptFile": null,
       "hasMCQ": true
-    },
-    {
-      "id": null,
-      "name": "FAQ [ADO.NET]",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "FAQ [C#]",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "FAQ [LINQ]",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "FAQ [MVC]",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "FAQ [Web API]",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
     },
     {
       "id": null,
@@ -1344,15 +1346,6 @@ const subjects = {
     },
     {
       "id": null,
-      "name": "Syllabus",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
       "name": "Threading",
       "hasNotes": false,
       "notesFile": null,
@@ -1400,42 +1393,6 @@ const subjects = {
   "CC": [
     {
       "id": null,
-      "name": "AWS Platform As A Service",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "AWS Virtualization",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Amazon Web services",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Big Data Technologies and Cloud Computing",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
       "name": "Day-1",
       "hasNotes": false,
       "notesFile": null,
@@ -1451,171 +1408,9 @@ const subjects = {
       "hasPPT": false,
       "pptFile": null,
       "hasMCQ": true
-    },
-    {
-      "id": null,
-      "name": "Day-3",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Day-4",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Day-5",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Day-6",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Docker Containarization",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Docker containerization",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "HPC",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Hosting Web Apps in AWS EC2",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Parallel Computing",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Syllabus",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
     }
   ],
   "CCPP_Preparation": [
-    {
-      "id": null,
-      "name": "Big data technologies",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Dot Net Technologies",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "My Interviews",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "OOP using Java",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Programming logic",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Project interview guidelines",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "SOLID Principles",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Technical GD",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
     {
       "id": null,
       "name": "Understanding OOP",
@@ -1721,189 +1516,7 @@ const subjects = {
     },
     {
       "id": null,
-      "name": "Computer software",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
       "name": "Number Systems",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": true
-    },
-    {
-      "id": null,
-      "name": "Programming languages",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    }
-  ],
-  "cpp": [
-    {
-      "id": null,
-      "name": "Class and Object",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": true
-    },
-    {
-      "id": null,
-      "name": "Class with Pointer",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": true
-    },
-    {
-      "id": null,
-      "name": "Cpp as better C-I",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": true
-    },
-    {
-      "id": null,
-      "name": "Cpp as better C-II",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": true
-    },
-    {
-      "id": null,
-      "name": "Exception Handling",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": true
-    },
-    {
-      "id": null,
-      "name": "Features of C++ 17",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": true
-    },
-    {
-      "id": null,
-      "name": "File IO",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": true
-    },
-    {
-      "id": null,
-      "name": "Fundamentals of OOP",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": true
-    },
-    {
-      "id": null,
-      "name": "Inheritance",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": true
-    },
-    {
-      "id": null,
-      "name": "Namespaces",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": true
-    },
-    {
-      "id": null,
-      "name": "Operator overloading",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": true
-    },
-    {
-      "id": null,
-      "name": "Polymorphism",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": true
-    },
-    {
-      "id": null,
-      "name": "Polymorphism-II",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": true
-    },
-    {
-      "id": null,
-      "name": "Reusing Classes",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": true
-    },
-    {
-      "id": null,
-      "name": "Standard Template Library",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": true
-    },
-    {
-      "id": null,
-      "name": "Templates",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": true
-    },
-    {
-      "id": null,
-      "name": "TypeCasting",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": true
-    },
-    {
-      "id": null,
-      "name": "this and static",
       "hasNotes": false,
       "notesFile": null,
       "hasPPT": false,
@@ -2177,24 +1790,6 @@ const subjects = {
     },
     {
       "id": null,
-      "name": "Linked list of user defined data types",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Logical operations of array",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
       "name": "Operations on Linked list",
       "hasNotes": false,
       "notesFile": null,
@@ -2370,15 +1965,6 @@ const subjects = {
     },
     {
       "id": null,
-      "name": "Model answers for referece",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
       "name": "Personal interview",
       "hasNotes": true,
       "notesFile": "notes_Effective_Communication_Skills_Personal_interview_1933.html",
@@ -2436,80 +2022,6 @@ const subjects = {
       "name": "Syllabus",
       "hasNotes": true,
       "notesFile": "notes_Effective_Communication_Skills_Syllabus_6922.html",
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    }
-  ],
-  "Java_programming_skills": [
-    {
-      "id": null,
-      "name": "All",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Basic programming concepts",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Coding FAQs",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Common programming mistakes",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Commonly used functions",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Defensive programming",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Facts you should know for programming",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Guidelines for time and space complexity",
-      "hasNotes": false,
-      "notesFile": null,
       "hasPPT": false,
       "pptFile": null,
       "hasMCQ": false
@@ -2792,15 +2304,6 @@ const subjects = {
     },
     {
       "id": null,
-      "name": "OLAP",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
       "name": "Partition by",
       "hasNotes": true,
       "notesFile": "notes_MySQL_Partition_by_6537.html",
@@ -2935,15 +2438,6 @@ const subjects = {
       "hasPPT": false,
       "pptFile": null,
       "hasMCQ": true
-    },
-    {
-      "id": null,
-      "name": "ISO and TCP",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
     },
     {
       "id": null,
@@ -3241,15 +2735,6 @@ const subjects = {
     },
     {
       "id": null,
-      "name": "Computational Learning Theory",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
       "name": "Convolution Neural Network (CNN)",
       "hasNotes": false,
       "notesFile": null,
@@ -3268,51 +2753,6 @@ const subjects = {
     },
     {
       "id": null,
-      "name": "Data Mining Algorithm",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Deep learning - ANN",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Deep learning - CNN",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Deep learning - Object Detection",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Enesemble Learning",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
       "name": "Ensemble Techniques",
       "hasNotes": false,
       "notesFile": null,
@@ -3328,15 +2768,6 @@ const subjects = {
       "hasPPT": false,
       "pptFile": null,
       "hasMCQ": true
-    },
-    {
-      "id": null,
-      "name": "Important Formulae",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
     },
     {
       "id": null,
@@ -3382,33 +2813,6 @@ const subjects = {
       "hasPPT": false,
       "pptFile": null,
       "hasMCQ": true
-    },
-    {
-      "id": null,
-      "name": "Machine Learning revision",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "NLP",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "NLP - NLTK",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
     },
     {
       "id": null,
@@ -3493,24 +2897,6 @@ const subjects = {
     },
     {
       "id": null,
-      "name": "Support Vector Machine",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Time Series",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
       "name": "Time Series Analysis",
       "hasNotes": false,
       "notesFile": null,
@@ -3526,62 +2912,6 @@ const subjects = {
       "hasPPT": false,
       "pptFile": null,
       "hasMCQ": true
-    }
-  ],
-  "Project": [
-    {
-      "id": null,
-      "name": "Coding support",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Database Design",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Documents",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "FAQ-[Common questions]",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Guidelines",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Guidelines for .NET project",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
     }
   ],
   "Python": [
@@ -4005,15 +3335,6 @@ const subjects = {
     },
     {
       "id": null,
-      "name": "Question dump-2",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
       "name": "Selenium",
       "hasNotes": false,
       "notesFile": null,
@@ -4349,15 +3670,6 @@ const subjects = {
     },
     {
       "id": null,
-      "name": "Syllabus",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
       "name": "Third Party Middleware",
       "hasNotes": false,
       "notesFile": null,
@@ -4382,80 +3694,6 @@ const subjects = {
       "hasPPT": false,
       "pptFile": null,
       "hasMCQ": true
-    }
-  ],
-  "php": [
-    {
-      "id": null,
-      "name": "Applying session management",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Arrays in PHP",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "File IO and Database",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Introduction to PHP",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Request and Response",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Session Management",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "State Management",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
-    },
-    {
-      "id": null,
-      "name": "Utilities in PHP",
-      "hasNotes": false,
-      "notesFile": null,
-      "hasPPT": false,
-      "pptFile": null,
-      "hasMCQ": false
     }
   ]
 };
