@@ -1,0 +1,2406 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Given<br>File f=new File(\"abc.txt\");<br>FileInputStream fis=new FileInputStream(f);<br>byte arr[]=new byte[100];<br>which statement will read content of \u201cabc.txt\u201d into arr.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "arr=fis.read()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "f.read(arr)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "arr=f.read()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "fis.read(arr)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81412,
+      "Explanation": "<span id=\"explanation81412\">read() method of FileInputStream class accepts byte array as the argument and reads array length no of bytes from underlying file.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which one is wrong statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "FileInputStream fis=new FileInputStream(new BufferedInputStream(\"abc.txt\"));"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DataOutputStream dis=new DataOutputStream(new FileOutputStream(\"xyz.txt\"));"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "FileOutputStream fos=new FileOutputStream(new File(\"aaa.txt\"));"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SequenceInputStream ss=new SequenceInputStream(new FileInputStream(\"a.txt\"),new<br>FileInputStream(\"b.txt\"));"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81413,
+      "Explanation": "<span id=\"explanation81413\">BufferedInputStream uses FileInputStream object as argument while creating the instance.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given<br>class base&nbsp;{<br>&nbsp;&nbsp;&nbsp; int k;<br>}<br>class sub extends base implements Serializable&nbsp;{<br>&nbsp;&nbsp;&nbsp; int j;<br>}<br>If we try to serialize instance of sub class,",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "sub as well as base state will be serialized"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "NotSerializableException"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "only sub instance will be serialized"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "compiler error \u201ccannot serialized object having non-serializable parent\u201d"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81414,
+      "Explanation": "<span id=\"explanation81414\">At the time of serialization, if any instance variable is inheriting from non-serializable superclass, then JVM ignores original value of that instance variable and save default value to the file.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Classes that do not implement ______ interface will not have any of their State serialized or deserialized.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "List"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SingIeThreadModeI"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Serializable"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Comparable"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81415,
+      "Explanation": "<span id=\"explanation81415\">Serializable interface needs to be implemented for the object to be serialized or deserialized.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which one of the following is not from java.io.package",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "String"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "StringReader"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Writer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "File"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81416,
+      "Explanation": "<span id=\"explanation81416\">String class is from java.lang package. Rest all are from java.io package</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does readObject() of ObjectInputStream indicate end of file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "returns null"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "returns -1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "throws java.io.IOException"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "closes automatically"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81417,
+      "Explanation": "<span id=\"explanation81417\">When there is no data available to read, readObject() method throws Exception</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given this code:<br>Import java.io.*;<br>Class Write {<br>&nbsp;&nbsp;&nbsp; public static void main(String args[]) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; File f=new File(\u201ca.txt\u201d);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FileOutputStream fos=new FileOutputStream(f);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // write int here inside the file<br>&nbsp;&nbsp; }<br>}<br>How can u replace the comment at the end of main with code that will write integers from 0 to 9 ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DataOutputStream dos=new DataOutputStream(fos);<br>for(int i=0;i&lt;=9;i++) {<br>dos.write(i);<br>}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "for(int i=0;i&lt;=9;i++) {<br>f.writeInf(i);<br>}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "for(int i=0;i&lt;=9;i++) {<br>fos.writeInt(i);<br>}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DataOutputStream dos=new DataOutputStream(fos);<br>for(int i=0;i&lt;=9;i++) {<br>dos.writeInt(i);<br>}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81419,
+      "Explanation": "<span id=\"explanation81419\">For writing data belonging to built in data types, DataOutputStream class is used which provides writeInt() method for writing int values.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What is the permanent effect on the file system of writing data to a new FileWriter(\"report\"), given<br>the file \"report\" already exists?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The data is appended to the file."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The file is replaced with a new file."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An exception is raised as the file already exists."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The data is written to random locations within the file."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81420,
+      "Explanation": "<span id=\"explanation81420\">By default, existing content of the file will be replaced new content.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which one is wrong statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "FileInputStream fis=new FileInputStream(\"abc.txt\");"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DataOutputStream dis=new DataOutputStream(new FileOutputStream(\"xyz.txt\"));"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "FileOutputStream fos=new FileOutputStream(new File(\"aaa.txt\"));"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "FileOutputStream fos=new FileOutputStream(new ObjectOutputStream(\"aaa.txt\"));"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81421,
+      "Explanation": "<span id=\"explanation81421\">FileOutputStream class has no constructor which accepts ObjectOutputStream as the argument.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is correct?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Externalizable is a base interface of Serializable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "String class is final hence cannot be serialized"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When a class implements Serializable and it is deserialized using readObject(), constructor is never invoked."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Externalizable is a marker interface."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81422,
+      "Explanation": "<span id=\"explanation81422\">When deserialization occurs, constructor of the class will not be called. </span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which class is not serialized",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "java.lang.Thread"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "java.lang.Integer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "java.lang.Class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "java.lang.String"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81424,
+      "Explanation": "<span id=\"explanation81424\">Thread class in java library does not implement Serializable.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "_________ is a communication path bet\u2019n source and destination",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "File"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "stream"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "directory"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81425,
+      "Explanation": "<span id=\"explanation81425\">Stream acts as a communication channel between source and destination.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "InputStream and OutputStream are concrete classes",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Depends on version"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81426,
+      "Explanation": "<span id=\"explanation81426\">InputStream and OutputStream are abstract classes.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "if u want to write primitive types u need to use",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DataOutputStream"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FileOutputStream"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "OutputStream"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ObjectOutputStream"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81427,
+      "Explanation": "<span id=\"explanation81427\">DataOutputStream class provides all the methods which allows to write built in data types.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Serializable extends Externalizable",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Depends on version"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81429,
+      "Explanation": "<span id=\"explanation81429\">Externalizable interface extends from Serializable.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Serializable is marker interface.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Depends on version"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81430,
+      "Explanation": "<span id=\"explanation81430\">Serializable is a marker interface i.e. empty, having no methods.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When the object is deserialized, constructor does not get invoked.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Depends on version"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81431,
+      "Explanation": "<span id=\"explanation81431\">At the time of deserialization, constructor does not get called.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "While deserialization if serialversionUID does not match we get",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IllegalClassException"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "InvalidClassException"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "NullPointerException"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81432,
+      "Explanation": "<span id=\"explanation81432\">If serialversionUID of the serialized object&apos;s class and current existing class, InvalidClassException gets thrown.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which out of the following code snipets is correct?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "FileOutputStream fos=new FileOutputStream(object to be added);<br>ObjectOutputStream oos=new ObjectOutputStream(\"filename\");<br>oos.writeObject();"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FileOutputStream fos=new FileOutputStream(\"filename\");<br>ObjectOutputStream oos=new ObjectOutputStream(object to be added);<br>oos.writeObject();"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "FileOutputStream fos=new FileOutputStream(\"filename\");<br>ObjectOutputStream oos=new ObjectOutputStream(fos);<br>oos.writeObject(object to be added);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81433,
+      "Explanation": "<span id=\"explanation81433\">FileOutputStream needs filename as the argument and ObjectOutputStream needs any type of OutputStream as the argument. writeObject() method needs object to be serialized as the argument</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "File class is used to create new file.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81434,
+      "Explanation": "<span id=\"explanation81434\">File class provides a method called createNewFile() to create a new file in java.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "in case of Externalizable when u deserialize an object first readExternal() is called and then constructor is<br>called.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "--"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "--"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81435,
+      "Explanation": "<span id=\"explanation81435\">The default constructor is called first. Only after that is the created UserInfo object&apos;s readExternal() method called.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In order to serialize inner class, outer class must be Serializable",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Not always"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Can't say"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81436,
+      "Explanation": "<span id=\"explanation81436\">As inner class is a data member of outer class, while serializing inner class instance, it leads to NotSerializableException. So outer class must implement Serializable.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If inner class implements Externalizable we don\u2019t get any problem while deserialization",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Not always"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81437,
+      "Explanation": "<span id=\"explanation81437\">You cannot create instance of inner class (non static nested class) without an instance of outer class. So on deserializing to create instance of inner class the code will need somehow to use an instance of the outer class.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If static nested class implements Externalizable we don\u2019t get any problem while deserialization",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Not always"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81438,
+      "Explanation": "<span id=\"explanation81438\">Static nested class does not need the outer class instance, for creating it&apos;s object. So after deserialization we do not explicitly the outer class instance.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Java.lang.Object class implements Serializable",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Not always"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Nono of above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81439,
+      "Explanation": "<span id=\"explanation81439\">Object class has not implemented Serializable interface.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "______ streams provide functionality for threads to communicate and exchange data between them",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Piped"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Pushback"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Filtered"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 72574,
+      "Explanation": "<span id=\"explanation72574\">Verifies that the pipe is in a connected state for read operations. CheckWriteOperations() Verifies that the pipe is in a connected state for write operations. Close() Closes the current stream and releases any resources (such as sockets and file handles) associated with the current stream.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given&nbsp;that&nbsp;the&nbsp;current&nbsp;directory&nbsp;is empty,&nbsp;and&nbsp;that&nbsp;the&nbsp;user&nbsp;has&nbsp;read&nbsp;and&nbsp;write&nbsp;permissions,&nbsp;and&nbsp;the following:<br>&nbsp;import&nbsp;java.io.*;<br>&nbsp;&nbsp;public&nbsp;class&nbsp;DOS&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;File&nbsp;dir&nbsp;=&nbsp;new&nbsp;File(\"dir\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dir.mkdir();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;File&nbsp;f1&nbsp;=&nbsp;new&nbsp;File(dir,&nbsp;\"f1.txt\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f1.createNewFile();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;catch&nbsp;(IOException&nbsp;e)&nbsp;{&nbsp;;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;File&nbsp;newDir&nbsp;=&nbsp;new&nbsp;File(\"newDir\");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dir.renameTo(newDir);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>}<br>Which&nbsp;statement&nbsp;is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compilation fails"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The file system has a new empty directory named dir."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The file system has a new empty directory named new Dir."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The file system has a directory named newDir,containing a file f1.txt."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 72566,
+      "Explanation": "<span id=\"explanation72566\">Here, using File class f1 .txt file is created in the directory named \"dir\". After creation dir directory is renamed to newDir using method renameTo</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Serializable is a......",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "final class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "marker interface"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "abstract class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "functional interface"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 72636,
+      "Explanation": "<span id=\"explanation72636\">Serializable is a marker interface i.e. empty interface</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the legal way to read the data from file.txt",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "InputStreamReader isr=new InputStreamReader(\u201cfile.txt\u201d);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FileInputStream fn=new FileInputStream(\u201cfile.txt\u201d,\u201dUTF-8\u201d);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "FileReader fr=new FileReader(\u201cfile.txt\u201d);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "FileReader fr=new FileReader(\u201cfile.txt\u201d,\u201dUNICODE-16\u201d);"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 72637,
+      "Explanation": "<span id=\"explanation72637\">FileReader class is used to read the data from the file which&nbsp; accepts file path as the argument. No constrcutor accepts charset as the argument.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which class automatically flushes the data so that there is no need to call the flush() method. Moreover, its methods don't throw IOException?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Console"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Scanner"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "FileInputStream"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "PrintStream"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 72625,
+      "Explanation": "<span id=\"explanation72625\">Java PrintStream Class:<br>The PrintStream class provides methods to write data to another stream. The PrintStream class automatically flushes the data so there is no need to call flush() method. Moreover, its methods don&apos;t throw IOException.<br><br>Class declaration:<br>public class PrintStream extends FilterOutputStream implements Closeable, Appendable .</span><ol><li><span id=\"explanation72625\">It is used to move any information from an underlying buffer to its destination or clear the buffer.</span></li><li><span id=\"explanation72625\">Its not necessary to use flush() method always, instead use the close() method.it won&apos;t lose any data if you properly close() it in the end.</span></li><li><span id=\"explanation72625\">Each call to Flush incurs a significant amount of overhead</span></li></ol>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which out of the following keyword will exclude the instance variable from serialization?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "strict"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "default"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "transient"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "native"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 72663,
+      "Explanation": "<span id=\"explanation72663\">Instance variables which are declared as transient will not get saved at the time of serialization process.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the name of the abstract base class for streams dealing with general purpose (non-character) input?&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "InputStream"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "OutputStream"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Reader"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Writer"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 72207,
+      "Explanation": "<span id=\"explanation72207\">The java.io.InputStream.read () method reads the next byte of the data from the the input stream and returns int in the range of 0 to 255.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Can data flow through a given stream in both directions?&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "No; a stream has one direction only, input or output."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No; streams only work for output"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes; only one stream is needed to read and write a file."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Yes; but only one direction at a time."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 72212,
+      "Explanation": "<span id=\"explanation72212\">A stream is a sequence of objects that supports various methods which can be pipelined to produce the desired result. The features of Java stream are \u2013 A stream is not a data structure instead it takes input from the Collections, Arrays or I/O channels</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is invalid about serialization in java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Serialized object can be persisted into database."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Serialized object can't be persisted into file"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Serialization is process of converting object into byte stream"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Serialized object can be transferred over network"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 71288,
+      "Explanation": "<span id=\"explanation71288\">serialization allows us to convert the state of an object into a byte stream, which then can be saved into a file on the local disk or sent over the network to any other machine. And deserialization allows us to reverse the process, which means reconverting the serialized byte stream to an object again.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What method should we use for writing object in Serialization in java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "objectWrite"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "objWrite"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "writeObject"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "write"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 71289,
+      "Explanation": "<ul><li><span id=\"explanation71289\">The java.io.ObjectOutputStream.writeObject(Object obj) method writes the specified object to the ObjectOutputStream.</span></li><li><span id=\"explanation71289\">The class of the object, the signature of the class, and the values of the non-transient and non-static fields of the class and all of its supertypes are written. </span></li><li><span id=\"explanation71289\">Default serialization for a class can be overridden using the writeObject and the readObject methods. Objects referenced by this object are written transitively so that a complete equivalent graph of objects can be reconstructed by an ObjectInputStream.</span></li><li><span id=\"explanation71289\">Syntax:</span><ul><li><span id=\"explanation71289\">public final void writeObject(Object obj)</span></li></ul></li></ul>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true about serialization?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It can only be used with primitive data types."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It can only be used with objects that implement the Serializable interface."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It can be used with any object of the class which has static block defined."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The object can be serialized even on temporary memory."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 71290,
+      "Explanation": "<div id=\"b_content\" data-bm=\"52\"><main aria-label=\"Search Results\"><div class=\"b_caption b_algo\"><span id=\"explanation71290\">Objects implementing Serializable interface only can be serialized.</span></div></main></div>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is true about serialVersionUID in serialization and deserialization in java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "serialVersionUID is used for version control of object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "If we don\u2019t define serialVersionUID in the class, and any modification is made in class, then we won\u2019t be able to deSerialize our class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The serialization at runtime associates with each serializable class a version number, called a serialVersionUID, which is used during deserialization to verify that the<br>sender and receiver of a serialized object have loaded classes for that object that are compatible with respect to serialization."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 71291,
+      "Explanation": "<span id=\"explanation71291\">The serialization runtime associates with each serializable class a version number, called a serialVersionUID, which is used during deserialization to verify that the sender and receiver of a serialized object have loaded classes for that object that are compatible with respect to serialization.<br>Usage example<br>ANY-ACCESS-MODIFIER static final long serialVersionUID = 42L;</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if one the member of class does not implement Serializable interface in java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "NullPointerException"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "compilation error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "NotSerializableException"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SerializableNotPossibleException"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 71292,
+      "Explanation": "<div class=\"container\"><div class=\"snippet-hidden\" id=\"content\"><div itemtype=\"http://schema.org/Question\" itemscope=\"\" itemprop=\"mainEntity\"><div class=\"inner-content clearfix\"><div id=\"mainbar\" role=\"main\" aria-label=\"question and answers\"><div id=\"answers\"><div class=\"answer\" id=\"answer-28080877\" itemtype=\"http://schema.org/Answer\" itemscope=\"\" itemprop=\"suggestedAnswer\" data-answerid=\"28080877\"><div class=\"post-layout\"><div class=\"answercell post-layout--right\"><div class=\"post-text\" itemprop=\"text\"><ul><li>The NotSerializableException is thrown when attempting to serialize or deserialize an object that does not implement the java.io.Serializable interface.</li><li>Sometimes \"java.io.NotSerializableException\" occurs when you serialize an <strong>inner class instance</strong> because:</li></ul><blockquote><ol><li>\"serializing such an inner class instance will result in serialization of its associated outer class instance as well\"</li><li>\"<strong>Serialization of inner classes</strong> (i.e., nested classes that are not static member classes), including local and anonymous classes, is <strong>strongly discouraged</strong>\".</li></ol></blockquote></div></div></div></div></div></div></div></div></div></div>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Which of these class is used to read bytes in a file?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "FileReader"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FileWriter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "FileInputStream"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "InputStreamReader"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 72237,
+      "Explanation": "<span id=\"explanation72237\">Java FileInputStream class obtains input bytes from a file. It is used for reading byte-oriented data (streams of raw bytes) such as image data, audio, video etc. You can also read character-stream data. But, for reading streams of characters, it is recommended to use FileReader class.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which of these process occur automatically by java run time system?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Serialization"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Deserialization"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Memory allocation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All above mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 70858,
+      "Explanation": "<span id=\"explanation70858\">Serialization and deserialization has to be explicitly programmed. Memory allocation is done automatically whe objects get created</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is an interface for control&nbsp; over serialization&nbsp; and deserialization?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Serializable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Externalizable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "FileFilter"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ObjectInput"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 70860,
+      "Explanation": "This is an interface (which extends Serializable) that provides full control over the serialization and deserialization process. If a class implements Externalizable, it must implement two methods:<br>void writeExternal(ObjectOutput out) throws IOException<br>void readExternal(ObjectInput in) throws IOException, ClassNotFoundException <br>By implementing these methods, you explicitly define what data is written to the stream during serialization and how it&apos;s read back during deserialization.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement concerning the use of the java.io.Serializable interface is false?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Objects from classes that use aggregation can be serialized."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An object serialized on one JVM can not be successfully deserialized on a different JVM."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The values in fields with the volatile modifier will survive serialization and deserialization."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The values in fields with the transient modifier will not survive serialization and deserialization."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 70768,
+      "Explanation": "Object can be serialized and deserialized across diff JVM. In fact this is the purpose of serialization. Transient variables will be excluded from serialization but volatile variables are considered during serialization. Objects with agreegation cane be serialized.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "___________&nbsp; presents a uniform, easy-to-use, object-oriented interface between the program and the input/output devices",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Stream"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Output"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Input"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Reader"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 70760,
+      "Explanation": "<span id=\"explanation70760\">Stream is a sequence of bytes which reads and writes data between program and input/output devices.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which exception is thrown by the read( ) method of input stream class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Exception"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ReadException"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "FileNotfoundException"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "IOException"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 70711,
+      "Explanation": "<span id=\"explanation70711\">read() method of input stream throws IOException.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you create a Reader object from &nbsp;an lnputStream object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<span style=\"color:#303033\">Use t</span><span style=\"color:#48484b\">h</span><span style=\"color:#303033\">e </span><span style=\"color:#48484b\">s</span><span style=\"color:#303033\">t</span><span style=\"color:#303033\">a</span><span style=\"color:#303033\">t</span><span style=\"color:#6d6d6e\">i</span><span style=\"color:#48484b\">c</span> <span style=\"color:#303033\">c</span><span style=\"color:#303033\">r</span><span style=\"color:#303033\">e</span><span style=\"color:#48484b\">a</span><span style=\"color:#303033\">t</span><span style=\"color:#303033\">e</span><span style=\"color:#303033\">R</span><span style=\"color:#303033\">e</span><span style=\"color:#48484b\">a</span><span style=\"color:#303033\">d</span><span style=\"color:#303033\">e</span><span style=\"color:#303033\">r</span><span style=\"color:#5a5a5d\">(</span><span style=\"color:#303033\">)</span> <span style=\"color:#303033\">m</span><span style=\"color:#48484b\">e</span><span style=\"color:#303033\">t</span><span style=\"color:#303033\">h</span><span style=\"color:#303033\">o</span><span style=\"color:#303033\">d</span> <span style=\"color:#303033\">o</span><span style=\"color:#1d1c1f\">f </span><span style=\"color:#303033\">l</span><span style=\"color:#303033\">n</span><span style=\"color:#303033\">p</span><span style=\"color:#303033\">u</span><span style=\"color:#303033\">t</span><span style=\"color:#303033\">S</span><span style=\"color:#303033\">t</span><span style=\"color:#303033\">r</span><span style=\"color:#303033\">e</span><span style=\"color:#303033\">a</span><span style=\"color:#303033\">m</span> <span style=\"color:#303033\">class</span>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use the static create Reader() method of Reader class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Create an lnputStreamReader object passing the lnputStream object an an argument to the lnputStreamReader constructor."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Create an OutputStreamReader object, passing the lnputStream object as an argument to theOutputStreamReader constructor."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 70716,
+      "Explanation": "<span id=\"explanation70716\">InputStreamReader class acts as a mediator between InputStream and Reader class. This class allows to convert InputStream instance to Reader instance.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given that&nbsp; FileNotFoundException extends&nbsp; IOException, and given:<br>2. import&nbsp; java.io.*;<br>3. public class MacPro extends&nbsp; Laptop&nbsp; {<br>4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public&nbsp; static&nbsp; void main(String[]&nbsp; args)&nbsp; {<br>5.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new MacPro().crunch();<br>6.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>7.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // insert&nbsp; code here<br>8. }<br>9. class Laptop {<br>10.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void&nbsp; crunch() throws&nbsp; IOException&nbsp; {&nbsp; }<br>11.&nbsp; }<br>Which&nbsp; method(s), inserted&nbsp; independently at line 7, compile?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void crunch() throws NewException { }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "void crunch(int x) throws Exception {}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "void crunch() throws RuntimeException {}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "void crunch(int x) throws FileNotFoundException {}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 70730,
+      "Explanation": "<span id=\"explanation70730\">Subclass overridden method may throw any additional unchecked exception but not extra checked exception.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>identify missing statement.<br>/* Missing Statement ? */</div><div>public class foo {</div><div>&nbsp;&nbsp;&nbsp; public static void main(String[]args)throws Exception {</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; java.io.PrintWriter out = new java.io.PrintWriter( new java.io.OutputStreamWriter(System.out,true));&nbsp;</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; out.println('Hello');&nbsp;</div><div>&nbsp;&nbsp;&nbsp; }&nbsp;</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<div>No statement required.</div>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<div>import java.io.*;</div>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<div>include java.io.*;</div>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<div>import java.io.PrintWriter;</div>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 67503,
+      "Explanation": "<span id=\"explanation67503\">Fully qualified class names are used hence no import statement is required.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>To delete a file, we can use an instance of class _________.</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<div>BufferedReader</div>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FileReader"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "FileOutputStream"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "File"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 67521,
+      "Explanation": "<span id=\"explanation67521\">File class provides functionalities for adding, deleting, listing files.</span><div class=\"wrapper\" id=\"main\"><div class=\"site-content\" id=\"primary\"><div id=\"content\" role=\"main\"><article class=\"post-147058 post type-post status-publish format-standard hentry category-java category-school-programming tag-java-file-handling tag-java-io tag-java-library\" id=\"post-147058\"><div class=\"entry-content\"><br></div></article></div></div></div><span id=\"explanation67521\"> <strong>Syntax:</strong><br></span><span>public boolean delete()<br>Returns: true if and only if the file or&nbsp;<br>directory is successfully deleted; false otherwise.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true regarding the readLine() method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is a static method."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It is used for reading binary data."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is synchronized."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is used for reading character data from an input stream."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 67584,
+      "Explanation": "<span id=\"explanation67584\">The readLine() method is used for reading character data from an input stream.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Given this code:&nbsp;</div><div>import java.io.*;&nbsp;</div><div>class Write {&nbsp;</div><div style=\"margin-left: 40px;\">public static void main(String[] args) throws Exception {&nbsp;</div><div style=\"margin-left: 80px;\">File file = new File('temp.test');&nbsp;&nbsp;</div><div style=\"margin-left: 80px;\">FileOutputStream stream = new FileOutputStream(file);&nbsp;</div><div style=\"margin-left: 80px;\">// write integers here. . .</div><div style=\"margin-left: 40px;\">&nbsp;}</div><div>}</div><div>How can you replace the comment at the end of main() with code that will write the integers 0 through 9?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<div>DataOutputStream filter = new DataOutputStream(stream);</div><div>for (int i = 0; i &lt; 10; i++)</div><div>filter.writeInt(i);</div>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<div>for (int i = 0; i &lt; 10; i++)</div><div>file.writeInt(i);</div>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<div>for (int i = 0; i &lt; 10; i++)</div><div>stream.writeInt(i);</div>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<div>DataOutputStream filter = new DataOutputStream(stream);</div><div>for (int i = 0; i &lt; 10; i++)</div><div>filter.write(i);</div>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 67679,
+      "Explanation": "<span id=\"explanation67679\">DataOutputstream class is used to store primitive data in a file. This class provides method to write all primitive values e.g. writeInt(). So instance of DataOutputStream is created by chaining with instance of FileOutputStream so that int values can be written in the given file.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What does the following code do?&nbsp;</div><div>File f = new File(\"hello.test\");&nbsp;</div><div>FileOutputStream out = new FileOutputStream(f);</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Create a new file named 'hello.test' if it does not yet exist. The file can be used for writing data."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Open a file named 'hello.test' so that you can write to it and read from it, but does not create the file if it does not yet exist."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Open a file named 'hello.test' so that you can write to it and also same file you can use to read and delete data."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Create an object that you can now use to create and open the file named 'hello.test,' and write to and read from the file."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 67677,
+      "Explanation": "<span id=\"explanation67677\">File writing streams can create file if it is not present. So hello.test gets created if it is not present and out can be used&nbsp; for writing data in that file. If file is already present, previous existing data gets overwritten.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Which code, inserted at line 15, will allow this class to correctly serialize and deserialize?</div><div><br></div><div>1.&nbsp; import java.io.*;</div><div>2.&nbsp; public class Foo implements Serializable {</div><div>3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public int x, y;</div><div>4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public Foo(int x, int y){</div><div>5.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.x = x; this.y = y;</div><div>6.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</div><div>7.</div><div>8.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private void writeObject(ObjectOutputStream s)</div><div>9.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throws IOException{</div><div>10.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s.writeInt(x); s.writeInt(y);</div><div>11.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</div><div>12.</div><div>13.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private void readObject(ObjectInputStream s)</div><div>14.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throws IOException, ClassNotFoundException {</div><div>15.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//insert code here</div><div>16.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</div><div>17.&nbsp; }</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "s.defaultReadObject();"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "this = s.defaultReadObject();"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "y = s.readInt(); x = s.readInt();"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "x = s.readInt(); y = s.readInt();"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 67691,
+      "Explanation": "<span id=\"explanation67691\">ObjectInputStream has readInt() method which will allow to read the state of the object that is serialized. Class Foo has got 2 state int data members which needs to be read while reading object.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following are false statements?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "I/O in Java can only be performed using the Listener classes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The RandomAccessFile class allows you to move directly to any point a file."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The creation of a named instance of the File class may not have matching file in the given path."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The characteristics of an instance of the File class such as the directory separator,do not depend on the current underlying operating system"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 67750,
+      "Explanation": "<span id=\"explanation67750\">I/O in java can only be performed by streams - false<br>RandomAccessFile allows to move to any point using seek() method. - true<br>Creating file instance does not mean file is present at specified path - true<br>Characteristics of an instance of the File class do not depend on current OS - true</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>If you run the following code on a PC from the directory c:source:&nbsp;</div><div>import java.io.*;&nbsp;</div><div>class Path {&nbsp;</div><div style=\"margin-left: 40px;\">public static void main(String[] args) throws Exception {&nbsp;</div><div style=\"margin-left: 80px;\">File file = new File(\"Ran.test\");&nbsp;</div><div style=\"margin-left: 80px;\">System.out.println(file.getAbsolutePath());</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>what do you expect the output to be?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Ran.test"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "source\\Ran.test"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "c:\\source\\Ran.test"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "c:\\source"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 67737,
+      "Explanation": "E",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The programmer must explicitly create the System.in and System.out objects.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "None of above"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Can't Say"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81516,
+      "Explanation": "False is the correct answer. Java provides System.in and System.out objects automatically as static variables of the System class. Programmers do not need to explicitly create these objects; they are readily available for use in Java programs.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Scanner class is the part of",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "java.io"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "java.scanner"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "java.util"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "java.lang"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 81443,
+      "Explanation": "Scanner class is available in java.util package.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the readLine() method do in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Reads a single character from the input stream."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Reads a line of text from the input stream, returning it as a String."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Reads a line of text from the input stream, returning it as a char array."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Reads an integer from the input stream."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 87987,
+      "Explanation": "<span id=\"explanation87987\">The readLine() method is a method in the BufferedReader class in Java, which reads a line of text from the input stream and returns it as a String. It reads characters from the underlying input stream until it encounters a newline character (&apos;\\n&apos;) or the end of the stream, and then returns the line of text as a String, excluding the newline character.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is true about NIO (New I/O) in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "NIO stands for Network Input/Output, and it is a new version of the System.in and System.out streams."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "NIO provides support for non-blocking I/O operations and asynchronous I/O operations."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "NIO is primarily used for traditional blocking I/O operations and does not support non-blocking I/O."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "NIO is a deprecated feature in Java and should be avoided in favor of traditional I/O operations."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 87983,
+      "Explanation": "NIO (New I/O) in Java provides support for non-blocking I/O operations through channels and selectors, allowing for more efficient handling of I/O operations, especially in network programming. It supports asynchronous I/O operations through the CompletionHandler interface, enabling better scalability and responsiveness in applications.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of ByteArrayInputStream in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To read bytes from a file stored on the local file system."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To read bytes from an input stream represented as a byte array in memory."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To read characters from a text file stored on the local file system."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To read bytes from an input stream represented as a string."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 87984,
+      "Explanation": "<span id=\"explanation87984\">ByteArrayInputStream in Java is used to create an input stream that reads bytes from a byte array in memory. It allows you to read bytes from the byte array as if reading from a standard input stream. This is useful when you have data stored in memory as a byte array and need to read it using stream-based APIs.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main advantage of using buffered streams in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They are synchronized."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They reduce the number of I/O operations by using a buffer."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They convert byte streams into character streams."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They provide encryption for data streams."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 91862,
+      "Explanation": "Buffered streams improve performance by reducing the number of I/O operations through buffering, thus fewer interactions with the underlying system.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which class is used to write data into a file in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "FileWriter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FileReader"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "FileInputStream"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "FileOutputStream"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 91863,
+      "Explanation": "FileWriter is used for writing streams of characters to a file.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you ensure that a FileReader object is properly closed after use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using a try-catch block."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using a finally block."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using the try-with-resources statement."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By explicitly calling the finalize method."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 91864,
+      "Explanation": "The try-with-resources statement ensures that each resource is closed at the end of the statement.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the flush method in OutputStream?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To clear the output buffer."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To encrypt data before writing it to the stream."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To close the output stream."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To write data to the underlying stream before closing it."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 91865,
+      "Explanation": "The flush method is used to write any buffered output bytes to the underlying stream.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following classes is a node stream in Java IO?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "BufferedReader"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "BufferedWriter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "FileInputStream"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "InputStreamReader"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 91866,
+      "Explanation": "Node streams, like FileInputStream, read from or write to a specific source.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which is not a direct subclass of InputStream class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "FileInputStream"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ByteArrayInputStream"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "FilterInputStream"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ObjectInputStream"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 91867,
+      "Explanation": "ObjectInputStream is a subclass of InputStream, but it is not a direct subclass as it extends from FilterInputStream.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if you try to read a file using FileInputStream after closing it?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will throw a FileNotFoundException."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It will return -1 indicating end of file."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will throw an IOException."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It will read from the point it was closed."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 91868,
+      "Explanation": "Attempting to read from an InputStream that is closed results in an IOException.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following can be used to convert byte streams to character streams?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "BufferedReader"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "PrintWriter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "InputStreamReader"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "BufferedOutputStream"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 91869,
+      "Explanation": "InputStreamReader acts as a bridge between byte streams and character streams.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in the File class can be used to check if a file exists in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "exists()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "canExecute()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "isFile()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "isDirectory()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 91870,
+      "Explanation": "The exists() method returns true if the file or directory denoted by this abstract pathname exists.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the read() method of the FileReader class return when it reaches the end of the file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "-1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "null"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Throws an exception"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 91871,
+      "Explanation": "The read() method returns -1 when the end of the file has been reached.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Java IO class is used to serialize an object to a stream?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ObjectSerializer"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ObjectWriter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ObjectOutputStream"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ObjectOutput"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 91872,
+      "Explanation": "ObjectOutputStream is used to write objects to a stream.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is not a method of PrintWriter class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "printf()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "format()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "write()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "serialize()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 91873,
+      "Explanation": "PrintWriter class does not have serialize() method; it&apos;s related to ObjectOutputStream.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which class do you use to write data that can be easily read by a BufferedReader in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "FileInputStream"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FileWriter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "OutputStream"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "PrintWriter"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 91874,
+      "Explanation": "PrintWriter can be used for writing character data, which can then be read using BufferedReader.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following streams is used to read from an existing file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "FileWriter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FileInputStream"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "FileOutputStream"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ObjectOutputStream"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 91875,
+      "Explanation": "FileInputStream is used to read data from a file in the form of a sequence of bytes.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What method is used to write an array of bytes in an OutputStream?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "writeBytes(byte[] b)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "write()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "write(int b)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "write(byte[] b)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 91876,
+      "Explanation": "write(byte[] b) method writes an array of bytes to the OutputStream.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in DataOutputStream class is used to write a double value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "write()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "writeDouble(double v)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "writeDoubleValue(double v)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "writeDouble()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 91877,
+      "Explanation": "writeDouble(double v) method writes a double value to the DataOutputStream.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these classes is used to read data from a string in memory?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "StringBufferInput"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "StringReader"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "InputStream"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "BufferReader"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 91878,
+      "Explanation": "StringReader is used to read data from a string as if it were a stream of characters.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which stream is used in Java to read primitive data types from a file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "BufferedInputStream"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FileInputStream"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DataInputStream"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "InputStream"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 91879,
+      "Explanation": "DataInputStream allows an application to read Java primitive data types from an underlying input stream.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which class to use for reading a file as a stream of characters?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "FileInputStream"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FileOutputStream"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "FileReader"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Reader"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 91880,
+      "Explanation": "FileReader is used to read streams of characters.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the superclass of DataInputStream and DataOutputStream?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "InputStream"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "OutputStream"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "FilterInputStream and FilterOutputStream"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ObjectStream"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 91881,
+      "Explanation": "FilterInputStream is the superclass of DataInputStream and FilterOutputStream is the superclass of DataOutputStream.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a valid way to chain buffered streams for writing characters to a file?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "new BufferedWriter(new FileWriter(\"file.txt\"))"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "new FileWriter(new BufferedWriter(\"file.txt\"))"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "new BufferedOutputStream(new FileWriter(\"file.txt\"))"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "new BufferedReader(new FileWriter(\"file.txt\"))&nbsp;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6842,
+      "QuestionTypeId": 0,
+      "QuestionId": 102280,
+      "Explanation": "BufferedWriter wraps a Writer like FileWriter to buffer character output.",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

@@ -1,0 +1,966 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "<strong></strong>Which of the following is correct with respect to OOP concept in Python?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Objects are real world entities while classes are not real.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Classes are real world entities while objects are not real.<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both objects and classes are real world entities.<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both object and classes are not real.<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 81457,
+      "Explanation": "In OOP, classes are basically the blueprint of the objects. They doesnot have physical existence.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How many objects and reference variables are there for the given Python code?<br>class A:<br>&nbsp;&nbsp; &nbsp;print(\"Inside class\")<br>A()<br>A()<br>obj=A()<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2 and 1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3 and 3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3 and 1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "3 and 2"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 81458,
+      "Explanation": "obj is the reference variable here and an object will be created each time A() is called.So there will be 3 objects created.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which of the following is False with respect Python code?<br>class Student:<br>&nbsp;&nbsp;&nbsp; def __init__(self,id,age):<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; self.id=id<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; self.age=age<br><br>std=Student(1,20)<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "\"std\" is the reference variable for object Student(1,20)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "id and age are called the parameters."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Every class must have a constructor."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 81459,
+      "Explanation": "It is not mandatory for a class to have a constructor.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of below Python code?<br>class Student:<br>&nbsp;&nbsp;&nbsp; def __init__(self,name,id):<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; self.name=name<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; self.id=id<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; print(self.id)<br><br>std=Student(\"Simon\",1)<br>std.id=2<br>print(std.id)<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1<br>1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1<br>2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2<br>1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "2<br>2"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 81460,
+      "Explanation": "Here std object is created for student class and in constructor we are printing self.id which is 1 (first time). and after words we are modifying std.id = 2 and printing same . hence output will be 1 and 2.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of below Python code?<br>class A():<br>&nbsp;&nbsp;&nbsp; def __init__(self,count=100):<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; self.count=count<br><br>obj1=A()<br>obj2=A(102)<br>print(obj1.count)<br>print(obj2.count)<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "100<br>100"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "100<br>102"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "102<br>102"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 81461,
+      "Explanation": "By default,the value of \"count\" is 100, so obj1.count=100. For second object, value of \"count\" is 102, so obj2.count=102.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is correct?<br><br>class A:<br>&nbsp;&nbsp;&nbsp; def __init__(self,name):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; self.name=name<br>a1=A(\"john\")<br>a2=A(\"john\")",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "id(a1) and id(a2) will have same value.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "id(a1) and id(a2) will have different values.<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Two objects with same value of attribute cannot be created.<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 81462,
+      "Explanation": "Although both a1 and a2 have same value of attributes,but these two point to two different object. Hence, their id will be different.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is correct?<br>class A:<br>&nbsp;&nbsp;&nbsp; def __init__(self):<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; self.count=5<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; self.count=count+1<br><br>a=A()<br>print(a.count)<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 81463,
+      "Explanation": "It will throw an error as inside constructor, \"count\" is not defined.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is correct?<br>class Book:<br>&nbsp;&nbsp; &nbsp;def __init__(self,author):<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;self.author=author<br>book1=Book(\"V.M.Shah\")<br>book2=book1<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Both book1 and book2 will have reference to two different objects of class Book."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "id(book1) and id(book2) will have same value."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will throw error as multiple references to same object is not possible."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 81464,
+      "Explanation": "book1 and book2 will reference to the same object. Hence, id(book1) and id(book2) will have same value.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In python, what is method inside class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "attribute<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "object<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "argument<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "function<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 81465,
+      "Explanation": "In OOP of Python, function is known by \"method\".<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of below Python code?<br>class A:<br>&nbsp;&nbsp;&nbsp; def __init__(self,num):<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; num=3<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; self.num=num<br><br>&nbsp;&nbsp; &nbsp;def change(self):<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; self.num=7<br><br>a=A(5)<br>print(a.num)<br>a.change()<br>print(a.num)<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5<br>7"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "5<br>5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3<br>3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "3<br>7"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 81466,
+      "Explanation": "Inside constructor, self.num=3. First print statement prints 3. As, method change() is invoked, self.num=7 and hence second print statement prints 7.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "_________ is used to create an object.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Class Destructor<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Constructor"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "User defined functions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "In built functions"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 70188,
+      "Explanation": "In Python, an object is created using the class constructor. This is done using the following syntax:<br>object_name = ClassName(arguments)",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the use of id() function in python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It returns the identity of the object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Every object doesn\u2019t have a unique id"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "All of the mentioned"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 70618,
+      "Explanation": "The id() function returns a unique id for the specified object. All objects in Python has its own unique id. The id is assigned to the object when it is created.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following correctly defines a class in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "class MyClass[object]:"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "new MyClass(object):"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "class MyClass(object):"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "define MyClass(object):"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 93092,
+      "Explanation": "The correct syntax to define a class is &apos;class MyClass(object):&apos;. The keyword &apos;class&apos; is used followed by the class name and parentheses containing &apos;object&apos;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is required to instantiate an object from a class in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Execute a function with the class name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Call the class directly with parentheses"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use an import statement with the class name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Assign the class name to a variable"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 93093,
+      "Explanation": "In Python, you instantiate an object by calling the class directly with parentheses, which invokes the class&apos;s __init__ method.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods in a class is a constructor?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "__add__"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "__start__"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "__init__"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "__new__"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 93094,
+      "Explanation": "The method __init__ is used as a constructor in Python to initialize the object&apos;s attributes.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Python, which keyword is used to refer to the current instance of a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "this"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "self"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "current"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "instance"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 93095,
+      "Explanation": "The keyword &apos;self&apos; is used in a class to refer to the instance of the class currently being accessed.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When is the __del__ method called in a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When an object is created"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When an object's memory is released"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When a module is imported"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When a function finished execution"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 93096,
+      "Explanation": "The __del__ method is called when an object&apos;s memory is about to be freed by the garbage collector.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a feature of an object's encapsulation in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Inheritance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Polymorphism"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Data hiding"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Synchronization"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 93097,
+      "Explanation": "Encapsulation is characterized by data hiding, which is achieved using private variables or methods within a class.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why are instance variables used in Python classes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To define non-unique attributes shared by all instances"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To define unique attributes for each object instance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To act as constants across the program"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To store local function variables"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 93098,
+      "Explanation": "Instance variables are used to define attributes unique to each object instance, allowing objects to maintain different states.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement about class methods and static methods in Python is correct?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Class methods can modify object instance data"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Static methods require a cls parameter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Class methods modify class-level data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Static methods can not access or modify class state"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 93099,
+      "Explanation": "Static methods do not access or modify the class state as they do not take the &apos;self&apos; or &apos;cls&apos; parameter.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement correctly initializes a class attribute?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "self.attribute = 5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "MyClass.attribute = 5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "attribute = 5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "__init__.attribute = 5"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 93100,
+      "Explanation": "Class attributes are initialized using the class name, e.g., MyClass.attribute = 5, so that they are shared across all class instances.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can a method be overridden in a subclass in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Redefine the method in the subclass"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Define the method with a different name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use an import statement"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Modify the method in the superclass"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 93101,
+      "Explanation": "A method can be overridden in a subclass by redefining the method with the same name and parameters within the subclass.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true about Python objects?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Objects in Python do not require a class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "All Python objects are instances of some class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Objects are not reusable"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only built-in types can be objects"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 93102,
+      "Explanation": "In Python, all objects are instances of some class, either user-defined or built-in types.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the 'pass' statement in a class definition?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To reject invalid attribute access"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To end a class definition"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To create a placeholder for future code"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To directly return a value"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 93103,
+      "Explanation": "&apos;pass&apos; is used as a placeholder within a block where future code will be added, allowing for an empty class definition without error.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What effect does 'self.var_name = value' have in a Python class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It creates a class variable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It creates an instance variable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It deletes an existing variable"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It modifies a class's method"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 93104,
+      "Explanation": "The statement &apos;self.var_name = value&apos; creates or modifies an instance variable, unique to each object instance.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if the __str__ method is defined in a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The class cannot be instantiated"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It allows custom messages when the object is converted to a string"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The instances cannot be copied"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The class will execute all methods automatically"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 93105,
+      "Explanation": "Defining the __str__ method allows an object to represent itself with a custom message when converted to a string via str() or print().",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following code snippets correctly calls a parent class's method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "super().parentMethod()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "base.parentMethod()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Parent.parentMethod()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "self.parentMethod()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 93106,
+      "Explanation": "In a derived class, &apos;super().parentMethod()&apos; correctly calls a method from the parent class using Python&apos;s &apos;super()&apos; function.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which feature of classes allows different class instances to respond to the same method call?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Encapsulation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Polymorphism"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Inheritance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Instantiation"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 93107,
+      "Explanation": "Polymorphism allows objects of different classes to respond to the same method call, each in its own way.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the 'self' parameter signify in a Python method within a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It's a placeholder for the current module"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It refers to the instance variable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It indicates a static method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It means the method is private"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 93108,
+      "Explanation": "&apos;self&apos; refers to the instance of the class upon which the method is being called, allowing access to instance attributes and other methods.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in Python is equivalent to a destructor?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "__init__"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "__delete__"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "__del__"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "__remove__"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 93109,
+      "Explanation": "The method __del__ acts as a destructor, invoked when an object is about to be destroyed by garbage collection.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Python, how can you change the value of a class variable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using self.variable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using ClassName.variable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By importing the class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using a 'change' function"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 93110,
+      "Explanation": "To change a class variable, you should use &apos;ClassName.variable&apos;, which ensures the change applies across all class instances.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you define a method in Python that belongs to a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "function method_name(self):"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "define method_name()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "def method_name(self):"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "method method_name(class):"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 1212,
+      "QuestionTypeId": 0,
+      "QuestionId": 93111,
+      "Explanation": "A method in Python belonging to a class is defined using &apos;def method_name(self):&apos;, where &apos;def&apos; begins the function definition and &apos;self&apos; refers to the class instance.",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

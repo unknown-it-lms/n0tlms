@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Notes - MySQL_Truncate clause</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  body{font-family:system-ui,Segoe UI,Roboto,Arial;max-width:900px;margin:24px auto;padding:18px;line-height:1.6;color:#111}
+  h1{font-size:1.4rem;margin-bottom:0.6rem}
+  .topic{font-weight:700;margin-top:1rem}
+  .subtopic{font-weight:600;margin-top:0.8rem}
+  .content{margin:0.6rem 0 1.2rem 0}
+  pre{white-space:pre-wrap;background:#f7f7f7;padding:10px;border-radius:6px;overflow:auto}
+  img{max-width:100%;height:auto}
+  table{border-collapse:collapse;width:100%}
+  table, th, td{border:1px solid #ccc;padding:6px}
+</style>
+</head>
+<body>
+<h1>Notes: MySQL- Truncate clause</h1>
+
+<div class="courseware topic">Truncate clause</div><div class="courseware content"><hr>The MySQL TRUNCATE TABLE statement is used to delete only the data of an existing table.<span style="color:#2980b9;"><strong> Structure of he table remains intact</strong></span>.<br><br>This command helps to TRUNCATE a table completely with single command insted of deleting rows one by one.&nbsp;&nbsp;<br>This is a <span style="color:#2980b9;"><strong>DDL statement</strong></span>, hence records deleted using truncate will not be recovered by any command.<br>TRUNCATE is a DDL(Data Definition Language) command and is used to delete all the rows or tuples from a table.<strong><span style="color:#2980b9;"> Truncate dose not support where clause</span></strong>, hence all rows will be deleted. So if the requirement is to delete all rows from the relation, then truncate can be used. Since it is DDL command, it cannot be rolled back.&nbsp; TRUNCATE command is fast.&nbsp;&nbsp;​​​​​​​<br><strong>Syntax:</strong><br><br><strong><span style="color:#f1c40f;">TRUNCATE TABLE </span></strong>table_name<br><br>​​​​​​​Here all rows from table product will be deleted, but structure is preserved. Hence, describe structure will show the table structure, but data set will be empty.<br>&nbsp;</div>
+<div class="courseware subtopic">Truncating table structure</div><div class="courseware content"><hr><strong><span style="color:#3498db;">Deletion of tables rows in DBMS is done using DELETE Clause or a TRUNCATE&nbsp; Clause</span></strong>. Let us see the comparison between delete and truncate.&nbsp; &nbsp;<br><strong>Example :</strong><br>TRUNCATE TABLE emp;<br>This command will delete all the data from emp table and this data will not be recovered.<br></div><div class="courseware subsubtopic">Difference between delete and truncate&nbsp; &nbsp;&nbsp;</div><br><table border="1" cellspacing="1" cellpadding="1" style="width: 100%;"><tbody><tr><td style="text-align: center;"><div class="courseware content"><strong>DELETE Clause&nbsp;</strong></div></td><td style="text-align: center;"><div class="courseware content"><strong>TRUNCATE Clause</strong></div></td></tr><tr><td><div class="courseware content">DML Command</div></td><td><div class="courseware content">DDL Command</div></td></tr><tr><td><div class="courseware content">Transactions can be rolled back after delete clause.</div></td><td><div class="courseware content">Transactions can not be rolled back after truncate clause.</div></td></tr><tr><td><div class="courseware content">Delete statement supports where clause.</div></td><td><div class="courseware content">There is no where clause in truncate.</div></td></tr><tr><td><div class="courseware content">User can delete selected rows using delete.</div></td><td><div class="courseware content">All rows will be deleted.</div></td></tr></tbody></table><br>​​​​​​​<div class="courseware subtopic">Drop Table<hr>​​​​​​​</div>
+
+
+</body>
+</html>

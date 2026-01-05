@@ -1,0 +1,1266 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "In Python, what is the main use of method overloading?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To execute multiple methods of the same name in sequence."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To define multiple methods with the same name, a different number of parameters, and different parameter types."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To define a method in a subclass with the same name as a method in the superclass."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To enable a single method to produce different outputs depending on its input type."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93112,
+      "Explanation": "Method overloading allows defining multiple methods with the same name but different signatures (number and/or types of parameters) in some other programming languages. However, Python does not support method overloading directly; it can be achieved using default arguments or variable length arguments.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Python library provides some support for function overloading?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "functools"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "operator"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "itertools"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "multiprocessing"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93113,
+      "Explanation": "The &apos;functools&apos; library in Python provides tools for working with higher-order functions, including decorators like &apos;singledispatch&apos; which can be used to achieve function overloading.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does Python determine which overloaded method to execute?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By checking the return type of the methods."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By checking the number of arguments passed."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Python does not support true method overloading."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By checking the method names and return types."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93114,
+      "Explanation": "Python does not support method overloading in the same way that languages like Java or C++ do. Function arguments in Python can be specified in different ways (e.g., default parameters), but Python does not natively distinguish methods with the same name based solely on their argument types or counts.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if you try to define two methods with the same name and different parameters in a Python class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The program will throw an error."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only the last method definition will be used."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both methods will be available based on their parameter lists."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The program will execute both methods."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93115,
+      "Explanation": "In Python, if you define two methods with the same name, the last method will override any previous ones. Python does not natively support method overloading.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following decorators can be used to achieve a form of function overloading in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@staticmethod"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@classmethod"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@functools.lru_cache"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@functools.singledispatch"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93116,
+      "Explanation": "The @functools.singledispatch decorator can be used to create a single-dispatch generic function which allows overloading based on the type of the first argument.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the context of Python, what does 'overloading' typically refer to?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Defining multiple subclasses in a class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Defining multiple methods with different names but the same functionality."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Creating multiple methods with the same name with different implementations based on parameter count or types."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Utilizing external libraries in a project."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93117,
+      "Explanation": "While Python does not support method overloading directly, programmers often use the term &apos;overloading&apos; to describe defining functions with the same name but different signatures. This is often handled using variable length arguments or decorators.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method of defining functions can help simulate overloading in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using default and variable-length arguments."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using static methods."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using class methods."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using private methods."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93118,
+      "Explanation": "You can simulate method overloading in Python by using default and variable-length arguments (e.g., *args, **kwargs), which allows a single function to handle multiple parameter types and counts.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If you want to overload a __add__ operator using a class in Python, which method should you define?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "__append__"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "__overload_add__"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "__add__"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "__addition__"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93119,
+      "Explanation": "The __add__ method can be defined in a class to overload the &apos;+&apos; operator for instances of that class.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a common way to handle operations usually associated with method overloading in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using method chaining within functions."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using *args and **kwargs for flexible arguments."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Checking types inside the function body."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using decorators like @functools.singledispatch."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93120,
+      "Explanation": "Method chaining is a technique used for invoking multiple methods sequentially, whereas method overloading is achieved through flexible argument lists, type checking, or using decorators like @functools.singledispatch.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of function is a 'single-dispatch generic function' in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A function that can accept a variety of argument types, determining the function logic at runtime based on the type of its first argument."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A function that dispatches tasks to multiple processors simultaneously."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A function that uses single threading to execute tasks."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A function specifically designed for network communication."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93121,
+      "Explanation": "A single-dispatch generic function uses the @functools.singledispatch decorator to define a function that can behave differently based on the type of the first argument, effectively allowing a form of function overloading.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is inheritance in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A way to define a function within a class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A mechanism to restrict access to some of the class components"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A way to create a new class from an existing class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A technique to iterate over a sequence"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93122,
+      "Explanation": "Inheritance in Python allows you to create a new class (derived class) from an existing class (base class), inheriting its attributes and methods.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is used to define inheritance in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "def"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "import"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "pass"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93123,
+      "Explanation": "In Python, the keyword &apos;class&apos; is used to define a new class, and you can specify its parent class in parentheses to establish inheritance.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct way to define a subclass that inherits from a base class in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "class Subclass inherits BaseClass:"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "class Subclass(BaseClass):"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "class Subclass == BaseClass:"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "class Subclass -> BaseClass:"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93124,
+      "Explanation": "The correct syntax is &apos;class Subclass(BaseClass):&apos; which defines Subclass as a child class inheriting from BaseClass.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which is a feature of inheritance that allows a subclass to acquire methods from its superclass?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Overloading"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Overwriting"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Overriding"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Overreaching"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93125,
+      "Explanation": "<span id=\"explanation93125\" style=\"color:blue\">Method overriding allows a subclass to provide a specific implementation of a method that is already defined in its superclass</span><span style=\"color:#0000ff;\">. The feature of inheritance that allows a subclass to acquire and redefine methods from its superclass is called method overriding.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a class is derived from multiple classes, it is an example of:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Single inheritance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Multiple inheritance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Hierarchical inheritance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Multilevel inheritance"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93126,
+      "Explanation": "When a class is derived from more than one base class, it is called multiple inheritance.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is called when an object is created in a subclass?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "__del__"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "__main__"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "__init__"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "__call__"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93127,
+      "Explanation": "The __init__ method is a special method called a constructor, which is automatically invoked when a new object is instantiated from a class.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What keyword allows you to call a method from a superclass in a child class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "super()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "self"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "base"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "parent()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93128,
+      "Explanation": "The super() function is used to call methods from a superclass in the context of a subclass.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Python, what will be the result if two classes derive from the same superclass and are inherited by another subclass?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Multiple inheritance error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Cyclic inheritance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Method Resolution Order (MRO) in effect"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Ambiguous superclass"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93129,
+      "Explanation": "The Method Resolution Order (MRO) determines the order in which methods are inherited in the presence of multiple inheritance.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the context of inheritance, what does it mean to 'override' a method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To extend the functionality of a method"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To create a completely new method in a child class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To replace a method in the superclass with a new version in the subclass"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To rename a method in the subclass"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93130,
+      "Explanation": "Overriding a method means providing a new implementation for an inherited method in the subclass.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these types of inheritance allows a derived class to inherit features from a single parent class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Hierarchical inheritance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Multiple inheritance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Multilevel inheritance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Single inheritance"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93131,
+      "Explanation": "Single inheritance involves a derived class inheriting attributes and methods from only one parent class.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main disadvantage of using multiple inheritance?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Complexity of managing dependencies"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Reduced code flexibility"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Less reuse of code"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Increased redundancy"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93132,
+      "Explanation": "Multiple inheritance can introduce complex dependencies and is often more difficult to manage due to potential conflicts.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What function in Python would provide the list of base classes for a specific class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "bases()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "super()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "parents()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "__bases__"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93133,
+      "Explanation": "The __bases__ attribute of a class provides a tuple of the base classes from which the class inherits.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement best describes the 'super()' function in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It accesses all the derived class methods."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It calls a static method from a child class."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It returns a temporary object of the superclass."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It returns a permanent object of the superclass."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93134,
+      "Explanation": "The super() function allows you to call methods from a parent class by returning a temporary object of the superclass.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Python, which of the following best defines multilevel inheritance?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A class derived from one single parent class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A class derived from multiple classes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A class with one or more levels of inheritance from multiple parents"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A class derived from a subclass"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93135,
+      "Explanation": "<span id=\"explanation93135\" style=\"color:blue\">Multilevel inheritance is when a class (child class) is derived from a derived class (subclass).</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if a child class in Python does not call the __init__ method of its superclass?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The child class will inherit the __init__ method automatically."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The attributes defined in the superclass' __init__ will not be initialized in the child class."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The program will throw an error."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The child class will not be able to override any methods."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93136,
+      "Explanation": "If the child class doesn&apos;t explicitly call the superclass&apos; __init__ method, the attributes initialized in the superclass&apos; __init__ method will not be available in the child class.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is method overriding in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A way to inherit methods from a parent class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The process of defining a method with the same name and parameters in a subclass."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The process of overloading a method with different parameters."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A mechanism of changing class attributes."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93137,
+      "Explanation": "Method overriding occurs when a subclass defines a method with the same name and signature as a method in its superclass, allowing the subclass to provide a specific implementation.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about method overriding?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only class methods can be overridden, not instance methods."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A method m  ust be overridden in every subclass for it to work."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It's used to change the behavior of inherited methods."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Overriding methods does not allow implementing polymorphic behavior."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93138,
+      "Explanation": "Method overriding is primarily used to modify or extend the behavior of inherited methods to fit the subclass needs.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Python, which keyword is commonly associated with method overriding for clarifying code?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "override"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "super"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "base"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "this"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93139,
+      "Explanation": "The &apos;super&apos; keyword is often used in overriding to call the parent class method while still allowing the child class to extend its functionality.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you do not use 'super()' in a method that overrides a parent class method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The child method will not execute properly."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The parent method will still execute."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The child method shadows the parent method completely."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Python will raise a syntax error."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93140,
+      "Explanation": "Without &apos;super()&apos;, the child method will completely overshadow the parent method, meaning the parent method&apos;s implementation will not be called unless explicitly done.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In what scenario would method overriding be necessary?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When scaling the number of parameters a function can take."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When a subclass needs to implement the same functionality as a superclass."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When a subclass needs to have its own version of a method that's different from its superclass."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When removing attributes from a parent class."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93141,
+      "Explanation": "Method overriding is necessary when a subclass needs its own version of a method that already exists in the parent class, usually to change or extend the functionality.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method ensures calling both overridden and parent class methods in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "super()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "overwrite()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "override()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "parent()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93142,
+      "Explanation": "The &apos;super()&apos; method is used to access parent class methods in a child class when methods are overridden.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a benefit of method overriding?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It allows a subclass to provide a specific implementation of a method."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Promotes code reuse."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Increases the number of parameters a method can accept."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Promotes polymorphism."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93144,
+      "Explanation": "Method overriding focuses on providing specialized implementations of methods in subclasses, not altering method signatures or parameters.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In method overriding, if a super() call is used in the overriding method, what is the typical order of operations?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only the child method runs."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Parent method runs after the child method."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The parent method runs before or after the child method depending on where super() is called."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Parent method cannot be called."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93145,
+      "Explanation": "<span id=\"explanation93145\" style=\"color:blue\">The parent method can be called with &apos;super()&apos; at any point in the child method, either before or after the overridden logic.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the context of overriding, what does polymorphism allow?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Methods to be overridden without changes to the base class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Handling of different types of classes without knowing their exact class types."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Functions to have multiple parameters."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Classes to inherit multiple features."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93146,
+      "Explanation": "Polymorphism allows methods to be used on objects of different classes as if they are instances of the same class, crucially benefiting from method overriding.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which outcome would result from failing to properly override a method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The code execution fails."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Errors are al  ways raised."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The base class method is executed instead of the intended subclass method."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The intended method is compiled incorrectly."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93147,
+      "Explanation": "If a method is not properly overridden, the implementation in the superclass will be used when calling the method on a subclass instance.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What keyword directly facilitates polymorphism in method overriding?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "super"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "init"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93148,
+      "Explanation": "The &apos;super&apos; keyword is used to access the overridden method in the superclass and facilitates polymorphism by allowing dynamic method calls.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does the use of @staticmethod affect method overriding?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Makes methods final hence non-overridable."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Allows the method to be overridden in subclasses."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Prevents the method from being overridden."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Turns the method into a class method."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93149,
+      "Explanation": "<span id=\"explanation93149\" style=\"color:blue\">@staticmethod makes methods that do not depend on instance data and are typically not overridden because they lack access to the object instance context.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be printed by the following code?<br><br>class A:<br>&nbsp;&nbsp;&nbsp;&nbsp;def display(self):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return \"Class A\"<br><br>class B(A):<br>&nbsp;&nbsp;&nbsp;&nbsp;def display(self):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return \"Class B \" + super().display()<br><br>b = B()<br>print(b.display())",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Class A"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Class B Class A"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Class B"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93150,
+      "Explanation": "<span id=\"explanation93150\" style=\"color:blue\">The &apos;display&apos; method in class B calls &apos;super().display()&apos; to get the output from class A&apos;s &apos;display&apos;, concatenating it with &apos;Class B&apos;.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the context of inheritance, which is NOT related to method overriding?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Encapsulation."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Dynamic method dispatch."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Subtype polymorphism."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Providing a specific implementation for inherited methods."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93151,
+      "Explanation": "Method overriding is related to dynamic method dispatch and polymorphism, allowing specific method implementations. Encapsulation involves data hiding and is not directly related to overriding.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following decorator types in Python is used to define class methods?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@staticmethod"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@abstractmethod"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@classmethod"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@property"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 93008,
+      "Explanation": "The @classmethod decorator in Python is used to define methods that belong to the class rather than an instance of the class. The first parameter is a reference to the class itself rather than the instance.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be output of following code?<br>class Parent:<br>&nbsp;&nbsp;&nbsp; def __init__(self, param):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; self.v1 = param<br><br>class Child(Parent):<br>&nbsp;&nbsp;&nbsp; def __init__(self, param):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; self.v2 = param<br><br>obj = Child(11)<br>print(obj.v1 + \" \" + obj.v2)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "None None"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "None 11"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "11 None"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error is generated by program"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 70624,
+      "Explanation": "Child instance has no attribute &apos;v1&apos;.&nbsp; self.v1 was never created as a variable since the Parent __init__ was not explicitly called.<br>AttributeError: &apos;Child&apos; object has no attribute &apos;v1&apos; error get generated.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What gets printed by the code below?<br>class Person:<br>&nbsp;&nbsp;&nbsp; def __init__(self, id):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; self.id = id<br><br>obama = Person(100)<br>obama.__dict__['age'] = 49<br>print(obama.age + len(obama.__dict__))",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "49"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "51"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 537,
+      "QuestionTypeId": 0,
+      "QuestionId": 70629,
+      "Explanation": "We have created a member variable named &apos;age&apos; by adding it directly the objects dictionary.&nbsp; The value of &apos;age&apos; is initialized to 49. There are 2 items in the dictionary, &apos;age&apos; and &apos;id&apos;,&nbsp; therefore the sum of the &apos;age&apos; value 49 and the n size of the dictionary, 2 items, is 51. <br>",
+      "Answer": "D",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

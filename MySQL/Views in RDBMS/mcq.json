@@ -1,0 +1,1506 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is a view in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A temporary table that stores data"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A stored procedure for storing queries"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A virtual table based on the result-set of a SELECT query"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A backup method for the database"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 92422,
+      "Explanation": "A view is a virtual table that is generated from a SELECT query. It does not store the data itself.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you create a view in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CREATE VIEW view_name AS SELECT column1, column2 FROM table_name;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "CREATE TABLE view_name (column1, column2);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "INSERT INTO view_name SELECT column1, column2 FROM table_name;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "UPDATE VIEW view_name SET column1 = value1;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 92423,
+      "Explanation": "The syntax to create a view is &apos;CREATE VIEW view_name AS SELECT column1, column2 FROM table_name;&apos;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which clause is NOT applicable when creating a view in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ORDER BY"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "GROUP BY"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "HAVING"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SET OPTION"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 92424,
+      "Explanation": "The &apos;SET OPTION&apos; clause is not applicable to views. ORDER BY, GROUP BY, and HAVING can be used in the SELECT query for a view.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can a view be updated in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, always"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, never"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, but only if it maps to a single table and certain conditions are met"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Yes, but only if it includes a WHERE clause"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 92425,
+      "Explanation": "A view can be updated as long as it maps directly to a single table, doesn&apos;t include GROUP BY, HAVING, aggregate functions, and meets certain other conditions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens when you drop a view that is currently being used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The data will be deleted"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An error is returned and no changes are made"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The view is dropped and queries referring to it will fail"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The database will become corrupt"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 92426,
+      "Explanation": "Dropping a view will remove it, and any queries that refer to this view will fail as the view no longer exists.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command is used to remove a view from MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DELETE VIEW view_name;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "REMOVE VIEW view_name;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DROP VIEW view_name;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ERASE VIEW view_name;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 92427,
+      "Explanation": "The command to remove a view is &apos;DROP VIEW view_name;&apos;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you see the structure of a view in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SHOW STRUCTURE OF view_name;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DESCRIBE view_name;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SHOW CREATE VIEW view_name;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "LIST VIEW view_name;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 92428,
+      "Explanation": "The &apos;SHOW CREATE VIEW view_name;&apos; command is used to see the structure and the query that defines a view.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a characteristic of MySQL views?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Views can hide complexity by encapsulating complex queries"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Views can store data physically to improve performance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Views can enhance security by restricting data access"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Views are used to present data in a particular format"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 92429,
+      "Explanation": "Views do not store data physically; they are virtual tables that represent data from other tables.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the consequence of modifying base tables associated with a view?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "No changes will be reflected in the view"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Changes will be automatically reflected in the view"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "You need to manually refresh the view to see changes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The view will be deleted"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 92430,
+      "Explanation": "Views reflect the current data of the base tables, so any modifications to the base tables are automatically updated in the view.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When is a view considered 'updatable'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When it includes joins from multiple tables"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When all columns come only from one table and it includes a primary key"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When it contains aggregate functions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When it uses subqueries"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 92431,
+      "Explanation": "A view is updatable if it includes columns from only one base table and includes the table&apos;s primary key.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which MySQL statement is correct about views and permissions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The creator of a view cannot grant others access to the view"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Privileges cannot be set on views"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Access to view data can be controlled independently of table data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Everyone has access to all views by default"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 92432,
+      "Explanation": "Permissions can be set on views separately from base tables, providing controlled access to specific data.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which version of MySQL were views first introduced?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "MySQL 3.23"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "MySQL 5.0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "MySQL 4.1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MySQL 8.0"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 92433,
+      "Explanation": "Views were first introduced in MySQL version 5.0.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the CASCADED keyword do when used with the DROP VIEW command?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It deletes associated base tables"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It removes only the view without dependencies"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It removes the view and dependent views that reference it"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It resets permissions on the view"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 92434,
+      "Explanation": "The CASCADED option will drop the view and any other views that are dependent on it.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can a view be created from another view in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only if the original view doesn\u2019t use JOIN clauses"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only in certain storage engines"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 92435,
+      "Explanation": "Yes, a view can be created from the result of another view.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why might one use the ALGORITHM clause when creating a view?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To specify the storage engine for the view"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To define the update strategy for the view"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To determine how MySQL processes the view"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To set the execution path of SQL statements in the view"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 92436,
+      "Explanation": "The ALGORITHM clause specifies how the view is processed (MERGE or TEMPTABLE) by MySQL.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct way to update a view's definition in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ALTER VIEW view_name AS SELECT ...;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "UPDATE VIEW view_name SET ...;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "REPLACE VIEW view_name SELECT ...;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MODIFY VIEW view_name AS SELECT ...;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 92437,
+      "Explanation": "To modify a view&apos;s definition, use &apos;ALTER VIEW view_name AS SELECT ...;&apos;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is one advantage of using views in MySQL databases?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They can replace functions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They can be indexed like tables"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They can be used to simplify complex queries"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They occupy less memory than stored procedures"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 92438,
+      "Explanation": "Views can help simplify complex queries by encapsulating them into a reusable form.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which characteristic of a view might impact performance?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Views can be cached and precomputed"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Views always run faster than base queries"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Views execute the underlying query each time they are accessed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Views require less disk space than tables"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 92439,
+      "Explanation": "Views execute the underlying query each time they are accessed, which might impact performance compared to queries operating directly on tables.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which MySQL feature helps in managing changes to underling tables of a view?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CHECK OPTION"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "VIEW TRACKER"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DEPENDENCY MANAGER"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CHANGE CONTROL"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 92440,
+      "Explanation": "The CHECK OPTION clause ensures that any changes through the view do not violate the WHERE clause used in its definition.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a limitation of MySQL views?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "You cannot use JOINs within views"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Views cannot be indexed"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Views cannot perform aggregate functions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "You can only create a limited number of views"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 92441,
+      "Explanation": "Views are not physically stored, so you cannot create indexes on views directly, which might affect query performance.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following best describes a 'database view'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A physical copy of a subset of a database."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A resolved snapshot of data."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A virtual table derived from one or more tables."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A backup copy of the database."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 92728,
+      "Explanation": "A database view is a virtual table that does not store data physically and is derived from one or more base tables.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A view of database that appears to an application program is known as&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Schema"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Subschema"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "virtual table"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 76178,
+      "Explanation": "<span id=\"explanation76178\"></span><span>A subschema provides a view of the database as seen by an application program. This view is often a subset of the complete schema definition. A subschema is used at runtime to provide the RDBMS with a description of those portions of the database that are accessible to the application program.&nbsp; &nbsp; &nbsp; &nbsp;</span><br><span></span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is not true about a view?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is a definition of a restricted portion of the database"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It is a security mechanism"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is always updatable like any other table"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All are true"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 76207,
+      "Explanation": "Answer to be reviewed",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is an SQL virtual table that is constructed from other tables?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "view"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A relation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Just another table"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Query results"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 76704,
+      "Explanation": "Answer to be reviewed",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a view?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A view is a special stored procedure executed when certain event occurs."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A view is a virtual table which results of executing a pre-compiled query. A view is not part of the physical database schema, while the regular tables are."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A view is a database diagram."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of these"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 76629,
+      "Explanation": "Answer to be reviewed",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a view, WITH CHECK OPTION",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Specifies that only the rows that would be retrieved by the sub query can be inserted"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Specifies that only the rows that would be retrieved by the sub query can be updated"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Specifies that only the rows that would be retrieved by the sub query can be deleted"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Specifies that only the rows that would be retrieved by the sub query can be inserted,<br>updated, or deleted"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 74364,
+      "Explanation": "On a view we can apply DML opeartaions that containt insert, update and delete",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which&nbsp; statement about views is true?&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A view can be created as read only and as a join on two or more tables."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A view cannot have an ORDER BY clause in the SELECT statement"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A view cannot be created with a GROUP BY clause in the SELECT statement"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A view must have aliases defined for the column names in the SELECT statement"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 74451,
+      "Explanation": "Views are of 4 types<br>1. Complex view - View is created with two or more table.<br>2. Simple View<br>3. Read Only view - Can not perform DML operation.<br>4. Force View",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A logical description of some portion of database that is required by a user to perform task is called as",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "System View"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "User View"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Logical View"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Data View"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 74105,
+      "Explanation": "A logical description of some portion of database that is required by a user to perform task is called as <span style=\"color:#2ecc71;\">User View</span>. You can say that it is definition of user view.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<p>You are attempting to create the following view:<br>CREATE VIEW V1 <br>\u200b\u200b\u200b\u200b\u200b\u200b\u200bAS<br>&nbsp; &nbsp; &nbsp;SELECT ENAME, JOB, HIREDATE, SAL<br>&nbsp; &nbsp; &nbsp;FROM EMP<br>&nbsp; &nbsp; &nbsp;WHERE JOB='MANAGER'<br>&nbsp; &nbsp; ORDER BY ENAME;</p><p>Which clause will cause an error during this creation?</p>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CREATE VIEW V1 AS"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT ENAME, JOB, HIREDATE, SAL"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "WHERE JOB='MANAGER'"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No error."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 65121,
+      "Explanation": "<span id=\"explanation65121\">Script is correct. there is no any error.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a view, WITH CHECK OPTION",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Specifies that only the rows that would be retrieved by the sub query can be inserted.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "All visible and non-visible rows can be updated.<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Allows to delete any rows from the view.<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<span style=\"color:#000000\">It prevents updating of rows that are not visible in the view.</span><br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 64987,
+      "Explanation": "with check option is used after view query.&nbsp; It prevents  <span style=\"color:#000000\">updating of rows that are not visible in the view.</span> <br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a view, ____________ specifies that rows may only read from the base tables",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "WITH READ ONLY"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "WITH READ"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "READ ONLY"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "READ"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 64984,
+      "Explanation": "<span style=\"color:#e67e22;\">Syntax</span> for creating <span style=\"color:#e67e22;\">READ ONLY VIEW</span> is:<br><span style=\"color:#8e44ad;\">create view view_name<br>as<br>Select Query<br>with read only;</span><br><span style=\"color:#f39c12;\">Example:</span><br><span style=\"color:#2c3e50;\">create view abc<br>as<br>select * from emp<br>with read only;</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What&nbsp; will&nbsp; following query&nbsp; do?<br><br>SELECT d.dname, COUNT(empno) total<br>FROM dept d<br>INNER JOIN emp e<br>ON d.deptno=e.deptno<br>GROUP BY d.dname<br>HAVING COUNT(empno) &gt; 2;&nbsp;&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Will fetch count of all employees in the table ."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Will fetch those rows whose empno is greater than 2 ."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Will fetch those rows whose empno is greater than 2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Will fetch those rows whose empno is more than 2 for a perticular department."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 64980,
+      "Explanation": "<span id=\"explanation64980\">\u201cHAVING\u201d clause&nbsp; works&nbsp; similar as \u201cWHERE\u201d clause.&nbsp;&nbsp; Where clause is used when the condition is to be checked on column and having clause is used if the condition to be checked is on aggregate fuction.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "________ is a virtual table that draws it's data from&nbsp; the result of sql.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "view"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "index table"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "transaction"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the above.<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 86706,
+      "Explanation": "View in DBMS is a virtual table.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is NOT true for views in SQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Select statement used in the view definition cannot include ORDER BY clause."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A view drives its data from the base tables(s)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A view is updatable if it has been defined from a single relation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A view contains a copy of physical data"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 86696,
+      "Explanation": "A view contains a copy of the data",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What cannot be done on views ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Display"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Filter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Index"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Join"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 86656,
+      "Explanation": "We cannot use index on views, as views are virtual tables.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which of these is also known as a virtual table in MySQl?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SCHEMA"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DATABASE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "JOIN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "VIEW"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 86246,
+      "Explanation": "In MySQL, a \u2018View\u2019 is also called a virtual table. It does not contain any data but only appears as a table. It is an alternative way to show or describe a table similar to the original table.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A view can be deleted using the command __________<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "REMOVE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DELETE <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CLEAR"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DROP"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 86247,
+      "Explanation": "In MySQL, \u2018Views\u2019 act as virtual tables. Many operations can be performed on views like the operations on tables. A view can be created, displayed and dropped. They can also be used to perform calculations. .<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What cannot be done on a view?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "display"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "filter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "index"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "drop"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 86248,
+      "Explanation": "In MySQL, \u2018Views\u2019 act as virtual tables. It is not possible to create indexes on a view. However, they can be used for the views that are processed using the merge algorithm.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "You can perform ______ operation(s) on SQL Views?&nbsp; <br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Filter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Sort"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Join"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 86249,
+      "Explanation": "All of the above operation(s) can perform on SQL Views.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;_______ views help to keep the database up-to-date.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "View materialization"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "View isolation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "View updating"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "View maintenance"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 86250,
+      "Explanation": "Materialized views help to keep the database up-to-date.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which option in view is to ensure that all UPDATE and INSERTs satisfy the condition(s) in the view definition?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Uncheck"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "With Check"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Check"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "With"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 86251,
+      "Explanation": "<span id=\"explanation86251\">The purpose of the WITH CHECK OPTION is to ensure that all UPDATE and INSERTs satisfy the condition(s) in the view definition.&nbsp;&nbsp; </span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is also known as a virtual table?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SCHEMA"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DATABASE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "JOIN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "VIEW"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 76968,
+      "Explanation": "&nbsp;In MySQL, a &apos;View&apos; is also called a virtual table. It does not contain any data but only appears as a table. It is an alternative way to show or describe a table similar to the original table.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A View can be used to select a subset of the table columns.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "--"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "--"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 76969,
+      "Explanation": "In MySQL, a &apos;View&apos; is used to present a table in the database. It is a virtual table. It is also used to present a subset of the columns that are present in the original table of the database.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is xyz in the following statement? CREATE VIEW xyz AS SELECT a, b FROM t;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "table"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "column"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "view"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "database"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 76970,
+      "Explanation": "A &apos;View&apos; is created in MySQL by writing the clause &apos;CREATE VIEW&apos; followed by the view name. Then follows the list of column names of the table that are to be presented as the view.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A view can refer to multiple tables via __________",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "UNION"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "JOIN"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "GROUP"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 76971,
+      "Explanation": "In MySQL, a &apos;View&apos; can refer to multiple tables. This makes it a lot simpler to execute the queries involving joins. When a selection is made from the view, the join is executed producing the results.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A view can be deleted using the command __________",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "REMOVE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DELETE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CLEAR"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DROP"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 76972,
+      "Explanation": "&nbsp;In MySQL, &apos;Views&apos; act as virtual tables. Many operations can be performed on views like the operations on tables. A view can be created, displayed and dropped. They can also be used to perform calculations.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What cannot be done on a view?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "display"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "filter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "index"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "drop"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 76973,
+      "Explanation": "&nbsp; &apos;Views&apos; act as virtual tables. It is not possible to create indexes on a view. However, they can be used for the views that are processed using the merge algorithm.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What can be used to check for views that have been invalidated by DROP or ALTER operations?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CREATE TABLE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "VERIFY TABLE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DETAILS TABLE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CHECK TABLE table_name"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 76974,
+      "Explanation": "<span id=\"explanation76974\">A &apos;View&apos; is created in MySQL by writing the clause &apos;CREATE VIEW&apos; followed by the view name. Once a view is dropped or altered after being created, it can be checked by the &apos;CHECK TABLE&apos; clause.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following does not support materialized view?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "MySQL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Oracle"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "PostgreSQL"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SybaseSQL"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 76975,
+      "Explanation": "&nbsp;In MySQL, &apos;Views&apos; are treated a little differently than Oracle, PostgreSQL and SybaseSQL since they support materialized views and MySQL does not use the materialized view.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is NOT true for views in SQL?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Select statement used in the view definition cannot include ORDER BY clause."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A view drives its data from the base tables(s)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A view is updatable if it has been defined from a single relation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A view contains a copy of the data"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6541,
+      "QuestionTypeId": 0,
+      "QuestionId": 86323,
+      "Explanation": "Write explaination here..",
+      "Answer": "D",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

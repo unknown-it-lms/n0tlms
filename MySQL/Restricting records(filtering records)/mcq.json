@@ -1,0 +1,2886 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What does the DISTINCT clause do in a SQL SELECT statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It removes all columns from the results."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It calculates the sum of a column."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It filters out duplicate rows from the results."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It orders the results in descending order."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92070,
+      "Explanation": "The DISTINCT clause is used to return only distinct (different) values. In a SELECT statement, it eliminates duplicate rows from the results.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following SQL statements will return a list of unique city names from a table named 'Customers'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT DISTINCT city FROM Customers;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT UNIQUE city FROM Customers;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT city FROM Customers;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT DISTINCT * FROM Customers;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92071,
+      "Explanation": "The correct syntax to obtain unique values in SQL is &apos;SELECT DISTINCT column_name&apos;. Hence, &apos;SELECT DISTINCT city FROM Customers;&apos; will return unique city names.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a table has columns 'Name', 'Age', and 'Country', which query will give a result with unique combinations of 'Name' and 'Country'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT DISTINCT Name FROM table;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT Name, DISTINCT Country FROM table;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT DISTINCT Name, Country FROM table;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT DISTINCT FROM table WHERE Name AND Country;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92072,
+      "Explanation": "Using &apos;SELECT DISTINCT Name, Country&apos; will return rows that are distinct based on the combination of &apos;Name&apos; and &apos;Country&apos;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How would you filter records to get non-NULL entries in a column?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT * FROM table WHERE column IS NOT NULL;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT * FROM table WHERE column != NULL;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT * FROM table WHERE column <> NULL;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT * FROM table WHERE column BETWEEN NOT NULL;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92107,
+      "Explanation": "The IS NOT NULL syntax is used to filter out records with NULL values.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In MySQL, what does the LIMIT clause generally accomplish?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It sets a restriction on the number of rows returned by a query."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It confines the size of a database."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It restricts the number of columns in a table."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It defines the number of databases a user can create."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92075,
+      "Explanation": "The LIMIT clause is used in MySQL to restrict the number of rows returned in a result set from a query.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the correct syntax to retrieve the first 10 rows from a table named 'employees'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT * FROM employees LIMIT 0, 10;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT TOP 10 * FROM employees;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT * FROM employees LIMITED 10;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT * employees LIMIT 1 TO 10;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92076,
+      "Explanation": "In MySQL, using &apos;LIMIT 0, 10&apos; will retrieve the first 10 rows from the &apos;employees&apos; table, starting from the 0th row.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will the query 'SELECT * FROM orders LIMIT 5, 10;' return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "First 5 rows of the 'orders' table."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Rows 5 through 10 from the 'orders' table."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "56 rows following the first 5 rows of the 'orders' table."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "10 rows starting at the 6th record from the 'orders' table."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92077,
+      "Explanation": "The query &apos;SELECT * FROM orders LIMIT 5, 10;&apos; starts at the 6th record (index 5) and returns the next 10 rows.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does the LIMIT clause enhance performance in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By automatically indexing the filtered columns of a query."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By reducing the number of full table scans needed."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By decreasing the amount of data transferred between the server and client."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By caching the results to speed up future queries."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92078,
+      "Explanation": "The LIMIT clause can enhance performance by reducing the amount of data sent from the server to the client, thereby decreasing network load and improving retrieval time.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If you want to skip the first 100 entries in a table and get the next 20 entries, which LIMIT clause should be used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "LIMIT 20 OFFSET 100;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LIMIT 100 SKIP 20;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "LIMIT 100, 20;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "LIMIT 20 SKIP 100;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92079,
+      "Explanation": "Using &apos;LIMIT 100, 20&apos; skips the first 100 entries and fetches the next 20, starting from the 101st record.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following MySQL CASE statement syntax is correct when used inside a SELECT statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT column1, CASE WHEN condition THEN result1 ELSE result2 END FROM table;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT column1 CASE condition THEN result1 ELSE result2 END FROM table;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT column1, CASE result1 WHEN condition THEN result2 ELSE END FROM table;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT column1, CASE WHEN condition result1 THEN ELSE result2 END FROM table;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92080,
+      "Explanation": "The correct syntax for a CASE statement in MySQL within a SELECT statement is: SELECT column1, CASE WHEN condition THEN result1 ELSE result2 END FROM table; where the CASE statement is used to return the results conditionally.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a use case of the MySQL CASE statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is used to join tables together."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It is used to perform arithmetic calculations on data."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is used to perform conditional logic like returning different values based on certain conditions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is used to alter the structure of a table."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92081,
+      "Explanation": "The MySQL CASE statement is used to implement conditional logic in SQL queries, allowing the return of different values based on specified conditions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a MySQL CASE statement, what occurs if no WHEN clause matches and there is no ELSE clause?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The query throws an error."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The value 'NULL' is returned."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The default value in the database is returned."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The query execution halts."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92082,
+      "Explanation": "If no WHEN clause in a MySQL CASE statement matches and there is no ELSE clause, the statement returns NULL by default.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about MySQL CASE is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The CASE statement can include multiple ELSE clauses."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The CASE statement is case-sensitive."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The WHEN condition must evaluate to a boolean value."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The CASE statement can be used both in stored procedures and in direct SQL queries."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92083,
+      "Explanation": "MySQL CASE statements are versatile and can be used within SQL queries as well as stored procedures, allowing for conditional logic in various scenarios.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider the following query: SELECT CASE order_status WHEN 'Pending' THEN 'Awaiting Shipping' WHEN 'Shipped' THEN 'On the way' END FROM orders;. What will be the result if order_status is 'Processing'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Awaiting Shipping"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "On the way"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Processing"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "NULL"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92084,
+      "Explanation": "In the given query, no WHEN clause matches &apos;Processing&apos;, and since there is no ELSE clause provided, the result will be NULL.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the LIKE operator do when used with a wildcard '%'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Matches exactly one character"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Matches zero or more characters"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Matches a fixed length of characters"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No match is possible"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92109,
+      "Explanation": "The &apos;%&apos; wildcard in the LIKE operator matches zero or more characters in a string.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which regular expression pattern would you use in MySQL to find all records where the field 'name' starts with 'John'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "^John"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "John$"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[John]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "^(John)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92110,
+      "Explanation": "The &apos;^&apos; character matches the start of a string, so &apos;^John&apos; will match any &apos;name&apos; field that starts with &apos;John&apos;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To select records where the 'email' column contains a '@gmail.com' domain using a regular expression in MySQL, which pattern would be appropriate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@gmail\\.com$"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "^@gmail\\.com>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<@gmail.com>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@gmail.com"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92111,
+      "Explanation": "The &apos;$&apos; character matches the end of a string. The escaped dot &apos;\\.&apos; is used to match a literal period, making &apos;@gmail\\.com$&apos; the correct pattern.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you create a regular expression in MySQL that matches any single digit number in a field?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "\\d"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[0-9]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "\\w"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "\\s"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92112,
+      "Explanation": "The pattern &apos;[0-9]&apos; is used to match any single digit. &apos;\\d&apos; is not supported by MySQL regex syntax directly.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following regular expression patterns would you use to find records where the 'phone' field contains exactly 10 digits?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "\\d{10}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "^[0-9]{10}$"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "\\w{10}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "\\s{10}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92113,
+      "Explanation": "The pattern &apos;^[0-9]{10}$&apos; ensures that the string is composed of exactly 10 digits.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When filtering for records where the field 'status' does not contain any numbers, which pattern is correct?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[^0-9]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "^[^0-9]+$"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "\\D*"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "[0-9]?"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92114,
+      "Explanation": "The pattern &apos;^[^0-9]+$&apos; matches any string that does not have any digits, from start to finish.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To match the word 'apple' regardless of case in a MySQL regular expression, which pattern should be used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "(?i)apple"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[Aa][Pp][Pp][Ll][Ee]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "apple/i"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "^apple$"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92115,
+      "Explanation": "MySQL does not support inline case insensitivity like &apos;(?i)&apos;, so we manually match each letter as case-insensitive using &apos;[Aa][Pp][Pp][Ll][Ee]&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which MySQL regular expression pattern would you use to find a 'username' that contains at least one letter?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": ".*[a-zA-Z]+.*"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": ".+[a-zA-Z]+"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[a-zA-Z]?"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "[^a-zA-Z]"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92116,
+      "Explanation": "&apos;[a-zA-Z]&apos; matches any letter, and the pattern &apos;.*[a-zA-Z]+.*&apos; ensures that there is at least one such letter anywhere in the string.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How would you write a regular expression to ensure a 'code' field contains only hexadecimal digits in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "^[0-9A-Fa-f]+$"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[0-9A-F]+"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "^\\h+$"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "[A-F0-9]"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92117,
+      "Explanation": "The pattern &apos;^[0-9A-Fa-f]+$&apos; ensures that the string contains only hexadecimal digits (0-9, A-F, a-f) from start to end.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which regular expression pattern would be suitable for selecting records with the exact word 'data' in a 'description' field?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "\\bdata\\b"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[data]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "^data$"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": ".*data.*"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92118,
+      "Explanation": "The pattern &apos;\\bdata\\b&apos; uses word boundaries to match exactly the word &apos;data&apos;, ensuring it is not part of a larger word.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To find records where the 'note' column starts with 'Important' and ends with 'Notice' using MySQL regex, which is the correct pattern?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "^Important.*Notice$"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Important.*Notice"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": ".*^ImportantNotice$.*"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Notice$Important^"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92119,
+      "Explanation": "The pattern &apos;^Important.*Notice$&apos; specifies a string that starts with &apos;Important&apos; and ends with &apos;Notice&apos;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which regular expression would you use in MySQL to find records where the field 'username' does not start with a number?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "^[^0-9]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[a-zA-Z0-9]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "\\D.*"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": ".*[^0-9]"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92120,
+      "Explanation": "The pattern &apos;^[^0-9]&apos; ensures that the string does not start with a digit.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In MySQL, which regular expression patterns can help you retrieve rows where the 'comment' field includes any of the words 'error', 'warning', or 'info'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "error|warning|info"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "(error|warning|info)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": ".*(error|warning|info).*"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "^error|^warning|^info"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92121,
+      "Explanation": "The pattern &apos;.*(error|warning|info).*&apos; ensures that the string contains any of the words irrespective of their position in the string.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To filter records where 'title' includes one or more uppercase letters, which regular expression could be useful in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[A-Z]+"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": ".*[A-Z]+"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[a-zA-Z]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "^.*[A-Z]+.*$"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92122,
+      "Explanation": "The pattern &apos;^.*[A-Z]+.*$&apos; specifies that there&apos;s at least one uppercase letter anywhere in the string.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which regular expression pattern can be used in MySQL to filter records where 'license_plate' contains exactly 3 digits?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[0-9]{3}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "^[0-9]{3}$"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "\\d{3}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "[^0-9]*[0-9]{3}[^0-9]*"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92123,
+      "Explanation": "The pattern &apos;[^0-9]*[0-9]{3}[^0-9]*&apos; matches any string that has exactly three consecutive digits among non-digit characters.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which pattern should be used to ensure the 'ID' field consists only of alphanumeric characters (letters and numbers) in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "^[a-zA-Z0-9]+$"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[a-zA-Z0-9]*"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "\\w+/"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "\\d*\\w+"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92124,
+      "Explanation": "The pattern &apos;^[a-zA-Z0-9]+$&apos; ensures that the ID consists only of alphanumeric characters from start to end, without any other characters.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator is used in SQL to filter records that match a specified pattern?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LIKE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "BETWEEN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "EXISTS"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92043,
+      "Explanation": "The LIKE operator is used in a WHERE clause to search for a specified pattern in a column of text.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following WHERE clauses will correctly filter records with a column 'age' greater than 30?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "WHERE age < 30"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "WHERE age = 30"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "WHERE age > 30"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "WHERE age >= 30"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92090,
+      "Explanation": "The condition &apos;age > 30&apos; uses the greater than operator and correctly filters records with an &apos;age&apos; greater than 30.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a table named 'employees', how would you filter records for employees working in the 'Sales' department?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "WHERE department = 'Sales'"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "WHERE department != 'Sales'"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "WHERE department <> 'Sales'"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "WHERE department < 'Sales'"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92091,
+      "Explanation": "The condition &apos;department = &apos;Sales&apos;&apos; uses the equality operator to filter records where the department is specifically &apos;Sales&apos;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How would you write a WHERE clause to find records where the column 'salary' is between 50000 and 100000?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "WHERE salary BETWEEN 50000 AND 100000"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "WHERE salary LESS THAN 100000 GREATER THAN 50000"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "WHERE salary >= 50000 AND <= 100000"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "WHERE salary 50000 TO 100000"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92092,
+      "Explanation": "The &apos;BETWEEN&apos; keyword is used to filter records within a specific range. It is inclusive of the boundary values.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To exclude records with a NULL value in the 'last_login' column, which WHERE clause should you use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "WHERE last_login = NULL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "WHERE last_login NOT NULL"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "WHERE last_login IS NULL"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "WHERE last_login NULL"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92093,
+      "Explanation": "The &apos;IS NOT NULL&apos; condition filters out records where &apos;last_login&apos; is not null. NULLs need to be checked with &apos;IS NULL&apos; or &apos;IS NOT NULL&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How would you filter records for employees whose name begins with 'A'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "WHERE name LIKE 'A%'"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "WHERE name LIKE '%A'"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "WHERE name LIKE 'A%' OR '%A'"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "WHERE name LIKE '%A%'"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92094,
+      "Explanation": "The &apos;LIKE&apos; keyword in combination with the wildcard &apos;%&apos; is used to filter records. &apos;A%&apos; looks for any string starting with &apos;A&apos;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following WHERE clauses would you use to find products priced exactly at 300?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "WHERE price = 300"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "WHERE price > 300"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "WHERE price < 300"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "WHERE price <= 300"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92095,
+      "Explanation": "The &apos;=&apos; operator checks for exact matches. &apos;price = 300&apos; will filter records where the price is exactly 300.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To filter employees hired after January 1, 2020, which WHERE clause would be correct?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "WHERE hire_date < '2020-01-01'"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "WHERE hire_date > '2020-01-01'"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "WHERE hire_date = '2020-01-01'"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "WHERE hire_date != '2020-01-01'"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92096,
+      "Explanation": "The condition &apos;hire_date > &apos;2020-01-01&apos;&apos; selects records where &apos;hire_date&apos; is after January 1, 2020.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How would you retrieve records for male employees in a table with a column 'gender'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "WHERE gender = 'M'"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "WHERE gender = 'F'"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "WHERE gender != 'M'"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "WHERE gender = 'Male'"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92097,
+      "Explanation": "Assuming gender is stored as &apos;M&apos; or &apos;F&apos;, &apos;gender = &apos;M&apos;&apos; filters male employees.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To find records where the 'status' field is either 'active' or 'pending', which WHERE clause should be used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "WHERE status = 'active' AND status = 'pending'"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "WHERE status IN ('active', 'pending')"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "WHERE status LIKE 'active' OR 'pending'"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "WHERE status = 'active' OR 'pending'"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92098,
+      "Explanation": "The &apos;IN&apos; keyword simplifies checking if a column value matches any value in a list, like &apos;IN (&apos;active&apos;, &apos;pending&apos;)&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which WHERE clause would correctly filter records with a 'rating' column that includes both 4 stars and 5 stars?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "WHERE rating BETWEEN 4 AND 5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "WHERE rating > 4 AND rating < 5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "WHERE rating >= 4 AND rating <= 5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "WHERE rating = 4 TO 5"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92099,
+      "Explanation": "The use of &apos;>=&apos; and &apos;<=&apos; operators makes sure all ratings of 4 and 5 are included in the results.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator is used to filter records that match a specific pattern in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LIKE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "BETWEEN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "EXISTS"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92100,
+      "Explanation": "The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What operator would you use to check if a value exists within a set of values in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "BETWEEN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LIKE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "IN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "IS NULL"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92101,
+      "Explanation": "The IN operator is used to filter records that match any of the values in a specified list.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How would you use the BETWEEN operator correctly in a query?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT * FROM table WHERE column BETWEEN value1 AND value2;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT * FROM table WHERE column IN (value1, value2);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT * FROM table WHERE column LIKE '%value%';"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT * FROM table WHERE column EXISTS (value1, value2);"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92102,
+      "Explanation": "The BETWEEN operator selects values within a range, which includes both specified values.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator would you use to find records that have NULL values in a column?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IS NULL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "NOT IN"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "LIKE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "BETWEEN"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92103,
+      "Explanation": "The IS NULL operator is used to test for empty (NULL) values.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does the NOT operator affect the WHERE clause?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Reverses the result of the condition"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Selects only rows with NULL values"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Counts the number of rows meeting the condition"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Combines multiple conditions"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 92104,
+      "Explanation": "The NOT operator negates a condition, meaning it returns the opposite result of that condition.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which SQL statement generates the alias Annual Salary for the calculated column SALARY*12 in MySql?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<p>SELECT ename, salary*12 AS INITCAP(\u201cANNUAL SALARY\u201d) FROM employees ;</p>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<p>SELECT ename, salary*12 \"Annual Salary\" FROM employees;</p>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<p>SELECT ename, tot_sal \"Annual Salary\" FROM employees where tot_sal =salary*12;</p>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 88283,
+      "Explanation": "<span id=\"explanation88283\">&nbsp;B is right option . In option A function INTCAP is not supported by MYSql. In option 3 method used to&nbsp; calculate tot_sal is wrong.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will the following statement return?<br><br>SELECT * FROM student_details WHERE Student_name LIKE 'S%';<br>Where student_details is the table name and student_name is the column name.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Query will return the name starting with s"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Query will return the name ending with s"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Query will return the name who has s in between"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 87493,
+      "Explanation": "<span id=\"explanation87493\">The statement will return the name starting with s</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Suppose you are asked to display all the names which have 'a' as their second character then which query pattern you will use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "_ _ a%;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "_a_;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "_a%;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "\u200b\u200b\u200b\u200b\u200b\u200b\u200bError"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 87494,
+      "Explanation": "<span id=\"explanation87494\">To know the name who has an &apos;a&apos;&nbsp; as its second character we will write: _a%;</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If you are asked to find out the names which only have 5 characters then what query pattern you will use?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "%%%%% <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "_%_%_"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "_____"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 87495,
+      "Explanation": "If we are asked to find out the names which only have 5 characters, we will put 5&nbsp; underscores _____.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of following MySQL command?<br>SELECT *<br>FROM emp<br>WHERE mgr IS NULL;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only those rows having mgr as NULL will be fetched."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No data will be fetched."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Rows having mgr with not null values will be fetched."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "mgr can never contain null values."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 86678,
+      "Explanation": "All rows where mgr is null will be fetched.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the DISTINCT keyword in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It filters rows based on specific conditions."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It groups rows together based on a common column."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It removes duplicate rows from the result set."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It performs mathematical calculations on numeric columns."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 86604,
+      "Explanation": "&nbsp; Distinct clause will fetch unique values.&nbsp;",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a comparison operator in MySQL ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "="
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LIKE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "BETWEEN..AND<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 86636,
+      "Explanation": "All above operators are used for comparison.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the command to fetch all salaries which are null?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "select salary from emp where salary=null"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "select salary from emp where salary=\u2019null\u2019"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "select salary from emp where salary is not null"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "select salary from emp where salary is null"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 81226,
+      "Explanation": "It is not possible to test for NULL values with comparison operators, such as =, &lt;, or &lt;&gt;.<br>We&nbsp; have to use the IS NULL and IS NOT NULL operators instead.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To query a table for rows with the 'name' field starts with 'AB', the where clause would look like<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "name STARTS_WITH 'AB'"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "name = 'AB*'"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "name LIKE 'AB%'"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "'AB' IN name"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 86492,
+      "Explanation": "When there is no exact match, Like operator is used. &apos;AB%&apos; indicates that string starts with AB and may have multiple characters after AB.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a wildcard condition for VARCHAR column, case sensitive or case insensitive comparison can be controlled by using",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Appropriate collation of the column"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Special syntax: LIKE CASE_INSENSITIVE.."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Special character as the wild card, example: LIKE 'AB$'"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 86493,
+      "Explanation": "<span id=\"explanation86493\" style=\"color:blue\">There is no way to check data insensitivity. MySQl is not case sensitive.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following queries displays the sum of all employee salaries for those employees not making commission, for each job, including only those sums greater than 2500?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "select job, sum(sal) from emp where sum(sal) &gt; 2500 and comm is null;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "select job, sum(sal) from emp where comm is null group by job having sum(sal) &gt; 2500;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "select job, sum(sal) from emp where sum(sal) &gt; 2500 and comm is null group by job;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "select job, sum(sal) from emp group by job having sum(sal) &gt; 2500 and comm is not null;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 84095,
+      "Explanation": "Regular column job converted into group by&nbsp; clause, and sum(sal) function can&apos;t be used in where so for that having clause is used.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The SQL keyword(s) ________ is/are used with wildcards.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "CONTAINS"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "BETWEEN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "LIKE<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 65293,
+      "Explanation": "Like operator are used for wildcards, for pattern recognition.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "\u2019_ _ _ \u2019 matches any string of ______ three characters. \u2019_ _ _ %\u2019 matches any string of at ______ three characters.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Atleast, Exactly"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Exactly, Atleast"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Atleast, All"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All , Exactly"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 74092,
+      "Explanation": "As you know that wild card characters we use like operator.<br>%&nbsp; =&nbsp; Zero or any number of any characters<br>_&nbsp;&nbsp; =&nbsp; Any single characters.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Select name&nbsp; from instructor</div><div>where salary &lt;= 100000 and salary &gt;= 90000;</div><div>This query can be replaced by which of the following ?&nbsp;&nbsp;&nbsp;&nbsp;</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<div>Select name from instructor</div><div>where salary between 90000 and 100000;</div>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<div>Select name</div><div>from instructor</div><div>where salary &lt; 90000 and salary&gt;100000;</div>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<div>Select name</div><div>from instructor</div><div>where salary between 100000 and 90000;</div>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 74095,
+      "Explanation": "<span id=\"explanation74095\">Between.. and operator includes salary &gt;=90000 and salary&lt;=100000.&nbsp;&nbsp;</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a LIKE clause, you can ask for any 6 letter value by writing?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "LIKE ??????"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LIKE .{6}&nbsp;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "LIKE ...... (that's six dots)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "LIKE ______ (that's six underscore characters)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76029,
+      "Explanation": "<span id=\"explanation76029\">_ (ubderscore) represents single character.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The result of a SELECT statement can contain duplicate rows.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "--"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "--"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76031,
+      "Explanation": "Select may give duplicate rows.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a correct SQL query<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Select * from emp where eid=100 , ename=\u2019a\u2019"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Select * from emp where eid=100 ename=\u2019a\u2019"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Select * where eid=100 and ename=\u2019a\u2019 from emp"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Select * from emp where eid=100 and ename=\u2019a\u2019"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 75996,
+      "Explanation": "If Where clause contains more than two filter conditions that are separeted by logical operaters like &apos;and&apos; and &apos;or&apos;. So option &apos;D&apos; is valid.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What operator tests column for the absence of data?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IS NULL operator<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Assignment operator<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "LIKE operator<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "NOT operator<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 74108,
+      "Explanation": "<span style=\"color:#8e44ad;\">IS NULL </span><span style=\"color:#000000;\">and </span><span style=\"color:#8e44ad;\">IS NOT NULL </span><span style=\"color:#000000;\">are two spetial operators. In that </span> IS NULL operator tests column for the absence of data .<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>For like operator which of the following is true.</div><div>i) % matches zero of more characters.</div><div>ii) _ matches exactly one character.</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "i-only"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ii-only"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both of them"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of them"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 74116,
+      "Explanation": "<span id=\"explanation74116\">Pattern recognition. Check for wild card character with like operator.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Find the names of the countries whose condition is sunny. Country name is stored in table Location.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT country FROM location WHERE condition = 'sunny';"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT country FROM location WHERE city IN (SELECT city FROM weather WHERE condition = sunny');"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT country FROM location WHERE city NOT IN (SELECT city FROM weather WHERE condition = 'sunny');"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT country FROM location WHERE city UNION (SELECT city FROM weather WHERE condition = 'sunny');"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 63997,
+      "Explanation": "<span id=\"explanation63997\">&nbsp;Simple query with where clause on sunny condition.&nbsp;</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator is used to prevent the error:&nbsp; ' sub query returns more than one row\u2019&nbsp;&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use the IN operator"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use the &gt;= operator"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use the EXISTS operator"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use the = operator"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 63998,
+      "Explanation": "<span id=\"explanation63998\" style=\"color:blue\"><span id=\"explanation63998\">IN operator is used to prevent the error that subquery returns multiple value.<br>In Sub query there are two types<br>a. Single row subquery:&nbsp;&nbsp; &apos;=&apos; equal to opearor is used.<br>b. Multi row subquery:&nbsp;&nbsp; &apos;IN&apos; or &apos;NOT IN&apos; operator is used.</span></span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following queries will displays the sum of all employee salaries for those employees not making commission, for each job, including only those sums greater than 2500?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "select job, sum(sal) from emp where sum(sal) &gt; 2500 and comm is null;<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "select job, sum(sal) from emp where comm is null group by job having sum(sal) &gt; 2500;<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "select job, sum(sal) from emp where sum(sal) &gt; 2500 and comm is null group by job;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "select job, sum(sal) from emp group by job having sum(sal) &gt; 2500 and comm is not null;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 63999,
+      "Explanation": "Regular column job converted into group by&nbsp; clause, and sum(sal) function can&apos;t be used in where so for that having clause is used.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "You need to display the last names of those employees who have the letter 'a' as the second character in their names. Which SQL statement displays the required results?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT last_name FROM EMP WHERE last_name LIKE '_a%';"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT last_name FROM EMP WHERE last name ='*a%';"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT last_name FROM EMP WHERE last name ='_a%';"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT last_name FROM EMP WHERE last name like '*%a_';"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 65020,
+      "Explanation": "<span id=\"explanation65020\">As you know that wild card characters we use like operator.<br>%&nbsp; =&nbsp; Zero or any number of any characters<br>_&nbsp;&nbsp; =&nbsp; Any single characters.<br>expressions are always compared using like and not using = operator.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>You issue the following statement:&nbsp;</div><div><br></div><div>Select decode (ACCTNO, 123456, \u2018CLOSED\u2019, 654321, \u2018SEIZED\u2019, 590395, \u2018TRANSFER\u2019, \u2018ACTIVE\u2019)<br>from BANK_ACCT;</div><div><br></div><div>If the value for ACCTNO is 503952, what information will this statement display?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ACTIVE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "TRANSFER"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SEIZED"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CLOSED"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 65140,
+      "Explanation": "Decode execute like<br>if else statement.<br>If ACCTNO=123456 then display &apos;CLOSED&apos;<br>else if ACCTNO=654321then display &apos;SEIZED&apos;<br>else if ACCTNO=590395 then display &apos;TRANSFER&apos;<br>else display &apos;ACTIVE&apos;<br>So here input given 503952 so output is &apos;ACTIVE&apos;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Find the SQL statement below that is equal to the following: <br>SELECT NAME FROM CUSTOMER WHERE STATE = 'VA';<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT NAME IN CUSTOMER WHERE STATE IN ('VA');"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT NAME IN CUSTOMER WHERE STATE = 'VA';"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT NAME IN CUSTOMER WHERE STATE = 'V';"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT NAME FROM CUSTOMER WHERE STATE IN ('VA');"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76055,
+      "Explanation": "SELECT NAME FROM CUSTOMER WHERE STATE IN (&apos;VA&apos;);",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The SQL WHERE clause&nbsp;&nbsp;&nbsp; <br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "limits the column data that is returned.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "limits the row data that is returned.<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both A and B are correct."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Neither A nor B are correct."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76049,
+      "Explanation": "The SQL WHERE clause: limits the row data are returned.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which of the following should be used to find all the courses taught in the Fall 2009 semester but not in the Spring 2010 semester",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Select distinct course id<br>from section<br>where semester = \u2019Fall\u2019 and year= 2009 and<br>course id not in (select course id<br>from section<br>where semester = \u2019Spring\u2019 and year= 2010);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Select distinct course_id<br>from section<br>where name not in (\u2019Fall\u2019, \u2019Spring\u2019);<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "(Select course id<br>from section<br>where semester = \u2019Spring\u2019 and year= 2010)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Select count (distinct ID)<br>from takes<br>where (course id, sec id, semester, year) in (select course id, sec id, semester, year<br>from teaches<br>where teaches.ID= 10101);"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76070,
+      "Explanation": "Inner query will be executed first which will return set of values. Outter query work on the condition provided. e.g semester Fall and yers 2009.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The phrase \u201cgreater than at least one\u201d is represented in SQL by _____.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt; all<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt; some<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&gt; all<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&gt; any<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76071,
+      "Explanation": "&gt;any is used.<br>e.g<br>SELECT DISTINCT CategoryID<br>FROM Products<br>WHERE ProductID &gt; ANY (SELECT ProductID<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FROM OrderDetails);",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following query is correct for using comparison operators in SQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT sname, coursename FROM studentinfo WHERE age&gt;50 and &lt;80;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT sname, coursename FROM studentinfo WHERE age&gt;50 and age &lt;80;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT sname, coursename FROM studentinfo WHERE age&gt;50 and WHERE age&lt;80;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76102,
+      "Explanation": "<span id=\"explanation76102\" style=\"color:blue\">Syntax of A and C is wrong. B is a right choice.</span><br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How to select all data from studentinfo table starting the name from letter 'r'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT * FROM studentinfo WHERE sname LIKE 'r%';"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT * FROM studentinfo WHERE sname LIKE '%r%';"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT * FROM studentinfo WHERE sname LIKE '%r';"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT * FROM studentinfo WHERE sname LIKE '_r%';"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76103,
+      "Explanation": "<span id=\"explanation76103\" style=\"color:blue\">% indicates set of characters. Hence starting with &apos;r&apos; and having set of characters i.e &apos;r%&apos; is a right choice.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following SQL query is correct for selecting the name of staffs from 'tblstaff' table where salary is<br>15,000 or 25,000?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT sname from tblstaff WHERE salary IN (15000, 25000);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT sname from tblstaff WHERE salary BETWEEN 15000 AND 25000;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT sname from tblstaff WHERE salary &gt;=15000 AND salary&lt;=25000;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both A and B"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76104,
+      "Explanation": "<span id=\"explanation76104\" style=\"color:blue\">In the above query we are searching for specific values 15,000 or 25,000. Where as between claues gives a data in the specified range and also and operator gives the data in the specified range. Hence A is correct.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Select a query that retrieves all of the unique course names from the student table?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT DISTINCT coursename FROM studentinfo;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT UNIQUE coursename FROM studentinfo;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT DISTINCT coursename FROM TABLE studentinfo;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT coursename DISTINCE FROM studentinfo;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76105,
+      "Explanation": "<span id=\"explanation76105\" style=\"color:blue\">In the above options syntax of option A is correct .</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The SQL statement SELECT concat('Hi', instr ('Jayesh','s')) FROM customre where cust_id =10;&nbsp;&nbsp;&nbsp; prints",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Error 1064 you have error in sql syntax . Please check the manual."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hi5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "His"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "HiJayesh"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76640,
+      "Explanation": "<span id=\"explanation76640\">instr(&apos;Jayesh&apos;,s) = 5&nbsp; &nbsp; concat(&apos;Hi&apos;,5)=Hi5</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Find the name of cities with all entries whose temperature is in the range of 71 and 89",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT * FROM weather WHERE temperature&nbsp; IN (71 to 89);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT * FROM weather WHERE temperature NOT IN (71 and 89);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT * FROM weather WHERE temperature BETWEEN 89 AND 71;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT * FROM weather WHERE temperature BETWEEN 71 AND 89;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76653,
+      "Explanation": "<span id=\"explanation76653\">&nbsp;Between..and operator takes small value first and then bigger value. Hence&nbsp; D. </span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Find all the cities whose humidity is 89",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT city WHERE humidity = 89;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT city FROM weather WHERE humidity = 89;<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT humidity = 89 FROM weather;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT city FROM weather;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76644,
+      "Explanation": "SELECT city FROM weather WHERE humidity = 89;",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the meaning of LIKE '%0%0%'",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Feature begins with two 0's"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Feature ends with two 0's"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Feature has more than two 0's"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Feature has two 0's in it, at any position"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76646,
+      "Explanation": "Answer to be reviewed",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Find the names of these cities with temperature and condition whose condition is neither sunny nor cloudy",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT city, temperature, condition FROM weather WHERE condition NOT IN ('sunny', 'cloudy');"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT city, temperature, condition FROM weather WHERE condition NOT BETWEEN ('sunny', 'cloudy');"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT city, temperature, condition FROM weather WHERE condition IN ('sunny', 'cloudy');"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT city, temperature, condition FROM weather WHERE condition BETWEEN ('sunny', 'cloudy');"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76647,
+      "Explanation": "Answer to be reviewed",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Find the name of those cities with temperature and condition whose condition is either sunny or cloudy but temperature must be greater than 70F.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT city, temperature, condition FROM weather WHERE condition = 'sunny' AND condition = 'cloudy' OR temperature &gt; 70;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT city, temperature, condition FROM weather WHERE condition = 'sunny' OR condition = 'cloudy' OR temperature &gt; 70;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT city, temperature, condition FROM weather WHERE condition = 'sunny' OR condition = 'cloudy' AND temperature &gt; 70;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT city, temperature, condition FROM weather WHERE condition = 'sunny' AND condition = 'cloudy' AND temperature &gt; 70;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76648,
+      "Explanation": "&nbsp; condition is either sunny or cloudy implies OR and temp=70.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Find all the cities with temperature, condition and humidity whose humidity is in the range of 63 to 79<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT * FROM weather WHERE humidity IN (63 to 79)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT * FROM weather WHERE humidity NOT IN (63 AND 79)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT * FROM weather WHERE humidity BETWEEN 63 AND 79"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT * FROM weather WHERE humidity NOT BETWEEN 63 AND 79"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76650,
+      "Explanation": "Range is checked using between.. and operator. Hence C.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator performs pattern matching?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "BETWEEN operator"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LIKE operator"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "EXISTS operator"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of these"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76609,
+      "Explanation": "<span id=\"explanation76609\" style=\"color:blue\">Like operator will perform better matching. Between is used for the range of data and exists is mot used for pattern matching.&nbsp;</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which SQL keyword is used to retrieve only unique values?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DISTINCTIVE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "UNIQUE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DISTINCT"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DIFFERENT"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76625,
+      "Explanation": "<span id=\"explanation76625\">Distinct clause returns unique values from the table.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which SQL keyword is used to retrieve a maximum value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "TOP"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "MOST"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "UPPER"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MAX"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76627,
+      "Explanation": "<span id=\"explanation76627\">MAX keyword which is a aggregate function is used to retrieve max value.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The wildcard in a WHERE clause is useful when?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An exact match is necessary in a CREATE statement."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An exact match is necessary in a SELECT statement."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An exact match is not possible in a SELECT statement."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An exact match is not possible in a CREATE statement."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76711,
+      "Explanation": "Wildcard characters are used when there is no exact match for the string.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The SQL keyword(s) ________ is used with wildcards.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "NOT IN <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LIKE <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "IN <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "IN and NOT IN"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76712,
+      "Explanation": "Like operator is used when there in no exact match.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In an SQL SELECT statement querying a single table, according to the SQL-92 standard the asterisk (*) means that <br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "all columns of the table are to be returned."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "all records meeting the full criteria are to be returned.<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "all records with even partial criteria met are to be returned."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above is correct."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76715,
+      "Explanation": "all columns of the table are to be returned.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following clause is used to display information that match a given pattern?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "LIKE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "WHERE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "IS"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SAME"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76783,
+      "Explanation": "<span id=\"explanation76783\">The &apos;LIKE&apos; clause filters information that match a given pattern. &apos;WHERE&apos; clause selects information that is specified by a condition. &apos;IS&apos; is used to match the exact condition specified.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What column names are displayed when this command is executed? SHOW COLUMNS FROM tbl_name LIKE '%name';",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "suffixed with 'name'<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "prefixed with 'name'<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "suffixed with '%name'<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "prefixed with '%name'<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76786,
+      "Explanation": "The wildcard \u2018%\u2019 is used to indicate that any number of characters can replace it. All column names that end in \u2018name\u2019 are displayed. Additional information of columns like type and size are listed.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When three or more AND and OR conditions are combined, it is easier to use the SQL keyword(s) <br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "NOT IN <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LIKE <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "IN <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both IN and NOT IN."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76717,
+      "Explanation": "IN / NOT IN operator&nbsp; is used to check set of values.&nbsp;&nbsp; <br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does adding&nbsp; a known value with NULL value&nbsp; result into?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "zero"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "a positive value"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "a negative value"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "null"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76802,
+      "Explanation": "In MySQL, NULL is not comparable to other known values. It will result in a NULL when compared to any value.&nbsp; <br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which clause can be used to sort string values according to a specific collation?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SORT"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "GROUP"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "FILTER"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "COLLATE"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6529,
+      "QuestionTypeId": 0,
+      "QuestionId": 76854,
+      "Explanation": "&nbsp;The &apos;COLLATE&apos; operator can be used to sort the string values according to a specific collation. For example, &apos;SELECT col FROM tbl ORDER BY col COLLATE latin1_swedish_ci&apos; sorts by swedish collation.",
+      "Answer": "D",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

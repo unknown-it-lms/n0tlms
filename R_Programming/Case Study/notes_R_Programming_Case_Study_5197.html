@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Notes - R_Programming_Case Study</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  body{font-family:system-ui,Segoe UI,Roboto,Arial;max-width:900px;margin:24px auto;padding:18px;line-height:1.6;color:#111}
+  h1{font-size:1.4rem;margin-bottom:0.6rem}
+  .topic{font-weight:700;margin-top:1rem}
+  .subtopic{font-weight:600;margin-top:0.8rem}
+  .content{margin:0.6rem 0 1.2rem 0}
+  pre{white-space:pre-wrap;background:#f7f7f7;padding:10px;border-radius:6px;overflow:auto}
+  img{max-width:100%;height:auto}
+  table{border-collapse:collapse;width:100%}
+  table, th, td{border:1px solid #ccc;padding:6px}
+</style>
+</head>
+<body>
+<h1>Notes: R_Programming- Case Study</h1>
+
+<div class="courseware topic">Case Study</div><div class="courseware content"><hr>​​​​​​​</div>
+<div class="courseware subtopic">Introduction</div><div class="courseware content"><hr>​​​​​​​</div>
+<div class="courseware subtopic">Case Study</div><div class="courseware content"><hr>​​​​​​​Examine the built in ChickWeight data (the help gives background about the data). The<br>function split will prove useful to do the following (as will a script).</div><ol><li class="courseware content">Construct a plot of weight against time for chick number 34.</li><li class="courseware content">For chicks in diet group 4, display box plots for each time point.</li><li class="courseware content">Compute the mean weight for chicks in group 4, for each time point. Plot this mean&nbsp;value against time.</li><li class="courseware content">Repeat the previous computation for group 2. Add the mean for group 2 to the&nbsp;existing plot.</li><li class="courseware content">Add a legend and a title.</li><li class="courseware content">Copy and paste the graph into Word<div class="courseware content"><br></div><div class="courseware code"><br># Load the ChickWeight dataset<br>data(ChickWeight)<br><br># Check the structure and content of the dataset<br>str(ChickWeight)<br><br># Plot weight against time for chick number 34<br>chick_34 &lt;- subset(ChickWeight, Chick == 34)<br>plot(chick_34$Time, chick_34$weight, type = "o", col = "blue",<br>&nbsp; &nbsp; &nbsp;xlab = "Time", ylab = "Weight", main = "Weight against Time for Chick 34")<br><br># Subset data for chicks in diet group 4<br>group_4 &lt;- subset(ChickWeight, Diet == 4)<br><br># Display boxplots for each time point for diet group 4<br>boxplot(weight ~ Time, data = group_4, col = "orange",<br>&nbsp; &nbsp; &nbsp; &nbsp; xlab = "Time", ylab = "Weight",<br>&nbsp; &nbsp; &nbsp; &nbsp; main = "Boxplots of Weight for Diet Group 4")<br><br># Compute the mean weight for chicks in group 4, for each time point<br>mean_weight_group_4 &lt;- aggregate(weight ~ Time, data = group_4, FUN = mean)<br><br># Plot mean weight against time for group 4<br>points(mean_weight_group_4$Time, mean_weight_group_4$weight, type = "o", col = "red")<br><br># Repeat the computation for group 2<br>group_2 &lt;- subset(ChickWeight, Diet == 2)<br>mean_weight_group_2 &lt;- aggregate(weight ~ Time, data = group_2, FUN = mean)<br><br># Add mean for group 2 to the existing plot<br>points(mean_weight_group_2$Time, mean_weight_group_2$weight, type = "o", col = "green")<br><br># Add legend and title<br>legend("topright", legend = c("Group 4 Mean", "Group 2 Mean"),<br>&nbsp; &nbsp; &nbsp; &nbsp;col = c("red", "green"), pch = 1)<br>title(main = "Mean Weight for Diet Groups 4 and 2 over Time")</div></li></ol>
+
+
+</body>
+</html>

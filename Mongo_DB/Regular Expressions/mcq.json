@@ -1,0 +1,606 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "In MongoDB, which operator is used to perform case-sensitive regular expression queries?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "$regex"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "$options"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "$match"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "$case"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5648,
+      "QuestionTypeId": 0,
+      "QuestionId": 94393,
+      "Explanation": "$regex is the operator used in MongoDB to perform regex queries, and by default, these are case-sensitive.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which option should be used with $regex operator to make the search case-insensitive?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "c"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ci"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "i"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "case-insensitive"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5648,
+      "QuestionTypeId": 0,
+      "QuestionId": 94394,
+      "Explanation": "MongoDB uses the &apos;i&apos; option to make a regex search case-insensitive.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct way to use regular expressions to find fields that start with 'x' in MongoDB?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "{ field: { $regex: '^x' } }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{ field: { $regex: 'x$' } }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "{ field: { $regex: '.*x' } }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "{ field: { $regex: '^x$' } }"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5648,
+      "QuestionTypeId": 0,
+      "QuestionId": 94395,
+      "Explanation": "The &apos;^&apos; character is used in regex to indicate the beginning of a string.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which aggregation stage in MongoDB allows the use of regular expressions with the $regexMatch operator?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "$filter"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "$match"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "$project"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "$regexFindAll"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5648,
+      "QuestionTypeId": 0,
+      "QuestionId": 94396,
+      "Explanation": "The $project stage can use the $regexMatch operator to work with fields using regex.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you use regular expressions to check if a string ends with 'test'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "{ field: { $regex: '^test' } }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{ field: { $regex: 'test$' } }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "{ field: { $regex: '.*test.*' } }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "{ field: { $regex: '^test$' } }"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5648,
+      "QuestionTypeId": 0,
+      "QuestionId": 94397,
+      "Explanation": "The &apos;$&apos; character in regex indicates the end of a string, so &apos;test$&apos; will match strings that end with &apos;test&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following modifiers are NOT supported with MongoDB's $regex operator?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "m"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "x"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "s"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "i"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5648,
+      "QuestionTypeId": 0,
+      "QuestionId": 94398,
+      "Explanation": "The &apos;x&apos; modifier, which offers extended functionality in other regex engines, is not supported in MongoDB.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the following MongoDB query do? { field: { $regex: 'x+', $options: 'i' } }",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Find documents where the field contains exactly one 'x', case-insensitively"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Find documents where the field starts with an 'x', case-insensitively"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Find documents where the field contains one or more 'x's, case-insensitively"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Find documents where the field equals 'x+', case-insensitively"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5648,
+      "QuestionTypeId": 0,
+      "QuestionId": 94399,
+      "Explanation": "The &apos;+&apos; modifier in regex indicates one or more of the preceding character, and the &apos;i&apos; option makes it case-insensitive.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In MongoDB, how would you use regular expressions to find fields that do NOT contain the word 'example'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "{ field: { $not: /example/ } }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{ field: { $regex: '^example' } }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "{ field: { $not: { $regex: 'example' } } }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "{ field: { $regex: '^(?!.*example)' } }"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5648,
+      "QuestionTypeId": 0,
+      "QuestionId": 94400,
+      "Explanation": "{ field: { $not: { $regex: &apos;example&apos; } } } is the correct syntax in MongoDB to exclude matches of &apos;example&apos;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you specify multiple regex patterns in a MongoDB query?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using $and with multiple $regex expressions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using a single $regex with patterns separated by '|'"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using an array in $regex"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It's not possible to use multiple regex patterns"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5648,
+      "QuestionTypeId": 0,
+      "QuestionId": 94401,
+      "Explanation": "You can use logical operators $and with multiple conditions to include multiple $regex patterns.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a MongoDB field's value needs to be extracted by matching a pattern, which operator is suitable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "$regex"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "$regexExtract"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "$regexFind"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "$regexMatch"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5648,
+      "QuestionTypeId": 0,
+      "QuestionId": 94402,
+      "Explanation": "MongoDB does not have operators like $regexExtract or $regexFind built-in for extraction; $regex is used for basic matching.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a valid use of a regex pattern to exclude strings that contain the word 'data'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "{ field: { $regex: '^data', $options: 'v' } }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{ field: { $not: { $regex: 'data' } } }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "{ field: { $regex: 'data$', $options: 'x' } }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "{ field: { $regex: '^$', $options: 'data' } }"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5648,
+      "QuestionTypeId": 0,
+      "QuestionId": 94403,
+      "Explanation": "The $not operator combined with $regex can be used to exclude documents that match the pattern &apos;data&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which MongoDB $regex option is used to allow white space and comments in the regex pattern?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "x"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "i"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "m"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "g"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5648,
+      "QuestionTypeId": 0,
+      "QuestionId": 94404,
+      "Explanation": "The &apos;x&apos; option allows pattern whitespace and comments in regular expressions in other regex engines, but MongoDB does not support this.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the regular expression '^abc' locate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Any string that ends with 'abc'"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Any string that contains 'abc'"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Any string that starts with 'abc'"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A string composed solely of 'abc'"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5648,
+      "QuestionTypeId": 0,
+      "QuestionId": 94405,
+      "Explanation": "The &apos;^&apos; character is used in regex to denote the start of a string, so &apos;^abc&apos; locates strings starting with &apos;abc&apos;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the meaning of the '.' character in MongoDB regular expressions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It represents a literal dot"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Matches literal strings ending with ."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It represents any single character"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is an escape character"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5648,
+      "QuestionTypeId": 0,
+      "QuestionId": 94406,
+      "Explanation": "The &apos;.&apos; character in regex matches any single character except line terminators.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you check for a pattern that includes special characters like '$' in MongoDB's regex?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Escape the character with '\\'"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use double 'quotation'"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Enclose in brackets [ ]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No need to escape special characters"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5648,
+      "QuestionTypeId": 0,
+      "QuestionId": 94407,
+      "Explanation": "In regex, characters that have special meanings should be escaped with &apos;\\&apos; to be treated as literals.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator allows you to specify options directly within the $regex query?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The second argument of $regex"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "$regexOp"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "$regex with $options field"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "$matchOptions"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5648,
+      "QuestionTypeId": 0,
+      "QuestionId": 94408,
+      "Explanation": "In MongoDB, options are specified using the $options field within a $regex query.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When would using regular expressions be inefficient in MongoDB?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When performing case-sensitive searches"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When searching within large collections without appropriate indexes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When using regex patterns anchored at the beginning of a string"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using regex within an array field query"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5648,
+      "QuestionTypeId": 0,
+      "QuestionId": 94409,
+      "Explanation": "Without proper indexes, regex queries can be inefficient, especially on large collections, because they may require scanning full documents.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What effect does the 'm' option have on a regular expression in MongoDB?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Makes the regex match multi-line strings"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Combines with 'i' for multi-case matching"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Enhances matching speed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Limits matching to a single line"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5648,
+      "QuestionTypeId": 0,
+      "QuestionId": 94410,
+      "Explanation": "The &apos;m&apos; option allows &apos;^&apos; and &apos;$&apos; to match the start and end of each line in multi-line strings.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is an example of a custom regex filter that can be logically negated?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "{ field: { $regex: '(info)' } }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{ field: { $not: { $regex: '(?i)ignore' } } }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "{ field: { $matches: '(not)' } }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "{ field: { $noRegex: '(eig)' } }"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5648,
+      "QuestionTypeId": 0,
+      "QuestionId": 94411,
+      "Explanation": "Using $not with $regex allows the regex condition to be negated, which is correct usage.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a MongoDB query, what is the role of the $regexMatch operator within an aggregation framework?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It evaluates the condition in a find query"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Defines the regex in update operations"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Finds regex matches and extracts them"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Evaluates a regex match for a specified input within aggregations"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5648,
+      "QuestionTypeId": 0,
+      "QuestionId": 94412,
+      "Explanation": "$regexMatch is used within an aggregation framework to evaluate whether a field matches the specified regex.",
+      "Answer": "D",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

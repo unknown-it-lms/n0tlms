@@ -1,0 +1,1386 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "A variable defined inside a function is referred to as __________.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "a global variable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "a function variable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "a block variable"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "a local variable"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 70609,
+      "Explanation": "In python A variable defined inside a function is referred to as&nbsp; a local variable. global variables are declare outside the function.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Whenever possible, you should avoid using __________.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "global variables"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "function parameters"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "global constants"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "local variables"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 70610,
+      "Explanation": "any function can potentially change the value of a global variable and it is very difficult to keep track of this change hence we should avoid using global variables.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the following program :<br>y = 8<br>z = lambda x : x * y<br>print (z(6)) <br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "48"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "44"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "14"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 70616,
+      "Explanation": "lambda is anonymous function in python . y is 8&nbsp; and we are passing x as 6 hence expression return is 6*8 i.e. 48.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Does Lambda contains return statements?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Decided as per requirement"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "can not say"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 70184,
+      "Explanation": "lambda definition does not include a return statement. it always contains an expression which is returned.but not return keyword.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What sequence of numbers is printed?<br>values = [2, 3, 2, 4]<br><br>def my_transformation(num):<br>&nbsp;&nbsp;&nbsp; return num ** 2<br><br>for i in&nbsp; map(my_transformation, values):<br>&nbsp;&nbsp;&nbsp; print(i,end=' ')",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2 3 2 4"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4 6 4 8"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1 1.5 1 2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "4 9 4 16"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 70628,
+      "Explanation": "&nbsp;map will call the function for each value in the list.<br>&nbsp;The ** operator in the function raises the parameter to the power of 2.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "d = lambda p: p * 2<br>t = lambda p: p * 3<br>x = 2<br>x = d(x)<br>x = t(x)<br>x = d(x)<br>print(x)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "7"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "12"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "36"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "24"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 70621,
+      "Explanation": "Initially x = 2 then we are calling lambda function<br>x = d(x)&nbsp; x become 2*2 = 4<br>x = t(x)&nbsp;&nbsp; x become 4*3 =12<br>x = d(x) x become 12*2 = 24<br>print(x) will print 24 <br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default scope of a variable declared inside a Python function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Global"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Local"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Static"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Dynamic"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93031,
+      "Explanation": "Variables declared inside a function are by default local to that function.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you modify a global variable inside a function in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use the 'global' keyword"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Re-assign it directly"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use the 'nonlocal' keyword"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Declare it with 'var'"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93032,
+      "Explanation": "To modify a global variable inside a function, use the &apos;global&apos; keyword followed by the variable name.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following code snippet?<br><br>x = 10<br>def my_func():<br>&nbsp;&nbsp;&nbsp;&nbsp;x = 5<br><br>my_func()<br>print(x)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93033,
+      "Explanation": "<span id=\"explanation93033\" style=\"color:blue\">The variable &apos;x&apos; inside the function is local and does not affect the global variable &apos;x&apos;.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to declare a local variable that should refer to a variable in the enclosing (non-global) scope in Python 3?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "global"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "local"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "nonlocal"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "enclose"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93034,
+      "Explanation": "The &apos;nonlocal&apos; keyword is used to work with variables inside nested functions, where the variable should not be global.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you try to access a local variable outside of its function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The local variable is accessible and can be used"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It results in a NameError"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The program crashes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It returns None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93035,
+      "Explanation": "Local variables can only be accessed within the function they were declared in; accessing them outside results in a NameError.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true regarding variable scope in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Global variables can only be read inside a function."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Local variables can be accessed within nested functions."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Global variables can be modified inside a function without using 'global'."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Local variables defined within a function affect the global scope."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93036,
+      "Explanation": "<span style=\"color:#0000ff;\">A nested function can access a local variable from its enclosing function. To modify it, you&apos;d need to declare it with nonlocal.</span><br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the context of functions, what is a 'side effect' in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Creation of global variables"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Modifying a global variable or data structure"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Returning a value"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93037,
+      "Explanation": "A side effect is any modification of a variable or object outside of the function&apos;s local scope, such as a global variable.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary difference between 'global' and 'nonlocal' keywords in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "'global' is used for declaring variables, 'nonlocal' for functions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "'global' extends variable scope to the module level, 'nonlocal' to the enclosing function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "'global' declares variables in global scope, 'nonlocal' in local scope"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "'global' is specific to Python 2, 'nonlocal' to Python 3"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93038,
+      "Explanation": "&apos;global&apos; makes a variable global, while &apos;nonlocal&apos; refers to variables in an enclosing scope, not global.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a variable is declared global within a nested function, it belongs to:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The enclosing function"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only the nested function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The entire module"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93039,
+      "Explanation": "A variable declared global belongs to the entire module and can be accessed from anywhere within the module.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you prevent variable shadowing in nested functions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using different variable names"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using the 'global' keyword"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using the 'nonlocal' keyword"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93040,
+      "Explanation": "Variable shadowing can be avoided by using different names or properly referencing variables using &apos;global&apos; or &apos;nonlocal&apos;.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What keyword can be used to share a variable across multiple files?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "global"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "nonlocal"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "extern"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "import"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93041,
+      "Explanation": "<span id=\"explanation93041\" style=\"color:blue\">The &apos;import&apos; keyword can be used to share modules and their variables across files.</span><span style=\"color:#0000ff;\">&nbsp;In Python, to share variables across multiple files, you place them in one file and use import in the other.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following code snippet?<br><br>x = 3<br>def foo(x):<br>&nbsp;&nbsp;&nbsp;&nbsp;return x**2<br><br>print(foo(x))",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "9"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93042,
+      "Explanation": "<span id=\"explanation93042\" style=\"color:blue\">The function &apos;foo&apos; takes &apos;x&apos; as a parameter and returns its square. Hence, 3 squared is 9.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Python, if you want a variable to be both global and local, which approach is appropriate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Define it as global only"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Define it as nonlocal only"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Define it inside a method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Define it as global outside and use 'global' keyword inside"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93043,
+      "Explanation": "Defining it globally and using &apos;global&apos; inside a function allows for modifying the global variable.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which error occurs when a nonlocal keyword is used without a corresponding local variable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SyntaxError"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "NameError"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "UnboundLocalError"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "IndentationError"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93044,
+      "Explanation": "Using &apos;nonlocal&apos; without a corresponding local declaration results in a NameError, as the variable is not found.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following code snippet?<br><br>a = 20<br>def bar():<br>&nbsp;&nbsp;&nbsp;&nbsp;global a<br>&nbsp;&nbsp;&nbsp;&nbsp;a = 30<br><br>bar()<br>print(a)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "20"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "30"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "50"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93045,
+      "Explanation": "<span id=\"explanation93045\" style=\"color:blue\">The &apos;global&apos; keyword allows modification of &apos;a&apos; outside the function, changing its value from 20 to 30.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the following Python code?\n\nlist(map(lambda x: x*2, [1, 2, 3, 4]))",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[2, 4, 6, 8]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[1, 2, 3, 4]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[1, 2, 4, 8]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "[1, 4, 9, 16]"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93046,
+      "Explanation": "The map function applies the lambda function to each element in the list, doubling each number, resulting in [2, 4, 6, 8].",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using the map function in Python, what is its return type?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "list"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "generator"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "map object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "tuple"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93047,
+      "Explanation": "In Python 3, the map function returns a map object, which is an iterable. It doesn&apos;t directly return a list, but it can be converted using the list() function.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following functions can map() replace for transforming lists in one statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "filter()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "reduce()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "for loop"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "set()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93048,
+      "Explanation": "The map() function can be used to apply a function to all elements of a list, which can replace a loop that iterates over the list to apply a function to each element.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Python feature allows the map function to work with more than one input sequence?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Lambda functions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Tuples"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Multiple assignment"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Variadic functions"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93049,
+      "Explanation": "<span id=\"explanation93049\" style=\"color:blue\">The map function can take multiple sequences as input and a function that accepts multiple arguments. Lambda functions can be used to define such a custom function.<br>Example:<br></span><pre><span style=\"color:#0000ff;\"><span style=\"font-size: medium; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;\">names = [\"Alice\", \"Bob\"] <br>ages = [25, 30] <br>result = list(map(lambda n, a: f\"{n} is {a} years old\", names, ages)) <br>print(result) <br># Output: [&apos;Alice is 25 years old&apos;, &apos;Bob is 30 years old&apos;]</span></span></pre>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If you want to apply a function that takes two arguments to each pair of elements from two lists x and y, which syntax would you use with map?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "map(function, x, y)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "map(x, y, function)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "map(y, function, x)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "map(x, function, y)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93050,
+      "Explanation": "When using map with a function that takes two arguments, you should list the function first, followed by the sequences that provide the arguments: map(function, x, y).",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of the filter() function in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To create a sublist from a list based on a specified condition"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To sort a list in ascending order"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To map a set of values to a new set"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To find a specific element in a list"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93051,
+      "Explanation": "The filter() function is used to filter elements of a list (or any iterable) that satisfy a specified condition, producing a new list with only the elements that meet the condition.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a correct example of using the filter() function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "filter('lambda x: x&gt;5', list_of_string)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "filter(lambda x: x&gt;5, list_of_numbers)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "filter([x &gt; 5 for x in list], list_of_numbers)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "filter(list_of_numbers, lambda x: x&gt;5)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93052,
+      "Explanation": "<span id=\"explanation93052\" style=\"color:blue\">The correct syntax for the filter() function is filter(function, iterable). &apos;B&apos; correctly uses a lambda function and an iterable.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If the filter() function is applied with a 'None' as its first argument, what does it do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It returns a list of all False elements"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It returns an empty list"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It filters out None values"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It removes all False elements from the iterable"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93053,
+      "Explanation": "When None is provided as the function to filter(), it removes all elements that evaluate to False from the iterable.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following best describes the return type of the filter() function in Python 3?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A list"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A tuple"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A filter object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A set"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93054,
+      "Explanation": "In Python 3, the filter() function returns an iterator of type &apos;filter object&apos;, which can be converted into a list, tuple, etc., if needed.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can the result of a filter() function be immediately converted into a list in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "list(filter(lambda x: x%2 == 0, numbers))"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "filter(lambda x: x%2 == 0, numbers).to_list()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "filter(lambda x: x%2 == 0, numbers).list()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "list(lambda x: x%2 == 0, numbers)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93055,
+      "Explanation": "To convert the result into a list immediately, you should encapsulate the filter() call in the list() function, as shown in &apos;A&apos;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function returns the floating point representation of a number in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "float()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "str()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "repr()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93056,
+      "Explanation": "The float() function converts a number or a string to a floating point number.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the built-in function ord() do in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Converts an integer to a character"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Converts a character to an integer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Sorts strings in order"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Creates an ordered dictionary"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93057,
+      "Explanation": "The ord() function returns the Unicode code point for a single character string.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function would you use to get the absolute value of a number?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "fabs()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "absval()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "absolute()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "abs()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93058,
+      "Explanation": "The abs() function returns the absolute value of a given number.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which built-in function returns the number of elements in an iterable in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "count()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "size()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "len()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "number()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93059,
+      "Explanation": "The len() function returns the number of items in an object.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main purpose of the Python function zip()?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To compress data"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To combine two or more iterables element-wise"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To sort iterables"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To create a dictionary"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93060,
+      "Explanation": "The zip() function takes iterables and returns an iterator of tuples, where the i-th tuple contains the i-th element from each of the argument sequences or iterables.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function will round a number to a given precision in decimal digits in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "rnd()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "around()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "round()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "precision()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93061,
+      "Explanation": "The round() function returns a floating-point number rounded to the specified number of decimals.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the built-in function enumerate() do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Counts the number of times an element appears"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Returns the sum of items in an iterable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Adds a counter to an iterable and returns it as an enumerate object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Splits a string based on a delimiter"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93062,
+      "Explanation": "<span style=\"color:#0000ff;\">The enumerate() function adds a counter to an iterable, returning it in a form of an enumerate object.<br><br></span><pre><span style=\"color:#0000ff;\"><span style=\"font-size: medium; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;\">fruits = [&apos;apple&apos;, &apos;banana&apos;, &apos;cherry&apos;]<br></span>for index, fruit in enumerate(fruits):</span></pre><span style=\"color:#0000ff;\">&nbsp;&nbsp;&nbsp;&nbsp;print(index, fruit)<br>#Output:<br></span><pre><span style=\"color:#0000ff;\">0 apple<br>1 banana<br>2 cherry</span></pre>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function is used to convert an object to a string representation in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "repr()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "str()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "convert()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "stringify()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93063,
+      "Explanation": "The str() function is used to convert an object to a string representation.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the filter() function in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To apply a function to all items in an iterable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To filter items in an iterable that satisfy a condition"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To combine two or more lists"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To randomly shuffle items in a list"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93064,
+      "Explanation": "The filter() function constructs an iterator from elements of an iterable for which a function returns true.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function in Python converts a string or number into a floating-point number?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "float()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "str()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "complex()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93065,
+      "Explanation": "The float() function converts a string or number into a floating-point number.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Python function checks whether all elements in an iterable are True?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "any()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "check_all()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "validate()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93066,
+      "Explanation": "The all() function returns True if all elements of the iterable are true (or if the iterable is empty).",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does the map() function work in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It creates a mapping between two dictionaries"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It applies a function to all items in an input list"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It creates a visual map"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It creates a mapping between keys and values"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93067,
+      "Explanation": "The map() function applies a given function to each item of an iterable (like list, tuple) and returns a map object.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is returned by the built-in function 'type()'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The size of an object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The data type of an object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The content of an object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93068,
+      "Explanation": "The type() function returns the type of the object passed to it as an argument.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function can be used to convert an iterable to a list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "convert()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "tolist()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "list()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "iterable()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93069,
+      "Explanation": "The list() function takes an iterable as an argument and returns a list containing all the items of the iterable.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Python built-in function is used to create a set?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "dict()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "list()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "map()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "set()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2058,
+      "QuestionTypeId": 0,
+      "QuestionId": 93070,
+      "Explanation": "<span id=\"explanation93070\" style=\"color:blue\">The set() function is used to create a new set from the given arguments.</span>",
+      "Answer": "D",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

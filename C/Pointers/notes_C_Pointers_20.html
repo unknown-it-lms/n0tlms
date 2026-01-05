@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Notes - C_Pointers</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  body{font-family:system-ui,Segoe UI,Roboto,Arial;max-width:900px;margin:24px auto;padding:18px;line-height:1.6;color:#111}
+  h1{font-size:1.4rem;margin-bottom:0.6rem}
+  .topic{font-weight:700;margin-top:1rem}
+  .subtopic{font-weight:600;margin-top:0.8rem}
+  .content{margin:0.6rem 0 1.2rem 0}
+  pre{white-space:pre-wrap;background:#f7f7f7;padding:10px;border-radius:6px;overflow:auto}
+  img{max-width:100%;height:auto}
+  table{border-collapse:collapse;width:100%}
+  table, th, td{border:1px solid #ccc;padding:6px}
+</style>
+</head>
+<body>
+<h1>Notes: C- Pointers</h1>
+
+<div class="courseware topic">Pointers<hr></div><div class="courseware content"><p>Pointers are a fundamental aspect of C programming that provide powerful capabilities by allowing direct memory access and manipulation. Understanding pointers is crucial for achieving efficient and effective memory management in C.</p><p>One of the significant benefits of pointers is their ability to optimize program performance. They enable manipulation of arrays and structures without the need for excessive copying, which can save memory and processing time.</p><p>Pointers are also essential for dynamic memory allocation, allowing programs to request and release memory as needed, which is vital for the development of large and complex applications.</p><p>Moreover, pointers facilitate communication between different parts of a program and functions by passing addresses instead of actual values, enabling the modification of original data.</p></div>
+<div class="courseware subtopic">Need of pointers<hr></div><div class="courseware content"><p>Pointers in C programming provide the ability to directly access the memory of your computer. This functionality is crucial because it allows programmers to manipulate the memory locations where data is stored. By using pointers, programmers can perform operations that would be impossible or inefficient with higher-level abstractions.</p><p>Pointers are logically needed in some programming tasks, such as swapping the values of two numbers. In C, this may be implemented by passing the addresses of variables to a function that performs the swap. Without pointers, achieving this task would require more complex and cumbersome methods, often involving returning multiple values from functions or re-computing the entire context where values need to be swapped.</p><p>When dealing with functions that require large amounts of data, pointers become a valuable tool because they enable efficient data handling. Instead of copying large structures or arrays every time they are passed to a function, a pointer to the data can be passed, reducing the memory footprint and processing overhead. This efficiency is particularly important in performance-critical applications where resource constraint is a factor.</p></div>
+<div class="courseware subtopic">Using Pointers<hr></div><div class="courseware content"><p>Pointers are an essential concept in C programming, allowing developers to work with memory addresses and directly manipulate data stored in memory. Understanding how to use pointers is fundamental for tasks such as dynamic memory allocation and efficient data handling.</p>
+<p>To declare a pointer, you specify the data type followed by an asterisk (*) and the pointer variable name. Proper syntax is crucial for the declaration to ensure the pointer variable holds the correct type of address in memory.</p>
+<p>Once a pointer is declared, you must initialize it before use. Initialization involves assigning a valid memory address to the pointer, typically the address of a variable obtained using the address-of (&amp;) operator.</p>
+<p>De-referencing a pointer, also known as indirection, involves accessing the value stored in the memory location the pointer points to. This is accomplished using the asterisk (*) operator, which returns the value located at the pointer's address.</p>
+<table style="border-collapse: collapse;">
+<tr>
+<td style="width: 50%;">int a = 10;<br><span style="color: green;">// Declare and initialize integer variable</span><br>int *p = &a;<br><span style="color: green;">// Declare pointer p and initialize with address of a</span><br>printf("Value of a: %d, Value via pointer p: %d", a, *p);<br><span style="color: green;">// De-reference p to get value of a</span></td>
+<td style="width: 50%;">This example illustrates how to declare an integer variable and a pointer to it. The pointer is initialized with the address of the variable using the & operator. De-referencing using *p retrieves the variable's value.</td>
+</tr>
+<tr>
+<td style="width: 50%;">char b = 'X';<br><span style="color: green;">// Declare and initialize char variable</span><br>char *q;<br>q = &b;<br><span style="color: green;">// Initialize pointer q with address of b</span><br>printf("Character: %c, Through pointer q: %c", b, *q);<br><span style="color: green;">// De-reference q to get value of b</span></td>
+<td style="width: 50%;">Here, a char variable is used with a pointer. The pointer is declared and later assigned the address of the char variable. De-referencing allows access to the character value.</td>
+</tr>
+</table>
+<p>The size of a pointer is generally constant for a given architecture, usually 4 bytes on a 32-bit system and 8 bytes on a 64-bit system, regardless of the data type it points to. This is because a pointer holds a memory address, and the size depends on the address space of the architecture.</p></div>
+<div class="courseware subtopic">Pass by address<hr></div><div class="courseware content"><p>In C programming, understanding how data is passed to functions is fundamental. The concept of Pass by Value is the default in C, where a copy of the actual argument is made in memory. Hence, modifications to parameter variables within a function don't reflect on the originals outside the function.</p><p>Here's a typical example of Pass by Value:</p><table style='border-collapse:collapse;'><tr><th style='width:50%;'>Code</th><th style='width:50%;'>Explanation</th></tr><tr><td><pre><code>void addTen(int num) {
+    // Add 10 to the local copy of num
+    num += 10;
+}
+
+int main() {
+    int n = 5;
+    addTen(n);
+    printf("%d", n);  // Prints 5
+}</code></pre></td><td>The function <code>addTen</code> creates a local copy of <code>n</code>. Any changes made do not affect the original <code>n</code> in <code>main</code>.</td></tr></table><p>The main limitation of Pass by Value is the inability to modify original data directly from a function. Pass by Address, using pointers, is a technique that allows function modifications to reflect on the original variables.</p><p>Let's look at a swapping example using Pass by Address:</p><table style='border-collapse:collapse;'><tr><th style='width:50%;'>Code</th><th style='width:50%;'>Explanation</th></tr><tr><td><pre><code>void swap(int* a, int* b) {
+    int temp = *a;  // Store the value at a
+    *a = *b;       // Copy value from b to a
+    *b = temp;     // Copy original value of a to b
+}
+
+int main() {
+    int x = 10, y = 20;
+    swap(&x, &y);
+    printf("%d %d", x, y);  // Prints 20 10
+}</code></pre></td><td>The function <code>swap</code> changes the values of x and y in <code>main</code> directly by accessing their addresses.</td></tr></table><p>Another example showcases obtaining a new value via a function:</p><table style='border-collapse:collapse;'><tr><th style='width:50%;'>Code</th><th style='width:50%;'>Explanation</th></tr><tr><td><pre><code>void increment(int* n) {
+    *n += 1;  // Increment the value at the given address
+}
+
+int main() {
+    int number = 3;
+    increment(&number);
+    printf("%d", number);  // Prints 4
+}</code></pre></td><td>This program demonstrates direct modification of <code>number</code> through its address by incrementing its value.</td></tr></table></div>
+<div class="courseware subtopic">Pointer Arithmatics</div><div class="courseware content"><hr>A pointer in c is an address, which is a numeric value. Therefore, you can perform arithmetic operations on a pointer just as you can on a numeric value.<br><br>The only valid arithmetic operations applicable on pointers are:<ol><li>Increment and decrement ++ and --</li><li>Addition of integer to a pointer</li><li>Subtraction of integer to a pointer</li><li>Subtracting two pointers of the same type</li></ol>Following are Invalid pointer operations<ol><li>Addition of two Pinters</li><li>Multiplication of two Pinters</li><li>Division of two Pinters</li><li>Mod of two Pinters</li></ol>Increment and decrement ++ and -- :<br>new_address= current_address +( 1 * size_of(data type) )<br>new_address= current_address - (1 * size_of(data type))<br><br>Addition of integer to a pointer<br>new_address= current_address + (number * size_of(data type))<br><br>Subtraction of integer to a pointer<br>new_address= current_address - (number * size_of(data type)) &nbsp;<br><br>Subtracting two pointers of the same type<br>Address2 - Address1 = (Subtraction of two addresses)/size of data type which pointer points&nbsp;<br><br>Example:<br>consider ip as an integer pointer<br><table border="1" cellpadding="1" cellspacing="1" height="285" width="587"><thead><tr><th scope="col">Pointer Expression</th><th scope="col">How it is evaluated ?</th></tr><tr><td>ip = ip + 1&nbsp;</td><td>ip=&gt;ip + 1=&gt;1000 + 1*4=&gt;1004</td></tr><tr><td>ip++or++ip</td><td>ip++=&gt;ip + 1=&gt;1004 + 1*4=&gt;1008</td></tr><tr><td>ip = ip + 5</td><td>ip=&gt;ip + 5=&gt;1008 + 5*4=&gt;1028</td></tr><tr><td>ip = ip - 2</td><td>&nbsp;ip=&gt;ip - 2=&gt;1028 - 2*4=&gt;1020</td></tr><tr><td>ip--or--ip&nbsp;</td><td>&nbsp;ip=&gt;ip - 1=&gt;1020 - 1*4=&gt;1016</td></tr></thead></table><br></div>
+<div class="courseware subtopic">Function Pointer</div><div class="courseware content"><hr>​​​​​​​In C, like normal data pointers (int *, char *, etc), we can have pointers to functions. Following is a simple example that shows declaration and function call using function pointer.<br><br>Example:<br>#include &lt;stdio.h&gt;<br>// A normal function with an int parameter<br>// and void return type<br>void fun(int a)<br>{<br>&nbsp;&nbsp;&nbsp; printf("Value of a is %d ", a);<br>}<br>&nbsp;<br>int main()<br>{<br>&nbsp;&nbsp;&nbsp; // fun_ptr is a pointer to function fun() &nbsp;<br>&nbsp;&nbsp;&nbsp; void (*fun_ptr)(int) = &amp;fun;<br>&nbsp;<br>&nbsp;&nbsp;&nbsp; /* The above line is equivalent of following two<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; void (*fun_ptr)(int);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fun_ptr = &amp;fun; &nbsp;<br>&nbsp;&nbsp;&nbsp; */<br>&nbsp;<br>&nbsp;&nbsp;&nbsp; // Invoking fun() using fun_ptr<br>&nbsp;&nbsp;&nbsp; (*fun_ptr)(10);<br>&nbsp;<br>&nbsp;&nbsp;&nbsp; return 0;<br>}<br>Output:<br>Value of a is 10<br><br>we need an extra bracket around function pointers like fun_ptr because If we remove bracket, then the expression 'void (*fun_ptr)(int)' becomes 'void *fun_ptr(int)' which is declaration of a function that returns void pointer.<br><br>Following are some interesting facts about function pointers.<ol><li>&nbsp;Unlike normal pointers, a function pointer points to code, not data. Typically a function pointer stores the start of executable code.</li><li>&nbsp;Unlike normal pointers, we do not allocate de-allocate memory using function pointers.</li><li>A function's name can also be used to get functions' address. For example, in the below program, we have removed address operator '&amp;' in assignment. We have also changed function call by removing *, the program still works.</li><li>&nbsp;Like normal pointers, we can have an array of function pointers.</li><li>&nbsp;Like normal data pointers, a function pointer can be passed as an argument and can also be returned from a function.</li></ol><br></div>
+<div class="courseware subtopic">Pointer to Pointer</div><div class="courseware content"><hr>​​​​​​​In C, we can also define a pointer to store the address of another pointer. Such pointer is known as a double pointer (pointer to pointer). The first pointer is used to store the address of a variable whereas the second pointer is used to store the address of the first pointer.<br><br>syntax :<br>int **p; // pointer to a pointer which is pointing to an integer.<br>Example:<br>#include&lt;stdio.h&gt; &nbsp;<br>void main () &nbsp;<br>{ &nbsp;<br>&nbsp;&nbsp;&nbsp; int a = 10; &nbsp;<br>&nbsp;&nbsp;&nbsp; int *p; &nbsp;<br>&nbsp;&nbsp;&nbsp; int **pp;&nbsp; &nbsp;<br>&nbsp;&nbsp;&nbsp; p = &amp;a; // pointer p is pointing to the address of a &nbsp;<br>&nbsp;&nbsp;&nbsp; pp = &amp;p; // pointer pp is a double pointer pointing to the address of pointer p &nbsp;<br>&nbsp;&nbsp;&nbsp; printf("address of a: %u ",p); // Address of a will be printed&nbsp; &nbsp;<br>&nbsp;&nbsp;&nbsp; printf("address of p: %u ",pp); // Address of p will be printed &nbsp;<br>&nbsp;&nbsp;&nbsp; printf("value stored at p: %d ",*p); // value stoted at the address contained by p i.e. 10 will be printed &nbsp;<br>&nbsp;&nbsp;&nbsp; printf("value stored at pp: %d ",**pp); // value stored at the address contained by the pointer stoyred at pp &nbsp;<br>} &nbsp;<br><br>Output:<br>address of a: 4528734<br>address of p: 4528738<br>value stored at p: 10<br>value stored at pp: 10&nbsp;<br></div>
+
+
+</body>
+</html>

@@ -1,0 +1,1686 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What keyword is used to create a generator function in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "yield"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "return"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "lambda"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "def"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99054,
+      "Explanation": "<span id=\"explanation99054\" style=\"color:blue\"><span id=\"explanation99054\" style=\"color:blue\"><span id=\"explanation99054\" style=\"color:blue\"><span id=\"explanation99054\" style=\"color:blue\">In Python, the &apos;yield&apos; keyword is used within a function to make it a generator. It allows the function to return an iterator.</span></span></span></span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about generators is NOT true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Generators can be iterated only once."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Generators use &#39;yield&#39; to produce values."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Generators are stored in memory just like lists."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Generators improve performance with large datasets."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99055,
+      "Explanation": "Generators do not store their values in memory; instead, they yield values one by one. This makes them more memory efficient than lists.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following generator function?<br>def simple_gen():<br>&nbsp; &nbsp; yield 1<br>&nbsp; &nbsp; yield 2<br><br>my_gen = simple_gen()<br>print(next(my_gen))",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "None"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "StopIteration"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99056,
+      "Explanation": "<span id=\"explanation99056\" style=\"color:blue\"><span id=\"explanation99056\" style=\"color:blue\"></span></span><span style=\"color:blue\"><span style=\"color:blue\">simple_gen() is a generator function. When called, it returns a generator object (my_gen).<br>The yield keyword is used to produce a value without terminating the function \u2014 it pauses the function and saves its state.<br>The next(my_gen) call resumes the function execution until it hits the next yield, which in this case is yield 1.</span></span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you convert a generator to a list in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use the list constructor: list(generator)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use the tuple constructor: tuple(generator)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use the dict constructor: dict(generator)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use the str constructor: str(generator)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99057,
+      "Explanation": "You can convert a generator to a list using the &#39;list()&#39; constructor, which will iterate over the generator and collect all the yielded values into a list.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you call &#39;next()&#39; on a generator function that has no more items to yield?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It starts over from the first yield."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It raises a StopIteration exception."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It returns the last item yielded."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It pauses indefinitely."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99058,
+      "Explanation": "When a generator function has no more items to yield, calling &#39;next()&#39; raises a StopIteration exception.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How is a generator function different from a normal function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It does not return values."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It returns a generator object using &#39;return&#39;."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It yields values sequentially using &#39;yield&#39;."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It can return multiple values simultaneously."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99059,
+      "Explanation": "A generator function uses &#39;yield&#39; to return values one at a time, whereas a normal function uses &#39;return&#39; to return a single value.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the advantage of using a generator function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It increases computational speed."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It reduces memory usage."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It ensures thread safety."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It allows complex data manipulation."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99060,
+      "Explanation": "Generator functions yield one item at a time and do not store their contents in memory, thus reducing memory usage.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method can be used to manually control a generator in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "send()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "append()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "insert()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "pop()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99061,
+      "Explanation": "The &#39;send()&#39; method can be used to send values into a generator, allowing for interaction with the yield statement.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main difference between a generator function and a regular function in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Generator functions return a list of values."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Generator functions use the &#39;return&#39; statement."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Generator functions yield values one at a time."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Generator functions run faster than regular functions."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99062,
+      "Explanation": "Generator functions use the &#39;yield&#39; keyword to yield one value at a time, instead of returning a list of values.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used in Python to create a generator function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "return"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "yield"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "generate"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "begin"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99063,
+      "Explanation": "The &#39;yield&#39; keyword is used in Python to define a generator, which allows the function to return a value and save its state for subsequent calls.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What&#39;s a significant benefit of using generators in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They automatically convert code to C."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They allow for cleaner, more readable closure operations."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They save memory by generating items on-demand."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They reduce execution time of the program."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99064,
+      "Explanation": "Generators generate items on-the-fly and only when needed, which can be memory efficient for working with large data sets.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following best describes the &#39;yield&#39; keyword in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It indicates the end of a function."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It returns a value and stops the function execution permanently."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It returns a value and pauses function execution to be resumed later."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It creates a new thread for the function."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99065,
+      "Explanation": "&#39;yield&#39; returns a value from the generator and pauses its execution, allowing it to be resumed later, preserving its state.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the outcome when you call a generator function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A list of all possible values is returned."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An iterator object is returned."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The function executes completely and returns None."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A syntax error is thrown."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99066,
+      "Explanation": "When a generator function is called, it returns a generator iterator object which can be iterated to retrieve the values one by one.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which built-in function is used to iterate over generator objects?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "list()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "next()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "iterate()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "gen_iter()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99067,
+      "Explanation": "The &#39;next()&#39; function is used to get the next value from a generator object.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do generators handle StopIteration exceptions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Generators automatically convert StopIteration to SyntaxError."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Generators let StopIteration be thrown and caught externally."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Generators silently ignore StopIteration."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Generators throw an AttributeError instead."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99068,
+      "Explanation": "When a generator has no more values to yield, it raises a StopIteration exception, which is typically caught externally.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is returned by the &#39;yield&#39; expression in a generator when a value is sent to it?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The sent value itself is returned."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "None"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An integer count of yields"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Generator state"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99069,
+      "Explanation": "When a value is sent to a generator using the &#39;send()&#39; method, that value becomes the result of the current &#39;yield&#39; expression.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Python, what is the primary difference between the `yield` keyword and a regular function return statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yield pauses the function, while return exits the function."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yield can only return integers, while return can return any data type."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yield is used outside of functions, while return is used inside functions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Yield and return can be used interchangeably in Python."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99070,
+      "Explanation": "The yield keyword is used to pause the execution of a generator function and allows it to resume from where it left off, while the return statement exits the function and returns a value.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which type of Python function uses the `yield` keyword?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Iterator"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Generator"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Coroutine"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Lambda Function"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99071,
+      "Explanation": "Generator functions make use of the `yield` keyword to produce a series of values over time, allowing for efficient iteration.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens to a generator in Python when it reaches the end of its function body without encountering a `yield` statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Raises a SyntaxError."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Returns None."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Raises a StopIteration exception."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Continues indefinitely."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99072,
+      "Explanation": "When a generator function completes without encountering a yield statement, it raises a StopIteration exception to signal that iteration is complete.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you restart a generator in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Call the `reset()` method on the generator."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Re-call the generator function to create a new generator."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use the `restart()` method."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "There is no way to restart a generator once it is exhausted."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99073,
+      "Explanation": "To restart a generator, you need to call the generator function again to obtain a new generator object.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of object does a generator function in Python return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A list"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A tuple"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A generator object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An integer"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99074,
+      "Explanation": "A generator function returns a generator object, which can be iterated over to yield values one at a time.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a benefit of using generators and `yield` in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Generators automatically parallelize execution across multiple cores."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using generators conserves memory by generating items one at a time."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Generators eliminate all exceptions during runtime."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Generators ensure thread safety without using locks."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99075,
+      "Explanation": "Generators conserve memory because they generate items one at a time and only store the current item in memory.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method would you use to get the next value from a generator in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "next()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "yield()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "generate()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "fetch()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99076,
+      "Explanation": "The `next()` function is used to retrieve the next value from a generator.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if a generator function does not contain a `yield` statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It becomes a normal function that does not create a generator object."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It generates an infinite sequence of None values."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It generates an empty generator object."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An exception is immediately raised on execution."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99077,
+      "Explanation": "If a function intended to be a generator does not include a `yield` statement, it behaves like a regular function and does not create a generator object.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a key difference between a list comprehension and a generator expression in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "List comprehensions use more memory than generator expressions."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Generator expressions use more memory than list comprehensions."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "List comprehensions are faster at runtime than generator expressions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Generator expressions can only be used with infinite sequences."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99078,
+      "Explanation": "List comprehensions store the entire list in memory, whereas generator expressions produce items on-the-fly and use less memory.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following syntax correctly defines a generator expression?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[x * x for x in range(10)]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{x * x for x in range(10)}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "(x * x for x in range(10))"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "set(x * x for x in range(10))"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99079,
+      "Explanation": "Generator expressions use parentheses and produce items lazily, unlike list comprehensions which use square brackets.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function is typically used to convert a generator expression into a list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "set()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "list()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "tuple()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "dict()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99080,
+      "Explanation": "The list() function takes a generator expression or any iterable and creates a list containing its items.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In what types of operations are generator expressions particularly useful?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Operations on large datasets where memory efficiency is critical."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "String manipulation operations."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Operations that require immediate full list processing."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "GUI-based operations."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99081,
+      "Explanation": "Generator expressions are useful when dealing with large data sets, as they provide a memory-efficient way to work with data.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if you try to access the next item of a generator expression after it has been exhausted?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will raise a StopIteration exception."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It will restart from the beginning of the sequence."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will return None."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It will continue iterating indefinitely."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99082,
+      "Explanation": "Generator expressions raise a StopIteration exception when reaching the end of the sequence similar to other iterators in Python.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can a generator expression include multiple loops or nested loops?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "No, generator expressions are limited to single loops only."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes, but they must be defined inside a function."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, generator expressions can include multiple loops."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No, multiple loops are only possible with list comprehensions."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99083,
+      "Explanation": "Similar to list comprehensions, generator expressions can include multiple or nested loops.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the result of applying len() on a generator expression directly?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will return the length of the generator expression."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It will raise a TypeError."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will return 0."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It will return 1."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99084,
+      "Explanation": "The len() function cannot be used on a generator expression directly, as generator expressions do not have a length.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following Python code?\n\ndef simple_gen():\n    yield 1\n    yield 2\n    yield 3\n\nfor value in simple_gen():\n    print(value, end=&#39; &#39;)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1 2 3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1 2 3 0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1 2 3 None"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "3 2 1"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99085,
+      "Explanation": "The generator function &#39;simple_gen&#39; yields the values 1, 2, and 3 one by one, which are printed in sequence.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How will the generator function behave when the following code is executed?\n\ndef reverse_gen():\n    yield &#39;C&#39;\n    return &#39;D&#39;\n\nx = reverse_gen()\nprint(next(x))",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&#39;C&#39;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&#39;C&#39; &#39;D&#39;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99086,
+      "Explanation": "The generator yields the value &#39;C&#39;. When the generator ends (with next call), it raises StopIteration with &#39;D&#39;, but in this case, &#39;C&#39; is printed before termination.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the &#39;yield&#39; keyword in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To declare a generator function and return its result"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To return multiple values from a function simultaneously"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To pause a function&#39;s execution without losing its state"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To exit a function immediately"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99087,
+      "Explanation": "The &#39;yield&#39; keyword is used to pause a generator function&#39;s execution while maintaining its state so it can resume later.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider the following code:<br><br>def gen():<br>&nbsp;&nbsp;&nbsp;&nbsp;n = 5<br>&nbsp;&nbsp;&nbsp;&nbsp;while n &gt; 0:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yield n<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n -= 1<br><br>list(gen())<br><br>What will this return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "[5, 4, 3, 2, 1]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[1, 2, 3, 4, 5]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "[5, 4, 3]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "[5, 0]"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99088,
+      "Explanation": "<span id=\"explanation99088\" style=\"color:blue\"><span id=\"explanation99088\" style=\"color:blue\">The generator yields numbers from 5 to 1, decrementing n after each yield.</span></span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if a generator function does not contain the &#39;yield&#39; statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It returns None"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It acts as a normal function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It raises an error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It returns an empty list"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99089,
+      "Explanation": "A function without a &#39;yield&#39; statement is treated as a normal function and not as a generator.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a feature of generator functions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They can handle infinite streams of data."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They automatically store the state of the execution between each call."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They consume more memory than regular functions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They can be iterated using a for loop."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99090,
+      "Explanation": "Generator functions are memory efficient since they generate each value when needed without storing the entire sequence in memory.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will the following code print?\n\ndef count_down_gen(start):\n    while start &gt; 0:\n        yield start\n        start -= 1\n\ncd = count_down_gen(3)\nprint(next(cd))\nprint(next(cd))",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "3 2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2 1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1 0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "3 1"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99091,
+      "Explanation": "The generator yields from 3 down to 1. The first call to next(cd) returns 3, and the second returns 2.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can we manually stop a generator&#39;s execution?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using the &#39;stop&#39; keyword"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using a &#39;break&#39; statement"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By returning a value inside a generator"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Calling &#39;close()&#39; method on the generator object"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99092,
+      "Explanation": "You can stop a generator&#39;s execution by calling the &#39;close()&#39; method on its generator object.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to define a generator function in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "return"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "yield"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "generate"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "def"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99093,
+      "Explanation": "Generators are created using functions that have the &#39;yield&#39; keyword. The &#39;yield&#39; statement produces a value and suspends the function\u2019s execution rather than terminating it.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What differentiates a generator function from a regular function in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The use of the &#39;def&#39; keyword"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The ability to return multiple values simultaneously"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The presence of the &#39;yield&#39; keyword"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The use of &#39;return&#39; keyword"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99094,
+      "Explanation": "A generator function contains one or more &#39;yield&#39; statements. The &#39;yield&#39; statement turns the function into a generator.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you convert a generator object into a list in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using list() function"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Iterating and appending elements manually"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using the map() function"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using the dict() function"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99095,
+      "Explanation": "You can convert a generator object to a list by passing the generator to the list() constructor.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of this code snippet?\n\ndef my_gen():\n  yield 1\n  yield 2\n  yield 3\n\nprint(sum(my_gen()))",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Generator object"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99096,
+      "Explanation": "The &#39;sum()&#39; function can be used to sum up values generated by the generator, and this would return the sum: 1 + 2 + 3.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you use &#39;return&#39; instead of &#39;yield&#39; in a generator function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will raise a SyntaxError"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It will iterate infinitely"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will return None"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It will terminate the generator"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99097,
+      "Explanation": "Using &#39;return&#39; will terminate the generator and cause a StopIteration exception whenever the generator is iterated.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do generator expressions differ from generator functions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They use parentheses instead of brackets"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They use &#39;yield&#39; inside expressions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They are limited to finite series"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They cannot be iterated over"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99098,
+      "Explanation": "Generator expressions provide a way to create a generator on-the-fly from iterable expressions and use parentheses, similar to list comprehensions that use square brackets.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if a generator function contains both &#39;yield&#39; and &#39;return&#39; statements?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The function will return a SyntaxError"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The &#39;return&#39; statement will have no effect"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The generator can terminate upon &#39;return&#39; being hit"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It will execute indefinitely in a loop"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99099,
+      "Explanation": "If a generator function contains &#39;return&#39;, it will cause the generator to terminate by raising StopIteration.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What exception is raised to signify the end of a generator\u2019s contents?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "EndOfGenerator"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "StopIteration"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "GeneratorExit"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "NoMoreElements"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99100,
+      "Explanation": "StopIteration is the exception that is raised to signal that the generator has no more elements.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following correctly creates a generator expression to generate squares of numbers from 0 to 9?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "(x^2 for x in range(10))"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "(x**2 for x in range(10))"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "{x**2 for x in range(10)}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "[x**2 for x in range(10)]"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99101,
+      "Explanation": "Option B uses the correct syntax for generator expressions. Options C and D create a set and a list, respectively, while option A uses the incorrect operator &#39;^&#39; instead of &#39;**&#39;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the type of the object created by the expression (x for x in &#39;Hello&#39;)?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "list"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "tuple"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "generator"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "string"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99102,
+      "Explanation": "The expression creates a generator object to iterate over the string &#39;Hello&#39;. In Python, this is a generator type.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the output of the following code snippet: sum((x for x in range(5)))?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "15"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "0"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99103,
+      "Explanation": "The generator expression (x for x in range(5)) generates numbers 0 through 4. The sum of these numbers is 0 + 1 + 2 + 3 + 4 = 10.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true about generator expressions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They execute immediately and store results in memory."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They can consume more memory than list comprehensions."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They are faster when you need to iterate over large datasets."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They always return data of type list."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99104,
+      "Explanation": "Generator expressions are more memory efficient and often faster when handling large datasets because they generate items on-the-fly instead of storing them in memory.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you convert the result of a generator expression like (x*2 for x in range(5)) into a list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "list(x*2 for x in range(5))"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[x*2 for x in range(5)]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "convert_to_list((x*2 for x in range(5)))"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "list((x*2 for x in range(5)))"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99105,
+      "Explanation": "Using list((x*2 for x in range(5))) correctly converts the generator expression into a list by materializing its items.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if you try to run next((x for x in []))?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will return None."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It will raise a StopIteration exception."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will print an empty list."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It will return the first element."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99106,
+      "Explanation": "The generator expression creates an empty generator due to the empty list. Calling next on it raises StopIteration because there are no items to return.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator cannot be used in a generator expression?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Arithmetic operators"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Comparison operators"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yield operator"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Lambda function"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99107,
+      "Explanation": "<span id=\"explanation99107\" style=\"color:blue\">Yield is not allowed in generator expressions as they are meant to be simple and concise. Yield is used in generator functions to yield values.<br></span><span style=\"color:blue\">Generator expressions are compact, one-liner syntax used to create generator objects, but they follow specific constraints.<br><strong>Why yield doesn&apos;t work:</strong><br>The yield keyword is a statement, not an expression, and generator expressions only allow expressions.<br>If you need yield, you must use a generator function instead \u2014 defined with def and containing yield.</span><br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider the generator expression: (x+1 for x in range(10) if x % 2 == 0). What does it generate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "All odd numbers between 1 and 10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "All even numbers between 0 and 10"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Even numbers incremented by 1 from the range 0 to 9"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Numbers 1 through 10 excluding evens"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 99108,
+      "Explanation": "The generator expression generates numbers by adding 1 to even numbers (0, 2, 4, 6, 8) in the specified range, resulting in 1, 3, 5, 7, 9.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which type of function allows you to iterate over a set of items using the 'yield' keyword in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Iterator Function"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Lambda Function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Generator Function"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Recursive Function"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7106,
+      "QuestionTypeId": 0,
+      "QuestionId": 93009,
+      "Explanation": "Generator Functions in Python are defined using the &apos;yield&apos; keyword, allowing them to return an iterable set of values. They maintain their state during execution, so the next value can be generated on-demand.",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

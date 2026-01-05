@@ -1,0 +1,606 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "In MySQL, which keyword would you use with the DELETE statement to remove only one row from a result set that meets specific criteria?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "LIMIT"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DISTINCT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "WHERE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "TOP"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6533,
+      "QuestionTypeId": 0,
+      "QuestionId": 92140,
+      "Explanation": "The LIMIT keyword is used with DELETE to specify the number of rows to delete, where LIMIT 1 deletes only one row.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if you execute the following command? DELETE FROM students WHERE id=10;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Deletes all records from the students table."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Deletes records with id greater than 10."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Deletes the record where id is 10."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Updates the record where id is 10."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6533,
+      "QuestionTypeId": 0,
+      "QuestionId": 92141,
+      "Explanation": "The DELETE statement with a WHERE clause deletes rows that match the given condition, so it deletes the record where id equals 10.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a valid use of the DELETE statement in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DELETE FROM table_name;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DELETE FROM table_name WHERE condition;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DELETE ALL FROM table_name;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DELETE FROM table_name LIMIT 1;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6533,
+      "QuestionTypeId": 0,
+      "QuestionId": 92142,
+      "Explanation": "The DELETE statement does not support the use of the ALL keyword; it simply uses DELETE FROM table_name to remove all records.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using DELETE in conjunction with JOIN clauses, what must be specified to clarify the table being deleted from?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DELETE USING table_name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DELETE table_name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DELETE TABLE table_name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DELETE FROM table_name"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6533,
+      "QuestionTypeId": 0,
+      "QuestionId": 92143,
+      "Explanation": "In DELETE using JOIN, the table name is specified directly after DELETE to clarify which table&apos;s rows are to be deleted.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the impact of omitting the WHERE clause in a DELETE statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "No rows are deleted."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only one row is deleted."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "All rows in the table are deleted."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A syntax error is raised."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6533,
+      "QuestionTypeId": 0,
+      "QuestionId": 92144,
+      "Explanation": "If the WHERE clause is omitted, the DELETE statement will remove all rows from the table.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which type of SQL statement is DELETE considered?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DDL (Data Definition Language)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DML (Data Manipulation Language)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DCL (Data Control Language)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "TCL (Transaction Control Language)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6533,
+      "QuestionTypeId": 0,
+      "QuestionId": 92145,
+      "Explanation": "DELETE is a DML statement because it manipulates data by removing rows from a table.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you try to DELETE a row that does not exist in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An error is thrown."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No action is taken."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The same number of affected rows is returned as if the row existed."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The DELETE statement is ignored."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6533,
+      "QuestionTypeId": 0,
+      "QuestionId": 92146,
+      "Explanation": "If the row does not exist, the DELETE statement executes without deleting anything and returns 0 affected rows.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you delete all rows from a table without removing the table itself?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DROP TABLE table_name;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DELETE FROM table_name;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "REMOVE table_name;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "TRUNCATE table_name;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6533,
+      "QuestionTypeId": 0,
+      "QuestionId": 92149,
+      "Explanation": "DELETE FROM table_name without a WHERE clause deletes all rows but retains the table structure.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the following query do? DELETE FROM orders WHERE order_date &lt; '2022-01-05';",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Deletes all orders placed before January 5, 2022."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Deletes orders exactly on January 5, 2022."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Deletes all dates after May 1, 2022."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Deletes all orders placed before May 1, 2022."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6533,
+      "QuestionTypeId": 0,
+      "QuestionId": 92150,
+      "Explanation": "<span id=\"explanation92150\" style=\"color:blue\">The WHERE clause specifies that only orders with order_date less than &apos;2022-01-01&apos; will be deleted.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To prevent deleting all rows accidently with a DELETE command, what should be included?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An ORDER BY clause."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A HAVING clause."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A LIMIT clause."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A WHERE clause."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6533,
+      "QuestionTypeId": 0,
+      "QuestionId": 92151,
+      "Explanation": "By specifying a condition with the WHERE clause, you ensure that only certain rows are deleted.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which MySQL clause can be used to delete rows from one table that are also present in another?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DELETE USING JOIN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DELETE INNER JOIN"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DELETE OUTER JOIN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DELETE LEFT JOIN"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6533,
+      "QuestionTypeId": 0,
+      "QuestionId": 92152,
+      "Explanation": "DELETE INNER JOIN allows rows to be deleted from a table based on their presence in another joined table.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In terms of performance, why might DELETE be slower than TRUNCATE?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DELETE logs each row deletion."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DELETE cannot use indexes."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DELETE only works on small tables."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DELETE changes the table structure."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6533,
+      "QuestionTypeId": 0,
+      "QuestionId": 92153,
+      "Explanation": "DELETE logs each row individually, while TRUNCATE does not, making DELETE slower for larger tables.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is true about DELETE and TRUNCATE statements?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Both can be rolled back if auto-commit is disabled."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DELETE cannot be rolled back, but TRUNCATE can."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "TRUNCATE cannot be rolled back, but DELETE can."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both are identical in terms of rollback capabilities."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6533,
+      "QuestionTypeId": 0,
+      "QuestionId": 92155,
+      "Explanation": "DELETE can be part of a transaction and rolled back, while TRUNCATE is a DDL operation and cannot typically be rolled back.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of executing DELETE FROM employees WHERE salary > 60000;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Deletes all employees with a salary of exactly 60000."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Deletes all records where salary is greater than 60000."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Deletes all records in the employees table."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Raises an error as no condition is specified."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6533,
+      "QuestionTypeId": 0,
+      "QuestionId": 92156,
+      "Explanation": "The WHERE clause specifies a condition, so it deletes only the rows where the salary exceeds 60000.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "While using DELETE with a WHERE clause, what happens if the condition matches no rows?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The DELETE command fails."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0 rows are affected."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1 row is deleted by default."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A warning message is displayed."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6533,
+      "QuestionTypeId": 0,
+      "QuestionId": 92157,
+      "Explanation": "No rows are deleted if the WHERE condition matches no data; thus, 0 rows are affected.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a consequence of using the DELETE command without a WHERE clause?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It can delete all rows in the table."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It will not delete any rows due to syntax error."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It deletes rows selectively."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It requires an additional DROP statement to function."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6533,
+      "QuestionTypeId": 0,
+      "QuestionId": 92158,
+      "Explanation": "Without a WHERE clause, DELETE will remove all rows from the table it targets, effectively emptying it.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can the safety of a DELETE operation be enhanced to prevent accidental deletions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use DELETE ALL;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Always use a LIMIT clause."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use a SELECT query first to preview the data to be deleted."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Disable keys in MySQL."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6533,
+      "QuestionTypeId": 0,
+      "QuestionId": 92159,
+      "Explanation": "Running a SELECT query first allows you to check and confirm the data before performing the DELETE operation.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In MySQL, which command is used to delete a database permanently?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DROP DATABASE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "REMOVE DATABASE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DELETE DATABASE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ERASE DATABASE"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6533,
+      "QuestionTypeId": 0,
+      "QuestionId": 92029,
+      "Explanation": "The DROP DATABASE command permanently deletes a database along with its data and associated objects in MySQL.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which SQL command is used to remove a database table?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DELETE TABLE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "REMOVE TABLE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DROP TABLE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ERASE TABLE"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6533,
+      "QuestionTypeId": 0,
+      "QuestionId": 92019,
+      "Explanation": "The DROP TABLE command in SQL is used to delete an entire table, including its structure and data, from the database.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which SQL statement is used to remove a table and all its data from a database?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DELETE TABLE table_name;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "REMOVE table_name;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DROP TABLE table_name;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "TRUNCATE TABLE table_name;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6533,
+      "QuestionTypeId": 0,
+      "QuestionId": 92040,
+      "Explanation": "The DROP TABLE command is used to completely remove a table and all its data from a database.",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

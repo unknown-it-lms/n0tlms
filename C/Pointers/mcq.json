@@ -1,0 +1,3546 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "void main()<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp; &nbsp;int i, fun1(), fun2(), fun3();<br>&nbsp;&nbsp; &nbsp;int(*f[3])();<br>&nbsp;&nbsp; &nbsp;f[0] = fun1;<br>&nbsp;&nbsp; &nbsp;f[1] = fun2;<br>&nbsp;&nbsp; &nbsp;f[2] = fun3;<br>&nbsp;&nbsp; &nbsp;for (i = 0; i &lt; 3; i++)(*f[i])();</div>}<br>int fun1()<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp; &nbsp;printf(\"SUN\");<br>&nbsp;&nbsp; &nbsp;fun3();</div>}<br>int fun2()<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp; &nbsp;printf(\"COMPUTER\");</div>}<br>int fun3()<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp; &nbsp;printf(\"EDUCATION\");</div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SUN COMPUTER EDUCATION"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SUN COMPUTER"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SUNEDUCATIONCOMPUTEREDUCATION"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63926,
+      "Explanation": "<span id=\"explanation63926\" style=\"color:blue\">f is array of pointer to function.<br>for loop gives call to each function of the array.<br>fun1() gives a call to fun3() and fun3() is also called independently, thus call to fun3() is given twice.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;void fun (int x, int *y)<br>{<div style=\"margin-left: 40px;\">&nbsp; x = *(y) += 2;</div>}<br>void main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; int a[5] = { 2, 4, 6, 0 }, i, b = 5;<br>&nbsp; for (i = 0; i &lt; 3; i++)<br>&nbsp;&nbsp;&nbsp; {</div><div style=\"margin-left: 80px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fun (a[i], &amp;b);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf (\"%d\", b);</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp; }</div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "4 6 8"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "7 9 11"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "5 7 9"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "5 5 5"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63927,
+      "Explanation": "<span id=\"explanation63927\" style=\"color:blue\">In for loop we are calling function fun with array element and b(by referance).<br>when i = 0 arr[i] = 2&nbsp; fun&nbsp; changes b = b+2&nbsp; i.e. 5+2 = 7<br>when i = 1 arr[i] = 4&nbsp; fun&nbsp; changes b = b+2&nbsp; i.e. 7+2 = 9<br>when i = 2 arr[i] = 6&nbsp; fun&nbsp; changes b = b+2&nbsp; i.e. 9+2 = 11 </span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; int GoodLuck (int, float);<br>&nbsp; int (*shine) (int, float);<br>&nbsp; shine = GoodLuck;<br>&nbsp; printf (\"%d\", (*shine) (10, 3.14));</div>}<br>int GoodLuck (int i, float f)<br>{<div style=\"margin-left: 40px;\">&nbsp; printf (\"%d %f \", i, f);<br>&nbsp; return (4.56);</div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10 3.14 4"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10 3.14 4.56"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "10 3 4.56"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of these"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63914,
+      "Explanation": "<span id=\"explanation63914\" style=\"color:blue\">shine is a function pointer pointing to function GoodLuck.<br>Function GoodLuck will print 10&nbsp;&nbsp; 3.14.<br>Function GoodLuck will return 4 as return type of function is int hence 4.56 will be only 4, which will be printed in function main.</span><br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A bit field is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A pointer variable in a structure."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "One bit or a set of adjacent bits within a word"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A pointer variable in a union"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Not used in C"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 64054,
+      "Explanation": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A bit field is a data structure used in computer programming. It consists of a number of adjacent computer memory locations which have been allocated to hold a sequence of bits, stored so that any single bit or group of bits within the set can be addressed&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Code:<br>int x[] = { 1, 4, 8, 5, 1, 4 };<br>int *ptr, y;<br>ptr&nbsp; = x + 4;<br>y = ptr - x;<br>What does y in the sample code above equal?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "-3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "4 + sizeof( int )"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "4 * sizeof( int )"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 64066,
+      "Explanation": "<span id=\"explanation64066\" style=\"color:blue\">In pointer arithmatic when you add any no to pointer the result is<br>new_address= current_address + (number * size_of(data type))&nbsp;<br><br>and when you subtract two pointers the formula is<br><br>Address2 - Address1 = (Subtraction of two addresses)/size of data type which pointer points&nbsp;<br><br>Here x is array which is nothing but constant pointer hence&nbsp; result is 4.<br><br>&nbsp;</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The declaration \u201cint *P(char a[ ] );\u201d indicates&nbsp;&nbsp;&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "P is pointer to integer"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "P is pointer to function that returns an integer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "P is function that returns an integer pointer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Illegal declaration of P"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 64060,
+      "Explanation": "int * is integer pointer ,here p is function which accept character array and returns ineger pointer.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A[j] is not same as________.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "*(A+j)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "*(j+A)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "j[A] (D)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A+j"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 64088,
+      "Explanation": "&nbsp;in C array can be a[i] =*(a+i)=(*i+a) = i[a]<br>hence A+j is not valid. A+ j will return address and not value.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Code:<br>int y[4] = {6, 7, 8, 9};<br><br>int *ptr = y + 2;<br>printf(\"%d \", ptr[ 1 ] );<br><br>What is printed when the sample code above is executed?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "7"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "8"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "9<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 64073,
+      "Explanation": "in case of array a[i] =*(a+i)=*(i+a )= i[a]<br>in this case *ptr = y+2 , means *ptr = 8. y is array name which is nothing but constant pointer.<br>when you write ptr[1] &nbsp;is pointing to 9.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the program assuming that the array begins at the location 1002 and size of an integer is 4 bytes?<br>&nbsp;&nbsp; #include&lt;stdio.h&gt;<br>&nbsp;&nbsp; int main()<br>&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int a[3][4] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(\"%u, %u, %u \", a[0]+1, *(a[0]+1), *(*(a+0)+1));<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br>&nbsp;&nbsp; }&nbsp;&nbsp;&nbsp;<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "448, 4, 4"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "520, 2, 2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1006, 2, 2<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63727,
+      "Explanation": "a[0]+1 Address of First row Second element.<br>*(a[0]+1) Value at Address of First row Second element.<br>*(*(a+0)+1) Value at Address of First row Second element.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How to declare a pointer to a function?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int *(fp)()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int (*fp)()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int * fp()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63737,
+      "Explanation": "we need an extra bracket around function pointers like fp.<br>If we remove bracket, then the expression \u201cint (*fp)()\u201d becomes \u201cint *fp()\u201d which is declaration of a function that returns int pointer.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Generic pointer is________.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "char *"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "generic *"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "void *"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "there is no such concept"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63713,
+      "Explanation": "A generic pointer is a pointer variable that has void as its data type. The void pointer, or the generic pointer, is a special type of pointer that can point to variables of any data type. It is declared like a normal pointer variable but using the void keyword as the pointer&apos;s data type.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; int a[] = { 1, 2, 3, 4, 5 }, j;<br><br>&nbsp; for (j = 0; j &lt; 5; j++)<br>&nbsp;&nbsp;&nbsp; {<br></div><div style=\"margin-left: 80px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf (\"%d\", *(a + j));<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a++;<br></div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp; }<br></div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1 2 3 4 5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1 2 3 4"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1 3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63717,
+      "Explanation": "a is array and in in c array are nothing but constant pointer it store base address of array. Cannot increment constant pointer(a++)<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>&nbsp;&nbsp;&nbsp; {<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp; char far&nbsp; *cash,*cheque;</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp; printf(\u201c%d %d\u201d, sizeof(cash), sizeof(cheque));</div>&nbsp;&nbsp;&nbsp; }",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2 2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2 4"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "4 2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "4 4"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63764,
+      "Explanation": "The size of a \"far\" pointer is 4 bytes (16-bit segment + 16-bit offset) and the size of a \"near\" pointer is 2 bytes (16-bit offset). unqualified data pointers were assumed as \"near.\" Hence *Cheque is near pointer.The size of a \"near\" pointer is 2 bytes (16-bit offset). Therefore, line 4 prints \"4 2\".",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is not possible ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Subtracting 2 pointers"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Multiplication two pointers"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Adding constant to a pointer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Subtracting constant from a pointer"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63765,
+      "Explanation": "There are a few operations that are not possible with pointers. These are:<br><br>Addition of two pointer variables<br>Multiplication of a pointer and <strong></strong> Multiplication&nbsp; <strong></strong>with a constant value<br>Division of a pointer with a constant value<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Pointer can store_______.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "data&nbsp;&nbsp;&nbsp;(B)&nbsp;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "any address"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "data or address&nbsp;&nbsp;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "any valid address and NULL"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63707,
+      "Explanation": "Pointer&#39;s use is to store address of memory location. if pointer stores valid address, it can be dereferenced to find the data stored at that address, else it will store Null.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<br>void execute (int **ppm, int **ppd)<br>{<div style=\"margin-left: 40px;\">&nbsp; int temp;<br>&nbsp; temp = **ppm;<br>&nbsp; **ppm = **ppd;<br>&nbsp; **ppd = temp;<br></div>}<br><br>void function (int *ppm, int *ppd)<br>{<div style=\"margin-left: 40px;\">&nbsp; execute (&amp;ppm, &amp;ppd);<br></div>}<br><br>void main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; int m = 35, d = 45;<br>&nbsp; function (&amp;m, &amp;d );<br>&nbsp; printf (\"%d %d\", m, d);<br></div>}<br><br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "35 45"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "45 35"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "35 35"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63709,
+      "Explanation": "**ppm(pointer to pointer) will access the value of variable m which is 35.<br>**ppd( pointer to pointer ) will access the value of variable d which is 45.<br>Both the values are swapped using temporary variable &apos;temp&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include&lt;stdio.h&gt;<br>void main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; int i, fun1(), fun2(), fun3();<br>&nbsp; int (*f[3]) ();<br>&nbsp; f[0] = fun1;<br>&nbsp; f[1] = fun2;<br>&nbsp; f[2] = fun3;<br>&nbsp; for (i = 0; i &lt; 3; i++)<br>&nbsp;&nbsp;&nbsp; (*f[i]) ();<br></div>}<br><br>int fun2()<br>{<div style=\"margin-left: 40px;\">&nbsp; printf (\"COMPUTER\");<br>&nbsp; return 0;<br></div>}<br><br><br>int fun1()<br>{<div style=\"margin-left: 40px;\">&nbsp; printf (\"SUN\");<br>&nbsp; fun2();<br>&nbsp; return 0;<br></div>}<br><br><br>int fun3 ()<br>{<div style=\"margin-left: 40px;\">&nbsp; printf (\"EDUCATION\");<br>&nbsp; return 0;<br></div>}<br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SUN COMPUTER EDUCATION"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SUN COMPUTER"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SUNCOMPUTERCOMPUTEREDUCATION"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63311,
+      "Explanation": "Function pointer is used to call the functions. funct1 is calling func 2 hence out put contains 2 times computer.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Q contains 100 and P contains 104,</div><div>&nbsp;&nbsp; if P-Q is 2 then what type of pointers are they?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "char *"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int *"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "float *"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "void *"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63292,
+      "Explanation": "When we subtract two pointers the result will be in terms of no of units of datatype of pointer.&nbsp; here the answer is 2(4 bytes means 2 int values) means int data type. for char pointer ans is 4 , for float&nbsp; ans is 1.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is true about void *<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It can be referenced"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It can be dereferenced"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It can be incremented"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All are true"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63293,
+      "Explanation": "The void pointer in C is a pointer which is not associated with any data types. It points to some data location in the storage means points to the address of variables. It is also called general purpose pointer.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Consider declaration int *P;</div><div>&nbsp;&nbsp;&nbsp; Which of the following statement will generate Error?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "*++P"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "++*P"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "*P++"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "P*++"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63294,
+      "Explanation": "p* is invalid. &apos;*&apos; operator&nbsp; should always before variable name.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>void main( )</div><div>{<br>&nbsp;&nbsp;&nbsp;&nbsp;int count=10,*temp,sum=0;<br>&nbsp;&nbsp;&nbsp;&nbsp;temp=&amp;count;<br>&nbsp;&nbsp;&nbsp;&nbsp;*temp=20;<br>&nbsp;&nbsp;&nbsp;&nbsp;temp=&amp;sum;<br>&nbsp;&nbsp;&nbsp;&nbsp;*temp=count;<br>&nbsp;&nbsp;&nbsp;&nbsp;printf(\"%d %d %d\", count, *temp, sum);</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "20 20 20"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "20 20 0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "10 20 0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "10 20 20"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63295,
+      "Explanation": "<span id=\"explanation63295\" style=\"color:blue\">&nbsp;temp is storing the address of countvariable.<br>*temp=20;&nbsp; will change the value present at &amp;count and in next statement we are again assigning address of sum to temp pointer and again assigning&nbsp; *temp=count; means changing the value present at &amp;sum&nbsp; which is 20 hence output will be 20 20 20.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>&nbsp;&nbsp;&nbsp; void main( )<br></div><div>&nbsp;&nbsp;&nbsp; {</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp; char *ch=\"sun\";</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(\"%c,%s\",*++ch, ch);<br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "s,sun"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "t,sun"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "u,sun"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "u,un"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63296,
+      "Explanation": "*++ch is treated as *(++ch) hence pointer chwhich is pointing to base address of SUN will be increased by 1. hence value present at ++ch is U and&nbsp; %s will print the (remaining string starting from ch) &apos;un&apos;.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "int Aaa()<br>{<br>&nbsp;&nbsp;&nbsp; printf(\"Hi\");<br>&nbsp;&nbsp;&nbsp; return 0;<br>}<br><br>int Bbb()<br>{<br>&nbsp;&nbsp;&nbsp; printf(\"Hello\");<br>&nbsp;&nbsp;&nbsp; return 0;<br>}<br><br>int Ccc()<br>{<br>&nbsp;&nbsp;&nbsp; printf(\"Bye\");<br>&nbsp;&nbsp;&nbsp; return 0;<br>}<br><br>void main()<br>{<br>&nbsp;&nbsp;&nbsp; int(*ptr[3])() = { Aaa, Bbb, Ccc};<br>&nbsp;&nbsp;&nbsp; ptr[2]();<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Hello"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hi"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Bye"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63298,
+      "Explanation": "Ptr is array of function pointer. ptr[2](); will call the function present at index 2.Hence Ccc function get called .",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "int func(int *P)<br>{<br>&nbsp; return (*P)++;<br>}<br>void main()<br>{<br>&nbsp; int a = 5;<br>&nbsp; printf(\" %d %d %d\", a, func (&amp;a), a);<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5 5 5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "5 5 6"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "6 5 5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "5 6 5"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63300,
+      "Explanation": "<span id=\"explanation63300\" style=\"color:blue\">values get evaluated from right&nbsp; to left. a is initially 5 then func which is accepting address of a will return post incremented value of a hence it will return 5 and then a becomes 6. hence first a will print as 6.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div style=\"margin-left: 40px;\">#include&lt;stdio.h&gt;<br>int main()<br>{&nbsp;&nbsp;&nbsp; int a = 10, *j;<br>&nbsp;&nbsp; &nbsp;void *k;<br>&nbsp;&nbsp;&nbsp; j = k = &amp;a;<br>&nbsp;&nbsp;&nbsp; j++;<br>&nbsp;&nbsp; &nbsp;k++;<br>&nbsp;&nbsp;&nbsp; printf(\"%u %u\", j, k);<br>&nbsp;&nbsp; &nbsp;return 0;</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "adress of a, address of a"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "11, 12"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "12, 12"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63301,
+      "Explanation": "<span id=\"explanation63301\" style=\"color:blue\">&nbsp;The void pointer does not know what type of object it is pointing to, it cannot be dereferenced directly! Rather, the void pointer must first be explicitly cast to another pointer type before it is dereferenced.(Result are tested on visual Studio)</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is true about a statement &nbsp;: *P.data?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "* has higher precedence than ."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": ". has higher precedence than *"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": ". &amp; * has equal precedence"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All above statements are false"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63356,
+      "Explanation": ". has higher precedence than * in pointers. personPtr-&gt;age is equivalent to (*personPtr).age. personPtr-&gt;weight is equivalent to (*personPtr).weight. *p.data repesent *(p.data).",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Pointer can not be of type_________.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "near"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "far"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "huge"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "small"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63503,
+      "Explanation": "Pointers are of near, far and huge type . small is not a type of pointer.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which arithmetic operator is allowed with pointer ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "*"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "/"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "%"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "+"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63505,
+      "Explanation": "only +,- ,++ and -- operators are allowed with pointers. Multiplication,division,mod are not allowed with pointers.+ operator used to add integer value to a pointer. Addition of two pointer is invalid .<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>If &nbsp; P is &nbsp;int * and contains address 100 and value present at address is 2, then after p++ what it will contain ?(Size of int is 2 bytes)<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "101<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "102"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "100<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63507,
+      "Explanation": "when we use ++ operator with pointer it means p =p+1*(sizeof datatype) hence 102 will be the output.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "By default pointer is_______.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "near"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "far"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "huge"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "smart"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63508,
+      "Explanation": "If you use a small- code memory model, near pointers are used by default for function addresses. That means that all the functions need to fit in one 64KB segment. With a large-code model, the default is to use far function addresses. You&#39;ll get near pointers with a small data model, and far pointers with a large data model. These are just the defaults; you can declare variables and functions as explicitly near or far.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Size of far pointer is _______bytes. (In 32 bit machine)<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "depends on its data type"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63509,
+      "Explanation": "4 bytes<br>On 32-bit machine sizeof pointer is 32 bits ( 4 bytes), while on 64 bit machine it&apos;s 8 byte. Regardless of what data type they are pointing to, they have fixed size.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Near pointer stores________address.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "only offset"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "only segment"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "segment and offset"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "segment or offset"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63510,
+      "Explanation": "Near pointer&nbsp;is used to&nbsp;store&nbsp;16 bit addresses means within current segment on a 16 bit machine.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Size of a segment can be maximum_______.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "64 bytes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "64 KB"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "16 bits"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "16 bytes"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63511,
+      "Explanation": "Size of a segment can be maximum 64 KB .<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>If address bus is 16 bit, How many memory locations can we address ?<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "16"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "65535"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "64"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "65536"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63512,
+      "Explanation": "In many older computers, the address bus was 16 bits wide (a = 16). This meant that there were 16 wires. Such microprocessors could address up to 216 = 65536memory locations.<br>The width of the address bus determines the amount of memory a system can address. For example, a system with a 16-bit address bus can address 2^16 memory locations i.e. 65536.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is false about data type of pointer ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is used for dereferencing"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It is used for incrementing a pointer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is used for decrementing a pointer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is used for deciding its storage"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63513,
+      "Explanation": "DATA&nbsp; type pointers are not used for deciding its storage. All pointers are of same size.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Only _________pointer can store any type of address without typecasting.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "char"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "far"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "this"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63516,
+      "Explanation": "void pointer can store any type of address without typecasting. A void pointer is a pointer that has no associated data type with it. A void pointer can hold an address of any type and can be typecasted to any type. ... It&apos;s a general purpose pointer, it can store the address of character datatype, float datatype, integer datatype, etc. No datatype is associated with it.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Consider declaration void **P; What will happen for statement P++; if P contains address 100 in 64 bit machine</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will generate error for statement P++;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Address will remain 100"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No error and P will become 108"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "P will become 204"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63517,
+      "Explanation": "there will be no error and address stored in p will be 108.<br>default size of pointer is 8 byte in 64 bit machine and 4 in 32 bit machine. as P is pointer to pointer it will increase by 8 bytes.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the size of char **p in 64 bit machine?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0 bytes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1 byte"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "8 bytes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "4 bytes"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63518,
+      "Explanation": "p is a pointer to pointer hence size of p is 8 bytes . as default size of any pointer is 8 bytes in 64 bit machine and 4 in 32 bit machine.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Array name is internally_________.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A Pointer storing basic address of array variable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Array of pointer storing address of each location of array"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A constant pointer storing base address of the array"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Just a name given to a sequential storage"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63519,
+      "Explanation": "A constant pointer storing base address of the array<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A[ i ] &nbsp;is same as",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "*( A + i )"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "*( i + A )"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "i [ A ]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of them ( 1, 2, 3 )"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63520,
+      "Explanation": "as Name of the array is constant pointer to base address of array. <br>Following 5 are considered as Equivalent<br>a[i]&nbsp;&nbsp; &nbsp;*(a + i)<br>i[a]&nbsp;&nbsp; &nbsp;*ptr&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;*(i + a ) <br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>void main( )</div><div>{&nbsp;</div><div style=\"margin-left: 40px;\">static char str[ ]=\"DAC Entrance\";<br></div><div style=\"margin-left: 40px;\">char *s;<br></div><div style=\"margin-left: 40px;\">s=&amp;str[5]-1;<br></div><div style=\"margin-left: 40px;\">while(*s) &nbsp;&nbsp; printf(\"%c\",*s++);<br></div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DAC Entrance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Entrance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ntrance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ERROR"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63394,
+      "Explanation": "<div>We need to understand the line s=&amp;str[5]-1;</div><div>str[5] is 6th character in str which is n. &amp;str[5] is address of \u2018n\u2019, &amp;str[5]-1 is address of \u2018n\u2019- 1*sizeof(char). Hence it points to \u2018E\u2019. So s points to \u2018E\u2019 and hence the loop displays all characters from \u2018E\u2019 till end. Hence the answer is \u201cEntrance\u201d.<br></div>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>void main( )<br></div><div>{&nbsp;</div><div style=\"margin-left: 40px;\">int A[ ]={0, 1, 2, 3, 4};<br><br></div><div style=\"margin-left: 40px;\">int *P[ ]={A, A+1, A+2, A+3, A+4};<br><br></div><div style=\"margin-left: 40px;\">printf(\"%d %d %d\", **P, *(*(P+1)), *(*(P+0)));<br></div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0 1 2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0 1 0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1 2 3<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63395,
+      "Explanation": "<div>Note that P is array of int pointer. So data type of \u2018P\u2019 itself is pointer to int pointer.&nbsp;</div><div>In **P, P is base address, so *P is same as *(P+0) which is same as P[0] which is first member of array \u2018P\u2019 which is \u2018A\u2019, *A is same as *(A+0) which is same as A[0] which is value at first member of \u2018A\u2019 which is 0.<br></div><div>In &nbsp;*(*(P+1)): *(P+1) is value of second member of \u2018P\u2019 which is same as P[1]. This is (A+1), now *(A+1) is same as A[1], which is value of second member of A which is 1.<br><br></div><div>In *(*(P+0)): *(P+0) is same as P[0] which is A. *(A) is same as *(A+0) which is same as A[0] which is 0.</div><div>Hence the answer is 0 1 0&nbsp;</div>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>void F1()<br>{<br>&nbsp;&nbsp; &nbsp;printf(\"C-DAC\");<br>}<br><br>void F2()<br>{<br>&nbsp;&nbsp; &nbsp;printf(\"Pune\");<br>}<br><br>void F3()<br>{<br>&nbsp;&nbsp; &nbsp;printf(\"Know-IT\");<br>}<br><br>void main()<br>{<br>&nbsp;&nbsp; &nbsp;void(*ptr[3])() = { F1, F2, F3&nbsp;&nbsp; &nbsp;};<br>&nbsp;&nbsp; &nbsp;ptr[2]();<br>}<br></div><div><br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "C-DAC"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Pune"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Know-IT"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63396,
+      "Explanation": "Note that ptr is declared as an array of function pointers. It is also initialized with addresses of functions F1, F2 and F3. Ptr[2] is third value of this array which is address of function F3. Hence ptr[2]() is call to the function F3 (like F3() ) which displays \u201cKnow-IT\u201d.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>void main( )</div><div>{&nbsp;</div><div style=\"margin-left: 40px;\">char a[12]={'K','n','o', 'w','-','I','T','P','u','n','e'};<br><br></div><div style=\"margin-left: 40px;\">printf(\"%c\", --(*(a+7)));<br></div><div>}<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "T"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "P"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "U"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "O"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63398,
+      "Explanation": "*(a+7) is same as a[7] which is 8th member of the array. This is \u2018P\u2019. <br>Now &nbsp;--P will subtract 1 from the ASCII value of \u2018P\u2019 which is nothing but the character before \u2018P\u2019. Hence the answer is \u2018O\u2019<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void Square(int i, int *j)<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp; &nbsp;i = i * i; <br>&nbsp;&nbsp;&nbsp; *j = *j * *j;<br></div>}<br><br>void main()<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp; &nbsp;int i = -5, j = -2;<br>&nbsp;&nbsp; &nbsp;Square(i, &amp;j);<br>&nbsp;&nbsp; &nbsp;printf(\"i=%d j=%d\", i, j);<br></div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "i=25 j=4"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "i=-5 j=-2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "i=-5 j=4"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "i=5 j=4"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63387,
+      "Explanation": "Note that first parameter is passed by value but second parameter is passed by address to function void Square(int i, int *j). &nbsp;Hence the changes that are done inside the function get reflected in the calling function only for the second parameter, not for the first. The first parameter shows its value from main function only.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What is indicated by following declaration?&nbsp;<br><br></div><div>char **P(int *A[ ] );</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "P is a Pointer to a function that return char *"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "P is a Pointer to a function that has array of integer pointers as parameter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "P is a function that has array of integer pointers as parameter and returns char **"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "P is a Pointer to Pointer to char typecasted in to array of int *"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63392,
+      "Explanation": "Note the function pointer declaration includes the variable name itself in ( ). Here the symbol P is followed by () which indicates that this is a function that accepts A as a parameter and return char** are return type. A is an array of integer pointer.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void execute(int **mm, int *dd)<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp; int yy;<br>&nbsp;&nbsp;&nbsp; yy = **mm; **mm = *dd; *dd = yy;</div>}<br><br>void function(int *mm, int *dd)<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp; execute(&amp;mm, dd);</div>}<br><br>void main()<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp; int m = 10, d = 20;<br><br>&nbsp;&nbsp;&nbsp; function(&amp;m, &amp;d);<br><br>&nbsp;&nbsp;&nbsp; printf(\" %d %d\", m, d);<br></div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10 20<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "20 10"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "10 10"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63531,
+      "Explanation": "Here in main we have defind m = 10 and d =20 and we are passing this parameters by referance to function.&nbsp; function called another function with name execute with one parameter as address of pointer and another as normal int pointer. so In execute function&nbsp; mm is pointer to pointer and dd is just integer pointer . In execute function we are swapping the values between m and d using mm which is pointer to pointer and dd which is simple pointer. Hence result will be 20 10 .<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>&nbsp;{<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp; int&nbsp;&nbsp; n[3][3]={2,4,6,8,5,3,5,1}, *ptr ,i;<br>&nbsp;&nbsp;&nbsp;&nbsp; ptr=&amp;n[1][0];<br><br>&nbsp;&nbsp;&nbsp;&nbsp; for(i=0;i&lt;=3;i++)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(\"%d \", *(ptr+i));<br></div>&nbsp; }<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "8 5 3 5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "5 3 5 1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3 6 8 5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "6 3 garbage garbage"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63544,
+      "Explanation": "ptr is a pointer pointing to second row i.e. 0th element of index one row of array. In for loop we are adding i in pointer and printing its value hence it will print all the elements starting from 0th element of second row till 1st element of third row (as in for loop we are having i=0 and i&lt;=3 i.e. 4 elements) .<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>void main ()<br>{</div><div style=\"margin-left: 40px;\">&nbsp; void showval (int, float);<br>&nbsp; void (*s1) (int, float);<br>&nbsp; s1 = showval;<br>&nbsp; (*s1) (10, 3.5);<br></div><div>}<br>void showval (int i, float f)<br>{<br></div><div style=\"margin-left: 40px;\">&nbsp; printf (\"%d %f\", i, f);</div><div>}<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10 3.0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10 3.5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3 10.0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Syntax error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63534,
+      "Explanation": "In main ,showval is declared as a function and s1 is a function pointer using which we are calling showval function with parameter 10 and 3.5.<br>In showval i and f are printed on screen.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>void&nbsp; showfunc( ) &nbsp;<br>&nbsp;&nbsp; {</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp; printf(\"Sun Sets\u2026\"); &nbsp;<br></div><div>&nbsp;&nbsp; }<br>&nbsp; &nbsp;<br>&nbsp;&nbsp;&nbsp; int display(f1)<br>&nbsp;&nbsp;&nbsp;&nbsp; int (*f1)( );<br>&nbsp;&nbsp;&nbsp; {<br></div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (*f1)( );<br></div><div>&nbsp;&nbsp;&nbsp; }<br><br>void main( )<br>&nbsp;&nbsp;&nbsp; {<br></div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp; void showfunc( );<br>&nbsp;&nbsp;&nbsp;&nbsp; int (*func) ( );<br>&nbsp;&nbsp;&nbsp;&nbsp; func=showfunc;<br>&nbsp;&nbsp;&nbsp;&nbsp; display(func);<br></div><div>&nbsp;&nbsp;&nbsp; }<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Sun Sets \u2026is printed twice<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Sun Sets \u2026 is printed once<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No Output"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 63535,
+      "Explanation": "Func is function pointer pointing to showfunc and display is a function which is accepting function pointer as parameter and executing function using function pointer. Hence showfunc will execute only once and print Sun Sets on screen .<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<span style=\"color:#4c464d\">p</span><span style=\"color:#4c464d\">o</span><span style=\"color:#4c464d\">i</span><span style=\"color:#4c464d\">n</span><span style=\"color:#4c464d\">t</span><span style=\"color:#4c464d\">1</span><span style=\"color:#4c464d\"> is a pointer to an array of </span><span style=\"color:#4c464d\">10 </span><span style=\"color:#4c464d\">i</span><span style=\"color:#4c464d\">ntegers is represented by</span>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int (*point1)[10]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "* int point1[10]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int *point1[10]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 70850,
+      "Explanation": "Here point1&nbsp; is pointer that can point to an array of 10 integers.<br>Since subscript have higher precedence than indirection,<br>it is necessary to enclose the indirection operator and pointer name inside parentheses.<br>Here the type of point1 is \u2018pointer to an array of 10 integers\u2019. <br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Equivalent array notation for&nbsp; *(*(*(*(a+b)+c)+d)+e) is________________",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "a[b][c][d][e]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "a[b+c+d+e]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "a[ ( ( ( (b)+c)+d)+e) ]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 70842,
+      "Explanation": "given start address (say base) of an array of size [l x b x h] dimensions, we can access the element at an arbitrary location (a, b, c) in the following way,<br><br>data = *(base + a * (b x h) + b * (h) + c); // Note that we haven\u2019t used the higher dimension l.<br><br>The same concept can be applied to any number of dimensions. We don\u2019t need the higher dimension to calculate offset of any element in the multidimensional array. It is the reason behind omitting the higher dimension when we pass multidimensional arrays to functions. The higher dimension is needed only when the programmer iterating over limited number of elements of higher dimension.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;stdio.h&gt;<br><br>int f(int x, int *py, int **ppz)<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp; int y, z;<br><br>&nbsp;&nbsp;&nbsp; **ppz += 1;<br>&nbsp;&nbsp;&nbsp; z = **ppz;<br>&nbsp;&nbsp;&nbsp; *py += 2;<br><br>&nbsp;&nbsp;&nbsp; y = *py;<br>&nbsp;&nbsp;&nbsp; x += 3;<br><br>&nbsp;&nbsp;&nbsp; return x + y + z;<br></div>}<br>void&nbsp; main()<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp; int c, *b, **a;<br><br>&nbsp;&nbsp;&nbsp; c = 5;<br>&nbsp;&nbsp;&nbsp; b = &amp;c;<br>&nbsp;&nbsp;&nbsp; a = &amp;b;<br><br>&nbsp;&nbsp;&nbsp; printf(\"%d\", f(c, b, a));<br></div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "19"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "20"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "21"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "22"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 70830,
+      "Explanation": "Here c is integer , b is integer pointer to c and a is pointer to pointer of b. When we pass c,b,a to function following things happens in function .<br><br>&nbsp;&nbsp;&nbsp; **ppz += 1;&nbsp;&nbsp; mens 5+1 i.e. 6<br>&nbsp;&nbsp;&nbsp; z = **ppz;&nbsp;&nbsp;&nbsp;&nbsp; here z = 6<br>&nbsp;&nbsp;&nbsp; *py += 2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i.e. py= 6+ 2 i.e&nbsp; 8<br><br>&nbsp;&nbsp;&nbsp; y = *py;&nbsp;&nbsp;&nbsp; i.e. y = 8<br>&nbsp;&nbsp;&nbsp; x += 3;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i.e x=5+3 =8&nbsp; so x is 8&nbsp;&nbsp;&nbsp;&nbsp; as x is passed by value.<br>so x+y+z is 8+8+6 is 22.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the compile time error in the program given below:<br>#include&lt;stdio.h&gt;<br>int main()<br>{<div style=\"margin-left: 40px;\">int *x;<br>*x=100;<br>return 0;<br></div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Error: invalid assignment for x"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Error: suspicious pointer conversion"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 64094,
+      "Explanation": "* x is integer pointer and we can not assign&nbsp; 100 value to * x as it required address of any int variable. It will throw&nbsp;Segmentation fault&nbsp; error .<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens when a zero valued pointer is converted into bool?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An error is flagged<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "bool value evaluates to true.<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "bool value evaluates to false.<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "the statement is ignored.<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 84084,
+      "Explanation": "A nonzero pointer converts to true and zero valued pointer converts to false.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the following statement mean?&nbsp;&nbsp;&nbsp; <br>int (*fp)(char*)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "pointer to a pointer<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "pointer to an array of chars<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "pointer to function taking a char* argument and returns an int<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "function taking a char* argument and returning a pointer to int<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 84085,
+      "Explanation": "pointer to function taking a char* argument and returns an int",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Pick out the correct statement.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The NULL pointer dereference occurs where a pointer that is expected to be a valid address but instead is equal to NULL.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The NULL pointer dereference occurs where a pointer that is expected to be a valid address but instead is equal to memory address.<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "both a &amp; b<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 84086,
+      "Explanation": "--<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a pointer in C programming?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A variable that stores the address of another variable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A function that points to a variable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A keyword used to declare variables"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An operator that returns the size of a variable"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 102999,
+      "Explanation": "A pointer is a variable whose value is the address of another variable, allowing for indirect manipulation of the variable it points to.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you declare a pointer that points to an integer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int *ptr;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ptr int*;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int pointer*;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "*int ptr;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103000,
+      "Explanation": "The correct syntax for declaring a pointer to an integer in C is &#39;int *ptr;&#39;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the following code?<br/>int a = 10;<br/>int *ptr = &amp;a;<br/>printf(&quot;%d&quot;, *ptr);",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Address of &#39;a&#39;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Random number"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "0"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103001,
+      "Explanation": "The pointer &#39;ptr&#39; stores the address of &#39;a&#39;. The expression &#39;*ptr&#39; retrieves the value from that address, which is 10.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is wrong with the following declaration: float *ptr;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Missing initialization of ptr"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Incorrect data type"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Redundant &#39;*&#39; before ptr"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103002,
+      "Explanation": "The declaration &#39;float *ptr;&#39; is correct and declares a pointer to a float type without initialization.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator is used to get the address of a variable in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&amp;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "*"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "#"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103003,
+      "Explanation": "The &#39;&amp;&#39; operator is used in C to obtain the memory address of a variable.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can we initialize a pointer to point to the variable &#39;x&#39;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int *p = &amp;x;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "*p int = x;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int p = *x;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int &amp;p = &amp;x;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103004,
+      "Explanation": "To initialize a pointer to the variable &#39;x&#39;, use &#39;int *p = &amp;x;&#39;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does NULL signify in the context of pointers?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is the address of the currently executing function."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It is a zero value."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is a pointer that doesn\u2019t point to any valid memory location."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is a pointer that automatically points to the last variable."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103005,
+      "Explanation": "NULL is used to signify that a pointer is not currently assigned to any valid memory location.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if we dereference a NULL pointer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will return zero."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It will cause an error or crash."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will access the memory location 0x0."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It will produce a warning."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103006,
+      "Explanation": "Dereferencing a NULL pointer typically leads to a run-time error or crash as it is attempting to access an invalid memory location.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if we declare a pointer but do not initialize it?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will point to an unpredictable memory location."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It will automatically point to NULL."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will create a compiler error."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It will point to the first variable in memory."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103007,
+      "Explanation": "An uninitialized pointer will contain a random address and can lead to undefined behavior if dereferenced.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used in C to allocate memory dynamically?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "alloc"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "malloc"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "calloc"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both B and C"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103008,
+      "Explanation": "Both &#39;malloc&#39; and &#39;calloc&#39; are used for dynamic memory allocation in C.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given the declaration &#39;int *p;&#39;, what kind of data can &#39;p&#39; store?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Addresses of integer variables"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Character data"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Floating-point numbers"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Boolean values"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103009,
+      "Explanation": "&#39;int *p;&#39; is a pointer declaration that can store addresses of integer variables.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What symbol is used to dereference a pointer in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "*"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&amp;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "$"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103010,
+      "Explanation": "The &#39;*&#39; symbol is used to dereference a pointer and access the value stored in the address it points to.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a correct way to declare a pointer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int p*;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int *p;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "*int p;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "p int*;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103011,
+      "Explanation": "The correct syntax for declaring a pointer is &#39;int *p;&#39;, where &#39;*&#39; indicates that &#39;p&#39; is a pointer.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the following line of code do? &#39;int *ptr = NULL;&#39;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Points &#39;ptr&#39; to the address 0."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Causes a syntax error."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Declares a pointer &#39;ptr&#39; and initializes it to point to address of the variable &#39;NULL&#39;."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Declares a pointer &#39;ptr&#39; and initializes it with NULL, meaning it&#39;s not pointing to any memory location."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103012,
+      "Explanation": "Initializing a pointer with NULL indicates that it does not point to any valid memory address.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a valid way to assign the address of &#39;var&#39; to a pointer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "*ptr = &amp;var;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ptr = var;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ptr = &amp;var;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ptr = *var;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103013,
+      "Explanation": "To assign the address of &#39;var&#39; to a pointer &#39;ptr&#39;, use &#39;ptr = &amp;var;&#39;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type should be used for a pointer to a char?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "char"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "char *"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "*char"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "char pointer"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103014,
+      "Explanation": "&#39;char *&#39; is the correct type for a pointer to a char, indicating the pointer will store the address of a char.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why is the &#39;void *&#39; type used in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To declare a pointer of an unknown type"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To manipulate strings"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To store integer values"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To handle files"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103015,
+      "Explanation": "&#39;void *&#39; is used for pointers whose data type is undecided or as a generic pointer type.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of using the &#39;*&#39; operator in front of a pointer variable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It multiplies the pointer&#39;s address."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It returns the address stored in the pointer."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It dereferences the pointer, accessing the value at the address stored."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It increments the pointer&#39;s address."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103016,
+      "Explanation": "The &#39;*&#39; operator dereferences the pointer to access the value stored in the address the pointer holds.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true about pointers and arrays?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Arrays always occupy larger memory blocks than pointers."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Pointers can be incremented, but arrays cannot."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The name of an array represents a pointer to the first element of the array."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Arrays are faster for accessing memory than pointers."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103017,
+      "Explanation": "In C, the name of an array acts as a pointer to its first element, hence allowing pointer arithmetic.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following code?<br/>char ch = &#39;A&#39;;<br/>char *ptr = &amp;ch;<br/>printf(&quot;%c&quot;, *ptr);",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Address of &#39;ch&#39;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Random character"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "NULL"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103018,
+      "Explanation": "The pointer &#39;ptr&#39; stores the address of &#39;ch&#39;. The expression &#39;*ptr&#39; retrieves the value from that address, which is &#39;A&#39;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens when a pointer is incremented?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It moves to the next byte."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It points to the next element of its base type."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It acts as a function call."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It results in a compilation error."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103019,
+      "Explanation": "When a pointer is incremented, it moves according to its data type size, pointing to the next element (not just the next byte).",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will the output be for the following code snippet?<br/>int a = 10;<br/>int *p = &amp;a;<br/>printf(&quot;%d&quot;, *p);",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Address of a"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Garbage value"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103020,
+      "Explanation": "The pointer p is dereferenced using *p, which gives the value stored at the address pointed to by p, which is 10.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements correctly de-references the pointer &#39;ptr&#39; to access the value it points to?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ptr"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&amp;ptr"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "*ptr"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "**ptr"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103021,
+      "Explanation": "The * operator is used to de-reference a pointer to access the value it points to.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If &#39;int x = 30;&#39; and &#39;int *ptr = &amp;x;&#39;, what does &#39;*ptr = 20;&#39; do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Changes value of x to 20"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Changes the address of ptr"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Undefined behavior"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103022,
+      "Explanation": "Dereferencing ptr with *ptr allows modifying the value of x that ptr points to, setting it to 20.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of the following operation given int *p, a = 5 and p = &amp;a: *p = *p * 2?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "a remains 5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "a becomes 2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "a becomes 10"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103023,
+      "Explanation": "Dereferencing pointer p (*p) allows modification of the value of a. Therefore, a becomes 10 after the operation.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the effect of using the dereference operator (*) on an uninitialized pointer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Safe operation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Runtime error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It points to garbage"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103024,
+      "Explanation": "Dereferencing an uninitialized pointer leads to undefined behavior and often results in a runtime error.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is TRUE about pointer dereferencing?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is an invalid operation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It gives the address of the pointer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It allows accessing the actual value stored at the address"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It increases the pointer address by one"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103025,
+      "Explanation": "Dereferencing allows access to the value stored at the memory address the pointer is pointing to.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When should a pointer be dereferenced?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "After initializing it"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Without initialization"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When it is null"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "In any condition"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103026,
+      "Explanation": "A pointer should be dereferenced after being initialized to a valid memory address to avoid undefined behavior.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given char *str = &quot;Hello&quot;; what does printf(&quot;%c&quot;, *str); output?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Hello"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "H"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "e"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Random character"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103027,
+      "Explanation": "Dereferencing *str gives the first character of the string stored at the address pointed to by str, which is &#39;H&#39;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the intended use of dereferencing a pointer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To increase the pointer variable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To decrease the pointer variable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To access the value pointed to by the pointer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To store the address of a variable"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103028,
+      "Explanation": "Dereferencing allows access and manipulation of the value stored at the address the pointer is pointing to.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will the following code output?<br/>int a = 42; int *ptr = &amp;a;<br/>*ptr = 21 + *ptr;<br/>printf(&quot;%d&quot;, a);",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "21"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "42"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "63"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103029,
+      "Explanation": "The expression *ptr = 21 + *ptr modifies the value of &#39;a&#39; to be 63, as 21 is added to the current value of 42.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you safely check if a pointer is pointing to a valid memory address before dereferencing it?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Check if the pointer is non-zero"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Check if the pointer is zero"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Always dereference it directly"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use sizeof() on the pointer"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103030,
+      "Explanation": "A pointer should be checked to be non-null (non-zero) before dereferencing to ensure it points to a valid address.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What occurs when you dereference a null pointer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It returns a value of zero"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Null pointer exception or runtime crash"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It does nothing"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103031,
+      "Explanation": "Dereferencing a null pointer results in undefined behavior, typically leading to a crash or runtime error.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the code &#39;int **p;&#39;, what does &#39;**p&#39; denote?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Value stored in a double pointer"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Address of a double pointer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Address stored in p"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Dereferenced value of the pointer to a pointer&#39;s pointing value"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103032,
+      "Explanation": "**p accesses the value at the location where p points, assuming p is a pointer to another pointer.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given &#39;int var, *ptr = &amp;var, **pptr = &amp;ptr;&#39;, what does &#39;**pptr = *ptr + 5;&#39; result in?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "var becomes 5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Address of var increases by 5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "var is incremented by 5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103033,
+      "Explanation": "**pptr interfaces var so modifying **pptr is directly altering the value of var.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If you have the following declaration: int *arr = malloc(3 * sizeof(int)); what does *(arr + 2) refer to?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The third integer in the allocated block"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The first integer in the array"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The address of the first integer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It causes a segmentation fault"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103034,
+      "Explanation": "Pointer arithmetic allows *(arr + 2) to access the third integer allocated in contiguous memory.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What potential issue can occur when dereferencing a pointer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The code always runs without issues"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It can lead to logical errors"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will cause a syntax error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Segmentation faults or crashes"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103035,
+      "Explanation": "Dereferencing invalid or uninitialized memory can lead to segmentation faults and program crashes.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will this snippet print? int x = 10; int y = 20; int *p = &amp;x; printf(&quot;%d&quot;, (*p = y));",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "20"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Address of x"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103036,
+      "Explanation": "The expression *p = y assigns the value of y to what p is pointing to (x), so it will print 20.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When is an operation considered safe with respect to pointer dereferencing?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When done with properly initialized pointers"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "With all pointers"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only with dynamically allocated memory"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only if using global pointers"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103037,
+      "Explanation": "Pointer dereferencing is safe when pointers are initialized to point to valid memory locations.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Using the following code, determine what *ptr + 3 evaluates to:<br/>int arr[3] = {1, 2, 3};<br/>int *ptr = arr;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The third element of arr"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Sum of all elements"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Value 6"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Value 4"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103038,
+      "Explanation": "Expression *ptr + 3 results in 1 (initial value) + 3 = 4, without changing the de-referencing index.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the following code?<br/>void updateValue(int *ptr) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;*ptr = 20;<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;int x = 10;<br/>&nbsp;&nbsp;&nbsp;&nbsp;updateValue(&amp;x);<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d&quot;, x);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "20"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Runtime Error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103039,
+      "Explanation": "The updateValue function takes a pointer and modifies the value of x using that pointer. Thus, the output is 20.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does pass-by-address differ from pass-by-value in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It copies the actual value into the function"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It sends the address of the variable to the function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It does not allow functions to modify the variable"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It requires const keywords"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103040,
+      "Explanation": "Pass-by-address sends the address of the variable, allowing the function to modify the original variable.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given the function prototype void swap(int *a, int *b), which of the following correctly swaps two integers m and n?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "swap(m, n);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "swap(&amp;m, &amp;n);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "swap(*m, *n);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "swap(*&amp;m, *&amp;n);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103041,
+      "Explanation": "Using &amp;m and &amp;n passes the addresses of m and n to the swap function, allowing it to modify their values.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a function is defined as void changeValue(int *ptr) and you have an integer int y = 5;, how do you call this function to modify y?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "changeValue(y);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "changeValue(&amp;y);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "changeValue(*y);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "changeValue(5);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103042,
+      "Explanation": "You need to pass the address of y, hence the call changeValue(&amp;y).",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider the following code:<br/>void reset(int *p) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;*p = 0;<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;int val = 25;<br/>&nbsp;&nbsp;&nbsp;&nbsp;reset(&amp;val);<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d&quot;, val);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}<br/>What will be printed?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "25"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Runtime Error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103043,
+      "Explanation": "The function reset sets the value pointed to by p to 0, thus val is set to 0.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about call-by-address is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It increases memory usage"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It allows modifying original data"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is the default parameter passing method in C"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It creates a copy of the arguments"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103044,
+      "Explanation": "Call-by-address allows functions to modify the original data by working with the memory addresses directly.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "You have the function void increment(int *num). What will the variable x hold after calling increment(&amp;x) if initially int x = 5;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Undefined"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Runtime Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103045,
+      "Explanation": "Incrementing the value of *num inside the function will increase x by 1.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is primarily associated with dealing pointers for function calls in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "address"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "pointers"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&amp;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103046,
+      "Explanation": "The &amp; operator is used to obtain the address of a variable, which is then passed to the function.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does a pointer initialized with NULL address in C point to?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The beginning of memory"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An invalid memory location"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Any random memory address"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The variable&#39;s initial address"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103047,
+      "Explanation": "A pointer initialized with NULL is considered to point to nothing, representing an invalid or zero address.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why might a program crash when using a pointer in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Accessing memory using a null pointer"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Dereferencing a dangling pointer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Modifying data outside a valid memory region"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103048,
+      "Explanation": "Using a null pointer, dangling pointer, or accessing beyond array limits can cause crashes.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary disadvantage of using call-by-address?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Increases memory usage"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Possible unintended modification of original arguments"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Decreases execution speed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Requires more function definitions"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103049,
+      "Explanation": "With call-by-address, any changes made to the variables can lead to unintended modifications.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct way to declare a function that takes a pointer to an integer as an argument?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void func(int);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "void func(*int);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "void func(int *);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int func(void *);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103050,
+      "Explanation": "This correct syntax declares a function that takes a pointer to an integer.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The function &#39;void func(int *ptr)&#39; is called as &#39;func(&amp;var)&#39;. What is &#39;ptr&#39; in this context?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A stack variable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A pointer to an integer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A double pointer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An integer"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103051,
+      "Explanation": "In this function, &#39;ptr&#39; is designed to store the address of integer type as passed by the caller.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if you attempt to access *(ptr) where ptr is a NULL pointer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Access the value 0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Generate a warning"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Cause segmentation fault"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Calculate NULL value"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103052,
+      "Explanation": "Dereferencing a NULL pointer leads to an invalid memory access, causing a segmentation fault.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When passing a pointer to a function, what kind of operations can you perform on the actual data?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Read only"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Modify only"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both read and modify"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Neither read nor modify"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103053,
+      "Explanation": "Passing a pointer allows both reading and modification of the data it points to.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In call-by-address, what operator is used to access the value of a variable to which a pointer points?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&amp;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "*"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "-&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "%"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103054,
+      "Explanation": "The * operator is used for dereferencing a pointer to access the value of the variable it points to.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "During call-by-address, if you modify the pointer itself, what happens?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The original variable&#39;s value changes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The address the pointer holds changes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A compile-time error occurs"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The program terminates"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103055,
+      "Explanation": "Modifying the pointer itself changes the memory address it stores, not the original variable\u2019s value.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given: void adjust(float *f) { *f *= 2.5; } How would you call this function if you have float num = 4.0;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "adjust(num);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "adjust(&amp;num);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "adjust(*num);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "adjust(float(num));"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103056,
+      "Explanation": "Pass the address of num by calling adjust(&amp;num) to allow modification of its value.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is returned when using the sizeof operator on a pointer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Size of memory the pointer points to"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Size of a pointer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Size of int"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Size of the address space"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103057,
+      "Explanation": "The sizeof operator returns the size of the pointer itself, not the data it points to.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When is the use of pointers necessary in C programming?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "For arithmetic operations"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When passing large structures"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "For control flow"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "For logical operations"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103058,
+      "Explanation": "Using pointers is efficient for passing large structures to avoid copying overhead.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why is it important to use &#39;&amp;&#39; operator when using call-by-address?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To get the address of the variable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To turn the variable into a pointer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To perform dereferencing"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To increase the variable&#39;s value"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 20,
+      "QuestionTypeId": 0,
+      "QuestionId": 103059,
+      "Explanation": "The &#39;&amp;&#39; operator is crucial to obtain the address of a variable so it can be passed to a function as a pointer.",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

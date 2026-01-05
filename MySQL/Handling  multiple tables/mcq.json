@@ -1,0 +1,756 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Which of the following is necessary when using UNION on two SELECT statements that return a different number of columns?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The use of ORDER BY"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The use of column aliases"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Balancing the SELECT statements to have the same number of columns"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The use of JOIN condition"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6531,
+      "QuestionTypeId": 0,
+      "QuestionId": 92257,
+      "Explanation": "For UNION or UNION ALL, all SELECT statements involved must return the same number of columns with compatible data types.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main difference between UNION and UNION ALL operators?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "UNION includes duplicates, UNION ALL does not"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "UNION ALL combines rows, UNION removes duplicates"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "UNION removes duplicates, UNION ALL includes them"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "UNION ALL sorts rows, UNION does not"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6531,
+      "QuestionTypeId": 0,
+      "QuestionId": 92258,
+      "Explanation": "UNION removes duplicate rows from the result set, while UNION ALL includes all rows, even duplicates.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following set operators is used in MySQL to combine the result sets of two or more SELECT statements and removes duplicate rows?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "UNION ALL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "UNION"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "INTERSECT"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "EXCEPT"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6531,
+      "QuestionTypeId": 0,
+      "QuestionId": 92250,
+      "Explanation": "The UNION operator is used to combine the result sets of two or more SELECT statements and removes duplicate rows from the combined result set.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which MySQL set operator will include duplicate rows in the combined results?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "UNION"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "INTERSECT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "UNION ALL"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "EXCEPT"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6531,
+      "QuestionTypeId": 0,
+      "QuestionId": 92251,
+      "Explanation": "The UNION ALL operator combines the result sets of two or more SELECT statements and includes duplicate rows in the combined result set.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following set operators is not supported directly in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "UNION"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "INTERSECT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "UNION ALL"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "EXCEPT"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6531,
+      "QuestionTypeId": 0,
+      "QuestionId": 92252,
+      "Explanation": "MySQL does not support INTERSECT or EXCEPT operators directly. Instead, similar functionality can be achieved using joins and other methods.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "You have two tables, employees and managers, with some overlapping employee IDs. Which operator would you use to list all unique employee IDs?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "UNION"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "INTERSECT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "UNION ALL"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "EXCEPT"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6531,
+      "QuestionTypeId": 0,
+      "QuestionId": 92253,
+      "Explanation": "UNION is used to combine the result sets of two tables and will remove any duplicate rows, giving a list of unique employee IDs.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following set operators is not supported by MySQL.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Union<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Minus<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Except<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Intersect<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6531,
+      "QuestionTypeId": 0,
+      "QuestionId": 88293,
+      "Explanation": "minus is not supported by MySQL<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a correlated subquery, what is the role of the outer query and the inner subquery?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The outer query performs filtering, and the inner subquery performs sorting."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The outer query performs grouping, and the inner subquery performs aggregation."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The outer query provides a condition for filtering, and the inner subquery uses that condition based on the data from the outer query."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The outer query retrieves data from one table, and the inner subquery retrieves data from another table."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6531,
+      "QuestionTypeId": 0,
+      "QuestionId": 86605,
+      "Explanation": "<span id=\"explanation86605\">The outer query provides a condition for filtering, and the inner subquery uses that condition based on data from the outer query.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What is xyz&nbsp; in the following statement&nbsp;<br> SELECT xyz<br> FROM table1 <br>UNION <br>\u200b\u200b\u200b\u200b\u200b\u200b\u200bSELECT&nbsp;xyz FROM table2;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "row name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "column name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "table name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "database name"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6531,
+      "QuestionTypeId": 0,
+      "QuestionId": 76961,
+      "Explanation": "<span id=\"explanation76961\">The \u201eSELECT? queries can be combined together using the \u201eUNION? operator to produce the concatenated results from two or more tables. The data type of the columns is not taken into account.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The following statement is invalid.<br>SELECT abc, xyz<br>FROM table1<br>UNION<br>SELECT&nbsp; abc, def<br>FROM table2;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "_"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "_"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6531,
+      "QuestionTypeId": 0,
+      "QuestionId": 76962,
+      "Explanation": "<span id=\"explanation76962\">Even if the columns&nbsp; xyz&nbsp; and def&nbsp; have different data types, the results from these columns are placed into the column&nbsp; xyz . The data types can be determined from the values in the columns.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which keyword used with UNION does not retain duplicate rows?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ALL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "NARROW"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "STRICT"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DISTINCT"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6531,
+      "QuestionTypeId": 0,
+      "QuestionId": 76963,
+      "Explanation": "<span id=\"explanation76963\">The keyword&nbsp; DISTINCT&nbsp; used along with&nbsp; UNION&nbsp; is synonymous with just the UNION&nbsp; statement. It produces only the distinct rows from the combination of the two tables in the SELECT query.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;The UNION ALL has a higher precedence than UNION DISTINCT.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "_"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "_"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6531,
+      "QuestionTypeId": 0,
+      "QuestionId": 76964,
+      "Explanation": "When there is a mixture of &apos;UNION&apos; or &apos;UNION DISTINCT&apos; statements with the &apos;UNION ALL&apos; statements, any distinct union operation takes precedence over any &apos;UNION ALL&apos; operations to its left.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which clause is used to sort a UNION result as a whole?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "LIMIT"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ORDER BY"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "GROUP BY"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SORT"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6531,
+      "QuestionTypeId": 0,
+      "QuestionId": 76965,
+      "Explanation": "The &apos;ORDER BY&apos; clause is used along with the &apos;UNION&apos; statement to sort a &apos;UNION&apos; result as a whole. It is placed after the last &apos;SELECT&apos; statement which is kept in parentheses.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which table is used to run a UNION-type query on MyISAM tables?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "TRADITIONAL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "MERGE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SERVELET"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "UNITE"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6531,
+      "QuestionTypeId": 0,
+      "QuestionId": 76967,
+      "Explanation": "When there is a need to run a &apos;UNION type&apos; operation on a MyISAM table that has the same structures, a &apos;MERGE&apos; table is set up for it. After this, the queries are performed on this table.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the following query find?<br>(SELECT DISTINCT r.sid FROM boats b, reserves r WHERE b.bid = r.bid) MINUS (SELECT DISTINCT r.sid FROM boats b, reserves r WHERE b.bid = r.bid AND b.color = 'green')",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Find the sailor IDs of all sailors who have reserved all boats but not the green boats.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Find the sailor IDs of at least one sailor who have reserved red boats but not green boats"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Find the sailor Ids of atmost one sailor who have reserved red boats but not green boats"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of These Answer"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6531,
+      "QuestionTypeId": 0,
+      "QuestionId": 84112,
+      "Explanation": "Minus will remove all the records returned by second query from the set of the records returned by first query.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which SET operator would you use in the blank space in the following SQL statement to list the departments where all the employees have managers?<br>SELECT department_id<br>FROM departments<br>____<br>SELECT department_id<br>FROM employees<br>WHERE manager_id IS NOT NULL;<br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "UNION"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "MINUS"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "INTERSECT"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "UNION ALL"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6531,
+      "QuestionTypeId": 0,
+      "QuestionId": 65236,
+      "Explanation": "<span id=\"explanation65236\">Inetrsect will fetch common data between both queries.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not comparison operator?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "=&lt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&gt;="
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6531,
+      "QuestionTypeId": 0,
+      "QuestionId": 74113,
+      "Explanation": "&apos;=&lt;&apos; is not a comparison operator.<br><br>&lt;&gt; Not Equal to<br>&lt;&nbsp;&nbsp; Less Than<br>&gt;= Greater than equal",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following set operator is not supported by MySQL",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Union"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Minus"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Union all"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Except"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6531,
+      "QuestionTypeId": 0,
+      "QuestionId": 76004,
+      "Explanation": "<span id=\"explanation76004\">Minus is&nbsp; not supported by MySQL insted except is used.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which of the following is the correct format for case statements .",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Case<br>when pred1 \u2026 result1<br>when pred2 \u2026 result2<br>. . .<br>when predn \u2026 resultn<br>else result0<br>end<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Case<br>when pred1 then result1<br>when pred2 then result2<br>. . .<br>when predn then resultn<br>else result0<br>end"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Case<br>when pred1 then result1<br>when pred2 then result2<br>. . .<br>when predn then resultn<br>else result0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6531,
+      "QuestionTypeId": 0,
+      "QuestionId": 76090,
+      "Explanation": "Correct syntax for case is B.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which of the following should be used to find all the courses taught in the semester Fall , year 2009&nbsp; but not in the semester Spring&nbsp; , year 2010&nbsp; .",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Select distinct course_id<br>from section<br>where semester = \u2019Fall\u2019 and year= 2009 and<br>course_id not in (select course_id<br>from section<br>where semester = \u2019Spring\u2019 and year= 2010);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Select distinct course_id<br>from instructor<br>where name not in (\u2019Fall\u2019, \u2019Spring\u2019);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "(Select course id<br>from section<br>where semester = \u2019Spring\u2019 and year= 2010)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Select count (distinct ID)<br>from takes<br>where (course id, sec id, semester, year) in (select course id, sec id, semester, year<br>from teaches<br>where teaches.ID= 10101);"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6531,
+      "QuestionTypeId": 0,
+      "QuestionId": 76072,
+      "Explanation": "Inner query will be executed first which will return set of values. Outter query work on the condition provided. e.g semester Fall and yers 2009.&nbsp;&nbsp;",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following query finds the names of the sailors who have reserved at least one boat?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT DISTINCT s.sname FROM sailors s, reserves r WHERE s.sid = r.sid;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT r.sname FROM sailors s, reserves r WHERE s.sid = r.sid;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT DISTINCT s.sname FROM sailors, reserves WHERE s.sid = r.sid;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of These"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6531,
+      "QuestionTypeId": 0,
+      "QuestionId": 76654,
+      "Explanation": "<span id=\"explanation76654\" style=\"color:blue\">Above query projects that there are 2 tables sailors and reserves. Where condition will find&nbsp; if the sailor has reserved at least 1 boat.&nbsp;</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following query finds colors of boats reserved by \"Dustin\"?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT DISTINCT b.color FROM boats b, sailors s WHERE s.sname = 'Dustin' AND s.sid = b.sid"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT DISTINCT b.color FROM boats b, reserves r, sailors s WHERE s.sname = 'Dustin' AND s.sid = r.sid AND r.bid = b.bid;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT DISTINCT b.color FROM boats b, reserves r, sailors s WHERE s.sname = 'Dustin' AND s.sid = r.sid"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT DISTINCT b.color FROM boats b, reserves r, sailors s WHERE s.sname = 'Dustin' AND r.bid = b.bid Answer &amp; Solution Discuss in Board Share Save for Later"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6531,
+      "QuestionTypeId": 0,
+      "QuestionId": 76655,
+      "Explanation": "Answer to be reviewed",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the following query find?<br>(SELECT DISTINCT r.sid <br>FROM boats b, reserves r<br> WHERE b.bid = r.bid AND b.color = 'red') <br>MINUS<br> (SELECT DISTINCT r.sid<br> FROM boats b, reserves r <br>WHERE b.bid = r.bid AND b.color = 'green')<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Find the sailor IDs of all sailors who have reserved red boats but not green boats"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Find the sailor IDs of at least one sailor who have reserved red boats but not green boats"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Find the sailor Ids of atmost one sailor who have reserved red boats but not green boats"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of These Answer"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6531,
+      "QuestionTypeId": 0,
+      "QuestionId": 76656,
+      "Explanation": "Minus will remove all the records returned by second query from the set of the records returned by first query.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following query finds the name of the sailors who have reserved at least two boats?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT DISTINCT s.sname FROM sailors s, reserves r1, reserves r2 WHERE s.sid = r1.sid AND r1.sid = r2.sid AND r1.bid ? r2.bid"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT DISTINCT s.sname FROM sailors s, reserves r1, reserves r2 WHERE s.sid = r1.sid AND COUNT(r1.bid) &gt; r2.bid"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT DISTINCT s.sname FROM sailors s, reserves r1, reserves r2 WHERE s.sid = r1.sid AND r1.sid = r2.sid AND r1.bid &lt;&gt; r2.bid"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of these Answer"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6531,
+      "QuestionTypeId": 0,
+      "QuestionId": 76657,
+      "Explanation": "Answer to be reviewed",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a query involves NOT, AND, OR with no parenthesis",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "NOT will be evaluated first; AND will be evaluated second; OR will be evaluated last."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "NOT will be evaluated first; OR will be evaluated second; AND will be evaluated last."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "AND will be evaluated first; OR will be evaluated second; NOT will be evaluated last."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The order of occurrence determines the order of evaluation."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6531,
+      "QuestionTypeId": 0,
+      "QuestionId": 76661,
+      "Explanation": "<span id=\"explanation76661\" style=\"color:blue\">A is correct, considering the preferences of operators.</span>",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

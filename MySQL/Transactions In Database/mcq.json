@@ -1,0 +1,1206 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Which of the following isolation levels doesn\u2019t allow non-repeatable reads?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Repeatable Reads"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Read Committed <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "both"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 65074,
+      "Explanation": "Read Uncommitted: This is the lowest level where transactions are isolated from each other. One transaction could read the uncommitted data from other transactions, leading to dirty reads, non-repeatable reads, and phantom reads.<br>Read Committed: In this level, a transaction can only read data that has been committed by other transactions, preventing dirty reads. However, non-repeatable reads and phantom reads are still possible.<br>Repeatable Reads: This level ensures that any data read by a transaction will not be changed by other transactions until the first transaction is completed, preventing non-repeatable reads. However, phantom reads can still occur.<br>Serializable: This is the highest level of isolation. It prevents dirty reads, non-repeatable reads, and phantom reads.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "You have just removed 1,700 rows from a table. In order to save the changes you\u2019ve made to the database, which of the following statement&nbsp; is used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Savepoint"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Commit"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Rollback"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Set transaction"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 65139,
+      "Explanation": "commit saves the data permanently in database.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which of the following events will cause an automatic rollback?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "REVOKE command"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<p>Exiting from MySql without issuing COMMIT command</p>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<p>System crash</p>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "TRUNCATE command"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 65200,
+      "Explanation": "Answer B is correct in case exitcommit parameter is set.<br>e.g&nbsp; we need to specify<br>set exitcommit on",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following command makes the updates performed by the transaction permanent in the database?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ROLLBACK"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "COMMIT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "TRUNCATE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DELETE"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 65232,
+      "Explanation": "Commit is used to submit /store data in database permanently",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When a&nbsp; transaction completes its execution it&nbsp; is said to be",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Saved"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Loaded"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Rolled"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Committed"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 74107,
+      "Explanation": "<span id=\"explanation74107\">Commit the transaction means transaction saved permanently in Database.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following makes the transaction permanent in the database ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "View."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Commit."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Rollback."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Flashback."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 76063,
+      "Explanation": "Commit is a TCL statement , used to make transactions permanent.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In order to undo the work of transaction after last commit which one should be used ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "View"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Commit"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Rollback"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Flashback"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 76064,
+      "Explanation": "Rollback will rollback all the transactions until last commit. It is a TCL command.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In case of any shut down during transaction before commit which of the following statement is be done automatically ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "View."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Commit."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Rollback."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Flashback."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 76066,
+      "Explanation": "Rollback will be done automatically.&nbsp;&nbsp;&nbsp;",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;When the transaction finishes the final statement the transaction enters into",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Active state"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Committed state"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Partially committed state"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Abort state"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 76096,
+      "Explanation": "Answer to be reviewed&nbsp;&nbsp;",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Rollback of transactions is normally used to:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "recover from transaction failure"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "update the transaction"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "retrieve old records"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "repeat a transaction"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 76212,
+      "Explanation": "Rollback helps in recovery if transaction fails.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command undo all the updates performed by the SQL in the transaction?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ROLLBACK"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "COMMIT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "TRUNCATE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DELETE"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 76643,
+      "Explanation": "Answer to be reviewed",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of following commands can be used to start a transaction?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Start Transaction"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Transaction"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Start Tran"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 81225,
+      "Explanation": "Start Transaction command used to start a transaction .",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Commit is____type of SQL command.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DML"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "TCL"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DCL"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DDL"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 84097,
+      "Explanation": "TCL stands for Transaction Control Language. It contains 3 subcommands<br>a. Commit<br>b. Rollback<br>c. Savepoint",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In case of any shut down during transaction before commit which of the following statement is done automatically ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "View"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Commit"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Rollback"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Flashback"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 86255,
+      "Explanation": "Write explaination here..",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Commit command is used .....",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To restore the old values"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To save the current data in the memory."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To save the current transaction into the table."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To recover the old table"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 86319,
+      "Explanation": "Write explaination here..",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following are transaction control commands in the database?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SAVEPOINT"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ROLLBACK"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "COMMIT"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 86639,
+      "Explanation": "All above commands are TCL commands since these commands are used to control transactions.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The transaction state changes from active to _______________ after the transaction has been rolled back and the database restored to its state prior to the state of the transaction.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Partially commited"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Commited"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Aborted"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Failed"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 88287,
+      "Explanation": "No transaction is partially committed. <br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following option is correct if you need to back up the data only for changes that have been committed since the last complete backup was performed",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Full backup. <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Differential backup."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Transactional backup."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of these."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 88297,
+      "Explanation": "SQL Server differential backup means backing up only the data that has changed since the last full backup.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The transaction control that prevents more than one user from updating data in a table is called",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Locks"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Commits"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Rollbacks"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Savepoints"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 88298,
+      "Explanation": "These locks are used to keep other sessions away from modifying the tables in the current session.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which MySQL command can you use to undo a DELETE operation if auto-commit is disabled?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ROLLBACK"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "RESTORE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "UNDO"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "REVERT"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 92147,
+      "Explanation": "ROLLBACK is used within a transaction to undo any changes made after the transaction started, including DELETE operations.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if a MySQL transaction is not explicitly committed?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It automatically commits at the end of the session."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It is rolled back when the session ends."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is committed when the database server restarts."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It remains in a pending state indefinitely."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 92578,
+      "Explanation": "In MySQL, if a transaction is not explicitly committed, it is automatically rolled back when the session ends.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which one of the following is not a valid MySQL transaction statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "BEGIN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "COMMIT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "LOCK"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ROLLBACK"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 92579,
+      "Explanation": "The &apos;LOCK&apos; statement is not a transaction control statement in MySQL, while &apos;BEGIN&apos;, &apos;COMMIT&apos;, and &apos;ROLLBACK&apos; are.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In MySQL, which isolation level might read uncommitted changes from other transactions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SERIALIZABLE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "READ COMMITTED"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "READ UNCOMMITTED"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "REPEATABLE READ"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 92580,
+      "Explanation": "The &apos;READ UNCOMMITTED&apos; isolation level allows reading uncommitted changes from other transactions, leading to dirty reads.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default transaction isolation level in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SERIALIZABLE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "READ COMMITTED"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "READ UNCOMMITTED"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "REPEATABLE READ"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 92581,
+      "Explanation": "In MySQL, the default transaction isolation level is &apos;REPEATABLE READ&apos;.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is used in MySQL to ensure all changes made in a transaction are saved to the database?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "BEGIN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "COMMIT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ROLLBACK"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SAVEPOINT"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 92582,
+      "Explanation": "The &apos;COMMIT&apos; statement is used to ensure that all changes made during the transaction are saved to the database.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you undo changes made in a MySQL transaction?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RESTART"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "UPDATE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ROLLBACK"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "COMMIT"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 92583,
+      "Explanation": "A &apos;ROLLBACK&apos; statement reverses all changes made in the current transaction.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which MySQL clause temporarily suspends a transaction so that you can later roll back to a specific point?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SAVEPOINT"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "REVERT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "PAUSE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CHECKPOINT"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 92584,
+      "Explanation": "The &apos;SAVEPOINT&apos; statement allows execution to create a point to which a transaction can be rolled back without affecting the rest of the transaction.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What SQL statement is used to revert changes to a particular savepoint in a MySQL transaction?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ROLLBACK TO"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "UNDO TO"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "RETURN TO"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "REVERT TO"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 92585,
+      "Explanation": "The &apos;ROLLBACK TO savepoint_name&apos; statement is used to revert a transaction to a previously defined savepoint.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following will force MySQL to fully roll back a transaction?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A server restart"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Executing a COMMIT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Issuing a ROLLBACK command"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Switching databases"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 92586,
+      "Explanation": "A &apos;ROLLBACK&apos; command fully reverts any changes made during the transaction.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In MySQL, what is the purpose of the 'SET AUTOCOMMIT=0' statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It enables the automatic sending of transactions."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It disables autocommit mode, requiring explicit commits."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It locks all tables for duration of the session."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It ensures transactions are automatically rolled back."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 92587,
+      "Explanation": "&apos;SET AUTOCOMMIT=0&apos; disables autocommit mode, meaning that transactions will only be committed when explicitly requested with a &apos;COMMIT&apos; statement.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the effect of executing 'SET AUTOCOMMIT=1' in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Begins a new transaction."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Commits a transaction every time a statement is executed."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Prevents the execution of any write operations."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Automatically rolls back transactions."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 92588,
+      "Explanation": "&apos;SET AUTOCOMMIT=1&apos; makes each SQL statement commit as soon as it is finished, without requiring an explicit &apos;COMMIT&apos; command.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which type of MySQL storage engine supports transactions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "MyISAM"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "CSV"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "InnoDB"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MEMORY"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 92589,
+      "Explanation": "InnoDB is the storage engine in MySQL that supports transactions along with ACID-compliance.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can MySQL handle distributed transactions internally?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, using InnoDB's built-in support."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, MySQL does not support distributed transactions."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, using built-in two-phase commit."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Yes, using an external XA transaction manager."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 92590,
+      "Explanation": "MySQL does not natively support distributed transactions but can do so with the help of an external XA (eXtended Architecture) transaction manager.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement in MySQL can be used to implement a form of manual locking during transactions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "LOCK TABLES"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "LOCK SESSION"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "MANUAL LOCK"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "FORCE LOCK"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 92591,
+      "Explanation": "&apos;LOCK TABLES&apos; is used to manually lock tables within a transaction to prevent or control concurrent access.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the 'UNLOCK TABLES' statement do in a MySQL transaction?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Commits the current transaction."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Releases all locks on tables."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Begins a new transaction."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Rolls back the transaction."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 92592,
+      "Explanation": "&apos;UNLOCK TABLES&apos; releases all the locks held by the current session on the tables that were locked using &apos;LOCK TABLES&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using ACID-compliant transactions in MySQL, where are changes to data temporarily stored before being committed?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "In the binary log"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "In the transaction log"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Directly in the database"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "In the cache memory"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 92593,
+      "Explanation": "Changes in an ACID-compliant transaction are stored in the transaction log before being committed to the database.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which file can help to recover a MySQL database in the event of a failure during a transaction?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Error log file"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Schema file"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Binary log file"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Configuration file"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 92594,
+      "Explanation": "The binary log file records all the changes to the database, which can be used to recover the database after a failure.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why might a transaction in MySQL be automatically rolled back?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Due to a syntax error in a query"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Because the database reached maximum capacity"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Due to a deadlock condition"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "If another transaction is committed"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 92595,
+      "Explanation": "A deadlock occurs when two or more transactions prevent each other from progressing. MySQL automatically resolves this by rolling back one of the transactions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command ends the current MySQL transaction and starts a new one?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "RESTART"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "COMMIT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "END TRANSACTION"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "TRUNCATE"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 92596,
+      "Explanation": "The &apos;COMMIT&apos; command saves all changes made during the transaction, effectively closing it and allowing a new transaction to start.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which MySQL command can be used to set the global transaction isolation level?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SET GLOBAL TRANSACTION"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SET ISOLATION LEVEL"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SET TRANSACTION ISOLATION LEVEL"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CONFIGURE ISOLATION LEVEL"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 3874,
+      "QuestionTypeId": 0,
+      "QuestionId": 92597,
+      "Explanation": "The &apos;SET GLOBAL TRANSACTION&apos; command in MySQL is used to configure the transaction isolation level at a global level.",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

@@ -1,0 +1,156 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is the functionality of the following code?<br>public void function(Node node)<br>{<br>&nbsp;&nbsp; &nbsp;if(size == 0)<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;head = node;<br>&nbsp;&nbsp; &nbsp;else<br>&nbsp;&nbsp; &nbsp;{<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Node temp,cur;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;for(cur = head; (temp = cur.getNext())!=null; cur = temp);<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;cur.setNext(node);<br>&nbsp;&nbsp; &nbsp;}<br>&nbsp;&nbsp; &nbsp;size++;<br>}<br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Inserting a node at the beginning of the list."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Deleting a node at the beginning of the list"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Inserting a node at the end of the list"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Deleting a node at the end of the list"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1305,
+      "QuestionTypeId": 0,
+      "QuestionId": 77076,
+      "Explanation": "&nbsp;The for loop traverses through the list and then inserts a new node as cur.setNext(node);",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What should be added in place of ---------------------------, so that the function correctly reverses a linked list.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "*head_ref = prev<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "*head_ref = current<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "*head_ref = next<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "*head_ref = NULL"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1305,
+      "QuestionTypeId": 0,
+      "QuestionId": 77074,
+      "Explanation": "At the end of while loop, the prev pointer points to the last node of original linked list. We need to change *head_ref so that the head pointer now starts pointing to the last node. See the following complete running program.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Code:<br>void freeList( struct node *n )<br>{<div style=\"margin-left: 40px;\">&nbsp;while( n )</div><div style=\"margin-left: 40px;\">&nbsp;{</div><div style=\"margin-left: 40px;\">&nbsp; ????</div><div style=\"margin-left: 40px;\">&nbsp;}<br></div>}<br>Which one of the following can replace the ???? for the function above to release the memory allocated to a linked list?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "n = n-&gt;next;<br>free( n );"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "struct node m = n;<br>n = n-&gt;next;<br>free( m );"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "struct node m = n;<br>free( n );<br>n = m-&gt;next;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "free( n );<br>n = n-&gt;next;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1305,
+      "QuestionTypeId": 0,
+      "QuestionId": 64491,
+      "Explanation": "To release memory allocated for list, we have to iterate through each node of list till the end of list i.e.up to NULL&nbsp;&amp; free every single node.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a circular linked list, following is true<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Components are all linked together in some sequential manner.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "There is no beginning and no end.<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Components are arranged hierarchically<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Forward and backward traversal within the list is permitted<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1305,
+      "QuestionTypeId": 0,
+      "QuestionId": 64498,
+      "Explanation": "In circular linked list last node will always point to first node, so no starting &amp; end of list, but we can use some pointer that will be pointing to first &amp; last node.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In what kind of storage we can easily insert,delete,concatenate and rearrange substrings ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Linked list"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Stack"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Queue"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Array"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1305,
+      "QuestionTypeId": 0,
+      "QuestionId": 64531,
+      "Explanation": "linked list are those who can grow/shrink dynamically as per the requirement.",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

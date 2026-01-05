@@ -1,0 +1,636 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "<div>void main( )</div><div>{</div><div style=\"margin-left: 40px;\">int s[2][ ]={3,4,5,6,7,8,9,10};<br></div><div style=\"margin-left: 40px;\">printf(\u201c%d\u201d, s[1][2] );</div><div>}<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "8"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "9"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ERROR"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 21,
+      "QuestionTypeId": 0,
+      "QuestionId": 72891,
+      "Explanation": "While declaring the array s, the trailing dimensions must be specified. So instead of declaring the array as s[2][], it should be declared as s[][2]. In that case it would mean that s is an 2-D array of whose every element is 1-D array of size 2. The size of 2-D array would be decided by the initialization list, which in this case would be 4 (because there are 8 elements)<div><br></div>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;void main()<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int a[2][3] = {1, 2, 3, 4, 5};<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int i = 0, j = 0;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (i = 0; i &lt; 2; i++)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; for (j = 0; j &lt; 3; j++)<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; printf(\"%d\", a[i][j]);<br></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1 2 3 4 5 0 ."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1 2 3 4 5 junk."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1 2 3 4 5 5."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Run time error."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 21,
+      "QuestionTypeId": 0,
+      "QuestionId": 74940,
+      "Explanation": "Array of 2*3 will hold 6 elements. First five elements are initialised. Hence last element will be 0.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;#include &lt;stdio.h&gt;<br>&nbsp; void main()<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int a[2][3] = {10, 20, 30, , 40, 50};<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int i = 0, j = 0;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (i = 0; i &lt; 2; i++)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; for (j = 0; j &lt; 3; j++)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; printf(\"%d\", a[i][j]);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10 20 30 junk 40 50.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compile time error."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "10 20 30 0 40 50.<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "10 20 30 30 40 50.<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 21,
+      "QuestionTypeId": 0,
+      "QuestionId": 74941,
+      "Explanation": "4th element in the array is not initialized properly. Hence the code will not compile.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;stdio.h&gt;<br>&nbsp;void f(int a[][3])<br>&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a[0][1] = 3;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int i = 0, j = 0;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (i = 0; i &lt; 2; i++)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (j = 0; j &lt; 3; j++)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; printf(\"%d\", a[i][j]);<br>&nbsp;&nbsp;&nbsp; }<br>void main()<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int a[2][3] = {0};<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f(a);<br>&nbsp;&nbsp;&nbsp;&nbsp; }",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0 3 0 0 0 0 .<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Junk 3 junk junk junk junk."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compile time error."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All junk values."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 21,
+      "QuestionTypeId": 0,
+      "QuestionId": 74942,
+      "Explanation": "f() is a function , to which&nbsp; array of size 2*3 is passed , and array is initialised to 0. In the function, element a[0][1] is assigned value 3. Hence o/p shows second element as 3 and all other elements as 0.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;stdio.h&gt;<br>&nbsp;void f(int a[2][])<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a[0][1] = 99;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int i = 0, j = 0;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (i = 0;i &lt; 2; i++)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; for (j = 0;j &lt; 5; j++)<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; printf(\"%d\", a[i][j]);<br></div>&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;void main()<br>&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int a[2][5] = {0};<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f(a);<br>&nbsp;&nbsp;&nbsp; }<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0 99 0 0 0 0 0 0 0 0.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Junk 99 junk junk junk junk  junk junk junk junk .<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compile time error."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All junk values."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 21,
+      "QuestionTypeId": 0,
+      "QuestionId": 74943,
+      "Explanation": "Formal parameter of the function must be specified with constant column number. Since column number is not given in the above example , it will generate a compilation error saying &apos;missing subscript&apos;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct syntax to send a 3-dimensional array as a parameter? (Assuming declaration<br>int a[5][4][3];)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "func(a);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "func(&amp;a);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "func(*a);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "func(**a);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 21,
+      "QuestionTypeId": 0,
+      "QuestionId": 74944,
+      "Explanation": "In C when parameter is passed, may it be single variable, 1D array, 2D array, 3D array,structure/union ,array of structure etc , only variable name is passed.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What are the applications of a multidimensional array?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Matrix Multiplication."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Minimum Spanning Tree."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Finding connectivity between nodes."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 21,
+      "QuestionTypeId": 0,
+      "QuestionId": 74945,
+      "Explanation": "All above mentioned options are the applications of multidimentional array.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;stdio.h&gt;<br>&nbsp;int main()<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int ary[2][3];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ary[][] = {{1, 2, 3}, {4, 5, 6}};<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(\"%d \", ary[1][0]);<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compile time error."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "2"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 21,
+      "QuestionTypeId": 0,
+      "QuestionId": 74946,
+      "Explanation": "Array defination must contain constant column number. Blank is not allowed. Row number can be blank. You can initialised array at the time of declaration only.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the address of the array element at position&nbsp; arr[2][3] if arr is a 2-D long array of 4 rows and 5 columns and starting address of the array is 2000? Consider int as 4 bytes.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2048"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2056"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2052"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "2042"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 21,
+      "QuestionTypeId": 0,
+      "QuestionId": 74947,
+      "Explanation": "Though array is 2D , all the elements in the array are allocated continuous memeor. Considerind first element gets location 2000 ....element [2][3] will be at location 2052.<br>2000 + 4*(5*2) + 3*4<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the o/p of progrm , if the array begins at 65472 and each integer occupies 2 bytes.?<br><br>#include&lt;stdio.h&gt;<br>void main()<br>{<br>&nbsp;&nbsp; int a[3][4] = {1,2,3,4,4,3,2,1,7,8,9,0};<br>&nbsp;&nbsp; printf(\"%u %u\",a+1, &amp;a+1);<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "65474, 65488"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "65480, 65488"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "65480, 65496<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "65474, 65476"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 21,
+      "QuestionTypeId": 0,
+      "QuestionId": 74948,
+      "Explanation": "int a[3][4] = {1, 2, 3, 4, 4, 3, 2, 1, 7, 8, 9, 0};<br>The array a[3][4] is declared as an integer array having the 3 rows and 4 colums dimensions.<br>-printf(\"%u, %u \", a+1, &amp;a+1);<br>The base address(also the address of the first element) of array is 65472.<br>For a two-dimensional array like a reference to array has type \"pointer to array of 4 ints\". Therefore, a+1 is pointing to the memory location of first element of the second row in array a. Hence 65472 + (4 ints * 2 bytes) = 65480<br>Then, &amp;a has type \"pointer to array of 3 arrays of 4 ints\", totally 12 ints. Therefore, &amp;a+1 denotes \"12 ints * 2 bytes * 1 = 24 bytes\".<br>Hence, begining address 65472 + 24 = 65496. So, &amp;a+1 = 65496<br>Hence the output is&nbsp; 65480, 65496  .<br><br>&nbsp;<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of C program with multidimensional array.?<br><br>int main()<br>{<br>&nbsp;&nbsp;&nbsp; int ary[3][2] = {1,2,3,4,5,6};<br>&nbsp;&nbsp;&nbsp; printf(\"%d %d\", ary[0][0], ary[2][1]);<br>&nbsp;&nbsp;&nbsp; return 0;<br>}<br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2 5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1 6"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1 5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "2 6"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 21,
+      "QuestionTypeId": 0,
+      "QuestionId": 74973,
+      "Explanation": "[3] represents 3 rows. [2] represents 2 columns. So each row contains two elements. Index of row and column start with ZERO 0. So ary[2][1] represents 3rd row, 2nd element.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the dimension of the C array int ary[10][5][2].?<br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "10"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 21,
+      "QuestionTypeId": 0,
+      "QuestionId": 74974,
+      "Explanation": "See the number of [ ] square bracket . Here there are 3 ary[10][5][2]. So the dimension is 3.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "int main()<br>{<br>&nbsp;&nbsp;&nbsp; int ary[][3] = {6,5,4,3,2,1};<br>&nbsp;&nbsp;&nbsp; printf(\"%d %d\", ary[0][0], ary[0+1][1+0]);<br>&nbsp;&nbsp;&nbsp; return 0;<br>}<br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "6 2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "6 3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "6 1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compiler error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 21,
+      "QuestionTypeId": 0,
+      "QuestionId": 74975,
+      "Explanation": "ary[][3] divides all 6 elements into two rows each containing 3 elements. 6/col = 6/3 = 2 rows. {{6,5,4}, {3,2,1}} . ary[0+1][1+0]&nbsp; is noyhing but ary[1][1] i.e. 2.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Choose an alternative definition of C Multidimensional array.?<br>int ary[][3] = {6,5,4,3,2,1};<br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int ary[2][3] = {6,5,4,3,2,1};"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int ary[2][3] = {{6,5,4},{3,2,1}};"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int ary[][3] = {{6,5,4},{3,2,1}};"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All the above."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 21,
+      "QuestionTypeId": 0,
+      "QuestionId": 74976,
+      "Explanation": "You can define multidimention array by all of the above methods.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of C Program with arrays.?<br><br><br>int main()<br>{<br>&nbsp;&nbsp;&nbsp; int ary[][2][3] = {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{1,2,3},{4,5,6}},<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{7,8,9},{10,11,12}}<br>&nbsp;&nbsp;&nbsp; };<br>&nbsp;&nbsp;&nbsp; printf(\"%d %d\", ary[0][0][0], ary[1][1][1]);<br>&nbsp;&nbsp;&nbsp; return 0;<br>}<br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1 12"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1 11"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "7 12"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1 6"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 21,
+      "QuestionTypeId": 0,
+      "QuestionId": 74977,
+      "Explanation": "a[][2][3] has missing first dimension. It is valid to ignore first dimensional value if you want. 1st dimension = 12/(2*3) = 12/6 = 2.<br>Here ary is nothing but 2 array of 2 dimention[2][3].<br>ary[0][0][0]&nbsp; is nothing but 1st element of 1st array at position [0][0].<br>ary[1][1][1] is nothing but 2nd element of 2nd array at 2nd row i.e.&nbsp; position [1][1].<br><br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<br>int main()<br>{<br>&nbsp;&nbsp;&nbsp; int a[][] = {{1,2},{3,4}};<br>&nbsp;&nbsp;&nbsp; int i, j;<br>&nbsp;&nbsp;&nbsp; for (i = 0; i &lt; 2; i++)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (j = 0; j &lt; 2; j++)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(\"%d \", a[i][j]);<br>&nbsp;&nbsp;&nbsp; return 0;<br>}<br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1 2 3 4"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compiler Error in line \u201d int a[][] = {{1,2},{3,4}};\u201d"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "4 garbage values"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "4 3 2 1"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 21,
+      "QuestionTypeId": 0,
+      "QuestionId": 74978,
+      "Explanation": "specifying the number of columns in 2-D array is mandatory, so, it will give compile time error.<br><br>error: array type has incomplete element type \u2018int[]\u2019.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "int main()<br>{<br>&nbsp;&nbsp;&nbsp; double values[][4]&nbsp; =<br>&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp; {1.2, 9.0, 3.2},<br>&nbsp;&nbsp;&nbsp; {9.2, 0.5, 1.5, -1.2},<br>&nbsp;&nbsp;&nbsp; {7.3, 7.9, 4.8} } ;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(\"%f \", values[2][3]);<br>&nbsp;&nbsp;&nbsp; return 0;<br>}<br><br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "compilation error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "7.9"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "-1.2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "0.0"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 21,
+      "QuestionTypeId": 0,
+      "QuestionId": 74979,
+      "Explanation": "value[2][3] means 3rd row 4th element which is not initialised hence output is 0. <br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "int items[3][5] =<br>&nbsp; { {0, 1, 3, 4},<br>&nbsp;&nbsp;&nbsp; {4, 3, 99, 0, 7 },<br>&nbsp;&nbsp;&nbsp; {3, 2} } ;<br>Which of the following statements replaces the 99 with 77?<br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "items[1][2] = 77;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "items[2][1] = 77;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "items[ 99 ] = 77;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "items[2][3] = 77;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 21,
+      "QuestionTypeId": 0,
+      "QuestionId": 74980,
+      "Explanation": "Array element of 1st row second column is pointing to a 99. hence items[1][2] = 77;&nbsp; replace 99 with 77.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "#include &lt;stdio.h&gt;<br>int N = 3;<br>&nbsp;void print(int arr[][N], int m)<br>{<br>&nbsp;&nbsp;&nbsp; int i, j;<br>&nbsp;&nbsp;&nbsp; for (i = 0; i &lt; m; i++)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (j = 0; j &lt; N; j++)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(\"%d \", arr[i][j]);<br>}<br>&nbsp;<br>int main()<br>{<br>&nbsp;&nbsp;&nbsp; int arr[][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};<br>&nbsp;&nbsp;&nbsp; print(arr, 3);<br>&nbsp;&nbsp;&nbsp; return 0;<br>}<br><br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0 1 2 3 4 5 6 7 8"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2 3 4 5 6 7 8 9 0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1 2 3 4 5 6 7 8 9"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 21,
+      "QuestionTypeId": 0,
+      "QuestionId": 74981,
+      "Explanation": "we are passing arr to function and in function we are printing array values.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If arr is a two dimensional array of 10 rows and 12 columns, then arr [5] logically points to the<br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "sixth row"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Fifth row"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "fifth column"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "sixth column"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 21,
+      "QuestionTypeId": 0,
+      "QuestionId": 74982,
+      "Explanation": "Arr[0]=1st row<br>Arr[1]= 2nd.<br>Arr[5]=6 th",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Code:<br>int main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; int i, j;<br>&nbsp; int ctr = 0;<br>&nbsp; int myArray[2][3];<br><br>&nbsp; for (i = 0; i &lt; 3; i++)<br>&nbsp;&nbsp;&nbsp; for (j = 0; j &lt; 2; j++)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</div><div style=\"margin-left: 80px;\">&nbsp;&nbsp; &nbsp;myArray[j][i] = ctr;<br>&nbsp;&nbsp; &nbsp;++ctr;<br></div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp; return 0;<br></div>}<br><br><br>What is the value of myArray[1][2]; in the sample code above?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "4<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 21,
+      "QuestionTypeId": 0,
+      "QuestionId": 64061,
+      "Explanation": "In second for loop we are assigning the value to Myarrray[j][i] hence for loop of j is consider for row and i is consider for column. hence value at position myArray[1][2] is 5.",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

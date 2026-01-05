@@ -1,0 +1,1026 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is the purpose of reflection in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To perform arithmetic operations"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To manipulate file systems"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To inspect and manipulate classes, interfaces, fields, and methods at runtime"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To access network resources"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 91922,
+      "Explanation": "Reflection in Java allows runtime inspection and manipulation of classes and members.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which package contains the Reflection API in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "java.util"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "java.reflection"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "java.lang.reflect"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "java.stream"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 91923,
+      "Explanation": "<span id=\"explanation91923\" style=\"color:blue\">The Reflection API is contained within the java.lang.reflect package.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you obtain the Class object of a specific class in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using instance.getClass()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using Class.forName()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using Class.getClass()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using Object.class()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 91924,
+      "Explanation": "The Class.forName() method returns the Class object associated with the class or interface with the given string name.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods is used to get the methods of a class at runtime?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "getClassMethods()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "getMethodNames()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "getMethods()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "retrieveMethods()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 91925,
+      "Explanation": "The getMethods() method of the Class class is used to return an array of Method objects.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will getDeclaredFields() return when invoked on a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "All fields including inherited ones"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only public fields"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "All declared fields of the class, excluding inherited fields"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Static fields only"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 91926,
+      "Explanation": "getDeclaredFields() returns all fields declared by the class itself, excluding inherited ones.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method would you use to create a new instance of a class using reflection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "newInstance()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "instantiate()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "createInstance()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "newClassObject()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 91927,
+      "Explanation": "<span id=\"explanation91927\" style=\"color:blue\">The newInstance() method creates a new instance of the class represented by the Class object.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is required to access private fields of a class using reflection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Nothing extra, private fields are accessible by default"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "String representation of field name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Setting the field's accessible flag to true"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Overriding the private field"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 91928,
+      "Explanation": "To access private fields, you must set the field&apos;s accessible flag to true using setAccessible(true).",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Reflection allows for inspecting methods of which visibility?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Public only"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Protected and private only"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "All visibility (public, protected, default, private)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Private only"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 91929,
+      "Explanation": "Reflection can inspect methods of all visibilities, though accessibility constraints may apply.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following are potential drawbacks of using reflection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Increased performance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Decreased security and performance overhead"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Enhanced type safety"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Improved readability"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 91930,
+      "Explanation": "Reflection can lead to decreased security and performance overhead due to runtime type checking.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can reflection be used to change the value of a private field?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is not possible to change private fields"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using Field.getValue() method"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using Field.setAccessible(true) and Field.set() methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using Class.changeValue()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 91931,
+      "Explanation": "Field.setAccessible(true) allows bypassing access checks, and Field.set() modifies the field value.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a class is loaded using reflection, what must be done to access its private method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use Class.getPrivateMethod()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Set the method to public at runtime"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use Method.setAccessible(true)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Directly call the method"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 91932,
+      "Explanation": "Method.setAccessible(true) allows you to invoke private methods using reflection.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which exception is thrown if a reflective method fails?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ReflectiveOperationException"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "IOException"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "NullPointerException"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SQLException"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 91933,
+      "Explanation": "ReflectiveOperationException is a superclass of exceptions related to reflection operations.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to invoke a method on an object using reflection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Method.call()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Method.invoke()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Object.callMethod()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Invoke.method()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 91934,
+      "Explanation": "Method.invoke() dynamically calls a method represented by a Method object on a target object.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a safe practice when using reflection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Assuming all classes have a default constructor"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Ignoring exceptions thrown during reflection"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Catching and handling exceptions properly"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Hardcoding class names dynamically loaded"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 91935,
+      "Explanation": "It&apos;s crucial to handle exceptions in reflection code to avoid runtime errors and ensure stability.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can reflection be used to instantiate an object of a class that does not have a public constructor?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It cannot be done"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using Constructor.setAccessible(true) before newInstance()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using Class.loadClass()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Direct assignment of object"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 91936,
+      "Explanation": "Constructor.setAccessible(true) allows instantiation using private constructors via reflection.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which class in Java's reflection API is primarily used to discover the details of fields in a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "FieldDescriptor"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FieldInfo"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Field"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "FieldDetail"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 91937,
+      "Explanation": "Field class provides useful methods to access and modify field properties of classes.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If you need to find all constructors of a class, which method would you use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "getAllConstructors()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "getConstructors()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "listConstructors()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "enumerateConstructors()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 91938,
+      "Explanation": "The getConstructors() method returns an array of Constructor objects reflecting all the public constructors.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to retrieve the superclass of a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "getBaseClass()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "getParentClass()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "getSuperclass()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "getInheritance()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 91939,
+      "Explanation": "<span id=\"explanation91939\" style=\"color:blue\">getSuperclass() method returns the superclass of the class represented by a Class object.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can reflection modify the structure of a class, such as adding new fields or methods?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, it can modify everything"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, it can only inspect and modify existing fields and methods"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, it can add fields but not methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Yes, but only in certain environments"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 91940,
+      "Explanation": "Reflection cannot change the structure of classes; it can only access and modify existing fields and methods.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a common security risk associated with using reflection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Introducing syntax errors"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Bypassing normal access control checks"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Crashing the JVM"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Reducing code flexibility"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 91941,
+      "Explanation": "Reflection can bypass access control checks, potentially exposing private members and security vulnerabilities.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "There is one instance of class \u201cClass\u201d per class loaded.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "--"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "--"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 81295,
+      "Explanation": "<span id=\"explanation81295\">The Class class represents class objects in Java, and each class loaded by the JVM has an associated Class object. These Class objects are instances of the Class class and contain metadata about the class, such as its name, fields, methods, annotations, etc.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To instantiate a particular class through reflection api we use",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "New Class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Constructor.newInstance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Constructor.newCreate"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 81296,
+      "Explanation": "<span id=\"explanation81296\">newInstance method is available in Constructor class which helps to create the instance dynamically.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How private methods of a class can be listed using reflection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "getAllMethods"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "getDeclaredMethods"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "getMethods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is not possible to list private members of a class in reflection"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 67694,
+      "Explanation": "<span id=\"explanation67694\">getDeclaredMethods() method in a class Class allows to get information about private methods in the class.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these class allows us to get real time data about private and protected member of a class ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "java.io"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "GetInformation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ReflectPermission"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MembersPermission"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 67592,
+      "Explanation": "<div id=\"b_content\" data-bm=\"40\"><main aria-label=\"Search Results\"><div class=\"b_caption b_algo\"><p>A <strong>ReflectPermission</strong> is a named permission and has no actions. The only name currently defined is suppressAccessChecks, which allows suppressing the standard Java language access checks -- for public, default (package) access, protected, and private members -- performed by reflected objects at their point of use.<br></p></div></main></div>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Which of the following below are abilities of Reflection API in Java?&nbsp;</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Determining state of an object"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Determining duplicate classes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Determination of the class of an object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 67524,
+      "Explanation": "<span id=\"explanation67524\">Reflection is commonly used by programs which require the ability to examine or modify the runtime behavior of applications running in the Javavirtual machine.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How to get the instance of associated class using Reflection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Class.forName(\u201cfully qualified className\u201d)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Class.name(\u201cclassName\u201d)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "className.getClass()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "className.getClassName()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 71323,
+      "Explanation": "<span id=\"explanation71323\">Class.forName(\"fullly qualified class name\") method returns instance of class Class by loading the specified class name in memory.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does Class.forName(\u201cmyreflection.Foo\u201d) return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An array of Foo objects"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "object of Foo"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "calls the constructor of myreflection.Foo"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "it returns a Class object representing myreflection.Foo class"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 71324,
+      "Explanation": "<span id=\"explanation71324\">This loads the class named \"myreflection.Foo\" dynamically at runtime. If the class is found and loaded successfully, it returns a Class object representing that class..</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is not the advantage of Reflection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Examine a class\u2019s field and method at runtime"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Construct an object for a class at runtime"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Examine a class\u2019s field at compile time"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Examine an object\u2019s class at runtime"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 71325,
+      "Explanation": "<span id=\"explanation71325\">Purpose of reflection is to examine class&apos;s filelds, methods at runtime. It can even be used to construct the object at runtime(dynamically). So option C is correct.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does foo.getClass().getMethod(\u201cdoSomething\u201d, null) return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "doSomething method instance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Class instance"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Class object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "null"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 71357,
+      "Explanation": "<span id=\"explanation71357\">getMethod() searches for doSomething() method in the class of instacne foo and returns it&apos;s method instance otherwise is throws exception.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Classes required for reflection are available in _________&nbsp; package?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "java.lang"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "java.util.reflect"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "java.lang.text"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "java.lang.reflect"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 71358,
+      "Explanation": "<span id=\"explanation71358\">Classes like Method, Constructor, Field which are required in reflection are available in java.lang.reflect package. </span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is Java Reflection?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A way to create GUI applications"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A mechanism to inspect and modify runtime behavior of classes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A method to serialize objects"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A way to handle exceptions"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 102329,
+      "Explanation": "Reflection allows inspection and manipulation of classes, methods, fields, and constructors at runtime.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to get the Class object of an instance?<br>String s = \"hello\";<br>Class&lt;?&gt; cls = s._____();<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "getClass()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "getType()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "getObject()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "getInstance()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 102330,
+      "Explanation": "getClass() returns the runtime class of the object.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does Class.forName(\"MyClass\") do?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Creates an object of MyClass"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Loads the class and returns its Class object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Deletes the class"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compiles the class"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 102331,
+      "Explanation": "Class.forName() loads the class dynamically and returns its Class object.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a disadvantage of using reflection?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Improves performance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Breaks encapsulation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Enhances security"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Simplifies debugging"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6845,
+      "QuestionTypeId": 0,
+      "QuestionId": 102332,
+      "Explanation": "Reflection can break encapsulation and lead to performance and security issues.",
+      "Answer": "B",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

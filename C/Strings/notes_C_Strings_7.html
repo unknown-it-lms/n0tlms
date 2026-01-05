@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Notes - C_Strings</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  body{font-family:system-ui,Segoe UI,Roboto,Arial;max-width:900px;margin:24px auto;padding:18px;line-height:1.6;color:#111}
+  h1{font-size:1.4rem;margin-bottom:0.6rem}
+  .topic{font-weight:700;margin-top:1rem}
+  .subtopic{font-weight:600;margin-top:0.8rem}
+  .content{margin:0.6rem 0 1.2rem 0}
+  pre{white-space:pre-wrap;background:#f7f7f7;padding:10px;border-radius:6px;overflow:auto}
+  img{max-width:100%;height:auto}
+  table{border-collapse:collapse;width:100%}
+  table, th, td{border:1px solid #ccc;padding:6px}
+</style>
+</head>
+<body>
+<h1>Notes: C- Strings</h1>
+
+<div class="courseware topic">Strings<hr></div><div class="courseware content"><p>In C programming, a string is essentially a sequence of characters stored in a contiguous memory location, terminated by a special character known as the null character '\0'. Due to this null termination, the length of a string is the number of characters it contains before this null character.</p>
+
+<p>Strings in C are often used to represent text, such as words and sentences, and can be manipulated using various string functions provided by the standard library. Unlike some other programming languages where strings are a built-in data type, strings in C are arrays of characters.</p>
+
+<p>When dealing with strings in a program, it is important to handle them carefully to avoid buffer overflow errors and other issues related to memory management. Programmers must explicitly allocate enough memory to store both the characters in the string and the null character.</p>
+
+<p>Using pointers, C allows for more advanced string manipulation techniques such as concatenation, comparison, and copy operations, enabling developers to perform complex operations on text data.</p>
+</div>
+<div class="courseware subtopic">Need of strings<hr></div><div class="courseware content"><p>Strings in programming are essential for dealing with text and character data. When handling user input, file data, or any text processing tasks, strings become crucial as the fundamental component to store and manipulate textual information.</p>
+
+<p>Strings streamline many common operations such as concatenation, searching, and comparing textual data. In programs that involve data output services like printing messages or generating content, strings serve as an indispensable tool.</p>
+
+<p>Real-life examples of string usage include developing applications that require user names, passwords, or interactions such as chat systems. Additionally, strings are used to parse data formats like XML or JSON, where text labels and data are intertwined.</p></div>
+<div class="courseware subtopic">Using strings<hr></div><div class="courseware content"><p>In C programming, strings are represented as arrays of characters terminated by a null character '\0'. This null-termination enables functions to determine the length of a string by identifying the end marker.</p><p><h2>Declaration and Initialization</h2>Strings can be declared either as a character array or as a pointer to char. During initialization, strings can be directly assigned a sequence of characters enclosed in double quotes, automatically appending the null character:</p><table style='border-collapse: collapse;'><thead><tr><th style='width:50%;'>Code</th><th style='width:50%;'>Explanation</th></tr></thead><tbody><tr><td><code>// Declaring and initializing a string<br>char str1[] = "Hello";</code></td><td>This declares 'str1' as a character array and initializes it with "Hello", including a null terminator implicitly.</td></tr><tr><td><code>// Using a pointer to declare a string<br>char *str2 = "World!";</code></td><td>This creates a pointer to a string literal, which is also null-terminated.</td></tr></tbody></table><p><h2>Character Arrays with Null-termination</h2>When strings are defined as character arrays, remember that they must end with a '\0' to be considered valid C strings. This null character is essential for string manipulation functions to work correctly.</p><table style='border-collapse: collapse;'><thead><tr><th style='width:50%;'>Code</th><th style='width:50%;'>Explanation</th></tr></thead><tbody><tr><td><code>// Manually adding null-termination<br>char str3[6] = {'H', 'e', 'l', 'l', 'o', '\0'};</code></td><td>The explicit null character ensures 'str3' ends correctly.</td></tr></tbody></table><p><h2>Memory Representation of Strings</h2>Understanding how strings are stored in memory helps in debugging and developing efficient programs. Each character, including the null terminator, occupies one byte, and in arrays, they are stored in contiguous memory locations.</p><table style='border-collapse: collapse;'><thead><tr><th style='width:50%;'>Code</th><th style='width:50%;'>Explanation</th></tr></thead><tbody><tr><td><code>// Memory layout<br>char str4[] = "C Prog"; // Automatically 'C Prog\0'</code></td><td>The memory representation starts from 'C' and ends with '\0' without needing to allocate more space than necessary.</td></tr></tbody></table><p>Strings in C are a staple for handling text, and their proper manipulation allows powerful operations such as copying, comparing, and concatenating to be performed.</p></div>
+<div class="courseware subtopic">Common operations on strings<hr></div><div class="courseware content"><p>When working with strings in C programming, several common operations are frequently performed. These operations help in better handling and manipulation of strings, which are arrays of characters terminated by a null character.</p>
+
+<p>Finding the length of a string is a fundamental operation. The length of a string is the number of characters it contains, excluding the null terminator. The standard library function <code>strlen()</code> is widely used for this purpose.</p>
+
+<p>Another common operation is counting the occurrences of a specific character within a string. This operation requires iterating through the string and incrementing a counter each time the character is found.</p>
+
+<p>Reversing a string involves changing the order of characters in the string so that its first character becomes the last and so on. This can be achieved by swapping characters from the two ends of the string progressively.</p>
+
+<p>Checking if a string is a palindrome is a frequently performed operation. A palindrome is a string that reads the same forward and backward. This is usually accomplished by comparing characters from the start and end of the string, moving towards the center.</p>
+
+<table>
+<tr><th style="width:50%">Code</th><th style="width:50%">Explanation</th></tr>
+<tr><td><pre>int length = strlen(str); <span style="color:green">// Use strlen to find length</span></pre></td><td>In C, the <code>strlen()</code> function returns the number of characters in a string.</td></tr>
+<tr><td><pre>int count = 0;
+for(int i = 0; str[i] != '\0'; i++) {
+  if(str[i] == 'a') count++; <span style="color:green">// Increment for each 'a'</span>
+}</pre></td><td>This code counts the number of times the character 'a' appears in the string.</td></tr>
+<tr><td><pre>int len = strlen(str);  
+for(int i = 0; i < len/2; i++) {
+  char temp = str[i];
+  str[i] = str[len-i-1]; <span style="color:green">// Swap characters</span>
+  str[len-i-1] = temp;
+}</pre></td><td>Reverses the string by swapping characters from end to start.</td></tr>
+<tr><td><pre>int isPalindrome = 1;  
+for(int i = 0; i < len/2; i++)  
+  if(str[i] != str[len-i-1])  <span style="color:green">// Check for mismatch</span>
+    isPalindrome = 0;</pre></td><td>Determines if the string is a palindrome by comparing start and end characters.</td></tr>
+</table></div>
+<div class="courseware subtopic">Built-in string functions<hr></div><div class="courseware content"><p>The C programming language offers a set of built-in functions specifically designed to manage strings. These functions facilitate common operations such as obtaining string lengths, copying, appending, and searching within strings. Understanding these functions helps in effectively managing string data, which is a common necessity in software development.</p><p>The <code>strlen</code> function is used to determine the length of a string. It counts the number of characters in a string excluding the null-terminator. </p><table border='0' cellspacing='0'><tr><th width='50%'>Code</th><th width='50%'>Explanation</th></tr><tr><td>int length = strlen("hello");</td><td>This returns the length of the string "hello", which is 5.</td></tr></table><p>The <code>strcpy</code> function copies a source string into a destination string buffer. It requires sufficient memory in the destination to accommodate the source string plus the null terminator. </p><table border='0' cellspacing='0'><tr><td>#include <string.h></td><td>If you don't include the string.h library, the functions won't be recognized.</td></tr><tr><td>char dest[20];<br>strcpy(dest, "world");</td><td>The string "world" is copied into the array <code>dest</code>.</td></tr></table><p>The <code>strcat</code> function concatenates two strings. It appends one string to the end of another and modifies the destination string, requiring adequate space for the combined string.</p><table border='0' cellspacing='0'><tr><td>char str1[20] = "Hello, ";<br>char str2[] = "world!";<br>strcat(str1, str2);</td><td>Here, <code>str2</code> is appended to <code>str1</code>, resulting in "Hello, world!".</td></tr></table><p>The <code>strcmp</code> function compares two strings lexicographically. It returns 0 if they are equal, a negative value if the first string is less than the second, and a positive value otherwise.</p><table border='0' cellspacing='0'><tr><td>int res = strcmp("apple", "banana");</td><td>This returns a negative value since "apple" is less than "banana".</td></tr></table><p>The <code>strchr</code> function finds the first occurrence of a character in a string. It returns a pointer to the first occurrence or null if the character isn't found.</p><table border='0' cellspacing='0'><tr><td>char* pos = strchr("hello", 'e');</td><td>The pointer <code>pos</code> points to the 'e' in "hello".</td></tr></table><p>The <code>strrchr</code> function is similar to <code>strchr</code> but finds the last occurrence of a character in a string.</p><table border='0' cellspacing='0'><tr><td>char* pos = strrchr("hello world", 'o');</td><td>The pointer <code>pos</code> points to the 'o' in "world".</td></tr></table><p>The <code>strstr</code> function locates a substring within a string. It returns a pointer to the first occurrence of the substring or null if it's not present.</p><table border='0' cellspacing='0'><tr><td>char* pos = strstr("hello world", "world");</td><td>The pointer <code>pos</code> points to the "world" in "hello world".</td></tr></table><p>The <code>sprintf</code> function writes formatted data to a string. It's similar to printf, but the output is stored in a string instead of being displayed.</p><table border='0' cellspacing='0'><tr><td>char buffer[50];<br>sprintf(buffer, "Value: %d", 25);</td><td>The formatted string "Value: 25" is stored in <code>buffer</code>.</td></tr></table><p>The <code>memset</code> function fills a block of memory with a specific value. It's commonly used to initialize arrays or structures to zero.</p><table border='0' cellspacing='0'><tr><td>char str[50];<br>memset(str, 0, sizeof(str));</td><td>This sets all bytes of <code>str</code> to zero.</td></tr></table></div>
+<div class="courseware subtopic">Command line parameters<hr></div><div class="courseware content"><p>In C programming, command line parameters are a way to pass information to a program when it starts. These parameters are accessible in your main function as arguments.</p> <p>To read command line parameters, the main function should be defined with two parameters: argc and argv. 'argc' is the count of arguments, while 'argv' is an array of strings representing each argument.</p> <table style='border-collapse:collapse; width:100%'><tr><th style='width:50%'>Code</th><th style='width:50%'>Explanation</th></tr> <tr><td>int main(int argc, char *argv[]) {<br><br> &nbsp;&nbsp;// argc counts how many arguments are supplied <br> &nbsp;&nbsp;// argv[0] is the name of the program <br> &nbsp;&nbsp;// argv[1] is the first command line argument<br>} </td><td>This initializes the main function to handle command line arguments.</td></tr> </table> <p>Converting strings from command line arguments to different types of numbers is common, especially when dealing with inputs that represent numeric values.</p> <p>C provides functions like atoi for converting strings to integers, atof for floats, and strtol for more control over conversions.</p> <table style='border-collapse:collapse; width:100%'><tr><th style='width:50%'>Code</th><th style='width:50%'>Explanation</th></tr> <tr><td>#include &lt;stdio.h&gt;<br>#include &lt;stdlib.h&gt;<br><br>int main(int argc, char *argv[]) {<br><br> &nbsp;&nbsp;// Convert string to integer <br> &nbsp;&nbsp;int num = atoi(argv[1]);<br> &nbsp;&nbsp;// Usage of atoi focuses on converting only strings representing numbers<br><br>}</td><td>This code converts the first command line argument into an integer.</td></tr></table> <p>By understanding command line parameters and type conversion, beginners can create programs that are more flexible and can accept input directly from the user when they run the program.</p></div>
+
+
+</body>
+</html>

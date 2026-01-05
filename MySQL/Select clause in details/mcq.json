@@ -1,0 +1,276 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is the purpose of the SQL AS keyword?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To rename a database"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To create table aliases"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To define the data type of a column"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To execute a stored procedure"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6528,
+      "QuestionTypeId": 0,
+      "QuestionId": 92046,
+      "Explanation": "The AS keyword is used in SQL to rename a column or table with an alias.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the outcome of this MySQL expression: NULL = NULL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "TRUE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "FALSE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "NULL"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ERROR"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6528,
+      "QuestionTypeId": 0,
+      "QuestionId": 92067,
+      "Explanation": "In MySQL, the expression NULL = NULL does not evaluate to TRUE; instead, it evaluates to NULL because NULL represents an unknown value, and MySQL cannot definitively say two unknown values are equal.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements correctly uses an alias in the SELECT clause in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT employee_id AS id FROM employees;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT employee_id = id FROM employees;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT employee_id * 2 id FROM employees;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT employee_id : id FROM employees;"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6528,
+      "QuestionTypeId": 0,
+      "QuestionId": 92060,
+      "Explanation": "An alias in MySQL is created using the AS keyword, so &apos;employee_id AS id&apos; assigns the alias &apos;id&apos; to &apos;employee_id&apos;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the result of this query: SELECT 10 + 15 AS total;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Error because alias cannot be used with arithmetic expressions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A column heading 'total' with value 25 will be returned"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A column heading '+' with value 25 will be returned"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error due to missing FROM clause"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6528,
+      "QuestionTypeId": 0,
+      "QuestionId": 92061,
+      "Explanation": "Arithmetic operations can be performed directly in the SELECT clause, and aliases can be used to name the resulting column.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What would be the output of the query: SELECT (salary * 0.1) AS increment, salary FROM employee?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Two columns, one named 'increment' showing the increment value, and another 'salary'"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An error due to multiplication in the SELECT clause"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only the salary column since alias cannot be used"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only the increment column since only one alias is allowed"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6528,
+      "QuestionTypeId": 0,
+      "QuestionId": 92062,
+      "Explanation": "Arithmetic operations can be used with columns in the SELECT statement, and the result can individually be aliased.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you correctly rename a column output in MySQL using an alias?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT SUM(sales) : total_sales"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT SUM(sales) total_sales"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT SUM(sales) AS = total_sales"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT SUM(sales) total.sales"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6528,
+      "QuestionTypeId": 0,
+      "QuestionId": 92063,
+      "Explanation": "Aliases can be given by either using AS or simply by writing the alias name after the expression or column name.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider the query: SELECT name, age * 2 AS double_age FROM students. What does 'double_age' represent?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A new table in the database"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A column alias representing twice the value of age"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A function being applied to the age column"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An invalid syntax due to arithmetic operation"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6528,
+      "QuestionTypeId": 0,
+      "QuestionId": 92064,
+      "Explanation": "The alias &apos;double_age&apos; is used to label the result of the arithmetic operation &apos;age * 2&apos; within the result set.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In MySQL, which SQL keyword is used to check for NULL values?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IS NULL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "EQUALS NULL"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CHECK NULL"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "NULL CHECK"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6528,
+      "QuestionTypeId": 0,
+      "QuestionId": 92065,
+      "Explanation": "In MySQL, the &apos;IS NULL&apos; keyword is used to check if a column value is NULL. This is because NULL is not equal to any value, including itself, so &apos;IS NULL&apos; is specifically designed to handle this comparison.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will the MySQL query 'SELECT * FROM table WHERE col IS NOT NULL;' return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "All records including NULL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only records with NULL in 'col'"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Records with both NULL and NOT NULL in 'col'"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only records where 'col' has non-NULL values"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6528,
+      "QuestionTypeId": 0,
+      "QuestionId": 92069,
+      "Explanation": "The query &apos;SELECT * FROM table WHERE col IS NOT NULL;&apos; in MySQL will return only those records that have non-NULL values in the column &apos;col&apos;. It filters out any records where &apos;col&apos; is NULL.",
+      "Answer": "D",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

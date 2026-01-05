@@ -1,0 +1,456 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is the correct syntax to add a new column 'age' of type int to a table using ALTER TABLE in Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ALTER TABLE users ADD COLUMN age int;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ALTER TABLE users ADD age int;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ALTER USERS ADD age int;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MODIFY TABLE users ADD age int;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6894,
+      "QuestionTypeId": 0,
+      "QuestionId": 94271,
+      "Explanation": "The correct syntax to add a new column to a table in Cassandra is &apos;ALTER TABLE table_name ADD column_name data_type;&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operation can be performed using the ALTER TABLE command in Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Delete a table"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Rename a keyspace"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Add a new column"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Drop a keyspace"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6894,
+      "QuestionTypeId": 0,
+      "QuestionId": 94272,
+      "Explanation": "ALTER TABLE in Cassandra is used to add a new column, rename a column, or modify column properties.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can you alter a primary key using ALTER TABLE in Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, you can directly change the primary key."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes, but only if the table is empty."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No, primary keys cannot be altered using ALTER TABLE."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Yes, but it requires a table rebuild."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6894,
+      "QuestionTypeId": 0,
+      "QuestionId": 94273,
+      "Explanation": "In Cassandra, altering the primary key is not allowed because it requires restructuring the table which is not supported.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you attempt to add a column that already exists using ALTER TABLE in Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The existing column will be overwritten."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An error will be raised stating the column already exists."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The database will create a duplicate column."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The command will be ignored without error."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6894,
+      "QuestionTypeId": 0,
+      "QuestionId": 94274,
+      "Explanation": "Cassandra raises an InvalidQueryException if you attempt to add a column that already exists.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following can be modified using the ALTER TABLE command in Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Keyspace replication strategy"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Column data type"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Column name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Partition key"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6894,
+      "QuestionTypeId": 0,
+      "QuestionId": 94275,
+      "Explanation": "You can rename columns using the ALTER TABLE command in Cassandra, but you cannot change data types or key definitions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you rename a column 'username' to 'user_name' in a Cassandra table named 'users'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ALTER TABLE users RENAME username TO user_name;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "RENAME COLUMN users.username TO user_name;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ALTER TABLE users CHANGE username TO user_name;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MODIFY TABLE users RENAME username TO user_name;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6894,
+      "QuestionTypeId": 0,
+      "QuestionId": 94276,
+      "Explanation": "The correct syntax to rename a column in a Cassandra table is &apos;ALTER TABLE table_name RENAME old_name TO new_name;&apos;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement correctly describes the limitation of ALTER TABLE in Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It can be used to change the datatype of a column."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It can be used to change partition key columns."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It does not allow modification of clustering order."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It supports adding unique constraints."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6894,
+      "QuestionTypeId": 0,
+      "QuestionId": 94277,
+      "Explanation": "ALTER TABLE does not support modifying the clustering order of a table in Cassandra.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of executing 'ALTER TABLE users DROP age;' if 'age' is a column in the 'users' table?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The column 'age' will be deleted from the 'users' table."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The command will fail because columns cannot be dropped."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The 'age' column will be set to NULL for all entries."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "This command will perform no action."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6894,
+      "QuestionTypeId": 0,
+      "QuestionId": 94278,
+      "Explanation": "Using &apos;ALTER TABLE table_name DROP column_name;&apos; will remove the specified column from the table.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which scenario would you use the command 'ALTER TABLE users WITH comment = 'new comment''?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To add a new column called 'comment'"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To change the table comment to 'new comment'"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To rename a column to 'new comment'"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To delete the 'comment' field from the table"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6894,
+      "QuestionTypeId": 0,
+      "QuestionId": 94279,
+      "Explanation": "The command is used to update the comment metadata for a given table in Cassandra.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can ALTER TABLE be used to change the table's primary key in Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, through a direct command"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, Cassandra does not allow altering primary keys"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, but only after delete all data in the table"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Yes, using a workaround by adding and dropping columns"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6894,
+      "QuestionTypeId": 0,
+      "QuestionId": 94280,
+      "Explanation": "Cassandra does not allow modifications to the primary key in existing tables as it would require a complete table restructure.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a requirement before dropping a column using ALTER TABLE in Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The column must be indexed."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The table must be empty."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "There are no specific requirements to drop a column."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The column must not be part of the primary key."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6894,
+      "QuestionTypeId": 0,
+      "QuestionId": 94281,
+      "Explanation": "A column that is part of the primary key cannot be dropped because primary keys define data uniqueness and partitioning.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which option accurately describes an operation that cannot be done using ALTER TABLE in Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Adding a static column."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Dropping a column."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Changing clustering column orderings."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Updating table-specific options, like gc_grace_seconds."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6894,
+      "QuestionTypeId": 0,
+      "QuestionId": 94282,
+      "Explanation": "ALTER TABLE does not support changing the clustering order of existing columns in Cassandra.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you increase the capacity of an existing column in a table using ALTER TABLE in Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ALTER TABLE cannot modify column type size."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By using ALTER TABLE to change the column's data type."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By renaming the column and adding a new one."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By updating the column values using CQL."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6894,
+      "QuestionTypeId": 0,
+      "QuestionId": 94283,
+      "Explanation": "Cassandra does not support changing the data type or size of existing columns through ALTER TABLE.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command would you use to set a new comment for an existing table in Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ALTER TABLE table_name SET COMMENT 'new comment';"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ALTER TABLE table_name WITH comment = 'new comment';"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SET TABLE table_name COMMENT 'new comment';"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ALTER COMMENT ON TABLE table_name IS 'new comment';"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6894,
+      "QuestionTypeId": 0,
+      "QuestionId": 94284,
+      "Explanation": "The syntax &apos;ALTER TABLE table_name WITH comment = &apos;new comment&apos;;&apos; is used to set or modify table-level comments.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the function of the 'gc_grace_seconds' property that can be altered through the ALTER TABLE command in Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It sets the timeout for write operations."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It defines the compression ratio for SSTables."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It determines how long tombstones are kept to handle consistency issues."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It sets the cache expiration time for read operations."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6894,
+      "QuestionTypeId": 0,
+      "QuestionId": 94285,
+      "Explanation": "The &apos;gc_grace_seconds&apos; property determines how long Cassandra keeps tombstones to ensure all replicas are consistent before they are permanently deleted.",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

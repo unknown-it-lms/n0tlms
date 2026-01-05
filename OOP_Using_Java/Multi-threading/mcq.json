@@ -1,0 +1,2958 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What happens to thread when garbage collection kicks off?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The thread continues its operation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Garbage collection cannot happen until the thread is running"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The thread is paused while garbage collection runs"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The thread and garbage collection do not interfere with each other"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 75158,
+      "Explanation": "<span id=\"explanation75158\">The thread is paused when garbage collection runs which slows the application performance.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>class X implements Runnable {</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public static void main(String args[]) {</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* Missing code? */</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public void run() {}</div><div>}</div><div>Which of the following line of code is suitable to start a thread ?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Thread t = new Thread(X);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Thread t = new Thread(X); t.start();"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "X run = new X(); Thread t = new Thread(run); t.start();"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Thread t = new Thread(); x.run();"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 72577,
+      "Explanation": "<span id=\"explanation72577\">To start a thread, we have to create object of the class which implements Runnable and then pass the object to instance of Thread. Because of this once the thread is started, it actually executes run() method implemented in the class implementing Runnable. So option C is correct. In option A and B, object of class X is not created which is required.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is synchronization in reference to a thread?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Its a process by which many thread are able to access same shared resource simultaneously."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Its a process by which a method is able to access many different threads simultaneously"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Its a method that allow to many threads to access any information require"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It\u2019s a process of handling situations when two or more threads need access to a shared resource"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 72477,
+      "Explanation": "<span id=\"explanation72477\">Thread synchronization is the concurrent execution of two or more threads that share critical resources. Threads should be synchronized to avoid critical resource use conflicts. Otherwise, conflicts may arise when parallel-running threads attempt to modify a common variable at the same time.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Java, each thread has its own ________, in which it runs ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "main() method"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "JVM"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Call stack"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Memory"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 72463,
+      "Explanation": "<ul><li><span id=\"explanation72463\">Each thread has its own call stack, \"call stack\" and \"thread stack\" are the same thing. Calling it a \"thread stack\" just emphasizes that the call stack is specific to the thread. </span></li><li><span id=\"explanation72463\">Bill Venners calls this the Java stack : When a new thread is launched, the Java virtual machine creates a new Java stack for the thread.</span></li><li><span id=\"explanation72463\">A call stack is a stack data structure that stores information about the active subroutines of a computer program.</span></li><li><span id=\"explanation72463\">What you&apos;re calling a thread stackis what i assume is the private stack of a thread..</span></li><li><span id=\"explanation72463\">A thread&apos;s stack is used to store the location of function calls in order to allow return statements to return to the correct location.</span></li></ul>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if we call run() directly, without start() ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Program will give a compilation error."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Nothing will happen both the methods are same."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Runtime error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "thread won't be allocated a new call stack, and start running in the current call stack"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 72464,
+      "Explanation": "<span id=\"explanation72464\">Each thread starts in a separate call stack.<br>Invoking the run() method from main thread, the run() method goes onto the current call stack rather than at the beginning of a new call stack.<br>If start isn&apos;t called, then the Thread created will never run. The main thread will finish and the Thread will be garbage collected.<br>Example::<br>1.class TestCallRun1 extends Thread{ &nbsp;<br>2. public void run(){ &nbsp;<br>3.&nbsp;&nbsp; System.out.println(\"running...\"); &nbsp;<br>4. } &nbsp;<br>5. public static void main(String args[]){ &nbsp;<br>6.&nbsp; TestCallRun1 t1=new TestCallRun1(); &nbsp;<br>7.&nbsp; t1.run();//fine, but does not start a separate call stack &nbsp;<br>8. } &nbsp;<br>9.}</span><br><br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What will be the Output of given code ?</div><div>public class Test implements Runnable {</div><div style=\"margin-left: 40px;\">public void run() {</div><div style=\"margin-left: 80px;\">System.out.println(\"r1 \");</div><div style=\"margin-left: 80px;\">System.out.println(\"r2 \");</div><div style=\"margin-left: 40px;\">}</div><div style=\"margin-left: 40px;\">public static void main( String[] args ) {</div><div style=\"margin-left: 80px;\">Thread t = new Thread(new Test());&nbsp;</div><div style=\"margin-left: 80px;\">t.start();</div><div style=\"margin-left: 80px;\">System.out.println(\"m1 \");</div><div style=\"margin-left: 80px;\">t.join();</div><div style=\"margin-left: 80px;\">System.out.println(\"m2 \");</div><div style=\"margin-left: 40px;\">}</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "compilation error."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The output would be r1 r2 m1 m2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The output would be m1 m2 r1 r2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The output would be m1 r1 r2 m2"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 72465,
+      "Explanation": "<span id=\"explanation72465\">Calling join() method on the thread instance throws InterruptedException which is a checked exception. So it generates compilation error.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a thread is to be declared as a daemon thread, it must be declared before",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "start method"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "run method"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "stop method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 72416,
+      "Explanation": "<span id=\"explanation72416\">The sole purpose of the daemon thread is that it provides services to user thread for background supporting task. If there is no user thread, why should JVM keep running this thread. That is why JVM terminates the daemon thread if there is no user thread.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is used to change the name of a thread?&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "public String getName()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "public void setName(String name)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "public void getName()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "public String setName(String name)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 72588,
+      "Explanation": "<span id=\"explanation72588\">The setName() method of thread class is used to change the name of the thread.<br>Syntax<br>1.public final void setName(String a)&nbsp;<br>Parameter<br>1.a = It shows the new name for the thread.&nbsp; </span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Given:</div><div>public class Threads4 {</div><div style=\"margin-left: 40px;\">public static void main (String[] args) {</div><div style=\"margin-left: 80px;\">new Threads4().go();</div><div style=\"margin-left: 40px;\">}</div><div style=\"margin-left: 40px;\">public void go() {</div><div style=\"margin-left: 80px;\">Runnable r = new Runnable() {</div><div style=\"margin-left: 80px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public void run() {</div><div style=\"margin-left: 80px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.print(\"foo\");</div><div style=\"margin-left: 80px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</div><div style=\"margin-left: 80px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };</div><div style=\"margin-left: 80px;\">Thread t = new Thread(r);<br>t.start();</div><div style=\"margin-left: 80px;\">t.start();</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>What is the result?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compilation fails."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An exception is thrown at runtime."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The code executes normally and prints \"foo\""
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The code executes normally, but nothing is printed."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 72610,
+      "Explanation": "<span id=\"explanation72610\">A thread can not be started twice, it gives IllegalThreadStateException. So this code will throw exception at runtime.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What will happen if we call the run() method directly instead of calling the start() method?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "run() methos can not be directly called, it gives compilation error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Invoking the run() method from main thread, the run() method goes onto the current call stack rather than at the beginning of a new call stack."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Exception is thrown at runtime"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A seperate thread execution will begin with the call to run() method"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 72629,
+      "Explanation": "<span id=\"explanation72629\">run() method can be called directly but it will not get executed in a seperate thread. It will not give any compilation error or even runtime error.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Which method returns a reference to the currently executing thread object?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "currentThread()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "runningThread()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "runnableThread()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 72644,
+      "Explanation": "<span id=\"explanation72644\">currentThread() is a static method in Thread class which returns the reference of the current thread.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which mechanism is used when multiple threads want to communicate and corodinate their activities?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Inter-thread communication"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Initial-thread communication"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Synchronization"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Deadlock"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 72666,
+      "Explanation": "<span id=\"explanation72666\"><span id=\"explanation72666\">When a thread is paused running in its critical section using wait() method, may notify other waiting threads. This process of communication between 2 threads is called as inteer thread communication</span></span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "After invoking the wait method on an object, obj1, a thread, T1, will remain in the wait set of obj1 until which of the following occurs?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Another thread invokes the notify method on the object, obj1, and T1 is selected to move out of the wait set"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Another thread invokes the notifyAll method on the object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Another thread invokes the resume method on thread T1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Another thread interrupts thread T1"
+        },
+        {
+          "OptionId": "E",
+          "OptionText": "The priority of thread T1 is increased"
+        },
+        {
+          "OptionId": "F",
+          "OptionText": "A, B and D"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 72342,
+      "Explanation": "<span id=\"explanation72342\">The resume () method of thread class is only used with suspend () method. This method is used to resume a thread which was suspended using suspend () method. This method allows the suspended thread to start again. Waiting state can be broken by calling notify methods or by interrupting the thread.</span>",
+      "Answer": "F",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What will be the output of the following program code?</div><div>public class Test implements Runnable<br>{</div><div style=\"margin-left: 40px;\">public static void main(String[] args) {</div><div style=\"margin-left: 80px;\">Thread t = new Thread(this);<br>t.start();</div><div style=\"margin-left: 40px;\">}</div><div style=\"margin-left: 40px;\">public void run() {</div><div style=\"margin-left: 80px;\">System.out.println(\"test\");</div><div style=\"margin-left: 40px;\">}</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The program does not compile because this cannot be referenced in a static method."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The program compiles fine, but it does not print anything because t does not invoke the run() method"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The program compiles and runs fine and displays test on the console."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 72250,
+      "Explanation": "<span id=\"explanation72250\">this reference can not be used from a static method. So it generates compilation error.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>If you supply a target object when you create a new Thread, as in:&nbsp;</div><div>Thread t = new Thread(targetObject);</div><div>What test of instanceof does targetObject have to pass for this to be legal?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "targetObject instanceof Thread"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "targetObject instanceof Object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "targetObject instanceof Applet"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "targetObject instanceof Runnable"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 72288,
+      "Explanation": "<span id=\"explanation72288\">By providing a Runnable object. Runnable interface is the primary template for any object that is intended to be executed by a thread. It defines a single method run(), which is meant to contain the code that is executed by the thread.. Any class whose instance needs to be executed by a thread should implement the Runnable interface</span><br><br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the difference between Thread.sleep() and Object.wait()?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Thread.sleep() pauses the current thread for a specified time, while Object.wait() releases the lock on the object and waits for another thread to notify it."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Thread.sleep() is used for synchronization, while Object.wait() is used for pausing a thread."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Thread.sleep() can be interrupted, while Object.wait() cannot."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Thread.sleep() is a non-static method, while Object.wait() is static method."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 72248,
+      "Explanation": "<span id=\"explanation72248\">sleep() method is used to make the thread to sleep for given amount of time. wait() method even stops the running and goes to waiting state and releases the lock. Sleep method does not release the lock.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Explain different ways of creating a thread?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Extending the Thread class and Implementing the Runnable interface"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Implementing cloneable interface."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A &amp; B"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 70786,
+      "Explanation": "<span id=\"explanation70786\">Thread can be created by extending Thread class as well as by implementing Runnable interface</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What's the difference between the methods sleep() and wait()",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The code sleep(l000) puts thread aside for exactly one second. The code wait(l000) causes a wait of up to one second."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A thread could stop waiting earlier if it receives the notify() or notifyAII() call"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The method wait() is defined in the class Object and the method sleep() is defined in the class Thread."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 70787,
+      "Explanation": "<span id=\"explanation70787\">sleep() is used for explicitly asking the thread to go to sleep for perticular time period, wait() is used in inter-thread communication. Waiting thread will resume once it receives notification from other thread or even time period can be given for specifying maximum waiting time.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When a Thread&nbsp; is created and started, what is its initial state, if this thread it the only User Thread&nbsp; running?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It can go in any state. it depends on JVM."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "As this is the only Thread running, it will always go in Running State."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "OS will put the Thread in runnable state always."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Thread Pool will put the Thread in Waiting state."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 70796,
+      "Explanation": "<span id=\"explanation70796\">Even if it is only thread, it will go into runnable state but can&apos;t guarentee about running state.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given<br>void waitForSignal() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Object obj = new Object();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; synchronized (Thread.currentThread()) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; obj.wait();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; obj.notify();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "This code may throw an InterruptedException"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compile Time Error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "This code may throw a TimeoutException after ten minutes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "This code will not compile unless \"obj.wait()\" is replaced with \"((Thread) obj).wait()\"."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 70769,
+      "Explanation": "E",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Foo and bar are public references available to many other threads. foo refers to a Thread and bar is an Object. The thread foo is currently executing bar.wait(). From another thread, what provides the most reliable way to ensure that foo will stop executing wait()?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "foo.notify();"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "bar.notify();"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "foo.notifyAll();"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Thread.notify();"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 70770,
+      "Explanation": "bar.notify() or bar.notifyAll():<br>These methods are the standard way to wake up threads waiting on a specific object&apos;s monitor.&nbsp;It must hold the lock on bar<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword when applied on a method indicates that only one thread should execute the method at a time?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "transient"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "volatile"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "synchronized"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "native"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 70778,
+      "Explanation": "synchronized keyword when applied on the method, the thread which starts executing if should complete its execution.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following thread state transitions does not model the lifecycle of a thread?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The new state to the Running state"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The Ready state to the Running state"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The Running state to the Ready state"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The running state to dead state"
+        },
+        {
+          "OptionId": "E",
+          "OptionText": "New state to ready state"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 67778,
+      "Explanation": "<span id=\"explanation67778\">Thread can not move directly from new state to running state. It has to go thr&apos; ready state before moving to running state.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A thread becomes not runnable when",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Its sleep method is invoked"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "thread calls the wait method to wait for a specific condition to be satisifed"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The thread is blocking on I/0."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 70739,
+      "Explanation": "<span id=\"explanation70739\">A thread becomes Not Runnable when one of these events occurs:<br>Its sleep method is invoked.<br>The thread calls the wait method to wait for a specific condition to be satisifed.<br>The thread is blocking on I/O.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen when you&nbsp; attempt to compile and&nbsp; run the following code?<br>class A implements Runnable {<div style=\"margin-left: 40px;\">public void run() {</div><div style=\"margin-left: 80px;\">System.out. println(\" run-A\");</div><div style=\"margin-left: 40px;\">}</div>}<br>public class Test {<div style=\"margin-left: 40px;\">public static void main(String [Jargv]) {&nbsp;&nbsp; &nbsp;</div><div style=\"margin-left: 80px;\">A a = new A();<br>Thread t = new Thread(a);<br>System. out. println(t. isAlive());<br>t.start();<br>System .out. println(t. isAlive());</div><div style=\"margin-left: 40px;\">}</div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "false run-A true"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "false run-A false"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "true run-A true"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation fails"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 70742,
+      "Explanation": "<span id=\"explanation70742\">First isAlive() call returns false but second isAlive() call returns true because thread is already started by that time. Thread itself prints \"run-A\". So final outcome is false run-A true</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The life cycle of the thread is controlled by?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "JVM"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "JDK"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "JRE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 70744,
+      "Explanation": "<span id=\"explanation70744\">Answer is JVM, because the OS is indeed crucial for the execution and management of threads at a lower level, the <strong>JVM</strong> is responsible for managing the thread lifecycle from within the Java application. Therefore, for the Java thread lifecycle, the correct answer is <strong>A. JVM</strong>.<br></span><span>JVM and OS scheduler are the ultimate orchestrators, the java.lang.Thread class methods and Java&apos;s synchronization primitives provide the programmatic means for developers to influence and manage the thread&apos;s journey through its life cycle states.</span><br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When several threads act on object simultaneously and the result is reliable then it is known as",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Boxing"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Unsynchronized"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Synchronized"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of these"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 70749,
+      "Explanation": "<ul><li><span id=\"explanation70749\">This process is called synchronization. When data is handled in a relieable way, it is synchronized.</span></li><li><span id=\"explanation70749\">Multi-threaded <a data-cke-saved-href=\"http://quiz.geeksforgeeks.org/multithreading-in-java/\" href=\"http://quiz.geeksforgeeks.org/multithreading-in-java/\"> </a>programs may often come to a situation where multiple threads try to access the same resources and finally produce erroneous and unforeseen results.</span></li><li><span id=\"explanation70749\">So it needs to be made sure by some synchronization method that only one thread can access the resource at a given point of time.</span></li><li><span id=\"explanation70749\">Java provides a way of creating threads and synchronizing their task by using synchronized blocks. Synchronized blocks in Java are marked with the synchronized keyword.</span></li></ul><div class=\"wrapper\" id=\"main\"><div class=\"site-content\" id=\"primary\"><div id=\"content\" role=\"main\"><article class=\"post-142543 post type-post status-publish format-standard hentry category-java tag-java-multithreading\" id=\"post-142543\"><br></article></div></div></div>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods is used to start a thread in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "<div>run()</div>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "<div>start()</div>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "<div>begin()</div>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<div>execute()</div>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 67527,
+      "Explanation": "<span id=\"explanation67527\" style=\"color:blue\"><span id=\"explanation67527\">The start() method is used to begin the execution of a thread. It internally calls the run() method to execute the thread&apos;s code.<br>The run() method is used to define the entry point of the thread&apos;s execution, but it doesn&apos;t start the thread. It is invoked internally when a thread is started. </span></span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these are types of multitasking ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Process based multitasking"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Thread based multitasking"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both A &amp; B"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 67590,
+      "Explanation": "<span id=\"explanation67590\">Multitasking can be achieved by creating multiple processes or multiple threads</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>public class Starter extends Thread {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private int x = 2;</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String[] args) throws Exception {</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new Starter().makeItSo();</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public Starter(){</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x = 5;</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;start();</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public void makeItSo() throws Exception {</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;join();</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x = x - 1;</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(x);</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void run() { x *= 2; }</div><div>}</div><div>What is the output of attempting to compile and run?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compilation fails"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "9"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is impossible to determine for certain"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 67509,
+      "Explanation": "<span id=\"explanation67509\">Call to the start() method in constructor gives call to run() method where it assigns value 10 to x. In makeItSo() method value is decremetned by 1. So finally value of x is displayed as 9. Call to join() method ensures that run method is completely executed. If we remove the call to join() method, output changes to 4.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Which two statements are true? (Choose two.)</div><div>A.&nbsp; It is possible for more than two threads to deadlock at once.</div><div>B.&nbsp; The JVM implementation guarantees that multiple threads cannot enter into a deadlocked state.<br>C.&nbsp; Deadlocked threads release once their sleep() method's sleep duration has expired.</div><div>D.&nbsp; Deadlocking can occur only when the wait(), notify(), and notifyAll() methods are used incorrectly.</div><div>E.&nbsp; It is possible for a single-threaded application to deadlock if synchronized blocks are used incorrectly.</div><div>F.&nbsp; If a piece of code is capable of deadlocking, you cannot eliminate the possibility of deadlocking by</div><div>inserting invocations of Thread.yield().</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CD"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "AE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "AF"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "BC"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 67511,
+      "Explanation": "<ol><li><span id=\"explanation67511\">More than 2 threads can enter into deadlocked state(Option A is correct).</span></li><li><span id=\"explanation67511\">Thread.yield() method does not release the lock so option F is correct. Even if sleep() method duration is over, it will not release the resource.</span></li><li><span id=\"explanation67511\">For a deadlock scenario there has to be multiple actions(threads) running simultaneously. So option C and E are wrong.</span></li><li><span id=\"explanation67511\">Deadlocking does not occur because of&nbsp; incorrect use of communication methods so option D is incorrect</span></li></ol>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Yield() method of thread converts thread from ___________&nbsp; to ___________ stage</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Running to runnbale"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Running to blocked"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Running to dead"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "blocked to Running"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 67505,
+      "Explanation": "<span id=\"explanation67505\">Whenever a thread calls java.lang.Thread.yield method, it gives hint to the thread scheduler that it is ready to pause its execution. It does not go into blocking state but leaves CPT time and goes back to runnable state</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is used to force each thread to reconcile its working copy of a variable with the master copy in main memory?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "final"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "volatile"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "synchronized"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "transient"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 67709,
+      "Explanation": "<span id=\"explanation67709\"></span><span>When a variable is declared volatile, it guarantees that any write to the volatile variable by one thread will be immediately visible to all other threads. This means that threads will not cache old values of the volatile variable in their local CPU caches or registers. Instead, they will always read the most up-to-date value directly from main memory</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>class A extends Thread&nbsp;</div><div>{</div><div style=\"margin-left: 40px;\">private int i;</div><div style=\"margin-left: 40px;\">public void run() {</div><div style=\"margin-left: 80px;\">i = 1;</div><div style=\"margin-left: 40px;\">}</div><div style=\"margin-left: 40px;\">public static void main(String[] args) {</div><div style=\"margin-left: 80px;\">A a = new A();<br>a.start();<br>System.out.print(a.i);</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>What are the possible results of attempting to compile and run the program?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Prints nothing"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Prints: 0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Prints: 1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compile-time error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 67698,
+      "Explanation": "E",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What are all the valid methods available in the Thread class?<br>1.isAlive()<br>2.join()<br>3.run()<br>4.yield()<br>5.stop()<br>6.start()<br>7.sleep()",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1,2,3,5,6,7"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1,2,3,6,7"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1,2,5,6,7"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all the methods"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 67684,
+      "Explanation": "<span id=\"explanation67684\"><span id=\"explanation67684\">All the methods are available in Thread class.</span></span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is false statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The Thread.join method is static"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The Thread.join method is always invoked on an instance of Thread"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The Thread.join method causes the current thread to wait for the referenced thread to die"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The Thread.join method declares an InterruptedException in the throws clause"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 67759,
+      "Explanation": "<span id=\"explanation67759\">join() method is not static.<br>join() method should be called on instance of thread.<br>join() method causes current thread to wait till the referenced thread dies and may throw InterruptedException</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>class A extends Thread {</div><div style=\"margin-left: 40px;\">public void run() {</div><div style=\"margin-left: 80px;\">try {</div><div style=\"margin-left: 120px;\">sleep(10000);</div><div style=\"margin-left: 80px;\">}&nbsp;</div><div style=\"margin-left: 80px;\">catch (InterruptedException ie){}</div><div style=\"margin-left: 40px;\">}</div><div style=\"margin-left: 40px;\">public static void main(String[] args) {</div><div style=\"margin-left: 80px;\">A a1 = new A();</div><div style=\"margin-left: 80px;\">long startTime = System.currentTimeMillis();</div><div style=\"margin-left: 80px;\">a1.start();</div><div style=\"margin-left: 80px;\">System.out.print(System.currentTimeMillis() - startTime);</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>What are the possible results of attempting to compile and run the program?</div><div><div>i) Prints a number greater than or equal to 0</div><div>ii) The number printed must always be greater than 10000</div><div>iii) This program will run for at least ten seconds</div><div>iv) Compile-time error</div><div>v) Run-time error</div></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "i"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ii,iii"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "iv,v"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "i,iii"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 67763,
+      "Explanation": "<span id=\"explanation67763\">Main thread prints the value of difference in time immediately because child thread goes to sleep for 10 seconds.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>class A extends Thread {</div><div style=\"margin-left: 40px;\">String[] sa;</div><div style=\"margin-left: 40px;\">public A(String[] sa) {</div><div style=\"margin-left: 80px;\">this.sa = sa;</div><div style=\"margin-left: 40px;\">}</div><div style=\"margin-left: 40px;\">public void run() {</div><div style=\"margin-left: 80px;\">synchronized (sa)<br>{</div><div style=\"margin-left: 120px;\">System.out.print(sa[0] + sa[1] + sa[2]);</div><div style=\"margin-left: 80px;\">}</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>class B {</div><div style=\"margin-left: 40px;\">private static String[] sa = new String[]{\"X\",\"Y\",\"Z\"};</div><div style=\"margin-left: 40px;\">public static void main (String[] args) {&nbsp; &nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;synchronized (sa) {</div><div style=\"margin-left: 80px;\">&nbsp;Thread t1 = new A(sa); t1.start();</div><div style=\"margin-left: 80px;\">&nbsp; sa[0] = \"A\"; sa[1] = \"B\"; sa[2] = \"C\";</div><div style=\"margin-left: 80px;\">}</div><div style=\"margin-left: 40px;\">}</div><div>}</div><div>What is the result of attempting to compile and run the program?</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Prints: XYZ"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Prints: AYZ"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Prints: ABZ"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Prints: ABC"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 67746,
+      "Explanation": "String array will be used by main thread first completely and then allowed to be used by thread t1. Main thread modifies value of strng array as A, B and C. These modified values will be printed by thread t1. Hence the output will be \"ABC\"<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "One of the following method is not executed by the programmer while writing multithreaded applications.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "start"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "sleep"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "join"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "run"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81539,
+      "Explanation": "<span id=\"explanation81539\">run() method is not directly called in the multithreaded application. </span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given<br>public class Trial extends Thread {<br>&nbsp;&nbsp;&nbsp;&nbsp; public void run() throws NullPointerException {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(\"hello\");<br>&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp; public static void main(String args[]) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new Trial().start();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(\u201cdone\u201d);<br>&nbsp;&nbsp;&nbsp; }<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "NullPointerException during runtime"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compilation error \u201coverridden method does not throw NullPointerException\u201d"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "output : \u201cdone\u201d \u201chello\u201d"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "it will print \u201cdone\u201d and then throw \u201cNullPointerException\u201d"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81540,
+      "Explanation": "<span id=\"explanation81540\">Main method finishes first so prints \"done\" and then run() method gets called which prints \"hello\".</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the wrong statement",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "you cannot notify a particular thread"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "synchronized keyword can be applied to static methods"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "wait, notify methods can be called only from synchronized methods or block"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "InterruptedException is unchecked exception."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81541,
+      "Explanation": "<span id=\"explanation81541\"><span id=\"explanation81541\">Statements A, B and C are correct. While statement D is wrong as InterruptedException is checked exception.</span></span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The ___________ interface should be implemented by any class whose instances are intended to be executed by a thread.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Serializable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Comparable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Collection"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Runnable"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81542,
+      "Explanation": "<span id=\"explanation81542\">Runnable interface is used to specify the task be performed by the thread. It&apos;s instances are executed by thread.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A static method cannot be synchronized"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "If a non-synchronized method is called from within a synchronized method, the thread releases the lock acquired by the synchronized method when it enters the non-synchronized method."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When a thread call wait() from a synchronized method, it releases the lock"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Primitive variables can be protected from concurrent access using synchronized block."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81544,
+      "Explanation": "<span id=\"explanation81544\">Statements A, B and D are false because :<br>Static methods in Java can be synchronized. When you synchronize a static method, it locks on the Class object associated with the class containing the method.<br>If a non-synchronized method is called from within a synchronized method, the thread still holds the lock acquired by the synchronized method when it enters the non-synchronized method.<br>Primitive variables cannot be protected from concurrent access using synchronized blocks directly because synchronization in Java operates on objects, not primitive types.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given<br>1. public class TestOne {<br>2. public static void main (String[] args) {<br>3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thread.sIeep(3000);<br>4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.printIn(\"sleep\");<br>5. }<br>6. }",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "No error, prints sleep"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Runtime Error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No error &amp; no output"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81545,
+      "Explanation": "<span id=\"explanation81545\">Call to Thread.sleep() method needs to handle the exception.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following are methods of the Runnable interface?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "run"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "start"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "yield"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "stop"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81546,
+      "Explanation": "<span id=\"explanation81546\">Runnable interface has only one method - public void run()</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "While using Thread, which is incorrect?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "u invoke run()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "u invoke start()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "u implement Runnable"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "u extend Thread"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81547,
+      "Explanation": "<span id=\"explanation81547\">While using thread, we should nver invoke run method directly.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "__________ are utilized to control the access to an object especially in multithreaded programming?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Asynchronized methods"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "serialized methods"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "synchronized methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "both a and c"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81549,
+      "Explanation": "<span id=\"explanation81549\">Synchronized methods are used to decide which all threads can access the object.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "___________ means each method in multithreaded environment doesn\u2019t access data by multiple threads at the same time.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Thread detach"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "thread isolation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "thread safety"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "thread lock"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81550,
+      "Explanation": "<span id=\"explanation81550\">Thread safety allows the particular part of code protected by multiple threads.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following starts the default thread available in java program?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "System class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "main method"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "static keyword"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of these"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81551,
+      "Explanation": "<span id=\"explanation81551\">Main method starts default or main hread.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which out of the following can be used to create a new Thread?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Extend java.lang.Thread and override the start method."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Extend java.lang.Runnable and override the start method."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Implement java.lang.Thread and implement the run method."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Implement java.lang.Runnable and implement the run method."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81552,
+      "Explanation": "<span id=\"explanation81552\" style=\"color:blue\"><span id=\"explanation81552\">Runnable interface needs to be implemented and run() methods needs to be overridden.</span></span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the use of the synchronized keyword?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Allows two process to run in parallel but to communicate with each other"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Ensures only one thread at a time may access a method or object"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Ensures that two or more processes will start and end at the same time"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Ensures that two or more Threads will start and end at the same time"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81553,
+      "Explanation": "<span id=\"explanation81553\">Synchronized keyword is used to ensure that a block or method gets executed by one thread at a time.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen when you attempt to compile and run the following code?<br>public class Bground extends Thread {<br>&nbsp;&nbsp;&nbsp; public static void main(String argv[]) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bground b = new Bground();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b.run();<br>&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp; public void start() {<br>&nbsp; &nbsp; &nbsp; &nbsp; for (int i = 0; i&lt;10; i++) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(\"Value of i = \" + i);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp; }<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A compile time error indicating that no run method is defined for the Thread class."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A run time error indicating that no run method is defined for the Thread class."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Clean compile and at run time the values 0 to 9 are printed out."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Clean compile but no output at runtime."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81554,
+      "Explanation": "<span id=\"explanation81554\">Program will get compiled but there is no implementation of run() method so no output.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the o/p of the following program?<br>class MyThread extends Thread {<br>&nbsp; &nbsp; &nbsp;public static void main(String [] args) {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; MyThread t = new MyThread();<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Thread x = new Thread(t);<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; x.start();<br>&nbsp; &nbsp; &nbsp;}<br>&nbsp; &nbsp; &nbsp; public void run() {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; for(int i=0;i&lt;3;++i) {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;System.out.print(i + \"..\");<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br>&nbsp; &nbsp; &nbsp;}<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1..2..3.."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0..1..2..3.."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0..1..2.."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "compilation error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81556,
+      "Explanation": "<span id=\"explanation81556\">Here the code will compile successfully and return 0..1..2..</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Sleep releases the lock whereas wait does not.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "depends on OS"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "can not say"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81558,
+      "Explanation": "<span id=\"explanation81558\">Sleep method does not relaese the lock where as wait method releases the lock</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the effect of issuing a wait () method on an object",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "If a notify() method has already been sent to that object then it has no effect"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The object issuing the call to wait() will halt until another object sends a notify() or notifyAll() method"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An exception will be raised"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The object issuing the call to wait() will be automatically synchronized with any other objects using the receiving object."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81559,
+      "Explanation": "<span id=\"explanation81559\">It makes current thread pause till it receives notification from other thread.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "One of the following method has to be invoked by the programmer in order to bring thread from born to runnable state.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "start"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "sleep"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "join"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "run"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81560,
+      "Explanation": "<span id=\"explanation81560\">Call to start method makes a thread converted from newly created(born) to runnable state.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the correct statement",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "you can not notify a particular thread"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "synchronized keyword can be applied to static methods"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "wait, notify methods can be called only from synchronized methods or block"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the above."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81561,
+      "Explanation": "<span id=\"explanation81561\">It is not possible to notify a particular thread in Java. The notify() and notifyAll() methods in Java are used to wake up one or all threads that are waiting on the same object&apos;s monitor.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Select the correct statement:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "in case of intrinsic lock, when exception is raised in a synchronized code, lock is automatically<br>released."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "in case of Reentrant lock, when exception is raised lock is automatically released."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both A and B."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of these."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81562,
+      "Explanation": "Every object in Java has an intrinsic lock, which is acquired automatically when a thread enters a synchronized block or method. When an exception is raised within a synchronized block, the lock held by the thread is automatically released.&nbsp;Reentrant locks are created using the ReentrantLock class and must be explicitly acquired and released by threads.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Threads are lightweight as compare to processes",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Threads can be made to work like process"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Depends on underlying OS"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81563,
+      "Explanation": "<span id=\"explanation81563\">Threads are considered as lightweight processes</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The method used to register thread with JVM scheduler",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "run"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "register"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "start"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81564,
+      "Explanation": "<span id=\"explanation81564\">Thread will become part of the thread pool when start method is called so that scheduler can schdeule thread for execution.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "By default the priority of main thread is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Minimum"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "maximum"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "normal"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81565,
+      "Explanation": "<span id=\"explanation81565\">Every thread gets created with normal priority(5) unleass specifically assigned.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "One of the following methods programmer never invokes in case of multi-threading application",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Run"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "start"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "wait"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "notify"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81567,
+      "Explanation": "<span id=\"explanation81567\">run method gets invoked when thread is given chance to run.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "We can invoke wait, notify or notify all from non-synchronized methods",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "false"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "can be called in some conditions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "depends on OS"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81568,
+      "Explanation": "<span id=\"explanation81568\">wait, notify and notifyAll methods should be called from synchronized methods only.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen?<br>public class MyThread extends Thread {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @Override<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public void start() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public static void main(String args[]) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MyThread m1=new MyThread();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m1.run();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compile time error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Exception during runtime"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No error no output"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Program will behave differently on different platforms"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81569,
+      "Explanation": "<span id=\"explanation81569\">As run method is not defined, it will not execute anything. So there will be no output. But it will not generate any error.<br>If you override the start() method in a subclass of Thread, you might inadvertently change the behavior of the start() method and disrupt the thread lifecycle.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Wait, notify and notifyAll methods are",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "abstract"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "final"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81570,
+      "Explanation": "<span id=\"explanation81570\">Wait, notify and notifyAll methods are declared as final in class Object.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "All the blocking methods i.e. sleep, wait and join can throw",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IllegalMonitorStateException"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "InterruptedException"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "BlockingException"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81571,
+      "Explanation": "<span id=\"explanation81571\">sleep, wait and join can throw interrupted exception</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen?<br>class MyTarget implements Runnable {<br>&nbsp;&nbsp;&nbsp;&nbsp; public void run() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(\u201cMyTarget run\u201d);<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>}<br>public class MyApp {<br>&nbsp;&nbsp;&nbsp;&nbsp; public static void main(String args[]) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MyTarget m=new MyTarget();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thread t1=new Thread();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t1.start();<br>&nbsp; &nbsp;&nbsp; }<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Output \u201cMyTarget run\u201d"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No output"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "IllegalMonitorException during runtime"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81572,
+      "Explanation": "<span id=\"explanation81572\">When t1.start() method is called, it implicitly gives call to run() method of Thread class if no Runnable object is passed as an argument. The Thread class provides an empty implementation (the method does nothing) of the run() method.<br>Need to pass the object of Runnable referance to Thread class and not the start method.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen?<br>class MyTarget implements Runnable {<br>&nbsp;&nbsp;&nbsp;&nbsp; public void run() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(\u201cMyTarget run\u201d);<br>&nbsp;&nbsp;&nbsp;&nbsp; }<br>}<br>public class MyApp {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public static void main(String args[]) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MyTarget m=new MyTarget();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thread t1=new Thread();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t1.start(m);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Output \u201cMyTarget run\u201d"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No output"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "IllegalMonitorException during runtime"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81573,
+      "Explanation": "<span id=\"explanation81573\">Need to pass the object of Runnable referance to Thread class and not the start method.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen?<br>class MyTarget implements Runnable {<br>&nbsp;&nbsp;&nbsp;&nbsp;public void run() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(\u201cMyTarget run\u201d);<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}<br>public class MyApp {<br>&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String args[]) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MyTarget m=new MyTarget();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thread t1=new Thread(m);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t1.start();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Output \u201cMyTarget run\u201d"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No output"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "IllegalMonitorException during runtime"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81574,
+      "Explanation": "<span id=\"explanation81574\">Program works well and outputs \"MyTarget run\"</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;A class which contains non-static synchronized methods or blocks is called as_________",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Singleton"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Synchronized"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Thread-Safe"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81575,
+      "Explanation": "<span id=\"explanation81575\"><span>A class which contains non-static synchronized methods or blocks is treated as thread safe</span></span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "_______ method makes caller thread wait till this thread die.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Wait"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "sleep"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "yield"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "join"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 81576,
+      "Explanation": "<span id=\"explanation81576\">calling thread will be paused until the thread on which join() is called finishes execution.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen when you attempt to compile and run the following code?<br>public class Bground extends Thread {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public static void main(String argv[])&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bground b = new Bground();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b.run();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public void start() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (int i = 0; i &lt;10; i++) {<br><span style=\"font-size:11pt\"><span style=\"line-height:114%\"><span style=\"font-family:Calibri\"><span style=\"font-size:11.0000pt\"><span style=\"font-family:Calibri\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(\"Value of i = \" + i);</span></span></span></span></span><br><span style=\"font-size:11pt\"><span style=\"line-height:114%\"><span style=\"font-family:Calibri\"><span style=\"font-size:11.0000pt\"><span style=\"font-family:Calibri\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></span></span></span></span><br><span style=\"font-size:11pt\"><span style=\"line-height:114%\"><span style=\"font-family:Calibri\"><span style=\"font-size:11.0000pt\"><span style=\"font-family:Calibri\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></span></span></span></span><br><span style=\"font-size:11pt\"><span style=\"line-height:114%\"><span style=\"font-family:Calibri\"><span style=\"font-size:11.0000pt\"><span style=\"font-family:Calibri\">} &nbsp;&nbsp; </span></span></span></span></span>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A compile time error indicating that no run method is defined for the Thread class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A run time error indicating that no run method is defined for the Thread class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Clean compile and at run time the values 0 to 9 are printed out"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Clean compile but no output at runtime"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 84316,
+      "Explanation": "<span id=\"explanation84316\">In Thread class, run() method is defined with an empty implementation. Ideally start() method should be called on thread object so that it calls run method automatically so no problem in compilation but no output</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about threading are true&nbsp;&nbsp;&nbsp; &nbsp;<br>A) You can only obtain a mutually exclusive lock on methods in a class that extends Thread or implements runnable&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>B) You can obtain a mutually exclusive lock on any object&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>C) When a thread invokes a synchronized method, it automatically acquires the intrinsic lock for that method's object and releases it when the method returns. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>D) Lock can be obtained on only those objects which implements Serializable",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "All"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "only B and C"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A, B and C"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 84317,
+      "Explanation": "<span id=\"explanation84317\">A and D are wrong statements. B and C are correct statements.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the result of invoking the wait() method on an object without ensuring that the current thread holds the lock of the object?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The code will fail to compile"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Nothing special will happen"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An IllegalMonitorStateException will be thrown if the wait() method is called,<br>while the current thread does not hold the lock of the object"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The thread will be blocked until it gains the lock of the object"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 88214,
+      "Explanation": "<span id=\"explanation88214\">wait() method has to be called only from synchronized context otherwise IllegalMonitorStateException is thrown.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in the Object class is used for obtaining a lock on a thread?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "wait()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "notify()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "notifyAll()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "synchronize()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 91681,
+      "Explanation": "The wait() method is used by threads to wait for themselves to be further notified by other threads.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "class MyThread extends Thread {<br>&nbsp;&nbsp;&nbsp; public void run() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(\"Thread is running.\");<br>&nbsp;&nbsp;&nbsp; }<br>}<br>public class Main {<br>&nbsp;&nbsp;&nbsp; public static void main(String[] args) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MyThread t1 = new MyThread();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t1.start();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; try {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t1.join();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } catch (InterruptedException e) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(e);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(\"Main thread is running.\");<br>&nbsp;&nbsp;&nbsp; }<br>}<br>What will be the output of the program?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Thread is running.<br>Main thread is running."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Main thread is running.<br>Thread is running."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Thread is running."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Main thread is running."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 87981,
+      "Explanation": "<span id=\"explanation87981\">The join() method causes the current thread (in this case, the main thread) to wait for the completion of the thread on which it&apos;s called (in this case, t1). So, the main thread will wait for t1 to complete its execution before continuing. Therefore, the output will be \"Thread is running.\" followed by \"Main thread is running.\"</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which out of the following is not a method of the Thread class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "start()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "run()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "sleep()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "execute()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 87982,
+      "Explanation": "<span id=\"explanation87982\">The Thread class in Java does not have a method named execute(). The start() method is used to start the execution of a thread, run() contains the code that constitutes the new thread, and sleep() is used to temporarily suspend the execution of the current thread.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider the following Java code snippet:<br>class MyThread extends Thread {<br>&nbsp;&nbsp;&nbsp; public void run() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(\"Thread is running.\");<br>&nbsp;&nbsp;&nbsp; }<br>}<br>public class Main {<br>&nbsp;&nbsp;&nbsp; public static void main(String[] args) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MyThread t1 = new MyThread();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t1.start();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t1.start();<br>&nbsp;&nbsp;&nbsp; }<br>}<br>What will be the outcome of running this program?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will compile successfully, and \"Thread is running.\" will be printed twice."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It will compile successfully, but \"Thread is running.\" will be printed once followed by runtime exception"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will compile successfully, but it will throw a runtime exception."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It will fail to compile due to a syntax error."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 87985,
+      "Explanation": "<span id=\"explanation87985\">In Java, attempting to start the same thread more than once will result in a runtime IllegalThreadStateException. So, although the code will compile successfully, it will throw this exception when attempting to start the same thread (t1) for the second time.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Java, which method is used to start the execution of a thread?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "run()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "start()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "begin()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "execute()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 91902,
+      "Explanation": "The start() method is called on a Thread object to initiate the thread&apos;s execution and call its run() method.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which interface must be implemented to create a custom thread class in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Runnable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Callable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Thread"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Executor"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 91903,
+      "Explanation": "The Runnable interface should be implemented to define a thread by providing the run() method.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a multithreaded environment, which keyword is used to prevent concurrent access to a method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "private"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "synchronizable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "synchronized"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "volatile"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 91904,
+      "Explanation": "The synchronized keyword is used to control access to a method or block, ensuring that only one thread can execute it at a time.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following methods can be used to put a thread into a waiting state?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "pause()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "wait()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "hold()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "halt()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 91905,
+      "Explanation": "The wait() method, typically used with synchronized blocks, puts the thread into a waiting state until another thread invokes notify() or notifyAll() on the same object.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What exception is thrown when a thread tries to wait on an object\u2019s monitor without owning the monitor?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "IllegalThreadStateException"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "IllegalMonitorStateException"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "InterruptedException"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MonitorStateException"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 91906,
+      "Explanation": "IllegalMonitorStateException is thrown when a thread tries to call wait() or notify() methods on an object whose monitor it does not own.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method causes the currently executing thread object to temporarily pause and allow other threads to execute?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "yield()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "join()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "sleep()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "pause()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 91907,
+      "Explanation": "The yield() method pauses the currently executing thread to give other threads of the same priority an opportunity to execute.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Java, how can we make a thread the primary thread of execution?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using the main thread"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By setting thread priority"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using the primary keyword"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By using join() method"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 91908,
+      "Explanation": "The main thread is the initial thread of execution in a Java program which can be controlled and other threads can be spawned from it.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why is the Thread class in Java not cloneable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Because Thread objects use system resources that cannot be duplicated."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Because Java does not support cloneable objects."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Because it results in runtime exceptions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Because threads are bound to current processes."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 91909,
+      "Explanation": "Threads are tied to system resources like stack and state which cannot be meaningfully duplicated using the clone pattern.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these defines the lowest priority of a thread?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "10"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 91910,
+      "Explanation": "In Java, thread priorities range from 1 (lowest) to 10 (highest), with 1 being the minimum priority.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a thread needs to wait indefinitely until another thread finishes, which method is typically used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "sleep()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "join()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "yield()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "wait()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 91911,
+      "Explanation": "The join() method is used to make the current thread wait until the thread on which it is called terminates.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method in Java can be used to detect if a thread is still active or not?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "isAlive()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "isRunning()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "isExecuting()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "isStopped()"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 91912,
+      "Explanation": "The isAlive() method checks whether a thread has been started and not terminated.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default priority value assigned to a new thread?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 91913,
+      "Explanation": "In Java, a thread is assigned a priority of 5 (NORM_PRIORITY) by the default.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following can lead to a deadlock in a multithreaded Java program?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Recursive method calls"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Nested synchronized blocks"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Excessive thread sleeping"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Increasing thread priority"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 91914,
+      "Explanation": "Deadlock occurs when multiple threads are blocked forever, each waiting on the other&apos;s resource due to nested synchronized blocks.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is used for critical section protection in a Java application?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "BlockingQueue"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Static methods"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Volatile variables"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Synchronized keyword"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 91915,
+      "Explanation": "The synchronized keyword is used to protect critical sections in code from concurrent access.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Java multi-threading, what causes a thread to transition from the Runnable state to the Not Runnable state?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Calling wait() method"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Getting CPU time"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Calling notify() method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Completing its run() method"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 91916,
+      "Explanation": "The wait() method causes a thread to leave the Runnable state and enter the Not Runnable state, blocking it.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the most appropriate way to stop thread execution in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using System.exit()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Calling stop() method"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Setting a condition flag and checking in run() method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Throwing ThreadDeath exception"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 91917,
+      "Explanation": "A thread should be stopped safely by setting a condition flag and checking this flag in its run() method, avoiding unsafe operations.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When two threads have mutually dependent locks leading to infinite waiting, it is referred to as?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Starvation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Livelock"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Deadlock"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Race condition"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 91918,
+      "Explanation": "Deadlock refers to a state where two or more threads are blocked forever because each thread is waiting for the others to release a lock.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which Java feature allows a thread to safely read a variable while it is being updated by another thread?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "AtomicInteger"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Synchronized methods"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Volatile keyword"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Thread safety"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 91919,
+      "Explanation": "The volatile keyword ensures visibility of changes to variables across threads, preventing reading stale data.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these conditions can lead to starvation in a Java multithreading context?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Long wait times due to lock contention"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Circular wait"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Resource allocation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Lower-priority thread never getting CPU"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 91920,
+      "Explanation": "Starvation occurs when lower-priority threads are perpetually blocked because higher-priority threads consume all CPU time.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you ensure a block of code is only executed by one thread at a time in Java?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Using reentrant locks"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Using random locks"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using yields"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using pauses"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 54,
+      "UniqueNodeId": 6844,
+      "QuestionTypeId": 0,
+      "QuestionId": 91921,
+      "Explanation": "Reentrant locks are part of java.util.concurrent and allow threads to re-enter locks they already own, ensuring atomic execution of concurrent code blocks.",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

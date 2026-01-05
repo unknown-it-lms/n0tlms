@@ -1,0 +1,546 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What does the TRUNCATE TABLE statement do in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Deletes the table permanently"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Removes all rows from a table"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Removes only specific rows from a table"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Archives table data"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6910,
+      "QuestionTypeId": 0,
+      "QuestionId": 92160,
+      "Explanation": "TRUNCATE TABLE removes all rows from a table, effectively resetting the table data, but it keeps the table structure intact.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does TRUNCATE differ from DELETE without a WHERE clause?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "TRUNCATE is faster and does not log individual row deletions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "TRUNCATE logs individual row deletions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They are effectively the same"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DELETE resets the table structure as well"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6910,
+      "QuestionTypeId": 0,
+      "QuestionId": 92161,
+      "Explanation": "TRUNCATE is generally faster than DELETE because it does not log individual row deletions.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What impact does TRUNCATE TABLE have on auto-increment counters?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It sets the counter to the current maximum value"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It resets the counter to zero"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It leaves the counter unchanged"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It doubles the current counter value"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6910,
+      "QuestionTypeId": 0,
+      "QuestionId": 92162,
+      "Explanation": "TRUNCATE TABLE will reset any AUTO_INCREMENT counters to zero for the table.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can we use the TRUNCATE TABLE statement on a table with foreign key constraints?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, without any conditions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, it will generate an error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only if foreign keys are temporarily disabled"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only with special privilege settings"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6910,
+      "QuestionTypeId": 0,
+      "QuestionId": 92164,
+      "Explanation": "TRUNCATE TABLE cannot be used on a table with foreign key constraints unless referred child tables are truncated or constraints are temporarily disabled.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is TRUE regarding the TRUNCATE TABLE statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It triggers ON DELETE triggers"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It is transaction-safe"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It logs each row deletion"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It resets the table faster than DELETE"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6910,
+      "QuestionTypeId": 0,
+      "QuestionId": 92165,
+      "Explanation": "TRUNCATE TABLE is faster than DELETE as it does not log individual row deletions or trigger ON DELETE triggers.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following cannot be truncated using the TRUNCATE TABLE statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A table with no primary key"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An empty table"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A table with foreign key constraints"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A table with an auto-increment column"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6910,
+      "QuestionTypeId": 0,
+      "QuestionId": 92166,
+      "Explanation": "TRUNCATE TABLE cannot be used on tables that have active foreign key constraints.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you truncate a table and then perform a rollback?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The table data will be restored"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The table structure will be removed"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The table will remain empty"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The operation will fail"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6910,
+      "QuestionTypeId": 0,
+      "QuestionId": 92167,
+      "Explanation": "TRUNCATE operations are not transaction-safe, so they cannot be rolled back. The table remains empty after truncation.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How is TRUNCATE TABLE executed in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "As individual row deletions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "As a series of batch deletions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By dropping and re-creating the table"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By locking the table and clearing its contents"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6910,
+      "QuestionTypeId": 0,
+      "QuestionId": 92169,
+      "Explanation": "TRUNCATE TABLE works by dropping the current table structure and re-creating it, which is much faster than individual row deletions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What MySQL privilege level is required to TRUNCATE a table?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "INSERT"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "DELETE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DROP or ALTER"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6910,
+      "QuestionTypeId": 0,
+      "QuestionId": 92171,
+      "Explanation": "TRUNCATE TABLE requires the user to have DROP or ALTER privileges, not just DELETE privileges.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can you use TRUNCATE TABLE on a table that participates in a view?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, without restriction"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only if the view is dropped first"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No, not if the view is currently used"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Yes, but it first drops the view"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6910,
+      "QuestionTypeId": 0,
+      "QuestionId": 92172,
+      "Explanation": "TRUNCATE TABLE cannot be used when there is an active view using that table because the view prevents any direct modifications.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What keyword must always follow the TRUNCATE command?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DATABASE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "COLUMN"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "TABLE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "INDEX"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6910,
+      "QuestionTypeId": 0,
+      "QuestionId": 92173,
+      "Explanation": "The TRUNCATE TABLE statement always requires the keyword TABLE to specify what is being truncated.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is one disadvantage of using TRUNCATE TABLE over DELETE?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It consumes more resources"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It cannot be rolled back"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It takes more time to execute"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is unsafe to use in any situation"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6910,
+      "QuestionTypeId": 0,
+      "QuestionId": 92174,
+      "Explanation": "TRUNCATE TABLE is not transaction-safe and cannot be rolled back, which is an important consideration compared to DELETE.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is FALSE regarding TRUNCATE TABLE?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is faster than DELETE for large datasets"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It usually requires less overhead than DELETE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It removes the indexes from the table"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It removes all rows from a table"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6910,
+      "QuestionTypeId": 0,
+      "QuestionId": 92175,
+      "Explanation": "TRUNCATE TABLE does not remove indexes from a table; it only removes the data.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "You are required to clear a table's data but leave its structure and indexes intact. What SQL statement should you use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DROP TABLE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DELETE FROM"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "TRUNCATE TABLE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ALTER TABLE"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6910,
+      "QuestionTypeId": 0,
+      "QuestionId": 92176,
+      "Explanation": "TRUNCATE TABLE removes all rows from the table, leaving the table structure and indexes intact.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a typical use case for the TRUNCATE TABLE statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Archiving all data to a different database"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Performing incremental backups"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Resetting test or log tables between runs"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Switching table schemas"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6910,
+      "QuestionTypeId": 0,
+      "QuestionId": 92177,
+      "Explanation": "TRUNCATE TABLE is commonly used to reset data in test or log tables between different runs of an application.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why might using TRUNCATE TABLE on a table with foreign key constraints result in an error?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Foreign keys make truncation slower"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Foreign key constraints can prevent loss of default values"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Foreign key constraints enforce referential integrity, preventing truncation"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The table needs re-indexing first"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6910,
+      "QuestionTypeId": 0,
+      "QuestionId": 92178,
+      "Explanation": "Foreign key constraints maintain referential integrity, which means all related records must be removed before truncating the table.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In MySQL, what will happen if you attempt to truncate a table referenced by a foreign key constraint in another table?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The truncate operation proceeds without issues"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "MySQL will automatically adjust foreign keys"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The operation will be rejected with an error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "MySQL will convert truncate to delete"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6910,
+      "QuestionTypeId": 0,
+      "QuestionId": 92179,
+      "Explanation": "Attempting to truncate a table with a foreign key constraint to another table will result in an error due to the violation of referential integrity.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the difference between truncate and delete ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Both commands are functionally same and can be replaced with each other."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Transaction can be rolled back after delete but not after truncate."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Roll back works for both truncate and delete."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Delete cannot be used to delete all rows where as truncate can be used to delete all rows."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6910,
+      "QuestionTypeId": 0,
+      "QuestionId": 65001,
+      "Explanation": "Delete is a DML command, hence can be rolled back, while truncate is a&nbsp; DDL command and can never be rolled back.&nbsp;&nbsp;",
+      "Answer": "B",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

@@ -1,0 +1,156 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Let the following circular queue can accommodate maximum six elements with the<br>following data<br>&nbsp;front = 1 rear = 4<br>&nbsp;queue = ___, ___, L, M, N, ___, ___<br>&nbsp;What will happen after ADD O operation takes place?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "front = 1 rear = 5<br>queue = ___, ___, L, M, N, O, ___"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "front = 2 rear = 5<br>queue = L, M, N, O, ___"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "front = 3 rear = 4<br>queue = ______; L, M, N, O, ___"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "front = 2 rear = 4<br>queue = L, M, N, O, ___"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1319,
+      "QuestionTypeId": 0,
+      "QuestionId": 64442,
+      "Explanation": "In Circular queue we add data from rear end so front will remain same as 1 and rear will increament by one and become 5.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In circular queue value of r(rear) can be incremented as :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "r = r+1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "r = (r+1)%[QUEUE_SIZE -1]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "r = (r+1)%QUEUE_SIZE"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "r ++"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1319,
+      "QuestionTypeId": 0,
+      "QuestionId": 64543,
+      "Explanation": "Circular Queue works by the process of circular increment i.e. when we try to increment any variable and we reach the end of queue, we start from the beginning of queue by modulo division with the queue size.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a priority queue, insertion and deletion takes place at ..................&nbsp;&nbsp;&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "front, rear end"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "only at rear end"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "only at front end"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "any position"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1319,
+      "QuestionTypeId": 0,
+      "QuestionId": 64529,
+      "Explanation": "in priority queue, insertion/deletion takes place according to priority of new element &amp; elements in queue, so it will be on any index/position.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following conditions are applicable to check whether circular queue if full?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "front == -1 and rear == size-1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "front == (rear+1) % queue_size"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "only a"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both a and b"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1319,
+      "QuestionTypeId": 0,
+      "QuestionId": 64549,
+      "Explanation": "In a normal Queue, we can insert elements until queue becomes full. But once queue becomes full, we can not insert the next element even if there is a space in front of queue but in circular queue we can utilize emplty spaces available at beginning. so we need check Check ((rear == SIZE-1 &amp;&amp; front == 0) || ( front == (rear+1) % queue_size )).",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Items in a priority queue are entered in a _______________&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "random"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "order of priority"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "as and when they come"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 3,
+      "UniqueNodeId": 1319,
+      "QuestionTypeId": 0,
+      "QuestionId": 64572,
+      "Explanation": "Priority Queue is an extension of queue with following properties.<br>Every item has a priority associated with it.<br>An element with high priority is dequeued before an element with low priority.<br>If two elements have the same priority, they are served according to their order in the queue.<br>",
+      "Answer": "B",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

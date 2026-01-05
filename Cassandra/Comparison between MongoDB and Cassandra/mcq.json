@@ -1,0 +1,156 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "Which of the following is a use case for Apache Cassandra?&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Online transaction processing (OLTP)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Data warehousing"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Time-series data storage and retrieval"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Graph data processing"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6882,
+      "QuestionTypeId": 0,
+      "QuestionId": 88396,
+      "Explanation": "Time-series data storage and retrieval. Apache Cassandra is often used for storing and retrieving time-series data, such as sensor data or log data, due to its ability to handle high write throughput and perform efficient range queries. It is not typically used for OLTP or graph data processing, and while it can be used for data warehousing, it is not optimized for that use case.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not a data type in Cassandra?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Text <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Integer <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Float <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Double <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6882,
+      "QuestionTypeId": 0,
+      "QuestionId": 88593,
+      "Explanation": "Cassandra supports a variety of data types, including Text, Integer, and Double.  However, it does not support the Float data type. <br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp; Cassandra uses ________ to improve read efficiency by filtering out irrelevant data files.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Partition Key Cache <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Bloom Filter <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Row Cache <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Hinted Handoff <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6882,
+      "QuestionTypeId": 0,
+      "QuestionId": 88587,
+      "Explanation": "In the read path, Cassandra merges data on disk (in SSTables) with data in RAM (in memtables). To avoid checking every SSTable data file for the partition being requested, Cassandra uses data structure known as a bloom filter.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Node in an Apache Cassandra cluster responsible for ______________&nbsp; <br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Storing data <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Coordinating reads and writes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Managing the schema <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6882,
+      "QuestionTypeId": 0,
+      "QuestionId": 86242,
+      "Explanation": "All of the above. Each node in an Apache Cassandra cluster is responsible for storing data, coordinating reads and writes, and managing the schema. <br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Cassandra, data is stored in units called __________.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Tables"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Column Families <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Rows <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Records <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6882,
+      "QuestionTypeId": 0,
+      "QuestionId": 88580,
+      "Explanation": "Data is stored in tables and the attributes of tables in Cassandra are called as column family.<br>",
+      "Answer": "B",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

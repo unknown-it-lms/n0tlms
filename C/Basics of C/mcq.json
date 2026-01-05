@@ -1,0 +1,3614 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "<div>Trace the output of following program.</div><div>&nbsp;&nbsp; void Zero( )</div><div>&nbsp;&nbsp;&nbsp; {</div><div style=\"margin-left: 40px;\">printf(\"%d \", sizeof(0));</div><div>&nbsp;&nbsp;&nbsp;&nbsp;}<br><br></div><div>&nbsp;&nbsp;&nbsp;&nbsp;void main( )</div><div>&nbsp;&nbsp;&nbsp;&nbsp;{</div><div style=\"margin-left: 40px;\">printf(\"%d \", sizeof('0'));</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Zero( );</div><div style=\"margin-left: 40px;\">printf(\"%d \", sizeof(\"0\"));</div><div>&nbsp;&nbsp;&nbsp;&nbsp; }</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2 0 4"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4 4 4"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2 4 4"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "4 4 2"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63288,
+      "Explanation": "In C &apos;0&apos; is consider as int hence it will print 4 4 2.<br> <br>Character Literals in C:<br>In C, a character literal like &apos;0&apos; is of type int, not char. This is due to the way character constants are promoted in C. The literal &apos;0&apos; represents the ASCII value of the character &apos;0&apos; (which is 48), but it is stored as an int by default. The reason for this behavior is historical and relates to how character constants were handled in early versions of C, ensuring compatibility and avoiding unexpected behavior with arithmetic operations.<br><br>sizeof(&apos;0&apos;) is Evaluated as sizeof(int):<br>Since &apos;0&apos; is treated as an int, sizeof(&apos;0&apos;) is effectively the same as sizeof(int). On most systems (especially 32-bit and 64-bit systems), the size of an int is 4 bytes, which is why the result of sizeof(&apos;0&apos;) is 4.<br><br>Comparison with char:<br>If you wanted the size of a char, you would use something like this:<br>char ch = &apos;0&apos;;<br>printf(\"%d\", sizeof(ch));&nbsp; // This would print 1, since `ch` is of type `char`. <br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>void &nbsp;main()</div><div>{</div><div style=\"margin-left: 40px;\">printf(9+\"Object Know-it \");</div><div style=\"margin-left: 40px;\">printf(\"Object Know-it \"+9);</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Object Know-it"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "9 Object Know-it Object Know-it"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ow-it ow-it"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Invalid operands to binary + operator"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63345,
+      "Explanation": "We know that string is an array of characters. In the above program, We are passing the string \" Object Know-it \" as argument to printf(), the string is printed from the 0th index till &apos;&apos; in encountered. When we passed 9+\" Object Know-it \" to the printf function. We passed the string from the index 0+9 i.e. Y. Hence Only \"ow-it\" was printed and same is the case with the 2nd printf statement. Let&apos;s make it more clear: s=\" Object Know-it \"; // s=[ &apos;O&apos;,b &apos;, j &apos;, e &apos;, c &apos;, t &apos;,&apos;&nbsp; &apos;, &apos;K &apos;, &apos;n &apos;, &apos;o &apos;,&apos; w &apos;, - &apos;, &apos;i &apos;, &apos;t &apos;, &apos;&apos;] s is pointing to \"O\" initially. 9+s or s+9 will point to &apos;O&apos; at position 9. the printf will start printing the array from inde 9 till it encounters the &apos;&apos; character. Hence \"ow-it\" is printed.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>int main()</div><div>{</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp; char p[] = \"%d\";<br></div><div style=\"margin-left: 40px;\">&nbsp;&nbsp; p[1] = 'c';</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp; printf(p, 65);</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp; return 0;</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "a"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "c"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "65"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63346,
+      "Explanation": "Here d is replace by c and we are printing 65 which is Ascii value of &apos;A&apos;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which character is used to precede escape character?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "%"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "\\\\<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "$"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63406,
+      "Explanation": "( backslash&nbsp; ) character is used to precede escape character .",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Size of character literal is_________.(In 32 bit machine)<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "4"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63412,
+      "Explanation": "In C, a character literal is treated as int type . in 16 bit machine it will return 2 bytes and in 32 bit machine it will return 4.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following will be compiled successfully?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "k++++a"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "a++++k"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "a+++k"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "k+++"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63414,
+      "Explanation": "a+++k is valid because it treat as a+(++k)<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main()<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;int num=10;</div><div style=\"margin-left: 40px;\">&nbsp; printf(\"%d%d%d\u201d,num++,num,++num);<br></div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10 11 12"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "12 11 10"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "11 12 12"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "10 11 11"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63416,
+      "Explanation": "The execution of Unary Operator (post-increment or pre-increments execute form Right to left).&nbsp; hence out put will be 11 12 12. But It is compiler dependant also so it may get different result on different compilers.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main()<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;int y = 5,x;<br>&nbsp;&nbsp;&nbsp; x = ++y * ++y;<br>&nbsp;&nbsp;printf(\"%d\",x);<br></div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "30"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "36"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "42"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "49"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63417,
+      "Explanation": "The execution of Unary Operator (Post-increment or Pre-increments execute form Right to left).hence y become 7 and out put is 7*7.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;int p2 = 5,x;<br>&nbsp;&nbsp;&nbsp;x=p2++ * p2++;<br>&nbsp;&nbsp;&nbsp;printf(\"%d\",x);</div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "25"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "30"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "36"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "49"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63418,
+      "Explanation": "p2 is post incremented hence first 5*5 and then p2 becomes 7.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<br>\n\t\t\tWhich of the following C expression is equivalent to the algebraic expression :<br>\n\t\t\t3x^2 +3(4x+6).",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&nbsp;3*x*x+3*(4x+6)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3*x*x+3(4x+6)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3*x*x+3(4*x+6)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "3*x*x+3*(4*x+6)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63420,
+      "Explanation": "3*x*x+3*(4*x+6)&nbsp; is valid algebraic expression.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>{<div style=\"margin-left: 40px;\">float a = 5, b = 2;<br>printf(\"%f\", a%b*2);</div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2.0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0.5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1.0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63421,
+      "Explanation": "% operator cannot be used with floating point numbers in C &amp; C++.<br>error: invalid operands to binary % (have \u2018float\u2019 and \u2018float\u2019)",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>{<div style=\"margin-left: 40px;\">int x=1, y=2, z=6;<br>x+ = x + y * z = 8;<br>printf(\" %d\", x);<br></div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "18"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "14"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63422,
+      "Explanation": "error: lvalue required as left operand of assignment x+=x+y*z=8;",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>{<div style=\"margin-left: 40px;\">int x=1, y=2, z=3;<br>printf(\"%d %d %d\", ++x, x+y, z);</div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1 3 3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2 3 3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2 4 3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1 4 3"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63423,
+      "Explanation": "In printf statement execution is always done from right to left .Hence z is 3&nbsp; then x+y is 1+2 is 3&nbsp; and ++x is 2. hence output is 2 3 3 .&nbsp; This answer may vary depending on compiler to compiler. <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>{<div style=\"margin-left: 40px;\">int x=2;<br>float f1=1.0, f2=2.0, sum;<br>sum=x*f1+f2/x+f1*f2;<br>printf(\"%f \", sum);<br></div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5.000000"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "6.000000"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1.500000"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63424,
+      "Explanation": "sum = (2*1.0)+(2.0/2)+1.0*2.0 which equals 5.0000",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>{<div style=\"margin-left: 40px;\">int v=-5, w=0, x=4;<br>printf(\"%d\", w || v || x&amp;&amp;w);<br></div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Garbage value is printed"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63425,
+      "Explanation": "A || B &amp;&amp; C&nbsp;&nbsp; &nbsp;means&nbsp;&nbsp; &nbsp;A || (B &amp;&amp; C). &amp;&amp; has higher priority than || hence result will be 1.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "To print out a and b given below in C, which of the following printf() statement will you use?<br><br>#include&lt;stdio.h&gt;<br><br>float a=3.14;<br>double b=3.14;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "printf(\"%f %lf\", a, b);<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "printf(\"%Lf %f\", a, b);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "printf(\"%Lf %Lf\", a, b);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "printf(\"%f %Lf\", a, b);"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63429,
+      "Explanation": "%f is format specifier for float and %lf is format specifier for double.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Assuming a integer 2-bytes, What will be the output of the program in C?<br><br>#include&lt;stdio.h&gt;<br>int main()<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp; printf(\"%x\", -1&lt;&lt;3);<br>&nbsp;&nbsp;&nbsp; return 0;<br></div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ffff"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "fffffff8"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "-1"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63430,
+      "Explanation": "&lt;&lt;left shift operator.<ol><li>Bit Pattern of the data can be&nbsp;<u><strong>shifted by specified number of Positions to Left</strong></u></li><li>When Data is Shifted Left , trailing zero\u2019s are&nbsp;<u><strong>filled with zero</strong></u>.</li></ol>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the difference between &lsquo;=&rsquo; and &lsquo;= =&rsquo; operators ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "= is a assignment operator, whereas = = is a logical operator,"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "= assigns value, whereas = = compares two values"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&ndash; should be used only for assigning integer values to identifiers, whereas = = can be used to assign char, float values to identifiers."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both operators mean same when used in condition."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63452,
+      "Explanation": "= assigns value, whereas = = compares two values (== is comparison operator)",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operators can be used to form a condition ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Relational"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Relational &amp; logical"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Logical &amp; arithmetic"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All operators in C"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63454,
+      "Explanation": "All operators ( Logical &amp; arithmetic, Relational )are used to form a condition",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>void main( )</div><div>{&nbsp;</div><div style=\"margin-left: 40px;\">printf(\"'');<br></div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "''"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Runtime Error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "blank"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error : can not print"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63399,
+      "Explanation": "\u201c\u201d is a valid string in C whose 1st element itself is a null character. Hence it will not display anything. However the program compiles and runs successfully.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What is the output of the following code if user enters 'This is a test'?</div><div>#include&lt;stdio.h&gt;</div><div>#include&lt;string.h&gt;</div><div>void main()</div><div>{</div><div style=\"margin-left: 40px;\">char str[8];</div><div style=\"margin-left: 40px;\">scanf(\"%s\",str);<br></div><div style=\"margin-left: 40px;\">printf(\"%s\",str);<br></div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "This is a test"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "This is a"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "This"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63562,
+      "Explanation": "When you are accepting the string using scanf statement it will terminate after space&nbsp; hence only &apos;This&apos; will be accepted as input .",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What will be output if you will compile and execute the following c code?</div><div>void main()<br>{</div><div style=\"margin-left: 40px;\">printf(\"%d\",sizeof(5.2));<br></div><div><br>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "8"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "10"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63573,
+      "Explanation": "here 5.2 is float value hence size is 8 . sizeof operator will return the size of float.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>void main( )</div><div>{<br>&nbsp;&nbsp;&nbsp;&nbsp; int &nbsp; i;</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(\"%d\",i^i);<br></div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Garbage"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63581,
+      "Explanation": "^ (bitwise XOR) Takes two numbers as operands and does XOR on every bit of two numbers. The result of XOR is 1 if the two bits are different. here two numbers are same hence hence their binary value is also same and hence&nbsp; their ^ value is 0.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div><br></div><div><div>void main( )</div><div>{</div><div style=\"margin-left: 40px;\">char ch='12';</div><div style=\"margin-left: 40px;\">printf(\"%d\", ch );<br></div><div>}</div><div><br></div></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "12"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "50"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63583,
+      "Explanation": "char can hold only single value hence in 12 it will hold only 2 and hence when we print ch it will print ascii value of 2 i.e 50.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>void main( )</div><div>{</div><div style=\"margin-left: 40px;\">int &nbsp;b=10;</div><div style=\"margin-left: 40px;\">printf(\"%d\",b=b==10);<br></div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63584,
+      "Explanation": "1st b==10 get evaluated and then answer will be assign to b (as = operator has least priority) hence output is 1.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>void main( )</div><div>{</div><div style=\"margin-left: 40px;\">int a=5,b=3,c=8,d=5;</div><div style=\"margin-left: 40px;\">d=a&lt;b&lt;c;</div><div style=\"margin-left: 40px;\">printf(\"%d\",d);<br></div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63585,
+      "Explanation": "Evaluation is done from left to right hence a&lt;b will return 0 then 0 is &lt;c return 1 hence output is 1.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>void main ()<br>{</div><div style=\"margin-left: 40px;\">&nbsp; char x1, y1, z1;<br>&nbsp; x1 = y1 = z1 = 'a';<br>&nbsp; z1 = ++x1;<br>&nbsp; y1 = z1++;<br>&nbsp; printf (\"%d %d %d\", x1, y1, z1);<br></div><div>}<br><br><br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "97 97 97"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "97 97 97"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "98 98 99"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "98 98 98"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63587,
+      "Explanation": "Ascii value of a is 97 which is assign to z1,y1,z1.&nbsp; z1= ++x1 means x1 is 98 and z1 become 98(after assigning x1 to z1 , here x1 is preincremented) . then&nbsp; y1=z1++;&nbsp; means y1 is 98 and then z1 become 99. hence output will be x1 is 98 , y1 is 98 and z1 is 99.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>void main( )</div><div>{</div><div style=\"margin-left: 40px;\">printf(\"%d\", printf(\"*sun*\") );<br></div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "*sun*5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "*sun*"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "5*sun*"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63589,
+      "Explanation": "The C library function int printf(const char *format, ...) sends formatted output to stdout.return type of printf is int hence here 1st it will print *sun* and then parent printf statement will print&nbsp;&nbsp; total character printed i.e. 5.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>{<div style=\"margin-left: 40px;\">char b='C ', c='B';<br>printf(\"%c\", c+b-36);<br></div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "133"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "a"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Garbage ASCII character"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63592,
+      "Explanation": "c+b means&nbsp; ascii value of &apos;B\" i.e. 66 + ascii value of &apos;C&apos;&nbsp; i.e. 67 = 133-36&nbsp; is 97 which is ascii value of &apos;a&apos; hence output is a.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>{<div style=\"margin-left: 40px;\">int p=1, q=2, r=3;<br>float p=1.0, q=2.0, r=3.0;<br>printf(\"%d %d %f\", p, q, r);<br></div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1 2 3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1.0 2.0 3.0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1 2 3.0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63593,
+      "Explanation": "As we are declaring variable of same name in same scope hence it will generate<br><span style=\"color:#ff5b4a\">conflicting types error. </span><br><br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>{<div style=\"margin-left: 40px;\">int a=5, b=2;<br>printf(\"%d %f %f\", a/b, (float)a/b,a/(float)b );<br></div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2 2.000000 2.500000"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2 2.5 2.5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2 2.500000 2.500000"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63594,
+      "Explanation": "here we are using %d %f and %f&nbsp; format specifier. hence output of a/b is 2 then we are using float(a)/b hence &apos;a&apos; get converted into float and then divided by 2 hence output is 2.500000 same for a/(float)b.<br>when int/int the result is int , when int/float or float /int the result is float .",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "We can not have variables of type_______.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "short int"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "signed char"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "long double"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63577,
+      "Explanation": "void means nothing hence we can not declare variable of type void.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A C Programs are converted into machine language with the help of",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Editor"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compiler"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Operating System"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None Of Above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63597,
+      "Explanation": "Compiler compiles the program and convert into machine language.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following program ?<br>int main()<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp;&nbsp;int x = 10, y = 20, result;<br>&nbsp; result = (x == 10 || y &gt; 20);<br>&nbsp; printf (\"%d\", result);<br>&nbsp; return 0;<br></div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "true"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "false"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "0"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63599,
+      "Explanation": "X==10 is true , hence the result of || is true i.e. 1 hence output will be 1. <br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "5. Which of the following are unary operators in C?<br><br>i. !<br><br>ii. sizeof<br><br>iii. ~<br><br>iv &amp;&amp;<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "i and ii"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "i, ii and iii"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "i, ii, iii, iv"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "i and iii"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63601,
+      "Explanation": "Unary operator means which required only one operand. &amp;&amp; reuired two operands hence it is not uanry operator.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The operator used to get value at address stored in a pointer variable is",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&amp;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "*"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&amp;&amp;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "||"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63608,
+      "Explanation": "The indirection operator is a unary operator represented by the symbol (*). It is an operator used to obtain the value of a variable to which a pointer points.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What would be the output of the following program ?<br><br>int a = 2;<br><br>void main ()<br>{<div style=\"margin-left: 40px;\">int a =3;<br>printf(\"%d\",a);<br></div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "garbage value"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63609,
+      "Explanation": "Local variable have higher priority than global if both are&nbsp; having same name.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The operator &amp;&amp; and || are:<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Logical operator"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Relation operator"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Equity operator"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of these"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63615,
+      "Explanation": "The operator &amp;&amp; and || are Logical operator.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Size of int is________.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "compiler dependent"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63619,
+      "Explanation": "size of int for 16 bit is 2 bytes<br>size of int for 64 bit and 32 bit is 4 bytes and it is compiler dependent<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main()<br>{<div style=\"margin-left: 40px;\"> char ch=65;<br><br>printf(\"%c%c\", ch, ch^32);<br></div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A a"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "a A"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "AA"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A garbage"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63620,
+      "Explanation": "ch XOR(^) 32 =97 ascii value of &apos;a&apos;<br><br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<div>{</div><div style=\"margin-left: 40px;\">int&nbsp; b=6;</div><div style=\"margin-left: 40px;\">printf(\"%d\",b=b= =5);<br></div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63626,
+      "Explanation": "Execution will take place from right to left. so b==5 is false which will be assigned to b. b becomes 0 hence output will be 0.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>{<div style=\"margin-left: 40px;\">int m=11,n=3,s=m%n;<br>printf(\"%d %d\", s, s%n&nbsp; );<br></div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "20"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "22"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "40"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63630,
+      "Explanation": "s=m%n=&gt;11%3=&gt;2 so s=2 will be printed<br><br>s%n=2%3=&gt;2 will be printed",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>{<div style=\"margin-left: 40px;\">int s1 = 1, s2=4;<br>printf(\"%d\", (s1&amp;s2)?5:10 );<br></div>}&nbsp;&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63644,
+      "Explanation": "binary of 1=0001<br>binary of 4=0100<br>performing &amp;operation results in 0000 which is equivalent of 0.<br>0 means false.so false block will be executed.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>{<div style=\"margin-left: 40px;\">int xx=3*(5 +1)/(2-2*10);<br>printf(\"%d\", xx);<br></div>}&nbsp;&nbsp;&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "-1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Divide by zero error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63645,
+      "Explanation": "3*(5 +1)/(2-2*10)<br>=3*(6)/(2-20)<br>=3*6/-18<br>=18/-18<br>=-1",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>{ <div style=\"margin-left: 40px;\">int u1;<br>float u2;<br>printf(\" % d\", sizeof(u2 + sizeof(u1)));<br></div>}&nbsp;&nbsp;&nbsp;<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "8"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63646,
+      "Explanation": "u2+sizeof(u1) will return an integer value and sizeof(int) is 4 bytes.<br><br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; char x, y, z;<br>&nbsp; x = y = z = 'a';<br>&nbsp; z = x++;<br>&nbsp; y = z++;<br>&nbsp; printf (\"%d %d %d\", x, y, z);<br></div>}<br><br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "97 97 97"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "97 97 98"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "98 97 98"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "98 98 98"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63647,
+      "Explanation": "Ascii value of a=97.<br>step 1 : z=x++(assign value and then increment) hence z=97 and then x become 98<br>step 2 : y=z++( assign value and then increment hence z assign value i.e. 97 and then increment so z become 98 and y is 97). <br><br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "int x = 10;<br>void main( )<br>{<div style=\"margin-left: 40px;\">printf(\"%d\",x);<br>{<br></div><div style=\"margin-left: 80px;\">int x =20;<br>{<br></div><div style=\"margin-left: 120px;\">int x =30;<br>printf(\"%d\",x);<br></div><div style=\"margin-left: 80px;\">}<br>printf(\"%d\",x);<br></div><div style=\"margin-left: 40px;\">}<br></div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10 20 30"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10 30 20"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "10 30 30"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63648,
+      "Explanation": "step 1:first print statement will print the global variables value i.e 10.<br>step 2:second print statement will print the value which is local to that block i.e 30<br>step 3:third print statement will print the value 20<br><br>scope of x (variable ) is alway within {} and printf will print value of nearest variable hence output is 10 30 and 20.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which is keyword of C ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Case&nbsp;&nbsp;&nbsp;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Default"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "If&nbsp;&nbsp;&nbsp;&nbsp;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of these"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63651,
+      "Explanation": "keywords are predefined words.<br>\n\t\t\tcase, default and if all are keywords.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator works like if else ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": ": :"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "? :"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "-&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&gt;&gt;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63636,
+      "Explanation": "? : (Ternary operator) is a conditional operator which works like if else statement&nbsp;<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; char a = 'A';<br>&nbsp; if (a == 'a' || a == 'B' || 'b')<br>&nbsp;&nbsp;&nbsp; a += '&nbsp; ';<br>&nbsp; else<br>&nbsp;&nbsp;&nbsp; a = 'C' + '&nbsp; ';<br>&nbsp; printf (\"%c\", a);<br></div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "a"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "c"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63655,
+      "Explanation": "(a==&apos;a&apos;|| a= = &apos;B&apos; || &apos;b&apos;)<br>=(true || false||true)<br>=true<br> so true block will be executed <br>here a+=&apos; &apos; means a= 65 + 32 i.e. 97 which is ASCII value of &apos;a&apos;. (ASCII value of space is 32 and A is 65) <br><br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>{<div style=\"margin-left: 40px;\">int d=3.142;<br>printf(\"%d\", \u2018d\u2019 );<br></div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "100"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "142000"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "d"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63659,
+      "Explanation": "d=3.142 but in print statemen character &apos;d&apos; is given as argument so ascii value of &apos;d&apos; will be printed which is 100&nbsp;",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* printf(\"*/Sunil /*Kumar\");&nbsp;&nbsp; */<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Sunil"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "*/Sunil /*Kumar"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "no output"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63661,
+      "Explanation": "/* printf(\u201c*/------here first comment is completed<br>Sunil--------------this will be treated as unidentified identifier<br>/*Kumar\u201d);&nbsp;&nbsp; */------here second comment is completed.<br><br>this will generate following error<br><span style=\"color:#ff5b4a\">error: \u2018Sunil\u2019 undeclared (first use in this function)</span> /* printf(\u201c*/Sunil /*Kumar\u201d); */<br>as the comments are closed before sunil and again start after sunil hence sunil will be just a statement in main.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements are true regarding arithmetic operators?<br><br>i)&nbsp;&nbsp; An arithmetic operation between an integer and an integer yields an integer<br><br>ii)&nbsp;&nbsp; An arithmetic operation between two floats yields an integer<br><br>iii)&nbsp;&nbsp; An arithmetic operation between an integer and a float yields an integer<br><br>iv)&nbsp;&nbsp; An arithmetic operation between an integer and a float yields a float<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "i and iii"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ii and iv"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ii and iii"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "i and iv"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63677,
+      "Explanation": "arithmetic operation between two floats will always yield a float and&nbsp;arithmetic operation between integer and float will yield a float",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which of the following are format specifies?<br><br>i) %f&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ii) %c&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iii) %q&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iv) %z&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; v) %u&nbsp;&nbsp;&nbsp;<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "i, ii, iv &amp; v"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ii, iii, iv &amp; v<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "i, ii &amp; v"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "i, ii, iii &amp; iv"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63678,
+      "Explanation": "%f=float<br>%c=character<br>%u=unsigned",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which files contain prototype of standard (library) function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": ".c"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": ".obj"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": ".h"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": ".cpp"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63685,
+      "Explanation": ".h in which h stands for header.Header file contains the definations of all library(built-in) function.<br><br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What getch( ) does?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "gets char from file"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "gets char from user &amp; shows it on screen"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "gets char from user &amp; does not show on screen"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "shows output to user"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63686,
+      "Explanation": "getch() function reads a single character from the keyboard but does not show on the screen. For this functionality, we use the getch() function to hold the output window until hitting any key from the keyboard.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Data stored in Computer\u2019s memory is in_______.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "decimal"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "character"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "hexadecimal"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "binary"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63687,
+      "Explanation": "Data is always stored in binary format.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>{<div style=\"margin-left: 40px;\">char ch=-3;<br><br>printf(\"%d %d %d\", -ch, -ch+1, !ch );<br></div>}&nbsp;&nbsp;&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "3 -3 1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3 4 0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3 132 0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "-3 132 1"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63672,
+      "Explanation": "step 1:-ch=-(-3)=3<br>step 2: -ch+1=-(-3)+1=4<br>step 3:!ch=0",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which condition is correct to check whether ch is a capital letter ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ch&gt;='A' || ch&gt;='Z'"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ch&lt;='A' &amp;&amp; ch&lt;='Z'"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ch&gt;='A' || ch&lt;='Z'"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ch&gt;='A' &amp;&amp; ch&lt;='Z'"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63692,
+      "Explanation": "ch&gt;=&apos;A&apos; &amp;&amp; ch&lt;=&apos;Z&apos; .<br>&amp;&amp; operator is used to check the character in between A to Z",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "By default local variable contains________.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "+ ve data"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "\u2013ve data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "garbage"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63697,
+      "Explanation": "All local variables by default are having garbage value as a default value.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A header file is a file that&nbsp;&nbsp;&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Contains standard library functions.&nbsp;&nbsp;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Contains standard functions declarations &amp; macros."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Contains user &ndash; defined macros&nbsp;&nbsp;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Is present in current working directory."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63699,
+      "Explanation": "A header file is a file with extension .h which contains C function declarations and macro definitions to be shared between several source files.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is allowed?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "k++++"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "++++k"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "+++k"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "k+++"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63703,
+      "Explanation": "In +++k first + is unary + and ++ is preincrement operator.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main()<br>&nbsp;&nbsp;&nbsp; {<div style=\"margin-left: 40px;\">&nbsp; int x=7;<br>&nbsp; x++;<br>&nbsp; printf(\"%o\",x++);<br></div>&nbsp;&nbsp; }&nbsp;&nbsp;&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "9"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "8"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "%0"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63704,
+      "Explanation": "After incrementing x value of x is 8 but in print statement the format specifier used is %o which stands for octal.octal equivalent of 8 is 10.so output is equal to 10",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What are two predefined streams in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "stdout and stderr"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "console and error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "stdout and stdio"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "stdio and stderr"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63773,
+      "Explanation": "stdin, stdout and stderr are predefined streams in C",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The maximum combined length of the command-line arguments including the spaces between adjacent arguments is&nbsp;&nbsp;&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "128 characters"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "256 characters"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "67 characters"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It may vary from one operating system to another"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 63808,
+      "Explanation": "Because command prompt depend on the Operating System (OS) and when OS change then the value of the command line argument changes.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which files are automatically associated with C program?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "standard input"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "standard output"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "standard input, standard output and standard error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Options 1 &amp; 2 only."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 64014,
+      "Explanation": "Only standard input and output are available.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is NULL?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is a function defined in file \u201cerror.h\u201d"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It is a character"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is a macro defined in file \u201cstdio.h\u201d"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is end of file"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 64019,
+      "Explanation": "NULL is a macro which is defined in C header files.<br>&nbsp;The value of NULL macro is 0. <br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main( )<br>{<div style=\"margin-left: 40px;\">printf(\"%d\", 010);<br></div>}&nbsp;&nbsp;<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "8"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "010"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "0"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 64037,
+      "Explanation": "010 is octal value , when we do %d (decimal integer) , the octal value get changed into decimal value.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "11 ^ 5<br>What does the operation shown above produce?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "8"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "14"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 64069,
+      "Explanation": "11^5 means 11 XOR 5.<br>convert 11 and 5 to binary.<br>11=1011<br>5=0101<br>11^5=1110 that is 14.<br>Therefore 11^5=14",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you include a system header file called sysheader.h in a C source file?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "#include &lt;sysheader.h&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "#incl 'sysheader.h'"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "#includefile &lt;sysheader&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "#include sysheader.h"
+        },
+        {
+          "OptionId": "E",
+          "OptionText": "#incl &lt;sysheader.h&gt;"
+        },
+        {
+          "OptionId": "F",
+          "OptionText": "None Of these"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 64072,
+      "Explanation": "#include &lt;file&gt;<br>This variant is used for system header files. It searches for a file named file in a standard list of system directories.<br>#include &apos;file&apos;<br>This variant is used for header files of your own program. It searches for a file named file first in the directory containing the current file",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which one of the following is NOT a valid C identifier?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "___S"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1___"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "___1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "___"
+        },
+        {
+          "OptionId": "E",
+          "OptionText": "S___"
+        },
+        {
+          "OptionId": "F",
+          "OptionText": "None of these"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 64074,
+      "Explanation": "Examples of Valid identifiers:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; total, &nbsp;&nbsp; sum , &nbsp;&nbsp; average&nbsp;&nbsp;&nbsp; , &nbsp;&nbsp;&nbsp;&nbsp; _x&nbsp; , &nbsp;&nbsp;&nbsp;&nbsp; y_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ,&nbsp; mark_1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; , &nbsp;&nbsp; x1.<br><br> Examples&nbsp; of Invalid identifiers&nbsp;&nbsp; &nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; begins with a digit<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; char&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; reserved word<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x+y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; special character<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "short int x; /* assume x is 16 bits in size */<br><br>What is the maximum number that can be printed using printf(\"%d \", x), assuming that x is initialized as shown above?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "127"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "128"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "255"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "32,767"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 64075,
+      "Explanation": "In this case short int x and x in 16 bits in size hence maximum number printed using x is 2 raised to 15 i.e 32,767.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Format flags may be combined using<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "the bitwise OR operator (|)<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "the logical OR operator (||)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "the bitwise AND operator (&amp;)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "the logical AND operator (&amp;&amp;)"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 64143,
+      "Explanation": "Format flags may be combined using&nbsp;  the bitwise OR operator (|) .<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "int main()<br>{<br>&nbsp;&nbsp; &nbsp;int a;<br>&nbsp;&nbsp; &nbsp;printf(\" %d \", a^a);<br>&nbsp;&nbsp; &nbsp;return 0;<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Garbage value"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "compile time error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 70793,
+      "Explanation": "^ value of same number is 0. Hence even here a is not initialised it will take garbage value and ^ of same value is 0.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main()<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp; &nbsp;int a = 0, b = 0;<br>&nbsp;&nbsp; &nbsp;a = (b = 75) +9;<br>&nbsp;&nbsp;&nbsp; printf(\" %d, %d\", a, b);<br></div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "75, 9<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "75, 84"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "84, 75"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 70795,
+      "Explanation": "Here as (b= 75 )is written in ( ) ,so it has highest priority hence b= 75 and a=b+9 i.e 84 hence output is C<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main()<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp; &nbsp;int a = 10;<br>&nbsp;&nbsp;&nbsp; printf(\"%d&nbsp; %d&nbsp; %d \",++a,a++,a++);<br>&nbsp; &nbsp; printf(\"%d&nbsp; \", a);<br></div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "13 11 10 13"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "11 12 13 14"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "12 11 11 11"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "13 11 10 14"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 70814,
+      "Explanation": "flow of printf() is right to left hence output is 13 11 10 13. but still it is compiler dependant hence out put may vary on different compilers.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main()<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp; &nbsp;int i= -1,j=-1, k = 0, l = 2, m;<br><br>&nbsp;&nbsp; &nbsp;m = i++&amp;&amp;j++&amp;&amp;k++||l++;<br><br>&nbsp;&nbsp; &nbsp;printf( \"%d %d %d %d %d\",i,j,k,l,m);<br></div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0 0 1 3 0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0 0 0 0 1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "garbage value"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "0 0 1 3 1"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 70833,
+      "Explanation": "All values are post incremented . m stores the result of  i++&amp;&amp;j++&amp;&amp;k++||l++ . &amp;&amp; have more priority than || condition hence || executes at the end and hence result is true.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void main()<br>{<br>&nbsp;&nbsp; &nbsp;unsigned int a = 0xffff;<br>&nbsp;&nbsp; &nbsp;printf(\"%x \", a);<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ffff"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0000"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "00ff"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ddfd"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 70845,
+      "Explanation": "%x, %X&nbsp; format specifier is used for Unsigned Hexadecimal&nbsp; integer .0xFFFF is the number FFFF in hexadecimal number system (i.e base 16 number system ).<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following code block will genertae compilation error",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "{<br> unsigned char variable1 = 0x00;<br> if (0xFF == variable1)<br> {<br> }<br>}<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{<br> unsigned char variable1 = 0x00;<br> if (variable1=0xFF) {}<br>}<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both a and b"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Neither a nor b"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 70848,
+      "Explanation": "0X00 is a hexadecimal (hex) number. Both the codes are valid codes hence nither a nor b generate any compilation error.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a keyword in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "typedef"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "struct"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "main"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "union"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102572,
+      "Explanation": "The &#39;main&#39; is not a keyword; it is a predefined identifier used by the operating system to identify the starting point of execution in a C program.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to define an alternative name for a data type?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "typedef"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "alias"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "define"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "rename"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102573,
+      "Explanation": "The &#39;typedef&#39; keyword in C is used to create an alias name for another data type.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of the &#39;volatile&#39; keyword in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To optimize variable access"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To protect a variable from being changed"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To prevent the compiler from optimizing the variable"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To denote a dynamic variable size"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102574,
+      "Explanation": "The &#39;volatile&#39; keyword tells the compiler not to optimize a variable as it may change unexpectedly (e.g., in a multi-threaded environment).",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used for backward-compatible function declaration?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "extern"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "inline"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "auto"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102575,
+      "Explanation": "The &#39;extern&#39; keyword is used to declare a global variable or function in another file to allow sharing across different files and maintain compatibility.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C programming, which keyword is used to declare a memory location that stores multiple variables of the same type?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "list"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "array"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "struct"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "union"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102576,
+      "Explanation": "The keyword &#39;array&#39; is used to declare a collection of elements of the same type positioned in contiguous memory locations.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following keywords indicates a division of code into reusable components?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "section"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "module"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "function"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "block"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102577,
+      "Explanation": "In C, &#39;function&#39; is used to define reusable pieces of code that can be invoked with different arguments.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the &#39;register&#39; keyword suggest to the compiler about the variable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Store it in memory for fast access"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Store it in CPU registers for fast access"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Store it in stack memory"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Store it in ROM"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102578,
+      "Explanation": "The &#39;register&#39; keyword suggests that the compiler store the variable in a processor register for faster access, though the compiler may ignore this advice.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the correct size of a &#39;float&#39; data type in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2 bytes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4 bytes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "8 bytes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "16 bytes"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102579,
+      "Explanation": "The &#39;float&#39; data type in C typically requires 4 bytes of memory to store a floating-point number.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What range of values can a &#39;char&#39; data type store in C using the ASCII character set?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "-128 to 127"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0 to 127"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0 to 255"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "-256 to 255"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102580,
+      "Explanation": "The C standard defines the &#39;char&#39; data type as storing values from -128 to 127 when it is signed by default.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which data type is considered as unsigned by default in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "char"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "float"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "double"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102581,
+      "Explanation": "In C, the &#39;char&#39; data type can be either signed or unsigned by default, but it varies based on the compiler. Generally, it is considered unsigned.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the format specifier to print a &#39;short int&#39; in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "%d"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "%hd"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "%ld"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "%u"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102582,
+      "Explanation": "To print a &#39;short int&#39; in C, the format specifier &#39;%hd&#39; should be used.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which is the correct keyword to define an integer constant variable in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "const int"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "constant int"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int const"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int constant"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102583,
+      "Explanation": "The correct syntax to define an integer constant is to use &#39;const int&#39;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What&#39;s the default size of &#39;int&#39; data type in C on a 64-bit architecture?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "16 bits"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "32 bits"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "64 bits"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "128 bits"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102584,
+      "Explanation": "The size of the &#39;int&#39; data type on most 64-bit architectures is 32 bits.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not a derived data type in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Array"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Pointer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Structure"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Enum"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102585,
+      "Explanation": "Enumerations (enums) are basic data types used to define variables that can only take one out of a small set of possible values, whereas arrays, pointers, and structures are derived data types.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of sizeof(double) on most architectures?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "8"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "16"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102586,
+      "Explanation": "On most architectures, a &#39;double&#39; occupies 8 bytes (64 bits) of memory.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true about &#39;long double&#39; in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It is larger than &#39;double&#39;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It is the same size as &#39;double&#39;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is smaller than &#39;double&#39;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It&#39;s not a valid data type"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102587,
+      "Explanation": "The &#39;long double&#39; type in C is typically larger than a &#39;double&#39;, providing more precision.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following data types can store the largest integer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "short int"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "long int"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "long long int"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102588,
+      "Explanation": "Among these types, &#39;long long int&#39; can store the largest integer values, typically requiring 64 bits.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the value range of an unsigned &#39;int&#39; data type?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0 to 65535"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0 to 255"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0 to 4294967295"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "0 to 32767"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102589,
+      "Explanation": "An unsigned &#39;int&#39; can represent values from 0 to 4,294,967,295, utilizing all bits to store positive numbers.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which suffix is used to specify a &#39;long&#39; literal in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "L"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "l"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both L and l"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No suffix needed"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102590,
+      "Explanation": "In C, both &#39;L&#39; and &#39;l&#39; can be used as suffixes to specify a literal as &#39;long&#39;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C programming, which of the following is a correct way to declare an integer variable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int variableName;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "integer variableName;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int: variableName"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "variable int variableName;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102591,
+      "Explanation": "In C, an integer variable is declared using the &#39;int&#39; keyword followed by the variable name and a semicolon.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the size in bytes of the &#39;float&#39; data type in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2 bytes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4 bytes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "8 bytes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "16 bytes"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102592,
+      "Explanation": "In C, the &#39;float&#39; data type typically requires 4 bytes of memory.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following declares and initializes a char variable correctly?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "char letter = &#39;A&#39;;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "char letter = &quot;A&quot;;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "char letter = A;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "char letter = &#39;65&#39;;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102593,
+      "Explanation": "In C, a char variable is initialized with a character value enclosed in single quotes. Therefore, &#39;A&#39; is correct.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to define a variable whose value cannot be modified?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "final"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "const"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "volatile"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102594,
+      "Explanation": "The &#39;const&#39; keyword is used in C to define a variable that cannot be changed after its initialization.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following code snippet? int a = 10; printf(&quot;%d&quot;, a);",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "%d"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "a"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102595,
+      "Explanation": "The printf function with &#39;%d&#39; format specifier prints the integer value of &#39;a&#39;, which is 10.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a correct variable name in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1stVariable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "_variable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "variable-Name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "variable Name"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102596,
+      "Explanation": "In C, a variable name can begin with an underscore or a letter, but not with a digit or contain spaces and hyphens.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you declare multiple variables of the same data type in a single statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int a, b, c;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int a; int b; int c;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int a, b; c;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int (a, b, c);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102597,
+      "Explanation": "Multiple variables can be declared in a single statement by separating the variable names with commas, as in &#39;int a, b, c;&#39;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a valid identifier in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2ndVariable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "_secondVariable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "second Variable"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "second-Variable"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102598,
+      "Explanation": "Identifiers in C must begin with a letter or an underscore (_). Option B: &#39;_secondVariable&#39; is a valid identifier as it starts with an underscore. Options A and C are invalid because they start with a number or contain spaces, respectively. Option D is invalid due to the hyphen.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the maximum length of an identifier in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "31 characters"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "63 characters"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "79 characters"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No explicit limit"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102599,
+      "Explanation": "In C, the maximum length of an identifier is typically 63 characters in modern compilers, though implementations may vary. For older C standards, identifiers were restricted to 31 characters for uniqueness.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following identifiers will cause a compilation error in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "floatVar1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "__main__"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "calc_Value"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102600,
+      "Explanation": "In C, &#39;int&#39; is a keyword and cannot be used as an identifier. Identifiers must differ from any reserved words in C. Options A, C, and D are allowable identifiers.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is not a valid rule for forming identifiers in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Identifiers must begin with a letter or underscore."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Identifiers can contain numerals, letters, and underscores."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Identifiers can start with a numeral."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Identifiers are case-sensitive."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102601,
+      "Explanation": "C requires that identifiers must begin with a letter or underscore. They cannot start with a numeral. Therefore, option C is not a valid rule.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Why should you avoid using double underscores at the beginning of an identifier in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Because they are reserved for template functions."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Because they are reserved for standard library and compiler implementations."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Because they denote class members."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Because they are considered bad practice due to potential datatype conflicts."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102602,
+      "Explanation": "In C, identifiers starting with two underscores are reserved for use by the compiler and standard library, which is why programmers should avoid them to prevent conflicts and undefined behaviors.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following operators is used to allocate memory dynamically in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "malloc"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "memalloc"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "new"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "alloc"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102603,
+      "Explanation": "In C programming, &#39;malloc&#39; is used to allocate memory dynamically. It stands for &#39;memory allocation&#39;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of the expression: 10 % 3 in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "3"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102604,
+      "Explanation": "The &#39;%&#39; operator in C is the modulus operator, which returns the remainder of division. 10 divided by 3 is 3 with a remainder of 1.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not a valid bitwise operator in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&amp;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "|"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "^"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&amp;&amp;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102605,
+      "Explanation": "The &#39;&amp;&amp;&#39; operator is a logical AND operator, not a bitwise operator. Bitwise operators include &amp;, |, ^, ~, &lt;&lt;, and &gt;&gt;.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator is used for assignment in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "=="
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "="
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "=&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "::"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102606,
+      "Explanation": "The &#39;=&#39; symbol is used as the assignment operator in C to assign the value on the right to the variable on the left.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following expression: 5 + 3 * 2?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "16"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "11"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "13"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "10"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102607,
+      "Explanation": "In C, the multiplication operator has higher precedence than addition. Therefore, 3 * 2 is evaluated first, which equals 6, and then 5 is added, resulting in 11.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator would you use to access the value at the address stored in a pointer variable?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "*"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&amp;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "-&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102608,
+      "Explanation": "The &#39;*&#39; operator is used to dereference a pointer, meaning it accesses the value at the memory address stored in the pointer.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of the expression: 6 &lt;&lt; 1 in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "12"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "11"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 102609,
+      "Explanation": "The &#39;&lt;&lt;&#39; operator is a bitwise left shift operation. Shifting 6 by one position to the left is equivalent to multiplying it by 2, resulting in 12.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Evaluate the following code&nbsp;&nbsp;&nbsp; <br>(5 &gt; 6 || 4 &gt; 3) &amp;&amp; (7 &gt; 8)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "true<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 84087,
+      "Explanation": "(5 &gt; 6 || 4 &gt; 3) &amp;&amp; (7 &gt; 8) =&gt;<br>(false || true) &amp;&amp; false =&gt;<br>true &amp;&amp; false =&gt;<br>false<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Evaluate !(1 &amp;&amp; !(0 || 1)).<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "True<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "False<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Unevaluatable<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 2,
+      "QuestionTypeId": 0,
+      "QuestionId": 84088,
+      "Explanation": "!(1 &amp;&amp; !(0 || 1)) =<br>!(1 &amp;&amp; !(TRUE)) =<br>!(1 &amp;&amp; FALSE) =<br>!(FALSE) =<br>TRUE",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [
+    {
+      "m_Item1": 63288,
+      "m_Item2": "C"
+    }
+  ],
+  "m_Item3": [
+    {
+      "m_Item1": 63345,
+      "m_Item2": 0
+    },
+    {
+      "m_Item1": 63346,
+      "m_Item2": 1
+    },
+    {
+      "m_Item1": 63414,
+      "m_Item2": 1
+    },
+    {
+      "m_Item1": 63416,
+      "m_Item2": 1
+    }
+  ]
+}

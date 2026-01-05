@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Notes - C_2-D Array</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  body{font-family:system-ui,Segoe UI,Roboto,Arial;max-width:900px;margin:24px auto;padding:18px;line-height:1.6;color:#111}
+  h1{font-size:1.4rem;margin-bottom:0.6rem}
+  .topic{font-weight:700;margin-top:1rem}
+  .subtopic{font-weight:600;margin-top:0.8rem}
+  .content{margin:0.6rem 0 1.2rem 0}
+  pre{white-space:pre-wrap;background:#f7f7f7;padding:10px;border-radius:6px;overflow:auto}
+  img{max-width:100%;height:auto}
+  table{border-collapse:collapse;width:100%}
+  table, th, td{border:1px solid #ccc;padding:6px}
+</style>
+</head>
+<body>
+<h1>Notes: C- 2-D Array</h1>
+
+<div class="courseware topic">2-D arrays<hr></div><div class="courseware content"><p>Two-dimensional arrays in C programming are a fundamental concept, allowing the storage and management of data in a tabular form. They extend the idea of a single-dimensional array into multiple dimensions, providing a more structured way to handle data.</p><p>A 2-D array is essentially an array of arrays, where each element is itself an array. This enables organizing data in rows and columns, much like a matrix in mathematics.</p><p>This structure is particularly useful when dealing with grid-like data, such as matrices, tables, or even game boards. It allows easy access to elements using two indices, facilitating operations across rows and columns.</p><p>Understanding the concept of 2-D arrays is crucial for tasks like matrix calculations, image processing, and any situation where data needs to be represented in a more complex, multi-dimensional form.</p></div>
+<div class="courseware subtopic">Need of 2-D arrays<hr></div><div class="courseware content"><p>In C programming, 2-D arrays are essential for storing and managing tabular data, which is data organized in rows and columns. This data structure extends the basic array, which is one-dimensional, thus facilitating more complex data manipulations.</p> <p>One common example where 2-D arrays are beneficial is in the storage of matrices in mathematical computations. Operations like matrix multiplication and addition are commonly performed using 2-D arrays.</p> <p>2-D arrays also play a crucial role in computer graphics, such as representing pixel colors in a digital image. Each element in the 2-D array can store the value of a pixel, and the entire array simulates the image grid.</p> <p>Additionally, 2-D arrays are used in game development for creating grid-based games, such as chess or tic-tac-toe, where each board position can be represented as an array element. They provide a simple way to manage game states and logic.</p></div>
+<div class="courseware subtopic">Using 2-D arrays<hr></div><div class="courseware content"><p>Two-dimensional arrays in C are essentially arrays of arrays. They allow the storage and manipulation of data in a tabular form. This capability is useful in various applications like creating matrices and grids.</p><p>Declaration of a 2-D array requires specifying two dimensions. The general syntax is: <pre><code>int array_name[rows][columns];</code></pre> This creates a 2-D array with the specified number of rows and columns.</p><p>Initialization can be done at the time of declaration or later. Here's an example with initialization: <table style="border-collapse: collapse;"><thead><tr><th style="width: 50%;">Code</th><th style="width: 50%;">Explanation</th></tr></thead><tbody><tr><td><pre><code>int matrix[2][3] = {  
+  {1, 2, 3},  
+  {4, 5, 6}  
+};</code></pre></td><td>This initializes a 2x3 matrix with specific values. The first pair of braces defines the first row, and the second pair defines the second row.</td></tr></tbody></table></p><p>Traversal of a 2-D array typically involves nested loops, where the outer loop iterates through rows and the inner loop through columns. An example of traversal is shown in the next table: <table style="border-collapse: collapse;"><thead><tr><th style="width: 50%;">Code</th><th style="width: 50%;">Explanation</th></tr></thead><tbody><tr><td><pre><code>for(int i = 0; i < 2; i++) {  
+  for(int j = 0; j < 3; j++) {  
+    printf("%d ", matrix[i][j]);  // Prints element at row i and column j 
+  }  
+}</code></pre></td><td>The outer loop runs for each row, and the inner loop accesses each element in the row, printing them sequentially.</td></tr></tbody></table></p><p>In summary, the ability to declare, initialize, and traverse a 2-D array efficiently empowers C programmers to manage and operate on data structured in a grid or matrix easily.</p></div>
+<div class="courseware subtopic">Memory representation of 2-D array<hr></div><div class="courseware content"><p>In C programming, a 2-D array is essentially a collection of elements arranged in rows and columns, which are stored in a contiguous memory block. This means all elements are stored in a sequence without any gaps, facilitating efficient data access and manipulation.</p>
+
+<p>C offers two principal ways to represent 2-D arrays in memory: row-major order and column-major order. In row-major order, all elements of a given row are stored sequentially in adjoining memory locations. For instance, if you have a 2-D array example[3][3], elements example[0][0], example[0][1], and example[0][2] are stored consecutively in memory, followed by the elements of the next row.</p>
+
+<p>On the other hand, column-major order, which is used by some programming languages, arranges elements of a column sequentially in memory. Although C typically uses row-major order, understanding column-major order helps when dealing with systems or applications that employ this method.</p>
+
+<p>Indexing in 2-D arrays allows access to specific elements via their row and column numbers. To calculate an element's memory address in row-major order, use the formula: Address = BaseAddress + ((i * Number_of_Columns) + j) * Size_of_Element, where i and j are the row and column indices, respectively.</p>
+
+<p>Understanding these concepts of memory representation is crucial for efficiently managing data in 2-D arrays and optimizing operations. This knowledge aids in performance improvements, especially when the size of data becomes substantial.</p></div>
+<div class="courseware subtopic">Passing 2-D array to function<hr></div><div class="courseware content"><p>When passing a 2-D array to a function in C programming, it's important to understand how the function expects the array to be structured and accessed. A common method is to use a fixed column size, which allows the function to process each element accurately.</p><p>For example, when using a fixed column size, you would define the function as <code>void printArray(int a[][3], int rows);</code>. Here, the column size is explicitly specified as '3', allowing the function to access all elements row by row.</p><table style="border-collapse: collapse;"><tr><th style="width: 50%;">Code</th><th style="width: 50%;">Explanation</th></tr><tr><td><code>void printArray(int a[][3], int rows) {<br/>&emsp;for (int i = 0; i < rows; i++) {<br/>&emsp;&emsp;for (int j = 0; j < 3; j++) {<br/>&emsp;&emsp;&emsp;printf("%d ", a[i][j]); // Looping over each column in fixed size<br/>&emsp;&emsp;}<br/>&emsp;&emsp;printf("\n");<br/>&emsp;}<br/>}</code></td><td>This code demonstrates how to loop over each element of a 2-D array passed to a function with a fixed column size of 3.</td></tr><p>Alternatively, you can define the function with an explicit column size in the parameters like <code>void printArray(int a[2][3]);</code>. This approach ensures the function operates with an understanding of both dimensions of the array.</p><table style="border-collapse: collapse;"><tr><td><code>void printArray(int a[2][3]) {<br/>&emsp;for (int i = 0; i < 2; i++) {<br/>&emsp;&emsp;for (int j = 0; j < 3; j++) {<br/>&emsp;&emsp;&emsp;printf("%d ", a[i][j]); // Access each element using fixed dimensions<br/>&emsp;&emsp;}<br/>&emsp;&emsp;printf("\n");<br/>&emsp;}<br/>}</code></td><td>The function now explicitly knows it deals with a 2x3 array, improving clarity and reducing potential errors in function implementation.</td></tr></table><p>An alternative approach uses pointer-to-array syntax, by defining the function as <code>void printArray(int rows, int cols, int** a);</code>. This method offers greater flexibility as dimension sizes are defined at runtime.</p><table style="border-collapse: collapse;"><tr><td><code>void printArray(int rows, int cols, int** a) {<br/>&emsp;for (int i = 0; i < rows; i++) {<br/>&emsp;&emsp;for (int j = 0; j < cols; j++) {<br/>&emsp;&emsp;&emsp;printf("%d ", a[i][j]); // Dynamic memory accessed, potentially more complex<br/>&emsp;&emsp;}<br/>&emsp;&emsp;printf("\n");<br/>&emsp;}<br/>}</code></td><td>This code allows for dynamic allocation of 2-D arrays, providing flexibility beyond static array sizes at the cost of complexity.</td></tr></table><p>Regardless of the method used, arrays in C are passed by reference, meaning the function receives the address of the array. This allows modifications within the function to affect the original array.</p></div>
+<div class="courseware subtopic">Array of strings<hr></div><div class="courseware content"><p>In C programming, an array of strings is essentially a two-dimensional array of characters where each row represents a separate string or 'word'. This data structure is particularly useful for storing multiple strings of varying lengths.</p>
+
+<p>Declaration involves specifying the data type and the array dimensions. To declare an array of strings, you would usually use the syntax: <code>char arrayName[numStrings][maxStringLength]</code>, where <code>numStrings</code> is the maximum number of strings you want to store, and <code>maxStringLength</code> is the maximum length for each string, accounting for the null-terminating character.</p>
+
+<table style="border-collapse: collapse; width: 100%;">
+<tr><th style="width: 50%;">Code</th><th style="width: 50%;">Explanation</th></tr>
+<tr><td>char names[3][10];</td><td>This declares an array named 'names', capable of holding 3 strings, each up to 9 characters long (plus the null-terminating character).</td></tr>
+</table>
+
+<p>Initialization of an array of strings can be done either manually or at the time of declaration. When doing it at declaration, the syntax is: <code>char arrayName[][] = {"string1", "string2", ..., "stringN"}</code>. Here, each string is automatically null-terminated.</p>
+
+<table style="border-collapse: collapse; width: 100%;">
+<tr><td>char greetings[3][10] = {"Hi", "Hello", "Welcome"};</td><td>This initializes the 'greetings' array with three strings, each ending with a null character automatically.</td></tr>
+</table>
+
+<p>Traversal of an array of strings typically involves using nested loops. The outer loop iterates through each string, while the inner loop processes individual characters within each string.</p>
+
+<table style="border-collapse: collapse; width: 100%;">
+<tr><td>for(int i = 0; i < 3; i++) { <br> &nbsp;&nbsp;printf("%s\n", greetings[i]); <br> }</td><td>This loop traverses the 'greetings' array and prints each string using the format specifier %s for strings.</td></tr>
+</table>
+
+<p>In summary, an array of strings in C allows the programmer to manage a collection of strings consistently, offering both flexibility and efficiency when handling text data.</p></div>
+
+
+</body>
+</html>

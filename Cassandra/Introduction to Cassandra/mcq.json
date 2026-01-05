@@ -1,0 +1,966 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What type of database is Cassandra classified as?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Document Database"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Graph Database"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Key-Value Store"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Column-Family Store"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 94171,
+      "Explanation": "Cassandra is classified as a column-family store, where data is stored in column families instead of rows and columns like in traditional databases.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a key feature of Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ACID Transactions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Strong Consistency"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Linear Scalability"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Single Point of Failure"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 94172,
+      "Explanation": "Cassandra is designed to scale linearly, meaning you can add more nodes to increase its capacity without compromising performance.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Cassandra, what is meant by 'eventual consistency'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "All updates to a database must be visible immediately"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Data is consistent at every point in time"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Data may not be instantly available across all nodes immediately after an update"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The database requires manual consistency implementation"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 94173,
+      "Explanation": "Eventual consistency means that updates to Cassandra will eventually be reflected across all nodes, but might not be immediate.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which language is primarily used for Cassandra's query operations?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SQL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "CQL"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Python"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "NoSQL"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 94174,
+      "Explanation": "Cassandra uses Cassandra Query Language (CQL) which is designed to perform queries on Cassandra&apos;s data model.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does Cassandra ensure there is no single point of failure?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By having a master-slave architecture"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By replicating data across multiple nodes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using a single node setup"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By centralizing all data in one node"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 94175,
+      "Explanation": "Cassandra replicates data across multiple nodes, ensuring that if one node fails, data can still be accessed from other nodes.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What consistency level in Cassandra offers the strongest consistency guarantee?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ONE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "ANY"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "QUORUM"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ALL"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 94176,
+      "Explanation": "The ALL consistency level requires acknowledgment from all replica nodes for read/write operations, thus providing the strongest consistency.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Cassandra, what is a 'ring'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A logical sequence of nodes in a cluster"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A physical circle of servers"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A type of indexing"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A set of related data tables"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 94177,
+      "Explanation": "In Cassandra, a &apos;ring&apos; refers to the logical arrangement of nodes in the cluster forming a circle for the distribution of data.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of a 'partition key' in Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To merge records"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To uniquely identify rows"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To determine the node placement of data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To compress data"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 94178,
+      "Explanation": "The partition key in Cassandra determines how data is distributed across the nodes in the cluster, impacting data placement and retrieval.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following best describes 'wide column store' as used in Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Data is stored as large binary objects"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Rows are stored with a dynamic number of columns"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Tables have a fixed schema"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Data is organized in tabular form"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 94179,
+      "Explanation": "In a wide column store like Cassandra, rows can have a dynamic number of columns, allowing for highly flexible and scalable data storage.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What strategy does Cassandra use for data replication?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Round-robin replication"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Simple strategy"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Network topology strategy"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Mirroring strategy"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 94180,
+      "Explanation": "Network topology strategy is used in Cassandra to ensure data is replicated across different racks and data centers for high availability.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Cassandra uses which of the following for data partitioning?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Range partitioning"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hash partitioning"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "None"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Vertical partitioning"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 94181,
+      "Explanation": "Cassandra uses hash partitioning to distribute data across nodes in the cluster, ensuring balanced data distribution.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which term is used to describe a series of writes grouped together in Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Commit Log"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Batch"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Transaction"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Write Ahead Log"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 94182,
+      "Explanation": "Batches in Cassandra are used to group multiple write operations together for efficient processing and consistency.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What mechanism does Cassandra use to ensure data durability?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Snapshots"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SSTables"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Write-Ahead Logging"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Commit Log"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 94183,
+      "Explanation": "Cassandra uses commit logs to ensure data durability, recording write operations before they are applied to SSTables.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a characteristic of Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Decentralization"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Horizontal Scalability"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Single Master Node"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Fault Tolerance"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 94184,
+      "Explanation": "Cassandra does not have a single master node, as it follows a peer-to-peer architecture ensuring decentralization.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the term 'tunable consistency' refer to in Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Adjusting replication factor at runtime"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Changing consistency levels per operation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Modifying data center strategy"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Static consistency setting"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 94185,
+      "Explanation": "Tunable consistency in Cassandra allows you to choose the consistency level per read or write operation, balancing consistency and availability.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following best describes Cassandra's architecture?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Master-slave"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Centralized"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Distributed and peer-to-peer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Hierarchical"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 94186,
+      "Explanation": "Cassandra employs a distributed and peer-to-peer architecture, where each node is equal and communication can happen between any two nodes.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does Cassandra achieve high availability?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By implementing strong consistency"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Through vertical scaling"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By replicating data across multiple nodes"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Using heavyweight transactions"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 94187,
+      "Explanation": "Cassandra achieves high availability by replicating copies of data across multiple nodes and different geographic locations.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is an 'SSTable' in Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A temporary backup file"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A file storage format for committing write operations"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A shell scripting table"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A replication process"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 94188,
+      "Explanation": "SSTable stands for Sorted String Table, which is the immutable file format used by Cassandra to store data on disk after it has been flushed from memory.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What kind of data model does Cassandra use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Document-based"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Graph-based"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Keyspace and Column Family"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Relational"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 94189,
+      "Explanation": "Cassandra uses a data model based on keyspaces and column families, where different column families can exist within a keyspace, similar to tables in a database.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is a disadvantage of using Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Easy to scale"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Write bias"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Single point of failure"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Flexible schema"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 94190,
+      "Explanation": "Cassandra is write-biased, meaning it is optimized for write-heavy workloads but can be less efficient for read-heavy scenarios.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Apache Cassandra is a massively scalable open source _______ database.&nbsp; <br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SQL <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "NoSQL <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "NewSQL <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 86233,
+      "Explanation": "<span id=\"explanation86233\">Explanation:&nbsp;<span id=\"explanation86233\" value=\"Apache Cassandra is a massively scalable open source NoSQL database designed for handling large amounts of data across many commodity servers with high availability and no single point of failure.\">Apache Cassandra is a massively scalable open source NoSQL database designed for handling large amounts of data across many commodity servers with high availability and no single point of failure.&nbsp; </span></span><br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Replication&nbsp; factor&nbsp; in&nbsp; Cassandra determines____________",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Total number of permitted tables for accessing the data."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "How many times your data is replicated across your cluster."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Is a limit on total number of tables allowed to create since Cassandra hundles unstructured data."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Total number of nodes in the network."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 86239,
+      "Explanation": "Cassandra stores data on multiple servers called nodes. This multiplicity is called as replication factor.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Who developed Cassandra?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Google"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Apple"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Microsoft"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Facebook"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 86589,
+      "Explanation": "Apache Cassandra was developed by Avinash Lakshman and Prashant Malik when both were working as engineers at Facebook. The database was designed to power Facebook&apos;s inbox search feature, making it easy for users to quickly find the conversations and other content they were looking for.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Apache Cassandra is a massively scalable open source _______ database.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SQL"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "NoSQL"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "NewSQL"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 86590,
+      "Explanation": "Apache Cassandra is a massively scalable open source NoSQL database designed for handling large amounts of data across many commodity servers with high availability and no single point of failure. It provides a flexible schema, tunable consistency, and decentralized architecture, making it suitable for use cases such as time-series data, messaging systems, and IoT applications.&nbsp;&nbsp; <br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Cassandra uses a protocol called _______ to discover location and state information.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "gossip"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "goss"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "intergos"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "TCP/IP"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 86591,
+      "Explanation": "A Node is the basic infrastructure component of Cassandra. It&apos;s a fully functional machine that connects with other nodes in the cluster through the high internal network. The name of this network is Gossip Protocol.&nbsp; <br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following decides the distribution of data in a cluster?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Partitioner"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compaction"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Commit log"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Gossip Protocol"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 86592,
+      "Explanation": "&nbsp; In Cassandra, the distribution of data in a cluster is decided by the Partitioner. The partitioner determines how data is distributed across the nodes in a cluster based on the partition key of the data. The partitioner ensures that data is evenly distributed across the nodes in the cluster, allowing for efficient storage and retrieval of data. <span style=\"color: rgb(64, 64, 64); font-family: ui-sans-serif, system-ui, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 300; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: break-spaces; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;\"></span><br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a data model concept in Apache Cassandra?&nbsp;&nbsp;<br>&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Tables"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Documents"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Graphs"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Column families"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 88393,
+      "Explanation": "<span id=\"explanation88393\">Apache Cassandra stores data in column families, which are similar to tables in relational databases but have a more flexible schema.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a tool used to interact with Apache Cassandra?&nbsp; <br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "MySQL Workbench"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "MongoDB Compass"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Cassandra Query Language (CQL) shell <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "pgAdmin"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 88394,
+      "Explanation": "Cassandra Query Language (CQL) shell. The CQL shell is a command-line interface for interacting with Apache Cassandra, allowing users to execute CQL queries and manage the database.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a benefit of using Apache Cassandra for a high-traffic web application? <br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Strong consistency for all operations"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Easy setup and configuration <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "High availability and fault tolerance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Support for complex joins and aggregations"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 88401,
+      "Explanation": "High availability and fault tolerance. Apache Cassandra is designed to provide high availability and fault tolerance, making it a good choice for high-traffic web applications that require low latency and minimal downtime. It provides tunable consistency, allowing for strong consistency where needed, but prioritizes availability and partition tolerance. It does not support complex joins and aggregations, instead using a denormalized data model.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a limitation of Apache Cassandra's data model? <br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Lack of support for complex data types B"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Difficulty modeling relationships between entities"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Inability to handle high write throughput"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Lack of support for secondary indexes"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 88409,
+      "Explanation": "Apache Cassandra&apos;s data model is optimized for high write throughput and efficient range queries, but it can be difficult to model relationships between entities. It is often necessary to denormalize data and use techniques such as materialized views or,application-level joins to model complex relationships. It does support complex data<br>types and secondary indexes, but these features should be used judiciously as they can impact performance<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a core feature of Cassandra?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "High Availability <br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Scalability <br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ACID Compliance <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Fault Tolerance <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 88577,
+      "Explanation": "Cassandra dose not support ACID properties. Consistancy is not the feature of Cassandra.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not a reason to use Cassandra?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "High write throughput .<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "High read throughput .<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Low latency. <br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Strong consistency .<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 37,
+      "UniqueNodeId": 6876,
+      "QuestionTypeId": 0,
+      "QuestionId": 88605,
+      "Explanation": "Strong consistency is not a reason to use Cassandra. Cassandra is known for its high write throughput, high read throughput, and low latency.",
+      "Answer": "D",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

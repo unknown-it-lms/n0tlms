@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Notes - MySQL_Delete clause</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  body{font-family:system-ui,Segoe UI,Roboto,Arial;max-width:900px;margin:24px auto;padding:18px;line-height:1.6;color:#111}
+  h1{font-size:1.4rem;margin-bottom:0.6rem}
+  .topic{font-weight:700;margin-top:1rem}
+  .subtopic{font-weight:600;margin-top:0.8rem}
+  .content{margin:0.6rem 0 1.2rem 0}
+  pre{white-space:pre-wrap;background:#f7f7f7;padding:10px;border-radius:6px;overflow:auto}
+  img{max-width:100%;height:auto}
+  table{border-collapse:collapse;width:100%}
+  table, th, td{border:1px solid #ccc;padding:6px}
+</style>
+</head>
+<body>
+<h1>Notes: MySQL- Delete clause</h1>
+
+<div class="courseware topic">Delete clause<hr></div><div class="courseware content"><div class="courseware content">Some times, the data in the table becomes meaningless and we need to delete it from the tables. If irrelevant data is kept in the table, table size increases and at the end utilization of disk space increases. Also unnecessary data in table will increase the time for data retrieval. Hence it is always expected to delete unwanted data from the table.&nbsp; Delete clause in RDBMS will delete the rows from the table.<br>This clause is used to remove one or more rows from a table.</div><div class="courseware subsubtopic">Syntax:</div><div class="courseware content"><div class="courseware content"><strong><span style="color:#cc9900;">DELETE</span><br><span style="color:#cc9900;">FROM</span></strong><span style="color:#cc9900;"> </span>table_name<br>[<span style="color:#cc9900;"><strong>WHERE</strong> </span>condition]; &nbsp;</div><div class="courseware content"><br>&nbsp;By default without where clause delete will delete all the records from the table.</div></div></div>
+<div class="courseware subtopic">Deletion in tables</div><div class="courseware content"><div class="courseware content"><hr>DELETE is a DML statement and this command is used to remove one or more rows from the table.<br><br><span style="color:#cc9900;">DELETE</span><br><span style="color:#cc9900;">FROM</span> students<br><span style="color:#cc9900;">WHERE </span>FirstName = 'Jhon';&nbsp; &nbsp;<br>&nbsp;<br>In MySQL, if autocommit is not set, then all deleted row can be rolled back. Th case of deletion of all the records from the table, the table will contain zero rows, but the structure will remain on the disk.</div></div><div class="courseware subtopic">&nbsp;</div>
+
+
+</body>
+</html>

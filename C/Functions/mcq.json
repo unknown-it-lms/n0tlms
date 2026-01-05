@@ -1,0 +1,3734 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "<div>#include&lt;stdio.h&gt;<br>float x = 1.2;<br>void main ()<br>{<br></div><div style=\"margin-left: 40px;\">&nbsp; printf (\"%f \", x);<br>&nbsp; printf (\"%d \", y);<br>&nbsp; my_func ();<br></div><div>}<br>int y = 5;<br>int my_func ()<br>{<br></div><div style=\"margin-left: 40px;\">&nbsp; printf (\"%f \", x);<br>&nbsp; printf (\"%d \", y);<br>&nbsp; return 0;</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1.200000 5 1.200000 5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1.200000 0 1.200000 5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1.200000 0 1.200000 0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compiler error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 63338,
+      "Explanation": "You have to declare function and variable Y before main.<br>error: \u2018y\u2019 undeclared (first use in this function)",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is false about function main?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "main can have parameters"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "main can return a value"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "main can be called"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "variables defined inside main become global variables.<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 63278,
+      "Explanation": "variables defined inside main have local scope inside main.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>What will be output of following code?<br>int f (int a)<br>{<br>&nbsp; a &gt;= 30 ? return (100) : return (200);<br>}<br><br>void main ()<br>{<br>&nbsp; int b = 15;<br>&nbsp; b = f (b + 15);<br>&nbsp; printf (\"%d\", b);<br>}<br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "100<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "200<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "15<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 63281,
+      "Explanation": "return is a statement. Return Statements cannot be used inside ternary operator in this way.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Trace the output of following program.<br>float display (int c)<br>{<br></div><div style=\"margin-left: 40px;\">&nbsp; return (c++);</div><div>}<br><br>void main ()<br>{</div><div style=\"margin-left: 40px;\">&nbsp; int k = 45;<br>&nbsp; float f;<br>&nbsp; f = display (k);<br>&nbsp; printf (\"%f\", f);</div><div>}<br><br><br></div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "45"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "46.000000"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "45.000000"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 63282,
+      "Explanation": "Display function first return C value i.e 45 and then increase the value.The return type of display function is float and&nbsp; we are using %f to print value it will display 45.000000.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Trace the output of following program.<br>#include &lt;stdio.h&gt;<br>int sum (int a, int b)<br>{<div style=\"margin-left: 40px;\">&nbsp; if (a == b)<br>&nbsp; &nbsp; &nbsp;&nbsp; return (a + b);<br>&nbsp; else<br>&nbsp; &nbsp; &nbsp; return (a - b);</div>}<br>void main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; int x = 0;<br>&nbsp; x = sum (x, 1);<br>&nbsp; printf (\" %d\", x);</div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "-1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "0"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 63283,
+      "Explanation": "<span id=\"explanation63283\" style=\"color:blue\">We are passing 0 and 1 to a sum function . In sum function a nd b are not equal hence it is returning a-b i.e. 0-1 . so answer is -1.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>Trace the output of following program.<br>int cases(int a, char b)<br>{<br>&nbsp;&nbsp; &nbsp;if (a == 'A')<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; return a;<br>&nbsp;&nbsp; &nbsp;else<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;return b;<br>}<br>void main()<br>{<br>&nbsp;&nbsp; &nbsp;char ch=' ';<br>&nbsp;&nbsp; &nbsp;int i = 65;<br>&nbsp;&nbsp; &nbsp;i = cases(i, ch);<br>&nbsp;&nbsp; &nbsp;ch = cases(i, ch);<br>&nbsp;&nbsp; &nbsp;printf(\" %d %c\", i, ch);<br>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "65 65"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "65 A"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "65 Garbage"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 63284,
+      "Explanation": "<span id=\"explanation63284\" style=\"color:blue\"><span id=\"explanation63284\" style=\"color:blue\">Ascii value of A is 65. When we use %d it prints 65 and %c prints character value.</span></span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of following program<br>#include&lt;stdio.h&gt;<br>int fun ();<br>int main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; int i;<br>&nbsp;&nbsp;<br>&nbsp;&nbsp;i = fun ();<br>&nbsp; printf (\"%d \", i);<br>&nbsp; return 0;</div>}<br>int fun ()<br>{<div style=\"margin-left: 40px;\">&nbsp; int i = 5;<br>&nbsp; i++;<br>&nbsp; return i;</div>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "7"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "8"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 63616,
+      "Explanation": "<span id=\"explanation63616\" style=\"color:blue\">Here i is int variable hence when we call function fun() it will return 6 which is stored in i (main function) and again second time when we call fun() function it will override previouse value hence output is 6.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How many times \u201c*\u201d will be printed by the following recursive function where the value of<br>n is 3<br>void print_star( int n)<br>{<div style=\"margin-left: 40px;\">&nbsp; int i = 0;<br>&nbsp; if (n &gt; 1)<br>&nbsp;&nbsp;&nbsp; print_star (n - 1);<br><br>&nbsp; for (i = 0; i &lt; n; i++)<br>&nbsp;&nbsp;&nbsp; printf (\"*\");<br><br>&nbsp; printf (\" \");</div>}<br><br>void main()<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp; print_star(3);</div>}<br><br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1 time"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3 time"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "6 time"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "10 time"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 63603,
+      "Explanation": "This is recursive call<br>Initial call&nbsp; print_star(3) till n&gt;1 it will call same function recutsively i.e. next call with print_star(2)&nbsp; and then print_star(1)<br><br>in next statement the for loop will print \"*\" n times hence<br>print_star(1)&nbsp; print *<br>print_star(2)&nbsp; print * *<br>print_star(3)&nbsp; print * * *<br>hence total 6 times it will print *.<br><br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "<div>int f(int a) &nbsp;<br></div><div>{&nbsp;</div><div style=\"margin-left: 40px;\">return a&gt; 20 ? 10 : 20; &nbsp;</div><div>}<br><br></div><div>void main( )</div><div>{&nbsp;</div><div style=\"margin-left: 40px;\">int b=5;</div><div style=\"margin-left: 40px;\">b=f(b+++15);</div><div style=\"margin-left: 40px;\">printf(\"%d\", b);</div><div>}</div>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "20"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "21"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ERROR"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 63401,
+      "Explanation": "In the function call f(b+++15), the function parameter is b+++15 which is actually b++ &nbsp; + &nbsp;15. Here b is first used in the expression as it is post incremented&nbsp; hence the value passed to the function is (5+15=20). Now in function f, 20&gt;20 is false and hence it returns 20 which is assigned to b again. Hence output is 20.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Trace the output of following program.<br>int add (int a, int b);<br>void main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; int x;<br>&nbsp; x = add (21, 81);<br>&nbsp; x = add (x, 1);<br>&nbsp; printf (\"%d\", x);</div><div>}</div>int add (int a, int b)<br>{<div style=\"margin-left: 40px;\">&nbsp; int q;<br>&nbsp; q = a + b;<br>&nbsp; return (a, b);</div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "102"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "81"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 63760,
+      "Explanation": "<span id=\"explanation63760\" style=\"color:blue\">When we&nbsp; have &apos;,&apos; seperated&nbsp; value in return statement only right value get returen. Hence<br>add fuction returns 81 in first call and&nbsp; in second call it will return 1. hence output will be 1.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the error, if any in the while loop.<br>#include &lt;stdio.h&gt;<br>int main()<br>{<div style=\"margin-left: 40px;\">&nbsp;&nbsp; &nbsp;void fun();<br>&nbsp;&nbsp; &nbsp;int i = 1;<br>&nbsp;&nbsp; &nbsp;while (i &lt;= 5)<br>&nbsp;&nbsp; &nbsp;{<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;printf(\"%d \", i);<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;if (i &gt; 2)<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;goto here;<br>&nbsp;&nbsp; &nbsp;}</div><br>&nbsp;&nbsp; &nbsp;return 0;<br>}<br>void fun()<br>{<br>&nbsp;&nbsp; &nbsp;here: printf(\"It works\");<br>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "No Error: prints 'It works'"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Error: fun() cannot be accessed"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Error: goto cannot takeover control to other function"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 63657,
+      "Explanation": "A goto statement provides an unconditional jump from the &apos;goto&apos; to a labeled statement in the same function.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the program?<br>#include&lt;stdio.h&gt;<br>int i=0;<br>int fun ();<br>int main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; while (i)<br>&nbsp;&nbsp;&nbsp; {</div><div style=\"margin-left: 80px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fun ();</div><div style=\"margin-left: 80px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; main ();</div><div style=\"margin-left: 40px;\">&nbsp;&nbsp;&nbsp; }<br>&nbsp; printf (\"Hello \");<br>&nbsp; return 0;</div>}<br>int fun ()<br>{<div style=\"margin-left: 40px;\">&nbsp; printf (\"Hi\");</div>}<br><br><br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Hello"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hi Hello"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No output"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Infinite loop"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 63817,
+      "Explanation": "<span id=\"explanation63817\" style=\"color:blue\">Here the default value of i is 0 hence the While loop does not get executed and only printf statement get executed.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the program?<br>&nbsp;&nbsp; #include &lt;stdio.h&gt;<br><br>&nbsp;&nbsp; float cal (float value)<br>&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp; return (3 * value);<br>&nbsp;&nbsp; }<br><br>&nbsp;&nbsp; void main()<br>&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp; int a = 10;<br>&nbsp;&nbsp;&nbsp;&nbsp; float b = cal (\"123\");<br>&nbsp;&nbsp; }<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "369<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "123"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 64091,
+      "Explanation": "&nbsp;Compiler does not found the cal method which will accept character/string value.hence result in error.<br>error: incompatible type for argument 1 of \u2018cal\u2019<br>note: expected \u2018float\u2019 but argument is of type \u2018char *\u2019<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Code:<br>#include &lt;stdio.h&gt;<br><br>&nbsp; int i;<br>void increment (int i)<br>{<div style=\"margin-left: 40px;\">&nbsp; i++;</div>}<br><br>int main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; for (i = 0; i &lt; 10; increment (i))<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp; }<br>&nbsp; printf (\"i=%d \", i);<br>&nbsp; return 0;</div>}<br>What will happen when the program above is compiled and executed?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will print out: i=9."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It will print out: i=10."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will print out: i=11."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It will loop indefinitely."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 64070,
+      "Explanation": "In this example we have two copies of i once is global and another is in Increnment function. As local variable has higher priority than global ,increment function will increase value of local variable which is not reflected in global variable.Hence every time i get initialised to 0 after function call hence it will loop indefinitely.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be output of following code?<br>int transfer (int a, int b)<br>{<div style=\"margin-left: 40px;\">&nbsp; char t = 1;<br>&nbsp; t = a;<br>&nbsp; a = b;<br>&nbsp; b = t;<br>&nbsp; return a;<br>&nbsp; return b;<br></div>}<br><br>void main ()<br>{<div style=\"margin-left: 40px;\">&nbsp; int x = 2, y = 3;<br>&nbsp; x = transfer (x, y);<br>&nbsp; printf (\"%d %d\", x, y);<br></div>}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2 3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3 2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2 2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "3 3"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 64041,
+      "Explanation": "transfer function returns value of a, second return statement will never get executed hence value of a is 3 which we catch in x variable and value of y is 3 hence output is 3,3.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not a valid return type for a C function?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": " int"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "void&nbsp;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "string&nbsp;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "string&nbsp;"
+        },
+        {
+          "OptionId": "E",
+          "OptionText": "float&nbsp;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102761,
+      "Explanation": "<span id=\"explanation102761\" style=\"color:blue\">String is not a built-in data type.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is the correct way to declare a function that takes no arguments and returns an integer in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int function();"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "void function(int);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int function(int a);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "void function();"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102836,
+      "Explanation": "In C, a function that takes no arguments and returns an integer is declared as &#39;int function();&#39;. The empty parentheses indicate no parameters.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the return type of the function declared as &#39;float multiply(int a, double b);&#39;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "float"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "double"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "void"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102837,
+      "Explanation": "The return type is specified at the beginning of the function declaration. Here, it is &#39;float&#39;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How are multiple parameters declared in a function in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using &#39;and&#39; between them"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By separating them with commas"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using semicolons"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By listing each on a new line"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102838,
+      "Explanation": "In C, function parameters are listed inside the parentheses and separated by commas.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider the declaration &#39;char *getString();&#39;. What does the asterisk (*) signify?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The function returns a character"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The function takes a pointer as an argument"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The function returns a pointer to a character"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The function returns an integer"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102839,
+      "Explanation": "The asterisk indicates that the function returns a pointer to a character.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is an incorrect function declaration in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int compute(int a, int b);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "void calculate();"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "float process(double x, double y);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "function int test();"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102840,
+      "Explanation": "&#39;function int test();&#39; is incorrect because the return type should precede the function name, without using &#39;function&#39;.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the function declaration &#39;void printMessage(char *msg);&#39;, what is &#39;msg&#39;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The return type"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The function name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The parameter name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A local variable name"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102841,
+      "Explanation": "&#39;msg&#39; is a parameter name indicating that the function takes a pointer to a character (string) as an argument.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How would you declare a function &#39;computeAverage&#39; that takes in two integers and returns a double?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "double computeAverage(int, int);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int computeAverage(double, double);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "computeAverage(int a, int b);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "void computeAverage();"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102842,
+      "Explanation": "The correct declaration specifies the return type &#39;double&#39; and lists the parameter types inside the parentheses.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the default return type of a function in C if not explicitly specified?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "char"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "void"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "float"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102843,
+      "Explanation": "In older versions of C, the default return type was &#39;int&#39;, but explicit declaration is recommended.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a function is declared as &#39;void updateValue(int *p);&#39;, what can be inferred about its parameters?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It takes two integer values"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It returns a pointer"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It takes a pointer to an integer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It takes no parameters"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102844,
+      "Explanation": "The parameter &#39;int *p&#39; indicates that the function takes a pointer to an integer.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following correctly matches a function&#39;s return type with its declaration: &#39;boolean checkStatus();&#39;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The function returns an integer value"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The function returns a boolean value"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The function returns a void type"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The function returns a structure"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102845,
+      "Explanation": "In the context of the question, &#39;boolean&#39; is the return type as per declaration, although C typically doesn&#39;t have a boolean type by default, relying instead on integer-based logic.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider the function declaration &#39;long calculateSum(long a, long b);&#39;. What data type does this function return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "float"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "void"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "long"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102846,
+      "Explanation": "The return type &#39;long&#39; is specified at the beginning of the function declaration.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C, what keyword is used to declare that a function does not return a value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "null"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "empty"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "void"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102847,
+      "Explanation": "The &#39;void&#39; keyword is used in C to specify that a function does not return a value.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What can be concluded about the function &#39;void swap(int x, int y);&#39; regarding its return type?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It returns an integer"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It returns a character"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It does not return any value"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It returns a pointer"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102848,
+      "Explanation": "The &#39;void&#39; keyword indicates that the function &#39;swap&#39; does not return any value.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How is a function &#39;divideByTwo&#39; that takes a float and returns nothing correctly declared in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int divideByTwo(float);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "void divideByTwo(float);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "float divideByTwo();"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "divideByTwo(float n);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102849,
+      "Explanation": "Since the function returns nothing, &#39;void&#39; is used as the return type, and &#39;float&#39; is the parameter type.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the following function prototype imply: &#39;double max(double num1, double num2);&#39;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The function returns a pointer"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The function takes two double arguments and returns a double"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The function has no parameters"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The function returns an integer"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102850,
+      "Explanation": "The function takes two double precision floating-point values and returns a double precision floating-point result.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used in the declaration &#39;extern int function();&#39;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "auto"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "extern"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "register"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102851,
+      "Explanation": "The &#39;extern&#39; keyword is used to declare a function or a variable to have external linkage.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the following declaration signify in C: &#39;const int getValue();&#39;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The function returns a constant integer"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The function takes a constant integer as parameter"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The function does not return any value"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The function returns a pointer to an integer"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102852,
+      "Explanation": "The &#39;const&#39; keyword indicates that the function &#39;getValue&#39; returns a constant integer.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the function declaration &#39;int add(int, int);&#39;, how many parameters does the function take?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "None"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "One"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Two"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Three"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102853,
+      "Explanation": "The function &#39;add&#39; takes two integer parameters as indicated by the two inputs inside the parentheses.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given the function declaration &#39;char processInput(char c);&#39;, what is its return type?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "char"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "float"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "void"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102854,
+      "Explanation": "The return type is &#39;char&#39;, as specified at the beginning of the declaration.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of a function declaration in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To allocate memory"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To define the functionality of the function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To specify the name and parameters to the compiler"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To control the flow of a program"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102855,
+      "Explanation": "A function declaration informs the compiler about a function&#39;s name, return type, and parameters, acting as a promise of its existence and usage in a program.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following function declarations is most appropriate for a function &#39;calculateArea&#39; that returns an integer and takes a float and a double?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int calculateArea(float, double);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "void calculateArea(int, int);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "double calculateArea(double, float);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "calculateArea(float, double);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102856,
+      "Explanation": "Option A indicates that &#39;calculateArea&#39; returns an int and takes a float and a double as parameters.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which keyword is used to define a default return type for a function if none is explicitly specified?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "float"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "void"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "char"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102857,
+      "Explanation": "In C, if no return type is specified for a function, it defaults to &#39;int&#39;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a valid function definition in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "function int() { return 0; }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int function() { return 0; }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int function() return 0;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "void function(int) { return 0; }"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102858,
+      "Explanation": "Option B correctly defines a function with a return type and a body.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does a function prototype provide to the compiler?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The number of parameters only"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The return type and name of the function only"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The full function definition"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The function&#39;s name, return type, and parameter types"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102859,
+      "Explanation": "A function prototype specifies the function\u2019s name, return type, and parameters, informing the compiler of how to call the function.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about function declarations and definitions is correct?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Declarations contain the function body."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Definitions do not require the return type."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Declarations must precede their calls in a program."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Definitions can never have parameters."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102860,
+      "Explanation": "Declarations must be present before any call to the function to provide necessary information to the compiler.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if a function is defined with a return type but lacks a return statement with a value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The function will return garbage value."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The program will not compile."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The function will return zero."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The compiler will ignore the return type."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102861,
+      "Explanation": "If a function specifies a non-void return type but lacks a return statement, the function returns an indeterminate value.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following correctly defines a function in C with no parameters and returning nothing?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void func{} "
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "void func();"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "void func(void) {}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "void func(int x) {}"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102862,
+      "Explanation": "The option C correctly defines a function without parameters and with a &#39;void&#39; return type.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which component is not essential in a function definition?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Function name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Return type"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Parameter list"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Function Documentation"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102863,
+      "Explanation": "Documentation is helpful but not essential for defining a function in C.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you define a function that takes a pointer to an integer as a parameter?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void func(int* p);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "void func(int &amp;p);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "void func(int p*);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "void func(int*p);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102864,
+      "Explanation": "In C, &#39;int* p&#39; correctly declares a pointer to an integer as a parameter of a function.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of using &#39;static&#39; keyword in a function definition?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To make the function inline"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To restrict the visibility of the function to the file scope"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To allow the function to return multiple values"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To ensure the function runs only once"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102865,
+      "Explanation": "Using &#39;static&#39; restricts the function&#39;s scope to the file it is declared in, preventing external linkage.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following function declarations is correct for a function that adds two integers and returns the result?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "add(int x, int y) : int;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int add(x, y);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int add(int x; int y);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int add(int x, int y);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102866,
+      "Explanation": "The declaration must specify the return type, function name, and parameter types, as shown in option D.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When declaring a function, which part tells the compiler that the function will not return any value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "func()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "void"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "null"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102867,
+      "Explanation": "The &#39;void&#39; keyword indicates that the function does not return a value.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is true for C functions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Functions can return multiple values."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The main function cannot call other functions."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Function names can be overloaded."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Functions can be used to avoid repetition of code."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102868,
+      "Explanation": "Functions help avoid code repetition by encapsulating reusable code blocks.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Identify the correct statement about the scope of a function in C.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Functions have block scope."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Functions have file scope by default."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Functions have function scope."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Functions have global scope."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102869,
+      "Explanation": "By default, functions defined without the &#39;static&#39; keyword have file scope in C.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the role of the function&#39;s return type in its definition?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Specifies the type of parameters"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Indicates the type of variables it operates on"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Determines the default parameters"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Specifies the data type of the result returned by the function"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102870,
+      "Explanation": "The return type indicates the type of value the function will return to the caller.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following keywords cannot be used for a function definition in C?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "static"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "inline"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "extern"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "private"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102871,
+      "Explanation": "The &#39;private&#39; keyword is not a valid keyword in C for defining functions; it&#39;s used in languages like C++ for classes.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In what way does forward declaration of functions help in C programming?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It saves memory."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It allows functions to be defined in any order."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It automatically initializes functions."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It converts functions to inline."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102872,
+      "Explanation": "Forward declarations allow functions to be called before they are defined, facilitating more flexible coding.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is NOT a return type that a function can use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "double"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "entire"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "struct"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "enum"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102873,
+      "Explanation": "&#39;entire&#39; is not a valid return type in C; it should be &#39;int&#39;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can a function signature include the const keyword, and if so, what does it signify?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, it makes the return value constant."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, const can only be used with variables."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, it indicates the function will not modify the object passed."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No, it is syntax error."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102874,
+      "Explanation": "Using &#39;const&#39; in a function signature signifies that the function will not alter the passed reference or pointer.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following best describes a C function definition?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A declaration that includes parameter names and types."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A statement that ends with a semicolon."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A block of code that specifies what the function does."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A statement that initializes function variables."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102875,
+      "Explanation": "A function definition is a block of code that contains the actual implementation of what the function does.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the following C code?<br/>#include &lt;stdio.h&gt;<br/>void display();<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;display();<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}<br/>void display() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;Hello World\\n&quot;);<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Runtime error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No output"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Hello World"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102876,
+      "Explanation": "The display function is defined correctly and prints &#39;Hello World&#39; when called from main.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given the code, what is the output?<br/>#include &lt;stdio.h&gt;<br/>int increment(int a) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;return a + 1;<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d&quot;, increment(5));<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "undefined"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102877,
+      "Explanation": "The increment function adds 1 to the argument 5 and returns 6, which is printed.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you use a function without its prototype being declared in the code?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Runtime error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Function works normally if defined later"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Undefined behavior"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102878,
+      "Explanation": "Using a function before declaring it or defining its prototype causes a compilation error.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following code?<br/>#include &lt;stdio.h&gt;<br/>void func(int a);<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;func(5);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}<br/>void func(int a) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d&quot;, a);<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Garbage value"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102879,
+      "Explanation": "Function func is properly defined and prints the passed parameter, 5.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In C, what is the correct way to declare a function that returns a float and takes an integer as an argument?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "float functionName(int);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "float functionName();"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int functionName(float);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "functionName(float, int);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102880,
+      "Explanation": "The syntax float functionName(int); declares a function that returns a float and takes an integer as an argument.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of this function call if x is 10?<br/>#include &lt;stdio.h&gt;<br/>void func(int x) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d&quot;, x);<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;func(10);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Undefined behavior"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102881,
+      "Explanation": "The function func is properly called with 10 as argument, and prints 10.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you call a function named &#39;compute&#39; that returns an integer value and takes two float parameters?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "compute(float, float)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "compute(int, int)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int compute();"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "compute(3.5, 4.5);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102882,
+      "Explanation": "Option D correctly calls the function &#39;compute&#39; with the required float parameters.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the following program?<br/>#include &lt;stdio.h&gt;<br/>int sum(int a, int b);<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;int result = sum(3, 7);<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d&quot;, result);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}<br/>int sum(int a, int b) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;return a + b;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "7"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Garbage value"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102883,
+      "Explanation": "The sum function returns the sum of its two parameters, 3 and 7, resulting in 10.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the consequence of not returning a value from a non-void function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Function returns 0 by default"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Undefined behavior"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Function returns an undefined value"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102884,
+      "Explanation": "Not returning a value from a non-void function leads to undefined behavior as the function is expected to return a valid value.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a function modifies one of its parameters, how does it affect the original argument passed to it?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Original argument is modified"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No effect on the original argument"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Causes a compilation error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Causes a runtime error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102885,
+      "Explanation": "In C, function arguments are passed by value, meaning modifications do not affect the original arguments.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does &#39;void&#39; in function declaration mean?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Function returns a value"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Function returns nothing"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Function takes a variable number of arguments"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Function takes a single integer argument"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102886,
+      "Explanation": "In C, &#39;void&#39; in a function declaration signifies that the function does not return any value.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the context of function calls, what is the stack primarily used for?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Storing global variables"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Storing local variables and function call information"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Storing static variables"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Storing memory addresses of dynamic allocations"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102887,
+      "Explanation": "The stack stores local variables and function call information during program execution.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does &#39;int (*funcPtr)(int)&#39; represent?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A pointer to a function that returns an integer"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A pointer to an int variable"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A function returning a pointer to int"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A syntax error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102888,
+      "Explanation": "This syntax represents a pointer to a function that takes an integer argument and returns an integer.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of this code?<br/>#include &lt;stdio.h&gt;<br/>void test();<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;test();<br/>&nbsp;&nbsp;&nbsp;&nbsp;test();<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}<br/>void test() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;static int x = 0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d&quot;, x);<br/>&nbsp;&nbsp;&nbsp;&nbsp;x++;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "00"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "01"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "12"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "21"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102889,
+      "Explanation": "Static variables retain their value between function calls, thus the output is &#39;01&#39;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of this code?<br/>#include &lt;stdio.h&gt;<br/>void greet(char* msg) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%s\\n&quot;, msg);<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;greet(&quot;Hello&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compile error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hello"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Undefined behavior"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No output"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102890,
+      "Explanation": "The function greet is called with &quot;Hello&quot; and successfully prints it.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given the function prototype &#39;int compute(float x, int y);&#39;, which of these is NOT a correct function call?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "compute(5.2, 4);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "compute(3.0, 2);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "compute(3, 3.0);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "compute(5.5F, 5);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102891,
+      "Explanation": "Option C is incorrect because the arguments are not automatically converted as required (float first then int).",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will the following C program print?<br/>#include &lt;stdio.h&gt;<br/>int foo() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 5;<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d&quot;, foo()+5);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Undefined"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102892,
+      "Explanation": "Function foo returns 5, which is added to 5 in main, resulting in the output 10.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the role of &#39;return&#39; in functions in C programming?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To stop the execution of the program"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To print the value on the console"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To terminate the function and return a value to the caller"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To declare a variable"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102893,
+      "Explanation": "&#39;return&#39; is used to terminate a function and return control to the caller along with a value.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of calling a void function in an assignment expression?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The assignment is valid with a default value"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Undefined behavior"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Nothing, void return type cannot be assigned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102894,
+      "Explanation": "Attempting to assign the result of a void function will result in a compilation error because void functions do not return a value.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you define a function that takes no arguments and returns a pointer to int?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int test();"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int* test();"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int* test(void);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int test(int*);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102895,
+      "Explanation": "Option C correctly declares a function that takes no arguments and returns a pointer to int.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following code snippet?<br/>#include &lt;stdio.h&gt;<br/>void multiply(int a, int b) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d&quot;, a * b);<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;multiply(4, 5);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "20"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "9"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102896,
+      "Explanation": "The multiply function is called with parameters 4 and 5, so it prints 4 * 5 = 20.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct way to declare a function that takes two float parameters and returns an int?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int function(float a, float b);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int function(a, b)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "float function(int a, int b);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "void function(float a, float b);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102897,
+      "Explanation": "A function that takes two float arguments and returns an int should be declared as &#39;int function(float a, float b);&#39;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the result of the following code?<br/>#include &lt;stdio.h&gt;<br/>void add(int a, int b) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;a += 2;<br/>&nbsp;&nbsp;&nbsp;&nbsp;b += 2;<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d %d&quot;, a, b);<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;int x = 5, y = 3;<br/>&nbsp;&nbsp;&nbsp;&nbsp;add(x, y);<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d %d&quot;, x, y);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "7 5 5 3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "5 3 5 3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "7 5 7 5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102898,
+      "Explanation": "Within add(), separate copies of a and b are modified, but these changes do not affect the original variables x and y.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider the following code snippet:<br/>#include &lt;stdio.h&gt;<br/>int sum(int, int);<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d&quot;, sum(2, 3));<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}<br/>int sum(int a, int b) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;return a + b;<br/>}<br/>What does the code output?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Compilation Error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "23"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Runtime Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102899,
+      "Explanation": "The sum function returns the result of adding its two parameters, 2 + 3, which is 5.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the role of the parameters in a function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To store function&#39;s return value"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To define local variables within a function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To pass information or arguments to a function"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To indicate the function&#39;s data type"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102900,
+      "Explanation": "Parameters are used to pass information or arguments into functions so they can operate on them.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which function declaration is correct if the function is supposed to modify the values of two integer variables by adding them?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void update(int, int);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int update(int *, int *);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "void update(int a, int b);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "void update(int *a, int *b);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102901,
+      "Explanation": "Using pointers (int *a, int *b), we can modify the values of the variables passed as parameters.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement regarding passing arguments by value is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Original data remains unchanged."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Original data is modified."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Passing by value uses pointer variables."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Passing by value directly alters the original data."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102902,
+      "Explanation": "When arguments are passed by value, changes inside the function do not affect the original data.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will the output be for the following code?<br/>#include &lt;stdio.h&gt;<br/>void foo(int x, int y, int z) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d&quot;, z);<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;foo(2, 3, 4);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compilation Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102903,
+      "Explanation": "The parameter z is printed, which was passed the value 4 in the function call.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a correct pointer function signature, for a function that takes a pointer to an integer and returns a pointer to an integer?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int* function(int);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int function(int*);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int** function(int*);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int* function(int*);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102904,
+      "Explanation": "The function signature indicates it takes an int pointer and returns an int pointer: &#39;int* function(int*);&#39;.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of function is needed when arguments must be modified by the function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Function returning float"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Function with void return type"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Function accepting pointers"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Function returning int"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102905,
+      "Explanation": "A function must accept pointers if it needs to modify arguments since it allows access to the actual memory address.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the following code demonstrate?<br/>#include &lt;stdio.h&gt;<br/>void swap(int *a, int *b) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;int temp = *a;<br/>&nbsp;&nbsp;&nbsp;&nbsp;*a = *b;<br/>&nbsp;&nbsp;&nbsp;&nbsp;*b = temp;<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;int x = 10, y = 20;<br/>&nbsp;&nbsp;&nbsp;&nbsp;swap(&amp;x, &amp;y);<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d %d&quot;, x, y);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Swapping values using pass by reference"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Swapping values using pass by value"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Swapping not possible in C"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Demonstrating pointers cannot be used"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102906,
+      "Explanation": "The function swap() uses pointers to swap the values of x and y, demonstrating pass by reference.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which situation would you choose to pass parameters by value instead of by reference in a function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When the parameter is a large data structure"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When the parameter is small and shouldn&#39;t be changed"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When the function is supposed to modify original data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When you want to avoid creating a copy of the parameter"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102907,
+      "Explanation": "Passing by value is chosen when the parameter is small and its values should not be modified outside the function.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you modify the following function to prevent altering the original arguments passed?<br/>void increment(int *a, int *b) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;(*a)++;<br/>&nbsp;&nbsp;&nbsp;&nbsp;(*b)++;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Remove the dereference (*) operators."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Change the function to void increment(int a, int b)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use &#39;&amp;&#39; instead of &#39;*&#39; to access the values."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Change return type to int."
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102908,
+      "Explanation": "By changing the function parameters to pass by value, the original arguments will not be modified.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which parameter passing method is being used in the following snippet?<br/>#include &lt;stdio.h&gt;<br/>void process(float a) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;a = a * a;<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;float x = 5.0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;process(x);<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%.2f&quot;, x);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Pass by reference"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Pass by value"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Pass with pointer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Pass via address"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102909,
+      "Explanation": "Pass by value is being used, meaning the modifications in process() do not affect the original x.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a function declaration, what does the keyword &#39;void&#39; specify when used in place of parameter types?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The function returns no value"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The function takes no parameters"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The function uses default parameters"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The function&#39;s parameters can be of any type"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102910,
+      "Explanation": "When &#39;void&#39; is used in the parameter list, it means the function does not accept any parameters.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When is it more beneficial to use &#39;const&#39; for function parameters?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When the parameter is large and shouldn&#39;t be modified"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When the parameter must be modified"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When the parameter is an int"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Always with pointers to ensure modification"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102911,
+      "Explanation": "&#39;const&#39; is used with parameters, particularly large data structures, to prevent them from being modified.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output for following code?<br/>#include &lt;stdio.h&gt;<br/>int decrement(int a, int b) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;return a - b;<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;int a = 5, b = 10;<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d&quot;, decrement(b, a));<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "-5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "10"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102912,
+      "Explanation": "The function subtracts the second argument from the first, thus decrement(10, 5) returns 5.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is required to modify an array passed to a function so that changes persist after the function ends?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Pass by value method"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Returning the modified array"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using pointers as function parameters"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Copying the array within the function"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102913,
+      "Explanation": "Using pointers allows array modifications to persist beyond a function call.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider the function: void foo(int a, int b) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;int temp = a;<br/>&nbsp;&nbsp;&nbsp;&nbsp;a = b;<br/>&nbsp;&nbsp;&nbsp;&nbsp;b = temp;<br/>}<br/>How would you correctly call this function to swap values?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "foo(&amp;x, y);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "foo(x, &amp;y);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "foo(&amp;x, &amp;y);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Swap is not possible with current signature"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102914,
+      "Explanation": "This signature does not use reference or pointers and cannot swap values. It needs pointer parameters.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following code?<br/>#include &lt;stdio.h&gt;<br/>void scale(int *a, int factor) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;*a *= factor;<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;int y = 3;<br/>&nbsp;&nbsp;&nbsp;&nbsp;scale(&amp;y, 2);<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d&quot;, y);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "6"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "5"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102915,
+      "Explanation": "The scale function multiplies the value pointed to by a by factor: 3 * 2 = 6.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will the output be when the following code is executed?<br/>#include &lt;stdio.h&gt;<br/>void setZero(int a, int b) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;a = 0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;b = 0;<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;int x = 1, y = 2;<br/>&nbsp;&nbsp;&nbsp;&nbsp;setZero(x, y);<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d %d&quot;, x, y);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "0 0"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1 2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Undefined"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102916,
+      "Explanation": "&#39;setZero&#39; modifies only local copies of x and y, so x and y in main remain unchanged.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of returning a value from a function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To print the result to the console"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To provide the result back to the calling code"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To increase function execution speed"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To declare success of function execution"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102917,
+      "Explanation": "Returning a value from a function provides the result back to the calling code for further use.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following code?<br/>int add(int a, int b) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;return a + b;<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;int result = add(5, 7);<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d&quot;, result);<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will print: 12"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It will print: 57"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will cause a compile-time error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It will cause a runtime error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102918,
+      "Explanation": "The function add takes two integers, adds them, and returns the result, which is then printed as 12.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if you forget to include a return statement in a non-void function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The function will return 0 by default"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The behavior is undefined"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The function will return -1 by default"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The program will not compile"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102919,
+      "Explanation": "Forgetting a return statement in a non-void function results in undefined behavior according to C standard.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following function declarations is correct?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int function(float a, b);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int function(int a, int b);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "float function(a, b);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "function(int a, int b);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102920,
+      "Explanation": "Option B is the correct syntax for declaring a function with an integer return type and two integer parameters.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the code &#39;int multiply(int a, int b) { return a * b; }&#39;, what is the return type of the multiply function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "float"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "double"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102921,
+      "Explanation": "The multiply function has a return type of int, as specified in the function declaration.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is true about a function with return type void?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It must include a return statement"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It cannot return any value"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It can return a value but does not have to"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The return type of void allows for any data type"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102922,
+      "Explanation": "A function with a return type of void cannot return any value.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the result of following code?<br/>int increment(int a) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;return a + 1;<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%d&quot;, increment(10));<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "11"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "12"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102923,
+      "Explanation": "The increment function adds 1 to its argument and returns the result, so increment(10) returns 11.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given the function:<br/>int sum(int a, int b) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;int result = a + b;<br/>}<br/>Will the function compile and return correctly if called in the main function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, it will compile and return correctly"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, it lacks a return statement"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No, the return type should be void"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Yes, it will return 0"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102924,
+      "Explanation": "The function sum lacks a return statement, which is necessary since its return type is int.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider the code snippet:<br/>char getFirstChar(char *str) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;return str[0];<br/>}<br/>What is the return type of the getFirstChar function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "char"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "float"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "long"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102925,
+      "Explanation": "The getFirstChar function has a return type of char, as specified in its declaration.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will the following code output?<br/>double getHalf(int num) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;return num / 2;<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%.1f&quot;, getHalf(9));<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "4.5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "4.0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "5.0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "4"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102926,
+      "Explanation": "The getHalf function performs integer division, returning 4. The return type doesn&#39;t change the division result.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is a valid function signature for a function returning a pointer to an int?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int func();"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int *func();"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "int &amp;func();"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "int func*();"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102927,
+      "Explanation": "The correct syntax for a function returning a pointer to an int is &#39;int *func();&#39;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Examine the code:<br/>double squareRoot(int value) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;return sqrt(value);<br/>}<br/>What library must be included for a successful compile?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&lt;stdlib.h&gt;"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&lt;stdroot.h&gt;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&lt;math.h&gt;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "&lt;stdio.h&gt;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102928,
+      "Explanation": "Mathematical functions like sqrt are available in the &lt;math.h&gt; library, which must be included.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Choose the appropriate return type for a function designed to return a character from a string based on an index.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "char*"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "char"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "void"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102929,
+      "Explanation": "The function should return a single character, thus the return type should be char.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is correct for a function declared as: int func(void)?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "func must take one argument"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "func takes no arguments"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "func cannot return a value"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "func must return a pointer"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102930,
+      "Explanation": "The declaration &#39;int func(void)&#39; specifies a function that takes no arguments and returns an int.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Given the function:<br/>int findMax(int a, int b) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;return (a &gt; b) ? a : b;<br/>}<br/>What is the return type of findMax?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "float"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "void"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "bool"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102931,
+      "Explanation": "The function findMax returns an int, as indicated by its return type in the declaration.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What value will be returned by foo in the code snippet?<br/>int foo() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 5.5;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "5.5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Undefined"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compile-time error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102932,
+      "Explanation": "The function foo returns an integer, so the float 5.5 is implicitly converted to 5.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following code snippets will cause a compile-time error due to return type issues?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int func() { return 1.5; }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "float func() { return; }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "char func() { return &#39;c&#39;; }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "double func() { return 0; }"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102933,
+      "Explanation": "A function with a non-void return type must return a value; thus, return; in a float function causes an error.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will the code print?<br/>float toDouble(int num) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;return (double)num;<br/>}<br/>int main() {<br/>&nbsp;&nbsp;&nbsp;&nbsp;printf(&quot;%.2f&quot;, toDouble(3));<br/>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "3.00"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3.0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Compile-time error"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102934,
+      "Explanation": "The function casts an int to a double and returns it. Printing as %.2f gives 3.00.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if a void function attempts to return a value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Returns the value implicitly"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Causes undefined behavior"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compilation error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The value is ignored"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102935,
+      "Explanation": "Returning a value from a void function causes a compilation error, since such functions cannot return values.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Examine the function declaration:<br/>int* findMax(int [], int);<br/>Which is an accurate description of what this function returns?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "An integer"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An array"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A pointer to an integer"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A memory address"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102936,
+      "Explanation": "The function findMax returns a pointer to an integer, as indicated by the return type &#39;int*&#39;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the following function return when passed 0 as an argument?<br/>float selector(int choice) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;if(choice) return 10.5;<br/>&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "10.5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0.0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Compile-time error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Undefined behavior"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102937,
+      "Explanation": "Returning without a value in a non-void function causes a compile-time error in C.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these is not a valid return type for a C function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "void"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "string"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "float"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102938,
+      "Explanation": "C does not support a return type of string natively. Strings are typically represented as char arrays or char pointers.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the use of function?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Helps to avoid repeating a set of statements many times."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Enhances the logical clarity of the program."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Makes the debugging task easier."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 73621,
+      "Explanation": "&nbsp;All of the mentioned are uses of function.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is used to send a value back from a function?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "break"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "return&nbsp;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "continue&nbsp;"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "goto"
+        },
+        {
+          "OptionId": "E",
+          "OptionText": "Option E"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102763,
+      "Explanation": "<span id=\"explanation102763\" style=\"color:blue\">Return statement in the function takes te control back to the calling function.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "void fun(int a)<br>{<br>&nbsp; &nbsp; a = a + 10;<br>}<br>int main() {<br>&nbsp; &nbsp; int x = 5;<br>&nbsp; &nbsp; fun(x);<br>&nbsp; &nbsp; printf(\"%d\", x);<br>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "15"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Undefined"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102769,
+      "Explanation": "<span id=\"explanation102769\" style=\"color:blue\"><span id=\"explanation102769\" style=\"color:blue\">Pass by value</span></span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following function declarations is correct?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "int fun(a, b);"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "int fun(int, int);"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "fun(int a, int b);"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "declare int fun(int a, int b);"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102770,
+      "Explanation": "<span id=\"explanation102770\" style=\"color:blue\"><span id=\"explanation102770\" style=\"color:blue\">B option gives correct syntax.</span></span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about static variables inside functions?&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They are destroyed when function exits"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They keep their value between function calls"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They cannot be modified"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They must be global"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 1,
+      "UniqueNodeId": 1214,
+      "QuestionTypeId": 0,
+      "QuestionId": 102771,
+      "Explanation": "<span id=\"explanation102771\" style=\"color:blue\"><span id=\"explanation102771\" style=\"color:blue\">Static is a storage class and these variables retain the value between the fuction calls. They are initialized only once.</span></span>",
+      "Answer": "B",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

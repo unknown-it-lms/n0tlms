@@ -1,0 +1,1536 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is the result of len({'a':1, 'b':2, 'c':3})?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "0"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92764,
+      "Explanation": "The len() function returns the number of keys in a dictionary, which in this case are 3.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What gets printed?<br>confusion = {}<br>confusion[1] = 1<br>confusion['1'] = 2<br>confusion[1] += 1<br>sum = 0<br>for k in confusion:<br>&nbsp;&nbsp;&nbsp; sum += confusion[k]<br><br>print(sum)<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "4"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 70634,
+      "Explanation": "Note that keys to a dictionary can be mixed between strings and integers&nbsp; and they represent different keys. using for loop we are adding values in dictionary in sum variable.<br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What gets printed?<br>boxes = {}<br>jars = {}<br>crates = {}<br>boxes['cereal'] = 1<br>boxes['candy'] = 2<br>jars['honey'] = 4<br>crates['boxes'] = boxes<br>crates['jars'] = jars<br>print(len(crates[boxes])) <br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "4"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An exception is thrown"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 70635,
+      "Explanation": "Keys can only be immutable types, so a dictionary can not be used as a key.<br>&nbsp;In the print statement the dictionary is used as the key instead of the string &apos;boxes&apos;.<br>print(len(crates[boxes]))",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What gets printed?<br>numberGames = {}<br>numberGames[(1,2,4)] = 8<br>numberGames[(4,2,1)] = 10<br>numberGames[(1,2)] = 12<br><br>sum = 0<br>for k in numberGames:<br>&nbsp;&nbsp;&nbsp; sum += numberGames[k]<br><br>print(len(numberGames) + sum)",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "8"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Error<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "24"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "33"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 70636,
+      "Explanation": "&nbsp;Tuples can be used for keys into dictionary.&nbsp; The tuples can have mixed length<br>&nbsp;and the order of the items in the tuple is considered when comparing the equality of the keys.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What gets printed?<br>foo = {1:'1', 2:'2', 3:'3'}<br>del foo[1]<br>foo[1] = '10'<br>del foo[2]<br>print(len(foo)) <br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An exception is thrown <br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 70638,
+      "Explanation": "The del function is used to remove key value pairs from a dictionary. Here key 1 is deleted but again inserted with another value.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What gets printed?<br>kvps = { '1' : 1, '2' : 2 , '3' : 3, '4' : 4, '5' : 5}<br>newData = { '1' : 10, '3' : 30 } <br>kvps.update(newData)<br>x = sum(kvps.values()) <br>print(x)<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "15"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "51"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "150"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An exception is thrown"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 70650,
+      "Explanation": "The update method of dictionary will update the values that have the same keys as the newData with newData&apos;s values. and sum function will do the sum of all values present in dictionary.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is correct with respect to above Python code?<br>d={\"a\":3,\"b\":7}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "a dictionary d is created."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "a and b are the keys of dictionary d."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3 and 7 are the values of dictionary d."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 81391,
+      "Explanation": "Dictionaries are used to store data values in key:value pairs.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which one of the following is correct?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "In python, a dictionary can have two same keys with different values.<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "In python, a dictionary can have two same values with different keys<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "In python, a dictionary can have two same keys or same values but cannot have two same key-value pair<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "In python, a dictionary can neither have two same keys nor two same values.<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 81392,
+      "Explanation": "In python, a dictionary can have two same values with different keys<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of above Python code?<br>d1={\"abc\":5,\"def\":6,\"ghi\":7}<br>print(d1[0])<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "abc"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "{\"abc\":5}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 81393,
+      "Explanation": "The above code will contain an error. Because 0 is not a key . abc, def and ghi are keys to the dictionary.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will the above Python code do?<br><br>dict={\"Phy\":94,\"Che\":70,\"Bio\":82,\"Eng\":95}<br>dict.update({\"Che\":72,\"Bio\":80})<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will create new dictionary as dict={\"Che\":72,\"Bio\":80} and old dict will be deleted."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It will throw an error as dictionary cannot be updated."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will simply update the dictionary as dict={\"Phy\":94,\"Che\":72,\"Bio\":80,\"Eng\":95}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It will not throw any error but it will not do any changes in dict"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 81394,
+      "Explanation": "It will simply update the dictionary as dict={\"Phy\":94,\"Che\":72,\"Bio\":80,\"Eng\":95}",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;What will be the result of above Python code?<br><br>dict={\"Joey\":1,\"Rachel\":2}<br>dict.update({\"Phoebe\":2})<br>&nbsp;print(dict)<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "{\"Joey\":1,\"Rachel\":2,\"Phoebe\":2}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{\"Joey\":1,\"Rachel\":2}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "{\"Joey\":1,\"Phoebe\":2}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 81395,
+      "Explanation": "It will simply print the dictionary as dict={\"Joey\":1,\"Rachel\":2,\"Phoebe\":2}",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is False regarding dictionary in Python?<br><br>dict={\"qwe\":1,\"pqr\":2}<br>dict.update({\"lll\":2})<br>print(dict)<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Values of a dictionary can be string,integers or combination of both."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Keys of a dictionary can be string,integers or combination of both"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The value of a dictionary can be accessed with the help of indices."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 81396,
+      "Explanation": "The value of a dictionary can be accessed with the help of indices is False regarding dictionary in Python. we can access using keys only.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following will delete key_value pair for key=\"tiger\" in dictionary?<br><br>dic={\"lion\":\"wild\",\"tiger\":\"wild\",\"cat\":\"domestic\",\"dog\":\"domestic\"}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "del dic[\"tiger\"]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "dic[\"tiger\"].delete()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "delete(dic.[\"tiger\"])"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "del(dic.[\"tiger\"])"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 81397,
+      "Explanation": "del dic[\"tiger\"] will delete key_value pair for key=\"tiger\" from dictionary.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following will give error?<br>Suppose dict1={\"a\":1,\"b\":2,\"c\":3}<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "print(len(dict1))"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "print(dict1.get(\"b\"))"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "dict1[\"a\"]=5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of these."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 81398,
+      "Explanation": "All the above statements are true and do not give any errors.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following Python codes will give same output if<br>dict={\"diary\":1,\"book\":3,\"novel\":5}<br>and<br>expected output is :<br>dict={\"diary\":1,\"novel\":5}<br><br>(i) dict.pop(\"book\")<br>(ii) del dict[\"book\"]<br>(iii) dict.update({\"diary\":1,\"novel\":5})",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "i, ii, iii"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "i, ii"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "i, iii"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ii, iii"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 81399,
+      "Explanation": "del dict[\"book\"] and dict.pop(\"book\") Python codes will give same expected&nbsp; output.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the following Python code?<br>dict1={\"a\":10,\"b\":2,\"c\":3}<br>str1=\"\"<br>for i in dict1:<br>&nbsp;&nbsp;&nbsp; str1=str1+str(dict1[i])+\" \"<br>&nbsp;&nbsp;&nbsp; str2=str1[:-1]<br>print(str2[::-1])<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "3, 2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3, 2, 10"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3 2 01"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 81400,
+      "Explanation": "Value of str1 in Iteration&nbsp; 1: 10<br>Value of str2 in Iteration&nbsp; 1 : 10<br>Value of str1 in Iteration&nbsp; 2 : 10 2<br>Value of str2 in Iteration&nbsp; 2 : 10 2<br>Value of str1 in Iteration&nbsp; 3 : 10 2 3<br>Value of str2 in Iteration&nbsp; 3 : 10 2 3<br>then we are printing reverse of str2 i.e&nbsp; 3 2 01<br>Note: Here  str2=str1[:-1]&nbsp; will trim last space added in str1.<br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Keys of dictionary must be _______________&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "antique"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "unique"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "mutable"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "integers"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 84079,
+      "Explanation": "Keys of dictionary must be unique .",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Dictionaries in python are&nbsp;&nbsp;&nbsp;&nbsp; _________________&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Mutable data type"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Non-Mutable data type"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Mapping data type"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Both a and c"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 84080,
+      "Explanation": "Both a and c are correct . Dictionaries are Mutable&nbsp; and Mapping data type.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is used to delete an element from Dictionary?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "pop( )"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "delete ()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "remove ()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 84081,
+      "Explanation": "The pop() method removes the specified item from the dictionary.<br>The value of the removed item is the return value of the pop() method",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can we repeat the values of Key in Dictionary?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Values can be repeated."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "key value pair can be repeated."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Values never be repeated."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 84082,
+      "Explanation": "Values can be repeated in Dictionary.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "clear() method in dictionary&nbsp; is used to",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Delete the structure of dictionary."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Delete all elements from dictionary."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Delete all elements along with structure of dictionary."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 84083,
+      "Explanation": "The clear() method removes all items from the dictionary.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main feature of a Python dictionary?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A list of key-value pairs"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Ordered collection"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Mutable sequence"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A set of unique items"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92936,
+      "Explanation": "A Python dictionary is primarily a collection of key-value pairs.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you create an empty dictionary in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "{}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "set()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92937,
+      "Explanation": "An empty dictionary is represented by a pair of curly braces: {}.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method removes a key-value pair from a dictionary?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "remove()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "discard()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "delete()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "pop()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92938,
+      "Explanation": "The pop() method removes the specified key and returns the corresponding value.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you access the value associated with 'key1' in a dictionary 'dict1'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "dict1.key1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "dict1[key 1]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "dict1['key1']"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "dict1['key1']=value"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92939,
+      "Explanation": "<span id=\"explanation92939\" style=\"color:blue\"><span id=\"explanation92939\" style=\"color:blue\">Dictionary values are accessed using keys enclosed in square brackets with quotes (if string).</span></span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will dict.get('key', 'default') return if 'key' does not exist?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "raises KeyError"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "None"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "'key'"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "'default'"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92940,
+      "Explanation": "<span id=\"explanation92940\" style=\"color:blue\"><span id=\"explanation92940\" style=\"color:blue\">The get() method returns a specified default value if the key is not present in the dictionary. It returns None if Default value does not mentioned in get method.</span></span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What method would you use to obtain all the keys of a dictionary?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "keys()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "values()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "items()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "allKeys()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92941,
+      "Explanation": "The keys() method returns a view object that shows a list of all the keys in the dictionary.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method would you use to combine two dictionaries?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "update()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "merge()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "combine()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "add()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92942,
+      "Explanation": "The update() method updates the dictionary with the key-value pairs from another dictionary.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operator would you use to check for the existence of a key in a dictionary?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "=="
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "in"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "exists()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "is"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92943,
+      "Explanation": "The &#39;in&#39; operator is used to check if a key exists in a dictionary.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you remove all items from a dictionary?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "clear()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "del()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "removeAll()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "erase()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92944,
+      "Explanation": "The clear() method removes all items from a dictionary.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will the expression len(my_dict) return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Number of keys"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Number of values"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Number of key-value pairs"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92945,
+      "Explanation": "len() returns the number of key-value pairs in the dictionary.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the method my_dict.items()?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "All keys"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "All values"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Key-value pair tuples"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Indexed keys"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92946,
+      "Explanation": "The items() method returns a view object that displays a list of dictionary&#39;s key-value pair tuples.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method returns a new view of the values in the dictionary?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "keys()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "view()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "values()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "items()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92947,
+      "Explanation": "The values() method returns a new view of the dictionary&#39;s values.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Is it possible to use any mutable type as a dictionary key?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only lists"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only other dictionaries"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92948,
+      "Explanation": "Dictionary keys must be immutable types like strings, numbers, or tuples.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if you use a non-existent key to access a dictionary?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Returns None"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Raises a KeyError"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Returns False"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Returns an empty dictionary"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92949,
+      "Explanation": "Accessing a non-existent key directly will raise a KeyError.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How are dictionaries different from lists?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Dictionaries are ordered"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Lists are unordered"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Dictionaries keep order"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Dictionaries store key-value pairs"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92950,
+      "Explanation": "Dictionaries differ by storing data in key-value pairs, unlike lists which store items in sequence.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements will update the value of an existing key 'a' in dictionary 'd'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "a = new_value"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "d['a'] = new_value"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "update('a': new_value)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "add('a': new_value)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92951,
+      "Explanation": "<span id=\"explanation92951\" style=\"color:blue\">To update a value for an existing key, use d[key] = new_value.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you iterate through all keys in a dictionary named &#39;data&#39;?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "for k in data"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "while k in data"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "for k, v in data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "while k, v in data.items()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92952,
+      "Explanation": "Using a for loop allows iteration over all keys when you use &#39;for k in data&#39;.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If dict1 = {'A': 10, 'B': 20} and dict2 = {'B': 30, 'C': 40}, what is the result of dict1.update(dict2)?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "{'A': 10, 'B': 20, 'C': 40}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{'B': 50, 'A': 10}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "{'A': 10, 'B': 30, 'C': 40}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "{'A': 30, 'C': 40}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92953,
+      "Explanation": "<span id=\"explanation92953\" style=\"color:blue\">The update method overwrites the existing value of &apos;B&apos; and adds the (&apos;C&apos;, 40) key-value pair.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is printed by the code print(dict(zip(['one', 'two', 'three'], [1, 2, 3])))?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "{'one': 1, 'two': 2, 'three': 3}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "{1: 'one', 2: 'two', 3: 'three'}"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "{'one': 'one', 'two': 'two', 'three': 'three'}"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "{'one': 1, 'two': 2}"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92954,
+      "Explanation": "<span id=\"explanation92954\" style=\"color:blue\">The zip function pairs elements from the two lists to form key-value pairs in the dictionary.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method gives a new dictionary with keys but without values?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "keys_only()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "fromkeys()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "getKeys()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "dictkeys()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92955,
+      "Explanation": "The fromkeys method creates a new dictionary with keys from a given sequence, and all values set to a specified value (default is None).",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of 'len({})'?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "0"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92956,
+      "Explanation": "<span id=\"explanation92956\" style=\"color:blue\">An empty dictionary has no key-value pairs, so its length is 0.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a 'view object' in the context of Python dictionaries?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A reference to a dictionary"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An updated dictionary"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A list representation of a dictionary"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A dynamic view of dictionary's keys/values/items"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92957,
+      "Explanation": "<span id=\"explanation92957\" style=\"color:blue\">View objects are a dynamic view into the dictionary&apos;s keys, values, and items.</span>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Python 3.7 and later, what can be said about the order of items in dictionaries?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Unordered"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Guaranteed order"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Random order"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Based on hash values"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92958,
+      "Explanation": "Since Python 3.7, dictionaries maintain insertion order as an implementation detail.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the expression &#39;dict1.copy()&#39; do?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Copies a dictionary to another variable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Creates a reference to the same dictionary"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Creates a shallow copy"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Creates a deep copy"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92959,
+      "Explanation": "The copy method returns a shallow copy of the dictionary.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which method is called internally when using &#39;in&#39; keyword to check presence of key in dictionary?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "__getitem__()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "__setitem__()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "__contains__()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "__iter__()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92960,
+      "Explanation": "The in keyword internally calls the __contains__ method to check for key presence.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the result of performing set intersection on dict.keys() and dict2.keys()?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Combines keys of both"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "All common keys"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "None"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All keys from the first dictionary"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92961,
+      "Explanation": "Intersecting two dictionaries&#39; keys returns a set of common keys.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens if the same key is entered twice in a dictionary declaration?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Keeps both key-value pairs"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Raises an error"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Retains the last value"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Retains the first value"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92962,
+      "Explanation": "When a key appears multiple times, its last assigned value overwrites the previous ones.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the expression 'dict1.setdefault(key, default)' return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Raises KeyError"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The updated dictionary"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "None"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Value of key if present, else default"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92963,
+      "Explanation": "<span id=\"explanation92963\" style=\"color:blue\">The setdefault method returns the value if the key is in the dictionary, else it inserts key with a specified value.<br></span><span style=\"color:#0000ff;\"></span><span style=\"color:#0000ff;\">This expression checks whether key exists in the dictionary dict1. If it does, it simply returns the current value for that key. If not, it adds the key with the value default and returns that default.</span><span style=\"color:#0000ff;\"></span><br>",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can dictionary values be other dictionaries?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only in Python 2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only with immutable inner dictionaries"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92964,
+      "Explanation": "Dictionaries can store anything as values including other dictionaries, making nested dictionaries possible.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the expression 'dict {'key': value}.values()' return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "['key']"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "[value]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "dict_values([value])"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "dict_keys(['key'])"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 2056,
+      "QuestionTypeId": 0,
+      "QuestionId": 92965,
+      "Explanation": "The values() method returns a view object displaying all values in the dictionary.<br>C. dict_values([value]) \u2013 Correct! This is the actual type and format returned by .values().",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

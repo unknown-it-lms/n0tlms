@@ -1,0 +1,1026 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "How many types of indexes are there in sql server?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "4"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 86252,
+      "Explanation": "<span id=\"explanation86252\">Only 2 types of indexes are available in MySql.&nbsp; Clustered index and Unclustered index.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Which one is true about clustered index?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Clustered index is not associated with table"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Clustered index is built by default on unique key columns"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Clustered index is built when any constraint is applied on the table.<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the above<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 86253,
+      "Explanation": "Index is used for faster searching. <br>Clustered index is created by system if PK constraint or a unique constraint is used while table creation.<br>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is used to optimize search?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "View"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Group by Clause"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Index"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Sort<br>"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 81221,
+      "Explanation": "Index is used to optimize search .",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a benefit of using an index in a MySQL database?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Increases disk storage needs"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Slows down data retrieval"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Improves query performance"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Prevents data corruption"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92026,
+      "Explanation": "Indexes improve the performance of database queries by allowing faster data retrieval at the cost of additional disk storage.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Your developers asked you to create an index on the PROD_ID column of the SALES_HISTORY table, which has 100 million rows. The table has approximately 2 million rows of new data loaded on the first day of every month. For the remainder of the month, the table is only queried. Most reports are generated according to the PROD_ID, which has 96 distinct values. Which type of index would be appropriate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Bitmap"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Reverse key"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Unique B-Tree"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Normal B-Tree"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 64994,
+      "Explanation": "Bitmap Index is depend on Cardinality. Cardinality =Number of Distinct Values/Total Number of values. If Your cardinality is 1 then use B-Tree index otherwise use Bitmap.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "For a table with multiple indexes, what will determine&nbsp; the&nbsp; index&nbsp; used?<br>A. Columns chosen in the select statement.<br>B. Conditions applied using Where clause.<br>C. Columns participating in order by clause.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only B"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A and B"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "B and C"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A, B and C"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 65083,
+      "Explanation": "The&nbsp; where&nbsp; conditions determines which index will be used for table.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the wrong statement:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Indexes can enforce uniqueness in collection"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "CRUD stands for create, read, update, and delete"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CRUD application is the most simplest application"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Index tables consume additional space on the disk."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 65282,
+      "Explanation": "<span id=\"explanation65282\">Indexes may also enforce uniqueness, store objects in a geospatial representation, and facilitate text search.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is used to remove indexes on tables?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DROP INDEX"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DELETE INDEX"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "REMOVE INDEX"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "FLUSH INDEX"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 76872,
+      "Explanation": "MySQL/Oracle&nbsp; provides statements to change the structure of tables. To add or remove the indexes on the existing database tables, the CREATE INDEX and DROP INDEX&nbsp; statements are used.<br>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does 'clustering' mean in the context of database storage?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Grouping unrelated tables together."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Storing frequently queried rows together."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Backing up data to a remote server."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Distributing data across multiple databases."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92720,
+      "Explanation": "Clustering in databases involves storing rows of related data close together on disk to improve read performance for related queries.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of database operation benefits most from index-organized tables?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Batch updates"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Random access writes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Full table scans"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Primary key lookups"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92722,
+      "Explanation": "Index-organized tables store data according to the index, allowing efficient primary key lookups as the table is stored in the order of the index.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the main purpose of indexing in a database?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To reduce storage space."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To increase security."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To speed up search queries."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To ensure data consistency."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92714,
+      "Explanation": "Indexing in databases is used primarily to speed up the retrieval of rows by using a pointer system to access data quickly.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a characteristic of a B-Tree index?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It allows for efficient range queries."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It is mainly used for concurrency control."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It is ideal for hashing operations."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It is only suitable for read-heavy databases."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92715,
+      "Explanation": "B-Trees are balanced tree data structures that allow for efficient sorting, insertion, deletion, and especially range queries.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of indexing in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To reduce storage size"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To enforce foreign key constraints"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To quickly locate rows/data"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To restrict user access"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92442,
+      "Explanation": "Indexing is used to improve the speed of data retrieval operations by providing a quick way to look up rows based on the indexed columns.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a type of index in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "FULLTEXT"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "BTREE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "HASH"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CLOTH"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92443,
+      "Explanation": "FULLTEXT, BTREE, and HASH are all types of indexes available in MySQL, while CLOTH is not.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which situation would you use a FULLTEXT index?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When performing mathematical calculations"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When filtering by numerical ranges"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When searching for phrases in text columns"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When joining tables"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92444,
+      "Explanation": "FULLTEXT indexes are designed for searching text-based data, making it efficient to search for phrases or keywords within text columns.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which command is used to create an index on a column in an existing MySQL table?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "ALTER TABLE table_name CREATE INDEX column_name ON"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "CREATE INDEX index_name ON table_name (column_name)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "ALTER INDEX index_name ON table_name (column_name)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ADD INDEX index_name ON table_name (column_name)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92445,
+      "Explanation": "The correct syntax to create an index on an existing table is &apos;CREATE INDEX index_name ON table_name (column_name)&apos;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the impact of adding an index on a column in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Decreases storage requirements"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Increases speed of inserts"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Increases speed of updates"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Increases query performance for reads"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92446,
+      "Explanation": "Indexes increase query performance by allowing faster data retrieval, although they might slow down write operations like inserts and updates due to additional maintenance required for the index.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following SQL commands removes an index in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "DROP INDEX index_name ON table_name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "DELETE INDEX index_name FROM table_name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "REMOVE INDEX index_name ON table_name"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ALTER TABLE table_name REMOVE INDEX index_name"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92447,
+      "Explanation": "The &apos;DROP INDEX index_name ON table_name&apos; command is used to remove an existing index from a table in MySQL.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which storage engine supports FULLTEXT indexes in MySQL?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "InnoDB"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "MyISAM"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "CSV"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "ARCHIVE"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92448,
+      "Explanation": "Both InnoDB and MyISAM storage engines support FULLTEXT indexes, but historically, MyISAM was the first to support it. InnoDB started supporting FULLTEXT indexes from MySQL 5.6.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which index type is most efficient for columns with a high degree of uniqueness?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "BTREE"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "UNIQUE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SPATIAL"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "HASH"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92449,
+      "Explanation": "HASH indexes are particularly efficient for lookups where the key is highly unique, as it allows for nearly constant-time complexity for searches.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "For which type of query is an index likely to improve performance?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT * FROM table"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SELECT column FROM table WHERE column LIKE '%pattern%'"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SELECT column FROM table WHERE column = value"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "SELECT COUNT(*) FROM table"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92450,
+      "Explanation": "An index is most effective when used with equality conditions, such as &apos;WHERE column = value&apos;, as it allows direct access to the row.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When is it NOT beneficial to use an index?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When columns have many NULL values"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When the table is small"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When the column has low cardinality"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the above"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92451,
+      "Explanation": "Indexes are less beneficial when the table is small, when columns contain many NULL values, or when there&apos;s low cardinality (few unique values) because they provide limited performance improvement in these scenarios.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which MySQL function can you use to check the details of indexes on a table?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SHOW COLUMNS FROM table_name"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "SHOW INDEX FROM table_name"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "SHOW TABLES LIKE 'index%'"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "DESCRIBE table_name"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92452,
+      "Explanation": "The &apos;SHOW INDEX FROM table_name&apos; statement provides details about the indexes present on the specified table.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a consequence of having too many indexes on a table?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Reduced query performance for SELECT statements"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Increased performance for INSERT, UPDATE, DELETE operations"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Increased storage requirements and slower write operations"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No effect on performance"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92453,
+      "Explanation": "Having too many indexes increases storage requirements and can slow down write operations due to the additional maintenance required for each index.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which clause is used to define a unique index at the column level in a CREATE TABLE statement?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "PRIMARY KEY"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "UNIQUE"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "INDEX"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "CONSTRAINT"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92454,
+      "Explanation": "The UNIQUE clause is used to create a unique index, ensuring that all values in the indexed column are distinct.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What important role does the PRIMARY KEY index serve in a MySQL table?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Allows duplicate values in a column"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Ensures columns are indexed alphabetically"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Uniquely identifies each row in the table"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Automatically encrypts data"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92455,
+      "Explanation": "The PRIMARY KEY index ensures that each row in the table can be uniquely identified, providing a unique identifier for each row.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which type of join operation directly benefits from having indexes on the join columns?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "CROSS JOIN"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "NATURAL JOIN"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "INNER JOIN"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "FULL JOIN"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92456,
+      "Explanation": "INNER JOIN operations can benefit from having indexes on the join columns, as these indexes speed up matching rows in the joined tables.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the context of indexes, what is cardinality?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The order of rows returned by a query"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The maximum number of rows a database can hold"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The number of unique values in an indexed column"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A method for enforcing data integrity"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92457,
+      "Explanation": "Cardinality refers to the number of unique values present in a column. Higher cardinality means more uniqueness, which typically improves index performance.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operation can be hindered if an inappropriate index strategy is used?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "SELECT statements involving aggregation"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "UPDATE and DELETE operations"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Table creation operations"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Command-line queries"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92458,
+      "Explanation": "UPDATE and DELETE operations can be hindered by inappropriate indexing strategies, because too many indexes require additional resources to maintain.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does MySQL use indexes to improve query performance?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By rewriting queries to be more optimal"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By creating a temporary table of all possible results"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By allowing a binary search tree traversal for key lookups"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By reducing the index file size proportionally"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92460,
+      "Explanation": "Indexes allow efficient search operations by enabling MySQL to use a binary search tree traversal, reducing the number of comparisons needed to find a specific row.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is true about covering indexes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They can only be created on TEXT columns"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They must always include all columns used in the query"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They improve performance by containing all the data needed for the query"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They are only relevant for INSERT queries"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92461,
+      "Explanation": "A covering index contains all the columns needed to satisfy a particular query, so MySQL can perform the query without accessing the table at all, speeding up performance.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What specific function does a composite index serve?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Indexes multiple columns as part of a single index structure"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only indexes primary keys"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Creates a temporary index for each query"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Prevents any duplicate entries in the database"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92463,
+      "Explanation": "A composite index involves indexing multiple columns together in a single index, improving query performance for composite keys.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When should you avoid creating an index on a column?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When the column is frequently searched"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When the column has high cardinality"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When the column is part of a foreign key"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When the column is rarely used in queries"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92465,
+      "Explanation": "Indexes should be avoided on columns that are rarely used in queries because they will not benefit query performance significantly, while still incurring maintenance overhead.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following can help maintain the performance of indexed tables?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Regularly dropping and recreating all indexes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Defragmenting tables using the OPTIMIZE TABLE command"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Adding duplicate indexes for redundancy"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Avoiding constraints on indexed columns"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 92,
+      "UniqueNodeId": 6542,
+      "QuestionTypeId": 0,
+      "QuestionId": 92466,
+      "Explanation": "The &apos;OPTIMIZE TABLE&apos; command can help defragment tables and reclaim unused space, which can help maintain the performance of tables that include indexes.",
+      "Answer": "B",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

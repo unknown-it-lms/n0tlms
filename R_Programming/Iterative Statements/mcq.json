@@ -1,0 +1,1896 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is the basic syntax of a for loop in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "for i from vector: { <br>statements<br> }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "for (i in vector) { <br>statements<br> }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "while (i in vector) { <br>statements<br> }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "repeat {<br> statements <br>} until (i in vector)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100569,
+      "Explanation": "<span id=\"explanation100569\" style=\"color:blue\">The correct syntax of a for loop in R is &apos;for (i in vector) { <br>statements <br>}&apos;.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following can the &#39;i&#39; in &#39;for (i in vector)&#39; represent?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Only numeric sequences"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only character strings"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Any element type within the vector"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only indices"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100570,
+      "Explanation": "&#39;i&#39; can represent any element type within the vector, including numbers, strings, or other data types.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you immediately exit a for loop cycle in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use the &#39;stop&#39; function"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use the &#39;exit&#39; command"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use the &#39;break&#39; statement"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use the &#39;return&#39; function"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100571,
+      "Explanation": "To exit a for loop immediately, you can use the &#39;break&#39; statement.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What function would allow you to skip the current iteration in a for loop?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "next"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "skip"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "break"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "continue"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100572,
+      "Explanation": "The &#39;next&#39; statement can be used to skip the current iteration in a for loop.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the loop:<br>for(i in 1:3) {<br>&nbsp;&nbsp;&nbsp;&nbsp;print(i^2)<br>}?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1 4 9"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1 2 3"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2 4 6"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1^2 2^2 3^2"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100573,
+      "Explanation": "<span id=\"explanation100573\" style=\"color:blue\">The loop prints the square of each number from 1 to 3, resulting in &apos;1 4 9&apos;.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement correctly completes this loop: 'for(i in 1:5) { ___ }' to print only even numbers?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "if(i %% 2 == 0) <br>print(i)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "if(i %% 2 != 0) <br>next <br>print(i)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "if(i %% 2 == 1) <br>break"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "print(i) <br>if(i %% 2 == 0)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100574,
+      "Explanation": "<span id=\"explanation100574\" style=\"color:blue\">The condition &apos;if(i %% 2 == 0)&apos; checks for even numbers and then prints them.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How does R handle nested for loops?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "R does not support nested for loops"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "R can nest for loops with different loop variables"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "R requires explicit loop indices for nesting"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "R automatically optimizes nested loops for efficiency"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100575,
+      "Explanation": "R can handle nested for loops with separate loop variables for each level of nesting.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following loops will correctly iterate over a list?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "for (i in 1:length(list_object)) { <br>print(list_object[i]) <br>}"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "for (i in list_object) { print(i) }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "for (i across list_object) { print(i) }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "for (each i in list_object) { print(i) }"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100576,
+      "Explanation": "<span id=\"explanation100576\" style=\"color:blue\">Using indices from 1 to length of the list allows iterating over list elements using &apos;for (i in 1:length(list_object))&apos;.<br></span><p data-start=\"1663\" data-end=\"1782\"><span style=\"color:#0000ff;\">Although for (i in 1:length(list_object)) is technically correct, better practice is:</span></p><pre data-start=\"1785\" data-end=\"1865\"><span style=\"color:#0000ff;\">for (i in seq_along(list_object)) { <br>print(list_object[[i]])<br> }</span></pre>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if a for loop is given an empty vector in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The loop will throw an error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The loop will execute once for a NULL value"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The loop will not execute"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The loop will run indefinitely"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100577,
+      "Explanation": "If given an empty vector, a for loop simply does not execute as there are no elements to iterate over.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In R, what output does the loop &#39;for(i in 1:3) { print(&#39;Rocks&#39;) }&#39; generate?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Rocks Rocks Rocks"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "RocksRocksRocks"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It depends on vector content"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Syntax error due to quotation marks"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100578,
+      "Explanation": "The statement inside the for loop repeats 3 times, printing &#39;Rocks&#39; each time.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following correctly describes the general syntax for a while loop in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "while (condition) { commands }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "while (condition) do { commands }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "loop while (condition) { commands }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "do while (condition) { commands }"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100579,
+      "Explanation": "In R, the syntax for a while loop starts with &#39;while&#39;, followed by a condition in parentheses, and the loop body enclosed in curly braces.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a while loop, what will happen if the condition never becomes FALSE?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The loop will execute once and stop."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The loop will not execute at all."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The loop will run indefinitely."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The loop will cause a syntax error."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100580,
+      "Explanation": "If the while loop condition always evaluates to TRUE and does not change to FALSE, the loop will run indefinitely, potentially resulting in an infinite loop.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following R code snippet? <br/>R<br/>x &lt;- 10<br/>while (x &gt; 8) {<br/>  print(x)<br/>  x &lt;- x - 1<br/>}<br/>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "9, 8"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "10, 9, 8"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "10, 9"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "10, 9, 8, 7"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100581,
+      "Explanation": "The loop starts with x as 10 and decrements x by 1 each time. When x becomes 8, the condition (x &gt; 8) is FALSE, so the loop stops, printing 10 and 9.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is FALSE about while loops in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The loop evaluates the condition before executing the body."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The initial execution may be skipped if the condition is FALSE."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The loop can be used for conditional iteration."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The body of the loop always executes at least once."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100582,
+      "Explanation": "In a while loop, if the condition is initially FALSE, the body of the loop is not executed at all, which makes statement D false.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you break out of a while loop in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Use the exit keyword"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Set the condition to NULL"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use the break statement"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use the stop keyword"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100583,
+      "Explanation": "The &#39;break&#39; statement is used to exit a loop prematurely, regardless of the condition being TRUE or FALSE.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of using &#39;next&#39; in a while loop in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To exit the loop"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To skip the rest of the code in the loop for the current iteration"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To terminate the program"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To evaluate the condition again without executing the loop body"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100584,
+      "Explanation": "The &#39;next&#39; statement is used to skip the remaining code in the loop for the current iteration and move directly to the next iteration of the loop.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of these scenarios is most appropriate for using a while loop in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When you know the exact number of iterations in advance"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When you need to execute a set of operations a specific number of times"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When the number of iterations depends on a condition evaluated during execution"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When you need to iterate over elements in a vector"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100585,
+      "Explanation": "While loops are suitable for situations where the number of iterations is not known in advance and depends on a condition evaluated during execution.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following will cause an infinite loop when included in a while loop condition?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "while (TRUE) { ... }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "while (x == y) { ... }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "while (x &gt; 0) { ... }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "while (x != 0) { ... }"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100586,
+      "Explanation": "Using &#39;while (TRUE)&#39; causes an infinite loop because the condition is always TRUE, and won&#39;t terminate on its own unless a break statement is used.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following will correctly terminate a while loop that is executing continuously due to a constant TRUE condition?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "next"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "break"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "continue"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "return"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100587,
+      "Explanation": "The &#39;break&#39; statement is used to exit a loop when a specific condition is met, thereby terminating an otherwise infinite loop.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary use of a &#39;repeat&#39; loop in R programming?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To execute code a specific number of times"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To execute code based on a condition obtained at the beginning of the loop"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To execute code until a specific condition is met"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To execute code and automatically end after the first iteration"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100588,
+      "Explanation": "The &#39;repeat&#39; loop in R is used to repeatedly execute a block of code until a specific condition is met, typically with a &#39;break&#39; statement inside the loop.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement is typically used to exit a &#39;repeat&#39; loop in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "continue"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "end"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "break"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "stop"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100589,
+      "Explanation": "In a &#39;repeat&#39; loop, the &#39;break&#39; statement is used to exit the loop once the desired condition is fulfilled.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if you forget to include the &#39;break&#39; statement in a &#39;repeat&#39; loop?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The loop will execute once and stop"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The loop will result in an infinite loop"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The code will produce an error"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The loop will execute twice before stopping"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100590,
+      "Explanation": "Without a &#39;break&#39; statement, a &#39;repeat&#39; loop will continue indefinitely, resulting in an infinite loop.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In R, what would the following loop do? repeat { print(&#39;Hello&#39;); break }",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Print &#39;Hello&#39; indefinitely"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Not execute due to incorrect syntax"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Print &#39;Hello&#39; once and terminate"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Output a syntax error"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100591,
+      "Explanation": "The loop prints &#39;Hello&#39; once, then encounters the &#39;break&#39; statement, which terminates the loop.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following scenarios is best suited for using a &#39;repeat&#39; loop in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Executing a block of code a fixed number of times"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Looping through elements of a vector"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Performing an action until a complex condition becomes true"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Iterating over rows in a data frame"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100592,
+      "Explanation": "A &#39;repeat&#39; loop is best for situations where you need to execute a block of code until a certain complex condition is satisfied. The loop&#39;s execution depends on the inclusion of a &#39;break&#39; statement to end the loop.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In R, what will be the output of the nested loop given below? <br/><br/>for(i in 1:3) {<br/>  for(j in 1:2) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;print(i + j)<br/>  }<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "2  3  3  4  4  5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "3  4  4  5  5  6"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2  3  4  5  6  7"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1  2  2  3  3  4"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100593,
+      "Explanation": "The outer loop runs for i=1,2,3 and the inner loop runs for j=1,2. For each pair (i, j), it prints i + j. Thus, the pairs are: (1,1), (1,2), (2,1), (2,2), (3,1), (3,2) resulting in outputs: 1+1=2, 1+2=3, 2+1=3, 2+2=4, 3+1=4, 3+2=5.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of using nested loops in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To increase readability by structuring the code"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To iterate over multiple dimensions or comprehensively process a matrix or data frame"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To make code execution faster"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To reduce the syntax errors"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100594,
+      "Explanation": "Nested loops help iterate over multiple dimensions such as matrices or data frames and are essential for tasks that require multi-level iterations.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider the following nested loop in R:<br/><br/>for(i in 1:2) {<br/>  for(j in 3:4) {<br/>&nbsp;&nbsp;&nbsp;&nbsp;cat(i, j, &#39;\\n&#39;)<br/>  }<br/>}<br/>What will be the output?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1 3<br/>1 4<br/>2 3<br/>2 4<br/>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1 2<br/>3 4<br/>3 4<br/>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "2 3<br/>2 4<br/>1 3<br/>1 4<br/>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1 3, 1 4, 2 3, 2 4"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100595,
+      "Explanation": "The outer loop iterates over i = 1, 2 and the inner loop iterates over j = 3, 4. \u2018cat\u2019 outputs each pair separated by a newline.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In a nested loop structure, which loop runs more frequently and why?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The outer loop, because it dictates the number of repetitions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The inner loop, because it completes all its iterations for each iteration of the outer loop"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Both run the same number of times, as they are nested"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Neither, because the execution count depends on specific conditions"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100596,
+      "Explanation": "The inner loop runs its entire sequence of iterations for each iteration of the outer loop. Thus, it executes more frequently overall.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If you want to break out of an inner loop in R, which statement would you use?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "next"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "exit"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "break"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "stop"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100597,
+      "Explanation": "The &#39;break&#39; statement is used to exit a loop entirely, whether it is an inner or outer loop in R, ending that particular loop execution immediately.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following loop control statements is used to immediately terminate a loop in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "break"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "next"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "skip"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "exit"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100598,
+      "Explanation": "The &#39;break&#39; statement is used to exit a loop immediately in R. It stops the loop execution and controls the program flow to the next statement following the loop.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In R, which statement is used to skip the current iteration of a loop without terminating the loop?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "skip"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "next"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "continue"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "pass"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100599,
+      "Explanation": "The &#39;next&#39; statement is used in R to skip the current iteration of a loop. It proceeds to the next iteration without any further execution of the loop body for the current iteration.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you use loop control to iterate over a sequence of numbers, but skip every 3rd number in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "next if (i %% 3 == 0)"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "continue if (i %% 3 == 0)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "skip if (i %% 3 == 0)"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "break if (i %% 3 == 0)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100600,
+      "Explanation": "The &#39;next&#39; statement in R, combined with a condition like &#39;if (i %% 3 == 0)&#39;, allows you to skip every 3rd iteration within a loop by evaluating the condition and acting accordingly.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will the following code output in R? `for(i in 1:5){ if(i == 3) next; print(i) }`",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1 2 3 4 5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1 2 4 5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "1 2 3 4"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "2 3 4 5"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100601,
+      "Explanation": "The loop iterates over numbers 1 to 5, but the &#39;next&#39; statement causes the loop to skip printing the number 3. Thus, the printed output will be &#39;1 2 4 5&#39;.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of a return statement in a function in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To stop the function execution immediately."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To display the output of the function to the console."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To specify what value should be returned from the function."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To assign a value to a variable inside the function."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100602,
+      "Explanation": "The return statement is used in a function to specify the value that should be returned when the function execution is complete. If not specified, R will return the last evaluated expression.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will the function f() return when it is called in the following code? f &lt;- function() { x &lt;- 5; return(x + 2); x + 3 }",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "7"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "8"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "10"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100603,
+      "Explanation": "The return statement explicitly returns the value of x + 2, which is 7. Any statements after the return statement are not executed.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is TRUE about using return statements in R functions?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A function must always have a return statement."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The return statement can be ignored if the function does not explicitly need to return a value."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Using return at the beginning of a function changes the order of evaluation."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Return statements can return multiple different types of values simultaneously."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100604,
+      "Explanation": "In R, functions do not need to have a return statement; if one is not specified, the function will return the last evaluated expression automatically.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "If a function in R contains multiple return statements, what will be the returned value?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The value from the first return statement."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The value from the last return statement."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The values of all return statements concatenated together."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An error, as multiple return statements are not allowed."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100605,
+      "Explanation": "When a return statement is reached during the execution, the function is terminated and the specified value is returned, hence only the first return statement is executed.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following will correctly return a list with elements &#39;a&#39; and &#39;b&#39; from a function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "return(c(a, b))"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "list(a, b)"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "return(list(a, b))"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "return(a, b)"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100606,
+      "Explanation": "To return a list containing elements &#39;a&#39; and &#39;b&#39;, you must use return(list(a, b)). &#39;list(a, b)&#39; creates the list but does not return it unless wrapped in a return function.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements is used to create a new variable in a data frame in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "add()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "new()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "mutate()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "transform()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100607,
+      "Explanation": "The &#39;mutate()&#39; function from the dplyr package is used to create or modify variables in a data frame. It is specifically designed for transforming data while maintaining the data frame structure.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In R, which statement is typically used to stop the execution of a loop prematurely?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "stop()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "break()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "halt()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "end()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100608,
+      "Explanation": "The &#39;break()&#39; statement is used in R to exit a loop prematurely, stopping the execution at the point where &#39;break&#39; is called.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the correct function for reading a CSV file in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "read.csv()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "read_csv()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "import.csv()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "loadcsv()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100609,
+      "Explanation": "The &#39;read.csv()&#39; function is the base R function for reading comma-separated value (CSV) files into a data frame. It is widely used for data import.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which statement in R is used to apply a function to each element of a list and returns a list of the same length?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "apply()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "sapply()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "lapply()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "mapply()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100610,
+      "Explanation": "The &#39;lapply()&#39; function is used in R to apply a specified function to each element of a list or vector, returning a list of the same length with the results.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In R programming, which statement is used to store data from vectors into a matrix?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "vector()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "as.matrix()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "create_matrix()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "mat()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100611,
+      "Explanation": "The &#39;as.matrix()&#39; function is utilized to convert an object into a matrix. It is commonly used when you need to convert vectors or other objects into a matrix format.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In R, what is the main use of the &#39;break&#39; statement inside a loop?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To exit the entire program"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To skip the current iteration and proceed to the next one"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To exit the loop immediately and proceed with the next statement outside the loop"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To restart the current iteration of the loop"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100612,
+      "Explanation": "The &#39;break&#39; statement in R is used to terminate the loop immediately and transfer control to the next statement following the loop.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will happen if a &#39;break&#39; statement is used in a nested loop in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It will terminate the innermost loop only."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It will terminate all loops at once."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It will cause an error."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It will not affect loop execution."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100613,
+      "Explanation": "In R, using &#39;break&#39; inside nested loops causes only the innermost loop to terminate, and control is passed to the statement following the innermost loop.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which of the following scenarios is it appropriate to use &#39;break&#39; in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "When you want to continue with the next iteration of a loop."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "When you need to run a loop indefinitely."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "When a certain condition is met and you want to exit the loop immediately."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "When you want to pause the execution of the loop temporarily."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100614,
+      "Explanation": "&#39;Break&#39; is used when a specific condition is met in a loop, and the developer has decided to terminate the loop immediately without completing any remaining iterations.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the following code?<br/><br/>for(i in 1:5) {<br/>\tif(i == 3) break<br/>\tprint(i)<br/>}",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "1 2 3 4 5"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "1 2 4 5"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "3 4 5"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "1 2"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100615,
+      "Explanation": "The loop prints the numbers 1 and 2. When &#39;i&#39; becomes 3, the &#39;break&#39; statement is executed, terminating the loop immediately.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about the &#39;break&#39; statement in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The &#39;break&#39; statement always skips the current iteration."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "The &#39;break&#39; statement can only be used in &#39;for&#39; loops."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The &#39;break&#39; statement can be used in both &#39;for&#39; and &#39;while&#39; loops."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The &#39;break&#39; statement restarts the loop from the beginning."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100616,
+      "Explanation": "The &#39;break&#39; statement can be used in both &#39;for&#39; and &#39;while&#39; loops in R to immediately exit the loop when certain conditions are met.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the primary purpose of using a &#39;goto&#39; statement in R programming?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To define variables"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To loop through a sequence"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To transfer control to a labeled point within a function"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To handle exceptions"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100617,
+      "Explanation": "In R, the &#39;goto&#39; statement is used to transfer control to a label within the same function, which can be useful for breaking out of multiple layers of loops or conditionals.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In which of the following contexts is using a &#39;goto&#39; statement generally discouraged in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Defining a recursive function"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Implementing a complex state machine"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Simplifying nested loops for better readability"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Avoiding deeply nested control structures in simple conditional logic"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100618,
+      "Explanation": "Using &#39;goto&#39; for simplifying nested loops can make the code harder to read or maintain, which is why it&#39;s usually discouraged in favor of clear, structured control flow with functions or loops.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a necessary component when using &#39;goto&#39; in R?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Label definition within a loop structure"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A conditional statement to accompany &#39;goto&#39;"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Labels must be defined within the same scope"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "An external package to enable &#39;goto&#39; functionality"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 100619,
+      "Explanation": "In R, labels for &#39;goto&#39; must be defined within the same scope as the &#39;goto&#39; call, ensuring that control transfer is handled correctly.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "&nbsp;Point out the correct statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The next statement causes an exit from the innermost loop that is currently being executed"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "There are two statements that can be used to explicitly control looping"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The break statement immediately causes control to return to the start of the loop"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 75456,
+      "Explanation": "They are break and next.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The syntax of the for loop is :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "for ( $name in vector ) statement1"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "for loop( name in vector ) statement1"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "for ( name in vector ) statement1"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 75460,
+      "Explanation": "For each element in vector the variable name is set to the value of that element and statement1 is evaluated.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "R has ________ statements that provide explicit looping.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "two"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "three"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "four"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 75445,
+      "Explanation": "They are for, while and repeat.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "The syntax of the repeat loop is :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "rep statement"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "repeat statement"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "repeat else"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 75446,
+      "Explanation": "The repeat statement causes repeated evaluation of the body until a break is specifically requested",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following code skips the first 20 iterations&nbsp;in R programming?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "for(i in 1:100) { if(i &lt;= 20) { next } }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "for(i in 1:100) { if(i &lt;= 19) { next } }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "for(i in 1:100) { if(i &lt;= 21) { next } }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 75438,
+      "Explanation": "&nbsp;next is used to skip an iteration of a loop.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the correct statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "The only way to exit a repeat loop is to call break"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Infinite loops should generally be avoided"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Control structures like if, while, and for allow you to control the flow of an R program"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 75439,
+      "Explanation": "Control structures are primarily useful for writing programs; for commandline interactive work.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "_________ initiates an infinite loop right from the start in R programming.<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "never"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "repeat"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "break"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "set"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 75440,
+      "Explanation": "The repeat loop is useful when you want to perform iterative operations until a specific condition is met, allowing for greater control over the loop&apos;s termination. However, it&apos;s essential to ensure that there is a way to exit the loop; otherwise, it can result in an infinite loop. The break statement is commonly used to exit the loop based on a particular condition.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following code snippet stops loop after 20 iterations ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "for(i in 1:100) { print(i) if(i &gt; 20) { break } }"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "for(i in 1:100) { print(i) if(i &gt; 19) { break } }"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "for(i in 1:100) { print(i) if(i &lt; 20) { break } }"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 75441,
+      "Explanation": "break is used to exit a loop immediately, regardless of what iteration the loop may be on.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Point out the wrong statement :",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "for will execute a loop a fixed number of times"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "break will execute a loop while a condition is true"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "if and else tests a condition and acting on it"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 75432,
+      "Explanation": "The if-else structure allows you to test a condition and act on it depending on whether it\u2018s true or false.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "_______ is used to break the execution of a loop.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "next"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "skip"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "break"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 75433,
+      "Explanation": "Control structures allow you to respond to inputs or to features of the data and execute different R expressions accordingly.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following code generate a sequence of integers from 1 to 10 ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "&gt; for(i in 1:9) { + print(i) + } [1]"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&gt; for(i in 0:9) { + print(i) + } [1]"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&gt; for(i in 1:10) { + print(i) + } [1]"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 75434,
+      "Explanation": "In R, for loops take an iterator variable and assign it successive values from a sequence or vector.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following syntax is correct for while loop ?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "while ( statement1 ) statement2"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "while ( statement1 ) else statement2"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "while ( statement1 ) do statement2"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "All of the mentioned"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 28,
+      "UniqueNodeId": 5748,
+      "QuestionTypeId": 0,
+      "QuestionId": 75430,
+      "Explanation": "The while statement is very similar to the repeat statement.",
+      "Answer": "A",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

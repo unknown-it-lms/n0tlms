@@ -1,0 +1,516 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is the primary characteristic of a capped collection in MongoDB?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Supports transactions"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Automatically creates indexes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Has a fixed size and overwrites oldest entries"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Supports sharding"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5649,
+      "QuestionTypeId": 0,
+      "QuestionId": 94413,
+      "Explanation": "Capped collections have a fixed size, and once that size is reached, the oldest documents are overwritten as new ones are added.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a property of a capped collection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Documents can be updated to any size"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Allows deletion of documents to free space"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Maintains the insertion order of documents"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Supports unique indexes"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5649,
+      "QuestionTypeId": 0,
+      "QuestionId": 94414,
+      "Explanation": "Capped collections maintain the order of document insertion and do not allow removing documents to free space.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "When using capped collections, which of these commands can you not perform?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Remove a single document"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Insert new documents"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Query documents"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Update documents"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5649,
+      "QuestionTypeId": 0,
+      "QuestionId": 94415,
+      "Explanation": "In capped collections, you cannot explicitly remove individual documents once inserted.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In MongoDB, how is the space for a capped collection allocated?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Dynamically increases as needed"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Pre-allocated upon creation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Allocated based on the first inserted document"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Allocated when the first index is created"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5649,
+      "QuestionTypeId": 0,
+      "QuestionId": 94416,
+      "Explanation": "Space for a capped collection is allocated at the time of creation, according to the specified size.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What happens when you try to insert a document that exceeds the allocated size of a capped collection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Insertion fails with an error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Older documents are deleted immediately"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "The collection's size is automatically increased"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "The document is still inserted but indexes are rebuilt"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5649,
+      "QuestionTypeId": 0,
+      "QuestionId": 94417,
+      "Explanation": "If a document is too large to fit into a capped collection, the insertion fails with an error.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can capped collections be safely used to store logs with constant insertion rates?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, but logs might be lost if capacity is exceeded"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, because they do not support automatic index creation"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, as they are designed for high-throughput operations"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No, because older logs cannot be retrieved"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5649,
+      "QuestionTypeId": 0,
+      "QuestionId": 94418,
+      "Explanation": "Capped collections are ideal for scenarios like storing logs because they support high-throughput operations and maintain insertion order.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which write concern is applicable to collections to ensure data integrity in MongoDB?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "acknowledged only"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "replica acknowledged only"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "majority for capped collections"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "none"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5649,
+      "QuestionTypeId": 0,
+      "QuestionId": 94419,
+      "Explanation": "Capped collections can use the &apos;majority&apos; write concern to ensure data integrity across replica sets.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which MongoDB feature specific to capped collections can be beneficial for queue management?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Automatic sharding"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Insertion semantics"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "FIFO behavior"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Schema validation"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5649,
+      "QuestionTypeId": 0,
+      "QuestionId": 94420,
+      "Explanation": "Capped collections provide a FIFO behavior as they overwrite the oldest entries, which is useful for queue implementations.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the potential drawback of using capped collections in MongoDB?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Supports only BSON types"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Limited flexibility due to fixed size"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Cannot be replicated"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Cannot support reading operations"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5649,
+      "QuestionTypeId": 0,
+      "QuestionId": 94421,
+      "Explanation": "The primary drawback is their limited flexibility in storage because of their fixed size.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is NOT a valid use case for capped collections in MongoDB?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Storing log data"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Implementing queues"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Long-term archival storage"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Fixed-size cache"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5649,
+      "QuestionTypeId": 0,
+      "QuestionId": 94422,
+      "Explanation": "Capped collections are not suitable for long-term archival storage because they overwrite older documents.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do capped collections affect performance in MongoDB?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They degrade performance due to constant overwrites"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They enhance insert performance due to preallocated storage"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They require additional indexing"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They decrease query performance"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5649,
+      "QuestionTypeId": 0,
+      "QuestionId": 94423,
+      "Explanation": "Capped collections enhance insert performance because the space is preallocated, and documents are added in a fixed storage structure.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can you create a capped collection with a specific maximum number of documents although the size is the primary limiting factor?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "No, capped collections are only size-limited"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Yes, you can specify both size and max number of documents"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "No, they create indexes on the number of documents"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Yes, but the number is only a suggestion"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5649,
+      "QuestionTypeId": 0,
+      "QuestionId": 94424,
+      "Explanation": "When creating a capped collection, you can specify both a maximum size and a maximum count of documents.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which operation can still be performed on a capped collection to ensure data integrity without frequent writes?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Deleting specific documents"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Update operations to change document sizes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Reading older documents"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Point updates that do not increase document size"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5649,
+      "QuestionTypeId": 0,
+      "QuestionId": 94425,
+      "Explanation": "Point updates that do not require the document to exceed the capped size or decrease performance can be performed to ensure integrity.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How do you convert an existing collection into a capped collection?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It cannot be directly converted, must be recreated"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Use the convertToCapped command"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Use the createCapped command"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Use the capCollection function"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5649,
+      "QuestionTypeId": 0,
+      "QuestionId": 94426,
+      "Explanation": "You can use the convertToCapped command in MongoDB to convert an existing collection into a capped collection.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a key advantage of using a capped collection for logging purposes in MongoDB?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They support fully atomic operations"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They provide compression on disk"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Efficient writes and quick retrieval due to fixed order"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Enhanced security features"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5649,
+      "QuestionTypeId": 0,
+      "QuestionId": 94427,
+      "Explanation": "Capped collections provide efficient writes and quick retrieval because of their fixed order and constant insertion/deletion pattern.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "MongoDB supports fixed-size collections called ____________ collections.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "primary"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "secondary"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "capped"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "all of the mentioned"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5649,
+      "QuestionTypeId": 0,
+      "QuestionId": 84127,
+      "Explanation": "This type of collection maintains insertion order and, once the specified size has been reached, behaves like a circular queue.<br><br>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Capped collections in MongoDB are ________________.",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Primary collections."
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Secondary collection."
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Fixed size collection."
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Aggregate collections."
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 79,
+      "UniqueNodeId": 5649,
+      "QuestionTypeId": 0,
+      "QuestionId": 76365,
+      "Explanation": "This type of collection maintains insertion order and, once the specified size has been reached, behaves like a circular queue.<br><br>",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}

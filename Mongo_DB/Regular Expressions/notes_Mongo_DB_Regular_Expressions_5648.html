@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Notes - Mongo_DB_Regular Expressions</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  body{font-family:system-ui,Segoe UI,Roboto,Arial;max-width:900px;margin:24px auto;padding:18px;line-height:1.6;color:#111}
+  h1{font-size:1.4rem;margin-bottom:0.6rem}
+  .topic{font-weight:700;margin-top:1rem}
+  .subtopic{font-weight:600;margin-top:0.8rem}
+  .content{margin:0.6rem 0 1.2rem 0}
+  pre{white-space:pre-wrap;background:#f7f7f7;padding:10px;border-radius:6px;overflow:auto}
+  img{max-width:100%;height:auto}
+  table{border-collapse:collapse;width:100%}
+  table, th, td{border:1px solid #ccc;padding:6px}
+</style>
+</head>
+<body>
+<h1>Notes: Mongo_DB- Regular Expressions</h1>
+
+<div class="courseware topic">Regular Expressions</div><div class="courseware content"><hr>Regular Expressions are used in all languages to search a pattern or word in any string.&nbsp;&nbsp;MongoDB uses Perl-compatible regular expressions(PCRE) version 8.42 along with UTF-8 support.<br>A regular expression is a generalized way to match patterns with sequences of characters.</div>
+<div class="courseware subtopic">Concept<br></div><div><div class="courseware content"><hr>The real power of regular expressions doesn't come from simple word searches, but rather by using special regular expression syntax. For example, a single period (.) in a regular expression represents any single character.</div><br></div><div class="courseware content"><ul><li>With $regex Operator</li><li>Without $regex Operator</li></ul><dl><dt>​​​In MongoDB we can do pattern matching in two different ways&nbsp;</dt><dt>&nbsp;&nbsp;<br>The $regex operator in MongoDB is a powerful tool that provides regular expression capabilities for pattern matching within strings in queries. It is particularly useful when the exact field value is unknown which allows for flexible and efficient searches within collections.<br>&nbsp;<br>Notations used in regular expression..<table border="1" cellpadding="1" cellspacing="1" style="width: 473px;"><tbody><tr><td><strong>Notation</strong></td><td style="width: 372px;"><strong>Description</strong></td></tr><tr><td>^</td><td style="width: 372px;">beginning of string</td></tr><tr><td>$</td><td style="width: 372px;">end of string</td></tr><tr><td>\d</td><td style="width: 372px;">digit. Set of number(numeric value).Same as[0-9]</td></tr><tr><td>[0-9]</td><td style="width: 372px;">set of number(numeric value). Same as \d</td></tr><tr><td>[Aa]</td><td style="width: 372px;">set of alphabet.</td></tr><tr><td>/ /</td><td style="width: 372px;">pattern&nbsp;</td></tr></tbody></table> &nbsp; &nbsp;<br>Following is the syntax for regular expression.<br><br>{ &lt;field&gt;: { $regex: /pattern/, $options: '&lt;options&gt;' } }<br>{ &lt;field&gt;: { $regex: 'pattern', $options: '&lt;options&gt;' } }<br>{ &lt;field&gt;: { $regex: /pattern/&lt;options&gt; } }</dt></dl></div>
+<div class="courseware subtopic">Using Regular Expressions&nbsp;&nbsp;</div><div class="courseware content"><hr></div><ul><li class="courseware content"><strong>[]</strong><br>--Display all documents where actor name is amitabh or Amitabh.<div class="courseware content">&gt;db.movie.find({actor:/^[Aa]mitabh/})</div></li></ul><div class="courseware content"><br></div><ul><li class="courseware content"><strong>[0-9]</strong><br>--Display all documents where movie name starts with digit.<div class="courseware content">&gt;db.movie.find({actor:/^[0-9]/})</div></li></ul><div class="courseware content"><br></div><ul><li class="courseware content"><strong>$</strong><br>--Display all documents where movie name ends with digit.<div class="courseware content">&gt;db.movie.find({actor:/[0-9]$/})</div></li></ul><div class="courseware content"><br></div><ul><li class="courseware content"><strong>\d</strong><br>--Display all documents where movie name starts with digit.<br>&gt;db.movie.find({actor:/^\d.*$/})<br>--Display all documents where movie name starts with digit and ends with N.<br>&gt;db.movie.find({actor:/^\d.*N$/})</li></ul><div class="courseware content"><br></div><ul><li class="courseware content"><strong>$eq match on a regular expression</strong><br>An explicit query using $eq and a regular expression will only match an object which is also a regular expresssion.&nbsp;&nbsp;<br>&gt;db.collection.find( { company: { $eq: /MongoDB/ } }, {_id: 0 } )<br><br></li><li class="courseware content"><strong>$regex</strong><br>using&nbsp; $regex following query can be implamented as follows.<br>db.collection.find( { company: /MongoDB/ }, {_id: 0 })<br>db.collection.find( { company: { $regex: /MongoDB/ } }, {_id: 0 }<br><br>Following query selects all documents in the inventory collection where the item field value does not start with the letter 'p'.<br>db.inventory.find( { item: { $not: { $regex: /^p.*/ } } } )<br><br></li><li class="courseware content"><strong>Using regex Expression with Case Insensitive</strong></li></ul><div class="courseware content">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; To make the search case insensitive, we use the $options parameter with value $i. The following command&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;will look for strings having the word tutorialspoint, irrespective of smaller or capital case −<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<div class="courseware content">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&gt;db.posts.find({post_text:{$regex:"Know-it",$options:"$i"}})<br><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Here pattern "Know-it will matched and it will not be case sensitive match.&nbsp;</div></div>
+
+
+</body>
+</html>

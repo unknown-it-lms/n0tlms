@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Notes - Cassandra_Comparison between MongoDB and Cassandra</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  body{font-family:system-ui,Segoe UI,Roboto,Arial;max-width:900px;margin:24px auto;padding:18px;line-height:1.6;color:#111}
+  h1{font-size:1.4rem;margin-bottom:0.6rem}
+  .topic{font-weight:700;margin-top:1rem}
+  .subtopic{font-weight:600;margin-top:0.8rem}
+  .content{margin:0.6rem 0 1.2rem 0}
+  pre{white-space:pre-wrap;background:#f7f7f7;padding:10px;border-radius:6px;overflow:auto}
+  img{max-width:100%;height:auto}
+  table{border-collapse:collapse;width:100%}
+  table, th, td{border:1px solid #ccc;padding:6px}
+</style>
+</head>
+<body>
+<h1>Notes: Cassandra- Comparison between MongoDB and Cassandra</h1>
+
+<div class="courseware topic">Comparison between MongoDB and Cassandra&nbsp;&nbsp;<hr></div><div class="courseware content"><br><table border="1" cellspacing="1" cellpadding="1" style="width: 100%;"><tbody><tr><td><br></td><td style="width: 353px;"><strong>Cassandra</strong></td><td style="width: 346px;"><strong>MongoDB</strong></td></tr><tr><td>Data Model</td><td style="width: 353px;">Cassandra stores data in a wide column tabular store.</td><td style="width: 346px;">MongoDB stores documents in an optimized BSON format.</td></tr><tr><td>Indexing</td><td style="width: 353px;">Cassandra offers standard built-in indexing as well as basic secondary indexes to index additional columns to allow queries filtering.</td><td style="width: 346px;">MongoDB supports many index types for various use cases.</td></tr><tr><td>Query Language</td><td style="width: 353px;">Cassandra uses a proprietary language called CQL, which is similar to SQL. Applications can use different drivers provided mostly by third parties and a shell.</td><td style="width: 346px;">MongoDB has a rich query language called MQL. It supports a wide variety of modern native drivers as well as a shell.<br>The queries can use complex operators. Additionally, the aggregation framework allows you to aggregate data with many stages.</td></tr><tr><td>Transactions</td><td style="width: 353px;">Cassandra does not support transactions.</td><td style="width: 346px;">MongoDB supports fully ACID compliant transactions.</td></tr><tr><td>Concurrency</td><td style="width: 353px;">Cassandra isolates on a row-level. This means that a specific row for a specific partition can be operated simultaneously by one client. Cassandra also offers tunable consistency for writing, when a client changes its consistency level (one, quorum, all).</td><td style="width: 346px;">MongoDB allows multiple database users to concurrently access the same data by managing a well defined concurrency control.<br>MongoDB uses document-level locking, so writes to a single document occur either in full or not at all, and clients always see consistent data. Together with those mechanisms, MongoDB supports different read and write concerns for distributed clusters and retryable reads and writes.<br></td></tr><tr><td>High Availability and Scalability</td><td style="width: 353px;">Cassandra replicates its keyspace across the cluster nodes based on the keyspace replication factor.<br>Since it's a multi-master ring, each node is holding a range of the partition key per table, while also hosting parts of other rows replicas.</td><td style="width: 346px;">Sharding allows you to easily scale your collections across multiple replica sets. With geo-zone sharding, you can also easily manage data sovereignty requirements.&nbsp;</td></tr></tbody></table></div>
+
+
+</body>
+</html>

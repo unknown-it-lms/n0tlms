@@ -1,0 +1,940 @@
+{
+  "m_Item1": [
+    {
+      "QuestionText": "What is the main purpose of a decorator in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To define a new class"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To modify the behavior of a function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To create a new variable"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To initialize the Python interpreter"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 93177,
+      "Explanation": "Decorators in Python are used to modify or enhance functions or methods without changing their actual code.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which symbol is used to apply a decorator to a function in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "#"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "&"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "%"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 93178,
+      "Explanation": "The &apos;@&apos; symbol is used in Python to apply a decorator to a function, placed directly above the function definition.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following code?<br><br>def my_decorator(func):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def wrapper():<br>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print('Before calling function')<br>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;func()<br>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print('After calling function')<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return wrapper<br><br>@my_decorator<br>def say_hello():<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print('Hello!')<br><br>say_hello()",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Before calling function<br>Hello!<br>After calling function"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hello!<br>Before calling function<br>After calling function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Before calling function<br>After calling function<br>Hello!"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Hello! only"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 93179,
+      "Explanation": "<span id=\"explanation93179\" style=\"color:blue\">The decorator &apos;my_decorator&apos; adds functionality to &apos;say_hello&apos;. The decorator prints messages before and after calling the original function.</span>",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In Python, which method is used within a decorator to call the original function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "self()"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "call_this()"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "func()"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "wrap()"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 93180,
+      "Explanation": "Within a decorator, &apos;func()&apos; is typically used to call the original function being decorated.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following decorators is used to define a class method?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@staticmethod"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@property"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@classmethod"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@getter"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 93181,
+      "Explanation": "The &apos;@classmethod&apos; decorator is used to define a method that is associated with the class and not with any instance of the class.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Consider the following code snippet:<br><br>def timer(func):<br>&nbsp; &nbsp; def wrapper(*args, **kwargs):<br>&nbsp; &nbsp; &nbsp; &nbsp; start = time.time()<br>&nbsp; &nbsp; &nbsp; &nbsp; result = func(*args, **kwargs)<br>&nbsp; &nbsp; &nbsp; &nbsp; end = time.time()<br>&nbsp; &nbsp; &nbsp; &nbsp; print(f'Time taken: {end-start}')<br>&nbsp; &nbsp; &nbsp; &nbsp; return result<br>&nbsp; &nbsp; return wrapper<br><br>What is the role of '*args' and '**kwargs' in this decorator?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They are used to pass fixed no of arguments to the decorator"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They are used to handle exceptions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They allow the decorator to accept any number of positional and keyword arguments"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They limit the decorator to specific arguments"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 93182,
+      "Explanation": "<span id=\"explanation93182\" style=\"color:blue\"><span id=\"explanation93182\" style=\"color:blue\"><span id=\"explanation93182\" style=\"color:blue\">The &apos;*args&apos; and &apos;**kwargs&apos; allow the &apos;wrapper&apos; function in the decorator to accept any number of positional and keyword arguments, making the decorator flexible.</span></span></span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following code?<br><br>def uppercase_decorator(func):<br>&nbsp; &nbsp; def wrapper(*args, **kwargs):<br>&nbsp; &nbsp; &nbsp; &nbsp; result = func(*args, **kwargs)<br>&nbsp; &nbsp; &nbsp; &nbsp; return result.upper()<br>&nbsp; &nbsp; return wrapper<br><br>@uppercase_decorator<br>def greet(name):<br>&nbsp; &nbsp; return f'Hello, {name}'<br><br>print(greet('alex'))",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "hello, alex"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Hello, alex"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "HELLO, ALEX"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Function does not return any value"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 93183,
+      "Explanation": "<span id=\"explanation93183\" style=\"color:blue\">The &apos;uppercase_decorator&apos; modifies the &apos;greet&apos; function to convert its return value to uppercase before returning it.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which standard library module is often used in decorators to handle timing or logging functionalities?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "sys"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "os"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "time"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "math"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 93184,
+      "Explanation": "The &apos;time&apos; module is frequently used in decorators to measure the execution time of functions.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you apply multiple decorators to a single function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "You cannot apply more than one decorator"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By stacking decorators on top of the function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using a for loop"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By separating them with commas"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 93185,
+      "Explanation": "Multiple decorators can be applied to a function by stacking them on top of each other, each on their own line, above the function definition.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is a key benefit of using decorators?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They make code execution slower"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They require less RAM"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They allow the separation of concerns by promoting code reuse"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They make functions private to their modules"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 93186,
+      "Explanation": "Decorators allow the separation of concerns by promoting code reuse and reducing redundancy, making code more modular and maintainable.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can decorators be used with class methods?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Yes, but it requires a different syntax"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "No, decorators are only for standalone functions"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, they work the same way as with standalone functions"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "No, decorators make methods static"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 93187,
+      "Explanation": "Decorators can be used with class methods in the same manner as with standalone functions, using the &apos;@&apos; symbol above the method definition.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of function is a decorator function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A recursive function"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "A higher-order function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "An anonymous function"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A lambda function"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 93188,
+      "Explanation": "A decorator function is a higher-order function because it takes another function as an argument and/or returns a function.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is not a built-in decorator?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "@classmethod"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "@staticmethod"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@memoize"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@property"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 93189,
+      "Explanation": "While &apos;@classmethod&apos;, &apos;@staticmethod&apos;, and &apos;@property&apos; are built-in Python decorators, &apos;@memoize&apos; is not a built-in decorator. Caching functionality would need to be implemented or imported from a library like &apos;functools&apos;.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following statements about decorators is true?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Decorators can only be applied to functions that have no arguments"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Decorators cannot change the arguments of the decorated function"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Decorators can modify both the arguments and the return value of the function"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "A function can have an limited number of decorators stacked onto it"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 93190,
+      "Explanation": "<span id=\"explanation93190\" style=\"color:blue\">Decorators can modify the arguments or the return value of the function they decorate, thus influencing the function&apos;s behavior.</span>",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "How can you ensure a decorator maintains the signature of the original function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "By using the 'time' module"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "By manually copying the signature"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "By using the functools.wraps() function"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "By referencing the original attributes"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 93191,
+      "Explanation": "The &apos;functools.wraps()&apos; function is a decorator for the wrapper function that copies the metadata of the original function, maintaining its signature, name, and docstring.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What special method in Python can be used if you want to define a decorator as a class?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "__call__"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "__init__"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "__compose__"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "__apply__"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 93192,
+      "Explanation": "The &apos;__call__&apos; method allows an instance of the class to be called as a function, making it suitable for use as a decorator.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does a function decorated with both '@staticmethod' and '@classmethod' first return?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "It raises an error"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "It returns an instance of the class"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "It becomes a static method"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "It behaves like an instance method"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 93193,
+      "Explanation": "Decorating a function with both &apos;@staticmethod&apos; and &apos;@classmethod&apos; will result in an error, as these decorators are mutually exclusive and should not be used together.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "In the code snippet below, what will be the output when calling 'example_func()'?<br><br>def example_decorator(func):<br>&nbsp; &nbsp; def wrapper():<br>&nbsp; &nbsp; &nbsp; &nbsp; return 'Decorated! ' + func()<br>&nbsp; &nbsp; return wrapper<br><br>def example_func():<br>&nbsp; &nbsp; return 'Hello World'<br><br>example_func = example_decorator(example_func)<br><br>print(example_func())",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Hello World"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Decorated! Hello World"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Hello World Decorated!"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Decorated!"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 93194,
+      "Explanation": "<span id=\"explanation93194\" style=\"color:blue\">The &apos;example_decorator&apos; adds the string &apos;Decorated! &apos; to the beginning of the return value of &apos;example_func&apos;.</span>",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which term describes a function that takes another function as an argument and returns a new function?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Decorator"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Generator"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Iterator"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Closure"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 93195,
+      "Explanation": "A decorator is a function that takes another function as an argument and returns a new function that typically extends or alters the behavior of the original function.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "A decorator in Python is applied to:",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Classes and attributes"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only classes"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Only functions and methods"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Functions, methods, and classes"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 93196,
+      "Explanation": "Decorators in Python can be applied to functions, methods, and classes to add or modify their behavior.",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What does the `nonlocal` keyword do in Python?",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Declares a global variable"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Declares a variable that is not local or global"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Declares a variable from an enclosing scope"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Declares an undefined variable"
+        }
+      ],
+      "Status": 1,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 92742,
+      "Explanation": "The `nonlocal` keyword allows you to access variables from an enclosing scope that are neither local nor global.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the purpose of a decorator in Python?&nbsp;<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "To modify the behavior of a function without changing its source code<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "To compile Python code<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "To convert Python code into C code<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "To add comments to code<br>"
+        },
+        {
+          "OptionId": "E",
+          "OptionText": "None Of the above"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 91997,
+      "Explanation": "Decorators are used to &nbsp;enhance or modify &nbsp;the behavior of functions or methods without changing their code.",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which symbol is used to apply a decorator to a function?&nbsp;",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "#<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "%"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "$"
+        },
+        {
+          "OptionId": "E",
+          "OptionText": "&amp;"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 91998,
+      "Explanation": "The @ symbol is used &nbsp;just above the function definition &nbsp;to apply a decorator in Python.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will be the output of the following code?&nbsp;<br>def decorator_func(func):<br>&nbsp; &nbsp; def wrapper():<br>&nbsp; &nbsp; &nbsp; &nbsp; print(\"Before function call\")<br>&nbsp; &nbsp; &nbsp; &nbsp; func()<br>&nbsp; &nbsp; &nbsp; &nbsp; print(\"After function call\")<br>&nbsp; &nbsp; return wrapper<br><br>@decorator_func<br>def say_hello():<br>&nbsp; &nbsp; print(\"Hello!\")<br><br>say_hello()<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Hello!<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Before function call<br>Hello!<br>After function call<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Error<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "None<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 91999,
+      "Explanation": "The @decorator_func modifies say_hello() by wrapping it in wrapper() which prints extra messages.",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is true about decorators?&nbsp;<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "They are used to change the class name<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "They are used only in class methods<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "They can be used on functions and methods<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "They can only be used once per function<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 92000,
+      "Explanation": "Decorators can be applied to both functions and class methods to extend their behavior.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a valid decorator syntax?&nbsp;<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "decorate @function<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "&nbsp;function @decorate()&nbsp;<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "@decorator_name<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "@decorate[]&nbsp;<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 92001,
+      "Explanation": "Correct syntax is &nbsp;@decorator_name &nbsp;placed just above the function to be decorated.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What is the output of the following?&nbsp;&nbsp;&nbsp;<br>def my_decorator(func):<br>&nbsp; &nbsp; def wrapper():<br>&nbsp; &nbsp; &nbsp; &nbsp; print(\"Decorated\")<br>&nbsp; &nbsp; return wrapper<br><br>@my_decorator<br>def greet():<br>&nbsp; &nbsp; print(\"Hi\")<br>greet()<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Hi<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Decorated<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Hi<br>Decorated<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Error<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 92002,
+      "Explanation": "The decorator replaces &nbsp;greet() &nbsp;with &nbsp;wrapper() , which only prints \"Decorated\".",
+      "Answer": "B",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can a decorator accept arguments?&nbsp;<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": " No<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Only integer arguments<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "Yes, by using an extra outer function<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Only if the function has no parameters<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 92003,
+      "Explanation": "To allow a decorator to accept arguments, you wrap the decorator in &nbsp;an additional outer function .",
+      "Answer": "A",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What type of Python object is typically passed into a decorator?<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "A string<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "An integer<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "A function<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": " A list<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 92004,
+      "Explanation": "A decorator in Python takes a function as an argument, modifies or enhances it, and returns another function.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "What will this code print?<br>def my_decorator(func):<br>&nbsp; &nbsp; return func<br><br>@my_decorator<br>def hello():<br>&nbsp; &nbsp; print(\"Hello!\")<br><br>hello()<br>",
+      "Options": [
+        {
+          "OptionId": "A",
+          "OptionText": "Nothing<br>"
+        },
+        {
+          "OptionId": "B",
+          "OptionText": "Error<br>"
+        },
+        {
+          "OptionId": "C",
+          "OptionText": "my_decorator<br>"
+        },
+        {
+          "OptionId": "D",
+          "OptionText": "Hello!<br>"
+        }
+      ],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 92005,
+      "Explanation": "The decorator just returns the original function hello, so calling hello() prints \"Hello!\".",
+      "Answer": "D",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Can decorators be used to add pre- and post-function execution behavior?<br>",
+      "Options": [],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 92006,
+      "Explanation": "Decorators are commonly used to add behavior before and/or after the original function runs.",
+      "Answer": "C",
+      "Marks": 0
+    },
+    {
+      "QuestionText": "Which of the following is a benefit of using decorators?<br>",
+      "Options": [],
+      "Status": 0,
+      "Remarks": null,
+      "SubjectId": 26,
+      "UniqueNodeId": 7107,
+      "QuestionTypeId": 0,
+      "QuestionId": 92007,
+      "Explanation": "Decorators help reuse code (like logging, timing, authentication) and separate concerns without modifying the original function logic.",
+      "Answer": "C",
+      "Marks": 0
+    }
+  ],
+  "m_Item2": [],
+  "m_Item3": []
+}
