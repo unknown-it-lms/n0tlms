@@ -107,6 +107,15 @@ const subjects = {
       "hasPPT": false,
       "pptFile": null,
       "hasMCQ": false
+    },
+    {
+      "id": null,
+      "name": "mock1",
+      "hasNotes": false,
+      "notesFile": null,
+      "hasPPT": false,
+      "pptFile": null,
+      "hasMCQ": true
     }
   ],
   "Advanced_Java": [
@@ -2656,6 +2665,15 @@ const subjects = {
       "hasPPT": false,
       "pptFile": null,
       "hasMCQ": true
+    },
+    {
+      "id": null,
+      "name": "mock2",
+      "hasNotes": false,
+      "notesFile": null,
+      "hasPPT": false,
+      "pptFile": null,
+      "hasMCQ": true
     }
   ],
   "Operating_System": [
@@ -3148,6 +3166,15 @@ const subjects = {
       "notesFile": "notes_Python_Python_Libraries-Plotly_3633.html",
       "hasPPT": true,
       "pptFile": "ppts_Python__3633.pdf",
+      "hasMCQ": true
+    },
+    {
+      "id": null,
+      "name": "mock1",
+      "hasNotes": false,
+      "notesFile": null,
+      "hasPPT": false,
+      "pptFile": null,
       "hasMCQ": true
     }
   ],
