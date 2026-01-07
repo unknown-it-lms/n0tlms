@@ -321,6 +321,15 @@ const subjects = {
   "Aptitude_Skills": [
     {
       "id": null,
+      "name": "mock1",
+      "hasNotes": false,
+      "notesFile": null,
+      "hasPPT": false,
+      "pptFile": null,
+      "hasMCQ": true
+    },
+    {
+      "id": null,
       "name": "Calculations",
       "hasNotes": false,
       "notesFile": null,
